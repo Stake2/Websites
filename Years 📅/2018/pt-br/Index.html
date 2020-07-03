@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<head>
+<title>2018 PT-BR</title>
+<meta charset="UTF-8" />
+<meta property="og:title" content="2018 PT-BR" />
+<meta property="og:site_name" content="2018 PT-BR" />
+<link rel="canonical" href="https://diario.netlify.app/2018/2018/pt-br/" />
+<meta property="og:url" content="https://diario.netlify.app/2018/2018/pt-br/" />
+<link rel="icon" href="https://diario.netlify.app/cdn/img/2018.png" />
+<link rel="image_src" href="https://diario.netlify.app/cdn/img/2018.png" />
+<meta property="og:image" content="https://diario.netlify.app/cdn/img/2018.png" />
+<meta name="description" content="Site para mostar o meu 2018 (stake2)" />
+<meta property="og:description" content="Site para mostar o meu 2018 (stake2)" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" value="@The_Snakes90" />
+<meta name="twitter:creator" content="@The_Snakes90" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/pocb.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/w3.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Colors.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/stories.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/mobile.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/imghover.css" />
+
+<meta name="revised" content="Stake's Enterprisetm, 25/04/2020" />
+<meta name="author" content="Stake Ferreira" />
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+<script src="https://diario.netlify.app/cdn/js/myFunction.js"></script>
+<script src="https://diario.netlify.app/cdn/js/tabs.js"></script>
+<script src="https://diario.netlify.app/cdn/js/redirect.js" onLoad="rodar();"></script>
+<script src="https://diario.netlify.app/cdn/js/ShowHide.js"></script>
+<script src="https://diario.netlify.app/cdn/js/sidemenu.js"></script>
+<script src="https://diario.netlify.app/cdn/js/EditBtn.js"></script>
+</head>
+<body>
+<center>
+
+<div class="w3-animate-zoom">
+<div id="myDIV" class="w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
+<a href="#2018-2018"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('2018-2018')"><h2>Ler: 🇧🇷</h2></button></a>
+<a href="#2018-mídia"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('2018-mídia')"><h2>Mídia: <i class="fas fa-video"></i></h2></button></a>
+<a href="#2018-tarefas"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('2018-tarefas')"><h2>Tarefas: <i class="fas fa-tasks"></i></h2></button></a>
+<a href="#2018-anos"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('2018-anos')"><h2>Anos: <i class="far fa-calendar-alt"></i></h2></button></a>
+<br />
+<button class="w3-btn yellow borderbtn mobileHide" style="border-radius: 50px;" onclick="buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button>
+</div>
+
+<div class="w3-bar" style="position:fixed;float:right;">
+<button id="ShowButton" class="w3-btn yellow borderbtn mobileHide" style="display:none;float:right;border-radius: 50px;" onclick="buttons2();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
+</div>
+
+<div id="mySidenav" class="sidenav mobileShow ">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times-circle"></i></a>
+<h2 class="mobileShow w3-black w3-text-white">Menu de botões mobile: </h2>
+<a href="#2018-2018m" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('2018-2018m')"><h4>Ler: 🇧🇷</h4></button></a>
+<a href="#2018-mídiam" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('2018-mídiam')"><h4>Mídia: <i class="fas fa-video"></i></h4></button></a>
+<a href="#2018-tarefasm" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('2018-tarefasm')"><h4>Tarefas: <i class="fas fa-tasks"></i></h4></button></a>
+<a href="#2018-anosm" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('2018-anosm')"><h4>Anos: <i class="far fa-calendar-alt"></i></h4></button></a>
+</div>
+<button id="ShowMenu" class="w3-btn yellow borderbtn mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="openNav()"><h2><i class="fas fa-bars"></i></h2></button>
+
+</div>
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><div style="background-color:black;margin-left:5%;margin-right:5%;border-width:4px;border-color:white;border-style:solid;border-radius: 50px;border-radius: 50px;">
+	<h2 class="w3-text-white w3-animate-zoom"><p><br /><b>2018: <i class="far fa-calendar-alt"></i></b><br /><br /><p></h2>
+	<hr class="whitehr" />
+	<img src="https://diario.netlify.app/cdn/img/2018.png" width="25%" class="w3-text-white mobileHide" style="border-width:3px;border-color:w3-black;border-style:solid;border-radius: 50px;" />
+<div class="mobileHide"><a href="https://diario.netlify.app/cdn/img/2018.png" target="_newtab"><h4 class="w3-btn yellow borderbtn" style="border-radius: 50px;">Link da imagem: <i class="fas fa-images"></i></h4></a></div>
+<img src="https://diario.netlify.app/cdn/img/2018.png" width="66%" class="w3-text-white mobileShow" style="border-width:3px;border-color:w3-black;border-style:solid;border-radius: 50px;" />
+<div class="mobileShow"><a href="https://diario.netlify.app/cdn/img/2018.png" target="_newtab"><h4 class="w3-btn yellow borderbtn" style="border-radius: 50px;">Link da imagem: <i class="fas fa-images"></i></h4></a></div>
+
+	<h2 class="w3-text-white mobileHide">Descrição: Um site para mostar como meu ano <span class="w3-text-orange">(2018)</span> foi e o que eu fiz durante ele, eu sou <span class="w3-text-orange">stake2</span>, ou <span class="w3-text-orange">Izaque</span><br /> <b><div class="animationthing2"><span class="w3-text-blue">Revolução redonda avante!</span></div></div></b>
+</h2>
+	<h4 class="w3-text-white mobileShow">Descrição: Um site para mostar como meu ano <span class="w3-text-orange">(2018)</span> foi e o que eu fiz durante ele, eu sou <span class="w3-text-orange">stake2</span>, ou <span class="w3-text-orange">Izaque</span><br /> <b><div class="animationthing2"><span class="w3-text-blue">Revolução redonda avante!</span></div></div></b>
+</h4>
+	<h2 class="w3-text-white mobileHide"></h2>
+	<h4 class="w3-text-white mobileShow"></h4>
+	<br />
+	</div>
+
+
+<style>
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 684px){
+    .videostyle {
+		width: 350;
+		height: 450;
+	}
+}
+
+a {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.3s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+a:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.3s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+button {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.3s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+button:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.3s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+.animationthing {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shakesidetoside 0.2s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+.animationthing2 {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: animatezoom 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes animatezoom {
+	from{transform:scale(0)} 
+	to{transform:scale(1)}
+}
+
+@keyframes shakesidetoside {
+   20%, 40%, 60%, 80% {transform: translateX(-15);} 
+   20%, 40%, 60%, 80% {transform: translateX(15px);} 
+} 
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style><a name="2018-2018"></a>
+<div id="2018-2018" class="city mobileHide" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:white;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>2018: <span class="w3-text-blue">221</span> <i class="far fa-calendar-alt"></i></b><br /><br /><p></p></h2></div><hr class="whitehr" />
+<div class="w3-animate-zoom"><div style="text-align:left;">
+Escrito por <a href="https://diario.netlify.com/stake2/" class="w3-text-orange">Izaque Sanvezzo (hm182002) (stake2, Funkysnipa Cat)</a><br />
+Data de criação: <span class="w3-text-blue">05:16 25/12/2018</span><br /><br />
+Isso só que no Pastebin: <a href="https://pastebin.com/e0ETLLzC">https://pastebin.com/e0ETLLzC</a><br />
+<br />
+---<br />
+<br />
+<b>Coisas feitas em 2018: <span class="w3-text-blue">221</span> (+<span class="w3-text-blue">3.108</span> junto com todas as musicas baixadas)</b><br />
+<br />
+<b>Coisas assistidas: <span class="w3-text-blue">52</span></b><br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Filmes</a>: </b></span><span class="w3-text-blue"><b>4</b></span><br />
+</b><b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Desenhos</a>: </b></span><span class="w3-text-blue"><b>5</b></span><br />
+</b><b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Séries</a>: </b></span><span class="w3-text-blue"><b>5</b></span><br />
+</b><b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Animes</a>: </b></span><span class="w3-text-blue"><b>18</b></span><br />
+</b><b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Videos</a>: </b></span><span class="w3-text-blue"><b>20</b></span><br />
+</b>
+<br />
+<span class="w3-text-green"><a href="https://diario.netlify.com/📘/" class="w3-text-green">Meu Diário</a>: </span><span class="w3-text-blue">22</span> capítulos, <span class="w3-text-blue">555</span> linhas<br />
+<span class="w3-text-green"><a href="https://diario.netlify.com/pequenata/" class="w3-text-green">A Vida de Pequenata</a>: </span><span class="w3-text-blue">7</span> capítulos, <span class="w3-text-blue">4.053</span> palavras, <span class="w3-text-blue">12.730</span> caracteres<br />
+<br />
+Sites novos:  <span class="w3-text-blue">6</span><br />
+<br />
+Pessoas que conheci: <span class="w3-text-blue">17</span><br />
+<br />
+Tamanho Do Peso Das Musicas Baixadas: <span class="w3-text-blue">16</span>GBs<br />
+<br />
+Comentários no SuperAnimes: <span class="w3-text-blue">106</span><br />
+</div>
+</div>
+</h2>
+</div>
+
+<a name="2018-2018m"></a>
+<div id="2018-2018m" class="city mobileShow" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:white;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>2018: <span class="w3-text-blue">221</span> <i class="far fa-calendar-alt"></i></b><br /><br /><p></p></h2></div><hr class="whitehr" />
+<div class="w3-animate-zoom"><div style="text-align:left;">
+Escrito por <a href="https://diario.netlify.com/stake2/" class="w3-text-orange">Izaque Sanvezzo (hm182002) (stake2, Funkysnipa Cat)</a><br />
+Data de criação: <span class="w3-text-blue">05:16 25/12/2018</span><br /><br />
+Isso só que no Pastebin: <a href="https://pastebin.com/e0ETLLzC">https://pastebin.com/e0ETLLzC</a><br />
+<br />
+---<br />
+<br />
+<b>Coisas feitas em 2018: <span class="w3-text-blue">221</span> (+<span class="w3-text-blue">3.108</span> junto com todas as musicas baixadas)</b><br />
+<br />
+<b>Coisas assistidas: <span class="w3-text-blue">52</span></b><br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Filmes</a>: </b></span><span class="w3-text-blue"><b>4</b></span><br />
+</b><b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Desenhos</a>: </b></span><span class="w3-text-blue"><b>5</b></span><br />
+</b><b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Séries</a>: </b></span><span class="w3-text-blue"><b>5</b></span><br />
+</b><b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Animes</a>: </b></span><span class="w3-text-blue"><b>18</b></span><br />
+</b><b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Videos</a>: </b></span><span class="w3-text-blue"><b>20</b></span><br />
+</b>
+<br />
+<span class="w3-text-green"><a href="https://diario.netlify.com/📘/" class="w3-text-green">Meu Diário</a>: </span><span class="w3-text-blue">22</span> capítulos, <span class="w3-text-blue">555</span> linhas<br />
+<span class="w3-text-green"><a href="https://diario.netlify.com/pequenata/" class="w3-text-green">A Vida de Pequenata</a>: </span><span class="w3-text-blue">7</span> capítulos, <span class="w3-text-blue">4.053</span> palavras, <span class="w3-text-blue">12.730</span> caracteres<br />
+<br />
+Sites novos:  <span class="w3-text-blue">6</span><br />
+<br />
+Pessoas que conheci: <span class="w3-text-blue">17</span><br />
+<br />
+Tamanho Do Peso Das Musicas Baixadas: <span class="w3-text-blue">16</span>GBs<br />
+<br />
+Comentários no SuperAnimes: <span class="w3-text-blue">106</span><br />
+</div>
+</div>
+</h4>
+</div>
+
+<a name="2018-mídia"></a>
+<div id="2018-mídia" class="city mobileHide" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:white;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p><br /><b>Mídia: <span class="w3-text-blue">52</span> <i class="fas fa-video"></i></b><br /><br /><p></h2></div><hr class="whitehr" /><div class="w3-animate-zoom"><div style="text-align:left;">
+Escrito por <a href="https://diario.netlify.com/stake2/" class="w3-text-orange">Izaque Sanvezzo (hm182002) (stake2, Funkysnipa Cat)</a><br />
+"Assistidos" no Pastebin: <a href="https://pastebin.com/e0ETLLzC">https://pastebin.com/e0ETLLzC</a><br /><br /></div></div>
+<div class="w3-animate-zoom"><div class="w3-animate-zoom">
+<div style="text-align:left;">
+<h2 class="" style="text-align:left;">
+<b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Coisas assistidas</a>: </b><span class="w3-text-blue"><b>52</b></span><br />
+<br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Filmes</a>: </b></span><span class="w3-text-blue"><b>4</b></span><br />
+</b>
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Desenhos</a>: </b></span><span class="w3-text-blue"><b>5</b></span><br />
+</b>
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Séries</a>: </b></span><span class="w3-text-blue"><b>5</b></span><br />
+</b>
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Animes</a>: </b></span><span class="w3-text-blue"><b>18</b></span><br />
+</b>
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Videos</a>: </b></span><span class="w3-text-blue"><b>20</b></span><br />
+</b>
+<br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Filmes</a>: </b></span><span class="w3-text-blue"><b>4</b></span><br />
+</b>
+<span class="borderbtn3">1 - Sword Art Online: Ordinal Scale
+</span><br />
+<span class="borderbtn3">2 - Vingadores: Guerra Infinita 06:38 18/08/2018
+</span><br />
+<span class="borderbtn3">3 - Homem Aranha: De Volta Ao Lar
+</span><br />
+<span class="borderbtn3">4 - Jogador Numero 1
+</span><br />
+<br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Desenhos</a>: </b></span><span class="w3-text-blue"><b>5</b></span><br />
+</b>
+<span class="borderbtn3">1 - My Little Pony — Best Gift Ever Holiday [Special]
+</span><br />
+<span class="borderbtn3">2 - Star Vs. The Forces Of Evil - Dublado EP101 "Amor Dificil" 21:18 21/11/2018
+</span><br />
+<span class="borderbtn3">3 - Homem-Aranha EP20 "Spider-Island - Part 2" 22:56 22/11/2018
+</span><br />
+<span class="borderbtn3">4 - Ben 10 Força Alienigena S01E13 - "X=Ben + 2" 04:28 04/12/2018
+</span><br />
+<span class="borderbtn3">5 - Homem-Aranha EP21 "Spider-Island - Part 3" 16:41 07/12/2018
+</span><br />
+<br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Séries</a>: </b></span><span class="w3-text-blue"><b>5</b></span><br />
+</b>
+<span class="borderbtn3">1 - The Walking Dead S06E09(76) "Sem Saída" 03:33 20/11/2018
+</span><br />
+<span class="borderbtn3">2 - The Walking Dead S06E10(77) "O Próximo Mundo" 04:19 20/11/2018
+</span><br />
+<span class="borderbtn3">3 - The Walking Dead S06E11(78) "Nós Desatados" 20:08 21/11/2018
+</span><br />
+<span class="borderbtn3">4 - The Walking Dead S06E12(79) "Ainda Não é Amanhã" 02:50 28/11/2018
+</span><br />
+<span class="borderbtn3">5 - The Walking Dead S06E13(80) "O Mesmo Barco" 02:12 17/12/2018
+</span><br />
+<br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Animes</a>: </b></span><span class="w3-text-blue"><b>18</b></span><br />
+</b>
+<span class="borderbtn3">1 - Anima Yell! EP6 "Super Empolgante Pedestal de Base Dupla!"
+</span><br />
+<span class="borderbtn3">2 - Sword Art Online: Alicization EP6 "Projeto Alicization"
+</span><br />
+<span class="borderbtn3">3 - Anima Yell! EP7 "A Pessoa no Topo Tem Medo de Altura" 04:54 19/11/2018
+</span><br />
+<span class="borderbtn3">4 - Sword Art Online: Alicization EP7 "Academia da Espada" 20:31 19/11/2018
+</span><br />
+<span class="borderbtn3">5 - Mahou Shoujo Site EP9 "Deus Não Vai Me Abandonar" 04:56 21/11/2018
+</span><br />
+<span class="borderbtn3">6 - Sword Art Online; Alicization EP8 "O Orgulho de Espadachim"
+</span><br />
+<span class="borderbtn3">7 - Anima Yell! EP8 "A Senpai e Eu" 16:41 07/12/2018
+</span><br />
+<span class="borderbtn3">8 - Anima Yell! EP9 "A Capitã é Escolhida! Torcida Com Cinco" 21:14 07/12/2018
+</span><br />
+<span class="borderbtn3">9 - Sword Art Online; Alicization EP9 "Responsabilidades de Um Nobre" 04:57 10/12/2018
+</span><br />
+<span class="borderbtn3">10 - Sword Art Online; Alicization EP10 "Código de Tabus" 05:56 10/12/2018
+</span><br />
+<span class="borderbtn3">11 - Anima Yell! EP10 "Meias e Acampamento de Treinos de Verão" 18:16 19/12/2018
+</span><br />
+<span class="borderbtn3">12 - Sword Art Online; Alicization EP11 "Catedral Central" 22:27 20/12/2018
+</span><br />
+<span class="borderbtn3">13 - Ore Ga Suki Nano Wa Imouto Dakedo Imouto Ja Nai EP1 "Como Eu e Minha Irmã Nos Tornamos Autores de Light Novel" 
+</span><br />
+<span class="borderbtn3">14 - Anima Yell! EP11 "Empolgante Apoio de Ombro" 18:04 19/12/2018
+</span><br />
+<span class="borderbtn3">15 - Sword Art Online; Alicization EP12 "A Sábia da Biblioteca" 02:35 25/12/2018
+</span><br />
+<span class="borderbtn3">16 - Anima Yell! EP12 "Uma Por Todas, Todas Por Uma!" 02:15 27/12/2018
+</span><br />
+<span class="borderbtn3">17 - Ore Ga Suki Nano Wa Imouto Dakedo Imouto Ja Nai EP2 "Minha Irmãzinha Almeja Grandes Alturas" 03:55 30/12/2018
+</span><br />
+<span class="borderbtn3">18 - Mahou Shoujo Site EP10 "Breaking" 06:14 31/12/2018
+</span><br />
+<br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Videos</a>: </b></span><span class="w3-text-blue"><b>20</b></span><br />
+</b>
+<span class="borderbtn3">1 - A HISTÓRIA DO HOMEM QUE NÃO CONSEGUIA GANHAR! MELHORES CLIPES (alanzoka)
+</span><br />
+<span class="borderbtn3">2 - COMO NÃO SER UM FORA DA LEI! (alanzoka)
+</span><br />
+<span class="borderbtn3">3 - O ENIGMA NEGRO 2 (Enigma Brasileiro) (Cellbit) 18:23 18/11/2018
+</span><br />
+<span class="borderbtn3">4 - O Sol Desapareceu. (Cellbit)
+</span><br />
+<span class="borderbtn3">5 - O ENIGMA NEGRO 3 (Enigma Brasileiro) (Cellbit)
+</span><br />
+<span class="borderbtn3">6 - CUBE ESCAPE #26 (Cellbit Jogando)
+</span><br />
+<span class="borderbtn3">7 - CUBE ESCAPE #27 (Cellbit Jogando) 03:10 20/11/2018
+</span><br />
+<span class="borderbtn3">8 - CUBE ESCAPE #28 (Cellbit Jogando) 03:21 21/11/2018
+</span><br />
+<span class="borderbtn3">9 - A SALA DAS GAIOLAS! - VISAGE - Parte 3 (alanzoka) 01:47 21/11/2018
+</span><br />
+<span class="borderbtn3">10 - UMA FESTA ESTRANHA! - WE HAPPY FEW - Parte 5 (alanzoka) 05:44 25/11/2018
+</span><br />
+<span class="borderbtn3">11 - UM JOGO INSANAMENTE LOUCO! (alanzoka) 02:38 06/12/2018
+</span><br />
+<span class="borderbtn3">12 - QUANDO TEM UMA SINCRONIA PERFEITA NA LIVE #1,2,3,4,5 23:02 18/12/2018
+</span><br />
+<span class="borderbtn3">13 - EU NÃO ESTOU SOZINHO! - NIGHT SHIFT (alanzoka) 23:14 21/11/2018
+</span><br />
+<span class="borderbtn3">14 - CUBE ESCAPE #29 (Cellbit Jogando) 17:06 19/12/2018
+</span><br />
+<span class="borderbtn3">15 - CUBE ESCAPE #30 (Cellbit Jogando) 04:29 20/12/2018
+</span><br />
+<span class="borderbtn3">16 - O PIOR SOLDADO DO MUNDO! (alanzoka) 23:15 23/12/2018
+</span><br />
+<span class="borderbtn3">17 - CUBE ESCAPE #31 (Cellbit Jogando) 23:29 23/12/2018
+</span><br />
+<span class="borderbtn3">18 - CUBE ESCAPE #32 (Cellbit Jogando) 16:57 28/12/2018
+</span><br />
+<span class="borderbtn3">19 - CUBE ESCAPE #33 (Cellbit Jogando) 17:15 29/12/2018
+</span><br />
+<span class="borderbtn3">20 - CUBE ESCAPE #34 (Cellbit Jogando) 05:12 31/12/2018</span><br />
+</h2>
+</div>
+</div>
+</div></div>
+</h2>
+</div>
+
+<a name="2018-mídiam"></a>
+<div id="2018-mídiam" class="city mobileShow" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:white;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p><br /><b>Mídia: <span class="w3-text-blue">52</span> <i class="fas fa-video"></i></b><br /><br /><p></h2></div><hr class="whitehr" /><div class="w3-animate-zoom"><div style="text-align:left;">
+Escrito por <a href="https://diario.netlify.com/stake2/" class="w3-text-orange">Izaque Sanvezzo (hm182002) (stake2, Funkysnipa Cat)</a><br />
+"Assistidos" no Pastebin: <a href="https://pastebin.com/e0ETLLzC">https://pastebin.com/e0ETLLzC</a><br /><br /></div></div>
+<div class="w3-animate-zoom"><div class="w3-animate-zoom">
+<div style="text-align:left;">
+<h2 class="" style="text-align:left;">
+<b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Coisas assistidas</a>: </b><span class="w3-text-blue"><b>52</b></span><br />
+<br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Filmes</a>: </b></span><span class="w3-text-blue"><b>4</b></span><br />
+</b>
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Desenhos</a>: </b></span><span class="w3-text-blue"><b>5</b></span><br />
+</b>
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Séries</a>: </b></span><span class="w3-text-blue"><b>5</b></span><br />
+</b>
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Animes</a>: </b></span><span class="w3-text-blue"><b>18</b></span><br />
+</b>
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Videos</a>: </b></span><span class="w3-text-blue"><b>20</b></span><br />
+</b>
+<br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Filmes</a>: </b></span><span class="w3-text-blue"><b>4</b></span><br />
+</b>
+<span class="borderbtn3">1 - Sword Art Online: Ordinal Scale
+</span><br />
+<span class="borderbtn3">2 - Vingadores: Guerra Infinita 06:38 18/08/2018
+</span><br />
+<span class="borderbtn3">3 - Homem Aranha: De Volta Ao Lar
+</span><br />
+<span class="borderbtn3">4 - Jogador Numero 1
+</span><br />
+<br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Desenhos</a>: </b></span><span class="w3-text-blue"><b>5</b></span><br />
+</b>
+<span class="borderbtn3">1 - My Little Pony — Best Gift Ever Holiday [Special]
+</span><br />
+<span class="borderbtn3">2 - Star Vs. The Forces Of Evil - Dublado EP101 "Amor Dificil" 21:18 21/11/2018
+</span><br />
+<span class="borderbtn3">3 - Homem-Aranha EP20 "Spider-Island - Part 2" 22:56 22/11/2018
+</span><br />
+<span class="borderbtn3">4 - Ben 10 Força Alienigena S01E13 - "X=Ben + 2" 04:28 04/12/2018
+</span><br />
+<span class="borderbtn3">5 - Homem-Aranha EP21 "Spider-Island - Part 3" 16:41 07/12/2018
+</span><br />
+<br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Séries</a>: </b></span><span class="w3-text-blue"><b>5</b></span><br />
+</b>
+<span class="borderbtn3">1 - The Walking Dead S06E09(76) "Sem Saída" 03:33 20/11/2018
+</span><br />
+<span class="borderbtn3">2 - The Walking Dead S06E10(77) "O Próximo Mundo" 04:19 20/11/2018
+</span><br />
+<span class="borderbtn3">3 - The Walking Dead S06E11(78) "Nós Desatados" 20:08 21/11/2018
+</span><br />
+<span class="borderbtn3">4 - The Walking Dead S06E12(79) "Ainda Não é Amanhã" 02:50 28/11/2018
+</span><br />
+<span class="borderbtn3">5 - The Walking Dead S06E13(80) "O Mesmo Barco" 02:12 17/12/2018
+</span><br />
+<br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Animes</a>: </b></span><span class="w3-text-blue"><b>18</b></span><br />
+</b>
+<span class="borderbtn3">1 - Anima Yell! EP6 "Super Empolgante Pedestal de Base Dupla!"
+</span><br />
+<span class="borderbtn3">2 - Sword Art Online: Alicization EP6 "Projeto Alicization"
+</span><br />
+<span class="borderbtn3">3 - Anima Yell! EP7 "A Pessoa no Topo Tem Medo de Altura" 04:54 19/11/2018
+</span><br />
+<span class="borderbtn3">4 - Sword Art Online: Alicization EP7 "Academia da Espada" 20:31 19/11/2018
+</span><br />
+<span class="borderbtn3">5 - Mahou Shoujo Site EP9 "Deus Não Vai Me Abandonar" 04:56 21/11/2018
+</span><br />
+<span class="borderbtn3">6 - Sword Art Online; Alicization EP8 "O Orgulho de Espadachim"
+</span><br />
+<span class="borderbtn3">7 - Anima Yell! EP8 "A Senpai e Eu" 16:41 07/12/2018
+</span><br />
+<span class="borderbtn3">8 - Anima Yell! EP9 "A Capitã é Escolhida! Torcida Com Cinco" 21:14 07/12/2018
+</span><br />
+<span class="borderbtn3">9 - Sword Art Online; Alicization EP9 "Responsabilidades de Um Nobre" 04:57 10/12/2018
+</span><br />
+<span class="borderbtn3">10 - Sword Art Online; Alicization EP10 "Código de Tabus" 05:56 10/12/2018
+</span><br />
+<span class="borderbtn3">11 - Anima Yell! EP10 "Meias e Acampamento de Treinos de Verão" 18:16 19/12/2018
+</span><br />
+<span class="borderbtn3">12 - Sword Art Online; Alicization EP11 "Catedral Central" 22:27 20/12/2018
+</span><br />
+<span class="borderbtn3">13 - Ore Ga Suki Nano Wa Imouto Dakedo Imouto Ja Nai EP1 "Como Eu e Minha Irmã Nos Tornamos Autores de Light Novel" 
+</span><br />
+<span class="borderbtn3">14 - Anima Yell! EP11 "Empolgante Apoio de Ombro" 18:04 19/12/2018
+</span><br />
+<span class="borderbtn3">15 - Sword Art Online; Alicization EP12 "A Sábia da Biblioteca" 02:35 25/12/2018
+</span><br />
+<span class="borderbtn3">16 - Anima Yell! EP12 "Uma Por Todas, Todas Por Uma!" 02:15 27/12/2018
+</span><br />
+<span class="borderbtn3">17 - Ore Ga Suki Nano Wa Imouto Dakedo Imouto Ja Nai EP2 "Minha Irmãzinha Almeja Grandes Alturas" 03:55 30/12/2018
+</span><br />
+<span class="borderbtn3">18 - Mahou Shoujo Site EP10 "Breaking" 06:14 31/12/2018
+</span><br />
+<br />
+<b><b><a href="https://diario.netlify.app/watch/" class="w3-text-white">Videos</a>: </b></span><span class="w3-text-blue"><b>20</b></span><br />
+</b>
+<span class="borderbtn3">1 - A HISTÓRIA DO HOMEM QUE NÃO CONSEGUIA GANHAR! MELHORES CLIPES (alanzoka)
+</span><br />
+<span class="borderbtn3">2 - COMO NÃO SER UM FORA DA LEI! (alanzoka)
+</span><br />
+<span class="borderbtn3">3 - O ENIGMA NEGRO 2 (Enigma Brasileiro) (Cellbit) 18:23 18/11/2018
+</span><br />
+<span class="borderbtn3">4 - O Sol Desapareceu. (Cellbit)
+</span><br />
+<span class="borderbtn3">5 - O ENIGMA NEGRO 3 (Enigma Brasileiro) (Cellbit)
+</span><br />
+<span class="borderbtn3">6 - CUBE ESCAPE #26 (Cellbit Jogando)
+</span><br />
+<span class="borderbtn3">7 - CUBE ESCAPE #27 (Cellbit Jogando) 03:10 20/11/2018
+</span><br />
+<span class="borderbtn3">8 - CUBE ESCAPE #28 (Cellbit Jogando) 03:21 21/11/2018
+</span><br />
+<span class="borderbtn3">9 - A SALA DAS GAIOLAS! - VISAGE - Parte 3 (alanzoka) 01:47 21/11/2018
+</span><br />
+<span class="borderbtn3">10 - UMA FESTA ESTRANHA! - WE HAPPY FEW - Parte 5 (alanzoka) 05:44 25/11/2018
+</span><br />
+<span class="borderbtn3">11 - UM JOGO INSANAMENTE LOUCO! (alanzoka) 02:38 06/12/2018
+</span><br />
+<span class="borderbtn3">12 - QUANDO TEM UMA SINCRONIA PERFEITA NA LIVE #1,2,3,4,5 23:02 18/12/2018
+</span><br />
+<span class="borderbtn3">13 - EU NÃO ESTOU SOZINHO! - NIGHT SHIFT (alanzoka) 23:14 21/11/2018
+</span><br />
+<span class="borderbtn3">14 - CUBE ESCAPE #29 (Cellbit Jogando) 17:06 19/12/2018
+</span><br />
+<span class="borderbtn3">15 - CUBE ESCAPE #30 (Cellbit Jogando) 04:29 20/12/2018
+</span><br />
+<span class="borderbtn3">16 - O PIOR SOLDADO DO MUNDO! (alanzoka) 23:15 23/12/2018
+</span><br />
+<span class="borderbtn3">17 - CUBE ESCAPE #31 (Cellbit Jogando) 23:29 23/12/2018
+</span><br />
+<span class="borderbtn3">18 - CUBE ESCAPE #32 (Cellbit Jogando) 16:57 28/12/2018
+</span><br />
+<span class="borderbtn3">19 - CUBE ESCAPE #33 (Cellbit Jogando) 17:15 29/12/2018
+</span><br />
+<span class="borderbtn3">20 - CUBE ESCAPE #34 (Cellbit Jogando) 05:12 31/12/2018</span><br />
+</h2>
+</div>
+</div>
+</div></div>
+</h4>
+</div>
+
+<a name="2018-tarefas"></a>
+<div id="2018-tarefas" class="city mobileHide" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:white;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p><br /><b>Tarefas: <span class="w3-text-blue">44</span> <i class="far fa-calendar-alt"></i></b><br /><br /></h2>
+</div>
+<hr class="whitehr" />
+<div style="text-align:left;"><div class="w3-animate-zoom"><b>Tarefas feitas: </b><span class="w3-text-blue">44</span>
+<br />
+---<br />
+<br /></div>
+<div class="w3-animate-zoom">
+<div style="text-align:left;">
+1 - Assistir "Sword Art Online: Ordinal Scale" [Feito], (filme lindo e emocional e lindo)<br />
+2 - Baixar "Stein's Gate 0" & "Stein's Gate" [Quase]<br />
+3 - Assistir Far Cry 5 [Feito]<br />
+4 - Logar status whats [Feito]<br />
+5 - Ler mensagens whats [Feito]<br />
+6 - Escrever Pequenata [Feito]<br />
+7 - Assistir Vingadores: Guerra Infinita [Feito]<br />
+8 - Assistir Homem Aranha: De Volta Ao Lar [Feito]<br />
+9 - Baixar FL Studio [Feito]<br />
+10 - Baixar GTA SA [Feito]<br />
+11 - Baixar One Punch Man [Feito]<br />
+12 - Fazer o One Punch Man em New World Style ou Hologram Style ou Basic Hologram New World. [Feito]<br />
+13 - Logar Contatos Whatsapp [Feito]<br />
+14 - Logar Jogos Steam [Feito]<br />
+15 - Editar animelist-item no Photoshop/One Punch Man [Feito]<br />
+16 - Entrar no Discord [Feito]<br />
+17 - Jogar Minecraft [Feito]<br />
+18 - Sincronizar pastas musica Mega [Feito]<br />
+19 - Assistir Jogador Numero 1 em (20/09/2018 ás 03:53)<br />
+20 - Escrever Pequenata [Feito]<br />
+21 - Baixar One Punch Man HD [Feito]<br />
+22 - Baixar "Kill The Noise - Roots EP" [Feito]<br />
+23 - Assistir "Como não pegar um pé grande" [Feito]<br />
+24 - Escrever roteiro Dug And Damp [Feito]<br />
+25 - Assistir "Anima Yell" [Feito]<br />
+26 - Fazer um site para status de videos e animes [Feito]<br />
+27 - Colocar link sao e ay [Feito]<br />
+28 - Passar fotos WP [Feito]<br />
+29 - Tomar banho [Feito]<br />
+30 - Fazer coisas Dreamcraft [Feito]<br />
+31 - Postar status [Feito]<br />
+32 - Mandar msg tempos whatsapp [Feito]<br />
+33 - Entrar Usermatheus123 [Feito]<br />
+34 - Printar superanimes, arrumar jogos prints [Feito]<br />
+35 - Entrar no Workana [Feito]<br />
+36 - Fazer sitezin legal(mega mix) [Feito]<br />
+37 - Desenhar print-select new world [Feito]<br />
+38 - Assistir K/DA video [Feito]<br />
+39 - Colocar musicas K/DA no Foobar [Feito]<br />
+40 - Jogar Doki Doki [Feito]<br />
+41 - Postar Meu 2018 [Feito]<br />
+42 - Assisti Black Mirror: Bandersnatch (28/12/2018 das 01:30 até as 04:57)<br />
+43 - Arrumar tets txt [Feito]<br />
+</div>
+</div>
+</div>
+</div>
+</h2>
+</div>
+
+<a name="2018-tarefasm"></a>
+<div id="2018-tarefasm" class="city mobileShow" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:white;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p><br /><b>Tarefas: <span class="w3-text-blue">44</span> <i class="far fa-calendar-alt"></i></b><br /><br /></h2>
+</div>
+<hr class="whitehr" />
+<div style="text-align:left;"><div class="w3-animate-zoom"><b>Tarefas feitas: </b><span class="w3-text-blue">44</span>
+<br />
+---<br />
+<br /></div>
+<div class="w3-animate-zoom">
+<div style="text-align:left;">
+1 - Assistir "Sword Art Online: Ordinal Scale" [Feito], (filme lindo e emocional e lindo)<br />
+2 - Baixar "Stein's Gate 0" & "Stein's Gate" [Quase]<br />
+3 - Assistir Far Cry 5 [Feito]<br />
+4 - Logar status whats [Feito]<br />
+5 - Ler mensagens whats [Feito]<br />
+6 - Escrever Pequenata [Feito]<br />
+7 - Assistir Vingadores: Guerra Infinita [Feito]<br />
+8 - Assistir Homem Aranha: De Volta Ao Lar [Feito]<br />
+9 - Baixar FL Studio [Feito]<br />
+10 - Baixar GTA SA [Feito]<br />
+11 - Baixar One Punch Man [Feito]<br />
+12 - Fazer o One Punch Man em New World Style ou Hologram Style ou Basic Hologram New World. [Feito]<br />
+13 - Logar Contatos Whatsapp [Feito]<br />
+14 - Logar Jogos Steam [Feito]<br />
+15 - Editar animelist-item no Photoshop/One Punch Man [Feito]<br />
+16 - Entrar no Discord [Feito]<br />
+17 - Jogar Minecraft [Feito]<br />
+18 - Sincronizar pastas musica Mega [Feito]<br />
+19 - Assistir Jogador Numero 1 em (20/09/2018 ás 03:53)<br />
+20 - Escrever Pequenata [Feito]<br />
+21 - Baixar One Punch Man HD [Feito]<br />
+22 - Baixar "Kill The Noise - Roots EP" [Feito]<br />
+23 - Assistir "Como não pegar um pé grande" [Feito]<br />
+24 - Escrever roteiro Dug And Damp [Feito]<br />
+25 - Assistir "Anima Yell" [Feito]<br />
+26 - Fazer um site para status de videos e animes [Feito]<br />
+27 - Colocar link sao e ay [Feito]<br />
+28 - Passar fotos WP [Feito]<br />
+29 - Tomar banho [Feito]<br />
+30 - Fazer coisas Dreamcraft [Feito]<br />
+31 - Postar status [Feito]<br />
+32 - Mandar msg tempos whatsapp [Feito]<br />
+33 - Entrar Usermatheus123 [Feito]<br />
+34 - Printar superanimes, arrumar jogos prints [Feito]<br />
+35 - Entrar no Workana [Feito]<br />
+36 - Fazer sitezin legal(mega mix) [Feito]<br />
+37 - Desenhar print-select new world [Feito]<br />
+38 - Assistir K/DA video [Feito]<br />
+39 - Colocar musicas K/DA no Foobar [Feito]<br />
+40 - Jogar Doki Doki [Feito]<br />
+41 - Postar Meu 2018 [Feito]<br />
+42 - Assisti Black Mirror: Bandersnatch (28/12/2018 das 01:30 até as 04:57)<br />
+43 - Arrumar tets txt [Feito]<br />
+</div>
+</div>
+</div>
+</div>
+</h4>
+</div>
+
+<a name="2018-anos"></a>
+<div id="2018-anos" class="city mobileHide" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:white;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Anos: <span class="w3-text-blue">3</span> <i class="far fa-calendar-alt"></i></b><br /><br /></h2></div><hr class="whitehr" />
+<div class="w3-animate-zoom">
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/Years/2018/');"><h2>2018: <i class="far fa-calendar-alt"></i></h2></button>
+
+
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/Years/2019/');"><h2>2019: <i class="far fa-calendar-alt"></i></h2></button>
+
+
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/Years/2020/');"><h2>2020: <i class="far fa-calendar-alt"></i></h2></button>
+
+
+
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/Years/2018/');"><h4>2018: <i class="far fa-calendar-alt"></i></h4></button>
+
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/Years/2019/');"><h4>2019: <i class="far fa-calendar-alt"></i></h4></button>
+
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/Years/2020/');"><h4>2020: <i class="far fa-calendar-alt"></i></h4></button>
+
+</div>
+</div>
+</h2>
+</div>
+
+<a name="2018-anosm"></a>
+<div id="2018-anosm" class="city mobileShow" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:white;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Anos: <span class="w3-text-blue">3</span> <i class="far fa-calendar-alt"></i></b><br /><br /></h2></div><hr class="whitehr" />
+<div class="w3-animate-zoom">
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/Years/2018/');"><h2>2018: <i class="far fa-calendar-alt"></i></h2></button>
+
+
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/Years/2019/');"><h2>2019: <i class="far fa-calendar-alt"></i></h2></button>
+
+
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/Years/2020/');"><h2>2020: <i class="far fa-calendar-alt"></i></h2></button>
+
+
+
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/Years/2018/');"><h4>2018: <i class="far fa-calendar-alt"></i></h4></button>
+
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/Years/2019/');"><h4>2019: <i class="far fa-calendar-alt"></i></h4></button>
+
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/Years/2020/');"><h4>2020: <i class="far fa-calendar-alt"></i></h4></button>
+
+</div>
+</div>
+</h4>
+</div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+<center>
+<a href="#sites"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('sites')"><h2>Sites: <i class="fas fa-globe-americas"></i></h2></button></a>
+</center>
+<a name="sites"></a>
+<br />
+<div id="sites" class="city" style="display:none;border-radius: 50px;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<div class="mobileHide" style="border-radius: 50px;">
+<h4 class="w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:yellow;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<center>
+<div class="w3-animate-zoom">
+<h2 class="mobileHide w3-text-white" style="border-radius: 50px;"><p></p><br /><b><span class="borderbtn3">Sites: <span class="w3-text-blue">24</span> <i class="fas fa-globe-americas"></i></span></b><br /><br /><p></p></h2>
+</div>
+<hr class="mobileHide whitehr" />
+<div class="w3-animate-zoom">
+<h4 class="w3-black">
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://printsofcomputer.netlify.app');"><h2>Prints Of Computer Blocks</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/📘/');"><h2>Diário 📘</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/my_little_pony 🦄/');"><h2>My Little Pony 🦄</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/watch 👁/');"><h2>Watch History 👁</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/music 🎵/');"><h2>Música 🎵</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/games 🎮/');"><h2>Jogos 🎮</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/foobar_albums 🎵/');"><h2>Albuns do Foobar (Foobar_Albums) 🎵</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/terraria_talk 🎮/');"><h2>Terraria_Talk 🎮</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/tasks 🗒/');"><h2>Tarefas 🗒</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/coisas_que_eu_faço/');"><h2>Coisas Que Eu Faço 🗒</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/years 📅/');"><h2>Anos 📅</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/2018/');"><h2>2018 📅</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/2019/');"><h2>2019 📅</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/2020/');"><h2>2020 📅</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/stories_historias 📘/');"><h2>Histórias 📘</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/new_world ⊡/');"><h2>New World ⊡</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/pequenata 📘/');"><h2>A Vida de Pequenata 📘</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/new_world ⊡/spaceliving 📘/');"><h2>SpaceLiving 📘</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/nazzevo 📘/');"><h2>A História dos irmãos Nazzevo 📘</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/lonely stories/');"><h2>Histórias Solitárias 📘</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/luiza/');"><h2>A Visita de Luiza 📘</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/mental_frameworks/');"><h2>Frameworks Mentais</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/template/');"><h2>Modelo de Site</h2></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileHide" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/stake2/');"><h2>Stake2</h2></button>
+</h4>
+</div>
+</center>
+</div>
+</h4>
+</div>
+
+<div class="mobileShow">
+<h4 class="w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:yellow;border-style:solid;border-radius: 50px;">
+<div class="mobileShow">
+<div style="margin:3%;"></div>
+<center>
+<div class="w3-animate-zoom">
+<h2 class="mobileShow w3-text-white"><p></p><br /><b>Sites: <span class="w3-text-blue">24</span> <i class="fas fa-globe-americas"></i></b><br /><br /><p></p></h2>
+</div>
+<hr class="mobileShow whitehr" />
+<div class="w3-animate-zoom">
+<h4 class="w3-black">
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://printsofcomputer.netlify.app');"><h4>Prints Of Computer Blocks</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/📘/');"><h4>Diário 📘</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/my_little_pony 🦄/');"><h4>My Little Pony 🦄</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/watch 👁/');"><h4>Watch History 👁</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/music 🎵/');"><h4>Música 🎵</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/games 🎮/');"><h4>Jogos 🎮</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/foobar_albums 🎵/');"><h4>Albuns do Foobar (Foobar_Albums) 🎵</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/terraria_talk 🎮/');"><h4>Terraria_Talk 🎮</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/tasks 🗒/');"><h4>Tarefas 🗒</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/coisas_que_eu_faço/');"><h4>Coisas Que Eu Faço 🗒</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/years 📅/');"><h4>Anos 📅</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/2018/');"><h4>2018 📅</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/2019/');"><h4>2019 📅</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/2020/');"><h4>2020 📅</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/stories_historias 📘/');"><h4>Histórias 📘</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/new_world ⊡/');"><h4>New World ⊡</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/pequenata 📘/');"><h4>A Vida de Pequenata 📘</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/new_world ⊡/spaceliving 📘/');"><h4>SpaceLiving 📘</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/nazzevo 📘/');"><h4>A História dos irmãos Nazzevo 📘</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/lonely stories/');"><h4>Histórias Solitárias 📘</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/luiza/');"><h4>A Visita de Luiza 📘</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/mental_frameworks/');"><h4>Frameworks Mentais</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/template/');"><h4>Modelo de Site</h4></button>
+<button class="w3-btn yellow w3-text-black borderbtn mobileShow" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/stake2/');"><h4>Stake2</h4></button>
+</h4>
+</div>
+</center>
+</div>
+</h4>
+</div>
+</div>
+</center>
+</body>
+</html>

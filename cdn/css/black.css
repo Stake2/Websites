@@ -1,0 +1,139 @@
+body { 
+    background-color: black;
+    margin: 0;
+    padding: 0;
+} 
+
+.whitehr {
+	border:1px solid white;
+}
+
+.borderbtn {
+	color:black;
+	border-width:5px;
+	border-color:black;
+	border-style:solid;
+}
+
+.borderbtn:hover{
+	color:black;
+	border-width:5px;
+	border-color:black;
+	border-style:solid;
+	background-color:white;
+}
+
+.borderbtn2{
+	color:black;
+}
+
+.borderbtn2:hover{
+	color:black;
+	border-width:5px;
+	border-color:black;
+	border-style:solid;
+	background-color:white;
+}
+
+.borderbtn2natal{
+	color:black;
+}
+
+.borderbtn2natal:hover{
+	color:black;
+	border-width:5px;
+	border-color:black;
+	border-style:solid;
+	background-color:white;
+}
+
+.borderbtnblack {
+	color:black;
+	border-width:5px;
+	border-color:black;
+	border-style:solid;
+}
+
+.borderbtnblack:hover{
+	color:white;
+	border-width:5px;
+	border-color:white;
+	border-style:solid;
+	background-color:black;
+}
+
+.yellow {
+	background-color:#ffeb3b;
+}
+
+.blue {
+	background-color:#2196F3;
+}
+
+.red {
+	background-color:#f44336;
+}
+
+.white {
+	background-color:#fff;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 6px 6px 6px 26px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+ .spoilerbutton {border:none; background-color:transparent;}
+ .spoiler {overflow:hidden;}
+ .spoiler > div {}
+ .spoilerbutton[value="[-------------------------]"] + .spoiler > div {margin-top:-0%;}
+
+.mobileShow { display: none;}
+
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 684px){ 
+    .mobileShow {display: block;}
+}
+ 
+.mobileHide { display: block; }
+
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 684px){
+   .mobileHide { display: none;}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

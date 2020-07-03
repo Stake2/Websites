@@ -1,0 +1,721 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>
+Prints of Computer Blocks
+</title>
+<link rel="stylesheet" type="text/css" href="css/pocb.css" />
+<link rel="stylesheet" href="css/style23.css" type="text/css" data-PolyCalc="1" />
+<link rel="icon" href="https://cdn.pbrd.co/images/4OCR4MJR4.png">
+<meta charset="UTF-8">
+<meta name="keywords" content="Html,Stake's,prints,site,personal website,stake2,staketwo,stakedois,Stake2,stake2 website,izaque sanvezzo,site do izaque sanvezzo,website stake2,computer,prints of computer,poc network,prints of computer network,izaque sanvezzo(stake2),posts,pocb,poc,pocm,prints of computer mobile,pocwp,poc windows phone,prints of computer blocks,w3.css,All rights reserved to Stake's Enterprisetm. @2017,about Izaque Sanvezzo,about stake2,sobre Izaque Sanvezzo,Sobre stake2,Prints of Computer Network,stake2(Izaque Sanvezzo) Personal Website" />
+<meta name="description" content="stake2's Personal Site" />
+<meta name="description" content="Html Testing Website." />
+<meta name="revised" content="Stake's Enterprisetm, 11/10/2018" />
+<meta name="author" content="Stake Ferreira" />
+<meta http-equiv="refresh" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css" >
+<link rel="stylesheet" type="text/css" href="css/w3.css">
+<link rel="stylesheet" href="css/w3.css" />
+<script src="js/jquery-3-2-1.js"></script>
+</head>
+<body onload="startTime()">
+
+<!-- "ir para o topo" e "ir para o final" -->
+<a href="top"></a>
+
+<a href="#bot"><button class="w3-transparent w3-display-bottomright w3-border-0" style="position:fixed;"><img src="https://cdn.pbrd.co/images/4OLqp1uNA.jpg" alt="down button" /></button></a>
+
+<script>
+// Filter
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDIV");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+        } else {
+            a[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<div class="date w3-container w3-display-topright w3-text-cyan">
+<i>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+
+    if (i < 10) {i = "00" + i};  // add zero in front of numbers < 10
+}
+</script><h1>
+<div id="txt"></div><script>document.write(new Date().toLocaleDateString());</script></h1>
+</i></div>
+
+<!-- script de mudança de abas -->
+<script>
+function openCity(evt, cityName) {
+    // Declara todas as variaveis
+    var i, tabcontent, tablinks;
+
+    // Pega todos os elementos com class="tabcontent" e esconde eles
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Pega todos os elementos com class="tablinks" e remove o "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Mostra a aba atual, e adiciona uma "active" classe para o link que abriu a aba
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+}
+</script>
+
+<!-- mudança de abas link OU ação -->
+<a href="javascript:void(0)" class="tablinks" onclick="openCity(event, '')" id="defaultOpen"></a>
+
+<!-- buttons that go o sitemap and other websites of mine -->
+<div class="w3-bar">
+  <button class="smap w3-bar-item w3-white w3-border-0" onclick="window.open('../Sitemap.html');">
+    <h2>Sitemap</h2></button>
+
+  <button class="poc" onclick="window.open('../Prints of Computer/Prints of Computer.html');">
+    <img src="https://cloppics.files.wordpress.com/2017/05/poc.png" alt="poc logo" width="107" height="94"></button>
+
+  <button class="pocb" onclick="window.open('../Prints of Computer Blocks/Prints of Computer Blocks.html');">
+    <img src="https://cloppics.files.wordpress.com/2017/05/pocb.png" alt="pocb logo" width="107" height="94"></button>
+
+  <button class="pocm" onclick="window.open('../Prints of computer mobile(PC Rapido do pai EDITION)/Prints of Computer Mobile.html');">
+    <img src="https://cloppics.files.wordpress.com/2017/05/pocm-logo.png" alt="pocm logo" width="107" height="94"></button>
+
+  <button class="nw" onclick="window.open('../Noteblock Website/Noteblock Website.html');">
+    <img src="https://cloppics.files.wordpress.com/2017/05/nw.png" alt="nw logo" width="106" height="94"></button>
+
+  <button class="posts" onclick="window.open('../Posts/Posts.html');">
+    <img src="https://cloppics.files.wordpress.com/2017/05/posts.png" alt="posts logo" width="106" height="94"></button><br>
+</div>
+<div class="w3-container">
+  <div class="w3-dropdown-hover w3-display-topmiddle">
+    <button class="w3-button w3-black">Tabs</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-2 w3-light-grey" id="myDIV">
+      <input class="w3-input w3-padding" type="text" placeholder="Search.." id="myInput" onkeyup="myFunction()">
+  <button class="w3-bar-item w3-button w3-yellow w3-medium" onclick="openCity('images')">Imagens</button>
+  <button class="w3-bar-item w3-button w3-yellow" onclick="openCity('imagesex')">Imagens Expandidas</button>
+  <button class="w3-bar-item w3-button w3-purple w3-medium w3-text-black" onclick="openCity('gifs')">GIFS</button>
+  <button class="w3-bar-item w3-button w3-purple w3-text-black" onclick="openCity('gifsex')">Gifs Expandidas</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('blocklist')">Textos</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('eitas')">Eitas for the night</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('animes')">Animes e Desenhos</button>
+  <button class="w3-bar-item w3-button w3-text-black w3-medium" style="background-color:#00ff00;" onclick="openCity('music')">Musicas</button>
+  <button class="w3-bar-item w3-button w3-medium w3-text-black" style="background-color:#000099" onclick="openCity('video')">Videos</button>
+  <button class="w3-bar-item w3-button w3-text-black w3-medium" style="background-color:#00ffff;" onclick="openCity('testarea')">Test Area</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('game')">Game</button>
+  <button class="w3-bar-item w3-button w3-red w3-text-black" onclick="openCity('xsync')">Xsync</button>
+  <button class="w3-bar-item w3-button w3-yellow" onclick="openCity('text projects')">Text Projects</button>
+  <button class="w3-bar-item w3-button w3-blue w3-text-black" onclick="openCity('links')">Links</button>
+  </div>
+ </div>
+</div>
+<br><br>
+ <div class="w3-bar">
+  <button class="w3-bar-item w3-button w3-yellow w3-medium" onclick="openCity('images')">Imagens</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('blocklist')">Textos</button>
+  <button class="w3-bar-item w3-button w3-text-black w3-medium" style="background-color:#00ff00;" onclick="openCity('music')">Musicas</button>
+  <button class="w3-bar-item w3-button w3-medium w3-text-black" style="background-color:#000099;" onclick="openCity('video')">Videos</button>
+  <button class="w3-bar-item w3-button w3-text-black w3-medium" style="background-color:#00ffff;" onclick="openCity('testarea')">Test Area</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('game')">Game</button>
+  <button class="w3-bar-item w3-button w3-yellow" onclick="openCity('text projects')">Text Projects</button>
+  <button class="w3-bar-item w3-button w3-blue w3-text-black" onclick="openCity('links')">Links</button>
+</div>
+<br><br>
+<button class="w3-btn w3-orange" onclick="window.open('POCBlocks WP Version/Prints of Computer Blocks WP.html');">WP Version</button>
+
+<!-- Area de Testes -->
+<div id="testarea" class="city" style="display:none">
+<br><br>
+
+    <div id="topo"><!-- Inicio Div Topo -->
+    <div id="menuH"><!-- Inicio Div menuH --> 
+        <div id="menuHbox"><!-- Inicio Div menuH Box -->      
+            <nav>
+                <div id="boxLogo">
+                    <a href="file:///D:/To%20Organize/[OLD%3b%20Cloud%20Drive]%20Main%20Files/Cloud%20Drive/jogos/Izaque/Projetos/Sites/Prints%20of%20Computer%20Blocks/Prints%20of%20Computer%20Blocks.html" title="Pagina Inicial"><img src="../Prints%20of%20Computer Blocks/img/POCB.png" title="Pagina Incial" alt="Pagina Incial" width="40" height="40" /></a>
+                </div>
+                              <div id="actionLogin" class="actionLogin w3-dropdown-click"><img class="avatarAtual" src="img/1720966254.jpg" title="avatar-user" alt="avatar-user" width="32"></div>
+                                
+<div id="menuAction" class="actionMenu w3-dropdown-hover"><span>Menu</span><img src="img/icon-hamburger-white.png" title="icon-menu" alt="icon-menu" width="32">
+<div class="w3-dropdown-content">
+  <button class="w3-btn w3-small w3-yellow w3-medium" onclick="openCity('images')">Imagens</button>
+  <button class="w3-btn w3-small w3-yellow" onclick="openCity('imagesex')">Imagens Expandidas</button>
+  <button class="w3-btn w3-small w3-purple w3-medium w3-text-black" onclick="openCity('gifs')">GIFS</button>
+  <button class="w3-btn w3-small w3-purple w3-text-black" onclick="openCity('gifsex')">Gifs Expandidas</button>
+  <button class="w3-btn w3-small w3-white w3-text-black w3-medium" onclick="openCity('blocklist')">Textos</button>
+  <button class="w3-btn w3-small w3-white w3-text-black w3-medium" onclick="openCity('eitas')">Eitas for the night</button>
+  <button class="w3-btn w3-small w3-white w3-text-black w3-medium" onclick="openCity('animes')">Animes e Desenhos</button>
+  <button class="w3-btn w3-small w3-text-black w3-medium" style="background-color:#00ff00;" onclick="openCity('music')">Musicas</button>
+  <button class="w3-btn w3-small w3-medium w3-text-black" style="background-color:#000099" onclick="openCity('video')">Videos</button>
+  <button class="w3-btn w3-small w3-text-black w3-medium" style="background-color:#00ffff;" onclick="openCity('testarea')">Test Area</button>
+  <button class="w3-btn w3-small w3-white w3-text-black w3-medium" onclick="openCity('game')">Game</button>
+  <button class="w3-btn w3-small w3-red w3-text-black" onclick="openCity('xsync')">Xsync</button>
+  <button class="w3-btn w3-small w3-yellow" onclick="openCity('diario')">Diário</button><br>
+  <button class="w3-btn w3-small w3-blue w3-text-black" onclick="openCity('links')">Links</button><br>
+
+</nav>
+</div></div></div>
+
+        </div><!-- Final Div menuH Box -->
+<div class="js_boxCliente">
+            <ul class="menuLi">
+                                    <li><a href="//www.superanimes.site/conta" title="Minha Conta">Minha Conta <img src="//www.superanimes.site/img/config-client-white.png" title="Minha Conta" alt="Minha Conta"></a></li>
+                    <li class="menuClienteAction" id="myReply">0 Respostas <img src="//www.superanimes.site/img/mail-white.png" title="Respotas comentários" alt="Respotas comentários"></li>
+                    <li class="menuClienteAction" id="myFavoriteUser"><span>Favoritos</span><img src="//www.superanimes.site/img/heart-white.png" title="favorito" alt="favorito"></li>
+                    <li class="menuClienteAction" id="myViewed"><span>Já Assistido</span><img src="//www.superanimes.site/img/view-white.png" title="Já Assistido" alt="Já Assistido"></li>
+                    <li class="menuClienteAction" id="myFollow"><span>Seguindo</span><img src="//www.superanimes.site/img/binoculars-white.png" title="Acompanhar Conteúdo" alt="Acompanhar Conteúdo"></li>
+                    <li class="menuClienteAction" id="myWatchLater"><span>Assistir Depois</span><img src="//www.superanimes.site/img/alarm-clock.png" title="Assistir Depois" alt="Assistir Depois"></li>
+                    <li class="menuClienteAction" id="myHistory">Historico<img src="//www.superanimes.site/img/history-white.png" title="historico" alt="historico"></li>
+                    <li class="menuClienteAction" id="myDownloaded">Baixados<img src="//www.superanimes.site/img/baixar.png" title="Baixados" alt="Baixados"></li>
+                    <li id="configSiteUser">Configuração <img src="//www.superanimes.site/img/tools-white.png" title="configuração" alt="configuração"></li>
+                    <li class="changePassword">Alterar Senha<img src="//www.superanimes.site/img/login-white.png" title="Alterar Senha" alt="Alterar Senha"></li>
+                    <li id="logout">Sair <img src="//www.superanimes.site/img/logout-white.png" title="Desconectar" alt="Desconectar"></li>
+                    <li id="myFavorite"><span>Favoritos Cookie</span><img src="//www.superanimes.site/img/heart-white.png" title="favorito" alt="favorito"></li>
+                                <li>&nbsp;</li>
+            </ul>
+        </div>
+        <div class="js_viewCliente"></div>
+    </div><!-- Final Div menuH -->
+    <div class="spaceMenu"></div>
+</div>
+
+
+
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+} 
+</script>
+
+</div>
+
+<!-- div para a aba "music" -->
+<div id="music" class="city" style="display:none">
+<br><br>
+
+<h3 class="w3-red w3-text-black">9 Musicas Famosas</h3>
+
+<h3 class="w3-red w3-text-black">BIGBANG - FANTASTIC BABY</h3>
+<img src="img/fantasticbaby.jpg" alt="fantastic baby logo" width="18%"><br>
+ <audio controls preload="auto">
+  <source src="../../../Musicas/Albums/K-POP/BIGBANG%20-%20FANTASTIC%20BABY%20M_V.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">BIGBANG - 뱅뱅뱅 (BANG BANG BANG)</h3>
+<img src="img/bangbangbang.jpg" alt="bangbangbang logo" width="18%"><br>
+ <audio controls preload="auto">
+  <source src="../../../Musicas/Albums/K-POP/BIGBANG%20-%20뱅뱅뱅%20(BANG BANG BANG)%20M_V.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">Papa Roach-Face Everything and Rise with lyrics</h3>
+<img src="img/faceeverything.jpg" alt="faceeverything logo" width="18%"><br>
+ <audio controls preload="auto">
+  <source src="../../../../Camera Uploads/Rock/Papa Roach-Face Everything%20and Rise%20with%20lyrics.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">Pegboard Nerds - Gunpoint</h3>
+<img src="img/gunpoint.jpg" alt="gunpoint logo" width="18%"><br>
+ <audio controls preload="auto">
+  <source src="../../../Musicas/Albums/Pegboard Nerds/[Dubstep]%20-%20Pegboard Nerds%20-%20Gunpoint%20[Monstercat Release].mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">Best Gaming Music Mix 2017 | Dubstep, Trap, Drumstep, Electro</h3>
+<img src="img/bestmix.jpg" alt="bestmix logo" width="18%"><br>
+<audio controls preload="auto">
+  <source src="../../../../../../../../Downloads/Video/Music Mixes/Best%20Gaming%20Music%20Mix%202017%20_%20Dubstep,%20Trap,%20Drumstep,%20Electro.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio> 
+
+<h3 class="w3-red w3-text-black">Akon - Oh Africa</h3>
+<img src="img/ohafrica.jpg" alt="ohafrica logo" width="18%"><br>
+<audio controls preload="auto">
+  <source src="../../../Musicas/Albums/ASDF/Akon%20-%20Oh%20Africa.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio> 
+
+<h3 class="w3-red w3-text-black">Akon - Beautiful ft. Colby O'Donis, Kardinal Offishall</h3>
+<img src="img/beautiful.jpg" alt="beautiful logo" width="18%"><br>
+<audio controls preload="auto">
+  <source src="../../../Musicas/Albums/ASDF/Akon%20-%20Beautiful%20ft.%20Colby%20O'Donis,%20Kardinal%20Offishall.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">Coyote Kisses - Six Shooter</h3>
+<img src="img/sixshooter.jpg" alt="sixshooter logo" width="18%"><br>
+<audio controls preload="auto">
+  <source src="../../../Musicas/Albums/RockORAcoustic/Coyote%20Kisses%20-%20Six%20Shooter.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">Blue October - Jump-Rope Pretty-Monkey</h3>
+<img src="https://i.ytimg.com/vi/x1S_3ircBc4/hqdefault.jpg" alt="sixshooter logo" width="18%"><br>
+<audio controls preload="auto">
+  <source src="../../../../Camera Uploads/Rock/Blue October - Jump-Rope Pretty-Monkey-Studio.mpeg.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<h3 class="w3-red w3-text-black">11 Musicas Não conhecidas</h3>
+
+<h3 class="w3-red w3-text-black">Savana2 by 23332</h3>
+<a href="https://55chan.org/mu/res/22920.html#23332"><br>
+<audio controls preload="auto">
+  <source src="https://55chan.org/mu/src/1500955905294.mp3" type="audio/mpeg">
+</a>
+</audio>
+
+<h3 class="w3-red w3-text-black">I ALL by 23346</h3>
+<a href="https://55chan.org/mu/res/22920.html#23346"><br>
+<audio controls preload="auto">
+  <source src="https://55chan.org/mu/src/1500998849923.mp3" type="audio/mpeg">
+</a>
+</audio>
+
+<h3 class="w3-red w3-text-black">37 - Ok by 23832</h3>
+<a href="https://55chan.org/mu/res/22920.html#23832"><br>
+<audio controls preload="auto">
+  <source src="https://55chan.org/mu/src/1503821948560.mp3" type="audio/mpeg">
+</a>
+</audio>
+
+<h3 class="w3-red w3-text-black">blackdiamond master2 by 23859</h3>
+<a href="https://55chan.org/mu/res/22920.html#23859"><br>
+<audio controls preload="auto">
+  <source src="https://55chan.org/mu/src/1503968782817.ogg" type="audio/ogg">
+</a>
+</audio>
+
+<h3 class="w3-red w3-text-black">sera q foi by 23337</h3>
+<a href="https://55chan.org/mu/res/22920.html#23337"><br>
+<audio controls preload="auto">
+  <source src="https://55chan.org/mu/src/1500981086944.mp3" type="audio/ogg">
+</a>
+</audio>
+
+<h3 class="w3-red w3-text-black">I ALL by 23337</h3>
+<a href="https://55chan.org/mu/res/22920.html#23345"><br>
+<audio controls preload="auto">
+  <source src="https://55chan.org/mu/src/1500998849923.mp3" type="audio/ogg">
+</a>
+</audio>
+
+<h3 class="w3-red w3-text-black">i will survive pseudomaster by 23432</h3>
+<a href="https://55chan.org/mu/res/22920.html#23432"><br>
+<audio controls preload="auto">
+  <source src="https://55chan.org/mu/src/1501431868784.mp3" type="audio/ogg">
+</a>
+</audio>
+
+<h3 class="w3-red w3-text-black">DOCTOR X by 23740</h3>
+<a href="https://55chan.org/mu/res/22920.html#23740"><br>
+<audio controls preload="auto">
+  <source src="https://55chan.org/mu/src/1503256114038.mp3" type="audio/ogg">
+</a>
+</audio>
+
+<h3 class="w3-red w3-text-black">something,Emotrap by 23758</h3>
+<a href="https://55chan.org/mu/res/22920.html#23758"><br>
+<audio controls preload="auto">
+  <source src="https://55chan.org/mu/src/1503342882980.mp3" type="audio/ogg">
+</a>
+</audio>
+
+<h3 class="w3-red w3-text-black">maybe i feeling fine again by 23759</h3>
+<a href="https://55chan.org/mu/res/22920.html#23759"><br>
+<audio controls preload="auto">
+  <source src="https://55chan.org/mu/src/1503343085112.mp3" type="audio/ogg">
+</a>
+</audio>
+
+<h3 class="w3-red w3-text-black">04 - Ok by 23879(23832)</h3>
+<a href="https://55chan.org/mu/res/22920.html#23879"><br>
+<audio controls preload="auto">
+  <source src="https://55chan.org/mu/src/1504075091334.mp3" type="audio/ogg">
+</a>
+</audio>
+
+</div>
+
+<div id="video" class="city" style="display:none">
+<br><br>
+<!--
+<h3>Best Gaming Music Mix 2017 | Dubstep, Trap, Drumstep, Electro</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4ZhH-o-jzMM" frameborder="0" allowfullscreen></iframe>
+
+<br><br><br><br><br><br><br><br><br>
+<h3>Davie204 - Bass Styles 1</h3>
+ <video width="300" height="200" controls>
+  <source src="../../../Videos/Bass%20Styles.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> -->
+</div>
+
+<div id="text projects" class="city" style="display:none;">
+<br><br>
+<button class="w3-btn w3-white" onclick="window.open('Diário.html');">
+Diario
+</button>
+<br>
+
+<button class="w3-btn w3-white" onclick="window.open('backup/Printdump.html')">
+Printdump
+</button>
+<br>
+
+<button class="w3-btn w3-white" onclick="window.open('4chan.html')">
+4chan
+</button>
+<br>
+
+</div>
+
+<div id="images" class="city" style="display:none">
+<br><br>
+
+<!-- botoes de mudança de aba "images","eitas" e "other"-->
+<br>
+  <button class="w3-button w3-yellow" onclick="openCity('imagesex')">Imagens Expandidas</button>
+  <button class="w3-bar-item w3-button w3-purple w3-medium w3-text-black" onclick="openCity('gifs')">GIFS</button>
+  <button class="w3-button w3-red w3-text-black" onclick="openCity('xsync')">Xsync</button>
+<br><br>
+<hr><p><h1>Images</h1><p><hr><br><br><br><br><br>
+
+<!-- Sweet Breeze -->
+
+<img draggable="true" src="https://cloppics.files.wordpress.com/2017/09/sweet_breeze_by_nekojackun-daonqk6.png" alt="Sweet Breeze by Nekojackun" width="50%" class="w3-image" align="right" border="15"><hr>
+<h1>Sweet Breeze</h1><hr>
+<a href="https://cloppics.files.wordpress.com/2017/09/sweet_breeze_by_nekojackun-daonqk6.png" target="_blank"><h1 class="fulltext" align="left">
+Sweet Breeze Fullscreen</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Lightning Dust -->
+
+<img draggable="true" src="https://cloppics.files.wordpress.com/2017/09/58154584_p12_master1200.jpg" alt="Lightning Dust" width="50%" align="right" border="15"><hr>
+<h1>Lightning Dust</h1><hr>
+<a href="https://cloppics.files.wordpress.com/2017/09/58154584_p12_master1200.jpg" target="_blank"><h1 class="fulltext" align="left">
+Lightning Dust Fullscreen</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Himouto Twilight by JonFawkes -->
+
+<a href="https://jonfawkes.deviantart.com/art/Himouto-Twilight-Patreon-Commission-565248249" target="_blank"><img src="https://cloppics.files.wordpress.com/2017/09/medium201.jpeg" alt="Himouto Twilight by JonFawkes" width="45%" align="right"/></a><hr>
+<h1>Himouto Twilight by JonFawkes</h1><hr>
+<a href="https://cloppics.files.wordpress.com/2017/09/medium201.jpeg" alt="Himouto Twilight by JonFawkes" target="_blank"><h1 class="fulltext" align="left">
+Himouto Twilight by JonFawkes Fullscreen</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Shy Horse -->
+
+<a href="https://postimg.org/image/66dz6takl/" target="_blank"><img src="https://s26.postimg.org/5gv6uga15/shy_horse_by_witchtaunter-dbbf27n.png" alt="shy_horse_by_witchtaunter-dbbf27n" width="48%" align="right"/></a><hr>
+<h1>Shy Horse</h1><hr>
+<a href="../../../Imagens/Poneys/Week 10/shy_horse_by_witchtaunter-dbbf27n.png" target="_blank"><h1 class="fulltext" align="left">
+Shy Horse Full</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- So now what by mlpics -->
+
+<a href="https://mlpics.deviantart.com/art/So-now-what-699072152" target="_blank"><img src="https://cloppics.files.wordpress.com/2017/09/so_now_what___by_mlpics-dbk7jiw.png" alt="So now what by mlpics" width="47%" align="right"/></a><hr>
+<h1>So now what</h1><hr>
+<a href="https://cloppics.files.wordpress.com/2017/09/so_now_what___by_mlpics-dbk7jiw.png">
+<h1 class="fulltext" align="left">
+So now what Fullscreen</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Nom Nom Dash -->
+
+<a href="http://haden-2375.deviantart.com/art/Nom-Nom-Dash-681600934" target="_blank"><img draggable="true" src="https://cloppics.files.wordpress.com/2017/09/nom_nom_dash_by_haden_2375-db9t2na.png" alt="Nom Nom Dash by haden" width="48%" align="right" border="15"></a><hr>
+<h1>Nom Nom Dash by haden</h1><hr>
+<a href="https://cloppics.files.wordpress.com/2017/09/nom_nom_dash_by_haden_2375-db9t2na.png">
+<h1 class="fulltext" align="left">
+Nom Nom Dash by haden Full</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--21 "<br>" Depois da ultima imagem-->
+</div>
+
+<br>
+<!-- div para a aba "imagensex" -->
+<div id="imagesex" class="tabcontent city" style="display:none">
+<br><br><br>
+<br><br><br><br>
+<!-- Sweet Breeze -->
+<a href="https://cloppics.files.wordpress.com/2017/09/sweet_breeze_by_nekojackun-daonqk6.png">
+<img src="https://cloppics.files.wordpress.com/2017/09/sweet_breeze_by_nekojackun-daonqk6.png" alt="Sweet Breeze" width="70%" align="left"></a>
+<!-- Lightning Dust -->
+<a href="https://cloppics.files.wordpress.com/2017/09/58154584_p12_master1200.jpg">
+<img src="https://cloppics.files.wordpress.com/2017/09/58154584_p12_master1200.jpg" alt="Lightning Dust" width="70%" align="left"></a>
+<!-- Aftercamp Sunset Shimmer -->
+<a href="https://cloppics.files.wordpress.com/2017/09/medium201.jpeg" alt="Himouto Twilight by JonFawkes">
+<img src="https://cloppics.files.wordpress.com/2017/09/medium201.jpeg" alt="Himouto Twilight by JonFawkes" width="70%"></a>
+<!-- Shy Horse -->
+<a href="https://s26.postimg.org/5gv6uga15/shy_horse_by_witchtaunter-dbbf27n.png">
+<img src="https://s26.postimg.org/5gv6uga15/shy_horse_by_witchtaunter-dbbf27n.png" alt="Shy Horse" width="70%" align="left"></a>
+<!-- So now what by mlpics -->
+<a href="https://cloppics.files.wordpress.com/2017/09/so_now_what___by_mlpics-dbk7jiw.png">
+<img src="https://cloppics.files.wordpress.com/2017/09/so_now_what___by_mlpics-dbk7jiw.png" alt="So now what by mlpics" width="70%" align="left"></a>
+<!-- Nom Nom Dash -->
+<a href="https://cloppics.files.wordpress.com/2017/09/nom_nom_dash_by_haden_2375-db9t2na.png">
+<img src="https://cloppics.files.wordpress.com/2017/09/nom_nom_dash_by_haden_2375-db9t2na.png" alt="Nom Nom Dash by haden" width="70%" align="left"></a>
+<br><br><br><br>
+</div>
+<br>
+
+<div id="blocklist" class="city" style="display:none">
+<br><br>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('eitas')">Eitas for the night</button>
+  <button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="openCity('animes')">Animes e Desenhos</button>
+</div>
+
+<div id="animes" class="tabcontent city" style="display:none">
+<br><br>
+<iframe src="blocks/ANIMES E DESENHOS 4.9(14.03.17;14;31).txt" frameborder="0" height="4800"
+      width="100%"></iframe>
+</div>
+
+<div id="eitas" class="tabcontent city" style="display:none">
+<br><br>
+<iframe src="blocks/Eitas for the night 2.9.4.1(20.05.17;10;03.22;03).txt" frameborder="0" height="7000"
+      width="100%" align="right"></iframe>
+</div>
+
+<br>
+<div id="game" class="tabcontent city" style="display:none">
+<button class="w3-bar-item w3-button w3-white w3-text-black w3-medium" onclick="window.open('Game/Start.html');"><a href="Game/Start.html">Game Start!</a></button>
+</div>
+<br>
+<div id="gifs" class="tabcontent city" style="display:none">
+<br><br>
+  <button class="w3-button w3-purple w3-text-black" onclick="openCity('gifsex')">Gifs Expandidas</button>
+<br><br><br>
+
+<!-- Luna SUPER cute! -->
+<img src="../../../Imagens/Poneys\Week 10/Luna Half cute and half evil.gif" alt="Luna SUPER cute!" width="50%" align="right" border="15"><hr>
+<h1>Luna SUPER cute!</h1><hr>
+<a href="../../../Imagens/Poneys\Week 10/Luna Half cute and half evil.gif"><h1 class="fulltext" align="left">
+Luna Half cute and half evil Fullscreen</h1></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Luminous Siren -->
+<img src="../../../Imagens/Poneys/Week 10/tumblr_oqfuj9Hq591sxzz1wo2_r1_1280.gif" alt="Luminous Siren" width="49%" align="right" border="15"><hr>
+<h1>Luminous Siren</h1><hr>
+<a href="../../../Imagens/Poneys/Week 10/tumblr_oqfuj9Hq591sxzz1wo2_r1_1280.gif"><h1 class="fulltext" align="left">
+Luminous Siren Fullscreen</h1></a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Animated DJ -->
+<img src="../../../Imagens/Poneys/Week 10/_animated__dj_hor____by_underpable_by_imiokun-daqqqg6.gif" alt="Animated DJ" width="50%" align="right" border="15"><hr>
+<h1>Animated DJ</h1><hr>
+<a href="../../../Imagens/Poneys/Week 10/_animated__dj_hor____by_underpable_by_imiokun-daqqqg6.gif"><h1 class="fulltext" align="left">
+Animated DJ Fullscreen</h1></a><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<!-- div para a aba "gifsex" -->
+<div id="gifsex" class="tabcontent city" style="display:none">
+<br><br>
+
+<!--Luna SUPER cute!-->
+<a href="../../../Imagens/Poneys\Week 10/Luna Half cute and half evil.gif">
+<img src="../../../Imagens/Poneys\Week 10/Luna Half cute and half evil.gif" alt="Luna SUPER cute!" width="50%" align="left"></a><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a href="../../../Imagens/Poneys/Week 10/tumblr_oqfuj9Hq591sxzz1wo2_r1_1280.gif">
+<img src="../../../Imagens/Poneys/Week 10/tumblr_oqfuj9Hq591sxzz1wo2_r1_1280.gif" alt="Luminous Siren" width="50%" align="left"></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a href="../../../Imagens/Poneys/Week 10/_animated__dj_hor____by_underpable_by_imiokun-daqqqg6.gif">
+<img src="../../../Imagens/Poneys/Week 10/_animated__dj_hor____by_underpable_by_imiokun-daqqqg6.gif" alt="Animated DJ" width="50%" align="left"></a>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+<br>
+<div id="xsync" class="city" style="display:none">
+
+<p><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1>39 Images here</h1>
+<br><br><br><br><br><br><br><br>
+<a href="https://e621.net/post/show/777071">
+<img src="https://static1.e621.net/data/d4/6f/d46f998385754a99058b95fc7fdb9ed6.jpg" alt="1 twi" width="50%"></a><br>
+<a href="https://gelbooru.com/index.php?page=post&s=view&id=2705415">
+<img src="https://cloppics.files.wordpress.com/2017/09/1473353377953.jpg" alt="2 twintails" width="40%"></a><br>
+<a href="http://www.sexychinese.net/imiss%E7%88%B1%E8%9C%9C%E7%A4%BE-vol-040-%E6%9D%8E%E7%8E%89%E6%B4%81daisy-57p-5283/">
+<img src="https://cloppics.files.wordpress.com/2017/09/1kti9kr.jpg" alt="3 lari" width="50%"></a><br>
+<a href="https://danbooru.donmai.us/posts/2353593">
+<img src="https://danbooru.donmai.us/data/__mei_overwatch_drawn_by_dandon_fuga__2c6034405486530a95f16be401fc017d.jpg" alt="4 mei" width="40%"></a><br>
+<a href="https://chan.sankakucomplex.com/post/show/5635690">
+<img src="https://cloppics.files.wordpress.com/2017/09/tumblr_obxnmuepno1ubou7ro1_1280.png" alt="5 wee" width="50%"></a><br>
+<a href="http://kawaiidetectiveenthusiast.tumblr.com/post/144846788295/i-joined-the-two-together-decided-i-might-as-well">
+<img src="https://68.media.tumblr.com/fa0680e13925ad99759bb8f2dc518bdd/tumblr_o7o5h19r4z1ucep5mo1_1280.png" alt="6 d.va" width="50%"></a><br>
+<a href="https://e621.net/post/show/651162">
+<img src="https://static1.e621.net/data/51/b6/51b619c28c6fa022a0e06184d4dcb8a1.jpg" alt="7 cherri" width="35%"></a><br>
+<a href="http://s.fap.to/photo/700007304/#192">
+<img src="http://x.imagefapusercontent.com/u/japavidols/3369581/1215638048/haruna-megumi-814548.jpg" alt="8 ayu" width="40%"></a><br>
+<a href="https://gelbooru.com/index.php?page=post&s=view&id=1556660">
+<img src="https://simg4.gelbooru.com//images/d5/10/d51032ebb54c36c49adf383d1b286ccd.jpeg" alt="9 len rin" width="50%"></a><br>
+<a href="https://gelbooru.com/index.php?page=post&s=view&id=2054674">
+<img src="https://gelbooru.com//images/85/19/8519256cbf52d60b36c64872a68882b8.jpg" alt="10 suq" width="50%"></a><br>
+<a href="http://www.backchina.com/forum/20160729/info-1399777-1-1.html">
+<img src="http://mmbiz.qpic.cn/mmbiz/VAbaNB1HcC0xRS4gFJibJLRLH5CzicA7MIfoPfUyV36DtEhwLY6l1tDQrE0RphvIMDVFyJtB8xpIsuCmTMNicYZxA/0?wx_fmt=jpeg" alt="11 desq" width="50%"></a><br>
+<a href="https://e621.net/post/show/741840">
+<img src="https://static1.e621.net/data/86/79/8679b60eb588e8478053bc1dd6a995b4.png" alt="12 zecora" width="50%"></a><br>
+<a href="https://gelbooru.com/index.php?page=post&s=view&id=3099952">
+<img src="https://cloppics.files.wordpress.com/2017/09/92cda07bf7dfc068774ec9b59ad01017.jpg" alt="13 miyaura" width="40%"></a><br>
+<a href="https://derpibooru.org/488251">
+<img src="https://derpicdn.net/img/view/2013/12/2/488251.jpg" alt="14 futa orgy" width="50%"></a><br>
+<a href="https://e-hentai.org/s/bd34fa9ca4/982863-926">
+<img src="https://cloppics.files.wordpress.com/2017/09/0968_1377401045-scorpdk_130822_03c.jpg" alt="15 rainbow sexy" width="35%"></a><br>
+<a href="https://chan.sankakucomplex.com/post/show/5669838">
+<img src="https://cloppics.files.wordpress.com/2017/09/sinner-artist-sombra-overwatch-overwatch-3466197.jpeg" alt="16 sombra" width="50%"></a><br>
+<a href="https://im9.eu/picture/hentai-giant-hentai-dump-142-images-contains-some-futanari-trap-furry-yuri-125">
+<img src="https://p.im9.eu/hentai-giant-hentai-dump-142-images-contains-some-futanari-trap-furry-yuri-125.jpg" alt="17 rosa" width="45%"></a><br>
+<a href="https://derpibooru.org/1263288">
+<img src="https://derpicdn.net/img/view/2016/10/2/1263288.gif" alt="18 futashy" width="50%"></a><br>
+<a href="https://e621.net/post/show/511612">
+<img src="https://static1.e621.net/data/6c/6b/6c6b1551539cb450f6688aa9c5a70783.jpg" alt="19 lunachibi" width="30%"></a><br>
+<a href="https://e621.net/post/show/591271">
+<img src="https://static1.e621.net/data/fc/50/fc503e11fd3d787839bb334819597c06.png" alt="20 shyorgy" width="40%"></a><br>
+<a href="http://nsfwee.tumblr.com/tagged/wee/page/2">
+<img src="http://68.media.tumblr.com/9bcbae6b0b3983788665c71753c41ef2/tumblr_oelvfrktl11ubou7ro1_1280.png" alt="21 weeros" width="50%"></a><br>
+<a href="https://derpibooru.org/1272034">
+<img src="https://cloppics.files.wordpress.com/2017/09/1999474-equestria_girls-friendship_is_magic-legend_of_everfree-my_little_pony-spectre-z-sunset_shimmer-animated.gif" alt="22 sunsetbootyful" width="30%"></a><br>
+<a href="https://e621.net/post/show/1029593">
+<img src="https://cloppics.files.wordpress.com/2017/09/1279890.png" alt="23 casual velvet" width="25%"></a><br>
+<a href="https://derpibooru.org/1006813">
+<img src="https://derpicdn.net/img/view/2015/10/21/1006813.png" alt="24 minuettedonut" width="50%"></a><br>
+<a href="https://derpibooru.org/1158702">
+<img src="https://derpicdn.net/img/view/2016/5/20/1158702.jpg" alt="25 lemonsexy" width="50%"></a><br>
+<a href="https://derpibooru.org/865954">
+<img src="https://derpicdn.net/img/view/2015/4/5/865954.jpg" alt="26 maneac-um" width="50%"></a><br>
+<a href="https://derpibooru.org/991149">
+<img src="https://derpicdn.net/img/view/2015/9/30/991149.png" alt="27 pommelfatherpc" width="45%"></a><br>
+<a href="https://derpibooru.org/1126520">
+<img src="https://cloppics.files.wordpress.com/2017/09/1126520.png" alt="28 flurrysexy" width="50%"></a><br>
+<a href="http://thatpervert.com/tag/Fluttershy/194">
+<img src="http://img0.thatpervert.com/pics/post/mlp-porn-r34--Fluttershy-3266024.jpeg" alt="29 smellyshy" width="45%"></a><br>
+<a href="https://e-hentai.org/s/233bbab88d/724835-104">
+<img src="https://e-hentai.org/fullimg.php?gid=724835&page=104&key=e2uhqgd8yc6" alt="30 cutebloom" width="50%"></a><br>
+<a href="https://gelbooru.com/index.php?page=post&s=view&id=2245014">
+<img src="https://cloppics.files.wordpress.com/2017/09/33_stockings_39.jpg" alt="31 static-brownie" width="50%"></a><br>
+<a href="http://scdk-nsfw.tumblr.com/tagged/nsfw/page/4">
+<img src="http://68.media.tumblr.com/ed3d3c924fccc5e6312977d6fcc88f7e/tumblr_ogcwz0yl2r1r0alxmo1_1280.jpg" alt="32 ahelestia" width="50%"></a><br>
+<a href="https://derpibooru.org/1352830?q=artist%3Asumin6301">
+<img src="https://cloppics.files.wordpress.com/2017/09/1352830.jpeg" alt="33 cutelight" width="37%"></a><br>
+<a href="https://derpibooru.org/552337/">
+<img src="https://cloppics.files.wordpress.com/2017/09/552337.jpeg" alt="34 awesomebuttshy" width="40%"></a><br>
+<a href="https://8ch.net/clop/index.html">
+<img src="https://cloppics.files.wordpress.com/2017/09/album-3-in-a-roll.png" alt="35 3 in a roll" width="49%"></a><br>
+<a href="https://derpibooru.org/1486243?q=artist%3Atwistedscarlett60%2Cfluttershy">
+<img src="https://cloppics.files.wordpress.com/2017/09/1486243.png" alt="36 sexy flutter" width="40%"></a><br>
+<a href="http://boards.4chan.org/s/thread/17601541">
+<img src="https://cloppics.files.wordpress.com/2017/09/album-3-in-a-roll-2.png" alt="37 3 in a roll 2" width="49%"></a><br>
+<a href="https://derpibooru.org/1283843?q=twilight+sparkle%2Cequestria+girls">
+<img src="https://cloppics.files.wordpress.com/2017/09/1283843.png" alt="38 awesome twilight spice" width="46%"></a><br>
+<a href="https://derpibooru.org/1283843?q=twilight+sparkle%2Cequestria+girls">
+<img src="https://cloppics.files.wordpress.com/2017/09/1501326.png" alt="39 awesome pinkie pie" width="39%"></a><br>
+
+</div>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<a href="http://www.mediafire.com/file/8rvw8d3kvovy3uf/All_Photos.rar" class="download"><h2 align="right" style="font-family:arial; color:#003300;" class="download">Download All Photos</h2></a>
+
+<center style="color: #006622;">
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><img src="https://cloppics.files.wordpress.com/2017/05/pocb.png" alt="POCB logo" width="15%" style="display:block;margin:auto;">
+<hr><p valign="bottom"><small>All rights reserved to Stake's Enterprise</small><sup>tm</sup>. @2017</p><hr>
+</center>
+
+<a href="#top"><button class="w3-transparent w3-display-topright w3-border-0" style="position:fixed;"><img src="https://cdn.pbrd.co/images/4OMBxalPU.jpg" /></button></a>
+<a name="bot"></a>
+</body>
+</html>
