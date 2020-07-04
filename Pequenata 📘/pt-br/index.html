@@ -14,23 +14,23 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" value="@The_Snakes90" />
 <meta name="twitter:creator" content="@The_Snakes90" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/pqnt.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Pequenata.css" />
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/w3.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Colors.css" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/stories.css" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/mobile.css" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/imghover.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Stories.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Mobile.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/ImgHover.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Notification.css" />
-<meta name="revised" content="Stake's Enterprisetm, 15/06/2020" />
+<meta name="revised" content="Stake's Enterprisetm, 04/07/2020" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 <script src="https://diario.netlify.app/cdn/js/myFunction.js"></script>
-<script src="https://diario.netlify.app/cdn/js/tabs.js"></script>
-<!--<script src="https://diario.netlify.app/cdn/js/redirect.js" onLoad="rodar();"></script>-->
+<script src="https://diario.netlify.app/cdn/js/Tabs.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Redirect.js" onLoad="Rodar();"></script>
 <script src="https://diario.netlify.app/cdn/js/ShowHide.js"></script>
-<script src="https://diario.netlify.app/cdn/js/sidemenu.js"></script>
+<script src="https://diario.netlify.app/cdn/js/SideMenu.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
 <body>
@@ -59,12 +59,22 @@
 <a href="#pequenata-escreverm" onclick="closeNav()"><button id="button4" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('pequenata-escreverm')"><h4>Escrever: <i class="fas fa-pen"></i></h4></button></a>
 <a href="#pequenata-históriasm" onclick="closeNav()"><button id="button5" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('pequenata-históriasm')"><h4>Histórias: <i class="fas fa-book"></i></h4></button></a>
 <a href="#pequenata-registro de mudançasm" onclick="closeNav()"><button id="button6" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('pequenata-registro de mudançasm')"><h4><i class="fas fa-bell"></i></h4></button></a>
-<br />
-<b>Notice</b>:  Undefined variable: sitetextmaker in <b>C:\Mega\Diario\PHP\Global\Variables\Top Buttons Creator.php</b> on line <b>170</b><br />
 </div>
 <button id="ShowMenu" class="w3-btn bg2 borderbtn mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="openNav()"><h2><i class="fas fa-bars"></i></h2></button>
 
 </div>
+<script>
+var olddocumenttitle = "";
+
+function ChangeTitle() {
+	olddocumenttitle = document.title;
+	document.title = "(1) " + document.title;
+}
+
+function ResetTitle() {
+	document.title = olddocumenttitle;
+}
+</script>
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <div style="background-color:black;margin-left:5%;margin-right:5%;border-width:4px;border-color:#b88e50;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;"><h2 class="pqnttext w3-animate-zoom"><p><br /><b>A Vida de Pequenata: <i class="fas fa-book"></i></b><br /><br /><p></h2></div>
@@ -78,17 +88,19 @@
 <h4 class="pqnttext">
 Autor: <span class="w3-text-orange">Izaque Sanvezzo (stake2)<br /></span>
 Capítulos: <span class="w3-text-orange">29</span><br />
-Leitores: <span class="w3-text-orange">45 <i class="fas fa-book-reader"></i></span><br />
+Leitores: <span class="w3-text-orange">34 <i class="fas fa-book-reader"></i></span><br />
 Data: <span class="w3-text-orange">05/08/2017</span><br />
 Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 </div>
 
-<div id="notificationdiv" class="stake2animatebottom border w3-text-black bg mobileHide" style="position:fixed;right:0;bottom:0;padding-top:2%;padding-bottom:2%;padding-left:7%;padding-right:7%;border-radius: 50px;"><h3><span id="notificationclose" class="w3-btn #b88e50 borderbtn borderbtn" style="float:left;margin-left:-10%;border-radius: 50px;">X</span>Novo capítulo revisado <i class="fas fa-bell"></i><b><span style="margin-left:2%;"><a href="#capítulo-10" title="10 - O sonho alegórico"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-10');DefineChapter(10);">10 - O sonho alegórico</button></a> 
+<div id="notificationdiv" onload="ChangeTitle();" class="stake2animatebottom border w3-text-black bg mobileHide" style="position:fixed;right:0;bottom:0;padding-top:2%;padding-bottom:2%;padding-left:7%;padding-right:7%;border-radius: 50px;"><h3><span id="notificationclose" class="w3-btn #b88e50 borderbtn borderbtn" style="float:left;margin-left:-10%;border-radius: 50px;">X</span>Novo capítulo revisado <i class="fas fa-bell"></i><b><span style="margin-left:2%;"><a href="#capítulo-10" title="10 - O sonho alegórico"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-10');DefineChapter(10);">10 - O sonho alegórico</button></a> 
 </span></b></h3></div>
-<div id="notificationdivm" class="stake2animatebottom border w3-text-black bg mobileShow" style="position:fixed;right:0;bottom: 0;padding-top:1%;padding-bottom:1%;padding-left:10%;padding-right:10%;border-radius: 50px;"><h4><span id="notificationclosem" class="w3-btn #b88e50 borderbtn borderbtn" style="float:left;border-radius: 50px;">X</span><br /><br /><b> Novo capítulo revisado <i class="fas fa-bell"></i></b><br /><br /><b><a href="#capítulo-10" title="10 - O sonho alegórico"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-10');DefineChapter(10);">10 - O sonho alegórico</button></a> 
+<div id="notificationdivm" onload="ChangeTitle();" class="stake2animatebottom border w3-text-black bg mobileShow" style="position:fixed;right:0;bottom: 0;padding-top:1%;padding-bottom:1%;padding-left:10%;padding-right:10%;border-radius: 50px;"><h4><span id="notificationclosem" class="w3-btn #b88e50 borderbtn borderbtn" style="float:left;border-radius: 50px;">X</span><br /><br /><b> Novo capítulo revisado <i class="fas fa-bell"></i></b><br /><br /><b><a href="#capítulo-10" title="10 - O sonho alegórico"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-10');DefineChapter(10);">10 - O sonho alegórico</button></a> 
 </b></h4></div>
 
-<script src="https://diario.netlify.app/cdn/js/Notification.js"></script>
+<script>
+ChangeTitle();
+</script><script src="https://diario.netlify.app/cdn/js/Notification.js"></script>
 <script src="https://diario.netlify.app/cdn/js/HideNotification.js"></script>
 
 <a name="pequenata-ler história"></a>
@@ -118,13 +130,13 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 </div><div class="shakesidetoside">
 <a href="#capítulo-2" title="2 - O Começo, Parte 2"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('capítulo-2');DefineChapter(2);">2 - O Começo, Parte 2</button></a> 
 <center>
-<a href="#capítulo-2" title="2 - O Começo, Parte 2"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 2.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-3');DefineChapter(3);" />
+<a href="#capítulo-2" title="2 - O Começo, Parte 2"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 2.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');DefineChapter(2);" />
 </div><br class="mobileHide" />
 
 </a>
 
 <a href="#capítulo-2">
-<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 2.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-3');DefineChapter(3);" />
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 2.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');DefineChapter(2);" />
 </div><br class="mobileShow" />
 
 </a>
@@ -246,13 +258,13 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 </div><div class="shakesidetoside">
 <a href="#capítulo-10" title="10 - O sonho alegórico"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-10');DefineChapter(10);">10 - O sonho alegórico</button></a> 
 <center>
-<a href="#capítulo-10" title="10 - O sonho alegórico"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 10.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');DefineChapter(2);" />
+<a href="#capítulo-10" title="10 - O sonho alegórico"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 10.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-10');DefineChapter(10);" />
 </div><br class="mobileHide" />
 
 </a>
 
 <a href="#capítulo-10">
-<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 10.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');DefineChapter(2);" />
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 10.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-10');DefineChapter(10);" />
 </div><br class="mobileShow" />
 
 </a>
@@ -330,13 +342,13 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 </div><div class="shakesidetoside">
 <a href="#capítulo-2" title="2 - O Começo, Parte 2"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('capítulo-2');DefineChapter(2);">2 - O Começo, Parte 2</button></a> 
 <center>
-<a href="#capítulo-2" title="2 - O Começo, Parte 2"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 2.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-3');DefineChapter(3);" />
+<a href="#capítulo-2" title="2 - O Começo, Parte 2"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 2.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');DefineChapter(2);" />
 </div><br class="mobileHide" />
 
 </a>
 
 <a href="#capítulo-2">
-<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 2.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-3');DefineChapter(3);" />
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 2.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');DefineChapter(2);" />
 </div><br class="mobileShow" />
 
 </a>
@@ -458,13 +470,13 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 </div><div class="shakesidetoside">
 <a href="#capítulo-10" title="10 - O sonho alegórico"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-10');DefineChapter(10);">10 - O sonho alegórico</button></a> 
 <center>
-<a href="#capítulo-10" title="10 - O sonho alegórico"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 10.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');DefineChapter(2);" />
+<a href="#capítulo-10" title="10 - O sonho alegórico"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 10.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-10');DefineChapter(10);" />
 </div><br class="mobileHide" />
 
 </a>
 
 <a href="#capítulo-10">
-<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 10.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');DefineChapter(2);" />
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 10.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-10');DefineChapter(10);" />
 </div><br class="mobileShow" />
 
 </a>
@@ -520,7 +532,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide pqnttext blackbg" style="margin:10%;border-width:3px;border-color:#b88e50;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
-<div class="w3-animate-zoom"><h2><p></p><br /><b>Leitores: <span class="w3-text-orange"><span class="borderbtn3">45</span></span> :3 :) ❤️ 😊, <br />Obrigado a todos ♥: </b><br /><br /><p></p></h2></div><hr class="pqnthr" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Leitores: <span class="w3-text-orange"><span class="borderbtn3">34</span></span> :3 :) ❤️ 😊, <br />Obrigado a todos ♥: </b><br /><br /><p></p></h2></div><hr class="pqnthr" />
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">1</span> - Paulo (Whatsapp) :3</h2>
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">2</span> - Mrs. Black (Lulu) (Google+) :3</h2>
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">3</span> - Rafael Brony (Google+) :)</h2>
@@ -532,40 +544,29 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">9</span> - Igor (Cellbit ServerDiscord) :3</h2>
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">10</span> - SrLucas (Server Cellbit) :3</h2>
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">11</span> - ArmaArma X (Mewe/Google+)</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">12</span> - Jesus (RPG MLP-Whatsapp) :)</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">13</span> - MelodyStar (Server Cellbit) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">14</span> - Saturn :)</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">15</span> - Rosella White (Mewe) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">16</span> - Bela (Isa) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">17</span> - Rainbowluna (Server Cellbit) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">18</span> - Nicolly (Server Cellbit) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">19</span> - Caroline :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">20</span> - Alada - Giulia :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">21</span> - Luan Mine GDS :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">22</span> - FoFi_  Mine GDS :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">23</span> - Clarice IS :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">24</span> - Laine IS :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">25</span> - G - Alex (Server Cellbit) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">26</span> - Lucas :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">27</span> - Fabsome Sweet (MLP Wikia) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">28</span> - DiWis </h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">29</span> - Professora Tania :)</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">30</span> - Professora Zulma :)</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">31</span> - Tiah Rose (Server Discord Fab) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">32</span> - Koneko (Maluísa) (Server Discord Fab) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">33</span> - Thaíssa 😊 (Server MLP?) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">34</span> - Ana Twitter '-'</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">35</span> - Letícia 😊 :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">36</span> - Cah Cássia :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">37</span> - Mel (Amiga da Fab) :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">38</span> - Priscila (Mine Discord) ❤️ 😊 :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">39</span> - Thalissa (Facebook) :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">40</span> - Star Twitter 😊 :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">41</span> - Drêça uwu (MLPBR) :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">42</span> - Rafaela uwu (MLPBR/Yandere Channel) :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">43</span> - Aninha (Yandere Channel) :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">44</span> - Sandy (Yandere Channel) :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">45</span> - Gaby-Xena Fofa (Yandere Channel) ❤️ 😊 :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">12</span> - Jesus (RPG MLP/Whatsapp) :)</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">13</span> - Saturn :)</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">14</span> - Rosella White (Mewe) :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">15</span> - Bela (Isa) :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">16</span> - Rainbowluna (Server Cellbit) :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">17</span> - Caroline :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">18</span> - Alada - Giulia :3 😊</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">19</span> - Luan Mine GDS :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">20</span> - FoFi_  Mine GDS :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">21</span> - Clarice IS</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">22</span> - Laine IS</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">23</span> - DiWis </h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">24</span> - Rose (Discord) :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">25</span> - Thaíssa 😊 (Server MLP?) :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">26</span> - Letícia 😊 :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">27</span> - Cah Cássia :3 😊</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">28</span> - Priscila (Minecraft/Discord) :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">29</span> - Thalissa (Facebook)</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">30</span> - Drêça uwu (MLPBR) :3 😊</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">31</span> - Rafaela uwu (MLPBR/Yandere Channel) :3 😊</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">32</span> - Aninha (Yandere Channel) :3 😊</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">33</span> - Sandy (Yandere Channel) :3 😊</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">34</span> - Gaby-Xena Fofa (Yandere Channel) ❤️ 😊 :3</h2>
 
 <h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">1</span> - Paulo (Whatsapp) :3</h4>
 <h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">2</span> - Mrs. Black (Lulu) (Google+) :3</h4>
@@ -578,40 +579,29 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">9</span> - Igor (Cellbit ServerDiscord) :3</h4>
 <h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">10</span> - SrLucas (Server Cellbit) :3</h4>
 <h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">11</span> - ArmaArma X (Mewe/Google+)</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">12</span> - Jesus (RPG MLP-Whatsapp) :)</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">13</span> - MelodyStar (Server Cellbit) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">14</span> - Saturn :)</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">15</span> - Rosella White (Mewe) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">16</span> - Bela (Isa) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">17</span> - Rainbowluna (Server Cellbit) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">18</span> - Nicolly (Server Cellbit) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">19</span> - Caroline :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">20</span> - Alada - Giulia :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">21</span> - Luan Mine GDS :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">22</span> - FoFi_  Mine GDS :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">23</span> - Clarice IS :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">24</span> - Laine IS :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">25</span> - G - Alex (Server Cellbit) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">26</span> - Lucas :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">27</span> - Fabsome Sweet (MLP Wikia) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">28</span> - DiWis </h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">29</span> - Professora Tania :)</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">30</span> - Professora Zulma :)</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">31</span> - Tiah Rose (Server Discord Fab) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">32</span> - Koneko (Maluísa) (Server Discord Fab) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">33</span> - Thaíssa 😊 (Server MLP?) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">34</span> - Ana Twitter '-'</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">35</span> - Letícia 😊 :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">36</span> - Cah Cássia :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">37</span> - Mel (Amiga da Fab) :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">38</span> - Priscila (Mine Discord) ❤️ 😊 :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">39</span> - Thalissa (Facebook) :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">40</span> - Star Twitter 😊 :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">41</span> - Drêça uwu (MLPBR) :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">42</span> - Rafaela uwu (MLPBR/Yandere Channel) :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">43</span> - Aninha (Yandere Channel) :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">44</span> - Sandy (Yandere Channel) :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">45</span> - Gaby-Xena Fofa (Yandere Channel) ❤️ 😊 :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">12</span> - Jesus (RPG MLP/Whatsapp) :)</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">13</span> - Saturn :)</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">14</span> - Rosella White (Mewe) :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">15</span> - Bela (Isa) :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">16</span> - Rainbowluna (Server Cellbit) :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">17</span> - Caroline :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">18</span> - Alada - Giulia :3 😊</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">19</span> - Luan Mine GDS :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">20</span> - FoFi_  Mine GDS :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">21</span> - Clarice IS</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">22</span> - Laine IS</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">23</span> - DiWis </h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">24</span> - Rose (Discord) :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">25</span> - Thaíssa 😊 (Server MLP?) :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">26</span> - Letícia 😊 :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">27</span> - Cah Cássia :3 😊</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">28</span> - Priscila (Minecraft/Discord) :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">29</span> - Thalissa (Facebook)</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">30</span> - Drêça uwu (MLPBR) :3 😊</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">31</span> - Rafaela uwu (MLPBR/Yandere Channel) :3 😊</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">32</span> - Aninha (Yandere Channel) :3 😊</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">33</span> - Sandy (Yandere Channel) :3 😊</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">34</span> - Gaby-Xena Fofa (Yandere Channel) ❤️ 😊 :3</h4>
 </div>
 </h2>
 </div>
@@ -621,7 +611,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h4 class="mobileShow pqnttext blackbg" style="margin:10%;border-width:3px;border-color:#b88e50;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
-<div class="w3-animate-zoom"><h2><p></p><br /><b>Leitores: <span class="w3-text-orange"><span class="borderbtn3">45</span></span> :3 :) ❤️ 😊, <br />Obrigado a todos ♥: </b><br /><br /><p></p></h2></div><hr class="pqnthr" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Leitores: <span class="w3-text-orange"><span class="borderbtn3">34</span></span> :3 :) ❤️ 😊, <br />Obrigado a todos ♥: </b><br /><br /><p></p></h2></div><hr class="pqnthr" />
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">1</span> - Paulo (Whatsapp) :3</h2>
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">2</span> - Mrs. Black (Lulu) (Google+) :3</h2>
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">3</span> - Rafael Brony (Google+) :)</h2>
@@ -633,40 +623,29 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">9</span> - Igor (Cellbit ServerDiscord) :3</h2>
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">10</span> - SrLucas (Server Cellbit) :3</h2>
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">11</span> - ArmaArma X (Mewe/Google+)</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">12</span> - Jesus (RPG MLP-Whatsapp) :)</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">13</span> - MelodyStar (Server Cellbit) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">14</span> - Saturn :)</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">15</span> - Rosella White (Mewe) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">16</span> - Bela (Isa) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">17</span> - Rainbowluna (Server Cellbit) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">18</span> - Nicolly (Server Cellbit) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">19</span> - Caroline :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">20</span> - Alada - Giulia :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">21</span> - Luan Mine GDS :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">22</span> - FoFi_  Mine GDS :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">23</span> - Clarice IS :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">24</span> - Laine IS :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">25</span> - G - Alex (Server Cellbit) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">26</span> - Lucas :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">27</span> - Fabsome Sweet (MLP Wikia) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">28</span> - DiWis </h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">29</span> - Professora Tania :)</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">30</span> - Professora Zulma :)</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">31</span> - Tiah Rose (Server Discord Fab) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">32</span> - Koneko (Maluísa) (Server Discord Fab) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">33</span> - Thaíssa 😊 (Server MLP?) :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">34</span> - Ana Twitter '-'</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">35</span> - Letícia 😊 :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">36</span> - Cah Cássia :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">37</span> - Mel (Amiga da Fab) :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">38</span> - Priscila (Mine Discord) ❤️ 😊 :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">39</span> - Thalissa (Facebook) :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">40</span> - Star Twitter 😊 :3</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">41</span> - Drêça uwu (MLPBR) :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">42</span> - Rafaela uwu (MLPBR/Yandere Channel) :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">43</span> - Aninha (Yandere Channel) :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">44</span> - Sandy (Yandere Channel) :3 😊</h2>
-<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">45</span> - Gaby-Xena Fofa (Yandere Channel) ❤️ 😊 :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">12</span> - Jesus (RPG MLP/Whatsapp) :)</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">13</span> - Saturn :)</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">14</span> - Rosella White (Mewe) :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">15</span> - Bela (Isa) :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">16</span> - Rainbowluna (Server Cellbit) :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">17</span> - Caroline :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">18</span> - Alada - Giulia :3 😊</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">19</span> - Luan Mine GDS :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">20</span> - FoFi_  Mine GDS :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">21</span> - Clarice IS</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">22</span> - Laine IS</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">23</span> - DiWis </h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">24</span> - Rose (Discord) :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">25</span> - Thaíssa 😊 (Server MLP?) :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">26</span> - Letícia 😊 :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">27</span> - Cah Cássia :3 😊</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">28</span> - Priscila (Minecraft/Discord) :3</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">29</span> - Thalissa (Facebook)</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">30</span> - Drêça uwu (MLPBR) :3 😊</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">31</span> - Rafaela uwu (MLPBR/Yandere Channel) :3 😊</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">32</span> - Aninha (Yandere Channel) :3 😊</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">33</span> - Sandy (Yandere Channel) :3 😊</h2>
+<h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">34</span> - Gaby-Xena Fofa (Yandere Channel) ❤️ 😊 :3</h2>
 
 <h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">1</span> - Paulo (Whatsapp) :3</h4>
 <h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">2</span> - Mrs. Black (Lulu) (Google+) :3</h4>
@@ -679,40 +658,29 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">9</span> - Igor (Cellbit ServerDiscord) :3</h4>
 <h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">10</span> - SrLucas (Server Cellbit) :3</h4>
 <h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">11</span> - ArmaArma X (Mewe/Google+)</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">12</span> - Jesus (RPG MLP-Whatsapp) :)</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">13</span> - MelodyStar (Server Cellbit) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">14</span> - Saturn :)</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">15</span> - Rosella White (Mewe) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">16</span> - Bela (Isa) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">17</span> - Rainbowluna (Server Cellbit) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">18</span> - Nicolly (Server Cellbit) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">19</span> - Caroline :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">20</span> - Alada - Giulia :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">21</span> - Luan Mine GDS :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">22</span> - FoFi_  Mine GDS :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">23</span> - Clarice IS :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">24</span> - Laine IS :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">25</span> - G - Alex (Server Cellbit) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">26</span> - Lucas :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">27</span> - Fabsome Sweet (MLP Wikia) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">28</span> - DiWis </h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">29</span> - Professora Tania :)</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">30</span> - Professora Zulma :)</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">31</span> - Tiah Rose (Server Discord Fab) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">32</span> - Koneko (Maluísa) (Server Discord Fab) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">33</span> - Thaíssa 😊 (Server MLP?) :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">34</span> - Ana Twitter '-'</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">35</span> - Letícia 😊 :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">36</span> - Cah Cássia :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">37</span> - Mel (Amiga da Fab) :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">38</span> - Priscila (Mine Discord) ❤️ 😊 :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">39</span> - Thalissa (Facebook) :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">40</span> - Star Twitter 😊 :3</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">41</span> - Drêça uwu (MLPBR) :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">42</span> - Rafaela uwu (MLPBR/Yandere Channel) :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">43</span> - Aninha (Yandere Channel) :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">44</span> - Sandy (Yandere Channel) :3 😊</h4>
-<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">45</span> - Gaby-Xena Fofa (Yandere Channel) ❤️ 😊 :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">12</span> - Jesus (RPG MLP/Whatsapp) :)</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">13</span> - Saturn :)</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">14</span> - Rosella White (Mewe) :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">15</span> - Bela (Isa) :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">16</span> - Rainbowluna (Server Cellbit) :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">17</span> - Caroline :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">18</span> - Alada - Giulia :3 😊</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">19</span> - Luan Mine GDS :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">20</span> - FoFi_  Mine GDS :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">21</span> - Clarice IS</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">22</span> - Laine IS</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">23</span> - DiWis </h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">24</span> - Rose (Discord) :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">25</span> - Thaíssa 😊 (Server MLP?) :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">26</span> - Letícia 😊 :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">27</span> - Cah Cássia :3 😊</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">28</span> - Priscila (Minecraft/Discord) :3</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">29</span> - Thalissa (Facebook)</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">30</span> - Drêça uwu (MLPBR) :3 😊</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">31</span> - Rafaela uwu (MLPBR/Yandere Channel) :3 😊</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">32</span> - Aninha (Yandere Channel) :3 😊</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">33</span> - Sandy (Yandere Channel) :3 😊</h4>
+<h4 class="borderbtn3 w3-animate-zoom mobileShow"><span class="w3-text-white">34</span> - Gaby-Xena Fofa (Yandere Channel) ❤️ 😊 :3</h4>
 </div>
 </h4>
 </div>
@@ -759,45 +727,45 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <div class="w3-animate-zoom"><h2><p></p><br /><b>Comentários: <span class="w3-text-orange">10</span> <i class="fas fa-comments"></i></b><br /><br /><p></p></h2></div><hr class="pqnthr" />
 
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 </div>
 </h2>
 </div>
@@ -844,45 +812,45 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <div class="w3-animate-zoom"><h2><p></p><br /><b>Comentários: <span class="w3-text-orange">10</span> <i class="fas fa-comments"></i></b><br /><br /><p></p></h2></div><hr class="pqnthr" />
 
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
+<b>Notice</b>:  Undefined variable: sitepqnt in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>71</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 <br />
-<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\Diario\PHP\Global\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
+<b>Notice</b>:  Undefined variable: cmntsgeral in <b>C:\Mega\PHP\Tabs\GlobalTabs\CommentsGlobal.php</b> on line <b>109</b><br />
 </div>
 </h4>
 </div>
@@ -973,24 +941,24 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <div class="w3-animate-zoom"><h2><p></p><br /><b>Histórias: <span class="w3-text-orange">4</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="pqnthr" />
 
 <div class="w3-animate-zoom"><div class="mobileHide">
-<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>A Vida de Pequenata</b></h2><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/1 Capa.png" width="650"><br /><br /></a><br /><br /> 
+<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app//pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>A Vida de Pequenata</b></h2><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/1 Capa.png" width="650"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h2 class="w3-text-blue"><b>SpaceLiving</b></h2><img src="https://diario.netlify.app/cdn/img/spacelivinglogo.jpg" width="650"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn sl3 shakesidetoside" href="https://diario.netlify.app//new_world/spaceliving/" style="border-radius: 50px;"><h2 class="w3-text-blue"><b>SpaceLiving</b></h2><img src="https://diario.netlify.app/cdn/img/spacelivinglogo.jpg" width="650"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>A História dos Irmãos Nazzevo</b></h2><img src="https://diario.netlify.app/cdn/img/stories/nazzevo/capas/PTBR/1 Capa.png" width="650"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>A História dos Irmãos Nazzevo</b></h2><img src="https://diario.netlify.app/cdn/img/stories/nazzevo/capas/PTBR/1 Capa.png" width="650"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app/Lonely%20Stories/" style="border-radius: 50px;"><h2><b>Histórias Solitárias</b></h2><img src="https://diario.netlify.app/cdn/img/lonely.jpg" width="650"><br /><br /></a><br />
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h2><b>Histórias Solitárias</b></h2><img src="https://diario.netlify.app/cdn/img/lonely.jpg" width="650"><br /><br /></a><br />
 </div>
 <br />
 
 <div class="mobileShow">
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>A Vida de Pequenata</b></h4><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/1 Capa.png" width="350" height="210"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>A Vida de Pequenata</b></h4><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/1 Capa.png" width="350" height="210"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn  borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h4 class="w3-text-blue"><b>SpaceLiving</b></h4><img src="https://diario.netlify.app/cdn/img/spacelivinglogo.jpg" width="320" height="230"><br /><br /></a><br /><br /> 
+<a class="w3-btn  borderbtn sl3 shakesidetoside" href="https://diario.netlify.app//new_world/spaceliving/" style="border-radius: 50px;"><h4 class="w3-text-blue"><b>SpaceLiving</b></h4><img src="https://diario.netlify.app/cdn/img/spacelivinglogo.jpg" width="320" height="230"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>A História dos Irmãos Nazzevo</b></h4><img src="https://diario.netlify.app/cdn/img/stories/nazzevo/capas/PTBR/1 Capa.png" width="290" height="190"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>A História dos Irmãos Nazzevo</b></h4><img src="https://diario.netlify.app/cdn/img/stories/nazzevo/capas/PTBR/1 Capa.png" width="290" height="190"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app/Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Histórias Solitárias</b></h4><img src="https://diario.netlify.app/cdn/img/lonely.jpg" width="290" height="190"><br /><br /></a><br />
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Histórias Solitárias</b></h4><img src="https://diario.netlify.app/cdn/img/lonely.jpg" width="290" height="190"><br /><br /></a><br />
 </div>
 <br />
 
@@ -1007,24 +975,24 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <div class="w3-animate-zoom"><h2><p></p><br /><b>Histórias: <span class="w3-text-orange">4</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="pqnthr" />
 
 <div class="w3-animate-zoom"><div class="mobileHide">
-<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>A Vida de Pequenata</b></h2><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/1 Capa.png" width="650"><br /><br /></a><br /><br /> 
+<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app//pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>A Vida de Pequenata</b></h2><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/1 Capa.png" width="650"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h2 class="w3-text-blue"><b>SpaceLiving</b></h2><img src="https://diario.netlify.app/cdn/img/spacelivinglogo.jpg" width="650"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn sl3 shakesidetoside" href="https://diario.netlify.app//new_world/spaceliving/" style="border-radius: 50px;"><h2 class="w3-text-blue"><b>SpaceLiving</b></h2><img src="https://diario.netlify.app/cdn/img/spacelivinglogo.jpg" width="650"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>A História dos Irmãos Nazzevo</b></h2><img src="https://diario.netlify.app/cdn/img/stories/nazzevo/capas/PTBR/1 Capa.png" width="650"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>A História dos Irmãos Nazzevo</b></h2><img src="https://diario.netlify.app/cdn/img/stories/nazzevo/capas/PTBR/1 Capa.png" width="650"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app/Lonely%20Stories/" style="border-radius: 50px;"><h2><b>Histórias Solitárias</b></h2><img src="https://diario.netlify.app/cdn/img/lonely.jpg" width="650"><br /><br /></a><br />
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h2><b>Histórias Solitárias</b></h2><img src="https://diario.netlify.app/cdn/img/lonely.jpg" width="650"><br /><br /></a><br />
 </div>
 <br />
 
 <div class="mobileShow">
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>A Vida de Pequenata</b></h4><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/1 Capa.png" width="350" height="210"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>A Vida de Pequenata</b></h4><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/1 Capa.png" width="350" height="210"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn  borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h4 class="w3-text-blue"><b>SpaceLiving</b></h4><img src="https://diario.netlify.app/cdn/img/spacelivinglogo.jpg" width="320" height="230"><br /><br /></a><br /><br /> 
+<a class="w3-btn  borderbtn sl3 shakesidetoside" href="https://diario.netlify.app//new_world/spaceliving/" style="border-radius: 50px;"><h4 class="w3-text-blue"><b>SpaceLiving</b></h4><img src="https://diario.netlify.app/cdn/img/spacelivinglogo.jpg" width="320" height="230"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>A História dos Irmãos Nazzevo</b></h4><img src="https://diario.netlify.app/cdn/img/stories/nazzevo/capas/PTBR/1 Capa.png" width="290" height="190"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>A História dos Irmãos Nazzevo</b></h4><img src="https://diario.netlify.app/cdn/img/stories/nazzevo/capas/PTBR/1 Capa.png" width="290" height="190"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app/Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Histórias Solitárias</b></h4><img src="https://diario.netlify.app/cdn/img/lonely.jpg" width="290" height="190"><br /><br /></a><br />
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Histórias Solitárias</b></h4><img src="https://diario.netlify.app/cdn/img/lonely.jpg" width="290" height="190"><br /><br /></a><br />
 </div>
 <br />
 
@@ -1224,9 +1192,9 @@ Pequenata era uma batata que vivia sozinha, ela estava sempre viajando e andando
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <center>
-<div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 2.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-3');DefineChapter(3);" />
+<div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 2.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');DefineChapter(2);" />
 </div><br class="mobileHide" />
-<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 2.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-3');DefineChapter(3);" />
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 2.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');DefineChapter(2);" />
 </div><br class="mobileShow" />
 </center>
 <br />
@@ -2075,6 +2043,7 @@ Era uma terça-feira, Pequenata estava sonhando em um campo, um grande e alto ca
 <br />Ela vai para a cozinha e joga o pacote de Doritos e a lata de Coca-cola dentro da lata de lixo.
 <br />Então ela vai para a sala e deita no sofá.
 <br />Júlia liga a televisão e deixa em um canal, tocando, ela fica mexendo em seu celular.
+<br />
 <br />Depois de um tempo, Pequenata chega em casa, Júlia se levanta e vai para a porta da frente, abre ela e abraça Pequenata forte.
 <br />"Você chegou amor! eu amo te ver de volta", diz Júlia.
 <br />"Eu estou aqui querida, não se preocupe amor, eu sou todinha sua agora", diz Pequenata em uma voz calma enquanto acaricia o cabelo de Júlia.
@@ -2143,9 +2112,9 @@ Era uma terça-feira, Pequenata estava sonhando em um campo, um grande e alto ca
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <center>
-<div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 10.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');DefineChapter(2);" />
+<div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 10.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-10');DefineChapter(10);" />
 </div><br class="mobileHide" />
-<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 10.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');DefineChapter(2);" />
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/PTBR/Capítulo 10.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-10');DefineChapter(10);" />
 </div><br class="mobileShow" />
 </center>
 <br />
@@ -3043,24 +3012,7 @@ Pequenata estava caminhando para casa, ela estava pensando naquele cachorro amar
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <div id="texto-capítulo-26">
-Pequenata estava rolando na linha do tempo de seu Vegebook em seu computador até que algo estranho aconteceu, ela começou a flutuar e uma luz azul-clara rodeava seu corpo.
-<br />
-<br />Então, depois de algum tempo, ela acordou em uma linda e limpa cama branca, com um lençol branco, olhou em volta e não havia ninguém, apenas paredes brancas, a cama em que ela estava deitada e uma tela de computador sobre uma mesa, depois de olhar um pouco mais, ela percebeu que estava dentro de uma Nave Espacial (SpaceShip), havia uma palavra enorme e azul na parede da espaçonave, "LonelyShip" era a palavra, ela sentou na cadeira perto da mesa do computador e ligou o computador, ela pensou consigo mesma: "Onde eu estou?, em algum tipo de espaçonave ou filme de ficção científica?".
-<br />
-<br />O computador liga e uma mensagem na tela aparece dizendo:
-<br />"Olá, parece que você está dentro de uma espaçonave, chamada LonelyShip, criada pela empresa ThinkOutsideTheBox ou TOTB, você foi escolhida aleatoriamente para morar aqui dentro porque tem os requisitos para morar aqui, este é um supercomputador, que é super rápido e tem muito espaço no disco rígido, você pode usar a geladeira automática chamada Geladeira Alimentada por Pensamento ou Thought Powered Fridge (TPF) para comer..."
-<br />
-<br />"Pelo fato de você ter sido escolhida aleatoriamente, você pode escolher voltar à sua vida normal clicando com o botão direito do mouse no ícone da bandeja do SpaceLiving em seu computador, clique nele e clique em [Teleportar de volta para a Terra], leia o wiki do SpaceLiving ou use o link do Discord para entrar no servidor do Discord do TOTB se precisar de mais ajuda, como sempre, defenda-se dos asteróides, fique seguro, cuide-se e seja solitário!".
-<br />
-<br />Pequenata tinha medo disso, não queria deixar Júlia lá, talvez Júlia se preocupasse com a ausência de Pequenata, talvez ela ficasse muito triste e continuasse procurando por Pequenata, Pequenata não queria que isso acontecesse, ela ficaria triste, mas também, ela queria explorar este Novo Mundo(New World), esta espaçonave, ela queria olhar por trás das janelas.
-<br />
-<br />Ela abriu o MoTable Vegefox que já estava instalado em seu computador e procurou pela Wikipedia do SpaceLiving e pelo link de convite para o servidor do Discord do TOTB, depois de algum tempo lendo, ela entendeu muito sobre esse mundo.
-<br />
-<br />Pequenata estava com fome, ela se levantou e abriu a geladeira e ficou surpresa porque a comida exata que ela queria comer estava lá, uma fatia grande de pizza de calabresa com queijo, o cheiro era tão bom, a fatia estava quente, ela queria tanto comer aquela pizza, ela pegou o prato e colocou na mesa, ela queria assistir algo enquanto comia, baixou um episódio de Eromanga Sensei para assistir, ela estava no meio daquele anime.
-<br />
-<br />Depois de comer e assistir, Pequenata instalou o aplicativo Discord em seu computador e se juntou ao servidor TOTB, ela conheceu muitas pessoas legais lá, havia Izaque, Wendy, Drag, Kendra, Manuh, Ted, Monika, John, e havia uma pessoa especial lá, e essa pessoa se chamava Lisa, o mesmo nome de sua cachorra, Pequenata estava um pouco triste por pensar em sua cachorra, Lisa, a pessoa no servidor do Discord, era realmente fofa e gentil, Pequenata gostava dela, ela queria para conversar mais com ela, Pequenata teve um pouco de coragem e a adicionou como amiga em Discord.
-<br /><div class="w3-animate-zoom" onclick="window.open('https://diario.netlify.app/new_world%20%E2%8A%A1/spaceliving%20%F0%9F%93%98/en-us/?no-redirect=true&read-chapter-9')"><b><center><h3 class="w3-btn w3-blue w3-text-black shakesidetoside" style="border-width:3px;border-color:black;border-style:solid;border-radius:50px;"><br /><span style="margin-left:30px;margin-right:30px;">Este capítulo continua aqui (Crossover): https://diario.netlify.app/spaceliving 📘/9/</span><br /><br /></h3></center></b></div>
-<br /><br />Feito em: 03/07/2019.
+This file could not be found, sorry: <br />C:/Mega/Bloco De Notas/Dedicação/Historias/Pequenata - Littletato/PTBR/26 - PequeLiving, SpaceNata<br />.txt<br /><br />Feito em: 03/07/2019.
 </div>
 </div>
 <br /><br />
