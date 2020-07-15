@@ -7,8 +7,7 @@ var metas = document.getElementsByTagName("meta");
 var date2 = "Stake's Enterprisetm, " + x + "/" + m + "/" + y;
 
 for (var i=0; i<metas.length; i++) {  
-  if (metas[i].getAttribute("name") && 
-      metas[i].getAttribute("name")==="revised") {
-    metas[i].setAttribute("content",date2);
-  }
+	if (metas[i].getAttribute("name") && metas[i].getAttribute("name")==="revised") {
+		metas[i].setAttribute("content", date2);
+	}
 }

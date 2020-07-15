@@ -9,7 +9,7 @@ function DefineChapter(number) {
 	writeattribute = $("#writebtnattribute" + ChapterNumber).html();
 }
 
-if (userLang === "pt-BR") {
+if (userLang == "pt-BR" || userLang == "pt-PT") {
 	var captext1 = "capítulo";
 	var captext2 = "ler-capitulo-";
 }

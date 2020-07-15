@@ -1,12 +1,12 @@
 var userLang = navigator.language || navigator.userLanguage;
 
 //Defines the button text if the user language is English
-if (userLang === "en-US") {
+if (userLang == "en-US") {
 	var btnText1 = "Okay, byeeeee...";
 }
 
 //Defines the button text if the user language is Brazilian Portuguese
-if (userLang === "pt-BR") {
+if (userLang == "pt-BR" || userLang == "pt-PT") {
 	var btnText1 = "Tudo beeeeem...";
 }
 

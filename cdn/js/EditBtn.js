@@ -3,12 +3,12 @@ var titulo = title.innerHTML;
 var icon = '<i class="fas fa-pen"></i>';
 var userLang = navigator.language || navigator.userLanguage;
 
-if (userLang === "en-US") {
+if (userLang == "en-US" || userLang == "en-AU" || userLang == "en-BZ" || userLang == "en-CA" || userLang == "en-GB") {
 	var btnText1 = 'Activate'
 	var btnText2 = 'Deactivate'
 }
 
-if (userLang === "pt-BR") {
+if (userLang == "pt-BR" || userLang == "pt-PT") {
 	var btnText1 = 'Ativar'
 	var btnText2 = 'Desativar'
 }

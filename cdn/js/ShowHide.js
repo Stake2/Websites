@@ -11,5 +11,4 @@ function buttons2() {
 	var element = document.getElementById("myDIV");
 	element.className = element.className.replace("w3-animate-top", "");
 	element.className = element.className.replace(" w3-animate-zoom", "");
-
 }
