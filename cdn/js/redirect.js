@@ -320,6 +320,22 @@ function Rodar() {
         }
     }
 
+    if (titulo == "A Vida de Pequenata PT-PT" && check == false) {
+        lang = "pt-PT";
+
+        if (lang == userLang) {
+			return;
+        }
+
+        if (lang != userLang) {
+            var link1 = "https://diario.netlify.app/pequenata 📘/";
+            var userLang = navigator.language || navigator.userLanguage;
+            var res = link1 + userLang + "/";
+            window.location = res;
+            return;
+        }
+    }
+
     if (titulo == "SpaceLiving" && check == false) {
         lang = "a";
 
@@ -354,6 +370,22 @@ function Rodar() {
 
     if (titulo == "SpaceLiving PT-BR" && check == false) {
         lang = "pt-BR";
+
+        if (lang == userLang) {
+			return;
+        }
+
+        if (lang != userLang) {
+            var linksl = "https://diario.netlify.app/new_world ⊡/spaceliving 📘/";
+            var userLang = navigator.language || navigator.userLanguage;
+            var res2 = linksl + userLang + "/";
+            window.location = res2;
+            return;
+        }
+	}
+
+    if (titulo == "SpaceLiving PT-PT" && check == false) {
+        lang = "pt-PT";
 
         if (lang == userLang) {
 			return;
