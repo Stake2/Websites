@@ -14,29 +14,31 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" value="@The_Snakes90" />
 <meta name="twitter:creator" content="@The_Snakes90" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/watch.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Watch.css" />
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/w3.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Colors.css" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/stories.css" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/mobile.css" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/imghover.css" />
-<meta name="revised" content="Stake's Enterprisetm, 14/06/2020" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Stories.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Mobile.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/ImgHover.css" />
+<meta name="revised" content="Stake's Enterprisetm, 15/07/2020" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-<script src="https://diario.netlify.app/cdn/js/myFunction.js"></script>
-<script src="https://diario.netlify.app/cdn/js/tabs.js"></script>
-<script src="https://diario.netlify.app/cdn/js/redirect.js" onLoad="rodar();"></script>
+<script src="https://diario.netlify.app/cdn/js/Search.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Tabs.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Redirect.js" onLoad="Rodar();"></script>
 <script src="https://diario.netlify.app/cdn/js/ShowHide.js"></script>
-<script src="https://diario.netlify.app/cdn/js/sidemenu.js"></script>
+<script src="https://diario.netlify.app/cdn/js/SideMenu.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Set Revised Date.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
 <body>
 <center>
 <div class="w3-animate-zoom">
 <div id="myDIV" class="w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
-<span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
-<span title="To Watch" alt="To Watch"><a href="#watch-to watch"><button id="button2" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-to watch')"><h2>To Watch [11]: <i class="fas fa-play"></i></h2></button></a></span>
+<span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
+<span title="To Watch" alt="To Watch"><a href="#watch-to watch"><button id="button2" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-to watch')"><h2>To Watch [12]: <i class="fas fa-play"></i></h2></button></a></span>
 <span title="Links" alt="Links"><a href="#watch-links"><button id="button3" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-links')"><h2>Links [6]: <i class="fas fa-globe"></i></h2></button></a></span>
 <span title="Change-Log" alt="Change-Log"><a href="#change-log"><button id="button8" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('change-log')"><h2><i class="fas fa-bell"></i></h2></button></a></span>
 <br />
@@ -49,19 +51,18 @@
 <div id="mySidenav" class="sidenav mobileShow ">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times-circle"></i></a>
 <h2 class="mobileShow w3-black w3-text-white">Mobile button menu: </h2>
-<a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [85]: <i class="fas fa-eye"></i></h4></button></a>
-<a href="#watch-to watchm" onclick="closeNav()"><button id="button2" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-to watchm')"><h4>To Watch [11]: <i class="fas fa-play"></i></h4></button></a>
+<a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [102]: <i class="fas fa-eye"></i></h4></button></a>
+<a href="#watch-to watchm" onclick="closeNav()"><button id="button2" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-to watchm')"><h4>To Watch [12]: <i class="fas fa-play"></i></h4></button></a>
 <a href="#watch-linksm" onclick="closeNav()"><button id="button3" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-linksm')"><h4>Links [6]: <i class="fas fa-globe"></i></h4></button></a>
 <a href="#change-logm" onclick="closeNav()"><button id="button8" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('change-logm')"><h4><i class="fas fa-bell"></i></h4></button></a>
-<br />
-<b>Notice</b>:  Undefined variable: sitetextmaker in <b>C:\Mega\Diario\PHP\Global\Variables\Top Buttons Creator.php</b> on line <b>170</b><br />
 </div>
 <button id="ShowMenu" class="w3-btn blue borderbtn mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="openNav()"><h2><i class="fas fa-bars"></i></h2></button>
 
 </div>
+
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <div  style="background-color:black;;margin-left:5%;margin-right:5%;border-width:4px;border-color:blue;border-style:solid;border-radius: 50px;border-radius: 50px;">
-	<h2 class="w3-text-blue w3-animate-zoom"><p><br /><b>Watch History: <i class="fas fa-eye"></i> <span class="w3-text-yellow">[431 Watched Media]</span></b><br /><br /><p></h2>
+	<h2 class="w3-text-blue w3-animate-zoom"><p><br /><b>Watch History: <i class="fas fa-eye"></i> <span class="w3-text-yellow">[448 Watched Media]</span></b><br /><br /><p></h2>
 
 	<hr class="slhr" />
 	<img src="https://diario.netlify.app/cdn/img/WH.png" width="27%" class="w3-text-blue mobileHide" style="border-width:3px;border-color:w3-black;border-style:solid;border-radius: 50px;" />
@@ -70,37 +71,36 @@
 <div class="mobileShow"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/cdn/img/WH.png')"><h4>Image link: <i class="fas fa-images"></i></h4></button></div>
 
 	<h2 class="w3-text-blue mobileHide">Website to show videos, animes, series, movies that I watched and that I will watch, made by stake2.</h2>
-	<h4 class="w3-text-blue mobileShow">Website to show videos, animes, series, movies that I watched and that I will watch, made by stake2.</h4>
-	<h2 class="w3-text-blue mobileHide"></h2>
-	<h4 class="w3-text-blue mobileShow"></h4>
-	<br />
+	<h4 class="w3-text-blue mobileShow">Website to show videos, animes, series, movies that I watched and that I will watch, made by stake2.</h4><br />
 	</div>
 
 
-<a name="watch-watched 2020"></a>
+<style>
+textarea {outline: none!important;}
+</style><a name="watch-watched 2020"></a>
 <div id="watch-watched 2020" class="city mobileHide" style="display:none;">
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
 
-<div class="mobileHide"><span title="Watched 2020 [85]" alt="Watched 2020 [85]"><a href="#watch-watched 2020"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+<div class="mobileHide"><span title="Watched 2020 [102]" alt="Watched 2020 [102]"><a href="#watch-watched 2020"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
 <span title="Movies" alt="Movies"><a href="#watched-movies"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-movies')"><h2>Movies [1]: <i class="fas fa-film"></i></h2></button></a></span>
 <span title="Archived Media" alt="Archived Media"><a href="#watched-archived media"><button id="button5" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived media')"><h2>Archived Media [2]: <i class="fas fa-archive"></i></h2></button></a></span>
-</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [85]: <i class="fas fa-eye"></i></h4></button></a>
+</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [102]: <i class="fas fa-eye"></i></h4></button></a>
 <a href="#watched-moviesm" onclick="closeNav()"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-moviesm')"><h4>Movies [1]: <i class="fas fa-film"></i></h4></button></a>
 <a href="#watched-archived mediam" onclick="closeNav()"><button id="button5" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived mediam')"><h4>Archived Media [2]: <i class="fas fa-archive"></i></h4></button></a>
 </div><hr class="slhr" />
-<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="w3-text-blue">Watched 2020: </span><span class="w3-text-yellow"> [85]</span></b><br /><br /><p></p></h2></div><hr class="yellowhr" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="w3-text-blue">Watched 2020: </span><span class="w3-text-yellow"> [102]</span></b><br /><br /><p></p></h2></div><hr class="yellowhr" />
 <h4 class="w3-text-blue w3-black" style="text-align:left;">
-<a href="#Movies2020"><b><span class="w3-text-white">Movies: </span><span class="w3-text-blue">1</span></b><br />
-</a>
 <a href="#Series2020"><b><span class="w3-text-white">Series: </span><span class="w3-text-blue">2</span></b><br />
 </a>
-<a href="#Cartoons2020"><b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">15</span></b><br />
+<a href="#Cartoons2020"><b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">28</span></b><br />
 </a>
-<a href="#Animes2020"><b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">19</span></b><br />
+<a href="#Animes2020"><b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">21</span></b><br />
 </a>
-<a href="#Videos2020"><b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">48</span></b><br />
+<a href="#Videos2020"><b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">50</span></b><br />
+</a>
+<a href="#Movies2020"><b><span class="w3-text-white">Movies: </span><span class="w3-text-blue">1</span></b><br />
 </a>
 <br />
 <a name="Series2020"></a>
@@ -113,7 +113,7 @@
 </div>
 <br />
 <a name="Cartoons2020"></a>
-<b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">15</span></b><br />
+<b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">28</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">1 - </span>Rick and Morty S01E01(1) "Piloto"<span class="w3-text-white"> - (05:00 27/05/2020)</span></span><br /></div>
 </div>
@@ -159,9 +159,48 @@
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">15 - </span>Rick and Morty S02E03(14) "Assimilação autoerótica"<span class="w3-text-white"> - (16:47 09/06/2020)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">16 - </span>Rick and Morty S02E04(15) "Parasitas invasores alienígenas"<span class="w3-text-white"> - (02:47 19/06/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">17 - </span>Rick and Morty S02E05(16) "Planeta música"<span class="w3-text-white"> - (16:50 19/06/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">18 - </span>Rick and Morty S02E06(17) "Bateria esgotada"<span class="w3-text-white"> - (00:14 08/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">19 - </span>Rick and Morty S02E07(18) "Confusão em Little Sanchez"<span class="w3-text-white"> - (05:12 08/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">20 - </span>Rick and Morty S02E08(19) "TV interdimensional"<span class="w3-text-white"> - (08:17 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">21 - </span>Rick and Morty S02E09(20) "Olha quem está expurgando"<span class="w3-text-white"> - (08:17 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">22 - </span>Rick and Morty S02E10(21) "Casamento intergaláctico"<span class="w3-text-white"> - (08:17 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">23 - </span>Rick and Morty S03E01(22) "A Rickapunhalada Ricksalvação"<span class="w3-text-white"> - (08:24 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">24 - </span>Rick and Morty S03E02(23) "Rickcurtindo a Pedra"<span class="w3-text-white"> - (08:27 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">25 - </span>Rick and Morty S03E03(24) "Rick Pepino"<span class="w3-text-white"> - (09:12 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">26 - </span>It's Pony EP06 "Os Cabeleireiros - O Aniversário do Gerry"<span class="w3-text-white"> - (19:10 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">27 - </span>Rick and Morty S03E04(25) "Os Justiceiros 3: A volta do Exterminador de Mundos"<span class="w3-text-white"> - (19:50 12/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">28 - </span>Rick and Morty S03E05(26) "A Conspiração Whirly Dirly"<span class="w3-text-white"> - (04:17 14/07/2020)</span></span><br /></div>
+</div>
 <br />
 <a name="Animes2020"></a>
-<b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">19</span></b><br />
+<b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">21</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">1 - </span>Sword Art Online: Alicization - War of Underworld EP04(29) "Território Negro"<span class="w3-text-white"> - (06:01 11/01/2020)</span></span><br /></div>
 </div>
@@ -219,9 +258,15 @@
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">19 - </span>BanG Dream! 3rd Season EP6 "É isso"<span class="w3-text-white"> - (02:31 06/06/2020)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">20 - </span>BanG Dream! 3rd Season EP7 "Guarde Tudo Na Música"<span class="w3-text-white"> - (01:00 24/06/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">21 - </span>BanG Dream! 3rd Season EP8 "Devíamos Estar de Bobeira Agora?"<span class="w3-text-white"> - (02:02 25/06/2020)</span></span><br /></div>
+</div>
 <br />
 <a name="Videos2020"></a>
-<b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">48</span></b><br />
+<b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">50</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">1 - </span>2019 EM UMA MÚSICA (Inutilismo)<span class="w3-text-white"> - (19:29 07/01/2020)</span></span><br /></div>
 </div>
@@ -274,55 +319,55 @@
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">17 - </span>VFX no YouTube: como fazemos 🎥💻 | GAVETA (Gaveta)<span class="w3-text-white"> - (23:13 07/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">18 - </span>Como são GRAVADOS os EFEITOS SONOROS do CINEMA! A Magia do Foley (Brainstorm Tutoriais - Edição de Vídeo)<span class="w3-text-white"> - (23:41 07/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">18 - </span>Como são GRAVADOS os EFEITOS SONOROS do CINEMA! A Magia do Foley (Brainstorm Tutoriais - Edição de Vídeo <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=mw-qZ7wIBfI"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (23:41 07/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">19 - </span>APRENDA COMO EDITAR NO VEGAS PRO 16 em 5 MINUTOS - Tutorial para Iniciantes (Brainstorm Tutoriais - Edição de Vídeo)<span class="w3-text-white"> - (00:13 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">19 - </span>APRENDA COMO EDITAR NO VEGAS PRO 16 em 5 MINUTOS - Tutorial para Iniciantes (Brainstorm Tutoriais - Edição de Vídeo <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=mw-qZ7wIBfI"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (00:13 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">20 - </span>BEATBOX VS KONNAKOL (NME)<span class="w3-text-white"> - (01:36 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">20 - </span>BEATBOX VS KONNAKOL (NME <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=ntRhAVvGags"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (01:36 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">21 - </span>This Is What Happens When You Re-Upload a YouTube Video 1000 Times! (Marques Brownlee)<span class="w3-text-white"> - (01:52 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">21 - </span>This Is What Happens When You Re-Upload a YouTube Video 1000 Times! (Marques Brownlee <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=JR4KHfqw-oE"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (01:52 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">22 - </span>REGRESSÃO E VIAGEM NO TEMPO COM HIPNOSE (Pyong Lee)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">22 - </span>REGRESSÃO E VIAGEM NO TEMPO COM HIPNOSE (Pyong Lee <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=EQc7gElIcVM"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">23 - </span>HOW TO DUBSTEP | BEGINNERS TUTORIAL [HEROBUST STYLE] (CRWTH)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">23 - </span>HOW TO DUBSTEP | BEGINNERS TUTORIAL [HEROBUST STYLE] (CRWTH <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=WoBUA1zEQJ4"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">24 - </span>I'm Not A Robot ✅ (Tom Scott)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">24 - </span>I'm Not A Robot ✅ (Tom Scott <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=o1zNIm8GVPY"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">25 - </span>Ping! (Exyl)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">25 - </span>Ping! (Exyl <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=RKW6rjnYEkc"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">26 - </span>shower thoughts that make me question reality.. (Aperture)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">26 - </span>shower thoughts that make me question reality.. (Aperture <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=PTSmDUXt0zE"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">27 - </span>Answering google's most searched questions of 2019.. (Aperture)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">27 - </span>Answering google's most searched questions of 2019.. (Aperture <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=7u9sMTM2X7E"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">28 - </span>The ENTIRE Story of Ben 10 ILLUSTRATED [All 5 Parts] (The Ink Tank)<span class="w3-text-white"> - (16:18 09/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">28 - </span>The ENTIRE Story of Ben 10 ILLUSTRATED [All 5 Parts] (The Ink Tank <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=JdAaO-MK8DU"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (16:18 09/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">29 - </span>Wall-E as Sociological Storytelling (Pop Culture Directive)<span class="w3-text-white"> - (16:18 09/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">29 - </span>Wall-E as Sociological Storytelling (Pop Culture Directive <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=Z1-vPQKwXbY"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (16:18 09/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">30 - </span>cellbit simulando o coronga virus no plague inc (Lives do Cellbit)<span class="w3-text-white"> - (20:30 09/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">30 - </span>cellbit simulando o coronga virus no plague inc (Lives do Cellbit <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=7JqAHFcAO14"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (20:30 09/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">31 - </span>"Wait... Where Did Dubstep Go?" | My Reaction (Nawtystep)<span class="w3-text-white"> - (20:30 09/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">31 - </span>"Wait... Where Did Dubstep Go?" | My Reaction (Nawtystep <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=fzbvMFeN2U8"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (20:30 09/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">32 - </span>How Procrastination (slowly) Ruins Your Life (Better Ideas)<span class="w3-text-white"> - (05:36 16/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">32 - </span>How Procrastination (slowly) Ruins Your Life (Better Ideas <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=b2_KEk9wPwg"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (05:36 16/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">33 - </span>1917 e seus cortes invisíveis | Me Explica, GAVETA! (Gaveta)<span class="w3-text-white"> - (19:33 19/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">33 - </span>1917 e seus cortes invisíveis | Me Explica, GAVETA! (Gaveta <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=ltwg56u0PLc"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (19:33 19/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">34 - </span>5 Passos para Parar de Procrastinar & Concluir Trabalhos Criativos (What I've Learned)<span class="w3-text-white"> - (20:22 19/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">34 - </span>5 Passos para Parar de Procrastinar & Concluir Trabalhos Criativos (What I've Learned <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=N60bMFqkcpU"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (20:22 19/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">35 - </span>A Ordem Paranormal RPG - Episódio 1 (Lives do Cellbit <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=uplnCYc0fDg"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (04:41 26/03/2020)</span></span><br /></div>
@@ -355,16 +400,22 @@
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">44 - </span>Will Quantum Computers break encryption?<span class="w3-text-white"> - (05:56 25/05/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">45 - </span>Os melhores UNIVERSOS PARALELOS da ficção l GAVETA<span class="w3-text-white"> - (04:13 27/05/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">45 - </span>Os melhores UNIVERSOS PARALELOS da ficção l GAVETA (Gaveta <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=NVweNvCtt0I"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (04:13 27/05/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">46 - </span>Why You Get Spooked From 4th Wall Breaks | Psych of Play<span class="w3-text-white"> - (05:00 27/05/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">46 - </span>Why You Get Spooked From 4th Wall Breaks | Psych of Play (Daryl Talks Games <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=eNMmSkE8ua4"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (05:00 27/05/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">47 - </span>The Worldwide Treasure Hunt (Gravity Falls) - Inside A Mind (Inside A Mind <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=QhuPJ20qNvM"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (21:29 03/06/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">48 - </span>What is The Internet Checkpoint? | Psych of Play (Daryl Talks Games <a href="https://www.youtube.com/watch?v=H4lwuNWBOA4">H4lwuNWBOA4</a>)<span class="w3-text-white"> - (10:39 08/06/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">48 - </span>What is The Internet Checkpoint? | Psych of Play (Daryl Talks Games <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=H4lwuNWBOA4"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (10:39 08/06/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">49 - </span>To Scale: The Solar System (To Scale: <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=zR3Igc3Rhfg"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (01:19 21/06/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">50 - </span>01# No Man's SKY Beyond - Iniciando na nova atualização (PT-BR) (LCarrafa <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=9LC_-ZyOI3U"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (19:14 10/07/2020)</span></span><br /></div>
 </div>
 <br />
 <a name="Movies2020"></a>
@@ -385,24 +436,24 @@
 <h4 class="mobileShow w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
 
-<div class="mobileHide"><span title="Watched 2020 [85]" alt="Watched 2020 [85]"><a href="#watch-watched 2020"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+<div class="mobileHide"><span title="Watched 2020 [102]" alt="Watched 2020 [102]"><a href="#watch-watched 2020"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
 <span title="Movies" alt="Movies"><a href="#watched-movies"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-movies')"><h2>Movies [1]: <i class="fas fa-film"></i></h2></button></a></span>
 <span title="Archived Media" alt="Archived Media"><a href="#watched-archived media"><button id="button5" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived media')"><h2>Archived Media [2]: <i class="fas fa-archive"></i></h2></button></a></span>
-</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [85]: <i class="fas fa-eye"></i></h4></button></a>
+</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [102]: <i class="fas fa-eye"></i></h4></button></a>
 <a href="#watched-moviesm" onclick="closeNav()"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-moviesm')"><h4>Movies [1]: <i class="fas fa-film"></i></h4></button></a>
 <a href="#watched-archived mediam" onclick="closeNav()"><button id="button5" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived mediam')"><h4>Archived Media [2]: <i class="fas fa-archive"></i></h4></button></a>
 </div><hr class="slhr" />
-<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="w3-text-blue">Watched 2020: </span><span class="w3-text-yellow"> [85]</span></b><br /><br /><p></p></h2></div><hr class="yellowhr" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="w3-text-blue">Watched 2020: </span><span class="w3-text-yellow"> [102]</span></b><br /><br /><p></p></h2></div><hr class="yellowhr" />
 <h4 class="w3-text-blue w3-black" style="text-align:left;">
-<a href="#Movies2020"><b><span class="w3-text-white">Movies: </span><span class="w3-text-blue">1</span></b><br />
-</a>
 <a href="#Series2020"><b><span class="w3-text-white">Series: </span><span class="w3-text-blue">2</span></b><br />
 </a>
-<a href="#Cartoons2020"><b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">15</span></b><br />
+<a href="#Cartoons2020"><b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">28</span></b><br />
 </a>
-<a href="#Animes2020"><b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">19</span></b><br />
+<a href="#Animes2020"><b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">21</span></b><br />
 </a>
-<a href="#Videos2020"><b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">48</span></b><br />
+<a href="#Videos2020"><b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">50</span></b><br />
+</a>
+<a href="#Movies2020"><b><span class="w3-text-white">Movies: </span><span class="w3-text-blue">1</span></b><br />
 </a>
 <br />
 <a name="Series2020"></a>
@@ -415,7 +466,7 @@
 </div>
 <br />
 <a name="Cartoons2020"></a>
-<b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">15</span></b><br />
+<b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">28</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">1 - </span>Rick and Morty S01E01(1) "Piloto"<span class="w3-text-white"> - (05:00 27/05/2020)</span></span><br /></div>
 </div>
@@ -461,9 +512,48 @@
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">15 - </span>Rick and Morty S02E03(14) "Assimilação autoerótica"<span class="w3-text-white"> - (16:47 09/06/2020)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">16 - </span>Rick and Morty S02E04(15) "Parasitas invasores alienígenas"<span class="w3-text-white"> - (02:47 19/06/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">17 - </span>Rick and Morty S02E05(16) "Planeta música"<span class="w3-text-white"> - (16:50 19/06/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">18 - </span>Rick and Morty S02E06(17) "Bateria esgotada"<span class="w3-text-white"> - (00:14 08/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">19 - </span>Rick and Morty S02E07(18) "Confusão em Little Sanchez"<span class="w3-text-white"> - (05:12 08/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">20 - </span>Rick and Morty S02E08(19) "TV interdimensional"<span class="w3-text-white"> - (08:17 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">21 - </span>Rick and Morty S02E09(20) "Olha quem está expurgando"<span class="w3-text-white"> - (08:17 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">22 - </span>Rick and Morty S02E10(21) "Casamento intergaláctico"<span class="w3-text-white"> - (08:17 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">23 - </span>Rick and Morty S03E01(22) "A Rickapunhalada Ricksalvação"<span class="w3-text-white"> - (08:24 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">24 - </span>Rick and Morty S03E02(23) "Rickcurtindo a Pedra"<span class="w3-text-white"> - (08:27 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">25 - </span>Rick and Morty S03E03(24) "Rick Pepino"<span class="w3-text-white"> - (09:12 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">26 - </span>It's Pony EP06 "Os Cabeleireiros - O Aniversário do Gerry"<span class="w3-text-white"> - (19:10 10/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">27 - </span>Rick and Morty S03E04(25) "Os Justiceiros 3: A volta do Exterminador de Mundos"<span class="w3-text-white"> - (19:50 12/07/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">28 - </span>Rick and Morty S03E05(26) "A Conspiração Whirly Dirly"<span class="w3-text-white"> - (04:17 14/07/2020)</span></span><br /></div>
+</div>
 <br />
 <a name="Animes2020"></a>
-<b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">19</span></b><br />
+<b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">21</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">1 - </span>Sword Art Online: Alicization - War of Underworld EP04(29) "Território Negro"<span class="w3-text-white"> - (06:01 11/01/2020)</span></span><br /></div>
 </div>
@@ -521,9 +611,15 @@
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">19 - </span>BanG Dream! 3rd Season EP6 "É isso"<span class="w3-text-white"> - (02:31 06/06/2020)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">20 - </span>BanG Dream! 3rd Season EP7 "Guarde Tudo Na Música"<span class="w3-text-white"> - (01:00 24/06/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">21 - </span>BanG Dream! 3rd Season EP8 "Devíamos Estar de Bobeira Agora?"<span class="w3-text-white"> - (02:02 25/06/2020)</span></span><br /></div>
+</div>
 <br />
 <a name="Videos2020"></a>
-<b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">48</span></b><br />
+<b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">50</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">1 - </span>2019 EM UMA MÚSICA (Inutilismo)<span class="w3-text-white"> - (19:29 07/01/2020)</span></span><br /></div>
 </div>
@@ -576,55 +672,55 @@
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">17 - </span>VFX no YouTube: como fazemos 🎥💻 | GAVETA (Gaveta)<span class="w3-text-white"> - (23:13 07/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">18 - </span>Como são GRAVADOS os EFEITOS SONOROS do CINEMA! A Magia do Foley (Brainstorm Tutoriais - Edição de Vídeo)<span class="w3-text-white"> - (23:41 07/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">18 - </span>Como são GRAVADOS os EFEITOS SONOROS do CINEMA! A Magia do Foley (Brainstorm Tutoriais - Edição de Vídeo <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=mw-qZ7wIBfI"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (23:41 07/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">19 - </span>APRENDA COMO EDITAR NO VEGAS PRO 16 em 5 MINUTOS - Tutorial para Iniciantes (Brainstorm Tutoriais - Edição de Vídeo)<span class="w3-text-white"> - (00:13 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">19 - </span>APRENDA COMO EDITAR NO VEGAS PRO 16 em 5 MINUTOS - Tutorial para Iniciantes (Brainstorm Tutoriais - Edição de Vídeo <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=mw-qZ7wIBfI"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (00:13 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">20 - </span>BEATBOX VS KONNAKOL (NME)<span class="w3-text-white"> - (01:36 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">20 - </span>BEATBOX VS KONNAKOL (NME <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=ntRhAVvGags"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (01:36 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">21 - </span>This Is What Happens When You Re-Upload a YouTube Video 1000 Times! (Marques Brownlee)<span class="w3-text-white"> - (01:52 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">21 - </span>This Is What Happens When You Re-Upload a YouTube Video 1000 Times! (Marques Brownlee <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=JR4KHfqw-oE"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (01:52 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">22 - </span>REGRESSÃO E VIAGEM NO TEMPO COM HIPNOSE (Pyong Lee)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">22 - </span>REGRESSÃO E VIAGEM NO TEMPO COM HIPNOSE (Pyong Lee <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=EQc7gElIcVM"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">23 - </span>HOW TO DUBSTEP | BEGINNERS TUTORIAL [HEROBUST STYLE] (CRWTH)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">23 - </span>HOW TO DUBSTEP | BEGINNERS TUTORIAL [HEROBUST STYLE] (CRWTH <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=WoBUA1zEQJ4"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">24 - </span>I'm Not A Robot ✅ (Tom Scott)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">24 - </span>I'm Not A Robot ✅ (Tom Scott <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=o1zNIm8GVPY"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">25 - </span>Ping! (Exyl)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">25 - </span>Ping! (Exyl <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=RKW6rjnYEkc"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">26 - </span>shower thoughts that make me question reality.. (Aperture)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">26 - </span>shower thoughts that make me question reality.. (Aperture <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=PTSmDUXt0zE"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">27 - </span>Answering google's most searched questions of 2019.. (Aperture)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">27 - </span>Answering google's most searched questions of 2019.. (Aperture <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=7u9sMTM2X7E"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (03:06 08/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">28 - </span>The ENTIRE Story of Ben 10 ILLUSTRATED [All 5 Parts] (The Ink Tank)<span class="w3-text-white"> - (16:18 09/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">28 - </span>The ENTIRE Story of Ben 10 ILLUSTRATED [All 5 Parts] (The Ink Tank <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=JdAaO-MK8DU"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (16:18 09/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">29 - </span>Wall-E as Sociological Storytelling (Pop Culture Directive)<span class="w3-text-white"> - (16:18 09/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">29 - </span>Wall-E as Sociological Storytelling (Pop Culture Directive <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=Z1-vPQKwXbY"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (16:18 09/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">30 - </span>cellbit simulando o coronga virus no plague inc (Lives do Cellbit)<span class="w3-text-white"> - (20:30 09/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">30 - </span>cellbit simulando o coronga virus no plague inc (Lives do Cellbit <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=7JqAHFcAO14"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (20:30 09/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">31 - </span>"Wait... Where Did Dubstep Go?" | My Reaction (Nawtystep)<span class="w3-text-white"> - (20:30 09/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">31 - </span>"Wait... Where Did Dubstep Go?" | My Reaction (Nawtystep <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=fzbvMFeN2U8"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (20:30 09/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">32 - </span>How Procrastination (slowly) Ruins Your Life (Better Ideas)<span class="w3-text-white"> - (05:36 16/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">32 - </span>How Procrastination (slowly) Ruins Your Life (Better Ideas <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=b2_KEk9wPwg"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (05:36 16/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">33 - </span>1917 e seus cortes invisíveis | Me Explica, GAVETA! (Gaveta)<span class="w3-text-white"> - (19:33 19/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">33 - </span>1917 e seus cortes invisíveis | Me Explica, GAVETA! (Gaveta <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=ltwg56u0PLc"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (19:33 19/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">34 - </span>5 Passos para Parar de Procrastinar & Concluir Trabalhos Criativos (What I've Learned)<span class="w3-text-white"> - (20:22 19/02/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">34 - </span>5 Passos para Parar de Procrastinar & Concluir Trabalhos Criativos (What I've Learned <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=N60bMFqkcpU"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (20:22 19/02/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">35 - </span>A Ordem Paranormal RPG - Episódio 1 (Lives do Cellbit <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=uplnCYc0fDg"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (04:41 26/03/2020)</span></span><br /></div>
@@ -657,16 +753,22 @@
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">44 - </span>Will Quantum Computers break encryption?<span class="w3-text-white"> - (05:56 25/05/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">45 - </span>Os melhores UNIVERSOS PARALELOS da ficção l GAVETA<span class="w3-text-white"> - (04:13 27/05/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">45 - </span>Os melhores UNIVERSOS PARALELOS da ficção l GAVETA (Gaveta <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=NVweNvCtt0I"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (04:13 27/05/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">46 - </span>Why You Get Spooked From 4th Wall Breaks | Psych of Play<span class="w3-text-white"> - (05:00 27/05/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">46 - </span>Why You Get Spooked From 4th Wall Breaks | Psych of Play (Daryl Talks Games <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=eNMmSkE8ua4"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (05:00 27/05/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">47 - </span>The Worldwide Treasure Hunt (Gravity Falls) - Inside A Mind (Inside A Mind <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=QhuPJ20qNvM"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (21:29 03/06/2020)</span></span><br /></div>
 </div>
 <div style="margin-left:30px;">
-<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">48 - </span>What is The Internet Checkpoint? | Psych of Play (Daryl Talks Games <a href="https://www.youtube.com/watch?v=H4lwuNWBOA4">H4lwuNWBOA4</a>)<span class="w3-text-white"> - (10:39 08/06/2020)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">48 - </span>What is The Internet Checkpoint? | Psych of Play (Daryl Talks Games <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=H4lwuNWBOA4"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (10:39 08/06/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">49 - </span>To Scale: The Solar System (To Scale: <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=zR3Igc3Rhfg"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (01:19 21/06/2020)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="borderbtn3"><span class="w3-text-white">50 - </span>01# No Man's SKY Beyond - Iniciando na nova atualização (PT-BR) (LCarrafa <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=9LC_-ZyOI3U"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (19:14 10/07/2020)</span></span><br /></div>
 </div>
 <br />
 <a name="Movies2020"></a>
@@ -686,7 +788,7 @@
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
-<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="w3-text-blue">To Watch: </span><span class="w3-text-yellow"> [11]</span></b><br /><br /><p></p></h2></div><hr class="yellowhr" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="w3-text-blue">To Watch: </span><span class="w3-text-yellow"> [12]</span></b><br /><br /><p></p></h2></div><hr class="yellowhr" />
 <h4 class="w borderbtn3 mobileHide w3-animate-zoom">1 - (Anime) - One Punch Man S02EP05(17) "Torneio de Artes Marciais" - <a href="vlc://file:///C:/Midias/One Punch Man/One Punch Man S02EP05(17) Torneio de Artes Marciais.mp4"><i class="fas fa-eye"></i></a></h4>
 
 <h5 class="w borderbtn3 mobileShow w3-animate-zoom">1 - Anime - One Punch Man S02EP05(17) "Torneio de Artes Marciais" - <a href="vlc://file:///C:/Midias/One Punch Man/One Punch Man S02EP05(17) Torneio de Artes Marciais.mp4"><i class="fas fa-eye"></i></a></h5>
@@ -702,9 +804,9 @@
 <h4 class="tw borderbtn3 mobileHide w3-animate-zoom">5 - (Anime) - Eromanga Sensei EP12 "Eromanga Festival" - <a href="vlc://file:///C:/Midias/Eromanga Sensei/Eromanga Sensei EP12 Eromanga Festival.mp4"><i class="fas fa-play"></i></a></h4>
 
 <h5 class="tw borderbtn3 mobileShow w3-animate-zoom">5 - Anime - Eromanga Sensei EP12 "Eromanga Festival" - <a href="vlc://file:///C:/Midias/Eromanga Sensei/Eromanga Sensei EP12 Eromanga Festival.mp4"><i class="fas fa-play"></i></a></h5>
-<h4 class="tw borderbtn3 mobileHide w3-animate-zoom">6 - (Anime) - BanG Dream 3rd Season EP7 "Guarde Tudo Na Música" - <a href="vlc://file:///C:/Midias/BanG Dream 3rd Season/BanG Dream 3rd Season EP7 Guarde Tudo Na Música.mp4"><i class="fas fa-play"></i></a></h4>
+<h4 class="tw borderbtn3 mobileHide w3-animate-zoom">6 - (Anime) - BanG Dream 3rd Season EP9 "Vamos, PoPiPa;" - <a href="vlc://file:///C:/Midias/BanG Dream 3rd Season/BanG Dream 3rd Season EP9 Vamos, PoPiPa;.mp4"><i class="fas fa-play"></i></a></h4>
 
-<h5 class="tw borderbtn3 mobileShow w3-animate-zoom">6 - Anime - BanG Dream 3rd Season EP7 "Guarde Tudo Na Música" - <a href="vlc://file:///C:/Midias/BanG Dream 3rd Season/BanG Dream 3rd Season EP7 Guarde Tudo Na Música.mp4"><i class="fas fa-play"></i></a></h5>
+<h5 class="tw borderbtn3 mobileShow w3-animate-zoom">6 - Anime - BanG Dream 3rd Season EP9 "Vamos, PoPiPa;" - <a href="vlc://file:///C:/Midias/BanG Dream 3rd Season/BanG Dream 3rd Season EP9 Vamos, PoPiPa;.mp4"><i class="fas fa-play"></i></a></h5>
 <h4 class="w borderbtn3 mobileHide w3-animate-zoom">7 - (Anime) - Revisions EP1 "Shibuya Teletransportada" - <a href="vlc://file:///C:/Midias/Revisions/Revisions EP1 Shibuya Teletransportada.mp4"><i class="fas fa-eye"></i></a></h4>
 
 <h5 class="w borderbtn3 mobileShow w3-animate-zoom">7 - Anime - Revisions EP1 "Shibuya Teletransportada" - <a href="vlc://file:///C:/Midias/Revisions/Revisions EP1 Shibuya Teletransportada.mp4"><i class="fas fa-eye"></i></a></h5>
@@ -756,9 +858,9 @@
 <h4 class="w borderbtn3 mobileHide w3-animate-zoom">23 - (Cartoon) - My Little Pony Equestria Girls - "Holidays Unwrapped" - <a href="vlc://file:///C:/Midias/MLP/My Little Pony Equestria Girls - Holidays Unwrapped.mp4"><i class="fas fa-eye"></i></a></h4>
 
 <h5 class="w borderbtn3 mobileShow w3-animate-zoom">23 - Cartoon - My Little Pony Equestria Girls - "Holidays Unwrapped" - <a href="vlc://file:///C:/Midias/MLP/My Little Pony Equestria Girls - Holidays Unwrapped.mp4"><i class="fas fa-eye"></i></a></h5>
-<h4 class="w borderbtn3 mobileHide w3-animate-zoom">24 - (Series) - The Walking Dead S07E07(90) Cante-me uma Música - <a href="vlc://file:///C:/Midias/The Walking Dead/The Walking Dead S07E07(90) Cante-me uma Música.mp4"><i class="fas fa-eye"></i></a></h4>
+<h4 class="tw borderbtn3 mobileHide w3-animate-zoom">24 - (Series) - The Walking Dead S07E08(91) "Corações Ainda Batendo" - <a href="vlc://file:///C:/Midias/The Walking Dead/The Walking Dead S07E08(91) Corações Ainda Batendo.mp4"><i class="fas fa-play"></i></a></h4>
 
-<h5 class="w borderbtn3 mobileShow w3-animate-zoom">24 - Series - The Walking Dead S07E07(90) Cante-me uma Música - <a href="vlc://file:///C:/Midias/The Walking Dead/The Walking Dead S07E07(90) Cante-me uma Música.mp4"><i class="fas fa-eye"></i></a></h5>
+<h5 class="tw borderbtn3 mobileShow w3-animate-zoom">24 - Series - The Walking Dead S07E08(91) "Corações Ainda Batendo" - <a href="vlc://file:///C:/Midias/The Walking Dead/The Walking Dead S07E08(91) Corações Ainda Batendo.mp4"><i class="fas fa-play"></i></a></h5>
 <h4 class="w borderbtn3 mobileHide w3-animate-zoom">25 - (Video) - MAIS ASSISTIDOS DE JANEIRO (Cellbit Jogando) - <a href="vlc://file:///C:/Midias/Canais/MAIS ASSISTIDOS DE JANEIRO (Cellbit Jogando).mp4"><i class="fas fa-eye"></i></a></h4>
 
 <h5 class="w borderbtn3 mobileShow w3-animate-zoom">25 - Video - MAIS ASSISTIDOS DE JANEIRO (Cellbit Jogando) - <a href="vlc://file:///C:/Midias/Canais/MAIS ASSISTIDOS DE JANEIRO (Cellbit Jogando).mp4"><i class="fas fa-eye"></i></a></h5>
@@ -786,9 +888,9 @@
 <h4 class="w borderbtn3 mobileHide w3-animate-zoom">33 - (Cartoon) - Homem-Aranha EP25 "The Hobgoblin - Part 2" - <a href="vlc://file:///C:/Midias/Homem-Aranha/Homem-Aranha EP25 The Hobgoblin - Part 2.mp4"><i class="fas fa-eye"></i></a></h4>
 
 <h5 class="w borderbtn3 mobileShow w3-animate-zoom">33 - Cartoon - Homem-Aranha EP25 "The Hobgoblin - Part 2" - <a href="vlc://file:///C:/Midias/Homem-Aranha/Homem-Aranha EP25 The Hobgoblin - Part 2.mp4"><i class="fas fa-eye"></i></a></h5>
-<h4 class="tw borderbtn3 mobileHide w3-animate-zoom">34 - (Movie) - Um Lugar Silencioso 2018 - <a href="vlc://file:///C:/Midias/Filmes/Um Lugar Silencioso 2018.mp4"><i class="fas fa-play"></i></a></h4>
+<h4 class="tw borderbtn3 mobileHide w3-animate-zoom">34 - (Movie) - Homem-Aranha no Aranhaverso 2019 - <a href="vlc://file:///C:/Midias/Filmes/Homem-Aranha no Aranhaverso 2019.mp4"><i class="fas fa-play"></i></a></h4>
 
-<h5 class="tw borderbtn3 mobileShow w3-animate-zoom">34 - Movie - Um Lugar Silencioso 2018 - <a href="vlc://file:///C:/Midias/Filmes/Um Lugar Silencioso 2018.mp4"><i class="fas fa-play"></i></a></h5>
+<h5 class="tw borderbtn3 mobileShow w3-animate-zoom">34 - Movie - Homem-Aranha no Aranhaverso 2019 - <a href="vlc://file:///C:/Midias/Filmes/Homem-Aranha no Aranhaverso 2019.mp4"><i class="fas fa-play"></i></a></h5>
 </div>
 </h2>
 </div>
@@ -798,7 +900,7 @@
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h4 class="mobileShow w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
-<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="w3-text-blue">To Watch: </span><span class="w3-text-yellow"> [11]</span></b><br /><br /><p></p></h2></div><hr class="yellowhr" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="w3-text-blue">To Watch: </span><span class="w3-text-yellow"> [12]</span></b><br /><br /><p></p></h2></div><hr class="yellowhr" />
 <h4 class="w borderbtn3 mobileHide w3-animate-zoom">1 - (Anime) - One Punch Man S02EP05(17) "Torneio de Artes Marciais" - <a href="vlc://file:///C:/Midias/One Punch Man/One Punch Man S02EP05(17) Torneio de Artes Marciais.mp4"><i class="fas fa-eye"></i></a></h4>
 
 <h5 class="w borderbtn3 mobileShow w3-animate-zoom">1 - Anime - One Punch Man S02EP05(17) "Torneio de Artes Marciais" - <a href="vlc://file:///C:/Midias/One Punch Man/One Punch Man S02EP05(17) Torneio de Artes Marciais.mp4"><i class="fas fa-eye"></i></a></h5>
@@ -814,9 +916,9 @@
 <h4 class="tw borderbtn3 mobileHide w3-animate-zoom">5 - (Anime) - Eromanga Sensei EP12 "Eromanga Festival" - <a href="vlc://file:///C:/Midias/Eromanga Sensei/Eromanga Sensei EP12 Eromanga Festival.mp4"><i class="fas fa-play"></i></a></h4>
 
 <h5 class="tw borderbtn3 mobileShow w3-animate-zoom">5 - Anime - Eromanga Sensei EP12 "Eromanga Festival" - <a href="vlc://file:///C:/Midias/Eromanga Sensei/Eromanga Sensei EP12 Eromanga Festival.mp4"><i class="fas fa-play"></i></a></h5>
-<h4 class="tw borderbtn3 mobileHide w3-animate-zoom">6 - (Anime) - BanG Dream 3rd Season EP7 "Guarde Tudo Na Música" - <a href="vlc://file:///C:/Midias/BanG Dream 3rd Season/BanG Dream 3rd Season EP7 Guarde Tudo Na Música.mp4"><i class="fas fa-play"></i></a></h4>
+<h4 class="tw borderbtn3 mobileHide w3-animate-zoom">6 - (Anime) - BanG Dream 3rd Season EP9 "Vamos, PoPiPa;" - <a href="vlc://file:///C:/Midias/BanG Dream 3rd Season/BanG Dream 3rd Season EP9 Vamos, PoPiPa;.mp4"><i class="fas fa-play"></i></a></h4>
 
-<h5 class="tw borderbtn3 mobileShow w3-animate-zoom">6 - Anime - BanG Dream 3rd Season EP7 "Guarde Tudo Na Música" - <a href="vlc://file:///C:/Midias/BanG Dream 3rd Season/BanG Dream 3rd Season EP7 Guarde Tudo Na Música.mp4"><i class="fas fa-play"></i></a></h5>
+<h5 class="tw borderbtn3 mobileShow w3-animate-zoom">6 - Anime - BanG Dream 3rd Season EP9 "Vamos, PoPiPa;" - <a href="vlc://file:///C:/Midias/BanG Dream 3rd Season/BanG Dream 3rd Season EP9 Vamos, PoPiPa;.mp4"><i class="fas fa-play"></i></a></h5>
 <h4 class="w borderbtn3 mobileHide w3-animate-zoom">7 - (Anime) - Revisions EP1 "Shibuya Teletransportada" - <a href="vlc://file:///C:/Midias/Revisions/Revisions EP1 Shibuya Teletransportada.mp4"><i class="fas fa-eye"></i></a></h4>
 
 <h5 class="w borderbtn3 mobileShow w3-animate-zoom">7 - Anime - Revisions EP1 "Shibuya Teletransportada" - <a href="vlc://file:///C:/Midias/Revisions/Revisions EP1 Shibuya Teletransportada.mp4"><i class="fas fa-eye"></i></a></h5>
@@ -868,9 +970,9 @@
 <h4 class="w borderbtn3 mobileHide w3-animate-zoom">23 - (Cartoon) - My Little Pony Equestria Girls - "Holidays Unwrapped" - <a href="vlc://file:///C:/Midias/MLP/My Little Pony Equestria Girls - Holidays Unwrapped.mp4"><i class="fas fa-eye"></i></a></h4>
 
 <h5 class="w borderbtn3 mobileShow w3-animate-zoom">23 - Cartoon - My Little Pony Equestria Girls - "Holidays Unwrapped" - <a href="vlc://file:///C:/Midias/MLP/My Little Pony Equestria Girls - Holidays Unwrapped.mp4"><i class="fas fa-eye"></i></a></h5>
-<h4 class="w borderbtn3 mobileHide w3-animate-zoom">24 - (Series) - The Walking Dead S07E07(90) Cante-me uma Música - <a href="vlc://file:///C:/Midias/The Walking Dead/The Walking Dead S07E07(90) Cante-me uma Música.mp4"><i class="fas fa-eye"></i></a></h4>
+<h4 class="tw borderbtn3 mobileHide w3-animate-zoom">24 - (Series) - The Walking Dead S07E08(91) "Corações Ainda Batendo" - <a href="vlc://file:///C:/Midias/The Walking Dead/The Walking Dead S07E08(91) Corações Ainda Batendo.mp4"><i class="fas fa-play"></i></a></h4>
 
-<h5 class="w borderbtn3 mobileShow w3-animate-zoom">24 - Series - The Walking Dead S07E07(90) Cante-me uma Música - <a href="vlc://file:///C:/Midias/The Walking Dead/The Walking Dead S07E07(90) Cante-me uma Música.mp4"><i class="fas fa-eye"></i></a></h5>
+<h5 class="tw borderbtn3 mobileShow w3-animate-zoom">24 - Series - The Walking Dead S07E08(91) "Corações Ainda Batendo" - <a href="vlc://file:///C:/Midias/The Walking Dead/The Walking Dead S07E08(91) Corações Ainda Batendo.mp4"><i class="fas fa-play"></i></a></h5>
 <h4 class="w borderbtn3 mobileHide w3-animate-zoom">25 - (Video) - MAIS ASSISTIDOS DE JANEIRO (Cellbit Jogando) - <a href="vlc://file:///C:/Midias/Canais/MAIS ASSISTIDOS DE JANEIRO (Cellbit Jogando).mp4"><i class="fas fa-eye"></i></a></h4>
 
 <h5 class="w borderbtn3 mobileShow w3-animate-zoom">25 - Video - MAIS ASSISTIDOS DE JANEIRO (Cellbit Jogando) - <a href="vlc://file:///C:/Midias/Canais/MAIS ASSISTIDOS DE JANEIRO (Cellbit Jogando).mp4"><i class="fas fa-eye"></i></a></h5>
@@ -898,9 +1000,9 @@
 <h4 class="w borderbtn3 mobileHide w3-animate-zoom">33 - (Cartoon) - Homem-Aranha EP25 "The Hobgoblin - Part 2" - <a href="vlc://file:///C:/Midias/Homem-Aranha/Homem-Aranha EP25 The Hobgoblin - Part 2.mp4"><i class="fas fa-eye"></i></a></h4>
 
 <h5 class="w borderbtn3 mobileShow w3-animate-zoom">33 - Cartoon - Homem-Aranha EP25 "The Hobgoblin - Part 2" - <a href="vlc://file:///C:/Midias/Homem-Aranha/Homem-Aranha EP25 The Hobgoblin - Part 2.mp4"><i class="fas fa-eye"></i></a></h5>
-<h4 class="tw borderbtn3 mobileHide w3-animate-zoom">34 - (Movie) - Um Lugar Silencioso 2018 - <a href="vlc://file:///C:/Midias/Filmes/Um Lugar Silencioso 2018.mp4"><i class="fas fa-play"></i></a></h4>
+<h4 class="tw borderbtn3 mobileHide w3-animate-zoom">34 - (Movie) - Homem-Aranha no Aranhaverso 2019 - <a href="vlc://file:///C:/Midias/Filmes/Homem-Aranha no Aranhaverso 2019.mp4"><i class="fas fa-play"></i></a></h4>
 
-<h5 class="tw borderbtn3 mobileShow w3-animate-zoom">34 - Movie - Um Lugar Silencioso 2018 - <a href="vlc://file:///C:/Midias/Filmes/Um Lugar Silencioso 2018.mp4"><i class="fas fa-play"></i></a></h5>
+<h5 class="tw borderbtn3 mobileShow w3-animate-zoom">34 - Movie - Homem-Aranha no Aranhaverso 2019 - <a href="vlc://file:///C:/Midias/Filmes/Homem-Aranha no Aranhaverso 2019.mp4"><i class="fas fa-play"></i></a></h5>
 </div>
 </h4>
 </div>
@@ -1287,10 +1389,10 @@
 <h2 class="mobileHide w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
 
-<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
 <span title="Movies [1]" alt="Movies [1]"><a href="#watched-movies"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-movies')"><h2>Movies [1]: <i class="fas fa-film"></i></h2></button></a></span>
 <span title="Archived Media" alt="Archived Media"><a href="#watched-archived media"><button id="button5" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived media')"><h2>Archived Media [2]: <i class="fas fa-archive"></i></h2></button></a></span>
-</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [85]: <i class="fas fa-eye"></i></h4></button></a>
+</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [102]: <i class="fas fa-eye"></i></h4></button></a>
 <a href="#watched-moviesm" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-moviesm')"><h4>Movies [1]: <i class="fas fa-film"></i></h4></button></a>
 <a href="#watched-archived mediam" onclick="closeNav()"><button id="button5" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived mediam')"><h4>Archived Media [2]: <i class="fas fa-archive"></i></h4></button></a>
 </div><hr class="slhr" />
@@ -1320,10 +1422,10 @@
 <h4 class="mobileShow w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
 
-<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
 <span title="Movies [1]" alt="Movies [1]"><a href="#watched-movies"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-movies')"><h2>Movies [1]: <i class="fas fa-film"></i></h2></button></a></span>
 <span title="Archived Media" alt="Archived Media"><a href="#watched-archived media"><button id="button5" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived media')"><h2>Archived Media [2]: <i class="fas fa-archive"></i></h2></button></a></span>
-</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [85]: <i class="fas fa-eye"></i></h4></button></a>
+</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [102]: <i class="fas fa-eye"></i></h4></button></a>
 <a href="#watched-moviesm" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-moviesm')"><h4>Movies [1]: <i class="fas fa-film"></i></h4></button></a>
 <a href="#watched-archived mediam" onclick="closeNav()"><button id="button5" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived mediam')"><h4>Archived Media [2]: <i class="fas fa-archive"></i></h4></button></a>
 </div><hr class="slhr" />
@@ -1353,10 +1455,10 @@
 <h2 class="mobileHide w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
 
-<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
 <span title="Movies" alt="Movies"><a href="#watched-movies"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-movies')"><h2>Movies [1]: <i class="fas fa-film"></i></h2></button></a></span>
 <span title="Archived Media [2]" alt="Archived Media [2]"><a href="#watched-archived media"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived media')"><h2>Archived Media [2]: <i class="fas fa-archive"></i></h2></button></a></span>
-</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [85]: <i class="fas fa-eye"></i></h4></button></a>
+</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [102]: <i class="fas fa-eye"></i></h4></button></a>
 <a href="#watched-moviesm" onclick="closeNav()"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-moviesm')"><h4>Movies [1]: <i class="fas fa-film"></i></h4></button></a>
 <a href="#watched-archived mediam" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived mediam')"><h4>Archived Media [2]: <i class="fas fa-archive"></i></h4></button></a>
 </div><hr class="slhr" />
@@ -1375,10 +1477,10 @@
 <h4 class="mobileShow w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
 
-<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
 <span title="Movies" alt="Movies"><a href="#watched-movies"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-movies')"><h2>Movies [1]: <i class="fas fa-film"></i></h2></button></a></span>
 <span title="Archived Media [2]" alt="Archived Media [2]"><a href="#watched-archived media"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived media')"><h2>Archived Media [2]: <i class="fas fa-archive"></i></h2></button></a></span>
-</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [85]: <i class="fas fa-eye"></i></h4></button></a>
+</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [102]: <i class="fas fa-eye"></i></h4></button></a>
 <a href="#watched-moviesm" onclick="closeNav()"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-moviesm')"><h4>Movies [1]: <i class="fas fa-film"></i></h4></button></a>
 <a href="#watched-archived mediam" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived mediam')"><h4>Archived Media [2]: <i class="fas fa-archive"></i></h4></button></a>
 </div><hr class="slhr" />
@@ -1397,10 +1499,10 @@
 <h2 class="mobileHide w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
 
-<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
 <span title="Movies" alt="Movies"><a href="#watched-movies"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-movies')"><h2>Movies [1]: <i class="fas fa-film"></i></h2></button></a></span>
 <span title="Archived Media [2]" alt="Archived Media [2]"><a href="#watched-archived media"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived media')"><h2>Archived Media [2]: <i class="fas fa-archive"></i></h2></button></a></span>
-</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [85]: <i class="fas fa-eye"></i></h4></button></a>
+</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [102]: <i class="fas fa-eye"></i></h4></button></a>
 <a href="#watched-moviesm" onclick="closeNav()"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-moviesm')"><h4>Movies [1]: <i class="fas fa-film"></i></h4></button></a>
 <a href="#watched-archived mediam" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived mediam')"><h4>Archived Media [2]: <i class="fas fa-archive"></i></h4></button></a>
 </div><hr class="slhr" />
@@ -1415,25 +1517,19 @@
 <div style="text-align:left;">
 <b><span class="w3-text-white">Watched things: </span></b><span class="w3-text-blue"><b>52</b></span><br />
 <br />
-<b>Warning</b>:  include(C:/Mega/Diario/PHP/Global/Tabs//YearMaker2.php): failed to open stream: No such file or directory in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>58</b><br />
-<br />
-<b>Warning</b>:  include(): Failed opening 'C:/Mega/Diario/PHP/Global/Tabs//YearMaker2.php' for inclusion (include_path='C:\xampp\php\PEAR') in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>58</b><br />
-<br />
-<b><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span><br />
+<b><a href="#Movies2018"><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span></a><br />
 </b>
-<b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">5</span><br />
+<b><a href="#Cartoons2018"><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">60</span></a><br />
 </b>
-<b><span class="w3-text-white">Series: </span><span class="w3-text-blue">5</span><br />
+<b><a href="#Series2018"><span class="w3-text-white">Series: </span><span class="w3-text-blue">9</span></a><br />
 </b>
-<b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">18</span><br />
+<b><a href="#Animes2018"><span class="w3-text-white">Animes: </span><span class="w3-text-blue">87</span></a><br />
 </b>
-<b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">20</span><br />
+<b><a href="#Videos2018"><span class="w3-text-white">Videos: </span><span class="w3-text-blue">134</span></a><br />
 </b>
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>68</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span><br />
+<a name="Movies2018"></a>
+<b><a href="#Movies2018"><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - Sword Art Online: Ordinal Scale
 </span><br />
@@ -1444,10 +1540,8 @@
 <span class="borderbtn3"><span class="w3-text-white">4</span> - Jogador Numero 1
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>105</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">5</span><br />
+<a name="Cartoons2018"></a>
+<b><a href="#Cartoons2018"><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">60</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - My Little Pony — Best Gift Ever Holiday [Special]
 </span><br />
@@ -1460,10 +1554,8 @@
 <span class="borderbtn3"><span class="w3-text-white">5</span> - Homem-Aranha EP21 "Spider-Island - Part 3" 16:41 07/12/2018
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>141</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Series: </span><span class="w3-text-blue">5</span><br />
+<a name="Series2018"></a>
+<b><a href="#Series2018"><span class="w3-text-white">Series: </span><span class="w3-text-blue">9</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - The Walking Dead S06E09(76) "Sem Saída" 03:33 20/11/2018
 </span><br />
@@ -1476,10 +1568,8 @@
 <span class="borderbtn3"><span class="w3-text-white">5</span> - The Walking Dead S06E13(80) "O Mesmo Barco" 02:12 17/12/2018
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>178</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">18</span><br />
+<a name="Animes2018"></a>
+<b><a href="#Animes2018"><span class="w3-text-white">Animes: </span><span class="w3-text-blue">87</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - Anima Yell! EP6 "Super Empolgante Pedestal de Base Dupla!"
 </span><br />
@@ -1518,10 +1608,8 @@
 <span class="borderbtn3"><span class="w3-text-white">18</span> - Mahou Shoujo Site EP10 "Breaking" 06:14 31/12/2018
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>214</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">20</span><br />
+<a name="Videos2018"></a>
+<b><a href="#Videos2018"><span class="w3-text-white">Videos: </span><span class="w3-text-blue">134</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - A HISTÓRIA DO HOMEM QUE NÃO CONSEGUIA GANHAR! MELHORES CLIPES (alanzoka)
 </span><br />
@@ -1575,10 +1663,10 @@
 <h4 class="mobileShow w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
 
-<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
 <span title="Movies" alt="Movies"><a href="#watched-movies"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-movies')"><h2>Movies [1]: <i class="fas fa-film"></i></h2></button></a></span>
 <span title="Archived Media [2]" alt="Archived Media [2]"><a href="#watched-archived media"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived media')"><h2>Archived Media [2]: <i class="fas fa-archive"></i></h2></button></a></span>
-</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [85]: <i class="fas fa-eye"></i></h4></button></a>
+</div><div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [102]: <i class="fas fa-eye"></i></h4></button></a>
 <a href="#watched-moviesm" onclick="closeNav()"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-moviesm')"><h4>Movies [1]: <i class="fas fa-film"></i></h4></button></a>
 <a href="#watched-archived mediam" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived mediam')"><h4>Archived Media [2]: <i class="fas fa-archive"></i></h4></button></a>
 </div><hr class="slhr" />
@@ -1593,25 +1681,19 @@
 <div style="text-align:left;">
 <b><span class="w3-text-white">Watched things: </span></b><span class="w3-text-blue"><b>52</b></span><br />
 <br />
-<b>Warning</b>:  include(C:/Mega/Diario/PHP/Global/Tabs//YearMaker2.php): failed to open stream: No such file or directory in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>58</b><br />
-<br />
-<b>Warning</b>:  include(): Failed opening 'C:/Mega/Diario/PHP/Global/Tabs//YearMaker2.php' for inclusion (include_path='C:\xampp\php\PEAR') in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>58</b><br />
-<br />
-<b><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span><br />
+<b><a href="#Movies2018"><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span></a><br />
 </b>
-<b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">5</span><br />
+<b><a href="#Cartoons2018"><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">60</span></a><br />
 </b>
-<b><span class="w3-text-white">Series: </span><span class="w3-text-blue">5</span><br />
+<b><a href="#Series2018"><span class="w3-text-white">Series: </span><span class="w3-text-blue">9</span></a><br />
 </b>
-<b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">18</span><br />
+<b><a href="#Animes2018"><span class="w3-text-white">Animes: </span><span class="w3-text-blue">87</span></a><br />
 </b>
-<b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">20</span><br />
+<b><a href="#Videos2018"><span class="w3-text-white">Videos: </span><span class="w3-text-blue">134</span></a><br />
 </b>
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>68</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span><br />
+<a name="Movies2018"></a>
+<b><a href="#Movies2018"><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - Sword Art Online: Ordinal Scale
 </span><br />
@@ -1622,10 +1704,8 @@
 <span class="borderbtn3"><span class="w3-text-white">4</span> - Jogador Numero 1
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>105</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">5</span><br />
+<a name="Cartoons2018"></a>
+<b><a href="#Cartoons2018"><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">60</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - My Little Pony — Best Gift Ever Holiday [Special]
 </span><br />
@@ -1638,10 +1718,8 @@
 <span class="borderbtn3"><span class="w3-text-white">5</span> - Homem-Aranha EP21 "Spider-Island - Part 3" 16:41 07/12/2018
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>141</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Series: </span><span class="w3-text-blue">5</span><br />
+<a name="Series2018"></a>
+<b><a href="#Series2018"><span class="w3-text-white">Series: </span><span class="w3-text-blue">9</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - The Walking Dead S06E09(76) "Sem Saída" 03:33 20/11/2018
 </span><br />
@@ -1654,10 +1732,8 @@
 <span class="borderbtn3"><span class="w3-text-white">5</span> - The Walking Dead S06E13(80) "O Mesmo Barco" 02:12 17/12/2018
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>178</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">18</span><br />
+<a name="Animes2018"></a>
+<b><a href="#Animes2018"><span class="w3-text-white">Animes: </span><span class="w3-text-blue">87</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - Anima Yell! EP6 "Super Empolgante Pedestal de Base Dupla!"
 </span><br />
@@ -1696,10 +1772,8 @@
 <span class="borderbtn3"><span class="w3-text-white">18</span> - Mahou Shoujo Site EP10 "Breaking" 06:14 31/12/2018
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2018\2018 MediaReader.php</b> on line <b>214</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">20</span><br />
+<a name="Videos2018"></a>
+<b><a href="#Videos2018"><span class="w3-text-white">Videos: </span><span class="w3-text-blue">134</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - A HISTÓRIA DO HOMEM QUE NÃO CONSEGUIA GANHAR! MELHORES CLIPES (alanzoka)
 </span><br />
@@ -1753,11 +1827,11 @@
 <h2 class="mobileHide w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
 
-<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
 <span title="Movies" alt="Movies"><a href="#watched-movies"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-movies')"><h2>Movies [1]: <i class="fas fa-film"></i></h2></button></a></span>
 <span title="Archived Media [2]" alt="Archived Media [2]"><a href="#watched-archived media"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived media')"><h2>Archived Media [2]: <i class="fas fa-archive"></i></h2></button></a></span>
 </div>
-<div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [85]: <i class="fas fa-eye"></i></h4></button></a>
+<div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [102]: <i class="fas fa-eye"></i></h4></button></a>
 <a href="#watched-moviesm" onclick="closeNav()"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-moviesm')"><h4>Movies [1]: <i class="fas fa-film"></i></h4></button></a>
 <a href="#watched-archived mediam" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived mediam')"><h4>Archived Media [2]: <i class="fas fa-archive"></i></h4></button></a>
 </div>
@@ -1775,25 +1849,19 @@
 <b><span class="w3-text-white">Watched things: </span></b><span class="w3-text-blue"><b>294</b></span>
 <br />
 <br />
-<b>Warning</b>:  include(C:/Mega/Diario/PHP/Global/Tabs//YearMaker2.php): failed to open stream: No such file or directory in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>51</b><br />
-<br />
-<b>Warning</b>:  include(): Failed opening 'C:/Mega/Diario/PHP/Global/Tabs//YearMaker2.php' for inclusion (include_path='C:\xampp\php\PEAR') in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>51</b><br />
-<br />
-<b><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span><br />
+<b><a href="#Movies2019"><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span></a><br />
 </b>
-<b><span class="w3-text-white">Series: </span><span class="w3-text-blue">5</span><br />
+<b><a href="#Series2019"><span class="w3-text-white">Series: </span><span class="w3-text-blue">9</span></a><br />
 </b>
-<b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">5</span><br />
+<b><a href="#Cartoons2019"><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">60</span></a><br />
 </b>
-<b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">18</span><br />
+<b><a href="#Animes2019"><span class="w3-text-white">Animes: </span><span class="w3-text-blue">87</span></a><br />
 </b>
-<b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">20</span><br />
+<b><a href="#Videos2019"><span class="w3-text-white">Videos: </span><span class="w3-text-blue">134</span></a><br />
 </b>
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>61</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span><br />
+<a name="Movies2019"></a>
+<b><a href="#Movies2019"><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - Power Rangers 2017 03:11 14/01/2019
 </span><br />
@@ -1804,10 +1872,8 @@
 <span class="borderbtn3"><span class="w3-text-white">4</span> - Os Vingadores Ultimato (2019) 05:40 04/05/2019 
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>97</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Series: </span><span class="w3-text-blue">5</span><br />
+<a name="Series2019"></a>
+<b><a href="#Series2019"><span class="w3-text-white">Series: </span><span class="w3-text-blue">9</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - The Walking Dead S06E14(81) "Duas Vezes Mais Longe" 00:58 05/01/2019
 </span><br />
@@ -1828,10 +1894,8 @@
 <span class="borderbtn3"><span class="w3-text-white">9</span> - The Walking Dead S07E05(88) "Ativos" 19:16 01/10/2019
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>134</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">5</span><br />
+<a name="Cartoons2019"></a>
+<b><a href="#Cartoons2019"><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">60</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - Ben 10 Força Alienigena S02E01 - "Nasce o Estrela Sombria" 18:43 02/01/2019
 </span><br />
@@ -1954,10 +2018,8 @@
 <span class="borderbtn3"><span class="w3-text-white">60</span> - My Little Pony Equestria Girls - "Holidays Unwrapped" 05:30 25/12/2019
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>171</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">18</span><br />
+<a name="Animes2019"></a>
+<b><a href="#Animes2019"><span class="w3-text-white">Animes: </span><span class="w3-text-blue">87</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - Ore Ga Suki Nano Wa Imouto Dakedo Imouto Ja Nai EP3 "Minha Irmãzinha e Eu Somos Autores de Uma Light Novel" 03:06 06/01/2019
 </span><br />
@@ -2134,10 +2196,8 @@
 <span class="borderbtn3"><span class="w3-text-white">87</span> - Sword Art Online; Alicization - War of Underworld EP03(28) "O Teste de Carga Final" 04:08 23/12/2019
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>208</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">20</span><br />
+<a name="Videos2019"></a>
+<b><a href="#Videos2019"><span class="w3-text-white">Videos: </span><span class="w3-text-blue">134</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - CUBE ESCAPE #35 (Cellbit Jogando) 04:40 02/01/2019
 </span><br />
@@ -2419,11 +2479,11 @@
 <h4 class="mobileShow w3-black w3-text-white" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
 
-<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+<div class="mobileHide"><span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
 <span title="Movies" alt="Movies"><a href="#watched-movies"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-movies')"><h2>Movies [1]: <i class="fas fa-film"></i></h2></button></a></span>
 <span title="Archived Media [2]" alt="Archived Media [2]"><a href="#watched-archived media"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived media')"><h2>Archived Media [2]: <i class="fas fa-archive"></i></h2></button></a></span>
 </div>
-<div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [85]: <i class="fas fa-eye"></i></h4></button></a>
+<div class="mobileShow"><a href="#watch-watched 2020m" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020m')"><h4>Watched 2020 [102]: <i class="fas fa-eye"></i></h4></button></a>
 <a href="#watched-moviesm" onclick="closeNav()"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-moviesm')"><h4>Movies [1]: <i class="fas fa-film"></i></h4></button></a>
 <a href="#watched-archived mediam" onclick="closeNav()"><button class="w3-btn yellow borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived mediam')"><h4>Archived Media [2]: <i class="fas fa-archive"></i></h4></button></a>
 </div>
@@ -2441,25 +2501,19 @@
 <b><span class="w3-text-white">Watched things: </span></b><span class="w3-text-blue"><b>294</b></span>
 <br />
 <br />
-<b>Warning</b>:  include(C:/Mega/Diario/PHP/Global/Tabs//YearMaker2.php): failed to open stream: No such file or directory in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>51</b><br />
-<br />
-<b>Warning</b>:  include(): Failed opening 'C:/Mega/Diario/PHP/Global/Tabs//YearMaker2.php' for inclusion (include_path='C:\xampp\php\PEAR') in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>51</b><br />
-<br />
-<b><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span><br />
+<b><a href="#Movies2019"><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span></a><br />
 </b>
-<b><span class="w3-text-white">Series: </span><span class="w3-text-blue">5</span><br />
+<b><a href="#Series2019"><span class="w3-text-white">Series: </span><span class="w3-text-blue">9</span></a><br />
 </b>
-<b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">5</span><br />
+<b><a href="#Cartoons2019"><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">60</span></a><br />
 </b>
-<b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">18</span><br />
+<b><a href="#Animes2019"><span class="w3-text-white">Animes: </span><span class="w3-text-blue">87</span></a><br />
 </b>
-<b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">20</span><br />
+<b><a href="#Videos2019"><span class="w3-text-white">Videos: </span><span class="w3-text-blue">134</span></a><br />
 </b>
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>61</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span><br />
+<a name="Movies2019"></a>
+<b><a href="#Movies2019"><span class="w3-text-white">Movies: </span><span class="w3-text-blue">4</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - Power Rangers 2017 03:11 14/01/2019
 </span><br />
@@ -2470,10 +2524,8 @@
 <span class="borderbtn3"><span class="w3-text-white">4</span> - Os Vingadores Ultimato (2019) 05:40 04/05/2019 
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>97</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Series: </span><span class="w3-text-blue">5</span><br />
+<a name="Series2019"></a>
+<b><a href="#Series2019"><span class="w3-text-white">Series: </span><span class="w3-text-blue">9</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - The Walking Dead S06E14(81) "Duas Vezes Mais Longe" 00:58 05/01/2019
 </span><br />
@@ -2494,10 +2546,8 @@
 <span class="borderbtn3"><span class="w3-text-white">9</span> - The Walking Dead S07E05(88) "Ativos" 19:16 01/10/2019
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>134</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">5</span><br />
+<a name="Cartoons2019"></a>
+<b><a href="#Cartoons2019"><span class="w3-text-white">Cartoons: </span><span class="w3-text-blue">60</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - Ben 10 Força Alienigena S02E01 - "Nasce o Estrela Sombria" 18:43 02/01/2019
 </span><br />
@@ -2620,10 +2670,8 @@
 <span class="borderbtn3"><span class="w3-text-white">60</span> - My Little Pony Equestria Girls - "Holidays Unwrapped" 05:30 25/12/2019
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>171</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Animes: </span><span class="w3-text-blue">18</span><br />
+<a name="Animes2019"></a>
+<b><a href="#Animes2019"><span class="w3-text-white">Animes: </span><span class="w3-text-blue">87</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - Ore Ga Suki Nano Wa Imouto Dakedo Imouto Ja Nai EP3 "Minha Irmãzinha e Eu Somos Autores de Uma Light Novel" 03:06 06/01/2019
 </span><br />
@@ -2800,10 +2848,8 @@
 <span class="borderbtn3"><span class="w3-text-white">87</span> - Sword Art Online; Alicization - War of Underworld EP03(28) "O Teste de Carga Final" 04:08 23/12/2019
 </span><br />
 <br />
-<br />
-<b>Notice</b>:  Undefined variable: mediastexts in <b>C:\Mega\Diario\PHP\Global\Tabs\2019\2019 MediaReader.php</b> on line <b>208</b><br />
-<a name=""></a>
-<b><span class="w3-text-white">Videos: </span><span class="w3-text-blue">20</span><br />
+<a name="Videos2019"></a>
+<b><a href="#Videos2019"><span class="w3-text-white">Videos: </span><span class="w3-text-blue">134</span></a><br />
 </b>
 <span class="borderbtn3"><span class="w3-text-white">1</span> - CUBE ESCAPE #35 (Cellbit Jogando) 04:40 02/01/2019
 </span><br />
@@ -3094,9 +3140,9 @@
 21:02 17/04/2020: I added the new "Media Reader" from the website 2019 and 2018 on tabs <span title="Archived 2018" alt="Archived 2018"><a href="#watched-archived 2018"><button id="button6" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived 2018')"><h2>Archived 2018 [52]: <i class="fas fa-archive"></i></h2></button></a></span>
  and <span title="Archived 2019" alt="Archived 2019"><a href="#watched-archived 2019"><button id="button7" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived 2019')"><h2>Archived 2019 [294]: <i class="fas fa-archive"></i></h2></button></a></span>
 <br /><br />
-22:00 22/05/2020: I changed the way that the watched medias are written on the <span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+22:00 22/05/2020: I changed the way that the watched medias are written on the <span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
  tab, making them be separated by the media type, anime, video and stuff<br /><br />
-22:07 22/05/2020: I also changed some of the Youtube videos in the <span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+22:07 22/05/2020: I also changed some of the Youtube videos in the <span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
  tab so you can click on the Youtube button like this one <a href="#"><i class="fab fa-youtube w3-text-red"></i></a> and the Youtube video will open<br /><br />
 </div>
 </b></h3>
@@ -3119,9 +3165,9 @@
 21:02 17/04/2020: I added the new "Media Reader" from the website 2019 and 2018 on tabs <span title="Archived 2018" alt="Archived 2018"><a href="#watched-archived 2018"><button id="button6" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived 2018')"><h2>Archived 2018 [52]: <i class="fas fa-archive"></i></h2></button></a></span>
  and <span title="Archived 2019" alt="Archived 2019"><a href="#watched-archived 2019"><button id="button7" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watched-archived 2019')"><h2>Archived 2019 [294]: <i class="fas fa-archive"></i></h2></button></a></span>
 <br /><br />
-22:00 22/05/2020: I changed the way that the watched medias are written on the <span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+22:00 22/05/2020: I changed the way that the watched medias are written on the <span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
  tab, making them be separated by the media type, anime, video and stuff<br /><br />
-22:07 22/05/2020: I also changed some of the Youtube videos in the <span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [85]: <i class="fas fa-eye"></i></h2></button></a></span>
+22:07 22/05/2020: I also changed some of the Youtube videos in the <span title="Watched 2020" alt="Watched 2020"><a href="#watch-watched 2020"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('watch-watched 2020')"><h2>Watched 2020 [102]: <i class="fas fa-eye"></i></h2></button></a></span>
  tab so you can click on the Youtube button like this one <a href="#"><i class="fab fa-youtube w3-text-red"></i></a> and the Youtube video will open<br /><br />
 </div>
 </b></h3>
