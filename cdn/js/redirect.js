@@ -400,7 +400,7 @@ function Rodar() {
         }
 	}
 
-    if (titulo == "The Story of the Nazzevo brothers Geral" && check == false) {
+    if (titulo == "The Story of the Nazzevo Brothers Geral" && check == false) {
         lang = "a";
 
         if (lang == userLang) {
@@ -416,7 +416,7 @@ function Rodar() {
         }
 	}
 
-    if (titulo == "The Story of the Nazzevo brothers" && check == false) {
+    if (titulo == "The Story of the Nazzevo Brothers" && check == false) {
         lang = "en-US";
 
         if (lang == userLang) {
@@ -432,7 +432,7 @@ function Rodar() {
         }
 	}
 
-    if (titulo == "A História dos irmãos Nazzevo" && check == false) {
+    if (titulo == "A História dos Irmãos Nazzevo" && check == false) {
         lang = "pt-BR";
 
         if (lang == userLang) {
