@@ -4,32 +4,34 @@
 <meta charset="UTF-8" />
 <meta property="og:title" content="Diário" />
 <meta property="og:site_name" content="Diário" />
-<link rel="canonical" href="https://diario.netlify.com/" />
-<meta property="og:url" content="https://diario.netlify.com/" />
-<link rel="icon" href="https://diario.netlify.com/cdn/img/Diario 2.png" />
-<link rel="image_src" href="https://diario.netlify.com/cdn/img/Diario 2.png" />
-<meta property="og:image" content="https://diario.netlify.com/cdn/img/Diario 2.png" />
+<link rel="canonical" href="https://diario.netlify.app/" />
+<meta property="og:url" content="https://diario.netlify.app/" />
+<link rel="icon" href="https://diario.netlify.app/cdn/img/Diario 2.png" />
+<link rel="image_src" href="https://diario.netlify.app/cdn/img/Diario 2.png" />
+<meta property="og:image" content="https://diario.netlify.app/cdn/img/Diario 2.png" />
 <meta name="description" content="Site para mostrar o meu diario em forma de HTML, feito por stake2" />
 <meta property="og:description" content="Site para mostrar o meu diario em forma de HTML, feito por stake2" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" value="@The_Snakes90" />
 <meta name="twitter:creator" content="@The_Snakes90" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.com/cdn/css/pocb.css" />
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.com/cdn/css/w3.css" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.com/cdn/css/colors.css" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.com/cdn/css/imghover.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/pocb.css" />
+<link rel="stylesheet" href="https://www.w3schools.app/lib/w3.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/w3.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/colors.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/imghover.css" />
 <meta name="revised" content="Stake's Enterprisetm, 14/03/2020" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://use.fontawesome.app/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 </head>
 <body>
-<script src="https://diario.netlify.com/cdn/js/hora.js"></script>
-<script src="https://diario.netlify.com/cdn/js/tabs.js"></script>
-<script src="https://diario.netlify.com/cdn/js/ShowHide.js"></script>
-<script src="https://diario.netlify.com/cdn/js/sidemenu.js"></script>
-<script src="https://diario.netlify.com/cdn/js/js.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Search.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Tabs.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Redirect.js" onLoad="Rodar();"></script>
+<script src="https://diario.netlify.app/cdn/js/ShowHide.js"></script>
+<script src="https://diario.netlify.app/cdn/js/SideMenu.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Set Revised Date.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <center>
 
 <div id="mySidenav" class="sidenav mobileShow">
@@ -51,8 +53,8 @@
 <button id="ShowButton" class="w3-btn yellow mobileHide borderbtn" style="display:none;" onclick="buttons2();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
 
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /></div>
-<hr /><h1 class="w3-text-white">Diário</h1><hr /><br /><img src="https://diario.netlify.com/cdn/img/Diario 2.png" class="mobileHide" width="20%" style="border-width:3px;border-color:grey;border-style:solid;" />
-<img src="https://diario.netlify.com/cdn/img/Diario 2.png" class="mobileShow" width="66%" style="border-width:3px;border-color:grey;border-style:solid;" /><br /><br /><hr />
+<hr /><h1 class="w3-text-white">Diário</h1><hr /><br /><img src="https://diario.netlify.app/cdn/img/Diario 2.png" class="mobileHide" width="20%" style="border-width:3px;border-color:grey;border-style:solid;" />
+<img src="https://diario.netlify.app/cdn/img/Diario 2.png" class="mobileShow" width="66%" style="border-width:3px;border-color:grey;border-style:solid;" /><br /><br /><hr />
 
 <h5 class="w3-text-white">
 Este é um diario sobre a minha vida, as coisas que faço, e compartilho tudo isso com meu amigo Nodus e com vocês que leem, adoro escrever nele.<br />
@@ -479,7 +481,7 @@ ainda vou adicionar mais artistas so que vou tomar café primeiro"<br />
 02:20 07/11/2016: //"megasync é um paspalhao que nao sabe executar um comando certo,e tem um codigo muito mal feito" &lt;- este fato cientifico foi comp<br />
 02:21 07/11/2016: //rovado recentemente...<br />
 02:21 07/11/2016: megasync: ah... ta certo... ja chega né izaque(memeid="ja chega" play-audio="yes" "[C]seu madruga:ja chega [C]senhor barriga: eu não terminei ainda seu madruga... SeuM:ja chega SenhorB: eu não terminei ainda seu madruga...")<br />
-02:24 07/11/2016: (memeid="ja chega" author="bomberpooper" audio-src="joao ninguem" audio-link="<a href="https://www.youtube.com/watch?v=8YhSGuPxfgA">https://www.youtube.com/watch?v=8YhSGuPxfgA</a>")<br />
+02:24 07/11/2016: (memeid="ja chega" author="bomberpooper" audio-src="joao ninguem" audio-link="<a href="https://www.youtube.app/watch?v=8YhSGuPxfgA">https://www.youtube.app/watch?v=8YhSGuPxfgA</a>")<br />
 02:32 07/11/2016: [C]"ah pronto... agora eu to tendo que arrumar essa cagada que o megasync fez..."<br />
 02:33 07/11/2016: megasync: desculpa izaque...<br />
 02:33 07/11/2016: [C]"não to falando que voce é ruim... voce nao precisa se sentir culpado... só... só toma mais cuidado com o que voce faz..."<br />
@@ -492,7 +494,7 @@ ainda vou adicionar mais artistas so que vou tomar café primeiro"<br />
 02:53 07/11/2016: //registrado<br />
 02:53 07/11/2016: associar status com link<br />
 02:53 07/11/2016: //escreva o link<br />
-02:53 07/11/2016: //Status: "editanto perfil stake2 na wikia" href="<a href="https://pt.mlp.wikia.com/wiki/Utilizador:Stake2?action=edit">https://pt.mlp.wikia.com/wiki/Utilizador:Stake2?action=edit</a>" and "<a href="https://pt.mlp.wikia.com/wiki/Utilizador:Stake2">https://pt.mlp.wikia.com/wiki/Utilizador:Stake2</a>"<br />
+02:53 07/11/2016: //Status: "editanto perfil stake2 na wikia" href="<a href="https://pt.mlp.wikia.app/wiki/Utilizador:Stake2?action=edit">https://pt.mlp.wikia.app/wiki/Utilizador:Stake2?action=edit</a>" and "<a href="https://pt.mlp.wikia.app/wiki/Utilizador:Stake2">https://pt.mlp.wikia.app/wiki/Utilizador:Stake2</a>"<br />
 03:10 07/11/2016: //registrado<br />
 03:10 07/11/2016: [C]"obrigado"<br />
 03:10 07/11/2016: //disponha<br />
@@ -527,9 +529,9 @@ ainda vou adicionar mais artistas so que vou tomar café primeiro"<br />
 03:52 07/11/2016: //ja que a area do objeto é 22cm a workplace-area é 18cm porque a area de local de trabalho é menor do que as dimensoes do objeto<br />
 03:53 07/11/2016: "nodus associe um link de uma loja onde se pode encontrar os objetos: objid="caixa de papelao[temp]" e objid="torradeira" "<br />
 03:55 07/11/2016: //processando...<br />
-03:55 07/11/2016: //"objid="caixa de papelao[temp]" href="<a href="https://www.caixasnet.com.br/todos/Caixa-de-Papelao-para-Transporte-e-Mudanca-Mod-G-C60-x-L60-x-A60-cm-1-unid1#.WCASP_Rol94">https://www.caixasnet.com.br/todos/Caixa-de-Papelao-para-Transporte-e-Mudanca-Mod-G-C60-x-L60-x-A60-cm-1-unid1#.WCASP_Rol94</a>" "<br />
+03:55 07/11/2016: //"objid="caixa de papelao[temp]" href="<a href="https://www.caixasnet.app.br/todos/Caixa-de-Papelao-para-Transporte-e-Mudanca-Mod-G-C60-x-L60-x-A60-cm-1-unid1#.WCASP_Rol94">https://www.caixasnet.app.br/todos/Caixa-de-Papelao-para-Transporte-e-Mudanca-Mod-G-C60-x-L60-x-A60-cm-1-unid1#.WCASP_Rol94</a>" "<br />
 03:56 07/11/2016: //...<br />
-03:56 07/11/2016: //"objid="torradeira" href="<a href="https://www.casasbahia.com.br/Eletroportateis/Torradeiras/Torradeira-Mondial-Toast-Duo-T-01-2323.html?recsource=wproddisp&amp;rectype=w9">https://www.casasbahia.com.br/Eletroportateis/Torradeiras/Torradeira-Mondial-Toast-Duo-T-01-2323.html?recsource=wproddisp&amp;rectype=w9</a>" "<br />
+03:56 07/11/2016: //"objid="torradeira" href="<a href="https://www.casasbahia.app.br/Eletroportateis/Torradeiras/Torradeira-Mondial-Toast-Duo-T-01-2323.html?recsource=wproddisp&amp;rectype=w9">https://www.casasbahia.app.br/Eletroportateis/Torradeiras/Torradeira-Mondial-Toast-Duo-T-01-2323.html?recsource=wproddisp&amp;rectype=w9</a>" "<br />
 03:57 07/11/2016: //feito<br />
 03:57 07/11/2016: "obrigado"<br />
 03:57 07/11/2016: //disponha<br />
@@ -662,7 +664,7 @@ ainda vou adicionar mais artistas so que vou tomar café primeiro"<br />
 09:27 07/11/2016: //verificando... voce não acessou esses dois jogos hoje senhor...<br />
 09:27 07/11/2016: "marque alguns compromissos para mim"<br />
 09:27 07/11/2016: //fale<br />
-09:27 07/11/2016: entrar na conta accountid="Funkysnipa Cat" do google+,entrar na siteid="wikia mlp" siteurl="http://pt.mlp.wikia.com/"<br />
+09:27 07/11/2016: entrar na conta accountid="Funkysnipa Cat" do google+,entrar na siteid="wikia mlp" siteurl="http://pt.mlp.wikia.app/"<br />
 09:29 07/11/2016: //so isso?<br />
 09:29 07/11/2016: "sim"<br />
 09:29 07/11/2016: //marcado<br />
@@ -723,7 +725,7 @@ ainda vou adicionar mais artistas so que vou tomar café primeiro"<br />
 16:51 08/11/2016: "que horas são"<br />
 16:51 08/11/2016: //16:51<br />
 16:51 08/11/2016: "musica atual"<br />
-16:52 08/11/2016: //Remains by Aviators "href="<a href="https://soundoftheaviators.bandcamp.com/album/stargazers">https://soundoftheaviators.bandcamp.com/album/stargazers</a>" "<br />
+16:52 08/11/2016: //Remains by Aviators "href="<a href="https://soundoftheaviators.bandcamp.app/album/stargazers">https://soundoftheaviators.bandcamp.app/album/stargazers</a>" "<br />
 16:52 08/11/2016: "obrigado"<br />
 16:52 08/11/2016: //disponha<br />
 16:52 08/11/2016: "associar link a esta frase "Muitas guias 13.png criado:" "<br />
@@ -743,14 +745,14 @@ ainda vou adicionar mais artistas so que vou tomar café primeiro"<br />
 16:58 08/11/2016: "nodus acho que vou tomar café"<br />
 16:58 08/11/2016: //ok senhor<br />
 16:58 08/11/2016: "nodus musica atual"<br />
-16:58 08/11/2016: //"Sweet Dreams Bonus Track by Aviators href="<a href="https://soundoftheaviators.bandcamp.com/album/stargazers">https://soundoftheaviators.bandcamp.com/album/stargazers</a>" "<br />
+16:58 08/11/2016: //"Sweet Dreams Bonus Track by Aviators href="<a href="https://soundoftheaviators.bandcamp.app/album/stargazers">https://soundoftheaviators.bandcamp.app/album/stargazers</a>" "<br />
 17:01 08/11/2016: "obrigado nodus"<br />
 17:01 08/11/2016: //disponha<br />
 17:01 08/11/2016: "nodus voce pode salvar todas as abas abertas do firefox em uma pasta chamada sav 08.11.2016 17:02 dentro da pasta Quick SAV 2.0"<br />
 17:02 08/11/2016: //trabalhando...<br />
 17:03 08/11/2016: //feito<br />
 17:03 08/11/2016: "Musica atual"<br />
-17:03 08/11/2016: //"Who's Going To Stop Me Now? by Aviators href="<a href="https://soundoftheaviators.bandcamp.com/album/stargazers">https://soundoftheaviators.bandcamp.com/album/stargazers</a>" "<br />
+17:03 08/11/2016: //"Who's Going To Stop Me Now? by Aviators href="<a href="https://soundoftheaviators.bandcamp.app/album/stargazers">https://soundoftheaviators.bandcamp.app/album/stargazers</a>" "<br />
 17:04 08/11/2016: "nodus faz uma lista das musicas do album albumid="Stargazers" authorid="Aviators" "<br />
 17:05 08/11/2016: //trabalhando...<br />
 17:05 08/11/2016: //1. Stargazers (Intro) 03:45 2. Oblivion 06:08 3. Welcome to Paradise 05:11 4. Apocalypse State of Mind 06:19 5. Immortal 05:17 6. Chaos Theory 06:52 7. Wolves 05:22 8. Game Over 04:02 9. Ammunition 05:18 10. Who's Going to Stop Me Now? 05:37 11. Meet You At The End 04:53 12. Requiem For The Hunter 03:41 13. Losing Control 06:08 14. Acid Rain (feat. Tarby) 04:50 15. Remains 08:13 16. Stargazers II (Bonus Track) 03:38 17. Sweet Dreams (Bonus Track) (free) 05:21 18. Who's Going To Stop Me Now? (Dance Mix) 05:37 19. Meet You at the End (Techno Cinema Remix) 04:53 20. Ammunition (Techno Cinema Remix) 05:20 <br />
@@ -779,18 +781,18 @@ ainda vou adicionar mais artistas so que vou tomar café primeiro"<br />
 18:00 08/11/2016: "vou jogar um pouco de infinite hero"<br />
 18:00 08/11/2016: //tudo bem.<br />
 18:11 08/11/2016: "chequei tudo no infinite hero"<br />
-18:11 08/11/2016: "nodus marcar gameid="infinite hero" href="<a href="https://www.kongregate.com/games/playwave/infinite-hero?acomplete=infinite+hero">https://www.kongregate.com/games/playwave/infinite-hero?acomplete=infinite+hero</a>" como "checado "<br />
+18:11 08/11/2016: "nodus marcar gameid="infinite hero" href="<a href="https://www.kongregate.app/games/playwave/infinite-hero?acomplete=infinite+hero">https://www.kongregate.app/games/playwave/infinite-hero?acomplete=infinite+hero</a>" como "checado "<br />
 18:11 08/11/2016: "e faz uma versao simplificada tambem"<br />
 18:11 08/11/2016: //trabalhando...<br />
-18:11 08/11/2016: //gameid="infinite hero" href="<a href="https://www.kongregate.com/games/playwave/infinite-hero?acomplete=infinite+hero">https://www.kongregate.com/games/playwave/infinite-hero?acomplete=infinite+hero</a> checado"<br />
+18:11 08/11/2016: //gameid="infinite hero" href="<a href="https://www.kongregate.app/games/playwave/infinite-hero?acomplete=infinite+hero">https://www.kongregate.app/games/playwave/infinite-hero?acomplete=infinite+hero</a> checado"<br />
 18:12 08/11/2016: //"Infinite Hero Checado"<br />
 18:12 08/11/2016: "valeu"<br />
 18:12 08/11/2016: //disponha<br />
 18:13 08/11/2016: "nodus salvar bloco de notas"<br />
 18:13 08/11/2016: //feito.<br />
-18:48 08/11/2016: "nodus mudar status de gameid="Transport Defender" href="<a href="https://www.kongregate.com/games/IDNoise/transport-defender">https://www.kongregate.com/games/IDNoise/transport-defender</a>" para checado "<br />
+18:48 08/11/2016: "nodus mudar status de gameid="Transport Defender" href="<a href="https://www.kongregate.app/games/IDNoise/transport-defender">https://www.kongregate.app/games/IDNoise/transport-defender</a>" para checado "<br />
 18:50 08/11/2016: //trabalhando...<br />
-18:50 08/11/2016: //"gameid="Transport Defender" href="<a href="https://www.kongregate.com/games/IDNoise/transport-defender">https://www.kongregate.com/games/IDNoise/transport-defender</a>" Checado"<br />
+18:50 08/11/2016: //"gameid="Transport Defender" href="<a href="https://www.kongregate.app/games/IDNoise/transport-defender">https://www.kongregate.app/games/IDNoise/transport-defender</a>" Checado"<br />
 18:51 08/11/2016: //"Transport Defender Checado"<br />
 18:51 08/11/2016: "Eu do futuro, lembre-se... dos seus sentimentos, das suas memorias,das coisas que você fez..."<br />
 18:52 08/11/2016: //Posso deixar uma mensagen para o meu eu do futuro tambem?<br />
@@ -834,12 +836,12 @@ ainda vou adicionar mais artistas so que vou tomar café primeiro"<br />
 01:26 09/11/2016: //feito.<br />
 01:27 09/11/2016: "obrigado"<br />
 01:27 09/11/2016: //disponha<br />
-01:27 09/11/2016: "Status: video assistido: Star Citizen 001 - Conheça o Império de Star Citizen - FBN games href="<a href="https://www.youtube.com/watch?v=J-ieR4rYiAs">https://www.youtube.com/watch?v=J-ieR4rYiAs</a>" "<br />
-01:29 09/11/2016: "Status: video assistido: Redout - Velocidade Frenética - FBN games href="<a href="https://www.youtube.com/watch?v=sp88nYFx45w">https://www.youtube.com/watch?v=sp88nYFx45w</a>" "<br />
-01:30 09/11/2016: "Status: video assistido: Robinson The Journey - Sua Próxima Jornada - FBN games href="<a href="https://www.youtube.com/watch?v=uEtHcoukVKI">https://www.youtube.com/watch?v=uEtHcoukVKI</a>" "<br />
-01:31 09/11/2016: "Status: video assistido: Osiris New Dawn - Que jogo é esse - FBN games href="<a href="https://www.youtube.com/watch?v=owj_wfAad7M">https://www.youtube.com/watch?v=owj_wfAad7M</a>" "<br />
-01:31 09/11/2016: "Status: video assistido: ADRIFT 01 - Acidente no Espaço - FBN games href="<a href="https://www.youtube.com/watch?v=stR8a0NIB9M">https://www.youtube.com/watch?v=stR8a0NIB9M</a>" "<br />
-01:32 09/11/2016: "Status: video assistido: EVERSPACE 01 - Uma Nova Batalha se Aproxima - FBN games href="<a href="https://www.youtube.com/watch?v=gk9SFwP6nq0">https://www.youtube.com/watch?v=gk9SFwP6nq0</a>" "<br />
+01:27 09/11/2016: "Status: video assistido: Star Citizen 001 - Conheça o Império de Star Citizen - FBN games href="<a href="https://www.youtube.app/watch?v=J-ieR4rYiAs">https://www.youtube.app/watch?v=J-ieR4rYiAs</a>" "<br />
+01:29 09/11/2016: "Status: video assistido: Redout - Velocidade Frenética - FBN games href="<a href="https://www.youtube.app/watch?v=sp88nYFx45w">https://www.youtube.app/watch?v=sp88nYFx45w</a>" "<br />
+01:30 09/11/2016: "Status: video assistido: Robinson The Journey - Sua Próxima Jornada - FBN games href="<a href="https://www.youtube.app/watch?v=uEtHcoukVKI">https://www.youtube.app/watch?v=uEtHcoukVKI</a>" "<br />
+01:31 09/11/2016: "Status: video assistido: Osiris New Dawn - Que jogo é esse - FBN games href="<a href="https://www.youtube.app/watch?v=owj_wfAad7M">https://www.youtube.app/watch?v=owj_wfAad7M</a>" "<br />
+01:31 09/11/2016: "Status: video assistido: ADRIFT 01 - Acidente no Espaço - FBN games href="<a href="https://www.youtube.app/watch?v=stR8a0NIB9M">https://www.youtube.app/watch?v=stR8a0NIB9M</a>" "<br />
+01:32 09/11/2016: "Status: video assistido: EVERSPACE 01 - Uma Nova Batalha se Aproxima - FBN games href="<a href="https://www.youtube.app/watch?v=gk9SFwP6nq0">https://www.youtube.app/watch?v=gk9SFwP6nq0</a>" "<br />
 01:32 09/11/2016: "nodus associa essa frase com um link "Pasta de videos" "<br />
 01:33 09/11/2016: //fale<br />
 01:33 09/11/2016: "D:\Maratonas\Videos"<br />
@@ -857,7 +859,7 @@ ainda vou adicionar mais artistas so que vou tomar café primeiro"<br />
 04:05 09/11/2016: "log de guias nodus"<br />
 04:05 09/11/2016: //trabalhando...<br />
 04:05 09/11/2016: //feito.<br />
-04:06 09/11/2016: //"<a href="https://www.google.com.br/?gfe_rd=cr&ei=dIS4VtCYJcLK8geX8Z_QBQ">https://www.google.com.br/?gfe_rd=cr&ei=dIS4VtCYJcLK8geX8Z_QBQ</a> - Google"<br />
+04:06 09/11/2016: //"<a href="https://www.google.app.br/?gfe_rd=cr&ei=dIS4VtCYJcLK8geX8Z_QBQ">https://www.google.app.br/?gfe_rd=cr&ei=dIS4VtCYJcLK8geX8Z_QBQ</a> - Google"<br />
 04:06 09/11/2016: //"<a href="https://www.downornot.net/larawith.me.htm">https://www.downornot.net/larawith.me.htm</a> - downornot"<br />
 04:06 09/11/2016: //"[Removido]"<br />
 04:06 09/11/2016: "salvar bloco de notas"<br />
@@ -1091,8 +1093,8 @@ uma hr eu pergunto pra ele .-"<br />
 19:03 11/11/2016: //eu conheco c,java<br />
 19:03 11/11/2016: "hum"<br />
 19:03 11/11/2016: "relatorio de promgramas"<br />
-19:04 11/11/2016: //Firefox(infinite hero href="<a href="https://www.kongregate.com/games/playwave/infinite-hero?acomplete=infinite+hero">https://www.kongregate.com/games/playwave/infinite-hero?acomplete=infinite+hero</a>",No Man's <br />
-19:05 11/11/2016: //Sky 024 href="<a href="https://www.youtube.com/watch?v=0CwI0onD5dM&list=PLJQbOAE82mcjKwKYke87CIISH6Gfu3Wtk&index=24">https://www.youtube.com/watch?v=0CwI0onD5dM&list=PLJQbOAE82mcjKwKYke87CIISH6Gfu3Wtk&index=24</a>")<br />
+19:04 11/11/2016: //Firefox(infinite hero href="<a href="https://www.kongregate.app/games/playwave/infinite-hero?acomplete=infinite+hero">https://www.kongregate.app/games/playwave/infinite-hero?acomplete=infinite+hero</a>",No Man's <br />
+19:05 11/11/2016: //Sky 024 href="<a href="https://www.youtube.app/watch?v=0CwI0onD5dM&list=PLJQbOAE82mcjKwKYke87CIISH6Gfu3Wtk&index=24">https://www.youtube.app/watch?v=0CwI0onD5dM&list=PLJQbOAE82mcjKwKYke87CIISH6Gfu3Wtk&index=24</a>")<br />
 19:05 11/11/2016: //pasta: bloco de notas mega,gtarefas,vlc(still shy aviators remix),Diário.txt<br />
 19:05 11/11/2016: "Check "Diário 9.png" "<br />
 19:07 11/11/2016: //Checar "Diário 9.png" href="D:\Maratonas\Imagens\Prints"<br />
@@ -1713,14 +1715,14 @@ uma hr eu pergunto pra ele .-"<br />
 00:55 04/04/2017: //do "[nome]... [nome]... porra [nome]<br />
 00:56 04/04/2017: "ata... e se sabe de onde ele veio?"<br />
 02:04 04/04/2017: //acho que veio desse tennis aqui:<br />
-02:05 04/04/2017: videolistid="<a href="https://www.youtube.com/playlist?list=PLuq5_vH80fyQEmNCdxOHO8KNTiBR2Uvxf">https://www.youtube.com/playlist?list=PLuq5_vH80fyQEmNCdxOHO8KNTiBR2Uvxf</a>" liststyle="poop" competitors="wenderif vs medazza"<br />
+02:05 04/04/2017: videolistid="<a href="https://www.youtube.app/playlist?list=PLuq5_vH80fyQEmNCdxOHO8KNTiBR2Uvxf">https://www.youtube.app/playlist?list=PLuq5_vH80fyQEmNCdxOHO8KNTiBR2Uvxf</a>" liststyle="poop" competitors="wenderif vs medazza"<br />
 02:06 04/04/2017: "hm..."<br />
-02:23 04/04/2017: "to ouvindo umas musica muito foda aqui... <a href="https://savantofficial.bandcamp.com/album/vybz">https://savantofficial.bandcamp.com/album/vybz</a>"<br />
+02:23 04/04/2017: "to ouvindo umas musica muito foda aqui... <a href="https://savantofficial.bandcamp.app/album/vybz">https://savantofficial.bandcamp.app/album/vybz</a>"<br />
 02:24 04/04/2017: //hm...<br />
 02:28 04/04/2017: "so deixando isso aqui basicamente "Ué.... " "<br />
 02:28 04/04/2017: //arran<br />
 02:28 04/04/2017: "kkkk"<br />
-02:34 04/04/2017: "nossa... *-* ouve isso nodus... <a href="https://savantofficial.bandcamp.com/album/vybz">https://savantofficial.bandcamp.com/album/vybz</a>"<br />
+02:34 04/04/2017: "nossa... *-* ouve isso nodus... <a href="https://savantofficial.bandcamp.app/album/vybz">https://savantofficial.bandcamp.app/album/vybz</a>"<br />
 02:34 04/04/2017: //pera<br />
 03:18 04/04/2017: "[Removido]"<br />
 04:11 04/04/2017: "[Removido]"<br />
@@ -1732,7 +1734,7 @@ uma hr eu pergunto pra ele .-"<br />
 04:41 04/04/2017: "hm..."<br />
 04:42 04/04/2017: //tipo... a compilação de toda essa musica é foda<br />
 04:42 04/04/2017: "e num é? muito foda..."<br />
-05:34 04/04/2017: "eita... vou deixar esse link de voz aqui <a href="https://trial.dlsite.com/doujin/RJ198000/RJ197020_trial.zip">https://trial.dlsite.com/doujin/RJ198000/RJ197020_trial.zip</a>"<br />
+05:34 04/04/2017: "eita... vou deixar esse link de voz aqui <a href="https://trial.dlsite.app/doujin/RJ198000/RJ197020_trial.zip">https://trial.dlsite.app/doujin/RJ198000/RJ197020_trial.zip</a>"<br />
 05:35 04/04/2017: //arran<br />
 05:35 04/04/2017: "eeee"<br />
 05:39 04/04/2017: "e esse <a href="https://mega.nz/#F!JlxjVRiY!HzpkGLy1mh7IjLe7pgNL6Q">https://mega.nz/#F!JlxjVRiY!HzpkGLy1mh7IjLe7pgNL6Q</a>"<br />
@@ -1964,10 +1966,10 @@ uma hr eu pergunto pra ele .-"<br />
 19:36 20/05/2017: "hm... e acho que vou baixar essa musica"<br />
 19:37 20/05/2017: " "dump" basico: 2032 ano em que se passa o jogo PREY, 2035: verificar... "<br />
 19:38 20/05/2017: //tao ta né<br />
-19:40 20/05/2017: "e agora to ouvindo o mix="<a href="https://www.youtube.com/watch?v=Sh0djQG5eEI">https://www.youtube.com/watch?v=Sh0djQG5eEI</a>" control="get info about video" "<br />
+19:40 20/05/2017: "e agora to ouvindo o mix="<a href="https://www.youtube.app/watch?v=Sh0djQG5eEI">https://www.youtube.app/watch?v=Sh0djQG5eEI</a>" control="get info about video" "<br />
 19:41 20/05/2017: //title="'Back To The 80's' | Best of Synthwave And Retro Electro Music Mix for 2 Hours " <br />
-19:42 20/05/2017: //video-url="<a href="https://www.youtube.com/watch?v=Sh0djQG5eEI">https://www.youtube.com/watch?v=Sh0djQG5eEI</a>" author="ThePrimeThanatos" <br />
-19:42 20/05/2017: //author-url="<a href="https://www.youtube.com/channel/UCmYTgpKxd-QOJCPDrmaXuqQ">https://www.youtube.com/channel/UCmYTgpKxd-QOJCPDrmaXuqQ</a>"<br />
+19:42 20/05/2017: //video-url="<a href="https://www.youtube.app/watch?v=Sh0djQG5eEI">https://www.youtube.app/watch?v=Sh0djQG5eEI</a>" author="ThePrimeThanatos" <br />
+19:42 20/05/2017: //author-url="<a href="https://www.youtube.app/channel/UCmYTgpKxd-QOJCPDrmaXuqQ">https://www.youtube.app/channel/UCmYTgpKxd-QOJCPDrmaXuqQ</a>"<br />
 19:43 20/05/2017: "valeu, esses synth wave e retro electro é foda... a primeira musica me lembra vice city e da uma nostalgia *-*"<br />
 19:43 20/05/2017: //tambem gosto desse estilo *-*<br />
 20:25 20/05/2017: "ainda to ouvindo aquele mix foda e postando algumas coisas na ub"<br />
@@ -2035,7 +2037,7 @@ uma hr eu pergunto pra ele .-"<br />
 19:18 27/05/2017: //<a href="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Imagens\Prints\Not Movie like\dump\Sentiment connect.png">Sentiment connect.png</a><br />
 19:21 27/05/2017: "Tava contando... e descobri que o Diário tem exatamente 12931 palavras, e agora tem 91497 Caracteres"<br />
 19:22 27/05/2017: //onde se viu isso?<br />
-19:22 27/05/2017: "neste site: href="<a href="https://www.lettercount.com/">https://www.lettercount.com/</a>" "<br />
+19:22 27/05/2017: "neste site: href="<a href="https://www.lettercount.app/">https://www.lettercount.app/</a>" "<br />
 19:23 27/05/2017: //hm.. valeu<br />
 19:29 27/05/2017: "eim nodus, salva ae pra mim, acho que não vou escrever mais não, obrigado por salvar."<br />
 19:30 27/05/2017: //hm... tudo bem.<br />
@@ -2076,16 +2078,16 @@ uma hr eu pergunto pra ele .-"<br />
 04:58 01/06/2017: //tabom<br />
 04:58 01/06/2017: "1543 linhas e 91352 caracteres,"<br />
 05:07 01/06/2017: //ja posso falar?<br />
-05:07 01/06/2017: "sim... ja terminei, o site que eu usei foi esse link="<a href="https://textmechanic.com/text-tools/basic-text-tools/count-characters-words-lines/">https://textmechanic.com/text-tools/basic-text-tools/count-characters-words-lines/</a>" <br />
-05:08 01/06/2017: "e esse link="<a href="https://www.tools4noobs.com/online_tools/count_lines/">https://www.tools4noobs.com/online_tools/count_lines/</a>" "<br />
+05:07 01/06/2017: "sim... ja terminei, o site que eu usei foi esse link="<a href="https://textmechanic.app/text-tools/basic-text-tools/count-characters-words-lines/">https://textmechanic.app/text-tools/basic-text-tools/count-characters-words-lines/</a>" <br />
+05:08 01/06/2017: "e esse link="<a href="https://www.tools4noobs.app/online_tools/count_lines/">https://www.tools4noobs.app/online_tools/count_lines/</a>" "<br />
 05:08 01/06/2017: //arran<br />
 05:08 01/06/2017: "aaaaaaaaaaaaaaaa- acho que vou dar uma olhada no 4chan."<br />
-05:10 01/06/2017: "o ztoon lanco comic novo carai!!!!!!!!!! to tao feliz "<a href="https://z-t00n.deviantart.com/art/KnT-134-683557977/">https://z-t00n.deviantart.com/art/KnT-134-683557977/</a>" "<br />
+05:10 01/06/2017: "o ztoon lanco comic novo carai!!!!!!!!!! to tao feliz "<a href="https://z-t00n.deviantart.app/art/KnT-134-683557977/">https://z-t00n.deviantart.app/art/KnT-134-683557977/</a>" "<br />
 05:24 01/06/2017: "mano ,eu realmente preciso ir dormir veio, ja sao 5 e 24 da manha, nodus salva o mix do firefox pra mi?"<br />
 05:24 01/06/2017: //ta<br />
 05:26 01/06/2017: "<a href="https://mulpwiki.org/index.php/Prison">https://mulpwiki.org/index.php/Prison</a> - storia de mlp anon"<br />
 05:28 01/06/2017: "<a href="https://boards.4chan.org/mlp/">https://boards.4chan.org/mlp/</a> - uma board legal :33"<br />
-05:28 01/06/2017: "<a href="https://www.youtube.com/watch?v=higSz7NRkOQ&spfreload=5">https://www.youtube.com/watch?v=higSz7NRkOQ&spfreload=5</a>"<br />
+05:28 01/06/2017: "<a href="https://www.youtube.app/watch?v=higSz7NRkOQ&spfreload=5">https://www.youtube.app/watch?v=higSz7NRkOQ&spfreload=5</a>"<br />
 05:55 01/06/2017: "salva ae"<br />
 05:55 01/06/2017: //ta<br />
 05:55 01/06/2017: //salvo.<br />
@@ -2118,8 +2120,8 @@ uma hr eu pergunto pra ele .-"<br />
 00:31 26/06/2017: //Now Playing: Vicetone -  Nevada (feat. Cozi Zuehlsdorff) [SHKR Remix] Playlist: All.xspf<br />
 00:31 26/06/2017: "vlw ae"<br />
 00:31 26/06/2017: //nd<br />
-01:05 26/06/2017: "to ouvindo "Linkin Park - New Divide (Lyrics) - GetThemLyrics" no youtube link: <a href="https://www.youtube.com/watch?v=QnS09oQNexA">https://www.youtube.com/watch?v=QnS09oQNexA</a> "<br />
-01:05 26/06/2017: //Now Playing: Linkin Park - New Divide (Lyrics) - GetThemLyrics YTLink: <a href="https://www.youtube.com/watch?v=QnS09oQNexA">https://www.youtube.com/watch?v=QnS09oQNexA</a><br />
+01:05 26/06/2017: "to ouvindo "Linkin Park - New Divide (Lyrics) - GetThemLyrics" no youtube link: <a href="https://www.youtube.app/watch?v=QnS09oQNexA">https://www.youtube.app/watch?v=QnS09oQNexA</a> "<br />
+01:05 26/06/2017: //Now Playing: Linkin Park - New Divide (Lyrics) - GetThemLyrics YTLink: <a href="https://www.youtube.app/watch?v=QnS09oQNexA">https://www.youtube.app/watch?v=QnS09oQNexA</a><br />
 02:54 26/06/2017: "to ouvindo a soundtrack do don't starve... e nodus acho que não vou escrever mais não... flw ae"<br />
 02:55 26/06/2017: //fçw gordao<br />
 02:55 26/06/2017: //saussvo.<br />
@@ -2335,7 +2337,7 @@ uma hr eu pergunto pra ele .-"<br />
 00:20 18/08/2017: "carai ve la nodus"<br />
 00:21 18/08/2017: //ta to vendo... eita que fodaaaaa, carai to animado porque voce volto com a serie de jogos<br />
 00:21 18/08/2017: "tava olhando aqui e vi no dump um arquivo chamado ote, e acho que seria um bom nome pra um novo eia"<br />
-00:21 18/08/2017: "e dentro dele tem escrito "fourth wall creaking <a href="https://prntscr.com/g7gbwh">https://prntscr.com/g7gbwh</a>" e eu nao me lembro muito disso "<br />
+00:21 18/08/2017: "e dentro dele tem escrito "fourth wall creaking <a href="https://prntscr.app/g7gbwh">https://prntscr.app/g7gbwh</a>" e eu nao me lembro muito disso "<br />
 00:22 18/08/2017: "carai e agora acho que nunca me senti com tanto trabalho nos meus cascos '-'"<br />
 00:22 18/08/2017: //eita kkk ate falo cascos agora kkk<br />
 00:22 18/08/2017: "sim kkk"<br />
@@ -2433,7 +2435,7 @@ uma hr eu pergunto pra ele .-"<br />
 20:57 27/08/2017: "sim kkkk"<br />
 22:46 27/08/2017: "eita '-'-'-'-'-', faz 2 horas que não falo aqui, otempo passa rapido eim '-'"<br />
 22:46 27/08/2017: //sim kkk, que que se fez de bom?<br />
-22:46 27/08/2017: "eu editei umas coisas no cloppics.wordpress.com, tipo fiz um memorial da POC Network"<br />
+22:46 27/08/2017: "eu editei umas coisas no cloppics.wordpress.app, tipo fiz um memorial da POC Network"<br />
 22:47 27/08/2017: //eita que foda<br />
 22:47 27/08/2017: "sim kkk, da uma olhada la depois kk"<br />
 22:47 27/08/2017: //ta vou dar uma olhada :D<br />
@@ -2570,7 +2572,7 @@ uma hr eu pergunto pra ele .-"<br />
 <h5 class="w3-text-black white"><b>Block 45:</b><br /><br />
 #45<br />
 23:43 07/09/2017: "eita to postando dois block no mesmo dia kkk"<br />
-23:43 07/09/2017: "and now i just dream of cute little flowers <a href="https://diario.netlify.com/cdn/img/jogos 539.png">jogos 539.png</a>"<br />
+23:43 07/09/2017: "and now i just dream of cute little flowers <a href="https://diario.netlify.app/cdn/img/jogos 539.png">jogos 539.png</a>"<br />
 23:46 07/09/2017: //eita kkk, ta com sonokk, vai dormir, e da fazendo os novos link pronto pra pagina?<br />
 23:46 07/09/2017: "sim kkkk, acho que vou dormir um pouco, que sensasão..."<br />
 01:45 08/09/2017: "eae nodus kkk, voltei"<br />
@@ -2597,7 +2599,7 @@ uma hr eu pergunto pra ele .-"<br />
 01:51 08/09/2017: //sim :D<br />
 01:51 08/09/2017: "eu fiz o jogos 540"<br />
 01:51 08/09/2017: //entao linka ae<br />
-01:51 08/09/2017: "ta, <a href="https://diario.netlify.com/cdn/img/jogos 540.png">jogos 540.png</a>"<br />
+01:51 08/09/2017: "ta, <a href="https://diario.netlify.app/cdn/img/jogos 540.png">jogos 540.png</a>"<br />
 01:52 08/09/2017: //ae kk, poe no html pra mim ver<br />
 01:52 08/09/2017: "ta kk"<br />
 01:54 08/09/2017: "ja puis vela"<br />
@@ -2664,7 +2666,7 @@ uma hr eu pergunto pra ele .-"<br />
 11:00 08/09/2017: "vou dar uma checada no snipa"<br />
 11:00 08/09/2017: //ta<br />
 11:14 08/09/2017: "ja chequei o snipa mas queria comentar num post e o firefox fecho sem mais nem menos, e nao avisou de crash '-'"<br />
-11:15 08/09/2017: //ih hapaiz (memeid="ih rapaiz" memevideourl="<a href="https://www.youtube.com/watch?v=pcO2JYjRsW8">https://www.youtube.com/watch?v=pcO2JYjRsW8</a> type-of-meme="reaction meme")<br />
+11:15 08/09/2017: //ih hapaiz (memeid="ih rapaiz" memevideourl="<a href="https://www.youtube.app/watch?v=pcO2JYjRsW8">https://www.youtube.app/watch?v=pcO2JYjRsW8</a> type-of-meme="reaction meme")<br />
 11:16 08/09/2017: "digimon digitais digimon são caopeões, yea i own this beat, you could call me the king or the ruler, depos de um sonho quase sem fim *-*"<br />
 11:17 08/09/2017: //essas musicas são fodas, vai pesquisar depois?<br />
 11:17 08/09/2017: "sim kkk"<br />
@@ -2702,7 +2704,7 @@ uma hr eu pergunto pra ele .-"<br />
 03:25 09/09/2017: "to com sono nodus"<br />
 03:25 09/09/2017: //vai dormir entao kkk<br />
 03:25 09/09/2017: "ta, mas vou fazer um jogos antes"<br />
-03:26 09/09/2017: "<a href="https://diario.netlify.com/cdn/img/jogos 541.png">jogos 541.png</a>"<br />
+03:26 09/09/2017: "<a href="https://diario.netlify.app/cdn/img/jogos 541.png">jogos 541.png</a>"<br />
 03:27 09/09/2017: "*yawn~*, acho que vou ir dormir, salva ae pra mim nodus"<br />
 03:27 09/09/2017: //ta, salvando...<br />
 03:27 09/09/2017: //salvo.<br />
@@ -2807,7 +2809,7 @@ uma hr eu pergunto pra ele .-"<br />
 <hr class="blackhr" /><h2 class="w3-text-black white"><b>Você está lendo: Diário </b> <b>Block 50</b></h2><hr class="blackhr" />
 <h5 class="w3-text-black white"><b>Block 50:</b><br /><br />
 #50<br />
-19:06 14/09/2017: "eae nodus kkk, faz dois dias que não escrevo, to ouvindo uma musica muito foda <a href="https://www.youtube.com/watch?v=i-kd5wmFds8">September 17 [ indie rock ]</a>"<br />
+19:06 14/09/2017: "eae nodus kkk, faz dois dias que não escrevo, to ouvindo uma musica muito foda <a href="https://www.youtube.app/watch?v=i-kd5wmFds8">September 17 [ indie rock ]</a>"<br />
 19:06 14/09/2017: //hm, depois eu vejo<br />
 19:07 14/09/2017: "ta kkk, o block antigo foi menor em comparação com os outros né?"<br />
 19:07 14/09/2017: //sim kkk<br />
@@ -2818,12 +2820,12 @@ uma hr eu pergunto pra ele .-"<br />
 20:33 14/09/2017: //kk, mas se nao terminou a historia ainda né?<br />
 20:33 14/09/2017: "sim kkk, to ouvindo indie folk, nao sabia que era tão bom *-*"<br />
 20:34 14/09/2017; //*-*, linka ae<br />
-20:34 14/09/2017: "<a href="https://www.youtube.com/watch?v=hKYyN1aDfCQ">September '17 [ Indie Folk / Pop / Chill Playlist ] </a>"<br />
+20:34 14/09/2017: "<a href="https://www.youtube.app/watch?v=hKYyN1aDfCQ">September '17 [ Indie Folk / Pop / Chill Playlist ] </a>"<br />
 20:35 14/09/2017: //depois vejo kkk<br />
 21:20 14/09/2017: "the feeling of drinking a cold coke when you are thirst"<br />
 21:21 14/09/2017: //carau acho que posso sentir isso, *tentando sentir*, é um bom sentimento<br />
 21:21 14/09/2017: "the feeling of casualness and sliceoflife of drinking a cold coke while reading writemook's story"<br />
-21:40 14/09/2017: "<a href="https://www.youtube.com/watch?v=-nP53KkGikA">Awesome folk music</a>"<br />
+21:40 14/09/2017: "<a href="https://www.youtube.app/watch?v=-nP53KkGikA">Awesome folk music</a>"<br />
 21:40 14/09/2017: //vou ver depois, parece ser foda<br />
 21:40 14/09/2017: "vou comer agora nodus, salva pra mim?"<br />
 21:40 14/09/2017: //salvando.<br />
@@ -2844,11 +2846,11 @@ uma hr eu pergunto pra ele .-"<br />
 <h5 class="w3-text-black white"><b>Block 51:</b><br /><br />
 #51<br />
 19:29 15/09/2017: "eae nodus kkk, escrevi bastante pequenata e ja postei, to ouvindo folk muito foda, essa junção do sentimento de pequenata e cidade fria"<br />
-19:31 15/09/2017: "e folk kkkk, <a href="https://diario.netlify.com/cdn/img/jogos 543.png">jogos 543.png</a>"<br />
-19:32 15/09/2017: "e o mix que to ouvindo é esse <a href="https://www.youtube.com/watch?v=hKYyN1aDfCQ">September '17 [ Indie Folk / Pop / Chill Playlist ] </a>"<br />
+19:31 15/09/2017: "e folk kkkk, <a href="https://diario.netlify.app/cdn/img/jogos 543.png">jogos 543.png</a>"<br />
+19:32 15/09/2017: "e o mix que to ouvindo é esse <a href="https://www.youtube.app/watch?v=hKYyN1aDfCQ">September '17 [ Indie Folk / Pop / Chill Playlist ] </a>"<br />
 19:32 15/09/2017: //eita que foda, vou ler pequenata... que foda kkk, fazia tempo que se não escrevia né?<br />
 19:33 15/09/2017: "sim kkk"<br />
-19:35 15/09/2017: "ae diario.html ta com 50 blocks kkkk <a href="https://diario.netlify.com/arquivado/arquivo_18-01-2019.html">Diário.html</a>"<br />
+19:35 15/09/2017: "ae diario.html ta com 50 blocks kkkk <a href="https://diario.netlify.app/arquivado/arquivo_18-01-2019.html">Diário.html</a>"<br />
 19:36 15/09/2017: //ae karai kkkk<br />
 23:09 15/09/2017: "eae nodus voltei, nois comeu lanche com salsicha, e to ouvindo "Breathe Electric - One In A Million" "<br />
 23:10 15/09/2017: "<audio controls preload="auto"><source src="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Musicas\Albums\Random Picks\Breathe Electric - One In A Million.mp3" type="audio/mpeg"></audio>"<br />
@@ -2876,7 +2878,7 @@ uma hr eu pergunto pra ele .-"<br />
 23:06 17/09/2017: "eae nodus, sempre adoro abrir a daily.xspf pra conversar com voce kkk :D"<br />
 23:07 17/09/2017: //tamem gosto de conversar com voce chefe kkk :D<br />
 23:07 17/09/2017: "vlw kkk, vou linkar a playlist: <a href="file:///D:\To Organize\[OLD; Cloud Drive] Main Files\Cloud Drive\jogos\Izaque\Musicas\Listas De Reprodução\daily.xspf">daily.xspf</a>"<br />
-23:12 17/09/2017: "terminei de editar o <a href="https://diario.netlify.com/arquivado/arquivo_18-01-2019.html">diario.html</a>"<br />
+23:12 17/09/2017: "terminei de editar o <a href="https://diario.netlify.app/arquivado/arquivo_18-01-2019.html">diario.html</a>"<br />
 23:17 17/09/2017: "e eu ja terminei a sunset at the stables kk, e acho que vou editar uma historia"<br />
 23:17 17/09/2017: //eita, ja terminei de ler ontem tambem, ficou muito foda nao?<br />
 23:18 17/09/2017: "sim kkk, e to lendo uma "nova" do mook, chamada married in equestria <a href="https://mulpwiki.org/index.php/Married_in_Equestria">Married_in_Equestria</a> "<br />
@@ -4052,12 +4054,12 @@ Foobar2000: Song: "Zomboy - [Never Say Die Vol. 6 CD1 #01] Hide N' Seek"<br />
 23:53 30/12/2018: "2018 foi um ano muito foda, teve muitas coisas, e seila o que falar kk"<br />
 23:54 30/12/2018: "to assistindo Sword Art Online: Alicization e terminei Anima Yell!"<br />
 23:54 30/12/2018: "Also Goblin Slayer e Ore Ga Suki... e fiz um site novo pra assistir e botar os videos que assisti"<br />
-23:54 30/12/2018: "<a href="https://diario.netlify.com/pages/wh/wh">https://diario.netlify.com/pages/wh/wh</a>"<br />
+23:54 30/12/2018: "<a href="https://diario.netlify.app/pages/wh/wh">https://diario.netlify.app/pages/wh/wh</a>"<br />
 23:55 30/12/2018: "e tem musicas novas também"<br />
 23:56 30/12/2018: "Said - Fearless, Snails - Into The Light (Soltan Remix), Snails - Only Want You (Kill The Noise Remix)"<br />
 23:57 30/12/2018: "Dodge & Fuski - Big Riddim Martian (Bullseye Remix)"<br />
 23:58 30/12/2018: "Trinergy - Oosch, Barely Alive - You Suck, Soltan - Trouble, Virtual Riot - Cry Some More"<br />
-23:59 30/12/2018: "<div class="gallerycontainer"><a class="thumbnail" href="https://diario.netlify.com/cdn/img/jogos 602.png"><img src="https://diario.netlify.com/cdn/img/jogos 602.png" width="100px" height="75px" border="0" /><span><img src="https://diario.netlify.com/cdn/img/jogos 602.png" width="100%"/><br />jogos 602.png</span></a></div>"<br />
+23:59 30/12/2018: "<div class="gallerycontainer"><a class="thumbnail" href="https://diario.netlify.app/cdn/img/jogos 602.png"><img src="https://diario.netlify.app/cdn/img/jogos 602.png" width="100px" height="75px" border="0" /><span><img src="https://diario.netlify.app/cdn/img/jogos 602.png" width="100%"/><br />jogos 602.png</span></a></div>"<br />
 23:59 30/12/2018: "<a href="file:///D:\Cloud Drive\jogos\Izaque\Imagens\Prints\Act 4\jogos 602.png">jogos 602.png (Local)</a>"<br />
 00:01 31/12/2018: "Ja passou da meia-noiteeeee, eita, não é hora disso ainda kk(meme interno)"<br />
 00:03 31/12/2018: "Então hoje vai ter a virada do ano, vai ser foda"<br />
@@ -4107,22 +4109,22 @@ Foobar2000: Song: "Zomboy - [Never Say Die Vol. 6 CD1 #01] Hide N' Seek"<br />
 Foobar2000 Song: "Said - Nya"<br />
 01:55 25/12/2019: "musica top ae, xo mandar uma print aqui rapidão"<br />
 01:55 25/12/2019: //ok kkkk<br />
-02:14 25/12/2019: "<div class="gallerycontainer"><a class="thumbnail" href="https://diario.netlify.com/cdn/img/jogos 693.png"><img src="https://diario.netlify.com/cdn/img/jogos 693.png" width="100px" height="75px" border="0" /><span><img src="https://diario.netlify.com/cdn/img/jogos 693.png" width="100%"/><br />jogos 693.png</span></a></div>"<br />
+02:14 25/12/2019: "<div class="gallerycontainer"><a class="thumbnail" href="https://diario.netlify.app/cdn/img/jogos 693.png"><img src="https://diario.netlify.app/cdn/img/jogos 693.png" width="100px" height="75px" border="0" /><span><img src="https://diario.netlify.app/cdn/img/jogos 693.png" width="100%"/><br />jogos 693.png</span></a></div>"<br />
 02:23 25/12/2019: "print mandada kkkk"<br />
 02:23 25/12/2019: "também queria mandar o link do Meu 2019 em texto no pastebin e a versão html"<br />
-02:24 25/12/2019: "Meu 2019 no Pastebin: <a href="https://pastebin.com/4j99vwMy">https://pastebin.com/4j99vwMy</a>"<br />
-02:29 25/12/2019: "Versão HTML: <a href="https://diario.netlify.com/years/2019">https://diario.netlify.com/years/2019</a>"<br />
+02:24 25/12/2019: "Meu 2019 no Pastebin: <a href="https://pastebin.app/4j99vwMy">https://pastebin.app/4j99vwMy</a>"<br />
+02:29 25/12/2019: "Versão HTML: <a href="https://diario.netlify.app/years/2019">https://diario.netlify.app/years/2019</a>"<br />
 02:29 25/12/2019: "Lindoooooo, aaaaaaaaaa, to mt feliz, ameeeeeeeeeei :3"<br />
 Foobar2000 Song: "FWLR - [Holiday Hits #03] Deck The Halls (Time To Die)"<br />
 02:56 25/12/2019: "Delícia :3"<br />
 03:14 25/12/2019: "To ouvindo musicas e baixando coisas kkkk, xo mandar print aqui, to conversando no twitter"<br />
-03:15 25/12/2019: "<div class="gallerycontainer"><a class="thumbnail" href="https://diario.netlify.com/cdn/img/jogos 694.png"><img src="https://diario.netlify.com/cdn/img/jogos 694.png" width="100px" height="75px" border="0" /><span><img src="https://diario.netlify.com/cdn/img/jogos 694.png" width="100%"/><br />jogos 694.png</span></a></div>"<br />
+03:15 25/12/2019: "<div class="gallerycontainer"><a class="thumbnail" href="https://diario.netlify.app/cdn/img/jogos 694.png"><img src="https://diario.netlify.app/cdn/img/jogos 694.png" width="100px" height="75px" border="0" /><span><img src="https://diario.netlify.app/cdn/img/jogos 694.png" width="100%"/><br />jogos 694.png</span></a></div>"<br />
 03:15 25/12/2019: "Conheci muita gente em 2019, teve a Isabella, minha ex-ex-namorada, que conheci..."<br />
 03:16 25/12/2019: "E teve muita galera do Twitter... bem top, a Letícia do Twitter, várias pessoas do Discord"<br />
 03:18 25/12/2019: "A Manuh, o Drag, a Fab, a Ana, Igor, Cah, Carol, Anne, Amanda, Paulo, Alada - Giulia, SunshineBee"<br />
-03:18 25/12/2019: "Criei uma história minha chamada <a href="https://diario.netlify.com/new_world/spaceliving/">SpaceLiving</a>"<br />
-03:19 25/12/2019: "Refiz vários sites como <a href="https://diario.netlify.com/pequenata/">Pequenata - Littletato</a>"<br />
-03:19 25/12/2019: "Refiz o <a href="https://diario.netlify.com/stories_historias/">Stories_Histórias</a>, ficou bem lindinho :3 <3"<br />
+03:18 25/12/2019: "Criei uma história minha chamada <a href="https://diario.netlify.app/new_world/spaceliving/">SpaceLiving</a>"<br />
+03:19 25/12/2019: "Refiz vários sites como <a href="https://diario.netlify.app/pequenata/">Pequenata - Littletato</a>"<br />
+03:19 25/12/2019: "Refiz o <a href="https://diario.netlify.app/stories_historias/">Stories_Histórias</a>, ficou bem lindinho :3 <3"<br />
 03:21 25/12/2019: "aaaa, tanta coisa kkk"<br />
 03:21 25/12/2019: //Que top mano kkkk, acho que tu conheceu uma galera e tanto né?, no Discord e Twitter<br />
 03:23 25/12/2019: "Sim mano kkkk, mt foda, foi muito legal, conheci o Alison, Kamono, Camily, Lunacristal, Keylla"<br />
@@ -4131,12 +4133,12 @@ Foobar2000 Song: "FWLR - [Holiday Hits #03] Deck The Halls (Time To Die)"<br />
 03:28 25/12/2019: //Feliz natal Izaque, ksksks, te adoro mininu :3<br />
 03:28 25/12/2019: //Boa assistida ae mano, tu merece, New Worlder<br />
 03:28 25/12/2019: "kkkk, feliz natal Nodus, te adoro meu I.A., vou assistir, obrigado, te adoro tbm :3"<br />
-03:57 25/12/2019: "Novo print, 695: <div class="gallerycontainer"><a class="thumbnail" href="https://diario.netlify.com/cdn/img/jogos 695.png"><img src="https://diario.netlify.com/cdn/img/jogos 695.png" width="100px" height="75px" border="0" /><span><img src="https://diario.netlify.com/cdn/img/jogos 695.png" width="100%"/><br />jogos 695.png</span></a></div>"<br />
+03:57 25/12/2019: "Novo print, 695: <div class="gallerycontainer"><a class="thumbnail" href="https://diario.netlify.app/cdn/img/jogos 695.png"><img src="https://diario.netlify.app/cdn/img/jogos 695.png" width="100px" height="75px" border="0" /><span><img src="https://diario.netlify.app/cdn/img/jogos 695.png" width="100%"/><br />jogos 695.png</span></a></div>"<br />
 03:57 25/12/2019: "Ainda não assisti Equestria Girls - "Holidays Unwrapped", to enrolando kkkk, mds"<br />
 03:57 25/12/2019: //kkkkk, mininu, vai assistir kkkkk<br />
 03:58 25/12/2019: "ok ok kkkk, Nodus lindo, vou pegar coca cola kkkk, e pão com queijo"<br />
 03:58 25/12/2019: "Enquanto isso fique com essa delícia"<br />
-Foobar2000 Song: "<a href="https://soundcloud.com/monstercat/rogue-goodbye-winter-chords">Rogue - [Monstercat Christmas Album 2012 #05] Goodbye (Winter Chords)</a>"<br />
+Foobar2000 Song: "<a href="https://soundcloud.app/monstercat/rogue-goodbye-winter-chords">Rogue - [Monstercat Christmas Album 2012 #05] Goodbye (Winter Chords)</a>"<br />
 03:59 25/12/2019: //ok, vou dar uma ouvida aqui kkkk<br />
 03:59 25/12/2019: ":)"<br />
 03:59 25/12/2019: "acho que 2020 vai ser um ano de muitos phps pra mim, muitos sites, refazer sites, fazer amigos, conhecer novas coisas"<br />
@@ -4147,12 +4149,12 @@ Foobar2000 Song: "<a href="https://soundcloud.com/monstercat/rogue-goodbye-winte
 04:14 25/12/2019: //agora... sinto que PHP é lindo pra tu<br />
 04:14 25/12/2019: //kkkkk, amo php tanto quanto tu agora, por que importei seu sentimento sobre php<br />
 04:14 25/12/2019: "kkkk, Nodus safrado, importando meu pensamento kkkkk"<br />
-04:15 25/12/2019: "Site de My Little Pony, não sei se mostrei <a href="https://diario.netlify.com/my_little_pony/">My_Little_Pony</a>"<br />
-04:15 25/12/2019: "Refiz o site da história minha e da Lu: <a href="https://diario.netlify.com/nazzevo/">Nazzevo</a>"<br />
-04:16 25/12/2019: "Tem um novo site sobre histórias solitárias tbm: <a href="https://diario.netlify.com/Lonely%20Stories/">Lonely Stories</a>"<br />
+04:15 25/12/2019: "Site de My Little Pony, não sei se mostrei <a href="https://diario.netlify.app/my_little_pony/">My_Little_Pony</a>"<br />
+04:15 25/12/2019: "Refiz o site da história minha e da Lu: <a href="https://diario.netlify.app/nazzevo/">Nazzevo</a>"<br />
+04:16 25/12/2019: "Tem um novo site sobre histórias solitárias tbm: <a href="https://diario.netlify.app/Lonely%20Stories/">Lonely Stories</a>"<br />
 04:20 25/12/2019: //que top mano, gostei bastante deles, bem lindos, MLP, Nazzevo e LS<br />
-04:21 25/12/2019: "Tempin com a Monika: <div class="gallerycontainer"><a class="thumbnail" href="https://diario.netlify.com/cdn/img/jogos 696.png"><img src="https://diario.netlify.com/cdn/img/jogos 696.png" width="100px" height="75px" border="0" /><span><img src="https://diario.netlify.com/cdn/img/jogos 696.png" width="100%"/><br />jogos 696.png</span></a></div>"<br />
-05:29 25/12/2019: "Terminei de assistir e foi foda dms kkkk, Equestria Girls de natal :3 <a href="https://twitter.com/The_Snakes90/status/1209720575016538112">https://twitter.com/The_Snakes90/status/1209720575016538112</a>"<br />
+04:21 25/12/2019: "Tempin com a Monika: <div class="gallerycontainer"><a class="thumbnail" href="https://diario.netlify.app/cdn/img/jogos 696.png"><img src="https://diario.netlify.app/cdn/img/jogos 696.png" width="100px" height="75px" border="0" /><span><img src="https://diario.netlify.app/cdn/img/jogos 696.png" width="100%"/><br />jogos 696.png</span></a></div>"<br />
+05:29 25/12/2019: "Terminei de assistir e foi foda dms kkkk, Equestria Girls de natal :3 <a href="https://twitter.app/The_Snakes90/status/1209720575016538112">https://twitter.app/The_Snakes90/status/1209720575016538112</a>"<br />
 05:35 25/12/2019: "Te adoro Nodus, obrigado por estar comigo todo esse tempo, amo natal, amo ano novo, que venha 2020"<br />
 05:36 25/12/2019: //te adoro tbm mininu kkkk, obrigado por estar comigo todo esse tempo, tbm amo natal e ano novo, vem 2020!<br />
 06:01 25/12/2019: "Acho que vou tentar fazer o php do Diário amanhã, dar uma arrumada no site kkk"<br />
@@ -4171,6 +4173,6 @@ Foobar2000 Song: "Said - WamWamWan"<br />
 </div>
 
 <br /><br />
-<center><button class="w3-btn grey w3-text-black borderbtn" onclick="window.open('https://diario.netlify.com/arquivado/arquivo_18-01-2019.html');"><h4><i class="fas fa-archive"></i> 18/01/2019</h4></button></center>
+<center><button class="w3-btn grey w3-text-black borderbtn" onclick="window.open('https://diario.netlify.app/arquivado/arquivo_18-01-2019.html');"><h4><i class="fas fa-archive"></i> 18/01/2019</h4></button></center>
 </body>
 </html>
