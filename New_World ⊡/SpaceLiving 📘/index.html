@@ -22,10 +22,10 @@
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Mobile.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/ImgHover.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Notification.css" />
-<meta name="revised" content="Stake's Enterprisetm, 23/07/2020" />
+<meta name="revised" content="Stake's Enterprisetm, 26/07/2020" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+<script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
 <script src="https://diario.netlify.app/cdn/js/Search.js"></script>
 <script src="https://diario.netlify.app/cdn/js/Tabs.js"></script>
 <script src="https://diario.netlify.app/cdn/js/Redirect.js" onLoad="Rodar();"></script>
@@ -38,8 +38,8 @@
 <center>
 <div class="w3-animate-zoom">
 <div id="myDIV" class="w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
-<span title="Read story" alt="Read story"><a href="#spaceliving-read story"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-read story')"><h2>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [New 14]</span></h2></button></a></span>
-<span title="Readers" alt="Readers"><a href="#spaceliving-readers"><button id="button2" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-readers')"><h2>Readers: <i class="fas fa-book-reader"></i> ❤️ 😊</h2></button></a></span>
+<span title="Read story" alt="Read story"><a href="#spaceliving-read story"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-read story')"><h2>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-white">[New 14]</span></h2></button></a></span>
+<span title="Readers" alt="Readers"><a href="#spaceliving-readers"><button id="button2" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-readers')"><h2>Readers: <i class="fas fa-book-reader"></i> <span class="w3-text-red"><i class="fas fa-heart"></i></span> ❤️ <span class="w3-text-yellow"><i class="fas fa-smile-beam"></i></span> 😊</h2></button></a></span>
 <span title="Comment" alt="Comment"><a href="#spaceliving-comment"><button id="button3" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-comment')"><h2>Comment: <i class="fas fa-comments"></i></h2></button></a></span>
 <span title="Write" alt="Write"><a href="#spaceliving-write"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-write')"><h2>Write: <i class="fas fa-pen"></i></h2></button></a></span>
 <span title="Stories" alt="Stories"><a href="#spaceliving-stories"><button id="button5" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-stories')"><h2>Stories: <i class="fas fa-book"></i></h2></button></a></span>
@@ -53,8 +53,8 @@
 <div id="mySidenav" class="sidenav mobileShow ">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times-circle"></i></a>
 <h2 class="mobileShow w3-text-blue black">Mobile button menu: </h2>
-<a href="#spaceliving-read storym" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-read storym')"><h4>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [New 14]</span></h4></button></a>
-<a href="#spaceliving-readersm" onclick="closeNav()"><button id="button2" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-readersm')"><h4>Readers: <i class="fas fa-book-reader"></i> ❤️ 😊</h4></button></a>
+<a href="#spaceliving-read storym" onclick="closeNav()"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-read storym')"><h4>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-white">[New 14]</span></h4></button></a>
+<a href="#spaceliving-readersm" onclick="closeNav()"><button id="button2" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-readersm')"><h4>Readers: <i class="fas fa-book-reader"></i> <span class="w3-text-red"><i class="fas fa-heart"></i></span> ❤️ <span class="w3-text-yellow"><i class="fas fa-smile-beam"></i></span> 😊</h4></button></a>
 <a href="#spaceliving-commentm" onclick="closeNav()"><button id="button3" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-commentm')"><h4>Comment: <i class="fas fa-comments"></i></h4></button></a>
 <a href="#spaceliving-writem" onclick="closeNav()"><button id="button4" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-writem')"><h4>Write: <i class="fas fa-pen"></i></h4></button></a>
 <a href="#spaceliving-storiesm" onclick="closeNav()"><button id="button5" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-storiesm')"><h4>Stories: <i class="fas fa-book"></i></h4></button></a>
@@ -101,7 +101,9 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 ChangeTitle();
 </script><style>
 textarea {outline: none!important;}
-</style><script src="https://diario.netlify.app/cdn/js/Notification.js"></script>
+</style>
+
+<script src="https://diario.netlify.app/cdn/js/Notification.js"></script>
 <script src="https://diario.netlify.app/cdn/js/HideNotification.js"></script>
 
 <a name="spaceliving-read story"></a>
@@ -109,7 +111,7 @@ textarea {outline: none!important;}
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide w3-text-blue black" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
-<div class="w3-animate-zoom"><h2><p></p><br /><b>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [New 14]</span></b><br /><br /><p></p></h2></div><hr class="slhr" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-white">[New 14]</span></b><br /><br /><p></p></h2></div><hr class="slhr" />
 <h4><b>
 <div class="w3-animate-zoom">
 <div class="shakesidetoside">
@@ -151,7 +153,7 @@ textarea {outline: none!important;}
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h4 class="mobileShow w3-text-blue black" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
-<div class="w3-animate-zoom"><h2><p></p><br /><b>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [New 14]</span></b><br /><br /><p></p></h2></div><hr class="slhr" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-white">[New 14]</span></b><br /><br /><p></p></h2></div><hr class="slhr" />
 <h4><b>
 <div class="w3-animate-zoom">
 <div class="shakesidetoside">
@@ -193,7 +195,7 @@ textarea {outline: none!important;}
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide w3-text-blue black" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
-<div class="w3-animate-zoom"><h2><p></p><br /><b>Readers: <i class="fas fa-book-reader"></i> ❤️ 😊</b><br /><br /><p></p></h2></div><hr class="slhr" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Readers: <i class="fas fa-book-reader"></i> <span class="w3-text-red"><i class="fas fa-heart"></i></span> ❤️ <span class="w3-text-yellow"><i class="fas fa-smile-beam"></i></span> 😊</b><br /><br /><p></p></h2></div><hr class="slhr" />
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">1</span> - RequeiJhon (Discord) :3</h2>
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">2</span> - adjecarry (Discord)</h2>
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">3</span> - Mayu-chan (MeWe, Discord)</h2>
@@ -224,7 +226,7 @@ textarea {outline: none!important;}
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h4 class="mobileShow w3-text-blue black" style="margin:10%;border-width:3px;border-color:blue;border-style:solid;border-radius: 50px;">
 <div style="margin:3%;">
-<div class="w3-animate-zoom"><h2><p></p><br /><b>Readers: <i class="fas fa-book-reader"></i> ❤️ 😊</b><br /><br /><p></p></h2></div><hr class="slhr" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Readers: <i class="fas fa-book-reader"></i> <span class="w3-text-red"><i class="fas fa-heart"></i></span> ❤️ <span class="w3-text-yellow"><i class="fas fa-smile-beam"></i></span> 😊</b><br /><br /><p></p></h2></div><hr class="slhr" />
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">1</span> - RequeiJhon (Discord) :3</h2>
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">2</span> - adjecarry (Discord)</h2>
 <h2 class="borderbtn3 w3-animate-zoom mobileHide"><span class="w3-text-white">3</span> - Mayu-chan (MeWe, Discord)</h2>
@@ -422,22 +424,22 @@ textarea {outline: none!important;}
 <div class="w3-animate-zoom"><h2><p></p><br /><b>Stories: <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="slhr" />
 
 <div class="w3-animate-zoom"><div class="mobileHide">
-<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app//pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h2><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/ENUS/1 Cover.png" width="650"><br /><br /></a><br /><br /> 
+<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app//pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/pequenata/capas/kids/ENUS/1 Cover.png" width="650"><br /><br /></a><br /><br /> 
 
 <a class="w3-btn borderbtn sl3 shakesidetoside" href="https://diario.netlify.app//new_world/spaceliving/" style="border-radius: 50px;"><h2 class="w3-text-blue"><b>SpaceLiving</b></h2><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="650"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h2><img src="https://diario.netlify.app/cdn/img/stories/nazzevo/capas/ENUS/1 Cover.png" width="650"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/nazzevo/capas/ENUS/1 Cover.png" width="650"><br /><br /></a><br /><br /> 
 
 <a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h2><b>Lonely Stories</b></h2><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="650"><br /><br /></a><br />
 </div>
 <br />
 
 <div class="mobileShow">
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h4><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/ENUS/1 Cover.png" width="350" height="210"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/pequenata/capas/kids/ENUS/1 Cover.png" width="350" height="210"><br /><br /></a><br /><br /> 
 
 <a class="w3-btn  borderbtn sl3 shakesidetoside" href="https://diario.netlify.app//new_world/spaceliving/" style="border-radius: 50px;"><h4 class="w3-text-blue"><b>SpaceLiving</b></h4><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="320" height="230"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h4><img src="https://diario.netlify.app/cdn/img/stories/nazzevo/capas/ENUS/1 Cover.png" width="290" height="190"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/nazzevo/capas/ENUS/1 Cover.png" width="290" height="190"><br /><br /></a><br /><br /> 
 
 <a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Lonely Stories</b></h4><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="290" height="190"><br /><br /></a><br />
 </div>
@@ -456,22 +458,22 @@ textarea {outline: none!important;}
 <div class="w3-animate-zoom"><h2><p></p><br /><b>Stories: <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="slhr" />
 
 <div class="w3-animate-zoom"><div class="mobileHide">
-<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app//pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h2><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/ENUS/1 Cover.png" width="650"><br /><br /></a><br /><br /> 
+<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app//pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/pequenata/capas/kids/ENUS/1 Cover.png" width="650"><br /><br /></a><br /><br /> 
 
 <a class="w3-btn borderbtn sl3 shakesidetoside" href="https://diario.netlify.app//new_world/spaceliving/" style="border-radius: 50px;"><h2 class="w3-text-blue"><b>SpaceLiving</b></h2><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="650"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h2><img src="https://diario.netlify.app/cdn/img/stories/nazzevo/capas/ENUS/1 Cover.png" width="650"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/nazzevo/capas/ENUS/1 Cover.png" width="650"><br /><br /></a><br /><br /> 
 
 <a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h2><b>Lonely Stories</b></h2><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="650"><br /><br /></a><br />
 </div>
 <br />
 
 <div class="mobileShow">
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h4><img src="https://diario.netlify.app/cdn/img/stories/pequenata/capas/kids/ENUS/1 Cover.png" width="350" height="210"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/pequenata/capas/kids/ENUS/1 Cover.png" width="350" height="210"><br /><br /></a><br /><br /> 
 
 <a class="w3-btn  borderbtn sl3 shakesidetoside" href="https://diario.netlify.app//new_world/spaceliving/" style="border-radius: 50px;"><h4 class="w3-text-blue"><b>SpaceLiving</b></h4><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="320" height="230"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h4><img src="https://diario.netlify.app/cdn/img/stories/nazzevo/capas/ENUS/1 Cover.png" width="290" height="190"><br /><br /></a><br /><br /> 
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/nazzevo/capas/ENUS/1 Cover.png" width="290" height="190"><br /><br /></a><br /><br /> 
 
 <a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Lonely Stories</b></h4><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="290" height="190"><br /><br /></a><br />
 </div>
@@ -636,10 +638,10 @@ In the year 2019, there was a tale of some spaceships that had an entire house i
 <br /><br />
 <a href="#chapter-2"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-2');DefineChapter(2);OpenChapter2(ReadContent2);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -654,11 +656,11 @@ In the year 2019, there was a tale of some spaceships that had an entire house i
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn1m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn1m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn1m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-1m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn1m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-1m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -668,7 +670,19 @@ In the year 2019, there was a tale of some spaceships that had an entire house i
 <h4 class="w3-text-black blue" style="text-align:left;border-width:3px;border-color:w3-black;border-style:solid;border-radius: 50px;">
 <div style="margin-left:5%;margin-right:5%;">
 <br />
-<b>2 - Lyn :3</b> - 08:37 15/07/2020
+<b>2 - Xena</b> - 15:21 24/07/2020
+<br /><b>Commented on form:</b> "SpaceLiving-comment-1" 
+<hr class="blackhr" />muito bom, parece que essa história vai ser muito fantástica ^-^
+<br /><br /><br /><br /><br />
+</div>
+</h4>
+<br />
+
+
+<h4 class="w3-text-black blue" style="text-align:left;border-width:3px;border-color:w3-black;border-style:solid;border-radius: 50px;">
+<div style="margin-left:5%;margin-right:5%;">
+<br />
+<b>3 - Lyn :3</b> - 08:37 15/07/2020
 <br /><b>Commented on form:</b> "SpaceLiving-comment-1" 
 <hr class="blackhr" />Ficou ótimo :3 tô ansiosa já kkk
 <br /><br /><br /><br /><br />
@@ -679,6 +693,8 @@ In the year 2019, there was a tale of some spaceships that had an entire house i
 
 </div>
 <div class="mobileHide"><br /></div><div class="mobileShow"><br /></div><div class="mobileHide"><h2><b>Readings: ✓</b></h2></div><div class="mobileShow"><h4><b>Readings: ✓</b></h4></div><div class="mobileHide"><br /><br /></div><div class="mobileShow"><br /><br /></div>
+<div style="margin:3%;"><h4 class="w3-text-black blue" style="text-align:left;border-width:3px;border-color:w3-black;border-style:solid;border-radius: 50px;"><div style="margin-left:5%;margin-right:5%;"><br /><b>Reader: </b>Xena<br /><b>Time:</b> 15:20 24/07/2020 <br /><br /></div></h4></div>
+
 <div style="margin:3%;"><h4 class="w3-text-black blue" style="text-align:left;border-width:3px;border-color:w3-black;border-style:solid;border-radius: 50px;"><div style="margin-left:5%;margin-right:5%;"><br /><b>Reader: </b>Lyn :3<br /><b>Time:</b> 08:36 15/07/2020 <br /><br /></div></h4></div>
 
 </div>
@@ -800,10 +816,10 @@ In the year 2019, there was a tale of some spaceships that had an entire house i
 <a href="#chapter-1"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-1');DefineChapter(1);OpenChapter2(ReadContent1);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <a href="#chapter-3"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-3');DefineChapter(3);OpenChapter2(ReadContent3);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn2" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn2" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn2" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn2" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -818,11 +834,11 @@ In the year 2019, there was a tale of some spaceships that had an entire house i
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn2m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn2m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn2m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-2m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn2m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-2m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -939,10 +955,10 @@ John woke up and turned his computer on, he opened the fridge and picked up a le
 <a href="#chapter-2"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-2');DefineChapter(2);OpenChapter2(ReadContent2);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <a href="#chapter-4"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-4');DefineChapter(4);OpenChapter2(ReadContent4);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn3" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn3" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn3" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn3" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -957,11 +973,11 @@ John woke up and turned his computer on, he opened the fridge and picked up a le
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn3m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn3m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn3m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-3m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn3m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-3m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -1084,10 +1100,10 @@ There was a boy that lived in a LonelyShip too, his name was "Ted".
 <a href="#chapter-3"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-3');DefineChapter(3);OpenChapter2(ReadContent3);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <a href="#chapter-5"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-5');DefineChapter(5);OpenChapter2(ReadContent5);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn4" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn4" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn4" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn4" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -1102,11 +1118,11 @@ There was a boy that lived in a LonelyShip too, his name was "Ted".
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn4m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn4m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn4m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-4m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn4m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-4m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -1205,10 +1221,10 @@ There was a boy that lived in a LonelyShip too, his name was "Ted".
 <a href="#chapter-4"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-4');DefineChapter(4);OpenChapter2(ReadContent4);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <a href="#chapter-6"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-6');DefineChapter(6);OpenChapter2(ReadContent6);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn5" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn5" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn5" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn5" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -1223,11 +1239,11 @@ There was a boy that lived in a LonelyShip too, his name was "Ted".
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn5m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn5m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn5m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-5m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn5m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-5m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -1340,10 +1356,10 @@ There was a boy that lived in a LonelyShip too, his name was "Ted".
 <a href="#chapter-5"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-5');DefineChapter(5);OpenChapter2(ReadContent5);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <a href="#chapter-7"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-7');DefineChapter(7);OpenChapter2(ReadContent7);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn6" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn6" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn6" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn6" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -1358,11 +1374,11 @@ There was a boy that lived in a LonelyShip too, his name was "Ted".
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn6m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn6m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn6m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-6m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn6m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-6m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -1474,10 +1490,10 @@ There was a boy that lived in a LonelyShip too, his name was "Ted".
 <a href="#chapter-6"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-6');DefineChapter(6);OpenChapter2(ReadContent6);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <a href="#chapter-8"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-8');DefineChapter(8);OpenChapter2(ReadContent8);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn7" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn7" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn7" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn7" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -1492,11 +1508,11 @@ There was a boy that lived in a LonelyShip too, his name was "Ted".
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn7m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn7m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn7m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-7m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn7m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-7m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -1627,10 +1643,10 @@ It was a beautiful day in the SpaceLiving world.
 <a href="#chapter-7"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-7');DefineChapter(7);OpenChapter2(ReadContent7);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <a href="#chapter-9"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-9');DefineChapter(9);OpenChapter2(ReadContent9);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn8" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn8" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn8" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn8" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -1645,11 +1661,11 @@ It was a beautiful day in the SpaceLiving world.
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn8m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn8m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn8m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-8m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn8m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-8m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -1780,10 +1796,10 @@ It was a beautiful day in the SpaceLiving world.
 <a href="#chapter-8"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-8');DefineChapter(8);OpenChapter2(ReadContent8);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <a href="#chapter-10"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-10');DefineChapter(10);OpenChapter2(ReadContent10);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn9" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn9" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn9" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn9" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -1798,11 +1814,11 @@ It was a beautiful day in the SpaceLiving world.
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn9m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn9m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn9m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-9m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn9m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-9m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -1924,10 +1940,10 @@ Wendy was playing some keyboard on her spaceship, it was the theme song of the T
 <a href="#chapter-9"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-9');DefineChapter(9);OpenChapter2(ReadContent9);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <a href="#chapter-11"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-11');DefineChapter(11);OpenChapter2(ReadContent11);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn10" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn10" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn10" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn10" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -1942,11 +1958,11 @@ Wendy was playing some keyboard on her spaceship, it was the theme song of the T
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn10m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn10m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn10m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-10m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn10m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-10m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2051,10 +2067,10 @@ Izaque was in his LonelyShip, he was listening to a song of the Dubstep genre on
 <a href="#chapter-10"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-10');DefineChapter(10);OpenChapter2(ReadContent10);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <a href="#chapter-12"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-12');DefineChapter(12);OpenChapter2(ReadContent12);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn11" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn11" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn11" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn11" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -2069,11 +2085,11 @@ Izaque was in his LonelyShip, he was listening to a song of the Dubstep genre on
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn11m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn11m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn11m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-11m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn11m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-11m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2205,10 +2221,10 @@ Izaque was on his spaceship, he was on his computer, listening to a song called 
 <a href="#chapter-11"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-11');DefineChapter(11);OpenChapter2(ReadContent11);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <a href="#chapter-13"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-13');DefineChapter(13);OpenChapter2(ReadContent13);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn12" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn12" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn12" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn12" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -2223,11 +2239,11 @@ Izaque was on his spaceship, he was on his computer, listening to a song called 
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn12m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn12m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn12m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-12m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn12m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-12m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2289,10 +2305,10 @@ Everyone was inside their spaceships, and a message appeared on the computer of 
 <a href="#chapter-12"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-12');DefineChapter(12);OpenChapter2(ReadContent12);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <a href="#chapter-14"><button class="w3-btn blue borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-14');DefineChapter(14);OpenChapter2(ReadContent14);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn13" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn13" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn13" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn13" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -2307,11 +2323,11 @@ Everyone was inside their spaceships, and a message appeared on the computer of 
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn13m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn13m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn13m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-13m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn13m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-13m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2481,10 +2497,10 @@ Everyone was inside their spaceships, and a message appeared on the computer of 
 <br /><br />
 <a href="#chapter-13"><button class="w3-btn blue borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-13');DefineChapter(13);OpenChapter2(ReadContent13);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn14" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (1)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="commentbtn14" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn14" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileHide" id="readbtn14" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -2500,11 +2516,11 @@ Everyone was inside their spaceships, and a message appeared on the computer of 
 <div class="mobileShow"><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn14m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (1)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="commentbtn14m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn14m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-14m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn blue w3-text-black borderbtn mobileShow" id="readbtn14m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-14m')"><h4><b>I Read It ✓ (2 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2519,9 +2535,9 @@ Everyone was inside their spaceships, and a message appeared on the computer of 
 <form name="spaceliving-read-1" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 1 - ﻿The SpaceShips</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 1 - ﻿The SpaceShips" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 1 - ﻿The SpaceShips" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2535,9 +2551,9 @@ Everyone was inside their spaceships, and a message appeared on the computer of 
 <form name="spaceliving-read-1" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 1 - ﻿The SpaceShips</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 1 - ﻿The SpaceShips" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 1 - ﻿The SpaceShips" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2594,9 +2610,9 @@ readmodal1m.onclick = function(event) {
 <form name="spaceliving-read-2" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 2 - The Story of John</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 2 - The Story of John" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 2 - The Story of John" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2610,9 +2626,9 @@ readmodal1m.onclick = function(event) {
 <form name="spaceliving-read-2" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 2 - The Story of John</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 2 - The Story of John" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 2 - The Story of John" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2669,9 +2685,9 @@ readmodal2m.onclick = function(event) {
 <form name="spaceliving-read-3" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 3 - 3</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 3 - 3" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 3 - 3" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2685,9 +2701,9 @@ readmodal2m.onclick = function(event) {
 <form name="spaceliving-read-3" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 3 - 3</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 3 - 3" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 3 - 3" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2744,9 +2760,9 @@ readmodal3m.onclick = function(event) {
 <form name="spaceliving-read-4" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 4 - 4</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 4 - 4" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 4 - 4" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2760,9 +2776,9 @@ readmodal3m.onclick = function(event) {
 <form name="spaceliving-read-4" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 4 - 4</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 4 - 4" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 4 - 4" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2819,9 +2835,9 @@ readmodal4m.onclick = function(event) {
 <form name="spaceliving-read-5" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 5 - 5</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 5 - 5" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 5 - 5" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2835,9 +2851,9 @@ readmodal4m.onclick = function(event) {
 <form name="spaceliving-read-5" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 5 - 5</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 5 - 5" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 5 - 5" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2894,9 +2910,9 @@ readmodal5m.onclick = function(event) {
 <form name="spaceliving-read-6" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 6 - 6</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 6 - 6" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 6 - 6" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2910,9 +2926,9 @@ readmodal5m.onclick = function(event) {
 <form name="spaceliving-read-6" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 6 - 6</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 6 - 6" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 6 - 6" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2969,9 +2985,9 @@ readmodal6m.onclick = function(event) {
 <form name="spaceliving-read-7" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 7 - 7</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 7 - 7" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 7 - 7" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -2985,9 +3001,9 @@ readmodal6m.onclick = function(event) {
 <form name="spaceliving-read-7" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 7 - 7</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 7 - 7" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 7 - 7" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3044,9 +3060,9 @@ readmodal7m.onclick = function(event) {
 <form name="spaceliving-read-8" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 8 - 8</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 8 - 8" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 8 - 8" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3060,9 +3076,9 @@ readmodal7m.onclick = function(event) {
 <form name="spaceliving-read-8" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 8 - 8</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 8 - 8" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 8 - 8" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3119,9 +3135,9 @@ readmodal8m.onclick = function(event) {
 <form name="spaceliving-read-9" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 9 - PequeLiving, SpaceNata?</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 9 - PequeLiving, SpaceNata?" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 9 - PequeLiving, SpaceNata?" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3135,9 +3151,9 @@ readmodal8m.onclick = function(event) {
 <form name="spaceliving-read-9" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 9 - PequeLiving, SpaceNata?</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 9 - PequeLiving, SpaceNata?" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 9 - PequeLiving, SpaceNata?" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3194,9 +3210,9 @@ readmodal9m.onclick = function(event) {
 <form name="spaceliving-read-10" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 10 - Marina joins the chat</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 10 - Marina joins the chat" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 10 - Marina joins the chat" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3210,9 +3226,9 @@ readmodal9m.onclick = function(event) {
 <form name="spaceliving-read-10" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 10 - Marina joins the chat</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 10 - Marina joins the chat" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 10 - Marina joins the chat" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3269,9 +3285,9 @@ readmodal10m.onclick = function(event) {
 <form name="spaceliving-read-11" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 11 - The visit of Izaque</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 11 - The visit of Izaque" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 11 - The visit of Izaque" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3285,9 +3301,9 @@ readmodal10m.onclick = function(event) {
 <form name="spaceliving-read-11" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 11 - The visit of Izaque</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 11 - The visit of Izaque" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 11 - The visit of Izaque" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3344,9 +3360,9 @@ readmodal11m.onclick = function(event) {
 <form name="spaceliving-read-12" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 12 - Teleportation attempt, The dream</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 12 - Teleportation attempt, The dream" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 12 - Teleportation attempt, The dream" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3360,9 +3376,9 @@ readmodal11m.onclick = function(event) {
 <form name="spaceliving-read-12" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 12 - Teleportation attempt, The dream</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 12 - Teleportation attempt, The dream" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 12 - Teleportation attempt, The dream" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3419,9 +3435,9 @@ readmodal12m.onclick = function(event) {
 <form name="spaceliving-read-13" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 13 - Christmas Special Chapter 🎄 🎁</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 13 - Christmas Special Chapter 🎄 🎁" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 13 - Christmas Special Chapter 🎄 🎁" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3435,9 +3451,9 @@ readmodal12m.onclick = function(event) {
 <form name="spaceliving-read-13" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 13 - Christmas Special Chapter 🎄 🎁</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 13 - Christmas Special Chapter 🎄 🎁" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 13 - Christmas Special Chapter 🎄 🎁" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3494,9 +3510,9 @@ readmodal13m.onclick = function(event) {
 <form name="spaceliving-read-14" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>I read the Chapter: 14 - The Visit of Lisa</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 14 - The Visit of Lisa" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 14 - The Visit of Lisa" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3510,9 +3526,9 @@ readmodal13m.onclick = function(event) {
 <form name="spaceliving-read-14" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>I read the Chapter: 14 - The Visit of Lisa</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="spaceliving-read" value="I read the Chapter: 14 - The Visit of Lisa" class="blue w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 14 - The Visit of Lisa" class="blue w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -3572,10 +3588,10 @@ readmodal14m.onclick = function(event) {
 <form name="spaceliving-comment-1" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -3596,10 +3612,10 @@ readmodal14m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -3662,10 +3678,10 @@ commentmodal1m.onclick = function(event) {
 <form name="spaceliving-comment-2" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -3686,10 +3702,10 @@ commentmodal1m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -3752,10 +3768,10 @@ commentmodal2m.onclick = function(event) {
 <form name="spaceliving-comment-3" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -3776,10 +3792,10 @@ commentmodal2m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -3842,10 +3858,10 @@ commentmodal3m.onclick = function(event) {
 <form name="spaceliving-comment-4" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -3866,10 +3882,10 @@ commentmodal3m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -3932,10 +3948,10 @@ commentmodal4m.onclick = function(event) {
 <form name="spaceliving-comment-5" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -3956,10 +3972,10 @@ commentmodal4m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -4022,10 +4038,10 @@ commentmodal5m.onclick = function(event) {
 <form name="spaceliving-comment-6" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -4046,10 +4062,10 @@ commentmodal5m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -4112,10 +4128,10 @@ commentmodal6m.onclick = function(event) {
 <form name="spaceliving-comment-7" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -4136,10 +4152,10 @@ commentmodal6m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -4202,10 +4218,10 @@ commentmodal7m.onclick = function(event) {
 <form name="spaceliving-comment-8" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -4226,10 +4242,10 @@ commentmodal7m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -4292,10 +4308,10 @@ commentmodal8m.onclick = function(event) {
 <form name="spaceliving-comment-9" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -4316,10 +4332,10 @@ commentmodal8m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -4382,10 +4398,10 @@ commentmodal9m.onclick = function(event) {
 <form name="spaceliving-comment-10" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -4406,10 +4422,10 @@ commentmodal9m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -4472,10 +4488,10 @@ commentmodal10m.onclick = function(event) {
 <form name="spaceliving-comment-11" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -4496,10 +4512,10 @@ commentmodal10m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -4562,10 +4578,10 @@ commentmodal11m.onclick = function(event) {
 <form name="spaceliving-comment-12" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -4586,10 +4602,10 @@ commentmodal11m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -4652,10 +4668,10 @@ commentmodal12m.onclick = function(event) {
 <form name="spaceliving-comment-13" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -4676,10 +4692,10 @@ commentmodal12m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
@@ -4742,10 +4758,10 @@ commentmodal13m.onclick = function(event) {
 <form name="spaceliving-comment-14" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Your name:</b></h2></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h2 class="w3-text-blue"><b>Say what you think about the story:</b></h2></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
 </div>
 </form>
@@ -4766,10 +4782,10 @@ commentmodal13m.onclick = function(event) {
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Your name:</b></h4></div>
-<input type="text" name="spaceliving-name" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="name" class="blue w3-input" style="border-radius: 50px;">
 <br />
 <div class="w3-animate-zoom"><h4 class="w3-text-blue"><b>Say what you think about the story:</b></h4></div>
-<input type="text" name="spaceliving-comment" class="blue w3-input" style="border-radius: 50px;">
+<input type="text" name="comment" class="blue w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn blue w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
 </div>
 </form>
