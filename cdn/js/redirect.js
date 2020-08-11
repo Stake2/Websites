@@ -152,7 +152,7 @@ function Rodar() {
         }
 
         if (userLang != lang) {
-            var link = "https://diario.netlify.app/years 📅/" + "2018" + "/";
+            var link = website_link + "years 📅/" + "2018" + "/";
             var res = link + userLang + "/";
             window.location = res;
         }
@@ -165,7 +165,7 @@ function Rodar() {
         }
 
         if (userLang != lang) {
-            var link = "https://diario.netlify.app/years 📅/" + "2018" + "/";
+            var link = website_link + "years 📅/" + "2018" + "/";
             var res = link + userLang + "/";
             window.location = res;
         }
@@ -178,7 +178,7 @@ function Rodar() {
         }
 
         if (userLang != lang) {
-            var link = "https://diario.netlify.app/years 📅/" + "2018" + "/";
+            var link = website_link + "years 📅/" + "2018" + "/";
             var res = link + userLang + "/";
             window.location = res;
         }
@@ -191,7 +191,7 @@ function Rodar() {
         }
 
         if (userLang != lang) {
-            var link = "https://diario.netlify.app/years 📅/" + "2019" + "/";
+            var link = website_link + "years 📅/" + "2019" + "/";
             var res = link + userLang + "/";
             window.location = res;
         }
@@ -204,7 +204,7 @@ function Rodar() {
         }
 
         if (userLang != lang) {
-            var link = "https://diario.netlify.app/years 📅/" + "2019" + "/";
+            var link = website_link + "years 📅/" + "2019" + "/";
             var res = link + userLang + "/";
             window.location = res;
         }
@@ -218,7 +218,7 @@ function Rodar() {
         }
 
         if (userLang != lang) {
-            var link = "https://diario.netlify.app/years 📅/" + "2019" + "/";
+            var link = website_link + "years 📅/" + "2019" + "/";
             var res = link + userLang + "/";
             window.location = res;
         }
@@ -232,7 +232,7 @@ function Rodar() {
 		}
 
         if (lang != userLang) {
-            var link1 = "https://diario.netlify.app/new_world%20%E2%8A%A1/";
+            var link1 = website_link + "new_world%20%E2%8A%A1/";
             var userLang = navigator.language || navigator.userLanguage;
             var res = link1 + userLang + "/";
             window.location = res;
@@ -248,7 +248,7 @@ function Rodar() {
         }
 
         if (lang != userLang) {
-            var link1 = "https://diario.netlify.app/new_world%20%E2%8A%A1/";
+            var link1 = website_link + "new_world%20%E2%8A%A1/";
             var userLang = navigator.language || navigator.userLanguage;
             var res = link1 + userLang + "/";
             window.location = res;
@@ -264,7 +264,7 @@ function Rodar() {
         }
 
         if (lang != userLang) {
-            var link1 = "https://diario.netlify.app/new_world%20%E2%8A%A1/";
+			var link1 = website_link + "new_world%20%E2%8A%A1/";
             var userLang = navigator.language || navigator.userLanguage;
             var res = link1 + userLang + "/";
             window.location = res;
@@ -280,7 +280,7 @@ function Rodar() {
 		}
 
         if (lang != userLang) {
-            var link1 = "https://diario.netlify.app/pequenata 📘/";
+            var link1 = website_link + "pequenata 📘/";
             var userLang = navigator.language || navigator.userLanguage;
             var res = link1 + userLang + "/";
             window.location = res;
@@ -296,7 +296,7 @@ function Rodar() {
         }
 
         if (lang != userLang) {
-            var link1 = "https://diario.netlify.app/pequenata 📘/";
+            var link1 = website_link + "pequenata 📘/";
             var userLang = navigator.language || navigator.userLanguage;
             var res = link1 + userLang + "/";
             window.location = res;
@@ -312,7 +312,7 @@ function Rodar() {
         }
 
         if (lang != userLang) {
-            var link1 = "https://diario.netlify.app/pequenata 📘/";
+            var link1 = website_link + "pequenata 📘/";
             var userLang = navigator.language || navigator.userLanguage;
             var res = link1 + userLang + "/";
             window.location = res;
@@ -328,7 +328,7 @@ function Rodar() {
         }
 
         if (lang != userLang) {
-            var link1 = "https://diario.netlify.app/pequenata 📘/";
+            var link1 = website_link + "pequenata 📘/";
             var userLang = navigator.language || navigator.userLanguage;
             var res = link1 + userLang + "/";
             window.location = res;
@@ -344,7 +344,7 @@ function Rodar() {
         }
 
         if (lang != userLang) {
-            var linksl = "https://diario.netlify.app/new_world ⊡/spaceliving 📘/";
+            var linksl = website_link + "new_world ⊡/spaceliving 📘/";
             var userLang = navigator.language || navigator.userLanguage;
             var res2 = linksl + userLang + "/";
             window.location = res2;
@@ -360,7 +360,7 @@ function Rodar() {
         }
 
         if (lang != userLang) {
-            var linksl = "https://diario.netlify.app/new_world ⊡/spaceliving 📘/";
+            var linksl = website_link + "new_world ⊡/spaceliving 📘/";
             var userLang = navigator.language || navigator.userLanguage;
             var res2 = linksl + userLang + "/";
             window.location = res2;
@@ -376,7 +376,7 @@ function Rodar() {
         }
 
         if (lang != userLang) {
-            var linksl = "https://diario.netlify.app/new_world ⊡/spaceliving 📘/";
+            var linksl = website_link + "new_world ⊡/spaceliving 📘/";
             var userLang = navigator.language || navigator.userLanguage;
             var res2 = linksl + userLang + "/";
             window.location = res2;
@@ -392,7 +392,7 @@ function Rodar() {
         }
 
         if (lang != userLang) {
-            var linksl = "https://diario.netlify.app/new_world ⊡/spaceliving 📘/";
+            var linksl = website_link + "new_world ⊡/spaceliving 📘/";
             var userLang = navigator.language || navigator.userLanguage;
             var res2 = linksl + userLang + "/";
             window.location = res2;
@@ -408,7 +408,7 @@ function Rodar() {
         }
 
         if (lang != userLang) {
-            var linksl = "https://diario.netlify.app/nazzevo%20%F0%9F%93%98/";
+            var linksl = website_link + "nazzevo%20%F0%9F%93%98/";
             var userLang = navigator.language || navigator.userLanguage;
             var res2 = linksl + userLang + "/";
             window.location = res2;
@@ -424,7 +424,7 @@ function Rodar() {
         }
 
         if (lang != userLang) {
-            var linksl = "https://diario.netlify.app/nazzevo%20%F0%9F%93%98/";
+            var linksl = website_link + "nazzevo%20%F0%9F%93%98/";
             var userLang = navigator.language || navigator.userLanguage;
             var res2 = linksl + userLang + "/";
             window.location = res2;
@@ -440,7 +440,7 @@ function Rodar() {
         }
 
         if (lang != userLang) {
-            var linksl = "https://diario.netlify.app/nazzevo%20%F0%9F%93%98/";
+            var linksl = website_link + "nazzevo%20%F0%9F%93%98/";
             var userLang = navigator.language || navigator.userLanguage;
             var res2 = linksl + userLang + "/";
             window.location = res2;
@@ -448,8 +448,58 @@ function Rodar() {
         }
 	}
 
-	var sitename = "Stake2"
+    if (titulo == "A New Story Geral" && check == false) {
+        var lang = "a";
+		var sitename = "Desert_Island"
 
+        if (lang == userLang) {
+            return;
+		}
+
+        if (lang != userLang) {
+            var link1 = website_link + sitename + "/";
+            var userLang = navigator.language || navigator.userLanguage;
+            var res = link1 + userLang + "/";
+            window.location = res;
+            return;
+        }
+    }
+
+    if (titulo == "A New Story" && check == false) {
+        var lang = "en-US";
+		var sitename = "Desert_Island"
+
+        if (lang == userLang) {
+			return;
+        }
+
+        if (lang != userLang) {
+            var link1 = website_link + sitename + "/";
+            var userLang = navigator.language || navigator.userLanguage;
+            var res = link1 + userLang + "/";
+            window.location = res;
+            return;
+        }
+    }
+
+    if (titulo == "Uma Nova História" && check == false) {
+        var lang = "pt-BR";
+		var sitename = "Ilha_Deserta"
+
+        if (lang == userLang) {
+			return;
+        }
+
+        if (lang != userLang) {
+            var link1 = website_link + sitename + "/";
+            var userLang = navigator.language || navigator.userLanguage;
+            var res = link1 + userLang + "/";
+            window.location = res;
+            return;
+        }
+    }
+
+	var sitename = "Stake2"
     if (titulo == sitename && check == false) {
 		lang = "a";
 
@@ -458,7 +508,7 @@ function Rodar() {
         }
 
         if (userLang != lang) {
-            var link = website_link + "stake2" + "/";
+            var link = website_link + "stake2/";
             var res = link + userLang + "/";
             window.location = res;
         }
@@ -472,7 +522,7 @@ function Rodar() {
         }
 
         if (userLang != lang) {
-            var link = website_link + "stake2" + "/";
+            var link = website_link + "stake2/";
             var res = link + userLang + "/";
             window.location = res;
         }
@@ -486,70 +536,73 @@ function Rodar() {
         }
 
         if (userLang != lang) {
-            var link = website_link + "stake2" + "/";
+            var link = website_link + "stake2/";
             var res = link + userLang + "/";
             window.location = res;
         }
     }
 
+	var sitename = "xenaeizaque";
     if (titulo == "Xena and Izaque, 3 months of dating :3 Geral" && check == false) {
-		lang = "a";
+		var lang = "a";
 
         if (userLang == lang) {
             return;
         }
 
         if (userLang != lang) {
-            var link = website_link + "xenaeizaque" + "/";
+            var link = website_link + sitename + "/";
             var res = link + userLang + "/";
             window.location = res;
         }
     }
 
     if (titulo == "Xena and Izaque, 3 months of dating :3" && check == false) {
-		lang = "en-US";
+		var lang = "en-US";
 
         if (userLang == lang) {
             return;
         }
 
         if (userLang != lang) {
-            var link = website_link + "xenaeizaque" + "/";
+            var link = website_link + sitename + "/";
             var res = link + userLang + "/";
             window.location = res;
         }
     }
 
     if (titulo == "Xena e Izaque, 3 meses de namoro :3" && check == false) {
-		lang = "pt-BR";
+		var lang = "pt-BR";
 
         if (userLang == lang) {
             return;
         }
 
         if (userLang != lang) {
-            var link = website_link + "xenaeizaque" + "/";
+            var link = website_link + sitename + "/";
             var res = link + userLang + "/";
             window.location = res;
         }
     }
 
     if (titulo == "Yours truly, Izaque. Geral" && check == false) {
-		lang = "a";
+		var lang = "a";
+		var sitename = "Yourstruly_izaque";
 
         if (userLang == lang) {
             return;
         }
 
         if (userLang != lang) {
-            var link = website_link + "Yourstruly_izaque" + "/";
+            var link = website_link + sitename + "/";
             var res = link + userLang + "/";
             window.location = res;
         }
     }
 
     if (titulo == "Yours truly, Izaque." && check == false) {
-		lang = "en-US";
+		var lang = "en-US";
+		var sitename = "Yourstruly_izaque";
 
         if (userLang == lang) {
             return;
@@ -563,14 +616,15 @@ function Rodar() {
     }
 
     if (titulo == "Sinceramente, Izaque." && check == false) {
-		lang = "pt-BR";
+		var lang = "pt-BR";
+		var sitename = "Yourstruly_izaque";
 
         if (userLang == lang) {
             return;
         }
 
         if (userLang != lang) {
-            var link = website_link + "Yourstruly_izaque" + "/";
+            var link = website_link + sitename + "/";
             var res = link + userLang + "/";
             window.location = res;
         }
