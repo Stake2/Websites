@@ -11,7 +11,7 @@ function Rodar() {
 	var check = current_site_link_string.includes("no-redirect=true");
 
 	if (titulo == "Diary" && check == false) {
-		lang = "a";
+		var lang = "a";
 
 		if (userLang == lang) {
 			return;
@@ -25,7 +25,7 @@ function Rodar() {
 	}
 
 	if (titulo == "Diary EN-US" && check == false) {
-		lang = "en-US";
+		var lang = "en-US";
 
 		if (userLang == lang) {
 			return;
@@ -39,7 +39,7 @@ function Rodar() {
 	}
 
 	if (titulo == "Diário PT-BR" || titulo == "Diário PT-PT" && check == false) {
-		lang = "pt-BR";
+		var lang = "pt-BR";
 
 		if (userLang == lang) {
 			return;
@@ -53,7 +53,7 @@ function Rodar() {
 	}
 
 	if (titulo == "Watch History" && check == false) {
-		lang = "a";
+		var lang = "a";
 	
 		if (userLang == lang) {
 			return;
@@ -67,7 +67,7 @@ function Rodar() {
 	}
 
 	if (titulo == "Watch History EN-US" && check == false) {
-		lang = "en-US";
+		var lang = "en-US";
 
 		if (userLang == lang) {
 			return;
@@ -81,7 +81,7 @@ function Rodar() {
 	}
 
 	if (titulo == "Watch History PT-BR" && check == false) {
-		lang = "pt-BR";
+		var lang = "pt-BR";
 
 		if (userLang == lang) {
 			return;
@@ -95,7 +95,7 @@ function Rodar() {
 	}
 
 	if (titulo == "Things I Do Geral" && check == false) {
-		lang = "a";
+		var lang = "a";
 
 		if (userLang == lang) {
 			return;
@@ -109,7 +109,7 @@ function Rodar() {
 	}
 
 	if (titulo == "Things I Do EN-US" && check == false) {
-		lang = "en-US";
+		var lang = "en-US";
 
 		if (userLang == lang) {
 			return;
@@ -123,7 +123,7 @@ function Rodar() {
 	}
 
 	if (titulo == "Coisas que eu faço" && check == false) {
-		lang = "pt-BR";
+		var lang = "pt-BR";
 
 		if (userLang == lang) {
 			return;
@@ -137,7 +137,8 @@ function Rodar() {
 	}
 
 	if (titulo == "2018" && check == false) {
-		lang = "a";
+		var lang = "a";
+
 		if (userLang == lang) {
 			return;
 		}
@@ -150,7 +151,8 @@ function Rodar() {
 	}
 
 	if (titulo == "2018 EN-US" && check == false) {
-		lang = "en-US";
+		var lang = "en-US";
+
 		if (userLang == lang) {
 			return;
 		}
@@ -163,7 +165,8 @@ function Rodar() {
 	}
 
 	if (titulo == "2018 PT-BR" && check == false) {
-		lang = "pt-BR";
+		var lang = "pt-BR";
+
 		if (userLang == lang) {
 			return;
 		}
@@ -190,7 +193,7 @@ function Rodar() {
 	}
 
 	if (titulo == "2019 EN-US" && check == false) {
-		lang = "en-US";
+		var lang = "en-US";
 
 		if (userLang == lang) {
 			return;
@@ -338,7 +341,7 @@ function Rodar() {
 	}
 
 	if (titulo == "SpaceLiving EN-US" && check == false) {
-		lang = "en-US";
+		var lang = "en-US";
 
 		if (lang == userLang) {
 			return;
@@ -353,7 +356,7 @@ function Rodar() {
 	}
 
 	if (titulo == "SpaceLiving PT-BR" && check == false) {
-		lang = "pt-BR";
+		var lang = "pt-BR";
 
 		if (lang == userLang) {
 			return;
@@ -368,7 +371,7 @@ function Rodar() {
 	}
 
 	if (titulo == "SpaceLiving PT-PT" && check == false) {
-		lang = "pt-PT";
+		var lang = "pt-PT";
 
 		if (lang == userLang) {
 			return;
@@ -383,7 +386,7 @@ function Rodar() {
 	}
 
 	if (titulo == "The Story of the Nazzevo Brothers Geral" && check == false) {
-		lang = "a";
+		var lang = "a";
 
 		if (lang == userLang) {
 			return;
@@ -437,7 +440,7 @@ function Rodar() {
 
 		if (lang != userLang) {
 			var choosen_website_url = website_link + sitename + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + userLang.toLowerCase() + "/";
 			window.location = res;
 			return;
 		}
@@ -469,7 +472,23 @@ function Rodar() {
 
 		if (lang != userLang) {
 			var choosen_website_url = website_link + sitename + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + userLang.toLowerCase() + "/";
+			window.location = res;
+			return;
+		}
+	}
+
+	if (titulo == "Uma Nova História PT-PT" && check == false) {
+		var lang = "pt-PT";
+		var sitename = "Ilha_Deserta";
+
+		if (lang == userLang) {
+			return;
+		}
+
+		if (lang != userLang) {
+			var choosen_website_url = website_link + sitename + "/";
+			var res = choosen_website_url + userLang.toLowerCase() + "/";
 			window.location = res;
 			return;
 		}
