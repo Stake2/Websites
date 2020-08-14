@@ -15,7 +15,7 @@
 <meta name="twitter:site" value="@The_Snakes90" />
 <meta name="twitter:creator" content="@The_Snakes90" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<meta name="revised" content="Stake's Enterprisetm, 11/08/2020" />
+<meta name="revised" content="Stake's Enterprisetm, 14/08/2020" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
@@ -34,7 +34,85 @@ body, html {
   background-position: center;
   background-size: cover;
 }
-</style>
+</style><script type="text/javascript">
+function pad(
+  a, // the number to convert 
+  b // number of resulting characters
+){
+  return (
+    1e15 + a + // combine with large number
+    "" // convert to string
+  ).slice(-b) // cut leading "1"
+}
+
+var launch_date = new Date(2020, 10, 11);
+
+var launch_date_day = launch_date.getDate();
+
+var launch_date_month = launch_date.getMonth();
+var launch_date_month = pad(launch_date_month, 2);
+
+var launch_date_year = launch_date.getFullYear();
+
+var launch_date = String(launch_date_day) + "/" + String(launch_date_month) + "/" + String(launch_date_year);
+
+var today_date = new Date();
+
+var today_date_day = today_date.getDate();
+
+var today_date_month = today_date.getMonth() + 1;
+var today_date_month = pad(today_date_month, 2);
+
+var today_date_year = today_date.getFullYear();
+
+var today_date = String(today_date_day) + "/" + String(today_date_month) + "/" + String(today_date_year);
+
+var dateFirst = new Date(2020, 10, 11);
+var dateSecond = new Date();
+
+// time difference
+var timeDiff = Math.abs(dateSecond.getTime() - dateFirst.getTime());
+
+var DateDiff = {
+    inDays: function(d1, d2) {
+        var t2 = d2.getTime();
+        var t1 = d1.getTime();
+
+        return parseInt((t2-t1)/(24*3600*1000));
+    },
+
+    inWeeks: function(d1, d2) {
+        var t2 = d2.getTime();
+        var t1 = d1.getTime();
+
+        return parseInt((t2-t1)/(24*3600*1000*7));
+    },
+
+    inMonths: function(d1, d2) {
+        var d1Y = d1.getFullYear();
+        var d2Y = d2.getFullYear();
+        var d1M = d1.getMonth() + 1;
+        var d2M = d2.getMonth();
+
+        return (d2M+12*d2Y)-(d1M+12*d1Y);
+    },
+
+    inYears: function(d1, d2) {
+        return d2.getFullYear()-d1.getFullYear();
+    }
+}
+
+var d1 = new Date();
+var d2 = new Date(2020, 10, 11);
+var months = DateDiff.inYears(d1, d2) * 12;
+var month = DateDiff.inMonths(d1, d2) - months;
+//var days = DateDiff.inYears(d1, d2) * 365;
+//var dy = DateDiff.inDays(d1, d2) - days;
+
+console.log("The launch date is: " + launch_date);
+console.log("Today is: " + today_date);
+</script>
+
 <script src="https://diario.netlify.app/cdn/js/Redirect.js" onLoad="Rodar();"></script>
 <script src="https://diario.netlify.app/cdn/js/Set Revised Date.js"></script>
 </head>
@@ -49,9 +127,15 @@ body, html {
 <h1 class="w3-jumbo w3-animate-top">Coming soon:<br /></h1>
 <h3 class="w3-jumbo w3-animate-top">The new story of Izaque Sanvezzo.</h3>
 <hr class="w3-border-grey" style="margin:auto;width:40%">
-<h3 class="w3-center">2 months until a big reveal...<br />
+<h3 class="w3-center"><span id="launch_date">2</span> months until a big reveal...<br />
 	Prepare your boats.</h3>
 </div>
 </div>
+
+<script>
+launch_date_div = document.getElementById("launch_date");
+launch_date_div.innerHTML = month;
+console.log("Replaced the date with the difference between the two dates.");
+</script>
 </body>
 </html>
