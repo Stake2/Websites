@@ -22,7 +22,7 @@
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Mobile.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/ImgHover.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Notification.css" />
-<meta name="revised" content="Stake's Enterprisetm, 11/08/2020" />
+<meta name="revised" content="Stake's Enterprisetm, 17/08/2020" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
@@ -34,8 +34,7 @@
 <script src="https://diario.netlify.app/cdn/js/Set Revised Date.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
-<body>
-<center>
+<body><center>
 <div class="w3-animate-zoom">
 <div id="myDIV" class="w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
 <span title="Ler história" alt="Ler história"><a href="#spaceliving-ler história"><button id="button1" class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('spaceliving-ler história')"><h2>Ler história: <i class="fas fa-book-open"></i> <span class="w3-text-white">[Novo 14]</span></h2></button></a></span>
@@ -92,15 +91,10 @@ Data: <span class="w3-text-orange">19/01/2019</span><br />
 Status: <span class="w3-text-orange">[Revisando e editando]</span></h4><br />
 </div>
 
-<div id="notificationdiv" onload="ChangeTitle();" class="stake2animatebottom border w3-text-black blue mobileHide" style="position:fixed;right:0;bottom:0;padding-top:2%;padding-bottom:2%;padding-left:7%;padding-right:7%;border-radius: 50px;"><h3><span id="notificationclose" class="w3-btn blue borderbtn borderbtn" style="float:left;margin-left:-10%;border-radius: 50px;">X</span>Novo capítulo revisado <i class="fas fa-bell"></i><b><span style="margin-left:2%;"><a href="#capítulo-2" title="2 - A História de John"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-2');">2 - A História de John</button></a> 
+<div id="notificationdiv" onload="ChangeTitle();" class="stake2animatebottom border w3-text-black blue mobileHide" style="position:fixed;right:0;bottom:0;padding-top:2%;padding-bottom:2%;padding-left:7%;padding-right:7%;border-radius: 50px;"><h3><span id="notificationclose" class="w3-btn blue borderbtn borderbtn" style="float:left;margin-left:-10%;border-radius: 50px;">X</span>Novo capítulo revisado <i class="fas fa-bell"></i><b><span style="margin-left:2%;"><a href="#capítulo-3" title="3 - A transmissão ao vivo, as histórias e o reencontro"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-3');">3 - A transmissão ao vivo, as histórias e o reencontro</button></a> 
 </span></b></h3></div>
-<div id="notificationdivm" onload="ChangeTitle();" class="stake2animatebottom border w3-text-black blue mobileShow" style="position:fixed;right:0;bottom: 0;padding-top:1%;padding-bottom:1%;padding-left:10%;padding-right:10%;border-radius: 50px;"><h4><span id="notificationclosem" class="w3-btn blue borderbtn borderbtn" style="float:left;border-radius: 50px;">X</span><br /><br /><b> Novo capítulo revisado <i class="fas fa-bell"></i></b><br /><br /><b><a href="#capítulo-2" title="2 - A História de John"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-2');">2 - A História de John</button></a> 
+<div id="notificationdivm" onload="ChangeTitle();" class="stake2animatebottom border w3-text-black blue mobileShow" style="position:fixed;right:0;bottom: 0;padding-top:1%;padding-bottom:1%;padding-left:10%;padding-right:10%;border-radius: 50px;"><h4><span id="notificationclosem" class="w3-btn blue borderbtn borderbtn" style="float:left;border-radius: 50px;">X</span><br /><br /><b> Novo capítulo revisado <i class="fas fa-bell"></i></b><br /><br /><b><a href="#capítulo-3" title="3 - A transmissão ao vivo, as histórias e o reencontro"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-3');">3 - A transmissão ao vivo, as histórias e o reencontro</button></a> 
 </b></h4></div>
-
-<script>
-ChangeTitle();
-</script><script src="https://diario.netlify.app/cdn/js/Notification.js"></script>
-<script src="https://diario.netlify.app/cdn/js/HideNotification.js"></script>
 
 <a name="spaceliving-ler história"></a>
 <div id="spaceliving-ler história" class="city mobileHide" style="display:none;">
@@ -113,9 +107,9 @@ ChangeTitle();
 <div class="shakesidetoside">
 <a href="#capítulo-1" title="1 - ﻿As EspaçoNaves"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('capítulo-1');">1 - ﻿As EspaçoNaves</button></a> 
 </div><div class="shakesidetoside">
-<a href="#capítulo-2" title="2 - A História de John"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-2');">2 - A História de John</button></a> 
+<a href="#capítulo-2" title="2 - A História de John"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('capítulo-2');">2 - A História de John</button></a> 
 </div><div class="shakesidetoside">
-<a href="#capítulo-3" title="3 - A transmissão ao vivo, as histórias e o reencontro"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('capítulo-3');">3 - A transmissão ao vivo, as histórias e o reencontro</button></a> 
+<a href="#capítulo-3" title="3 - A transmissão ao vivo, as histórias e o reencontro"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-3');">3 - A transmissão ao vivo, as histórias e o reencontro</button></a> 
 </div><div class="shakesidetoside">
 <a href="#capítulo-4" title="4 - 4"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('capítulo-4');">4 - 4</button></a> 
 </div><div class="shakesidetoside">
@@ -155,9 +149,9 @@ ChangeTitle();
 <div class="shakesidetoside">
 <a href="#capítulo-1" title="1 - ﻿As EspaçoNaves"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('capítulo-1');">1 - ﻿As EspaçoNaves</button></a> 
 </div><div class="shakesidetoside">
-<a href="#capítulo-2" title="2 - A História de John"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-2');">2 - A História de John</button></a> 
+<a href="#capítulo-2" title="2 - A História de John"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('capítulo-2');">2 - A História de John</button></a> 
 </div><div class="shakesidetoside">
-<a href="#capítulo-3" title="3 - A transmissão ao vivo, as histórias e o reencontro"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('capítulo-3');">3 - A transmissão ao vivo, as histórias e o reencontro</button></a> 
+<a href="#capítulo-3" title="3 - A transmissão ao vivo, as histórias e o reencontro"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-3');">3 - A transmissão ao vivo, as histórias e o reencontro</button></a> 
 </div><div class="shakesidetoside">
 <a href="#capítulo-4" title="4 - 4"><button class="w3-btn blue borderbtn" style="border-radius: 50px;" onclick="openCity('capítulo-4');">4 - 4</button></a> 
 </div><div class="shakesidetoside">
@@ -426,7 +420,7 @@ ChangeTitle();
 
 <a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>A História dos Irmãos Nazzevo</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/PTBR/Cover/1.png" width="650"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h2><b>Histórias Solitárias</b></h2><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="650"><br /><br /></a><br />
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h2><b>Ilha Deserta</b></h2><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="650"><br /><br /></a><br />
 </div>
 <br />
 
@@ -437,7 +431,7 @@ ChangeTitle();
 
 <a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>A História dos Irmãos Nazzevo</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/PTBR/Cover/1.png" width="290" height="190"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Histórias Solitárias</b></h4><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="290" height="190"><br /><br /></a><br />
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Ilha Deserta</b></h4><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="290" height="190"><br /><br /></a><br />
 </div>
 <br />
 
@@ -460,7 +454,7 @@ ChangeTitle();
 
 <a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>A História dos Irmãos Nazzevo</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/PTBR/Cover/1.png" width="650"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h2><b>Histórias Solitárias</b></h2><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="650"><br /><br /></a><br />
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h2><b>Ilha Deserta</b></h2><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="650"><br /><br /></a><br />
 </div>
 <br />
 
@@ -471,7 +465,7 @@ ChangeTitle();
 
 <a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app//nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>A História dos Irmãos Nazzevo</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/PTBR/Cover/1.png" width="290" height="190"><br /><br /></a><br /><br /> 
 
-<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Histórias Solitárias</b></h4><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="290" height="190"><br /><br /></a><br />
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app//Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Ilha Deserta</b></h4><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="290" height="190"><br /><br /></a><br />
 </div>
 <br />
 
@@ -516,6 +510,7 @@ ChangeTitle();
   cursor: pointer;
 }
 </style>
+<div id="capítulos-div">
 
 <a name="capítulo-1"></a>
 <div id="capítulo-1" class="city w3-text-black blue" style="display:none;margin:10%;border-width:3px;border-color:bg;border-style:solid;border-radius: 50px;">
@@ -874,93 +869,137 @@ No ano de 2019, tinha uma lenda de algumas espaçonaves que tinham uma casa inte
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <div id="texto-capítulo-3">
-John acordou e ligou seu computador, ele abriu a geladeira e pegou um bolo de limão.
-<br />Ele colocou o prato com o bolo de limão na mesa onde o computador estava.
-<br />Ele abriu a Steam para jogar alguns jogos, ele jogou Transport Defender e Zombidle por 30 minutos.
-<br />Depois disso ele abriu o Notepad++ para escrever algumas histórias, ou talvez um rascunho que ele estava tentando melhorar.
-<br />Ele trabalhou um pouco no rascunho e pensou que estava bom, ele salvou o arquivo, então depois disso ele baixou alguns vídeos do Youtube para assistir.
-<br />Ele baixou 3 vídeos do Alanzoka e 3 do Cellbit Jogando.
-<br />John tinha um site onde ele colocava os vídeos e um botão verde chamado "Watch" era adicionado vinculando ao arquivo de vídeo local que ele tinha.
-<br />Ele assistiu alguns vídeos e então fechou a aba do site, ele usou VLC Media Player para assistir aqueles vídeos.
-<br />John também gostava de jogar Minecraft, ele tinha 3 servidores na lista de servers do Minecraft.
-<br />Ele gostava de jogar survival e skyblock nesses servidores, John gostava da "fanbase" daqueles servidores.
-<br />John jogou um pouco nesses servidores, ele tinha amigos lá.
-<br />Ele fechou o jogo e começou a conversar com seus amigos no Discord, ele gostava dos amigos que tinha.
-<br />Era 11:00AM lá, mas ele não sabia a diferença entre dia e noite por que ele não tinha luz ou um sol perto dali.
-<br />Então a cena mudou para Lisa, ela estava escrevendo The Odds of Nature, ela terminou o capítulo atual e salvou.
-<br />Depois disso ela postou a história no Wattpad, depois de uns minutos o capítulo tinha 5 visualizações e 2 comentários.
-<br />Lisa estava feliz sobre isso, ela gostava de ter uma fanbase ou ter pessoas que gostavam de ler as histórias que ela escrevia.
-<br />Depois disso, Lisa abriu a Netflix para assistir alguma série, ela gostava de assistir The Walking Dead.
-<br />Lisa estava no segundo episódio da sétima temporada, ela gostava da história e dos personagens, mas também estava com um pouco de medo de assistir.
-<br />O aplicativo do Discord estava aberto no computador dela, quando ela começou a assistir The Walking Dead S07E03, os detalhes do que ela estava assistindo apareceram no perfil dela do Discord.
-<br />Ela pausou o vídeo e pegou pipoca e coca-cola da geladeira dela, ela gostava de comer pipoca enquanto assistia coisas.
-<br />Então ela sentou na cadeira e pois o vídeo pra tocar, ela comeu enquanto assistia, então o episódio acabou, ela fechou o aplicativo da Netflix.
-<br />Então Lisa trocou para o Discord, ela queria falar com os amigos dela no Discord, ela notou que John estava online.
-<br />Lisa começou a falar com ele, ela disse: "Oi, você melhorou na escrita?".
-<br />Depois de um tempo John respondeu: "Sim, eu pesquisei na internet como ficar melhor na escrita, e escrevi um rascunho hoje".
-<br />Então Lisa disse: "Oh, isso é legal, posso ver?".
-<br />John disse: "Sim, é claro, eu vou te mandar o arquivo?, ok?".
-<br />Então Lisa respondeu: "Ok".
-<br />John mandou um arquivo para ela de nome: "Bubbles and Cream" de 5KB.
-<br />Lisa disse: "Eu vou ler isso agora".
-<br />Depois de um tempo Lisa respondeu dizendo: "Eu acho que isso é melhor do que a outra história que você me mandou, tipo... o jeito que você escreveu".
-<br />"A gramática está melhor também, eu gostei da história, eu acho que o conceito é interessante, você deveria postar ela em algum lugar, tipo Wattpad".
-<br />"Eu ficaria feliz de ler ela no Wattpad :)".
-<br />Então John respondeu: "Oh, ok, eu estou feliz que você pense isso de minha história, eu tentei ficar melhor em escrita só por que eu te admiro muito".
-<br />"E eu queria te fazer orgulhosa de mim ou algo assim, então obrigado por gostar de minha história, e obrigado por me ajudar a ficar melhor na escrita".
-<br />"Eu vou postar ela no Wattpad, obrigado pela sugestão".
-<br />Então Lisa respondeu: "Oh, eu to feliz de ajudar você e de inspirar você também, obrigado por isso :)".
-<br />"Eu vou fazer outra coisa agora, ok, te vejo depois :3".
-<br />Então John respondeu: "Te vejo depois".
-<br />Lisa estava tão feliz que ela inspirou John a ficar melhor na escrita, aquilo fez ela querer fazer mais histórias e escrever mais.
-<br />Então Lisa abriu o Steam para jogar alguns jogos, ela abriu o Apex Legends pra jogar um pouco.
-<br />Ela gostava do jogo, ela queria jogar mais, mas estava um pouco cansada para jogar.
-<br />Ela ganhou uma partida e fechou o jogo, ela tinha outros amigos no Discord também.
-<br />Lisa queria falar com Anny, pra jogar algo e tals, Anny tinha um Discord também.
-<br />Então Lisa mandou uma mensagem para Anny no Discord dizendo: "Eae, quer jogar alguma coisa hoje?".
-<br />Então Anny respondeu: "Sim, eu quero fazer isso, mas o que você quer jogar?".
-<br />Lisa disse: "Eu não sei, um pouco de GTA V, ou Terraria se você quiser".
-<br />Anny disse: "Eu queria jogar os dois".
-<br />Então Lisa e Anny entraram em um servidor privado no Discord para ir em uma chamada de voz, Lisa chamou um bot de musica para a chamada para ouvir musica enquanto joga.
-<br />Lisa e Anny jogaram GTA V Online, elas gostavam daquele jogo, então depois disso Lisa disse que ia fazer outra coisa.
-<br />Lisa estava procurando no Wattpad algumas histórias para ler, ela descobriu que a história "A Vida de Pequenata" recebeu um novo capítulo, o capítulo 18.
-<br />A história era escrita por um usuário chamado "2ekats", Lisa gostava daquela história, ela gostava de ver Pequenata e Júlia vivendo suas vidas.
-<br />Ela amou o capítulo e deu um voto e comentou nele, depois de um tempo o autor respondeu dizendo:
-<br />"Oi, obrigado por votar na minha história, e obrigado por gostar e comentar nela, eu estou muito feliz de ver o seu feedback e comentários".
-<br />Lisa estava feliz por dar feedback e comentar nas histórias que ela gostava.
-<br />Então ela ligou o Playstation 4 dela e abriu um jogo chamado Need For Speed, ela gostava de jogar ele.
-<br />Lisa jogou por um tempo e fechou o jogo, ela desligou o vídeo game.
-<br />Ela sentiu fome, ela abriu a geladeira e lá estava um pacote de bolacha recheada de chocolate e um Doritos, e também um copo de coca-cola.
-<br />Lisa pegou todas as coisas e colocou elas na mesa, ela abriu o pacote de bolachas e jogou eles em uma bacia de plástico.
-<br />Ela abriu um filme para assistir na Netflix, o filme era chamado de "Os Vingadores: Guerra Infinita".
-<br />Ela assistiu enquanto comia as bolachas, Doritos e bebia coca-cola, ela gostou do filme, ela adicionou ele na lista de "Filmes Assistidos".
-<br />Lisa amava fazer arquivos de texto, ela tinha um amigo chamado Funkysnipa Cat, ela conheceu ele no Google+.
-<br />Funkysnipa Cat foi o primeiro a comecar a conversa no Discord, Funkysnipa Cat e Lisa eram falantes nativos do idioma Português do Brasil.
-<br />Funkysnipa Cat disse em português: "Oi".
-<br />Então Lisa disse: "Oi".
-<br />Eles conversaram um pouco e começaram a se conhecer de novo, eles gostavam de falar sobre histórias, eles tinham muito em comum.
-<br />Funky e Lisa amavam escrever histórias, e Lisa queria escrever uma história junto com Funky algum dia.
-<br />O nome real de Funky era Izaque, Lisa gostava de ser amiga dele.
-<br />Depois de um tempo aprendendo sobre um ao outro, Izaque descobriu que Lisa vivia em uma LonelyShip.
-<br />Izaque vivia no Planeta Terra normal, Izaque ensou que isso era um fato interessante sobre Lisa.
-<br />No começo da conversa Izaque mandou para Lisa o link de seu perfil no Wattpad, Lisa e Izaque conversaram sobre histórias por um tempo.
-<br />Eles também jogavam juntos algumas vezes, na verdade, o autor dessa história é Izaque ou Funkysnipa Cat.
-<br />Sim, isso mesmo, eu sou Izaque e eu estou escrevendo sobre Lisa, minha querida amiga, isso é um pouco estranho de se fazer, não?.
-<br />Por que muitas histórias não falam com o leitor, elas contam uma história para o leitor, mas é simplesmente isso, eu estou escrevendo uma história sobre minha amiga Lisa.
-<br />Eu acho que você ta com a cara desse jeito agora: "O_O".
-<br />De volta para o estilo de narrador.
-<br />Lisa disse para Izaque o que ela fez nos dias que ela passou na espaço nave, para que ele pudesse escrever os capítulos da história "SpaceLiving".
-<br />Izaque amava escrever aquela história (*piscadela*).
-<br />Izaque analizou o dia de Lisa e escreveu uma história sobre ele, então ele mandou o arquivo da história para Lisa.
-<br />Lisa gostou e deu permissão para Izaque publicar a história e para mandar para os amigos dele.
-<br />Izaque amava quando um amigo específico lia SpaceLiving, aquele amigo era mais que um amigo, aquela pessoa se chamava [...] (...).
-<br />Lisa amava falar com Izaque, Lisa também sabia que [...] gostava de ler a história dela.
-<br />Lisa queria falar com ela, Lisa pediu o contato de [...], Izaque disse que ela poderia falar com [...].
-<br />Então [...] começou a conversar com Lisa, elas conversaram um pouco, Isa começou a conhecer Lisa um pouco melhor.
-<br />Depois de um tempo elas pararam de conversar.
-<br />Lisa pensou que ela tinha uma vida feliz, ela escrevia histórias, ela tinha bons amigos como Izaque, Isa e John.
-<br />Ela se sentiu cansada, ela disse tchau para Izaque e desligou o computador.
-<br />Ela deitou em sua cama e dormiu.
+Lisa estava em sua espaçonave, escrevendo sua história chamada "As Estranhezas da Natureza", ela terminou o capítulo atual e salvou o arquivo de texto.
+<br />Depois disso, ela revisou e publicou aquele capítulo de sua história no Wattpad, depois de alguns minutos, o capítulo tinha cinco visualizações e dois comentários.
+<br />(Wattpad é um site para pessoas escreverem e lerem histórias, para autores postarem suas histórias e ganharem leitores.)
+<br />Lisa estava feliz sobre aquilo, ela gostava de ter uma fanbase ou base de fãs e ter pessoas que gostavam de ler o que ela escrevia.
+<br />Então Lisa abriu o site da Netflix para assistir algumas séries, ela gostava de assistir uma série chamada The Walking Dead.
+<br />(Netflix é um site e aplicativo de celular onde você pode assistir séries, filmes, desenhos, e animes online, usando um plano pago.)
+<br />Lisa estava no segundo episódio da sétima temporada, a garota gostava da história e os personagens, mas ela tinha um pouco de medo de assistir às vezes.
+<br />
+<br />O programa do Discord estava aberto em seu computador quando ela começou a assistir o episódio "The Walking Dead T07E03(86) 'A Cela'".
+<br />Os detalhes de o que ela estava assistindo apareceram em seu perfil do Discord, como um status do programa do Discord, mostrando o título e o número do episódio.
+<br />Ela pausou a reprodução do vídeo e pegou pipoca e uma lata de Coca-cola de sua geladeira TPF, ela gostava de comer pipoca enquanto assistia coisas.
+<br />Então ela se sentou na cadeira e colocou o vídeo pra tocar, Lisa comeu enquanto assistia o episódio.
+<br />Um personagem do grupo de sobreviventes do Rick Grimes estava preso na cela de um inimigo do grupo, ele tinha que ficar lá como um refém.
+<br />Lisa estava triste por ele, ela queria viver lá no apocalipse, Lisa pensou que seria legal e divertido, mas também perigoso.
+<br />Ela queria ir lá para salvar ele, para matar as pessoas do grupo do Negan, a garota odiava o grupo do Negan, eles matavam pessoas sem motivo algum.
+<br />Depois de quarenta minutos assistindo o episódio enquanto comia pipoca e bebia Coca-cola, o episódio acabou, ele foi registrado na conta da Netflix de Lisa.
+<br />
+<br />A garota olhou para a janela e viu o vazio negro do espaço, pensando que ela não pode ver o sol ou a lua lá, mas ela tem o relógio de seu computador.
+<br />Ela sabia que ela podia mudar o relógio de seu computador para qualquer hora ou fuso-horário da Terra, mas isso não refletiria a hora real de lá.
+<br />Porque não tem nenhum jeito de manter a noção do tempo na espaçonave, não tem nenhum sol ou lua para olhar, as pessoas não conseguiam dizer se era dia ou noite.
+<br />Lisa trocou para a janela do Discord, ela queria falar com seus amigos no Discord e mudou seu status para disponível, ela notou que John estava online.
+<br />(Discord é uma plataforma de rede social para gamers mas os não-gamers também a usam.)
+<br />Lisa começou a conversar com ele, ela enviou uma mensagem dizendo: "Olá John, você melhorou sua escrita?"
+<br />Depois de algum tempo, John respondeu dizendo: "Sim, eu pesquisei na Internet como ficar melhor na escrita, como escrever melhor, e eu escrevi um rascunho hoje".
+<br />Então Lisa respondeu: "Ah, isso é legal, posso ver?"
+<br />John disse: "Sim, é claro, eu vô mandar o arquivo pra você, ok?"
+<br />Então Lisa respondeu: "Ok ^^".
+<br />John enviou para ela um arquivo chamado: "Bolhas e creme.txt" com 5KB de peso.
+<br />Lisa disse: "Eu vou ler ele, espere um pouco ^^".
+<br />
+<br />Depois de algum tempo lendo, Lisa abriu a janela do Discord novamente e respondeu dizendo:
+<br />"Eu acho que é melhor do que a outra história que você me enviou, eu quero dizer... o jeito que você escreveu ela, está bom.
+<br />A gramática tá melhor também, eu gostei da história, eu acho que o conceito é interessante, você deveria publicar ela em algum lugar, tipo o Wattpad.
+<br />Eu ficaria feliz de ler sua história lá ^^."
+<br />
+<br />Então John leu toda a mensagem e respondeu dizendo:
+<br />"Ah, ok, fico feliz que você pensa isso da minha história, eu tentei ficar melhor na escrita só por que eu admiro muito você e seu trabalho.
+<br />E eu queria fazer você orgulhosa de mim, então obrigado por gostar de minha história, eu estou muito feliz por causa disso, e obrigado por me ajudar a ficar melhor na escrita.
+<br />Eu vou postar ela no Wattpad, obrigado pela sugestão ^^."
+<br />
+<br />Então Lisa respondeu dizendo:
+<br />"Eu fico feliz que eu pude te ajudar e te inspirar também, obrigada por isso.
+<br />Eu vou fazer outra coisa agora, até mais, John ^^."
+<br />
+<br />Então John respondeu: "Até mais, Lisa ^^".
+<br />
+<br />Lisa estava tão feliz que ela inspirou John a melhorar na escrita, o que fez ela querer fazer mais histórias e escrever mais, inspirar mais pessoas e fazê-las felizes.
+<br />Ela estava olhando para suas DMs (Mensagens Diretas) no Discord e olhou para a conversa de Anny com ela, Anny também tinha Discord.
+<br />Lisa gostava de falar com ela, ela queria jogar alguns jogos com Anny.
+<br />Ela enviou uma mensagem para Anny dizendo: "Ei Anny, quer joga algo?"
+<br />Então Anny respondeu: "Sim, o que você quer jogar?"
+<br />Lisa disse: "Eu não sei, talvez GTA 5, ou Terraria se você quiser".
+<br />Anny disse: "Eu quero jogar os dois ^^".
+<br />Então Lisa e Anny entraram em um servidor privado do Discord para ir em uma chamada de voz, Lisa chamou um Bot de Música para a chamada de voz para ouvir música enquanto jogava com Anny.
+<br />Lisa e Anny jogaram o jogo GTA 5 Online um pouco, elas gostavam daquele jogo, era muito divertido, elas também jogaram um pouco de Terraria.
+<br />Depois de algum tempo jogando, Lisa disse para Anny que ela iria fazer outra coisa, ambas disseram "Até mais" uma a outra.
+<br />
+<br />Lisa abriu o navegador Firefox e abriu o site Wattpad, ela começou a procurar algumas histórias para ler.
+<br />Ela recebeu uma notificação dizendo a ela que a história <a class="w3-text-white" href="https://diario.netlify.app/pequenata/">"A Vida de Pequenata"</a> recebeu um novo capítulo, o capítulo de número dezoito.
+<br />A história foi escrita por um usuário chamado "stake2".
+<br />Lisa gostava daquela história, ela gostava de ver as personagens Pequenata e Júlia vivendo suas vidas, ela pensou que elas eram tão fofas juntas.
+<br />A garota amou ler o capítulo, foi muito divertido, ela deu um voto e comentou nele, dizendo o que ela achou dele.
+<br />O comentário dela foi:
+<br />"Ei stake2 ^^, eu amei aquela parte onde ela abriu o Vegecord para conversar com os amigos dela :3
+<br />Vegecord é Discord, né?
+<br />Eu amo quando você troca o nome das coisas para colocar 'vegetais' no meio kkkkkk
+<br />Eu também gostei do fato de que Pequenata escreve histórias também, isso é muito divertido, eu amo escrever também ^^
+<br />'Vegiantart' kkkkkk
+<br />Eu amei esse capítulo ^^."
+<br />
+<br />Depois de alguns minutos, o autor respondeu o comentário dela, dizendo:
+<br />"Oie ^^, obrigado por votar na minha história, e obrigado por gostar e comentar nela, eu tô muito feliz de receber seu feedback e seus comentários ^^.
+<br />Sim, Vegecord é igual Discord kkkk
+<br />Eu amo fazer isso xD, as vezes eu invento uns nomes bem engraçados, é muito legal kkkk
+<br />Algumas vezes eu me "auto-introduzo" nela, tipo, eu escrevo Pequenata como eu seria, ou como eu agiria, e algumas vezes meus interesses.
+<br />É por isso que ela gosta de ler e escrever histórias, é porque eu gosto ^^
+<br />Hehe, tô feliz de encontrar alguém que ama ler tanto quando eu :3
+<br />uwu kkkk
+<br />Eu fico feliz que você amou ^^, obigaduuu :3."
+<br />
+<br />Lisa estava feliz de dar feedback e comentar nas histórias que ela gostava, ela também gostava de receber uma resposta feliz e gentil como a de stake2.
+<br />Ela sentiu que estava com fome e abriu sua geladeira TPF, tinha um pacote de biscoitos recheados com chocolate, um pacote de Doritos, e um copo de Coca-cola dentro dela.
+<br />Lisa pegou todas as coisas e colocou elas em cima da mesa de seu computador, ela abriu o pacote de bolachas recheadas de chocolate e encheu uma bacia de plástico com elas.
+<br />Ela abriu um filme na Netflix para assistir, o filme se chamava "Os Vingadores: Guerra Infinita".
+<br />A garota assistiu o filme enquanto comia as bolachas, Doritos, e bebia o copo de Coca-cola.
+<br />Ela gostou do filme, foi muito divertido, ela estava feliz de ver toda a ação, os efeitos especiais e os heróis, ela torceu pelo Homem de Ferro.
+<br />Lisa adicionou o filme à sua lista de filmes assistidos, era um arquivo de texto dentro do computador dela, onde ela registrava todos os filmes que assistiu.
+<br />
+<br />A garota tinha um amigo que ela conheceu no Google+, o nome de usuário de seu amigo no Discord era "Funkysnipa Cat".
+<br />(Google+ foi um site de rede social criado pelo Google em 2011, numa tentativa de desafiar outras redes sociais, ligando outros produtos Google como Google Drive, Blogger e YouTube, foi fechado em 2019 pelo Google).
+<br />Funkysnipa Cat foi o primeiro a começar a conversa no Discord quando eles se conheceram novamente.
+<br />Ele e Lisa eram Brasileiros e falantes nativo do idioma Português Brasileiro.
+<br />
+<br />Funkysnipa Cat disse em Português Brasileiro: "Oi, você é aquela amiga que eu tinha no Google+, né?"
+<br />Então Lisa respondeu dizendo: "Oie, sim, eu sou aquela amiga ^^, fico feliz que achei seu nome e discriminador do Discord".
+<br />Eles conversaram um pouco e começaram a conhecer um ao outro novamente, eles gostavam de conversar sobre histórias, séries, vídeo games, e música, eles tinham muito em comum.
+<br />Ambos Funky e Lisa amavam escrever histórias, Lisa queria escrever uma história junto com Funky algum dia.
+<br />O nome real de Funky era Izaque, Lisa gostava de ser amiga dele, ela estava feliz de ter um amigo gentil, carinhoso e interessante como ele.
+<br />Depois de um tempo se conhecendo novamente, Izaque descobriu que Lisa vivia em uma LonelyShip (NaveSolitária).
+<br />Izaque vivia no Planeta Terra normal, ele achou que aquele era um fato interessante sobre Lisa.
+<br />
+<br />No começo da conversa, Izaque enviou para Lisa o link para seu perfil no Wattpad, Lisa e Izaque conversaram sobre histórias por um tempo.
+<br />Eles também jogavam alguns jogos juntos as vezes.
+<br />O autor dessa história é Izaque ou Funkysnipa Cat, mas essa é a versão do Universo SpaceLiving de Izaque.
+<br />Sim, é isso, eu sou o Izaque e eu estou escrevendo sobre Lisa, minha querida amiga, essa é uma coisa estranha de se fazer, né? Bom, talvez não, eu pedi permissão pra ela.
+<br />Porque muitas histórias não falam diretamente com o leitor, eles contam uma história para o leitor.
+<br />Mas agora estou falando diretamente com você, e eu me incluí em minha própria história, será que é comum autores fazerem isso?
+<br />Me responda por favor, se você souber.
+<br />Eu acho que você provavelmente está fazendo uma cara assim agora: "O_O", agora, voltando pro estilo narrador.
+<br />Lisa disse para Izaque o que ela fazia nos dias que ela passava naquela EspaçoNave, para ele poder escrever os capítulos da história dele, chamada "SpaceLiving".
+<br />Izaque amava escrever aquela história (*piscadela*), era uma história sobre a EspaçoNave que Lisa vivia, e também sobre a Rede de EspaçoNaves chamada Rede SpaceLiving.
+<br />Izaque analisou o dia de Lisa e escreveu uma história sobre aquilo, então ele enviou o arquivo de texto da história para Lisa checar.
+<br />Lisa leu o primeiro capítulo da história, ela gostou, Lisa deu permissão para Izaque publicar sua história no Wattpad, e mandar a história para os amigos dele.
+<br />Izaque amava quando uma amiga lia sua história SpaceLiving, essa amiga era mais que uma amiga, essa pessoa se chamava Isabella, ela vivia no Planeta Terra.
+<br />Lisa amava conversar com Izaque, Lisa também sabia que Isabella gostava de ler a história dela.
+<br />Lisa queria conversar com Isabella, ela pediu o nome e discriminador de Isabella para Izaque, então ele o enviou para Lisa.
+<br />Então Isabella começou a conversar com Lisa, elas conversaram um pouco e ambas começaram a saber mais uma sobre a outra.
+<br />Depois de algum tempo, elas disseram tchau uma para a outra, Isabella tinha que ir dormir.
+<br />Lisa achou que ela tinha uma vida feliz, ela escrevia histórias, tinha bons amigos como Izaque, Isa, e John para conversar.
+<br />Ela podia comer comidas deliciosas usando sua geladeira TPF.
+<br />A garota se sentiu um pouco cansada, ela despediu-se de Izaque, o dizendo boa noite, agradecendo-lhe pela conversa, sorrindo alegremente enquanto olhava para a tela.
+<br />Lisa desligou seu computador e deitou-se em sua cama, as luzes da espaçonave desligaram e ela podia ver a lua em sua janela.
+<br />A temperatura da espaçonave estava muito boa, ela se cobriu com o cobertor e dormiu, tendo bons sonhos.
+<br />
+<br />(Isabella é minha ex-namorada, ela desapareceu da Internet, eu não sei o motivo.
+<br />Quando eu escrevi este capítulo (19/11/2019), eu estava namorando com ela, eu decidi colocar o nome dela na história para faze-la feliz.
+<br />Depois que ela sumiu, eu trocei o nome dela por "[...]" porque eu estava triste.
+<br />Quando eu estava revisando este capítulo, eu já estava curado do desaparecimento dela, então eu coloquei o nome dela novamente.
+<br />Agora já é passado, eu não estou mais triste.
+<br />Eu escrevi isso em 19/11/2019.
+<br />E revisei em 17/08/2020.)
 <br />
 </div>
 </div>
@@ -1705,10 +1744,10 @@ Era um dia lindo no mundo da SpaceLiving.
 <br />Pequenata: "Hm, obrigado por explicar isso para mim, eu já comi uma fatia de pizza e assisti a um anime chamado Eromanga Sensei, isso é o suficiente para ser considerado um SpaceLiver? xD".
 <br />Lisa: "Talvez xD, na verdade, para ser considerado um SpaceLiver você tem que ser teletransportado para uma nave espacial, há um monte de coisas legais para fazer".
 <br />Lisa: "E... Eromanga Sensei?, eu amo esse anime!, na verdade eu pareço um pouco com a personagem principal, Sagiri, aqui... eu vou mandar uma foto minha...".
-<br /><a href="https://diario.netlify.app/cdn/img/Lisa.jpg"><img src="https://diario.netlify.app/cdn/img/Lisa.jpg" width="20%" style="float:left;border-width:4px;border-color:black;border-style:solid;" /></a><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><a href="https://diario.netlify.app/cdn/img/Lisa.jpg"><img src="https://diario.netlify.app/cdn/img/Lisa.jpg" width="20%" style="float:left;border-width:4px;border-color:black;border-style:solid;" /></a><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br />Pequenata: "Oh... você é fofa xD, e você parece com ela!: 3, eu vou enviar uma foto minha... não olhe muito, eu sou tímidoa...: 3".
 <br />(Narrador-Izaque: Júlia vai ficar brava Pequenata... não mande fotos pra ela xD)
-<br /><a href="https://diario.netlify.app/cdn/img/human pequenata.jpg"><img src="https://diario.netlify.app/cdn/img/human pequenata.jpg" width="20%" style="float:left;border-width:4px;border-color:black;border-style:solid;" /></a><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><a href="https://diario.netlify.app/cdn/img/human pequenata.jpg"><img src="https://diario.netlify.app/cdn/img/human pequenata.jpg" width="20%" style="float:left;border-width:4px;border-color:black;border-style:solid;" /></a><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br />Lisa: "V-Você é fofa também! :3, hehe, eu gosto do seu cabelo, eu queria ter essa cor, e... está chovendo onde sua nave está localizada?, eu nunca vi uma nuvem perto da minha nave antes, isso é estranho... ".
 <br />Pequenata: "Sério?, Não há nuvens aqui, como as nuvens podem existir aqui se estamos vivendo no espaço xD".
 <br />Lisa: "Eu não sei xD, hey, você quer conhecer alguns dos meus amigos?"
@@ -1745,7 +1784,7 @@ Era um dia lindo no mundo da SpaceLiving.
 <br />Izaque: "P-Pode me enviar uma foto sua?...".
 <br />Izaque: "Desculpa, eu não devia ter perguntado isso...".
 <br />Pequenata: "Ok, aqui está, é a mesma que eu enviei pra Lisa".
-<br /><a href="https://diario.netlify.app/cdn/img/human pequenata.jpg"><img src="https://diario.netlify.app/cdn/img/human pequenata.jpg" width="20%" style="float:left;border-width:4px;border-color:black;border-style:solid;" /></a><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><a href="https://diario.netlify.app/cdn/img/human pequenata.jpg"><img src="https://diario.netlify.app/cdn/img/human pequenata.jpg" width="20%" style="float:left;border-width:4px;border-color:black;border-style:solid;" /></a><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br />Izaque: "Sério?... você é muito fofa! :3... hehe, você tem olhos lindos...".
 <br />Pequenata: "Obrigado Izaque! :3 ^w^, você pode mandar uma sua também?, to tímida e envergonhada agora...".
 <br />Izaque: "Oh, foi mal, eu esqueci!"
@@ -1775,7 +1814,7 @@ Era um dia lindo no mundo da SpaceLiving.
 <br />Izaque: "Tudo bem, eu não to bravo com você :3, mas... Pequenata disse que você mandou uma foto para ela, e você nunca mandou uma foto para mim '-'...".
 <br />Lisa: "Aww meu amor... eu não mandei porque você não pediu... aqui, eu vou mandar um para você, e... você nunca me mandou uma foto também xD".
 <br />Izaque: "Desculpa, vou enviar xD".
-<br /><a href="https://diario.netlify.app/cdn/img/Lisa.jpg"><img src="https://diario.netlify.app/cdn/img/Lisa.jpg" width="20%" style="float:left;border-width:4px;border-color:black;border-style:solid;" /></a><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><a href="https://diario.netlify.app/cdn/img/Lisa.jpg"><img src="https://diario.netlify.app/cdn/img/Lisa.jpg" width="20%" style="float:left;border-width:4px;border-color:black;border-style:solid;" /></a><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br />(novamente, não posso mostrar meu rosto aqui xD)
 <br />Izaque: "Você é tão fofaaaaaaa Lisa! :3, eu amo seus olhos verdes e seu lindo cabelo grisalho :3".
 <br />Lisa: "Você é tão fofo também meu amor! :3, eu amo seu cabelo fofo e seu rosto fofo, seu nariz é fofo também :3 xD".
@@ -2518,6 +2557,7 @@ Todos estavam dentro de suas naves espaciais, e uma mensagem apareceu no computa
 <br /><div class="mobileShow"><br /><br />
 </div>
 </h5>
+</div>
 </div>
 
 <a name="modal-read-1"></a>
@@ -4918,6 +4958,11 @@ commentmodal14m.onclick = function(event) {
 </h4>
 </div>
 </div>
+<script>
+ChangeTitle();
+</script><script src="https://diario.netlify.app/cdn/js/Notification.js"></script>
+<script src="https://diario.netlify.app/cdn/js/HideNotification.js"></script>
+
 
 <style>
 @media only screen
@@ -4985,100 +5030,149 @@ function OpenChapter() {
 		var captext2 = "read-chapter-";
 	}
 	
-	var check1 = site2.includes(captext2 + "1");
-	var check2 = site2.includes(captext2 + "2");
-	var check3 = site2.includes(captext2 + "3");
-	var check4 = site2.includes(captext2 + "4");
-	var check5 = site2.includes(captext2 + "5");
-	var check6 = site2.includes(captext2 + "6");
-	var check7 = site2.includes(captext2 + "7");
-	var check8 = site2.includes(captext2 + "8");
-	var check9 = site2.includes(captext2 + "9");
-	var check10 = site2.includes(captext2 + "10");
-	var check11 = site2.includes(captext2 + "11");
-	var check12 = site2.includes(captext2 + "12");
-	var check13 = site2.includes(captext2 + "13");
+	var first_check_1 = site2.includes(captext2 + "1");
+	var second_check_1 = site2.includes(captext2 + "[1]");
+	var third_check_1 = site2.includes(captext2 + '"' + 1 + '"');
+	var fourth_check_1 = site2.includes(captext2 + "%221%22");
+	var first_check_2 = site2.includes(captext2 + "2");
+	var second_check_2 = site2.includes(captext2 + "[2]");
+	var third_check_2 = site2.includes(captext2 + '"' + 2 + '"');
+	var fourth_check_2 = site2.includes(captext2 + "%222%22");
+	var first_check_3 = site2.includes(captext2 + "3");
+	var second_check_3 = site2.includes(captext2 + "[3]");
+	var third_check_3 = site2.includes(captext2 + '"' + 3 + '"');
+	var fourth_check_3 = site2.includes(captext2 + "%223%22");
+	var first_check_4 = site2.includes(captext2 + "4");
+	var second_check_4 = site2.includes(captext2 + "[4]");
+	var third_check_4 = site2.includes(captext2 + '"' + 4 + '"');
+	var fourth_check_4 = site2.includes(captext2 + "%224%22");
+	var first_check_5 = site2.includes(captext2 + "5");
+	var second_check_5 = site2.includes(captext2 + "[5]");
+	var third_check_5 = site2.includes(captext2 + '"' + 5 + '"');
+	var fourth_check_5 = site2.includes(captext2 + "%225%22");
+	var first_check_6 = site2.includes(captext2 + "6");
+	var second_check_6 = site2.includes(captext2 + "[6]");
+	var third_check_6 = site2.includes(captext2 + '"' + 6 + '"');
+	var fourth_check_6 = site2.includes(captext2 + "%226%22");
+	var first_check_7 = site2.includes(captext2 + "7");
+	var second_check_7 = site2.includes(captext2 + "[7]");
+	var third_check_7 = site2.includes(captext2 + '"' + 7 + '"');
+	var fourth_check_7 = site2.includes(captext2 + "%227%22");
+	var first_check_8 = site2.includes(captext2 + "8");
+	var second_check_8 = site2.includes(captext2 + "[8]");
+	var third_check_8 = site2.includes(captext2 + '"' + 8 + '"');
+	var fourth_check_8 = site2.includes(captext2 + "%228%22");
+	var first_check_9 = site2.includes(captext2 + "9");
+	var second_check_9 = site2.includes(captext2 + "[9]");
+	var third_check_9 = site2.includes(captext2 + '"' + 9 + '"');
+	var fourth_check_9 = site2.includes(captext2 + "%229%22");
+	var first_check_10 = site2.includes(captext2 + "10");
+	var second_check_10 = site2.includes(captext2 + "[10]");
+	var third_check_10 = site2.includes(captext2 + '"' + 10 + '"');
+	var fourth_check_10 = site2.includes(captext2 + "%2210%22");
+	var first_check_11 = site2.includes(captext2 + "11");
+	var second_check_11 = site2.includes(captext2 + "[11]");
+	var third_check_11 = site2.includes(captext2 + '"' + 11 + '"');
+	var fourth_check_11 = site2.includes(captext2 + "%2211%22");
+	var first_check_12 = site2.includes(captext2 + "12");
+	var second_check_12 = site2.includes(captext2 + "[12]");
+	var third_check_12 = site2.includes(captext2 + '"' + 12 + '"');
+	var fourth_check_12 = site2.includes(captext2 + "%2212%22");
+	var first_check_13 = site2.includes(captext2 + "13");
+	var second_check_13 = site2.includes(captext2 + "[13]");
+	var third_check_13 = site2.includes(captext2 + '"' + 13 + '"');
+	var fourth_check_13 = site2.includes(captext2 + "%2213%22");
+	var first_check_14 = site2.includes(captext2 + "14");
+	var second_check_14 = site2.includes(captext2 + "[14]");
+	var third_check_14 = site2.includes(captext2 + '"' + 14 + '"');
+	var fourth_check_14 = site2.includes(captext2 + "%2214%22");
 
-	if (check1 === true) {
+	if (first_check_1 === true || second_check_1 === true || third_check_1 === true || fourth_check_1 === true) {
 		var captext = captext1 + "1";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check2 === true) {
+	if (first_check_2 === true || second_check_2 === true || third_check_2 === true || fourth_check_2 === true) {
 		var captext = captext1 + "2";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check3 === true) {
+	if (first_check_3 === true || second_check_3 === true || third_check_3 === true || fourth_check_3 === true) {
 		var captext = captext1 + "3";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check4 === true) {
+	if (first_check_4 === true || second_check_4 === true || third_check_4 === true || fourth_check_4 === true) {
 		var captext = captext1 + "4";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check5 === true) {
+	if (first_check_5 === true || second_check_5 === true || third_check_5 === true || fourth_check_5 === true) {
 		var captext = captext1 + "5";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check6 === true) {
+	if (first_check_6 === true || second_check_6 === true || third_check_6 === true || fourth_check_6 === true) {
 		var captext = captext1 + "6";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check7 === true) {
+	if (first_check_7 === true || second_check_7 === true || third_check_7 === true || fourth_check_7 === true) {
 		var captext = captext1 + "7";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check8 === true) {
+	if (first_check_8 === true || second_check_8 === true || third_check_8 === true || fourth_check_8 === true) {
 		var captext = captext1 + "8";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check9 === true) {
+	if (first_check_9 === true || second_check_9 === true || third_check_9 === true || fourth_check_9 === true) {
 		var captext = captext1 + "9";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check10 === true) {
+	if (first_check_10 === true || second_check_10 === true || third_check_10 === true || fourth_check_10 === true) {
 		var captext = captext1 + "10";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check11 === true) {
+	if (first_check_11 === true || second_check_11 === true || third_check_11 === true || fourth_check_11 === true) {
 		var captext = captext1 + "11";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check12 === true) {
+	if (first_check_12 === true || second_check_12 === true || third_check_12 === true || fourth_check_12 === true) {
 		var captext = captext1 + "12";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check13 === true) {
+	if (first_check_13 === true || second_check_13 === true || third_check_13 === true || fourth_check_13 === true) {
 		var captext = captext1 + "13";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (check14 === true) {
+	if (first_check_14 === true || second_check_14 === true || third_check_14 === true || fourth_check_14 === true) {
 		var captext = captext1 + "14";
+		openCity(captext);
+		document.getElementById(captext).scrollIntoView();
+	}
+
+	if (first_check_15 === true || second_check_15 === true || third_check_15 === true || fourth_check_15 === true) {
+		var captext = captext1 + "15";
 		openCity(captext);
 		document.getElementById(captext).scrollIntoView();
 	}
@@ -5087,6 +5181,6 @@ function OpenChapter() {
 OpenChapter();
 </script>
 
-</center>
+<center>
 </body>
 </html>
