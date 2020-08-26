@@ -1,6 +1,6 @@
 # Diario
-A website with various websites inside it<br>
-made by me, [stake2](https://github.com/stake2)
+A website with various websites inside it, made in the PHP language<br>
+Made by me, [stake2](https://github.com/stake2)
 
 Access it here: https://diario.netlify.app/
 
