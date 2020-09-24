@@ -1,6 +1,7 @@
-var ChapterNumber = '';
-var readattribute = '';
-var writeattribute = '';
+var ChapterNumber;
+var Last_Chapter = 29;
+var readattribute;
+var writeattribute;
 var userLang = navigator.language || navigator.userLanguage;
 
 function DefineChapter(number) {
