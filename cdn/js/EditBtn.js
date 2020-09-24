@@ -36,3 +36,5 @@ function Cetoggle4cmnd() {
 	document.getElementById("cetoggle2btn").setAttribute("onClick", "Cetoggle3cmnd();");
 	document.getElementById("cetoggle2btn").innerHTML = "<h2>" + btnText2 + ": " + icon + "</h2>";
 }
+
+console.log("Edit Button Script was loaded.");

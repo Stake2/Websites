@@ -625,3 +625,5 @@ function Rodar() {
 		}
 	}
 }
+
+console.log("Redirect Script was loaded and checked the redirect status.");

@@ -32,3 +32,5 @@ function OpenChapter2(ChapterReadContent) {
     $("#write-button-" + ChapterNumber).html('<h2><i class="fas fa-pen"></i></h2>');
     $("#write-button-" + ChapterNumber).attr('onclick', 'WriteChapter(' + writeattribute + ');');
 }
+
+console.log("WriteChapter Script was loaded.");

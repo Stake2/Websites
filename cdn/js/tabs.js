@@ -31,3 +31,5 @@ function openCity(cityName) {
 
 	document.getElementById(cityName).style.display = "block";
 }
+
+console.log("Tabs Script was loaded.");

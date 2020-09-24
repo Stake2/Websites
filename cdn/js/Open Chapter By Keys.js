@@ -24,3 +24,5 @@ document.addEventListener("keyup", function() {
 		}
 	}
 });
+
+console.log("Open Chapter By Keys Script was loaded.");

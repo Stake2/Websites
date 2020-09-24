@@ -11,3 +11,5 @@ for (var i=0; i<metas.length; i++) {
 		metas[i].setAttribute("content", date2);
 	}
 }
+
+console.log("Set Revised Date Script was loaded.");

@@ -58,3 +58,5 @@ notifclosebtnm.onclick = function() {
 		notifdivm.style.display = "none";
 	}, 10000);
 }
+
+console.log("Notification Script was loaded.");

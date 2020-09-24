@@ -12,3 +12,5 @@ function buttons2() {
 	element.className = element.className.replace("w3-animate-top", "");
 	element.className = element.className.replace(" w3-animate-zoom", "");
 }
+
+console.log("ShowHide Script was loaded.");

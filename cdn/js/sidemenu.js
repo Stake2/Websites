@@ -7,3 +7,5 @@ function closeNav() {
 	document.getElementById("mySidenav").style.width = "0px";
 	document.getElementById("ShowMenu").style.display = "block";
 }
+
+console.log("SideMenu Script was loaded.");

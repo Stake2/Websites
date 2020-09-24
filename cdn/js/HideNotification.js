@@ -31,3 +31,5 @@ function hidenotifm() {
 		notifdivm.style.display = "none";
 	}, 10000);
 }
+
+console.log("Hide Notification Script was loaded.");
