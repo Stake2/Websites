@@ -8,17 +8,17 @@ document.addEventListener("keyup", function() {
 		if (is_ctrl === true || is_ctrl === false) {
 			if (event.keyCode === 37) {
 				if (ChapterNumber != 1) {
-					console.log("chapter-" + (ChapterNumber - 1))
-					openCity("chapter-" + (ChapterNumber - 1))
-					DefineChapter((ChapterNumber -= 1))
+					console.log("Opening chapter number " + (ChapterNumber - 1) + "...");
+					openCity("chapter-" + (ChapterNumber - 1));
+					DefineChapter((ChapterNumber -= 1));
 				}
 			}
 
 			if (event.keyCode === 39) {
 				if (ChapterNumber != Last_Chapter) {
-					console.log("chapter-" + (ChapterNumber + 1))
-					openCity("chapter-" + (ChapterNumber + 1))
-					DefineChapter((ChapterNumber += 1))
+					console.log("Opening chapter number " + (ChapterNumber + 1) + "...");
+					openCity("chapter-" + (ChapterNumber + 1));
+					DefineChapter((ChapterNumber += 1));
 				}
 			}
 		}
