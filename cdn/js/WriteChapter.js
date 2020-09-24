@@ -1,11 +1,13 @@
 var ChapterNumber;
+var ChapterTitle;
 var Last_Chapter = 29;
 var readattribute;
 var writeattribute;
 var userLang = navigator.language || navigator.userLanguage;
 
-function DefineChapter(number) {
+function DefineChapter(number, title) {
     ChapterNumber = number;
+	ChapterTitle = title;
 	readattribute = $("#readbtnattribute" + ChapterNumber).html();
 	writeattribute = $("#writebtnattribute" + ChapterNumber).html();
 }
