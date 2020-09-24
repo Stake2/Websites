@@ -5,7 +5,7 @@ var readattribute;
 var writeattribute;
 var userLang = navigator.language || navigator.userLanguage;
 
-function DefineChapter(number, title) {
+function DefineChapter(number, title = none) {
     ChapterNumber = number;
 	ChapterTitle = title;
 	readattribute = $("#readbtnattribute" + ChapterNumber).html();
