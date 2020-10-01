@@ -9,7 +9,7 @@ document.addEventListener("keyup", function() {
 		if (is_ctrl === true || is_ctrl === false) {
 			if (event.keyCode === 37) {
 				if (ChapterNumber != 1) {
-					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber - 1) + " - " + ChapterTitle + '"' + "...";
+					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber - 1) + "...";
 
 					console.log(opening_chapter_text);
 					openCity("chapter-" + (ChapterNumber - 1));
@@ -19,7 +19,7 @@ document.addEventListener("keyup", function() {
 
 			if (event.keyCode === 39) {
 				if (ChapterNumber != Last_Chapter) {
-					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber + 1) + " - " + ChapterTitle + '"' + "...";
+					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber + 1) + "...";
 
 					console.log(opening_chapter_text);
 					openCity("chapter-" + (ChapterNumber + 1));
