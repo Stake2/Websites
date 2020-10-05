@@ -22,7 +22,7 @@
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Mobile.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/ImgHover.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Notification.css" />
-<meta name="revised" content="Stake's Enterprisetm, 08/09/2020" />
+<meta name="revised" content="Stake's Enterprisetm, 04/10/2020" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
@@ -32,35 +32,36 @@
 <script src="https://diario.netlify.app/cdn/js/ShowHide.js"></script>
 <script src="https://diario.netlify.app/cdn/js/SideMenu.js"></script>
 <script src="https://diario.netlify.app/cdn/js/Set Revised Date.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Open Chapter By Keys.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
 <body><center>
 <div class="w3-animate-zoom">
 <div id="myDIV" class="w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
-<span title="Read story" alt="Read story"><a href="#littletato-read story"><button id="button1" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('littletato-read story')"><h2>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [New 29]</span></h2></button></a></span>
-<span title="Readers" alt="Readers"><a href="#littletato-readers"><button id="button2" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('littletato-readers')"><h2>Readers: <i class="fas fa-book-reader"></i> ❤️ 😊</h2></button></a></span>
-<span title="Comment" alt="Comment"><a href="#littletato-comment"><button id="button3" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('littletato-comment')"><h2>Comment: <i class="fas fa-comments"></i></h2></button></a></span>
-<span title="Write" alt="Write"><a href="#littletato-write"><button id="button4" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('littletato-write')"><h2>Write: <i class="fas fa-pen"></i></h2></button></a></span>
-<span title="Stories" alt="Stories"><a href="#littletato-stories"><button id="button5" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('littletato-stories')"><h2>Stories: <i class="fas fa-book"></i></h2></button></a></span>
-<span title="Change-Log" alt="Change-Log"><a href="#littletato-change-log"><button id="button6" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('littletato-change-log')"><h2><i class="fas fa-bell"></i></h2></button></a></span>
+<span title="Read story" alt="Read story"><a href="#littletato-read story"><button id="button1" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('littletato-read story')"><h2>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [New 29]</span></h2></button></a></span>
+<span title="Readers" alt="Readers"><a href="#littletato-readers"><button id="button2" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('littletato-readers')"><h2>Readers: <i class="fas fa-book-reader"></i> ❤️ 😊</h2></button></a></span>
+<span title="Comment" alt="Comment"><a href="#littletato-comment"><button id="button3" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('littletato-comment')"><h2>Comment: <i class="fas fa-comments"></i></h2></button></a></span>
+<span title="Write" alt="Write"><a href="#littletato-write"><button id="button4" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('littletato-write')"><h2>Write: <i class="fas fa-pen"></i></h2></button></a></span>
+<span title="Stories" alt="Stories"><a href="#littletato-stories"><button id="button5" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('littletato-stories')"><h2>Stories: <i class="fas fa-book"></i></h2></button></a></span>
+<span title="Change-Log" alt="Change-Log"><a href="#littletato-change-log"><button id="button6" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('littletato-change-log')"><h2><i class="fas fa-bell"></i></h2></button></a></span>
 <br />
-<button class="w3-btn bg2 borderbtn mobileHide" style="border-radius: 50px;" onclick="buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button>
+<button class="w3-btn bg2 borderbtn 20px_font_size white_space_unset mobileHide" style="border-radius: 50px;" onclick="buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button>
 </div>
 <div class="w3-bar" style="position:fixed;float:right;">
-<button id="ShowButton" class="w3-btn bg2 borderbtn mobileHide" style="display:none;float:right;border-radius: 50px;" onclick="buttons2();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
+<button id="ShowButton" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset mobileHide" style="display:none;float:right;border-radius: 50px;" onclick="buttons2();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
 </div>
 
 <div id="mySidenav" class="sidenav mobileShow ">
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times-circle"></i></a>
 <h2 class="mobileShow pqnttext blackbg">Mobile button menu: </h2>
-<a href="#littletato-read storym" onclick="closeNav()"><button id="button1" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('littletato-read storym')"><h4>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [New 29]</span></h4></button></a>
-<a href="#littletato-readersm" onclick="closeNav()"><button id="button2" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('littletato-readersm')"><h4>Readers: <i class="fas fa-book-reader"></i> ❤️ 😊</h4></button></a>
-<a href="#littletato-commentm" onclick="closeNav()"><button id="button3" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('littletato-commentm')"><h4>Comment: <i class="fas fa-comments"></i></h4></button></a>
-<a href="#littletato-writem" onclick="closeNav()"><button id="button4" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('littletato-writem')"><h4>Write: <i class="fas fa-pen"></i></h4></button></a>
-<a href="#littletato-storiesm" onclick="closeNav()"><button id="button5" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('littletato-storiesm')"><h4>Stories: <i class="fas fa-book"></i></h4></button></a>
-<a href="#littletato-change-logm" onclick="closeNav()"><button id="button6" class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="openCity('littletato-change-logm')"><h4><i class="fas fa-bell"></i></h4></button></a>
+<a href="#littletato-read storym" onclick="closeNav()"><button id="button1" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('littletato-read storym')"><h4>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [New 29]</span></h4></button></a>
+<a href="#littletato-readersm" onclick="closeNav()"><button id="button2" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('littletato-readersm')"><h4>Readers: <i class="fas fa-book-reader"></i> ❤️ 😊</h4></button></a>
+<a href="#littletato-commentm" onclick="closeNav()"><button id="button3" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('littletato-commentm')"><h4>Comment: <i class="fas fa-comments"></i></h4></button></a>
+<a href="#littletato-writem" onclick="closeNav()"><button id="button4" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('littletato-writem')"><h4>Write: <i class="fas fa-pen"></i></h4></button></a>
+<a href="#littletato-storiesm" onclick="closeNav()"><button id="button5" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('littletato-storiesm')"><h4>Stories: <i class="fas fa-book"></i></h4></button></a>
+<a href="#littletato-change-logm" onclick="closeNav()"><button id="button6" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('littletato-change-logm')"><h4><i class="fas fa-bell"></i></h4></button></a>
 </div>
-<button id="ShowMenu" class="w3-btn bg2 borderbtn mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="openNav()"><h2><i class="fas fa-bars"></i></h2></button>
+<button id="ShowMenu" class="w3-btn bg2 borderbtn 20px_font_size white_space_unset mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="openNav()"><h2><i class="fas fa-bars"></i></h2></button>
 
 </div>
 <script>
@@ -80,9 +81,9 @@ function ResetTitle() {
 <div style="margin:3%;"><h2 class="pqnttext w3-animate-zoom"><p><br /><b>Pequenata - Littletato: <i class="fas fa-book"></i></b><br /><br /><p></h2></div>
 <hr class="pqnthr" />
 <img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="60%" class="pqnttext mobileHide" style="border-width:3px;border-color:w3-black;border-style:solid;border-radius: 25px;" />
-<div class="mobileHide"><button class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png')"><h4>Image link: <i class="fas fa-images"></i></h4></button></div>
+<div class="mobileHide"><button class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png')"><h4>Image link: <i class="fas fa-images"></i></h4></button></div>
 <img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="88%" class="pqnttext mobileShow" style="border-width:3px;border-color:w3-black;border-style:solid;border-radius: 25px;" />
-<div class="mobileShow"><button class="w3-btn bg2 borderbtn" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png')"><h4>Image link: <i class="fas fa-images"></i></h4></button></div>
+<div class="mobileShow"><button class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png')"><h4>Image link: <i class="fas fa-images"></i></h4></button></div>
 
 <h4 class="pqnttext" style="margin-left:11%;margin-right:11%;">Synopsis: <i class="fas fa-scroll"></i> "Littletato was a potato that lived alone, she was always tripping and walking through cities, and loved to live and to see new things, one day she found another potato, and then they talked alot..."<br /></h4>
 <h4 class="pqnttext">
@@ -93,9 +94,9 @@ Date: <span class="w3-text-orange">05/08/2017</span><br />
 Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 </div>
 
-<div id="notificationdiv" onload="ChangeTitle();" class="stake2animatebottom border w3-text-black bg mobileHide" style="position:fixed;right:0;bottom:0;padding-top:2%;padding-bottom:2%;padding-left:7%;padding-right:7%;border-radius: 50px;"><h3><span id="notificationclose" class="w3-btn #b88e50 borderbtn borderbtn" style="float:left;margin-left:-10%;border-radius: 50px;">X</span>New reviewed chapter <i class="fas fa-bell"></i><b><span style="margin-left:2%;"><a href="#chapter-11" title="11 - The trip dream and the picnic"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-11');">11 - The trip dream and the picnic</button></a> 
+<div id="notificationdiv" onload="ChangeTitle();" class="stake2animatebottom border w3-text-black bg mobileHide" style="position:fixed;right:0;bottom:0;padding-top:2%;padding-bottom:2%;padding-left:7%;padding-right:7%;border-radius: 50px;"><h3><span id="notificationclose" class="w3-btn #b88e50 borderbtn 20px_font_size white_space_unset borderbtn" style="float:left;margin-left:-10%;border-radius: 50px;box-shadow: 0 9px black!important;">X</span>New reviewed chapter <i class="fas fa-bell"></i><b><span style="margin-left:2%;"><a href="#chapter-11" title="11 - The trip dream and the picnic"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-11');">11 - The trip dream and the picnic</button></a> 
 </span></b></h3></div>
-<div id="notificationdivm" onload="ChangeTitle();" class="stake2animatebottom border w3-text-black bg mobileShow" style="position:fixed;right:0;bottom: 0;padding-top:1%;padding-bottom:1%;padding-left:10%;padding-right:10%;border-radius: 50px;"><h4><span id="notificationclosem" class="w3-btn #b88e50 borderbtn borderbtn" style="float:left;border-radius: 50px;">X</span><br /><br /><b> New reviewed chapter <i class="fas fa-bell"></i></b><br /><br /><b><a href="#chapter-11" title="11 - The trip dream and the picnic"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-11');">11 - The trip dream and the picnic</button></a> 
+<div id="notificationdivm" onload="ChangeTitle();" class="stake2animatebottom border w3-text-black bg mobileShow" style="position:fixed;right:0;bottom: 0;padding-top:1%;padding-bottom:1%;padding-left:10%;padding-right:10%;border-radius: 50px;"><h4><span id="notificationclosem" class="w3-btn #b88e50 borderbtn 20px_font_size white_space_unset borderbtn" style="float:left;border-radius: 50px;box-shadow: 0 9px black!important;">X</span><br /><br /><b> New reviewed chapter <i class="fas fa-bell"></i></b><br /><br /><b><a href="#chapter-11" title="11 - The trip dream and the picnic"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-11');">11 - The trip dream and the picnic</button></a> 
 </b></h4></div>
 
 <a name="littletato-read story"></a>
@@ -107,7 +108,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <h4><b>
 <div class="w3-animate-zoom">
 <div class="shakesidetoside">
-<a href="#chapter-1" title="1 - The Beginning, Part 1"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-1');">1 - The Beginning, Part 1</button></a> 
+<a href="#chapter-1" title="1 - The Beginning, Part 1"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-1');">1 - The Beginning, Part 1</button></a> 
 <center>
 <a href="#chapter-1" title="1 - The Beginning, Part 1"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/1.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-1');" />
 </div><br class="mobileHide" />
@@ -123,7 +124,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-2" title="2 - The Beginning, Part 2"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-2');">2 - The Beginning, Part 2</button></a> 
+<a href="#chapter-2" title="2 - The Beginning, Part 2"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-2');">2 - The Beginning, Part 2</button></a> 
 <center>
 <a href="#chapter-2" title="2 - The Beginning, Part 2"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/2.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-2');" />
 </div><br class="mobileHide" />
@@ -139,7 +140,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-3" title="3 - The Work"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-3');">3 - The Work</button></a> 
+<a href="#chapter-3" title="3 - The Work"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-3');">3 - The Work</button></a> 
 <center>
 <a href="#chapter-3" title="3 - The Work"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/3.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-3');" />
 </div><br class="mobileHide" />
@@ -155,7 +156,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-4" title="4 - Visit of Patricia, The relaxing anime"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-4');">4 - Visit of Patricia, The relaxing anime</button></a> 
+<a href="#chapter-4" title="4 - Visit of Patricia, The relaxing anime"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-4');">4 - Visit of Patricia, The relaxing anime</button></a> 
 <center>
 <a href="#chapter-4" title="4 - Visit of Patricia, The relaxing anime"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/4.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-4');" />
 </div><br class="mobileHide" />
@@ -171,9 +172,9 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-5" title="5 - The Dinner"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-5');">5 - The Dinner</button></a> 
+<a href="#chapter-5" title="5 - The space traveler dream"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-5');">5 - The space traveler dream</button></a> 
 <center>
-<a href="#chapter-5" title="5 - The Dinner"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/5.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-5');" />
+<a href="#chapter-5" title="5 - The space traveler dream"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/5.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-5');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -187,7 +188,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-6" title="6 - The Saturday and the park"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-6');">6 - The Saturday and the park</button></a> 
+<a href="#chapter-6" title="6 - The Saturday and the park"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-6');">6 - The Saturday and the park</button></a> 
 <center>
 <a href="#chapter-6" title="6 - The Saturday and the park"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/6.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-6');" />
 </div><br class="mobileHide" />
@@ -203,7 +204,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-7" title="7 - Sunday video game session"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-7');">7 - Sunday video game session</button></a> 
+<a href="#chapter-7" title="7 - Sunday video game session"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-7');">7 - Sunday video game session</button></a> 
 <center>
 <a href="#chapter-7" title="7 - Sunday video game session"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/7.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-7');" />
 </div><br class="mobileHide" />
@@ -219,7 +220,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-8" title="8 - Littletato's programming, the exciting film"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-8');">8 - Littletato's programming, the exciting film</button></a> 
+<a href="#chapter-8" title="8 - Littletato's programming, the exciting film"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-8');">8 - Littletato's programming, the exciting film</button></a> 
 <center>
 <a href="#chapter-8" title="8 - Littletato's programming, the exciting film"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/8.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-8');" />
 </div><br class="mobileHide" />
@@ -235,7 +236,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-9" title="9 - The dream and the livestream"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-9');">9 - The dream and the livestream</button></a> 
+<a href="#chapter-9" title="9 - The dream and the livestream"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-9');">9 - The dream and the livestream</button></a> 
 <center>
 <a href="#chapter-9" title="9 - The dream and the livestream"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/9.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-9');" />
 </div><br class="mobileHide" />
@@ -251,7 +252,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-10" title="10 - The allegoric dream"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-10');">10 - The allegoric dream</button></a> 
+<a href="#chapter-10" title="10 - The allegoric dream"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-10');">10 - The allegoric dream</button></a> 
 <center>
 <a href="#chapter-10" title="10 - The allegoric dream"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/10.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-10');" />
 </div><br class="mobileHide" />
@@ -267,7 +268,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-11" title="11 - The trip dream and the picnic"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-11');">11 - The trip dream and the picnic</button></a> 
+<a href="#chapter-11" title="11 - The trip dream and the picnic"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-11');">11 - The trip dream and the picnic</button></a> 
 <center>
 <a href="#chapter-11" title="11 - The trip dream and the picnic"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/11.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-11');" />
 </div><br class="mobileHide" />
@@ -283,41 +284,41 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-12" title="12 - 12"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-12');">12 - 12</button></a> 
+<a href="#chapter-12" title="12 - 12"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-12');">12 - 12</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-13" title="13 - 13"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-13');">13 - 13</button></a> 
+<a href="#chapter-13" title="13 - 13"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-13');">13 - 13</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-14" title="14 - 14"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-14');">14 - 14</button></a> 
+<a href="#chapter-14" title="14 - 14"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-14');">14 - 14</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-15" title="15 - 15"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-15');">15 - 15</button></a> 
+<a href="#chapter-15" title="15 - 15"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-15');">15 - 15</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-16" title="16 - 16"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-16');">16 - 16</button></a> 
+<a href="#chapter-16" title="16 - 16"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-16');">16 - 16</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-17" title="17 - 17"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-17');">17 - 17</button></a> 
+<a href="#chapter-17" title="17 - 17"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-17');">17 - 17</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-18" title="18 - 18"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-18');">18 - 18</button></a> 
+<a href="#chapter-18" title="18 - 18"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-18');">18 - 18</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-19" title="19 - 19"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-19');">19 - 19</button></a> 
+<a href="#chapter-19" title="19 - 19"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-19');">19 - 19</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-20" title="20 - 20"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-20');">20 - 20</button></a> 
+<a href="#chapter-20" title="20 - 20"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-20');">20 - 20</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-21" title="21 - 21"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-21');">21 - 21</button></a> 
+<a href="#chapter-21" title="21 - 21"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-21');">21 - 21</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-22" title="22 - 22"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-22');">22 - 22</button></a> 
+<a href="#chapter-22" title="22 - 22"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-22');">22 - 22</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-23" title="23 - 23"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-23');">23 - 23</button></a> 
+<a href="#chapter-23" title="23 - 23"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-23');">23 - 23</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-24" title="24 - 24"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-24');">24 - 24</button></a> 
+<a href="#chapter-24" title="24 - 24"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-24');">24 - 24</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-25" title="25 - The Dog"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-25');">25 - The Dog</button></a> 
+<a href="#chapter-25" title="25 - The Dog"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-25');">25 - The Dog</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-26" title="26 - PequeLiving, SpaceNata?"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-26');">26 - PequeLiving, SpaceNata?</button></a> 
+<a href="#chapter-26" title="26 - PequeLiving, SpaceNata?"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-26');">26 - PequeLiving, SpaceNata?</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-27" title="27 - Return and discovery"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-27');">27 - Return and discovery</button></a> 
+<a href="#chapter-27" title="27 - Return and discovery"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-27');">27 - Return and discovery</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-28" title="28 - The beautiful Life of Littletato ❤️"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-28');">28 - The beautiful Life of Littletato ❤️</button></a> 
+<a href="#chapter-28" title="28 - The beautiful Life of Littletato ❤️"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-28');">28 - The beautiful Life of Littletato ❤️</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-29" title="29 - The Movie"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-29');">29 - The Movie <span class="w3-text-yellow">[New!]</span></button></a> 
+<a href="#chapter-29" title="29 - The Movie"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-29');">29 - The Movie <span class="w3-text-yellow">[New!]</span></button></a> 
 </div></div>
 </b></h4>
 </div>
@@ -333,7 +334,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <h4><b>
 <div class="w3-animate-zoom">
 <div class="shakesidetoside">
-<a href="#chapter-1" title="1 - The Beginning, Part 1"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-1');">1 - The Beginning, Part 1</button></a> 
+<a href="#chapter-1" title="1 - The Beginning, Part 1"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-1');">1 - The Beginning, Part 1</button></a> 
 <center>
 <a href="#chapter-1" title="1 - The Beginning, Part 1"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/1.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-1');" />
 </div><br class="mobileHide" />
@@ -349,7 +350,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-2" title="2 - The Beginning, Part 2"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-2');">2 - The Beginning, Part 2</button></a> 
+<a href="#chapter-2" title="2 - The Beginning, Part 2"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-2');">2 - The Beginning, Part 2</button></a> 
 <center>
 <a href="#chapter-2" title="2 - The Beginning, Part 2"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/2.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-2');" />
 </div><br class="mobileHide" />
@@ -365,7 +366,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-3" title="3 - The Work"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-3');">3 - The Work</button></a> 
+<a href="#chapter-3" title="3 - The Work"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-3');">3 - The Work</button></a> 
 <center>
 <a href="#chapter-3" title="3 - The Work"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/3.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-3');" />
 </div><br class="mobileHide" />
@@ -381,7 +382,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-4" title="4 - Visit of Patricia, The relaxing anime"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-4');">4 - Visit of Patricia, The relaxing anime</button></a> 
+<a href="#chapter-4" title="4 - Visit of Patricia, The relaxing anime"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-4');">4 - Visit of Patricia, The relaxing anime</button></a> 
 <center>
 <a href="#chapter-4" title="4 - Visit of Patricia, The relaxing anime"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/4.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-4');" />
 </div><br class="mobileHide" />
@@ -397,9 +398,9 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-5" title="5 - The Dinner"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-5');">5 - The Dinner</button></a> 
+<a href="#chapter-5" title="5 - The space traveler dream"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-5');">5 - The space traveler dream</button></a> 
 <center>
-<a href="#chapter-5" title="5 - The Dinner"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/5.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-5');" />
+<a href="#chapter-5" title="5 - The space traveler dream"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/5.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-5');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -413,7 +414,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-6" title="6 - The Saturday and the park"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-6');">6 - The Saturday and the park</button></a> 
+<a href="#chapter-6" title="6 - The Saturday and the park"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-6');">6 - The Saturday and the park</button></a> 
 <center>
 <a href="#chapter-6" title="6 - The Saturday and the park"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/6.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-6');" />
 </div><br class="mobileHide" />
@@ -429,7 +430,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-7" title="7 - Sunday video game session"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-7');">7 - Sunday video game session</button></a> 
+<a href="#chapter-7" title="7 - Sunday video game session"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-7');">7 - Sunday video game session</button></a> 
 <center>
 <a href="#chapter-7" title="7 - Sunday video game session"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/7.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-7');" />
 </div><br class="mobileHide" />
@@ -445,7 +446,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-8" title="8 - Littletato's programming, the exciting film"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-8');">8 - Littletato's programming, the exciting film</button></a> 
+<a href="#chapter-8" title="8 - Littletato's programming, the exciting film"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-8');">8 - Littletato's programming, the exciting film</button></a> 
 <center>
 <a href="#chapter-8" title="8 - Littletato's programming, the exciting film"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/8.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-8');" />
 </div><br class="mobileHide" />
@@ -461,7 +462,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-9" title="9 - The dream and the livestream"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-9');">9 - The dream and the livestream</button></a> 
+<a href="#chapter-9" title="9 - The dream and the livestream"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-9');">9 - The dream and the livestream</button></a> 
 <center>
 <a href="#chapter-9" title="9 - The dream and the livestream"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/9.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-9');" />
 </div><br class="mobileHide" />
@@ -477,7 +478,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-10" title="10 - The allegoric dream"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-10');">10 - The allegoric dream</button></a> 
+<a href="#chapter-10" title="10 - The allegoric dream"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-10');">10 - The allegoric dream</button></a> 
 <center>
 <a href="#chapter-10" title="10 - The allegoric dream"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/10.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-10');" />
 </div><br class="mobileHide" />
@@ -493,7 +494,7 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-11" title="11 - The trip dream and the picnic"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-11');">11 - The trip dream and the picnic</button></a> 
+<a href="#chapter-11" title="11 - The trip dream and the picnic"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-11');">11 - The trip dream and the picnic</button></a> 
 <center>
 <a href="#chapter-11" title="11 - The trip dream and the picnic"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/11.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-11');" />
 </div><br class="mobileHide" />
@@ -509,41 +510,41 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-12" title="12 - 12"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-12');">12 - 12</button></a> 
+<a href="#chapter-12" title="12 - 12"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-12');">12 - 12</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-13" title="13 - 13"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-13');">13 - 13</button></a> 
+<a href="#chapter-13" title="13 - 13"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-13');">13 - 13</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-14" title="14 - 14"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-14');">14 - 14</button></a> 
+<a href="#chapter-14" title="14 - 14"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-14');">14 - 14</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-15" title="15 - 15"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-15');">15 - 15</button></a> 
+<a href="#chapter-15" title="15 - 15"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-15');">15 - 15</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-16" title="16 - 16"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-16');">16 - 16</button></a> 
+<a href="#chapter-16" title="16 - 16"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-16');">16 - 16</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-17" title="17 - 17"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-17');">17 - 17</button></a> 
+<a href="#chapter-17" title="17 - 17"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-17');">17 - 17</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-18" title="18 - 18"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-18');">18 - 18</button></a> 
+<a href="#chapter-18" title="18 - 18"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-18');">18 - 18</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-19" title="19 - 19"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-19');">19 - 19</button></a> 
+<a href="#chapter-19" title="19 - 19"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-19');">19 - 19</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-20" title="20 - 20"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-20');">20 - 20</button></a> 
+<a href="#chapter-20" title="20 - 20"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-20');">20 - 20</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-21" title="21 - 21"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-21');">21 - 21</button></a> 
+<a href="#chapter-21" title="21 - 21"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-21');">21 - 21</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-22" title="22 - 22"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-22');">22 - 22</button></a> 
+<a href="#chapter-22" title="22 - 22"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-22');">22 - 22</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-23" title="23 - 23"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-23');">23 - 23</button></a> 
+<a href="#chapter-23" title="23 - 23"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-23');">23 - 23</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-24" title="24 - 24"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-24');">24 - 24</button></a> 
+<a href="#chapter-24" title="24 - 24"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-24');">24 - 24</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-25" title="25 - The Dog"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-25');">25 - The Dog</button></a> 
+<a href="#chapter-25" title="25 - The Dog"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-25');">25 - The Dog</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-26" title="26 - PequeLiving, SpaceNata?"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-26');">26 - PequeLiving, SpaceNata?</button></a> 
+<a href="#chapter-26" title="26 - PequeLiving, SpaceNata?"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-26');">26 - PequeLiving, SpaceNata?</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-27" title="27 - Return and discovery"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-27');">27 - Return and discovery</button></a> 
+<a href="#chapter-27" title="27 - Return and discovery"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-27');">27 - Return and discovery</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-28" title="28 - The beautiful Life of Littletato ❤️"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-28');">28 - The beautiful Life of Littletato ❤️</button></a> 
+<a href="#chapter-28" title="28 - The beautiful Life of Littletato ❤️"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-28');">28 - The beautiful Life of Littletato ❤️</button></a> 
 </div><div class="shakesidetoside">
-<a href="#chapter-29" title="29 - The Movie"><button class="w3-btn bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-29');">29 - The Movie <span class="w3-text-yellow">[New!]</span></button></a> 
+<a href="#chapter-29" title="29 - The Movie"><button class="w3-btn bg borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" onclick="openCity('chapter-29');">29 - The Movie <span class="w3-text-yellow">[New!]</span></button></a> 
 </div></div>
 </b></h4>
 </div>
@@ -725,10 +726,10 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <div class="mobileHide">
 <form name="pequenata-comment" method="POST" data-netlify="true">
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Name:</b><br />
-<textarea type="text" name="pequenata-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Say what you think about the story:</b><br />
-<textarea type="text" name="pequenata-comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -737,10 +738,10 @@ Status: <span class="w3-text-orange">[Reviewing and editing]</span></h4><br />
 <div class="mobileShow">
 <form name="pequenata-comment" method="POST" data-netlify="true">
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Name:</b><br />
-<textarea type="text" name="pequenata-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Say what you think about the story:</b><br />
-<textarea type="text" name="pequenata-comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -806,10 +807,10 @@ Muuuito legal x3
 <div class="mobileHide">
 <form name="pequenata-comment" method="POST" data-netlify="true">
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Name:</b><br />
-<textarea type="text" name="pequenata-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Say what you think about the story:</b><br />
-<textarea type="text" name="pequenata-comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -818,10 +819,10 @@ Muuuito legal x3
 <div class="mobileShow">
 <form name="pequenata-comment" method="POST" data-netlify="true">
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Name:</b><br />
-<textarea type="text" name="pequenata-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Say what you think about the story:</b><br />
-<textarea type="text" name="pequenata-comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -886,10 +887,10 @@ Muuuito legal x3
 <div class="mobileHide">
 <form name="pequenata-write" method="POST" data-netlify="true">
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Name:</b><br />
-<textarea type="text" name="pequenata-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Write the Chapter:</b><br />
-<textarea type="text" name="pequenata-write" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -901,7 +902,7 @@ Muuuito legal x3
 <textarea type="text" name="pequenata-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Write the Chapter:</b><br />
-<textarea type="text" name="pequenata-write" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -925,10 +926,10 @@ Muuuito legal x3
 <div class="mobileHide">
 <form name="pequenata-write" method="POST" data-netlify="true">
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Name:</b><br />
-<textarea type="text" name="pequenata-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Write the Chapter:</b><br />
-<textarea type="text" name="pequenata-write" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -940,7 +941,7 @@ Muuuito legal x3
 <textarea type="text" name="pequenata-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Write the Chapter:</b><br />
-<textarea type="text" name="pequenata-write" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -1255,9 +1256,8 @@ Littletato was a potato that lived alone, she was always traveling and walking t
 <br />Julia shivered and closed her eyes.
 <br />"I love you Littletato," said Julia.
 <br />"I love you too Julia," said Littletato.
-<br />They slept gently in the night, waiting for tomorrow.
-<br /><br />Made in: 05/08/2017.
-</div>
+<br />They slept peacefully in the night, waiting for tomorrow.
+<br /><br />Made in: 05/08/2017.</div>
 </div>
 <br /><br />
 <a href="#chapter-2"><button class="w3-btn bg borderbtn" style="float:right;margin-left:15px;border-radius: 50px;" onclick="openCity('chapter-2');DefineChapter(2);OpenChapter2(ReadContent2);"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
@@ -1265,7 +1265,7 @@ Littletato was a potato that lived alone, she was always traveling and walking t
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -1284,7 +1284,7 @@ Littletato was a potato that lived alone, she was always traveling and walking t
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn1m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-1m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn1m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-1m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -1310,6 +1310,8 @@ Littletato was a potato that lived alone, she was always traveling and walking t
 <div style="margin:3%;"><h4 class="w3-text-black bg" style="text-align:left;border-width:3px;border-color:w3-black;border-style:solid;border-radius: 50px;"><div style="margin-left:5%;margin-right:5%;"><br /><b>Reader: </b>Alice Santos Souza<br /><b>Time:</b> 00:05 14/04/2020 <br /><br /></div></h4></div>
 
 <div style="margin:3%;"><h4 class="w3-text-black bg" style="text-align:left;border-width:3px;border-color:w3-black;border-style:solid;border-radius: 50px;"><div style="margin-left:5%;margin-right:5%;"><br /><b>Reader: </b>Thamiris (Discord)<br /><b>Time:</b> 20:51 19/08/2020 <br /><br /></div></h4></div>
+
+<div style="margin:3%;"><h4 class="w3-text-black bg" style="text-align:left;border-width:3px;border-color:w3-black;border-style:solid;border-radius: 50px;"><div style="margin-left:5%;margin-right:5%;"><br /><b>Reader: </b>s4mthepepper (Discord)<br /><b>Time:</b> 23:46 08/09/2020 <br /><br /></div></h4></div>
 
 </div>
 
@@ -1439,8 +1441,7 @@ Littletato was coming back home, she finished her work and was carrying a bag of
 <br />Littletato held Julia in her arms, walking with her to the bedroom.
 <br />Then she left Julia laid on the bed and laid beside her, covering both of them with the blanket.
 <br />She kissed Julia's lips and hugged her tight, sleeping with her.
-<br /><br />Made in: 06/08/2017.
-</div>
+<br /><br />Made in: 06/08/2017.</div>
 </div>
 <br /><br />
 <a href="#chapter-1"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-1');DefineChapter(1);OpenChapter2(ReadContent1);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -1449,7 +1450,7 @@ Littletato was coming back home, she finished her work and was carrying a bag of
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn2" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn2" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn2" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -1468,7 +1469,7 @@ Littletato was coming back home, she finished her work and was carrying a bag of
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn2m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-2m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn2m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-2m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -1606,8 +1607,7 @@ Littletato woke up at six in the morning, looking at the sun hitting the bedroom
 <br />"I missed you too, sis," replied Julia.
 <br />Then Patricia walked close to Littletato and shook her hand.
 <br />Patricia sat on the couch and smiled at Littletato, they started to talk.
-<br /><br />Made in: 28/08/2017.
-</div>
+<br /><br />Made in: 28/08/2017.</div>
 </div>
 <br /><br />
 <a href="#chapter-2"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-2');DefineChapter(2);OpenChapter2(ReadContent2);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -1616,7 +1616,7 @@ Littletato woke up at six in the morning, looking at the sun hitting the bedroom
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn3" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn3" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn3" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -1635,7 +1635,7 @@ Littletato woke up at six in the morning, looking at the sun hitting the bedroom
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn3m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-3m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn3m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-3m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -1805,8 +1805,7 @@ Patricia said that there were great jobs in the city that she lived.
 <br />Thank you for watching- I mean, for reading, hehe. ^^
 <br />Watch Yuru Camp, it is a very good anime, it will have a second season, I will watch it. :3
 <br />Leave a suggestion in the comments (Comment button) of what you like to appear or happen in The Life of Littletato, bye. ^^)
-<br /><br />Made in: 15/09/2017.
-</div>
+<br /><br />Made in: 15/09/2017.</div>
 </div>
 <br /><br />
 <a href="#chapter-3"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-3');DefineChapter(3);OpenChapter2(ReadContent3);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -1815,7 +1814,7 @@ Patricia said that there were great jobs in the city that she lived.
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn4" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn4" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn4" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -1834,7 +1833,7 @@ Patricia said that there were great jobs in the city that she lived.
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn4m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-4m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn4m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-4m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -1849,8 +1848,8 @@ Patricia said that there were great jobs in the city that she lived.
 <div id="chapter-5" class="city w3-text-black bg" style="display:none;margin:10%;border-width:3px;border-color:bg;border-style:solid;border-radius: 50px;">
 <br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
 <br />
-<div class="mobileHide"><h2 class="w3-text-black bg" style="border-radius: 250px;"><div class="w3-animate-zoom"><br /><b>You're reading: The Life Of Littletato</b><br /><b>Chapter: 5 - The Dinner</b></div></h2></div>
-<div style="margin:3%;"><div class="mobileShow"><h4 class="w3-text-black bg" style="border-radius: 250px;"><div class="w3-animate-zoom"><br /><b>You're reading: The Life Of Littletato</b><br /><b>Chapter: 5 - The Dinner</b></div></h4></div>
+<div class="mobileHide"><h2 class="w3-text-black bg" style="border-radius: 250px;"><div class="w3-animate-zoom"><br /><b>You're reading: The Life Of Littletato</b><br /><b>Chapter: 5 - The space traveler dream</b></div></h2></div>
+<div style="margin:3%;"><div class="mobileShow"><h4 class="w3-text-black bg" style="border-radius: 250px;"><div class="w3-animate-zoom"><br /><b>You're reading: The Life Of Littletato</b><br /><b>Chapter: 5 - The space traveler dream</b></div></h4></div>
 </div>
 
 <h5 class="w3-text-black bg" style="margin:5%;text-align:left;"><hr class="blackhr" />
@@ -1867,20 +1866,100 @@ Patricia said that there were great jobs in the city that she lived.
 </center>
 <br />
 <div id="chapter-text-5">
-Then Littletato was in her job and was thinking about life.
+Littletato was drawing something on her computer using a program called Paint Tool SAI.
+<br />It was a program where you could draw digitally, using pencils, brushes, and make line art.
+<br />She liked to use that program to draw stuff, she finished drawing a potato some days ago.
+<br />Littletato was drawing an anime girl today, the girl had yellow hair and blue eyes.
+<br />She was drawing the girl while listening to some songs of the Future Bounce genre on Vegetube.
+<br />Julia was in the bedroom using her laptop, talking with some friends on Vegebook and Vegewitter.
+<br />Littletato was a little hungry and asked if Julia wanted to make dinner with her.
+<br />Julia said yes and they both walked to the kitchen, they prepared rice with beans and some salad to eat.
+<br />They ate together while talking a little, looking at each other, and smiling.
+<br />"Hey, honey, what you were drawing there?" asked Julia, looking at the screen of Littletato's computer.
+<br />"It's just an idea that I had, of an anime girl with an orange cat on her lap, what do you think sweetie?" asked Littletato.
+<br />"I think it is very good honey, you're so good at drawing, I wanted to know how to draw as well as you," replied Julia.
+<br />"Hehe, thanks honey, I'm happy that you think that, I would love to teach you how to draw someday," said Littletato.
 <br />
-<br />She thought she loved her life and thought that was cool to live like that, then she got back to work and was fixing some code errors, she worked as a debugger but also gave ideas to her boss, Littletato liked that job and liked to live in that city.
+<br />Then they finished eating, they cleaned up the table and Littletato helped Julia wash the dishes.
+<br />They both walked to the living room, Littletato turned on her computer and opened the Paint Tool SAI program.
+<br />Julia sat beside her, looking at the screen, Littletato opened the file of the drawing of the anime girl with an orange cat.
+<br />Littletato started teaching Julia how to draw, she hid the line art of the drawing to show Julia how to draw the line art.
+<br />She drew and looked at Julia, giving the mouse for her to try, Julia started drawing the line art, clicking with the mouse.
+<br />Julia was very good at it, she knew how to draw very easily, Littletato smiled while looking at her, being proud.
+<br />Julia started drawing cats, stars, cars, Littletato was surprised, she was very happy that Julia could draw so well.
+<br />"Hey honey, maybe you should download Paint Tool SAI on your computer, you're very good at drawing!" said Littletato.
+<br />"Yes, I agree, can you send me the link so I can download it?" asked Julia.
+<br />"Yes honey," said Littletato, then she sent the download link of the program to Julia through Vegesapp Web.
+<br />Julia opened her laptop and turned it on, opening Vegefox and opening the link, putting the program to download.
+<br />Julia said she was a little tired, Littletato said that too, they both turned off their devices and gone to the bedroom.
+<br />They laid on the bed and covered themselves with the blanket, hugging tight and sleeping well.
 <br />
-<br />A few hours passed and it was lunchtime, Littletato brought a lunch box that Julia made for her, it was rice with beans, she ate and came back to work, and thought that the lunch was delicious.
+<br />Julia and Littletato started dreaming together, they were on a cold planet, a blue planet.
+<br />Julia was shivering, hugging herself and sighing, she wanted to find somewhere warm to stay.
+<br />She looked around and did not know the environment, she was not used to alien things.
+<br />She was in doubt about the animals and life on that planet, she was curious and wanted to learn more and more about the place.
+<br />There was a strange creature close to them, it had a human shape, his head was a screen, they did not understand what it said.
+<br />Looks like it was speaking an alien language, it was looking a little surprised and also happy, like he never saw humans before.
+<br />The couple could understand his language a little bit, he said that he was called Spet.
+<br />He stopped looking at them and walked to his house, entering it and closing the door.
+<br />Julia and Littletato started walking around the planet, looking at some strange animals.
+<br />They noticed that they had a multi-tool, it could mine gems and ores, it could also manipulate the terrain and fight aliens.
+<br />The couple also had a jetpack or jump pack, with which they could jump and climb stuff.
+<br />Julia started walking close to a red plant and collected it with her hands, she received the oxygen element.
+<br />They had an Exo suit, it was like a backpack where they could store things and technologies, it also helped them stay alive.
+<br />Julia opened the inventory of her Exo suit and saw that she had the oxygen element on her inventory.
+<br />She had a device in her Exo suit called Life Support, it helped them to stay alive, she used her oxygen to refuel the device.
+<br />Littletato did that too, they thought that the planet they were was very weird.
+<br />They both started walking close to a spaceship, it recognized them like it was their spaceship.
+<br />The couple jumped on top of the spaceship and the door of it opened, they entered it and sat.
 <br />
-<br />She continued fixing bugs in the code, then some time passed, it was time to go home, she came to her house and Julia greeted her, she looked at the hours and it was six hours at night, she was hungry, Julia said that the dinner was ready.
+<br />Littletato did not know how to drive the spaceship, so she pulled a switch that was in the same position where the keys were in cars.
+<br />The spaceship turned on, they heard a laser sound, a sound of something alien being activated.
+<br />Littletato pushed a button, the spaceship took off and began to hover in the air, they were a little scared by that.
+<br />Littletato grabbed the steering wheel of the spaceship and moved it to the right, turning the spaceship in 360º.
+<br />"Are you sure that you know how to drive this spaceship honey?" asked Julia which was behind Littletato.
+<br />"No honey, I'm just trying to learn how to drive it," said Littletato.
+<br />The beak of the spaceship was pointing at an animal of the planet, Littletato pressed a button which she did not know what did.
+<br />A laser was shot at the animal, it died, that laser came from the spaceship, it was used to mine asteroids in space.
+<br />"Oops," said Littletato with a worried face, looking at the animal.
+<br />Then a Sentinel appeared close to the spaceship, scanning them, it looks like they committed a space crime and had a wanted level there.
+<br />Littletato stepped on the accelerator of the spaceship and began to fly around, trying to escape the sentinel, which was like a planetary policeman.
+<br />She wanted to leave the planet to escape and pointed the beak of the spaceship up.
+<br />The spaceship passed through the atmosphere and the couple arrived in space.
+<br />Littletato thought that it was beautiful out there, a lot of planets, space, and the sun of that galaxy.
 <br />
-<br />Then they locked the house and both of them came to the kitchen and ate the dinner, Littletato said the food was delicious, Julia smiled and said thanks, Littletato said she liked some calm and chill music and Julia said she liked too, then they cleaned the table and Littletato helped Julia with the dishes.
+<br />The galaxy was called Rameses B, Littletato could upload the info of the galaxy and gain units, which were like space money.
+<br />Littletato stepped on the accelerator of the spaceship and began flying around the galaxy.
+<br />She saw an asteroid and pushed the same button that killed the animal, the spaceship fired its laser and mined the asteroid.
+<br />The spaceship collected the elements from the asteroid, which was silver, it could be used to build heat and toxic protections.
+<br />"This game is very fun!" said Littletato, excited when firing the laser.
+<br />"Wait... are we in a game?" asked Julia in doubt.
+<br />"Uh... I guess so, this looks like a game that I saw some months ago, so I thought this was that game," said Littletato.
+<br />"Weird... hey honey, can we go to another planet?" asked Julia.
+<br />"Of course honey, what type of planet do you want?" asked Littletato.
+<br />"A very hot one, I was beginning to freeze at the planet we were before," said Julia.
+<br />"Okay hon," said Littletato, which started to drive the spaceship, looking for a warm planet.
+<br />She found one and began entering its atmosphere, the window of the spaceship was a little warm because of the atmospheric pressure.
 <br />
-<br />Then they came to the bedroom and slept.
-<br />Littletato before falling asleep thought that she was happy, really happy, living that life that she had, with Julia and her friends...
-<br /><br />Made in: 02/11/2017.
-</div>
+<br />Littletato parked the spaceship close to a planet base and came out of the spaceship along with Julia.
+<br />They started walking around the planet looking for something to do.
+<br />The Life Support device of Littletato was a little empty, she collected some oxygen with her hands, and refilled it.
+<br />Julia did that too, she also recharged her Hazard Protection device with Sodium.
+<br />That device was used to continually monitor and stabilize the user's environment, protecting the user from heat, cold, toxicity, or radiation.
+<br />Littletato started looking at a crashed spaceship, there was a terminal close to it.
+<br />She started reading the log of the machine, it looked like some space pirates shot this spaceship, trying to steal a rare plant that it had.
+<br />Littletato discovered that the pilot of the spaceship escaped by running around this planet.
+<br />The pilot also found a deposit of very rare materials, some elements used to recharge protection devices, and some materials to build upgrades.
+<br />Littletato could see the location of the deposit on her radar, she asked Julia if the wanted to go there.
+<br />Julia said yes, after that, she looked at a small animal that was close to them, it looked very cute.
+<br />Julia tried to give food to it and it ate the food, it began to follow Julia.
+<br />"Ah, honey, it is so cute, can we bring it with us?" asked Julia smiling at the animal.
+<br />"Of course honey, hehe," said Littletato smiling.
+<br />Then Julia grabbed the animal and began to follow Littletato.
+<br />Littletato grabbed some materials that were closed to the crashed spaceship and walked to her spaceship.
+<br />Julia and she entered the spaceship, Littletato turned the spaceship on, taking off and driving to the deposit.
+<br />Then the dream changed to another dream, Littletato and Julia were sleeping happy, together, in love with each other.
+<br /><br />Made in: 02/11/2017.</div>
 </div>
 <br /><br />
 <a href="#chapter-4"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-4');DefineChapter(4);OpenChapter2(ReadContent4);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -1889,14 +1968,14 @@ Then Littletato was in her job and was thinking about life.
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn5" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn5" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn5" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
 <div style="text-align:center;">
 <div class="w3-animate-zoom">
 <span class="w3-text-black bg">
-<br /><b>You're reading: The Life Of Littletato</b><br /><b>Chapter: 5 - The Dinner</b><br />
+<br /><b>You're reading: The Life Of Littletato</b><br /><b>Chapter: 5 - The space traveler dream</b><br />
 </span>
 </div>
 </div>
@@ -1908,7 +1987,7 @@ Then Littletato was in her job and was thinking about life.
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn5m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-5m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn5m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-5m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2020,8 +2099,7 @@ Littletato then woke up, she looked at the clock and saw that was six in the mor
 <br />"Good night honey," said Littletato with a gentle voice.
 <br />"Good... night my dear," said Julia, slowly falling asleep again, smiling and humming with happiness.
 <br />They both slept together in the silent night.
-<br /><br />Made in: 21/11/2017.
-</div>
+<br /><br />Made in: 21/11/2017.</div>
 </div>
 <br /><br />
 <a href="#chapter-5"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-5');DefineChapter(5);OpenChapter2(ReadContent5);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -2030,7 +2108,7 @@ Littletato then woke up, she looked at the clock and saw that was six in the mor
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn6" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn6" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn6" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -2049,7 +2127,7 @@ Littletato then woke up, she looked at the clock and saw that was six in the mor
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn6m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-6m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn6m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-6m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2131,8 +2209,7 @@ It was a Sunday, Littletato just wanted to sleep the whole day, because that is 
 <br />"I also had fun honey, thanks for that, hehe, I love it when you pet me," says Julia while smiling.
 <br />"And I love to pet you, Julia," replies her.
 <br />They both close their eyes and sleep in the silent night, it is raining softly.
-<br /><br />Made in: 02/01/2018.
-</div>
+<br /><br />Made in: 02/01/2018.</div>
 </div>
 <br /><br />
 <a href="#chapter-6"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-6');DefineChapter(6);OpenChapter2(ReadContent6);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -2141,7 +2218,7 @@ It was a Sunday, Littletato just wanted to sleep the whole day, because that is 
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn7" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn7" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn7" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -2160,7 +2237,7 @@ It was a Sunday, Littletato just wanted to sleep the whole day, because that is 
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn7m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-7m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn7m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-7m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2298,8 +2375,7 @@ It was a Monday, Littletato woke up and yawned, she had to get ready for work.
 <br />"Thanks, my dear, I love when you pet me like this, it makes me feel so special," replies Julia.
 <br />"Hehe, I love you my little sweet potato," says Littletato.
 <br />They hug tight and cover themselves with the blanket, sleeping right after.
-<br /><br />Made in: 04/02/2018.
-</div>
+<br /><br />Made in: 04/02/2018.</div>
 </div>
 <br /><br />
 <a href="#chapter-7"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-7');DefineChapter(7);OpenChapter2(ReadContent7);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -2308,7 +2384,7 @@ It was a Monday, Littletato woke up and yawned, she had to get ready for work.
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn8" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn8" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn8" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -2327,7 +2403,7 @@ It was a Monday, Littletato woke up and yawned, she had to get ready for work.
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn8m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-8m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn8m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-8m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2483,8 +2559,7 @@ It was a Tuesday, Littletato was dreaming of a field, a big and tall wheat field
 <br />"Good night, hon, I love you," says Littletato to Julia.
 <br />"Good night, honey, I love you too, my little potato," replies her.
 <br />Then they sleep, waiting for the next day.
-<br /><br />Made in: 27/05/2018.
-</div>
+<br /><br />Made in: 27/05/2018.</div>
 </div>
 <br /><br />
 <a href="#chapter-8"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-8');DefineChapter(8);OpenChapter2(ReadContent8);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -2493,7 +2568,7 @@ It was a Tuesday, Littletato was dreaming of a field, a big and tall wheat field
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn9" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn9" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn9" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -2512,7 +2587,7 @@ It was a Tuesday, Littletato was dreaming of a field, a big and tall wheat field
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn9m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-9m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn9m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-9m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2650,8 +2725,7 @@ It was a Wednesday, Littletato was sleeping and dreaming.
 <br />She lowered the volume of the television and closed her eyes to sleep.
 <br />Julia was thinking about Littletato, she was sleeping while smiling.
 <br />She had good dreams while sleeping in the afternoon.
-<br /><br />Made in: 08/07/2018.
-</div>
+<br /><br />Made in: 08/07/2018.</div>
 </div>
 <br /><br />
 <a href="#chapter-9"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-9');DefineChapter(9);OpenChapter2(ReadContent9);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -2660,7 +2734,7 @@ It was a Wednesday, Littletato was sleeping and dreaming.
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn10" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn10" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn10" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -2679,7 +2753,7 @@ It was a Wednesday, Littletato was sleeping and dreaming.
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn10m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-10m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn10m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-10m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2814,11 +2888,7 @@ It was a Thursday, Littletato was dreaming of pizzas, a lot of pizzas flying in 
 <br />She walked to the kitchen, drank a whole bottle of water, and ate an apple, she was a little tired.
 <br />Julia walked to the living room and laid on the couch, turning on the television.
 <br />She closed her eyes and slept on the warm noon, waiting for Littletato to come came from work.
-<br />
-<br />
-<br />
-<br /><br />Made in: 22/07/2018.
-</div>
+<br /><br />Made in: 22/07/2018.</div>
 </div>
 <br /><br />
 <a href="#chapter-10"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-10');DefineChapter(10);OpenChapter2(ReadContent10);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -2827,7 +2897,7 @@ It was a Thursday, Littletato was dreaming of pizzas, a lot of pizzas flying in 
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn11" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn11" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn11" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -2846,7 +2916,7 @@ It was a Thursday, Littletato was dreaming of pizzas, a lot of pizzas flying in 
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn11m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-11m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn11m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-11m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2872,8 +2942,7 @@ It was a Thursday, Littletato was dreaming of pizzas, a lot of pizzas flying in 
 <br />
 <div id="chapter-text-12">
 It was a Friday, Littletato was dreaming of cookies, and she ate a lot of cookies, she woke up, and woke up Julia too, Julia made the breakfast and they ate together, Littletato looked at the clock and it was five and a half in the morning, Julia said that it was a Friday, and that Littletato could rest tomorrow, Littletato was surprised by that, and she said to Julia that she was happy because of that, Littletato and Julia made more things to eat and they put Atypical on the Vegeflix app to watch, they ate and watched till six at morning, and then Littletato prepared herself to her work, she then came to the door and left the house, she waved goodbye to Julia, Julia waved goodbye back, Littletato then started walking to her job, the scenery was beautiful, she was listening to some folk or chill genre on her Vegetify app, she liked those songs along with the beautiful scenery of San Francisco, she then arrived at work, she entered the building where she works, she works fixing apps and smartphones, she had a smartphone to fix today, she fixed it, and her boss had a job for her, to program a new app, a part of a new app, she then programmed, she was happy programming, she likes those lines of code, and to see how the app works, she then finished her part of the code, and sent the file to her coworker for him to make his part of the code, then the job was over, she came back to her house, she left her things in the room and came to the kitchen to eat lunch with Julia, Julia asked how was her job, Littletato said that it was good, she said that she made the part of a new app, she said that she liked to write those lines of code, Julia said that she doesn't understand those stuff and smiled, Littletato smiled back, and Littletato said to Julia that that was the reason she loved Julia, because of that smile, and Julia smiled and said thanks, Littletato gave a kiss in the cheek of Julia, Julia gave a kiss in the cheek of Littletato too, and hugged her, Littletato thought that she was happy, happy to be there, living that life, being happy with Julia, she wanted more of those moments, those happy moments...
-<br /><br />Made in: 23/08/2018.
-</div>
+<br /><br />Made in: 23/08/2018.</div>
 </div>
 <br /><br />
 <a href="#chapter-11"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-11');DefineChapter(11);OpenChapter2(ReadContent11);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -2882,7 +2951,7 @@ It was a Friday, Littletato was dreaming of cookies, and she ate a lot of cookie
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn12" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn12" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn12" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -2901,7 +2970,7 @@ It was a Friday, Littletato was dreaming of cookies, and she ate a lot of cookie
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn12m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-12m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn12m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-12m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2927,8 +2996,7 @@ It was a Friday, Littletato was dreaming of cookies, and she ate a lot of cookie
 <br />
 <div id="chapter-text-13">
 It was a Saturday, Littletato was dreaming, dreaming of a new world, she was dreaming of something that she never saw, some neon, she was driving a car through a road, on the side of the road was some purple and blue neon lights, she found that dream weird, but she liked the colors of it, the colors of the scenery, and then she woke up, Julia was still sleeping, Littletato came to the bathroom to make the daily necessities, and then she came to the kitchen to make some coffee and breads with butter, Julia was dreaming of some cupcakes, and a castle, an old castle with old architecture, she was a queen drinking some tea on a big table, and eating cupcakes, she saw those pink cupcakes and thought of Pinkie Pie, a character from a cartoon she liked, she knew that Pinkie Pie liked cupcakes too, and she was eating some chocolate cake too, then she woke up, she looked to the ceiling while thinking of all that food, her stomach rumbled, she then felt the smell of coffee and milk, she got out of bed, made the daily necessities then came to the kitchen to eat breakfast, she sat with Littletato, she said about her dream, Littletato shared hers too, they ate the breakfast and came to the living room to watch some movies in the Vegeflix app on the Smart TV, Littletato has heard that there is a new movie called "The Vegengers: Infinite Vegetablewar", she wanted to watch that with Julia, Littletato asked Julia if she wanted to watch the movie, Julia replied positively, they watched the movie, Littletato liked the action in the movie, the explosions, the special effects, Julia liked the powers, the soundtrack, the heroes, and then Patricia sent a message through Vegebook in the cell phone of Julia, Julia picked up the phone to answer, Patricia said that she was having fun with her boyfriend in New York, and that she was happy there, Julia sent some happy face emojis to Patricia and said that that was good, and she was happy for her, Patricia said thanks to Julia, Littletato asked who was and Julia said that was her sister, then Littletato picked up her phone, she sent a message through Vegesapp to her sister, her sister was called Carol, she was blonde, Littletato sent a message saying that she was having fun at her Saturday, Carol said that she was happy for Littletato, Littletato said thanks, and she asked Carol was doing on Saturday, Carol answered that she was playing some Countable Vegetrike 1.6 on her computer, and she was streaming it on Vegewitch, Littletato said that that was awesome, and said that she forgot that Carol do streams, Littletato said goodbye to Carol, Carol said goodbye back...
-<br /><br />Made in: 24/09/2018.
-</div>
+<br /><br />Made in: 24/09/2018.</div>
 </div>
 <br /><br />
 <a href="#chapter-12"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-12');DefineChapter(12);OpenChapter2(ReadContent12);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -2937,7 +3005,7 @@ It was a Saturday, Littletato was dreaming, dreaming of a new world, she was dre
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn13" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn13" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn13" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -2956,7 +3024,7 @@ It was a Saturday, Littletato was dreaming, dreaming of a new world, she was dre
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn13m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-13m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn13m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-13m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -2982,8 +3050,7 @@ It was a Saturday, Littletato was dreaming, dreaming of a new world, she was dre
 <br />
 <div id="chapter-text-14">
 It was a Sunday, Littletato was dreaming, dreaming of something she didn't knew, she was at some place, she only saw the white color, then it changed to a beautiful sunrise, she was there with Julia, sitting on a high tree, watching the sun rise, she felt so happy in that moment, then she woke up, she saw the cute face of Julia, she kissed Julia in the forehead and hugged her, Julia woke up, and then saw Littletato smiling at her, Julia hugged Littletato and kissed her in the cheek, they were so happy, then they got off bed and saw the beautiful sunrise, they hugged again, Littletato and Julia made the daily necessities, then Littletato came to the kitchen to make the breakfast, she made some coffee and breads with cheese, then Littletato called Julia to the kitchen, they ate breakfast, Julia said it was delicious, Littletato said thanks, Littletato invited Julia to pass the New Year's Eve with her, Julia accepted, then Littletato said she was going to the market to buy food, then after some time Littletato came back with the food, it was ten o'clock at night, they spent some time eating and watching movies at the Vegeflix app, then when was eleven and a half hours, they decided to go out a little, they came to the downtown, there was a huge tower with a huge screen at it, they decided to watch the fireworks and the countdown to 2019 there, when it was eleven and fifty-nine o'clock at nine they started to countdown, it was awesome, all those people counting down together with family and friends, Littletato and Julia loved to count together and be in that place, they kissed there, the fireworks were amazing to see, they thought that that was a good New Year's Eve, being with those you love and care for, friends, family, and being happy and hoping a happy new year for people, then they came back to their house, they were tired, they took a bath, Littletato wished a happy new year to Carol with her phone, Julia wished a happy new year to Patricia too, they ate a little and then they slept, waiting for a new day, and wishing good things and experiences in 2019...
-<br /><br />Made in: 01/01/2019.
-</div>
+<br /><br />Made in: 01/01/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-13"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-13');DefineChapter(13);OpenChapter2(ReadContent13);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -2992,7 +3059,7 @@ It was a Sunday, Littletato was dreaming, dreaming of something she didn't knew,
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn14" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn14" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn14" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3011,7 +3078,7 @@ It was a Sunday, Littletato was dreaming, dreaming of something she didn't knew,
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn14m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-14m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn14m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-14m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3037,8 +3104,7 @@ It was a Sunday, Littletato was dreaming, dreaming of something she didn't knew,
 <br />
 <div id="chapter-text-15">
 It was a Monday, Littletato was dreaming of some high clouds, she was seated in a pink cloud, she was with Julia, she hugged Julia, they watched the sun, the birds flying, they loved that moment, the pink clouds were so pretty, they thought they were in a fantasy movie, Julia saw the pink color and she thought of Pinkie Pie, and thought of Rainbow Dash, then a random person appeared seated in a cloud no too far from there, that person was a man, with an acoustic guitar, playing some folk songs that Littletato liked, Julia and Littletato loved the song, then they woke up together, Julia said she had a beautiful dream where they were in seated in pink clouds, and then a man appeared, Littletato said she had the same dream, and said its awesome that the dreams synchronized, they got off bed, Julia prepared the breakfast, Littletato and Julia ate together, it was time for Littletato to go to work, she prepared herself to go out, she waved goodbye to Julia and started running while listening to folk songs on her Vegetify app, she loved that feeling, seeing the leaves drop and running to her job in the morning, then she arrived at her job, she paused the song and sat at her desk, she started programming, she had an app to program today, it was a dating app, she liked to program that, to program the interface, and to make an app to help people get together, then she finished the app and sent it to her boss, she also had a smartphone to fix, she liked fixing it, Littletato thought that was awesome to work on a mixed job like that, then the job time ended and she got out of the building and arrived home, she said hi to Julia and then hugged her, Julia said: "Welcome back honey.", Julia prepared the dinner and they ate together, they liked the food, then Littletato remembered that she watched Vegetable Rangers as a kid, with those megazords and robots, and she knew that a new reboot movie launched that month, then she told that to Julia, then Littletato and Julia watched the movie together on the Vegetiflix app, it was awesome, the robots, the special effects, the animation, Julia said she loved the movie, then they prepared to sleep, it was a little cold at night, and the moon was shining bright, they picked up a warm blanket and came to bed to sleep, Littletato wanted more of those moments, warmed up in a blanket with Julia, watching a movie, Littletato sure loved cold weather...
-<br /><br />Made in: 13/01/2019.
-</div>
+<br /><br />Made in: 13/01/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-14"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-14');DefineChapter(14);OpenChapter2(ReadContent14);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3047,7 +3113,7 @@ It was a Monday, Littletato was dreaming of some high clouds, she was seated in 
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn15" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn15" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn15" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3066,7 +3132,7 @@ It was a Monday, Littletato was dreaming of some high clouds, she was seated in 
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn15m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-15m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn15m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-15m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3094,8 +3160,7 @@ It was a Monday, Littletato was dreaming of some high clouds, she was seated in 
 It was a Tuesday, Littletato was dreaming of traveling the world by bicycle, she was there with her things, money and supplies, ready to see the world and live with small things, she liked that moment, she wanted to do that in real life, Julia was dreaming of the same, but with a van with friends and family, she thought that would be awesome to travel the world together with family, stopping by gas stations to refuel, stopping by restaurants to buy food, Julia and Littletato thought that life was an interesting and different life, they woke up at the same time, the sun was rising, that sunrise was beautiful too see, because they were together, Littletato always take a picture of the sunrise, to remember the good days, and to remember she loves Julia, Julia also loves Littletato, Littletato have a lot of happy moments with Julia, Littletato woke up to make the breakfast, then Julia and Littletato ate the breakfast, it was delicious, the taste of bread in the morning with some coffee and milk, Julia loved that, Littletato too, Littletato said she was going to work, Littletato came to the door and opened it, Littletato waved goodbye to Julia, Julia waved goodbye back and said: "Take care honey", Littletato said: "You too, honey", then Littletato started walking to her job, she wanted something different today, she put to play some country music on her Vegetify app, she liked the country music genre, she liked to hear the acoustic guitar playing, the banjo and violin, she loved to walk to her job hearing those songs, it was wonderful, she then arrived at her job and turned off the music, she walked inside the building and sat at her desk, her co-worker Mia was there, she liked to talk with her, Littletato thought that Mia was an interesting person, Littletato had a phone to fix today, she started to fix it...
 <br />
 <br />Authors Note: "I was a little tired today so maybe it will reflect in my writing, sorry for that, I'm sure that the next chapter will be better!".
-<br /><br />Made in: 29/01/2019.
-</div>
+<br /><br />Made in: 29/01/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-15"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-15');DefineChapter(15);OpenChapter2(ReadContent15);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3104,7 +3169,7 @@ It was a Tuesday, Littletato was dreaming of traveling the world by bicycle, she
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn16" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn16" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn16" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3123,7 +3188,7 @@ It was a Tuesday, Littletato was dreaming of traveling the world by bicycle, she
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn16m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-16m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn16m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-16m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3149,8 +3214,7 @@ It was a Tuesday, Littletato was dreaming of traveling the world by bicycle, she
 <br />
 <div id="chapter-text-17">
 Then after sometime Littletato finished fixing it, she liked to do that job, then the job time ended, she left the building and started walking home, she was happy, listening to some folk songs, she saw some cars pass by, she liked the sound of them, then after some time she got home, she hugged Julia and said: "I love you", Julia was surprised, Julia said: "I love you too honey", after that Littletato came in and was ready to eat the dinner, Julia and Littletato ate the dinner together, they thought it was delicious, after sometime they wanted to see a movie, Littletato and Julia watched a movie that had a soundtrack with some folk songs, Littletato loved that detail, it was about a girl that was traveling the world with a bicycle and a backpack, Littletato wanted to do that someday, with Julia, but at the same time Littletato wanted to stay there with Julia in San Francisco, Littletato said: "I want to go traveling that way with you Julia", then Julia said: "I think that's a good idea", Littletato was happy, she hugged Julia, Julia kissed Littletato in the cheek, Julia said she loved the movie, Littletato said the same, then after some time Littletato had an idea, she said: "You want to play a game with me?", then Julia replied: "Yes", Littletato got her laptop and placed it on a table, Julia made the same with hers, they started to play Vegetablefall 2, they played in a multiplayer match, they were very good at the game, then they closed and started to play some Vegewatch, Littletato liked to play as V.va, Julia liked to play as Vercy, Littletato thought: "What if I could play all these games inside a spaceship on the space?", Littletato then thought that was just a random thought, then after some time Littletato and Julia wined the match, they closed the game, Julia said she had fun, Littletato said the same, Littletato and Julia liked to read some stories on the internet too, Littletato discovered that a story called "Life of Bigbeet" has received their 17th chapter, the story was made by a user called "2ekats" on the website Vegefiction, Littletato and Julia read the story together, they loved the new chapter, Littletato had a small feeling that her life was being shared in another place, Julia closed her laptop and said she was going to sleep, Littletato said ok, Littletato looked at the screen again, she discovered that the story "The story of the Nazzevo brothers" has been finished, she then read the whole story, she loved, then Littletato closed her laptop and came to bed to sleep...
-<br /><br />Made in: 02/02/2019.
-</div>
+<br /><br />Made in: 02/02/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-16"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-16');DefineChapter(16);OpenChapter2(ReadContent16);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3159,7 +3223,7 @@ Then after sometime Littletato finished fixing it, she liked to do that job, the
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn17" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn17" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn17" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3178,7 +3242,7 @@ Then after sometime Littletato finished fixing it, she liked to do that job, the
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn17m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-17m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn17m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-17m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3206,8 +3270,7 @@ Then after sometime Littletato finished fixing it, she liked to do that job, the
 It was a Wednesday, Littletato was sat in her computer, listening to some Dubstep in the Vegecloud website, she liked and followed some Dubstep artists, she was listening to the "Fucking Noise" song of the artist "Stratus", she liked that song, Littletato was doing that while she talked with her friends on Vegecord, an app that she had on her computer, the app was made for gamers that wanted to share what they were gaming, she was in a Vegecord server of the site SuperAnimes, that was the site where she watched anime, she wanted to know about the news of the site, Littletato liked to write stories too, she loved to write one specific story of hers, called "Kezzakam", she posted that story in the Veggepad, Yam and Carol liked Kezzakam, they loved to receive a notification of Littletato on Vegebook saying that a new chapter was published, after sometime she closed Vegecloud, she downloaded some songs, Littletato also liked to draw, she wasn't very good, but she had fun, she posted her drawings at Vegiantart, she received a lot of favorites and comments, Littletato also used Vegewitter, she liked to post there but there wasn't much people to read her Vegeweets, but she liked to read other people's Vegeweets, then she turned her computer off and got up to make another thing.
 <br />
 <br />Author's note(Isaac notes): Today was the first day writing Littletato without listening to Indie Folk songs, that was cool, I wrote while listening to some Dubstep on Vegecloud, was good.
-<br /><br />Made in: 07/02/2019.
-</div>
+<br /><br />Made in: 07/02/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-17"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-17');DefineChapter(17);OpenChapter2(ReadContent17);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3216,7 +3279,7 @@ It was a Wednesday, Littletato was sat in her computer, listening to some Dubste
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn18" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn18" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn18" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3235,7 +3298,7 @@ It was a Wednesday, Littletato was sat in her computer, listening to some Dubste
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn18m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-18m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn18m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-18m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3261,8 +3324,7 @@ It was a Wednesday, Littletato was sat in her computer, listening to some Dubste
 <br />
 <div id="chapter-text-19">
 It was a Thursday, Julia was listening to some Future Bass on Vegetube, she liked those kinds of music, she was listening to a future bass livestream while talking to Patricia in the Vegebook website, Patricia was on her job, but she could talk to Julia, suddenly a really good song popped up on the livestream, Julia wanted to know the name of that song, she looked in the description and saw the name of the song, she then searched on Vegetube and copied the link of the video, she downloaded the video as mp3, Julia got a notification on Vegewitter, it was from an artist that she followed, replying to a message Julia has sent her, Julia saw the reply and got happier, Julia also liked Psytrance, she muted the livestream and played some Infected Mushroom on her music player, she loved the duo, then she paused the music and turned on the sound of the livestream, Julia also liked to play some games on her laptop, she had Vegetablefall 2, Vegta 5, osutable!, Vegerraria, Vegecraft, she loved to play those games, she opened Vegecraft to play on some survival and skyblock servers, she played a little, got a lot of items, mined a lot of diamonds, and built a diamond armor, then she closed the game, she replied Patricia, Patricia said she was going to be off Vegebook cause she was getting home, Julia said okay, Julia called Littletato to listen to some music, Littletato sat on the side of Julia, Littletato liked the Future Bass Julia was listening to, she picked up her laptop and placed it on the table, and turned it on, she opened Vegeteam and Vegefox, just preparing to do a lot of things...
-<br /><br />Made in: 26/02/2019.
-</div>
+<br /><br />Made in: 26/02/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-18"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-18');DefineChapter(18);OpenChapter2(ReadContent18);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3271,7 +3333,7 @@ It was a Thursday, Julia was listening to some Future Bass on Vegetube, she like
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn19" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn19" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn19" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3290,7 +3352,7 @@ It was a Thursday, Julia was listening to some Future Bass on Vegetube, she like
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn19m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-19m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn19m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-19m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3316,8 +3378,7 @@ It was a Thursday, Julia was listening to some Future Bass on Vegetube, she like
 <br />
 <div id="chapter-text-20">
 It was a Friday, Littletato decided to save some money to buy a car, she worked, then came back to her house, she opened her laptop to find a good car, she found a cheap one, the seller was named Igor, there was places in San Francisco that you could rent bikes, Littletato had some money in her bank account, she decided to rent a bike to go to the agreed place, she arrived there, and gave the money to Igor, it was a red car, Littletato thought that the car was beautiful and shiny, they talked a little, they sent friend requests to each other, Littletato asked if Igor could return the bike to the bike rent place, he said yes, then Littletato drove her car back to her house, then told to Julia that she bought a car, Julia was so happy about that, but she asked why Littletato bought a car, Littletato said that she wanted to go for a trip, Julia was happy to hear that, Littletato then parked the car on the lot, she turned it off and locked it, Littletato came inside her house, she was a little hungry, Julia had already made the dinner, Littletato and Julia ate together, the food was delicious, then Littletato used her laptop to talk a little with Igor before going to sleep, the night was a little cold, Littletato got a warm blanket to sleep with Julia, they hugged and snuggled, Littletato woke up and made the breakfast, she woke up Julia to eat the breakfast with her, they ate together, Littletato said to Julia that she was planning a trip to Texas, she knew that there was some Chocolate Bars living there, she wanted to give Texas a visit, to see how it was, she planned with Julia to go there in the next Saturday...
-<br /><br />Made in: 31/03/2019.
-</div>
+<br /><br />Made in: 31/03/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-19"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-19');DefineChapter(19);OpenChapter2(ReadContent19);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3326,7 +3387,7 @@ It was a Friday, Littletato decided to save some money to buy a car, she worked,
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn20" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn20" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn20" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3345,7 +3406,7 @@ It was a Friday, Littletato decided to save some money to buy a car, she worked,
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn20m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-20m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn20m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-20m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3375,8 +3436,7 @@ It was a Saturday, Littletato was preparing herself to Travel to Texas, she fill
 <br />(Songs:)
 <br />(https://soundcloud.com/officialifeature/love-is-tension)
 <br />(https://soundcloud.com/officialifeature/energy-1)
-<br /><br />Made in: 14/04/2019.
-</div>
+<br /><br />Made in: 14/04/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-20"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-20');DefineChapter(20);OpenChapter2(ReadContent20);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3385,7 +3445,7 @@ It was a Saturday, Littletato was preparing herself to Travel to Texas, she fill
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn21" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn21" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn21" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3404,7 +3464,7 @@ It was a Saturday, Littletato was preparing herself to Travel to Texas, she fill
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn21m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-21m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn21m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-21m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3432,8 +3492,7 @@ It was a Saturday, Littletato was preparing herself to Travel to Texas, she fill
 Littletato was alone in her room, she had 11 on that day and was playing some Vegecraft while listening to Xenogenesis of TheFatRat, she loved to listen to that song while playing, she used an app to download the song from Vegetube, she was playing with a friend, Julia, her parents were working, so she stayed at home to take care of the chores, she knew how to make her own food, suddenly she felt hungry, then she minimized the game and let her character stationary, she put to play some Panic At The Disco in her computer while she made coffee, she prepared the coffee and poured it on a cup with milk and made some breads with butter, then she came back to her computer and paused the song that was playing, then she said to Julia that she was going to eat something while watching an anime, Julia said she was going to stay there, farming the farms, Littletato changed to her video player and dropped the "Eromanga Sensei EP1" file on it, she started watching it while tasting her food and drink, after a while she finished watching it, she liked, then Littletato felt a little tired, she waited for her parents to come home, then said to Julia that she was going to sleep, her parents arrived at home, so Littletato turned off her computer and walked to her room and layed on her bed, she slept...
 <br />
 <br />It was a beautiful day, birds were singing, nature was flourishing, Littletato had 22 that day, she was riding her bike through the city, while listening to some folk music on her mobile phone, the sight of a good day on the city, cars passing by, the sun shining high on the sky, she loved to do that, to ride through the city, she also liked to look at the sky, the beautiful blue tone, with the cottons that were the clouds, she had a high roof on her house, so she could look at the stars at night and the clouds at day, whenever she wanted, she loved to do that while listening to her favorite songs, the images on Vegetify, of trees, nature, folk songs, singer-songwriter songs, those were her favorite songs, and her favorite moments, it was a thing that Littletato really loved to do, to see the nature, to contemplate nature, to be passive, to just... look at things, she loved her bicycle, it was an awesome style of life...
-<br /><br />Made in: 05/05/2019.
-</div>
+<br /><br />Made in: 05/05/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-21"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-21');DefineChapter(21);OpenChapter2(ReadContent21);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3442,7 +3501,7 @@ Littletato was alone in her room, she had 11 on that day and was playing some Ve
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn22" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn22" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn22" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3461,7 +3520,7 @@ Littletato was alone in her room, she had 11 on that day and was playing some Ve
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn22m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-22m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn22m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-22m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3487,8 +3546,7 @@ Littletato was alone in her room, she had 11 on that day and was playing some Ve
 <br />
 <div id="chapter-text-23">
 Littletato and Julia were in their car, Littletato filled up the tank again to have enough fuel to travel back home, started the engine of the car and drove back to the shop where Layla was and asked for her Vegebook, Layla added Julia and Littletato on Vegebook and said goodbye to them, Littletato started driving back to San Francisco, on the way back home, Julia thought about how the trip was to her, what she saw, whom she met there, the songs she heard, she thought about coming home and writing a big text file telling how the trip was for her, what she felt, Littletato was a little tired and wanted to sleep, she liked to test her new car on the trip, and she was getting used to that beautiful red car, she wanted to listen to some music, she selected the song "Tisoki - New Wave" on her Vegetify app, Julia and Littletato liked the song, they both banged their heads to the songs, Julia was surprised because of the drop, it said "the fuck Tisoki", after some time, Littletato wanted to listen to something more chill, she put to play an Indie Folk playlist on Vegetify, they both loved the songs, it was a little late, Littletato looked on the digital clock of the car and saw it was 10:00 pm, they were arriving close to the entrance of San Francisco, Littletato entered the city and drove back to her house, she parked her car on the front of her house, locked it and came inside the house, Julia and Littletato were tired, Julia prepared the dinner and they both ate together and prepared to sleep, Julia wrote about the trip, what she felt, she posted the text she made on Vegebook, some friends of Julia liked the post, she was happy about that, Julia turned off her laptop and walked to her room, Littletato and Julia layed on the bed and tried to sleep, Littletato said: "What if we had a dog or a cat?...", Julia replied: "I think that is a good idea, honey...", then Littletato said: "I love you, my sweetie", Julia replied: "I love you too honey", they closed their eyes and slept, Littletato dreamed about living in a mansion, she was sat in a throne, a maid brought her a dog with a yellow fur, she loved it, and wanted to stay with it, the dog was female, she grabbed it and left her on her lap, she liked that dream, she wanted to have a dog just like that one...
-<br /><br />Made in: 26/05/2019.
-</div>
+<br /><br />Made in: 26/05/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-22"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-22');DefineChapter(22);OpenChapter2(ReadContent22);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3497,7 +3555,7 @@ Littletato and Julia were in their car, Littletato filled up the tank again to h
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn23" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn23" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn23" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3516,7 +3574,7 @@ Littletato and Julia were in their car, Littletato filled up the tank again to h
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn23m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-23m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn23m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-23m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3544,8 +3602,7 @@ Littletato and Julia were in their car, Littletato filled up the tank again to h
 Littletato was dreaming of golds, she loved the gold color and the visual of it, there were gold balls, gold ores, gold ingots, everything gold, it was a weird dream, but a good dream.
 <br />
 <br />After some time, the dream changed to something else, there were pink fur balls and a lot of fur things, she liked the sensation of it, there was coffee too, a beautiful land, of coffee and fur, and brown things, that land was beautiful, there were big brown mushrooms like tall trees, and the wind and air there were amazing, you could feel like you were floating in the beautiful, calm and quiet sky, like lying down on cotton candy, or in a cloud, feel the grass touching your skin, feeling the sweet cool breeze touch your body, it was a beautiful sight, it was amazing to be there, Littletato wished she lived there forever, there were also chocolates, big chocolate bars, as high as a skyscraper, there was tons of food, everyone could eat, it was an incredible land, the scent of the delightful and luscious chocolate bars and the mouthwatering and appetizing aroma of the warm lakes of coffee with milk, a lot of people like to bathe and drink in it and it would not get dirty, because it was some type of magical liquid, Littletato loved to live in a giant world like that, chocolate bars fell from the sky unexpectedly, producing huge quakes and bumps on the surface, the food was infinite, there was also candies that were not chocolate, like jujubes, bubble gums, quebra-queixos, big chocolate cakes that fell from the sky, delicious and warm applepies, black chocolate brownies, cheesecakes, a lot of sweet and sugary food, at one time, Littletato was laying on the gentle grass, listening to some Future Bass, some cute and calm songs on her smartphone, she were contemplative and meditative, look at that beautiful land, it made her feel so wondrus and spectacular, so calm and happy, she wanted to stay there forever...
-<br /><br />Made in: 24/06/2019.
-</div>
+<br /><br />Made in: 24/06/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-23"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-23');DefineChapter(23);OpenChapter2(ReadContent23);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3554,7 +3611,7 @@ Littletato was dreaming of golds, she loved the gold color and the visual of it,
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn24" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn24" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn24" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3573,7 +3630,7 @@ Littletato was dreaming of golds, she loved the gold color and the visual of it,
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn24m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-24m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn24m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-24m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3618,8 +3675,7 @@ Littletato was walking home, she was thinking about that yellow dog from that dr
 <br />also, this is how I imagine Littletato (ignore the dogs) <a href="https://static.zerochan.net/Shouin.600.1344153.jpg" class="w3-text-white">https://static.zerochan.net/Shouin.600.1344153.jpg</a>, a really shy girl xD)<br />
 <br /><a href="https://diario.netlify.com/cdn/img/Littletato Anime.jpg"><img src="https://diario.netlify.com/cdn/img/Littletato Anime.jpg" class="mobileHide" width="27%" style="float:left;border-width:3px;border-color:black;border-style:solid;" /></a><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <br /><a href="https://diario.netlify.com/cdn/img/Littletato Anime.jpg"><img src="https://diario.netlify.com/cdn/img/Littletato Anime.jpg" class="mobileShow" width="100%" style="float:left;border-width:3px;border-color:black;border-style:solid;" /></a><div class="mobileShow"><br /><br /><br /><br /><br /><br /></div>
-<br /><br />Made in: 02/07/2019.
-</div>
+<br /><br />Made in: 02/07/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-24"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-24');DefineChapter(24);OpenChapter2(ReadContent24);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3628,7 +3684,7 @@ Littletato was walking home, she was thinking about that yellow dog from that dr
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn25" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn25" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn25" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3647,7 +3703,7 @@ Littletato was walking home, she was thinking about that yellow dog from that dr
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn25m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-25m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn25m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-25m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3693,8 +3749,7 @@ Littletato was scrolling in her Vegebook timeline at her computer until somethin
 <br />
 <br />After eating and watching, Littletato installed the Discord app on her computer and joined the TOTB server, she met a lot of cool people there, there was Izaque, Wendy, Drag, Kendra, Manuh, Ted, Monika, John, and there was a special person there, and that person was called Lisa, the same name of her dog, Littletato was a little sad about thinking about her dog, Lisa, the person at the Discord server, was really cute and gentle, Littletato liked her, she wanted to talk more with her, Littletato took some courage and added her as a friend on Discord.
 <br /><div class="w3-animate-zoom" onclick="window.open('https://diario.netlify.app/new_world%20%E2%8A%A1/spaceliving%20%F0%9F%93%98/en-us/?no-redirect=true&read-chapter-9')"><b><center><h3 class="w3-btn w3-blue w3-text-black shakesidetoside" style="border-width:3px;border-color:black;border-style:solid;border-radius:50px;"><br /><span style="margin-left:30px;margin-right:30px;">This chapter continues here (Crossover): https://diario.netlify.app/spaceliving 📘/9/</span><br /><br /></h3></center></b></div>
-<br /><br />Made in: 03/07/2019.
-</div>
+<br /><br />Made in: 03/07/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-25"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-25');DefineChapter(25);OpenChapter2(ReadContent25);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3703,7 +3758,7 @@ Littletato was scrolling in her Vegebook timeline at her computer until somethin
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn26" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn26" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn26" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3722,7 +3777,7 @@ Littletato was scrolling in her Vegebook timeline at her computer until somethin
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn26m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-26m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn26m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-26m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3789,8 +3844,7 @@ After her trip to a SpaceLiving spaceship, Littletato arrived home safely, it wa
 <br />"Thanks, Daddy <3".
 <br />
 <br />After that, Littletato listened to some music and talked to some friends on Vegecord and Vegebook, then she closed her laptop and came to her room to sleep with Julia, she hugged Julia and slept with her.
-<br /><br />Made in: 16/08/2019-24/08/2019.
-</div>
+<br /><br />Made in: 16/08/2019-24/08/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-26"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-26');DefineChapter(26);OpenChapter2(ReadContent26);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3799,7 +3853,7 @@ After her trip to a SpaceLiving spaceship, Littletato arrived home safely, it wa
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn27" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn27" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn27" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3818,7 +3872,7 @@ After her trip to a SpaceLiving spaceship, Littletato arrived home safely, it wa
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn27m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-27m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn27m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-27m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3881,8 +3935,7 @@ After her trip to a SpaceLiving spaceship, Littletato arrived home safely, it wa
 <br />Then Littletato, in the body of Twilight was happy because she was talking with Izaque personally, even if she was a pony from Equestria, she loved that moment, she wished Julia was there with her, then, suddenly, she was Asuna from Japanese animation or anime called Sword Art Online, she was fighting by the side of Kirito, which reminded her of Izaque, and Silica was there too, Littletato(Asuna) thought that Silica reminded her of Julia, so cute and innocent, then she was in Yuru Camp, she was Shimarin, a camping girl, she was sat by the side of Nadeshiko which reminded her of Julia and Chiaki which reminded her of Izaque, suddenly she was in the body of Izaque, it felt weird, being him, he was writing a story called Littletato, he was so happy, Izaque was talking with his friends on Discord, Igor, Duda, CoffeeMedio, Naty Mira, he loved to have company while writing, Littletato thought that that was incredible, feeling all of his emotions and sensations, she loved to be in his place, she wished she was there with him, by him side, talking, chatting, doing things together, she thought she was loving him, but no, she only wanted to be his friend, because he is so incredible to her, he is everything for her, she loved Julia and Izaque very much, she is still dreaming, still thinking, still imaging, she loves her life, she loves to be where she is right now, with her friends, with Izaque, thinking about all the things that she can do, everything that she could do right now, she wants, she wants to live her life so much right now, with all of her dreamings reminding her about what she haves, she loves Izaque very much, Littletato is gonna have a good sleep tonight, a reaaally good sleep, and good dreams, (goodnight you too, there, reading this story right now, I don't know who you are, but I probably love you, thank you for reading this!, I love you so much, my reader, and if you're a friend of mine on Discord screenshot this part and send it to me!, thanks for reading, I'm Izaque, I live in 2019 while writing this, goodnight, good dreams, love you!, peace! <3)
 <br />
 <br />(The beautiful Life of Littletato, EP 28, with much love, Izaque <3)
-<br /><br />Made in: 29/08/2019-05/10/2019.
-</div>
+<br /><br />Made in: 29/08/2019-05/10/2019.</div>
 </div>
 <br /><br />
 <a href="#chapter-27"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-27');DefineChapter(27);OpenChapter2(ReadContent27);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3891,7 +3944,7 @@ After her trip to a SpaceLiving spaceship, Littletato arrived home safely, it wa
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn28" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn28" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn28" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3910,7 +3963,7 @@ After her trip to a SpaceLiving spaceship, Littletato arrived home safely, it wa
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn28m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-28m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn28m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-28m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -3950,8 +4003,7 @@ Littletato was looking to the green leaves of the trees, feeling good and happy,
 <br />After some time, the movie ended, it was quite late, Littletato grabbed the plates, cups and the bottle of coke and took them to the kitchen, she washed them and placed them in her cupboard, she walked to the living room and turned off the TV, gave food and water to Lisa, her dog, and walked to her room with Julia, to sleep, they both lied on the bed and covered themselves with the blanket, it was a little cold, they hugged each other and slept.
 <br />
 <br />Littletato was dreaming again, about a field with pink and red flowers, she was sat in a bench with Julia, the trees were swinging and the breeze was fresh and relaxing, she was happy there, Julia was sat in the lap of Littletato, and Littletato was caressing her, Julia's hair was soft and cute, Littletato was happy there, she loved nature, she thought about Izaque and the Indie Folk songs, she loves both of them, she gets so happy thinking of them, she is going to sleep well tonight, say good night to Littletato, Good Night Littletato... <3
-<br /><br />Made in: 14/02/2020.
-</div>
+<br /><br />Made in: 14/02/2020.</div>
 </div>
 <br /><br />
 <a href="#chapter-28"><button class="w3-btn bg borderbtn" style="float:left;border-radius: 50px;" onclick="openCity('chapter-28');DefineChapter(28);OpenChapter2(ReadContent28);"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
@@ -3959,7 +4011,7 @@ Littletato was looking to the green leaves of the trees, feeling good and happy,
 <button class="w3-btn bg w3-text-black borderbtn mobileHide" id="commentbtn29" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (17)</b></h3></button>
 </div>
 <div class="mobileHide">
-<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn29" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h3></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileHide" id="readbtn29" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
@@ -3979,7 +4031,7 @@ Littletato was looking to the green leaves of the trees, feeling good and happy,
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn29m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-29m')"><h4><b>I Read It ✓ (14 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn bg w3-text-black borderbtn mobileShow" id="readbtn29m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-29m')"><h4><b>I Read It ✓ (15 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -4292,11 +4344,11 @@ readmodal4m.onclick = function(event) {
 <div class="w3-animate-zoom"><div class="modal-content w3-black" style="border-radius: 50px;">
 <div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn bg w3-text-black borderbtn mobileHide close" style="border-radius: 50px;" id="closereadmodal5">&times;</button>
 <form name="pequenata-read-5" method="POST" data-netlify="true" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h2 class="pqnttext"><b>I read the Chapter: 5 - The Dinner</b></h2></div>
+<div class="w3-animate-zoom"><h2 class="pqnttext"><b>I read the Chapter: 5 - The space traveler dream</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="pqnttext"><b>Your name:</b></h2></div>
 <input type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn bg w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div><input type="text" name="read" value="I read the Chapter: 5 - The Dinner" class="bg2 w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 5 - The space traveler dream" class="bg2 w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -4308,11 +4360,11 @@ readmodal4m.onclick = function(event) {
 <div class="w3-animate-zoom"><div class="modal-content w3-black" style="border-radius: 50px;">
 <div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn bg w3-text-black borderbtn mobileShow close" style="border-radius: 50px;" id="closereadmodal5m">&times;</button><br /><br /><br />
 <form name="pequenata-read-5" method="POST" data-netlify="true" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="pqnttext"><b>I read the Chapter: 5 - The Dinner</b></h4></div>
+<div class="w3-animate-zoom"><h4 class="pqnttext"><b>I read the Chapter: 5 - The space traveler dream</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="pqnttext"><b>Your name:</b></h4></div>
 <input type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn bg w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div><input type="text" name="read" value="I read the Chapter: 5 - The Dinner" class="bg2 w3-input" style="display:none;border-radius: 50px;">
+</div><input type="text" name="read" value="I read the Chapter: 5 - The space traveler dream" class="bg2 w3-input" style="display:none;border-radius: 50px;">
 <br /><br /><br /><br /></form>
 </div>
 </div>
@@ -6528,7 +6580,7 @@ commentmodal4m.onclick = function(event) {
 <div class="modal-content w3-black" style="border-radius: 50px;">
 <div class="mobileHide">
 <button class="w3-btn bg w3-text-black borderbtn mobileHide close" id="closecommentmodal5" style="border-radius: 50px;">&times;</button>
-<div class="w3-animate-zoom"><h2 class="pqnttext"><p></p><br /><b>Comment in the Chapter 5 - The Dinner <i class="fas fa-comments"></i></b></h2></div><hr class="pqnthr" />
+<div class="w3-animate-zoom"><h2 class="pqnttext"><p></p><br /><b>Comment in the Chapter 5 - The space traveler dream <i class="fas fa-comments"></i></b></h2></div><hr class="pqnthr" />
 <form name="pequenata-comment-5" method="POST" data-netlify="true" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="pqnttext"><b>Your name:</b></h2></div>
@@ -6552,7 +6604,7 @@ commentmodal4m.onclick = function(event) {
 <div class="mobileShow">
 <button class="w3-btn bg w3-text-black borderbtn mobileShow close" id="closecommentmodal5m" style="border-radius: 50px;">&times;</button><br /><br /><br />
 <form name="pequenata-comment-5" method="POST" data-netlify="true" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="pqnttext"><p></p><br /><b>Comment in the Chapter 5 - The Dinner <i class="fas fa-comments"></i></b></h4></div><hr class="pqnthr" />
+<div class="w3-animate-zoom"><h4 class="pqnttext"><p></p><br /><b>Comment in the Chapter 5 - The space traveler dream <i class="fas fa-comments"></i></b></h4></div><hr class="pqnthr" />
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="pqnttext"><b>Your name:</b></h4></div>
@@ -8773,7 +8825,7 @@ commentmodal29m.onclick = function(event) {
 </script>
 <br /><br /><br /><br /><br /><br /><br /><br /><br />
 <center>
-<a href="#Websites tab"><button class="w3-btn bg2 borderbtn" style="border-radius: 50px;" alt="Websites tab" title="Websites tab" onclick="openCity('Websites tab')"><h2>Sites: <i class="fas fa-globe-americas"></i></h2></button></a>
+<a href="#Websites tab"><button class="w3-btn bg2 borderbtn 20px_font_size white_space_unset" style="border-radius: 50px;" alt="Websites tab" title="Websites tab" onclick="openCity('Websites tab')"><h2>Sites: <i class="fas fa-globe-americas"></i></h2></button></a>
 </center>
 <a name="Websites tab"></a>
 <br />
@@ -8879,6 +8931,13 @@ ChangeTitle();
 }
 
 button:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shakesidetoside22 0.8s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+span.w3-btn:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shakesidetoside22 0.8s;
   /* When the animation is finished, start again */
@@ -9225,12 +9284,8 @@ function OpenChapter() {
 		document.getElementById(captext).scrollIntoView();
 	}
 
-	if (first_check_30 === true || second_check_30 === true || third_check_30 === true || fourth_check_30 === true) {
-		var captext = captext1 + "30";
-		openCity(captext);
-		document.getElementById(captext).scrollIntoView();
-	}
 }
+console.log("Open Chapter Script was loaded.");
 
 OpenChapter();
 </script>

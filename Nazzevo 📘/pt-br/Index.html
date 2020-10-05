@@ -21,7 +21,7 @@
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Stories.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Mobile.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/ImgHover.css" />
-<meta name="revised" content="Stake's Enterprisetm, 08/09/2020" />
+<meta name="revised" content="Stake's Enterprisetm, 04/10/2020" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
@@ -31,6 +31,7 @@
 <script src="https://diario.netlify.app/cdn/js/ShowHide.js"></script>
 <script src="https://diario.netlify.app/cdn/js/SideMenu.js"></script>
 <script src="https://diario.netlify.app/cdn/js/Set Revised Date.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Open Chapter By Keys.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
 <body><center>
@@ -187,10 +188,10 @@ Status: <span class="w3-text-orange">[Terminada e postando]</span></h4><br />
 <div class="mobileHide">
 <form name="nazzevo-comment" method="POST" data-netlify="true">
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Nome:</b><br />
-<textarea type="text" name="nazzevo-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Comente o que achou da história:</b><br />
-<textarea type="text" name="nazzevo-comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -199,10 +200,10 @@ Status: <span class="w3-text-orange">[Terminada e postando]</span></h4><br />
 <div class="mobileShow">
 <form name="nazzevo-comment" method="POST" data-netlify="true">
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Nome:</b><br />
-<textarea type="text" name="nazzevo-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Comente o que achou da história:</b><br />
-<textarea type="text" name="nazzevo-comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -232,10 +233,10 @@ Status: <span class="w3-text-orange">[Terminada e postando]</span></h4><br />
 <div class="mobileHide">
 <form name="nazzevo-comment" method="POST" data-netlify="true">
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Nome:</b><br />
-<textarea type="text" name="nazzevo-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Comente o que achou da história:</b><br />
-<textarea type="text" name="nazzevo-comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -244,10 +245,10 @@ Status: <span class="w3-text-orange">[Terminada e postando]</span></h4><br />
 <div class="mobileShow">
 <form name="nazzevo-comment" method="POST" data-netlify="true">
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Nome:</b><br />
-<textarea type="text" name="nazzevo-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Comente o que achou da história:</b><br />
-<textarea type="text" name="nazzevo-comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -276,10 +277,10 @@ Status: <span class="w3-text-orange">[Terminada e postando]</span></h4><br />
 <div class="mobileHide">
 <form name="nazzevo-write" method="POST" data-netlify="true">
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Nome:</b><br />
-<textarea type="text" name="nazzevo-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Escreva o capítulo:</b><br />
-<textarea type="text" name="nazzevo-write" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -291,7 +292,7 @@ Status: <span class="w3-text-orange">[Terminada e postando]</span></h4><br />
 <textarea type="text" name="nazzevo-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Escreva o capítulo:</b><br />
-<textarea type="text" name="nazzevo-write" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -315,10 +316,10 @@ Status: <span class="w3-text-orange">[Terminada e postando]</span></h4><br />
 <div class="mobileHide">
 <form name="nazzevo-write" method="POST" data-netlify="true">
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Nome:</b><br />
-<textarea type="text" name="nazzevo-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
+<textarea type="text" name="name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Escreva o capítulo:</b><br />
-<textarea type="text" name="nazzevo-write" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -330,7 +331,7 @@ Status: <span class="w3-text-orange">[Terminada e postando]</span></h4><br />
 <textarea type="text" name="nazzevo-name" class="bg2 w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
 <span class="w3-btn pqntspan" style="border-radius: 50px;"><b>Escreva o capítulo:</b><br />
-<textarea type="text" name="nazzevo-write" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
+<textarea type="text" name="comment" class="bg2 w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn pqntsend" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
 </form>
@@ -565,8 +566,7 @@ Esta é uma história feita por mim e minha amiga Lu, ou Lulu.
 <br />A prática de espionar e perseguir alguém é denominada "stalking" (espreitar). O termo é usado desde a década de 1980 quando havia uma obstinada perseguição a celebridades. Em muitos países passou a ser considerado um crime dependendo do sentimento da vítima em relação ao stalker. Um exemplo de stalker é Stalker Sarah, uma jovem conhecida por tirar fotos com um grande número de pessoas famosas, e publicá-las na internet.
 <br />
 <br />Fonte: <a class="w3-text-white" href="https://www.significados.com.br/stalker/">https://www.significados.com.br/stalker/</a>
-<br />
-</div>
+<br /></div>
 </div>
 <br /><br />
 <div class="mobileHide">
@@ -899,6 +899,13 @@ commentmodal1m.onclick = function(event) {
 }
 
 button:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shakesidetoside22 0.8s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+span.w3-btn:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shakesidetoside22 0.8s;
   /* When the animation is finished, start again */
