@@ -4,8 +4,8 @@
 <meta charset="UTF-8" />
 <meta property="og:title" content="Desert Island Geral" />
 <meta property="og:site_name" content="Desert Island Geral" />
-<link rel="canonical" href="https://diario.netlify.app/desert_island_📘/" />
-<meta property="og:url" content="https://diario.netlify.app/desert_island_📘/" />
+<link rel="canonical" href="https://diario.netlify.app/desert_island/" />
+<meta property="og:url" content="https://diario.netlify.app/desert_island/" />
 <link rel="icon" href="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" />
 <link rel="image_src" href="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" />
 <meta property="og:image" content="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" />
@@ -27,7 +27,7 @@ So he can get back to civilization." />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Stories.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Mobile.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/ImgHover.css" />
-<meta name="revised" content="Stake's Enterprisetm, 11/10/2020" />
+<meta name="revised" content="Stake's Enterprisetm, 12/10/2020" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
@@ -40,31 +40,61 @@ So he can get back to civilization." />
 <script src="https://diario.netlify.app/cdn/js/Open Chapter By Keys.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
-<body><center>
+<body>
+<center>
+
 <div class="w3-animate-zoom">
-<div id="myDIV" class="w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
-<span title="Read story" alt="Read story"><a href="#desertisland-read story"><button id="button1" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-read story')"><h2>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-black">[New 1]</span></h2></button></a></span>
-<span title="Readers" alt="Readers"><a href="#desertisland-readers"><button id="button2" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-readers')"><h2>Readers: <i class="fas fa-book-reader"></i> <span class="w3-text-red"><i class="fas fa-heart"></i></span> ❤️ <span class="w3-text-black"><i class="fas fa-smile-beam"></i></span> 😊</h2></button></a></span>
-<span title="Comment" alt="Comment"><a href="#desertisland-comment"><button id="button3" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-comment')"><h2>Comment: <i class="fas fa-comments"></i></h2></button></a></span>
-<span title="Write" alt="Write"><a href="#desertisland-write"><button id="button4" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-write')"><h2>Write: <i class="fas fa-pen"></i></h2></button></a></span>
-<span title="Stories" alt="Stories"><a href="#desertisland-stories"><button id="button5" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-stories')"><h2>Stories: <span class="w3-text-black">5</span> <i class="fas fa-book"></i></h2></button></a></span>
+
+<!--- Computer Button bar on the top -->
+<div id="computer_buttons_bar" class="w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
+<span title="Read story" alt="Read story">
+<a href="#desertisland-read story"><button id="computer_button_1" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-read story');"><h2>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-black">[New 1]</span></h2></button></a>
+</span>
+
+<span title="Readers" alt="Readers">
+<a href="#desertisland-readers"><button id="computer_button_2" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-readers');"><h2>Readers: <i class="fas fa-book-reader"></i> <span class="w3-text-red"><i class="fas fa-heart"></i></span> ❤️ <span class="w3-text-black"><i class="fas fa-smile-beam"></i></span> 😊</h2></button></a>
+</span>
+
+<span title="Comment" alt="Comment">
+<a href="#desertisland-comment"><button id="computer_button_3" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-comment');"><h2>Comment: <i class="fas fa-comments"></i></h2></button></a>
+</span>
+
+<span title="Write" alt="Write">
+<a href="#desertisland-write"><button id="computer_button_4" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-write');"><h2>Write: <i class="fas fa-pen"></i></h2></button></a>
+</span>
+
+<span title="Stories" alt="Stories">
+<a href="#desertisland-stories"><button id="computer_button_5" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-stories');"><h2>Stories: <span class="w3-text-black">5</span> <i class="fas fa-book"></i></h2></button></a>
+</span>
+
 <br />
-<button class="w3-btn yellow-sand_bg borderbtn mobileHide" style="border-radius: 50px;" onclick="buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button>
-</div>
-<div class="w3-bar" style="position:fixed;float:right;">
-<button id="ShowButton" class="w3-btn yellow-sand_bg borderbtn mobileHide" style="display:none;float:right;border-radius: 50px;" onclick="buttons2();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
+<button id="hide_computer_buttons" class="w3-btn yellow-sand_bg borderbtn mobileHide" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button>
 </div>
 
-<div id="mySidenav" class="sidenav mobileShow ">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times-circle"></i></a>
-<h2 class="mobileShow w3-text-black yellow-sand_bg">Mobile button menu: </h2>
-<a href="#desertisland-read storym" onclick="closeNav()"><button id="button1" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-read storym')"><h4>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-black">[New 1]</span></h4></button></a>
-<a href="#desertisland-readersm" onclick="closeNav()"><button id="button2" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-readersm')"><h4>Readers: <i class="fas fa-book-reader"></i> <span class="w3-text-red"><i class="fas fa-heart"></i></span> ❤️ <span class="w3-text-black"><i class="fas fa-smile-beam"></i></span> 😊</h4></button></a>
-<a href="#desertisland-commentm" onclick="closeNav()"><button id="button3" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-commentm')"><h4>Comment: <i class="fas fa-comments"></i></h4></button></a>
-<a href="#desertisland-writem" onclick="closeNav()"><button id="button4" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-writem')"><h4>Write: <i class="fas fa-pen"></i></h4></button></a>
-<a href="#desertisland-storiesm" onclick="closeNav()"><button id="button5" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-storiesm')"><h4>Stories: <span class="w3-text-black">5</span> <i class="fas fa-book"></i></h4></button></a>
+<!-- "Show Computer Buttons" button bar -->
+<div id="show_computer_button_bar" class="w3-bar" style="position:fixed;float:right;">
+<button id="show_computer_buttons" class="w3-btn yellow-sand_bg borderbtn mobileHide" style="display:none;float:right;border-radius: 50px;" onclick="Show_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
 </div>
-<button id="ShowMenu" class="w3-btn yellow-sand_bg borderbtn mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="openNav()"><h2><i class="fas fa-bars"></i></h2></button>
+
+<!--- Mobile Button bar at the left -->
+<div id="mobile_button_sidebar" class="mobile_button_sidebar_css mobileShow ">
+
+<a href="javascript:void(0)" class="close_mobile_sidebar_button" onclick="Hide_Mobile_Buttons();"><i class="fas fa-times-circle"></i></a>
+
+<h2 class="mobileShow w3-text-black yellow-sand_bg">Mobile button menu: </h2>
+
+<a href="#desertisland-read storym" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-read storym');"><h4>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-black">[New 1]</span></h4></button></a>
+
+<a href="#desertisland-readersm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_2" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-readersm');"><h4>Readers: <i class="fas fa-book-reader"></i> <span class="w3-text-red"><i class="fas fa-heart"></i></span> ❤️ <span class="w3-text-black"><i class="fas fa-smile-beam"></i></span> 😊</h4></button></a>
+
+<a href="#desertisland-commentm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_3" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-commentm');"><h4>Comment: <i class="fas fa-comments"></i></h4></button></a>
+
+<a href="#desertisland-writem" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-writem');"><h4>Write: <i class="fas fa-pen"></i></h4></button></a>
+
+<a href="#desertisland-storiesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-storiesm');"><h4>Stories: <span class="w3-text-black">5</span> <i class="fas fa-book"></i></h4></button></a>
+</div>
+
+<button id="show_mobile_buttons" class="w3-btn yellow-sand_bg borderbtn mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="Show_Mobile_Buttons();"><h2><i class="fas fa-bars"></i></h2></button>
 
 </div>
 
@@ -157,10 +187,10 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 
 <div class="mobileHide">
 <form name="desert_island-comment" method="POST" data-netlify="true">
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Name:</b><br />
 <textarea type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Say what you think about the story:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Say what you think about the story:</b><br />
 <textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
 <h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
@@ -169,10 +199,10 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 
 <div class="mobileShow">
 <form name="desert_island-comment" method="POST" data-netlify="true">
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Name:</b><br />
 <textarea type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Say what you think about the story:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Say what you think about the story:</b><br />
 <textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
@@ -200,10 +230,10 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 
 <div class="mobileHide">
 <form name="desert_island-comment" method="POST" data-netlify="true">
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Name:</b><br />
 <textarea type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Say what you think about the story:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Say what you think about the story:</b><br />
 <textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
 <h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
@@ -212,10 +242,10 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 
 <div class="mobileShow">
 <form name="desert_island-comment" method="POST" data-netlify="true">
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Name:</b><br />
 <textarea type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Say what you think about the story:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Say what you think about the story:</b><br />
 <textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
@@ -242,10 +272,10 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 
 <div class="mobileHide">
 <form name="desert_island-write" method="POST" data-netlify="true">
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Name:</b><br />
 <textarea type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Write the Chapter:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Write the Chapter:</b><br />
 <textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
@@ -254,10 +284,10 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 
 <div class="mobileShow">
 <form name="desert_island-write" method="POST" data-netlify="true">
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Name:</b><br />
 <textarea type="text" name="desert_island-name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Write the Chapter:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Write the Chapter:</b><br />
 <textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
@@ -281,10 +311,10 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 
 <div class="mobileHide">
 <form name="desert_island-write" method="POST" data-netlify="true">
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Name:</b><br />
 <textarea type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Write the Chapter:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Write the Chapter:</b><br />
 <textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
@@ -293,10 +323,10 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 
 <div class="mobileShow">
 <form name="desert_island-write" method="POST" data-netlify="true">
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Name:</b><br />
 <textarea type="text" name="desert_island-name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
 </span><br />
-<span class="w3-btn yellow" style="border-radius: 50px;"><b>Write the Chapter:</b><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b style="white-space: break-spaces;">Write the Chapter:</b><br />
 <textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea> 
 <h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
 </span>
@@ -317,9 +347,9 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 <div class="w3-animate-zoom"><h2><p></p><br /><b>Stories: <span class="w3-text-black">5</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="blackhr" />
 
 <div class="w3-animate-zoom"><div class="mobileHide">
-<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="650"><br /><br /></a><br /><br />
+<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b style="white-space: break-spaces;">The Life of Littletato</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="650"><br /><br /></a><br /><br />
 
-<a class="w3-btn borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h2 class="w3-text-blue"><b>SpaceLiving</b></h2><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="650"><br /><br /></a><br /><br />
+<a class="w3-btn borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h2 class="w3-text-blue"><b style="white-space: break-spaces;">SpaceLiving</b></h2><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="650"><br /><br /></a><br /><br />
 
 <a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/ENUS/Cover/1.png" width="650"><br /><br /></a><br /><br />
 
@@ -330,15 +360,15 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 <br />
 
 <div class="mobileShow">
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="350" height="210"><br /><br /></a><br /><br />
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b style="white-space: break-spaces;">The Life of Littletato</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="230" height="170"><br /><br /></a><br /><br />
 
-<a class="w3-btn  borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h4 class="w3-text-blue"><b>SpaceLiving</b></h4><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="320" height="230"><br /><br /></a><br /><br />
+<a class="w3-btn  borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h4 class="w3-text-blue"><b style="white-space: break-spaces;">SpaceLiving</b></h4><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="230" height="170"><br /><br /></a><br /><br />
 
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/ENUS/Cover/1.png" width="290" height="190"><br /><br /></a><br /><br />
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b style="white-space: break-spaces;">The Story of the Nazzevo Brothers</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/ENUS/Cover/1.png" width="230" height="170"><br /><br /></a><br /><br />
 
-<a class="w3-btn borderbtn cyan-water_bg" href="https://diario.netlify.app/desert_island/" style="border-radius: 50px;"><h4 class="cyan-water_text_dark"><b>Desert Island</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" width="650"><br /><br /></a><br /><br />
+<a class="w3-btn borderbtn cyan-water_bg" href="https://diario.netlify.app/desert_island/" style="border-radius: 50px;"><h4 class="cyan-water_text_dark"><b>Desert Island</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" width="230"><br /><br /></a><br /><br />
 
-<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app/Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Lonely Stories</b></h4><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="290" height="190"><br /><br /></a><br />
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app/Lonely%20Stories/" style="border-radius: 50px;"><h4><b style="white-space: break-spaces;">Lonely Stories</b></h4><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="230" height="170"><br /><br /></a><br />
 </div>
 <br />
 
@@ -355,9 +385,9 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 <div class="w3-animate-zoom"><h2><p></p><br /><b>Stories: <span class="w3-text-black">5</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="blackhr" />
 
 <div class="w3-animate-zoom"><div class="mobileHide">
-<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="650"><br /><br /></a><br /><br />
+<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b style="white-space: break-spaces;">The Life of Littletato</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="650"><br /><br /></a><br /><br />
 
-<a class="w3-btn borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h2 class="w3-text-blue"><b>SpaceLiving</b></h2><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="650"><br /><br /></a><br /><br />
+<a class="w3-btn borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h2 class="w3-text-blue"><b style="white-space: break-spaces;">SpaceLiving</b></h2><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="650"><br /><br /></a><br /><br />
 
 <a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/ENUS/Cover/1.png" width="650"><br /><br /></a><br /><br />
 
@@ -368,15 +398,15 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 <br />
 
 <div class="mobileShow">
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="350" height="210"><br /><br /></a><br /><br />
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b style="white-space: break-spaces;">The Life of Littletato</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="230" height="170"><br /><br /></a><br /><br />
 
-<a class="w3-btn  borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h4 class="w3-text-blue"><b>SpaceLiving</b></h4><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="320" height="230"><br /><br /></a><br /><br />
+<a class="w3-btn  borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h4 class="w3-text-blue"><b style="white-space: break-spaces;">SpaceLiving</b></h4><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="230" height="170"><br /><br /></a><br /><br />
 
-<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/ENUS/Cover/1.png" width="290" height="190"><br /><br /></a><br /><br />
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b style="white-space: break-spaces;">The Story of the Nazzevo Brothers</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/ENUS/Cover/1.png" width="230" height="170"><br /><br /></a><br /><br />
 
-<a class="w3-btn borderbtn cyan-water_bg" href="https://diario.netlify.app/desert_island/" style="border-radius: 50px;"><h4 class="cyan-water_text_dark"><b>Desert Island</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" width="650"><br /><br /></a><br /><br />
+<a class="w3-btn borderbtn cyan-water_bg" href="https://diario.netlify.app/desert_island/" style="border-radius: 50px;"><h4 class="cyan-water_text_dark"><b>Desert Island</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" width="230"><br /><br /></a><br /><br />
 
-<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app/Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Lonely Stories</b></h4><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="290" height="190"><br /><br /></a><br />
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app/Lonely%20Stories/" style="border-radius: 50px;"><h4><b style="white-space: break-spaces;">Lonely Stories</b></h4><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="230" height="170"><br /><br /></a><br />
 </div>
 <br />
 
@@ -431,7 +461,8 @@ Status: <span class="w3-text-orange">[Writing]</span></h4><br />
 <div class="mobileShow"><h4 class="w3-text-black yellow-sand_bg" style="border-radius: 250px;"><div class="w3-animate-zoom"><br /><b>You're reading: Desert Island</b><br /><b>Chapter: 1 - The Shipwreck, the hatchet</b><span class="w3-text-black"><b> [New!]</b></span></div></h4></div>
 
 <h5 class="w3-text-black yellow-sand_bg" style="margin:5%;text-align:left;"><hr class="blackhr" />
-<a href="#desertisland-read story"><button class="w3-btn yellow-sand_bg borderbtn" style="float:right;margin-right:15px;border-radius: 50px;" onclick="openCity('desertisland-read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#desertisland-read story"><button class="w3-btn yellow-sand_bg borderbtn mobileHide" style="float:right;margin-right:15px;border-radius: 50px;" onclick="openCity('desertisland-read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#desertisland-read storym"><button class="w3-btn yellow-sand_bg borderbtn mobileShow" style="float:right;margin-right:15px;border-radius: 50px;" onclick="openCity('desertisland-read storym')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <div id="chapter-text-1">
@@ -529,7 +560,7 @@ I was a boy that always loved to watch videos of survivalism, bushcraft, things 
 <br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" id="readbtn0m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-0m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" id="readbtn1m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-1m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
 <br /><div class="mobileShow"><br /><br />
 </div>
@@ -718,7 +749,7 @@ commentmodal1m.onclick = function(event) {
 </div>
 <hr class="mobileHide blackhr" />
 <div class="w3-animate-zoom">
-<h4 class="yellow-sand_bg">
+<h4 class="">
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Prints Of Computer Blocks" style="border-radius: 50px;" onclick="window.open('https://printsofcomputer.netlify.app');"><h2>Prints Of Computer Blocks</h2></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Diary 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/📘/');"><h2>Diary 📘</h2></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="My Little Pony 🦄" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/my_little_pony 🦄/');"><h2>My Little Pony 🦄</h2></button>
@@ -738,7 +769,7 @@ commentmodal1m.onclick = function(event) {
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="The Life of Littletato 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/pequenata 📘/');"><h2>The Life of Littletato 📘</h2></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="SpaceLiving 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/new_world ⊡/spaceliving 📘/');"><h2>SpaceLiving 📘</h2></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="The Story of the Nazzevo Brothers 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/nazzevo 📘/');"><h2>The Story of the Nazzevo Brothers 📘</h2></button>
-<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Desert Island 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/desert_island/');"><h2>Desert Island 📘</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Desert Island" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/desert_island/');"><h2>Desert Island</h2></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Lonely Stories 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/lonely stories/');"><h2>Lonely Stories 📘</h2></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Mental_Frameworks" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/mental_frameworks/');"><h2>Mental_Frameworks</h2></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Website Template" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/template/');"><h2>Website Template</h2></button>
@@ -760,7 +791,7 @@ commentmodal1m.onclick = function(event) {
 </div>
 <hr class="mobileShow blackhr" />
 <div class="w3-animate-zoom">
-<h4 class="yellow-sand_bg">
+<h4 class="">
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Prints Of Computer Blocks" style="border-radius: 50px;" onclick="window.open('https://printsofcomputer.netlify.app');"><h4>Prints Of Computer Blocks</h4></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Diary 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/📘/');"><h4>Diary 📘</h4></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="My Little Pony 🦄" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/my_little_pony 🦄/');"><h4>My Little Pony 🦄</h4></button>
@@ -780,7 +811,7 @@ commentmodal1m.onclick = function(event) {
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="The Life of Littletato 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/pequenata 📘/');"><h4>The Life of Littletato 📘</h4></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="SpaceLiving 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/new_world ⊡/spaceliving 📘/');"><h4>SpaceLiving 📘</h4></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="The Story of the Nazzevo Brothers 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/nazzevo 📘/');"><h4>The Story of the Nazzevo Brothers 📘</h4></button>
-<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Desert Island 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/desert_island/');"><h4>Desert Island 📘</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Desert Island" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/desert_island/');"><h4>Desert Island</h4></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Lonely Stories 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/lonely stories/');"><h4>Lonely Stories 📘</h4></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Mental_Frameworks" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/mental_frameworks/');"><h4>Mental_Frameworks</h4></button>
 <button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Website Template" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/template/');"><h4>Website Template</h4></button>
