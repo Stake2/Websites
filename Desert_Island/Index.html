@@ -1,143 +1,888 @@
 <!DOCTYPE html>
 <head>
-<title>A New Story Geral</title>
+<title>Desert Island Geral</title>
 <meta charset="UTF-8" />
-<meta property="og:title" content="A New Story Geral" />
-<meta property="og:site_name" content="A New Story Geral" />
-<link rel="canonical" href="https://diario.netlify.app/desert_island/" />
-<meta property="og:url" content="https://diario.netlify.app/desert_island/" />
-<link rel="icon" href="https://diario.netlify.app/cdn/img/Stories/desert island/capa original.jpg" />
-<link rel="image_src" href="https://diario.netlify.app/cdn/img/Stories/desert island/capa original.jpg" />
-<meta property="og:image" content="https://diario.netlify.app/cdn/img/Stories/desert island/capa original.jpg" />
-<meta name="description" content="Site about a new story that is coming, made by stake2." />
-<meta property="og:description" content="Site about a new story that is coming, made by stake2." />
+<meta property="og:title" content="Desert Island Geral" />
+<meta property="og:site_name" content="Desert Island Geral" />
+<link rel="canonical" href="https://diario.netlify.app/desert_island_📘/" />
+<meta property="og:url" content="https://diario.netlify.app/desert_island_📘/" />
+<link rel="icon" href="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" />
+<link rel="image_src" href="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" />
+<meta property="og:image" content="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" />
+<meta name="description" content="Synopsis: A boy was on a cruise with his parents, suddenly the ship was shipwrecked.
+He wakes up and finds himself in a strange island, without humans there, only water and trees.
+He needs to remember what he learned in able to survive in that dangerous island.
+So he can get back to civilization." />
+<meta property="og:description" content="Synopsis: A boy was on a cruise with his parents, suddenly the ship was shipwrecked.
+He wakes up and finds himself in a strange island, without humans there, only water and trees.
+He needs to remember what he learned in able to survive in that dangerous island.
+So he can get back to civilization." />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" value="@The_Snakes90" />
 <meta name="twitter:creator" content="@The_Snakes90" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<meta name="revised" content="Stake's Enterprisetm, 05/09/2020" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Desert_Island.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/w3.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Colors.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Stories.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Mobile.css" />
+<link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/ImgHover.css" />
+<meta name="revised" content="Stake's Enterprisetm, 11/10/2020" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<style>
-body, h1, h2, h3 {
-	font-family: "Raleway", sans-serif;
-}
-
-body, html {
-	height: 100%
-}
-
-.bgimg {
-  background-image: url('https://diario.netlify.app/cdn/img/Stories/desert island/capa original.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style><script type="text/javascript">
-function pad(
-  a, // the number to convert 
-  b // number of resulting characters
-){
-  return (
-    1e15 + a + // combine with large number
-    "" // convert to string
-  ).slice(-b) // cut leading "1"
-}
-
-var launch_date = new Date(2020, 10, 11);
-
-var launch_date_day = launch_date.getDate();
-
-var launch_date_month = launch_date.getMonth();
-var launch_date_month = pad(launch_date_month, 2);
-
-var launch_date_year = launch_date.getFullYear();
-
-var launch_date = String(launch_date_day) + "/" + String(launch_date_month) + "/" + String(launch_date_year);
-
-var today_date = new Date();
-
-var today_date_day = today_date.getDate();
-
-var today_date_month = today_date.getMonth() + 1;
-var today_date_month = pad(today_date_month, 2);
-
-var today_date_year = today_date.getFullYear();
-
-var today_date = String(today_date_day) + "/" + String(today_date_month) + "/" + String(today_date_year);
-
-var dateFirst = new Date(2020, 10, 11);
-var dateSecond = new Date();
-
-// time difference
-var timeDiff = Math.abs(dateSecond.getTime() - dateFirst.getTime());
-
-var DateDiff = {
-    inDays: function(d1, d2) {
-        var t2 = d2.getTime();
-        var t1 = d1.getTime();
-
-        return parseInt((t2 - t1)/(24 * 3600 * 1000));
-    },
-
-    inWeeks: function(d1, d2) {
-        var t2 = d2.getTime();
-        var t1 = d1.getTime();
-
-        return parseInt((t2 - t1) / ( 24 * 3600 * 1000 * 7));
-    },
-
-    inMonths: function(d1, d2) {
-        var d1Y = d1.getFullYear();
-        var d2Y = d2.getFullYear();
-        var d1M = d1.getMonth() + 1;
-        var d2M = d2.getMonth();
-
-        return (d2M + 12 * d2Y)-(d1M + 12 * d1Y);
-    },
-
-    inYears: function(d1, d2) {
-        return d2.getFullYear() - d1.getFullYear();
-    }
-}
-
-var d1 = new Date();
-var d2 = new Date(2020, 10, 11);
-var months = DateDiff.inYears(d1, d2) * 12;
-var month = DateDiff.inMonths(d1, d2) - months;
-//var days = DateDiff.inYears(d1, d2) * 365;
-//var dy = DateDiff.inDays(d1, d2) - days;
-
-console.log("The launch date is: " + launch_date);
-console.log("Today is: " + today_date);
-</script>
-
+<script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
+<script src="https://diario.netlify.app/cdn/js/Search.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Tabs.js"></script>
 <script src="https://diario.netlify.app/cdn/js/Redirect.js" onLoad="Rodar();"></script>
+<script src="https://diario.netlify.app/cdn/js/ShowHide.js"></script>
+<script src="https://diario.netlify.app/cdn/js/SideMenu.js"></script>
 <script src="https://diario.netlify.app/cdn/js/Set Revised Date.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Open Chapter By Keys.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
-<body>
+<body><center>
+<div class="w3-animate-zoom">
+<div id="myDIV" class="w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
+<span title="Read story" alt="Read story"><a href="#desertisland-read story"><button id="button1" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-read story')"><h2>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-black">[New 1]</span></h2></button></a></span>
+<span title="Readers" alt="Readers"><a href="#desertisland-readers"><button id="button2" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-readers')"><h2>Readers: <i class="fas fa-book-reader"></i> <span class="w3-text-red"><i class="fas fa-heart"></i></span> ❤️ <span class="w3-text-black"><i class="fas fa-smile-beam"></i></span> 😊</h2></button></a></span>
+<span title="Comment" alt="Comment"><a href="#desertisland-comment"><button id="button3" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-comment')"><h2>Comment: <i class="fas fa-comments"></i></h2></button></a></span>
+<span title="Write" alt="Write"><a href="#desertisland-write"><button id="button4" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-write')"><h2>Write: <i class="fas fa-pen"></i></h2></button></a></span>
+<span title="Stories" alt="Stories"><a href="#desertisland-stories"><button id="button5" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-stories')"><h2>Stories: <span class="w3-text-black">5</span> <i class="fas fa-book"></i></h2></button></a></span>
+<br />
+<button class="w3-btn yellow-sand_bg borderbtn mobileHide" style="border-radius: 50px;" onclick="buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button>
+</div>
+<div class="w3-bar" style="position:fixed;float:right;">
+<button id="ShowButton" class="w3-btn yellow-sand_bg borderbtn mobileHide" style="display:none;float:right;border-radius: 50px;" onclick="buttons2();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
+</div>
+
+<div id="mySidenav" class="sidenav mobileShow ">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-times-circle"></i></a>
+<h2 class="mobileShow w3-text-black yellow-sand_bg">Mobile button menu: </h2>
+<a href="#desertisland-read storym" onclick="closeNav()"><button id="button1" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-read storym')"><h4>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-black">[New 1]</span></h4></button></a>
+<a href="#desertisland-readersm" onclick="closeNav()"><button id="button2" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-readersm')"><h4>Readers: <i class="fas fa-book-reader"></i> <span class="w3-text-red"><i class="fas fa-heart"></i></span> ❤️ <span class="w3-text-black"><i class="fas fa-smile-beam"></i></span> 😊</h4></button></a>
+<a href="#desertisland-commentm" onclick="closeNav()"><button id="button3" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-commentm')"><h4>Comment: <i class="fas fa-comments"></i></h4></button></a>
+<a href="#desertisland-writem" onclick="closeNav()"><button id="button4" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-writem')"><h4>Write: <i class="fas fa-pen"></i></h4></button></a>
+<a href="#desertisland-storiesm" onclick="closeNav()"><button id="button5" class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('desertisland-storiesm')"><h4>Stories: <span class="w3-text-black">5</span> <i class="fas fa-book"></i></h4></button></a>
+</div>
+<button id="ShowMenu" class="w3-btn yellow-sand_bg borderbtn mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="openNav()"><h2><i class="fas fa-bars"></i></h2></button>
+
+</div>
+
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<div style="background-color:black;margin-left:5%;margin-right:5%;border-width:4px;border-color:#ffffb3;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;"><h2 class="yellow-sand_text w3-animate-zoom"><p><br /><b>Desert Island: <i class="fas fa-book"></i></b><br /><br /><p></h2></div>
+<hr class="yellow-sand_hr" />
+<img src="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" width="60%" class="yellow-sand_text mobileHide" style="border-width:3px;border-color:w3-black;border-style:solid;border-radius: 50px;" />
+<div class="mobileHide"><button class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg')"><h4>Image link: <i class="fas fa-images"></i></h4></button></div>
+<img src="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" width="100%" class="yellow-sand_text mobileShow" style="border-width:3px;border-color:w3-black;border-style:solid;border-radius: 50px;" />
+<div class="mobileShow"><button class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg')"><h4>Image link: <i class="fas fa-images"></i></h4></button></div>
+
+<h4 class="yellow-sand_text" style="margin-left:11%;margin-right:11%;">Synopsis: <i class="fas fa-scroll"></i> "A boy was on a cruise with his parents, suddenly the ship was shipwrecked.<br />He wakes up and finds himself in a strange island, without humans there, only water and trees.<br />He needs to remember what he learned in able to survive in that dangerous island.<br />So he can get back to civilization."<br /></h4>
+<h4 class="yellow-sand_text">
+Author: <span class="w3-text-orange">Izaque Sanvezzo (stake2)<br /></span>
+Chapters: <span class="w3-text-orange">1<span class="w3-text-orange"> [New!]</span></span><br />
+Readers: <span class="w3-text-orange">1 <i class="fas fa-book-reader"></i></span><br />
+Date: <span class="w3-text-orange">23/10/2016</span><br />
+Status: <span class="w3-text-orange">[Writing]</span></h4><br />
+</div>
 
 
+<a name="desertisland-read story"></a>
+<div id="desertisland-read story" class="city mobileHide" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide w3-text-black yellow-sand_bg" style="margin:10%;border-width:3px;border-color:black;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-black">[New 1]</span></b><br /><br /><p></p></h2></div><hr class="blackhr" />
+<h4><b>
+<div class="w3-animate-zoom">
+<div class="shakesidetoside">
+<a href="#chapter-1" title="1 - The Shipwreck, the hatchet"><button class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-1');">1 - The Shipwreck, the hatchet <span class="w3-text-black">[New!]</span></button></a> 
+</div></div>
+</b></h4>
+</div>
+</h2>
+</div>
 
+<a name="desertisland-read storym"></a>
+<div id="desertisland-read storym" class="city mobileShow" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow w3-text-black yellow-sand_bg" style="margin:10%;border-width:3px;border-color:black;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-black">[New 1]</span></b><br /><br /><p></p></h2></div><hr class="blackhr" />
+<h4><b>
+<div class="w3-animate-zoom">
+<div class="shakesidetoside">
+<a href="#chapter-1" title="1 - The Shipwreck, the hatchet"><button class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" onclick="openCity('chapter-1');">1 - The Shipwreck, the hatchet <span class="w3-text-black">[New!]</span></button></a> 
+</div></div>
+</b></h4>
+</div>
+</h4>
+</div>
 
+<a name="desertisland-readers"></a>
+<div id="desertisland-readers" class="city mobileHide" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide w3-text-black yellow-sand_bg" style="margin:10%;border-width:3px;border-color:black;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Readers: <i class="fas fa-book-reader"></i> <span class="w3-text-red"><i class="fas fa-heart"></i></span> ❤️ <span class="w3-text-black"><i class="fas fa-smile-beam"></i></span> 😊</b><br /><br /><p></p></h2></div><hr class="blackhr" />
+<h2 class=" w3-animate-zoom mobileHide"><span class="w3-text-black">1</span> - [No Readers - Sem Leitores]</h2>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-<div class="w3-display-middle" style="text-align:center!important;">
-<h1 class="w3-jumbo w3-animate-top">Coming soon:<br /></h1>
-<h3 class="w3-jumbo w3-animate-top">The new story of Izaque Sanvezzo.</h3>
-<hr class="w3-border-grey" style="margin:auto;width:40%">
-<h3 class="w3-center"><span id="launch_date">1</span> month until a big reveal...<br />
-	Prepare your boats..</h3>
+<h4 class=" w3-animate-zoom mobileShow"><span class="w3-text-black">1</span> - [No Readers - Sem Leitores]</h4>
+</div>
+</h2>
+</div>
+
+<a name="desertisland-readersm"></a>
+<div id="desertisland-readersm" class="city mobileShow" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow w3-text-black yellow-sand_bg" style="margin:10%;border-width:3px;border-color:black;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Readers: <i class="fas fa-book-reader"></i> <span class="w3-text-red"><i class="fas fa-heart"></i></span> ❤️ <span class="w3-text-black"><i class="fas fa-smile-beam"></i></span> 😊</b><br /><br /><p></p></h2></div><hr class="blackhr" />
+<h2 class=" w3-animate-zoom mobileHide"><span class="w3-text-black">1</span> - [No Readers - Sem Leitores]</h2>
+
+<h4 class=" w3-animate-zoom mobileShow"><span class="w3-text-black">1</span> - [No Readers - Sem Leitores]</h4>
+</div>
+</h4>
+</div>
+
+<a name="desertisland-comment"></a>
+<div id="desertisland-comment" class="city mobileHide" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide w3-text-black yellow-sand_bg" style="margin:10%;border-width:3px;border-color:black;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Comment: <i class="fas fa-comments"></i></b><br /><br /><p></p></h2></div><hr class="blackhr" />
+<h4>
+<b>
+<div class="w3-animate-zoom">
+
+<div class="mobileHide">
+<form name="desert_island-comment" method="POST" data-netlify="true">
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<textarea type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
+</span><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Say what you think about the story:</b><br />
+<textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
+<h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
+</span>
+</form>
+</div>
+
+<div class="mobileShow">
+<form name="desert_island-comment" method="POST" data-netlify="true">
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<textarea type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
+</span><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Say what you think about the story:</b><br />
+<textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea> 
+<h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
+</span>
+</form>
+</div>
+
+</div>
+
+</b>
+</h4>
+
+</div>
+</h2>
+</div>
+
+<a name="desertisland-commentm"></a>
+<div id="desertisland-commentm" class="city mobileShow" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow w3-text-black yellow-sand_bg" style="margin:10%;border-width:3px;border-color:black;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Comment: <i class="fas fa-comments"></i></b><br /><br /><p></p></h2></div><hr class="blackhr" />
+<h4>
+<b>
+<div class="w3-animate-zoom">
+
+<div class="mobileHide">
+<form name="desert_island-comment" method="POST" data-netlify="true">
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<textarea type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
+</span><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Say what you think about the story:</b><br />
+<textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
+<h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
+</span>
+</form>
+</div>
+
+<div class="mobileShow">
+<form name="desert_island-comment" method="POST" data-netlify="true">
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<textarea type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
+</span><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Say what you think about the story:</b><br />
+<textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea> 
+<h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
+</span>
+</form>
+</div>
+
+</div>
+
+</b>
+</h4>
+
+</div>
+</h4>
+</div>
+
+<a name="desertisland-write"></a>
+<div id="desertisland-write" class="city mobileHide" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide w3-text-black yellow-sand_bg" style="margin:10%;border-width:3px;border-color:black;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Write: <i class="fas fa-pen"></i></b><br /><br /><p></p></h2></div><hr class="blackhr" />
+<h4>
+<div class="w3-animate-zoom">
+
+<div class="mobileHide">
+<form name="desert_island-write" method="POST" data-netlify="true">
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<textarea type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
+</span><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Write the Chapter:</b><br />
+<textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea> 
+<h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
+</span>
+</form>
+</div>
+
+<div class="mobileShow">
+<form name="desert_island-write" method="POST" data-netlify="true">
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<textarea type="text" name="desert_island-name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
+</span><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Write the Chapter:</b><br />
+<textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea> 
+<h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
+</span>
+</form>
+</div>
+
+</div>
+</h4>
+</div>
+</h2>
+</div>
+
+<a name="desertisland-writem"></a>
+<div id="desertisland-writem" class="city mobileShow" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow w3-text-black yellow-sand_bg" style="margin:10%;border-width:3px;border-color:black;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Write: <i class="fas fa-pen"></i></b><br /><br /><p></p></h2></div><hr class="blackhr" />
+<h4>
+<div class="w3-animate-zoom">
+
+<div class="mobileHide">
+<form name="desert_island-write" method="POST" data-netlify="true">
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<textarea type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
+</span><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Write the Chapter:</b><br />
+<textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea> 
+<h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
+</span>
+</form>
+</div>
+
+<div class="mobileShow">
+<form name="desert_island-write" method="POST" data-netlify="true">
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Name:</b><br />
+<textarea type="text" name="desert_island-name" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea>
+</span><br />
+<span class="w3-btn yellow" style="border-radius: 50px;"><b>Write the Chapter:</b><br />
+<textarea type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;"></textarea> 
+<h2><button type="submit" class="w3-btn yellow-sand_bg" style="float:right;margin-top:-10px;border-radius: 50px;"><i class="fas fa-paper-plane"></i></button></h2>
+</span>
+</form>
+</div>
+
+</div>
+</h4>
+</div>
+</h4>
+</div>
+
+<a name="desertisland-stories"></a>
+<div id="desertisland-stories" class="city mobileHide" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide w3-text-black yellow-sand_bg" style="margin:10%;border-width:3px;border-color:black;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Stories: <span class="w3-text-black">5</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="blackhr" />
+
+<div class="w3-animate-zoom"><div class="mobileHide">
+<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="650"><br /><br /></a><br /><br />
+
+<a class="w3-btn borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h2 class="w3-text-blue"><b>SpaceLiving</b></h2><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="650"><br /><br /></a><br /><br />
+
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/ENUS/Cover/1.png" width="650"><br /><br /></a><br /><br />
+
+<a class="w3-btn borderbtn cyan-water_bg" href="https://diario.netlify.app/desert_island/" style="border-radius: 50px;"><h2 class="cyan-water_text_dark"><b>Desert Island</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" width="650"><br /><br /></a><br /><br /> 
+
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app/Lonely%20Stories/" style="border-radius: 50px;"><h2><b>Lonely Stories</b></h2><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="650"><br /><br /></a><br />
+</div>
+<br />
+
+<div class="mobileShow">
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="350" height="210"><br /><br /></a><br /><br />
+
+<a class="w3-btn  borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h4 class="w3-text-blue"><b>SpaceLiving</b></h4><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="320" height="230"><br /><br /></a><br /><br />
+
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/ENUS/Cover/1.png" width="290" height="190"><br /><br /></a><br /><br />
+
+<a class="w3-btn borderbtn cyan-water_bg" href="https://diario.netlify.app/desert_island/" style="border-radius: 50px;"><h4 class="cyan-water_text_dark"><b>Desert Island</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" width="650"><br /><br /></a><br /><br />
+
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app/Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Lonely Stories</b></h4><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="290" height="190"><br /><br /></a><br />
+</div>
+<br />
+
+</div>
+</div>
+</h2>
+</div>
+
+<a name="desertisland-storiesm"></a>
+<div id="desertisland-storiesm" class="city mobileShow" style="display:none;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow w3-text-black yellow-sand_bg" style="margin:10%;border-width:3px;border-color:black;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2><p></p><br /><b>Stories: <span class="w3-text-black">5</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="blackhr" />
+
+<div class="w3-animate-zoom"><div class="mobileHide">
+<a class="w3-btn  borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="650"><br /><br /></a><br /><br />
+
+<a class="w3-btn borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h2 class="w3-text-blue"><b>SpaceLiving</b></h2><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="650"><br /><br /></a><br /><br />
+
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h2 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/ENUS/Cover/1.png" width="650"><br /><br /></a><br /><br />
+
+<a class="w3-btn borderbtn cyan-water_bg" href="https://diario.netlify.app/desert_island/" style="border-radius: 50px;"><h2 class="cyan-water_text_dark"><b>Desert Island</b></h2><img src="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" width="650"><br /><br /></a><br /><br /> 
+
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app/Lonely%20Stories/" style="border-radius: 50px;"><h2><b>Lonely Stories</b></h2><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="650"><br /><br /></a><br />
+</div>
+<br />
+
+<div class="mobileShow">
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/pequenata/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Life of Littletato</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/Cover/1.png" width="350" height="210"><br /><br /></a><br /><br />
+
+<a class="w3-btn  borderbtn sl3 shakesidetoside" href="https://diario.netlify.app/new_world/spaceliving/" style="border-radius: 50px;"><h4 class="w3-text-blue"><b>SpaceLiving</b></h4><img src="https://diario.netlify.app/cdn/img/SpaceLiving Logo.jpg" width="320" height="230"><br /><br /></a><br /><br />
+
+<a class="w3-btn borderbtn bg shakesidetoside" href="https://diario.netlify.app/nazzevo/" style="border-radius: 50px;"><h4 class="darkpqnttext shakesidetoside"><b>The Story of the Nazzevo Brothers</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Nazzevo/Capas/ENUS/Cover/1.png" width="290" height="190"><br /><br /></a><br /><br />
+
+<a class="w3-btn borderbtn cyan-water_bg" href="https://diario.netlify.app/desert_island/" style="border-radius: 50px;"><h4 class="cyan-water_text_dark"><b>Desert Island</b></h4><img src="https://diario.netlify.app/cdn/img/Stories/Desert Island/Capa Original.jpg" width="650"><br /><br /></a><br /><br />
+
+<a class="w3-btn borderbtn darksl lstext shakesidetoside" href="https://diario.netlify.app/Lonely%20Stories/" style="border-radius: 50px;"><h4><b>Lonely Stories</b></h4><img src="https://diario.netlify.app/cdn/img/Lonely Stories.jpg" width="290" height="190"><br /><br /></a><br />
+</div>
+<br />
+
+</div>
+</div>
+</h4>
+</div>
+
+<style>
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+<div id="chapters-div">
+
+<a name="chapter-1"></a>
+<div id="chapter-1" class="city w3-text-black yellow-sand_bg" style="display:none;margin:10%;border-width:3px;border-color:bg;border-style:solid;border-radius: 50px;">
+<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<br />
+<div class="mobileHide"><h2 class="w3-text-black yellow-sand_bg" style="border-radius: 250px;"><div class="w3-animate-zoom"><br /><b>You're reading: Desert Island</b><br /><b>Chapter: 1 - The Shipwreck, the hatchet</b><span class="w3-text-black"><b> [New!]</b></span><br /></div></h2></div>
+<div class="mobileShow"><h4 class="w3-text-black yellow-sand_bg" style="border-radius: 250px;"><div class="w3-animate-zoom"><br /><b>You're reading: Desert Island</b><br /><b>Chapter: 1 - The Shipwreck, the hatchet</b><span class="w3-text-black"><b> [New!]</b></span></div></h4></div>
+
+<h5 class="w3-text-black yellow-sand_bg" style="margin:5%;text-align:left;"><hr class="blackhr" />
+<a href="#desertisland-read story"><button class="w3-btn yellow-sand_bg borderbtn" style="float:right;margin-right:15px;border-radius: 50px;" onclick="openCity('desertisland-read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<br /><br /><br /><br />
+<div class="w3-animate-zoom">
+<div id="chapter-text-1">
+I was a boy that always loved to watch videos of survivalism, bushcraft, things about nature, and survival.
+<br />I lived with my parents and used to go to school, lived a normal life, I was fifteen at the time.
+<br />I loved nature, trees, plants, and leaves, I liked to go to beaches and forests when traveling with my father and my mother.
+<br />It was always so relaxing to go to the beaches and forests, feel the wind, nature, breathe the pure air.
+<br />I wanted to try to make nature things some times, make an ax, a boat, hunt animals, catch fish, cook food in nature.
+<br />Would be so fun to do that, just thinking about it makes me excited, that is my dream, to survive in nature.
+<br />
+<br />One day my parents and I went on a ship trip, everything was going well, it was a 20-night trip.
+<br />People were distracted by vibe and loud music, drinking, and talking.
+<br />The ship's commander was drunk and distracted too, the ship was going towards some rocks, neither the people nor the commander noticed it, but I did.
+<br />I was very scared, I tried to warn someone, shouting: "Look ahead! caution!"
+<br />I pulled on my dad's shirt but he did not hear me, he just told me to go watch some videos on his phone.
+<br />Then another person heard me and turned the ship sharply, moving the steering wheel, the ship grazed the rock.
+<br />And then it fell on its side, causing passengers to fall into the water, creating big bumps in the water, some managed to hold on.
+<br />One of these was my father, he ran to the other side of the ship with me and held on to keep from falling, holding my hand with his other hand next.
+<br />Suddenly my hand slipped and he could not hold it anymore, he unintentionally released it and tried to hold it back.
+<br />I remember seeing him shouting something, but the loud noise of the ship and the people shouting did not let me hear him, I saw his mouth move but I did not hear anything.
+<br />So I fell off the ship, looking at my father and wishing he could save me.
+<br />I was very scared at that time, everything seemed to be going in slow motion before my eyes, the sight of the ship turning and people falling.
+<br />I hit my back in the water and tried to swim higher, I looked at my father and saw him screaming in despair and looking at me, I thought that everything was lost and that I was going to die right there.
+<br />My body started to sink in the water and I started to drown myself, my lungs filled with water.
+<br />I think a lot of people died there, I hope my father and mother are alive.
+<br />
+<br />After a while, I wake up on a desert island, there is no one around me, it is the day, I open my eyes, looking at the blue sky.
+<br />I hear birds chirping in the distance and I see them flying, I hear the sound of trees swaying in the light wind.
+<br />The wonderful and relaxing sound of the water hitting the island's shore gets to my ears, the ocean moving and breathing calmly.
+<br />Feeling in peace, I close my eyes to relax, to hear the beautiful and relaxing sounds of nature, it is so good to be here.
+<br />I remember what happened before when the ship toppled over and many people drowned.
+<br />Lying on the beach, I look at the blue sky, with few clouds, the cool breeze hitting me, I feel sad without my parents.
+<br />My body feels hunger, my belly growls, I leave my hand on top of it and think of barbecue meat.
+<br />I know I have to get up, or else I would die in here, not like what happened at the ship.
+<br />Getting up, I clean my clothes and my face, which were soiled with sand.
+<br />
+<br />While walking around the island looking for people, I only find birds, rocks, sand, trees, and some soybeans and bamboo.
+<br />I cry for help but I can not hear anything except the echo of my voice at the island.
+<br />I remember the days when I watched videos of survivalism, survival, and bushcraft.
+<br />Thinking of a specific channel on the website that watched those videos.
+<br />It was called "Primitive Technology", I learned many things about nature, survival, and bushcraft with him.
+<br />There were videos of bushcraft and nature craft, they were so relaxing, no talking, only actions, nature.
+<br />There were farm videos, videos of knives, axes, spears, bows, houses, huts, a lot of things.
+<br />I already learned how to make ropes out of leaf fibers, plants, and other things, but I never tried to do it.
+<br />
+<br />I think of trying to make a rope out of sheet fiber, remembering the things I learned from the videos.
+<br />Then I walk a little more and go inside the forest, I find a small stone that is shaped loosely like a knife.
+<br />I find a big stone and soak it with water from a small river that is nearby.
+<br />So I sit on the ground with the stone that looks like a knife and I start carving it until it looks like a sharp knife.
+<br />
+<br />After that I get up and look for a thick tree, I start cutting it in half with the knife, hitting the knife with a thick tree branch.
+<br />Then I cut it in half to make an ax handle, I take the handle to the same place I was and sit there.
+<br />I start to make a hole in the handle so I can put a sharp stone inside it.
+<br />
+<br />After making the hole, I look for a rectangular stone and find one, taking it to the place where the ax handle was.
+<br />I use the same big, wet stone as before to polish the rectangular stone.
+<br />After doing this, I place the rectangular stone in the handle hole and hit it with a piece of tree, to adjust it and fasten it on the handle.
+<br />
+<br />After making the ax, I pick it up and walk to the coast of the island where there is sand.
+<br />I leave the ax on the ground and start bringing stones from the forest to the sand.
+<br />Writing the word "Help" in Brazilian Portuguese on the sand using the stones, then I take my ax back.
+<br />After that, I think of my parents, I wonder if they are looking for me, I feel sad to be without them.
+<br />I miss them so much, I wanted to be with them right now, even if I am happy here, surviving, making nature craft.
+<br />Lying on the sand, I leave my ax beside me and watch the waves of the water move.
+<br />I see an ocean so big and vast, I see other islands in the distance.
+<br />I want to visit those islands one day, I think it would be cool to do that.
+<br />Maybe there are other people there, surviving like me, waiting for someone to come by, waiting for help.
+<br />"What do these islands hold for me? What will I discover there? Maybe just animals and nature... maybe more.
+<br />Maybe something more special, rare, and exciting, I don't know, but I need to go and take a look someday.
+<br />I have the curiosity to go there and look, because I like to learn new things and to discover," I think to myself.
+<br /><br />Made in: 23/03/2020.</div>
+</div>
+<br /><br />
+<div class="mobileHide">
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" id="commentbtn1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i> (2)</b></h3></button>
+</div>
+<div class="mobileHide">
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" id="readbtn1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h3></button>
+</div>
+<div class="mobileShow"><br /><br /><br /></div>
+<div class="mobileHide"><br /><br /><br /><br /><br /></div>
+<div style="text-align:center;">
+<div class="w3-animate-zoom">
+<span class="w3-text-black yellow-sand_bg">
+<br /><b>You're reading: Desert Island</b><br /><b>Chapter: 1 - The Shipwreck, the hatchet</b>
+<b><span class="w3-text-black">[New!]</span></b>
+<br /></span>
+</div>
+</div>
+
+<div class="mobileShow"><br /><br />
+</div>
+<div class="mobileShow">
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" id="commentbtn1m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i> (2)</b></h4></button>
+<br /><br />
+</div>
+<div class="mobileShow">
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" id="readbtn0m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-0m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
+</div>
+<br /><div class="mobileShow"><br /><br />
+</div>
+</h5>
+</div>
+</div>
+
+<a name="modal-read-1"></a>
+<div id="modal-read-1" class="modal" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom"><div class="modal-content w3-black" style="border-radius: 50px;">
+<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide close" style="border-radius: 50px;" id="closereadmodal1">&times;</button>
+<form name="desert_island-read-1" method="POST" data-netlify="true" style="border-radius: 50px;">
+<div class="w3-animate-zoom"><h2 class="yellow-sand_text"><b>I read the Chapter: 1 - The Shipwreck, the hatchet</b></h2></div>
+<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="yellow-sand_text"><b>Your name:</b></h2></div>
+<input type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
+</div><input type="text" name="read" value="I read the Chapter: 1 - The Shipwreck, the hatchet" class="yellow-sand_bg w3-input" style="display:none;border-radius: 50px;">
+<br /><br /><br /><br /></form>
+</div>
+</div>
+</div>
+</div>
+
+<a name="modal-read-1m"></a>
+<div id="modal-read-1m" class="modal" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom"><div class="modal-content w3-black" style="border-radius: 50px;">
+<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow close" style="border-radius: 50px;" id="closereadmodal1m">&times;</button><br /><br /><br />
+<form name="desert_island-read-1" method="POST" data-netlify="true" style="border-radius: 50px;">
+<div class="w3-animate-zoom"><h4 class="yellow-sand_text"><b>I read the Chapter: 1 - The Shipwreck, the hatchet</b></h4></div>
+<div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="yellow-sand_text"><b>Your name:</b></h4></div>
+<input type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
+</div><input type="text" name="read" value="I read the Chapter: 1 - The Shipwreck, the hatchet" class="yellow-sand_bg w3-input" style="display:none;border-radius: 50px;">
+<br /><br /><br /><br /></form>
+</div>
+</div>
 </div>
 </div>
 
 <script>
-launch_date_div = document.getElementById("launch_date");
-launch_date_div.innerHTML = month;
-console.log("Replaced the date with the difference between the two dates.");
+var readmodal1 = document.getElementById("modal-read-1");
+
+var readbtn1 = document.getElementById("readbtn1");
+
+var readclosebtn1 = document.getElementById("closereadmodal1");
+
+readbtn1.onclick = function() {
+	readmodal1.style.display = "block";
+}
+
+readclosebtn1.onclick = function() {
+	readmodal1.style.display = "none";
+}
+
+readmodal1.onclick = function(event) {
+	if (event.target == readmodal1) {
+		readmodal1.style.display = "none";
+	}
+}
+</script>
+<script>
+var readmodal1m = document.getElementById("modal-read-1m");
+
+var readbtn1m = document.getElementById("readbtn1m");
+
+var readclosebtn1m = document.getElementById("closereadmodal1m");
+
+readbtn1m.onclick = function() {
+	readmodal1m.style.display = "block";
+}
+
+readclosebtn1m.onclick = function() {
+	readmodal1m.style.display = "none";
+}
+
+readmodal1m.onclick = function(event) {
+	if (event.target == readmodal1m) {
+		readmodal1m.style.display = "none";
+	}
+}
 </script>
 
+<a name="modal-comment-1"></a>
+<div id="modal-comment-1" class="modal" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content w3-black" style="border-radius: 50px;">
+<div class="mobileHide">
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide close" id="closecommentmodal1" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom"><h2 class="yellow-sand_text"><p></p><br /><b>Comment in the Chapter 1 - The Shipwreck, the hatchet <i class="fas fa-comments"></i></b></h2></div><hr class="blackhr" />
+<form name="desert_island-comment-1" method="POST" data-netlify="true" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2 class="yellow-sand_text"><b>Your name:</b></h2></div>
+<input type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;">
+<br />
+<div class="w3-animate-zoom"><h2 class="yellow-sand_text"><b>Say what you think about the story:</b></h2></div>
+<input type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
+</div>
+</form>
+</div>
+<br /><br /><br /><br />
+</div>
+</div>
+</div>
+
+<a name="modal-comment-1m"></a>
+<div id="modal-comment-1m" class="modal" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content w3-black" style="border-radius: 50px;">
+<div class="mobileShow">
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow close" id="closecommentmodal1m" style="border-radius: 50px;">&times;</button><br /><br /><br />
+<form name="desert_island-comment-1" method="POST" data-netlify="true" style="border-radius: 50px;">
+<div class="w3-animate-zoom"><h4 class="yellow-sand_text"><p></p><br /><b>Comment in the Chapter 1 - The Shipwreck, the hatchet <i class="fas fa-comments"></i></b></h4></div><hr class="blackhr" />
+<div style="margin:3%;">
+<br />
+<div class="w3-animate-zoom"><h4 class="yellow-sand_text"><b>Your name:</b></h4></div>
+<input type="text" name="name" class="yellow-sand_bg w3-input" style="border-radius: 50px;">
+<br />
+<div class="w3-animate-zoom"><h4 class="yellow-sand_text"><b>Say what you think about the story:</b></h4></div>
+<input type="text" name="comment" class="yellow-sand_bg w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
+</div>
+</form>
+</div>
+<br /><br /><br /><br />
+</div>
+</div>
+</div>
+
+<script>
+var commentmodal1 = document.getElementById("modal-comment-1");
+
+var commentbtn1 = document.getElementById("commentbtn1");
+
+var commentclosebtn1 = document.getElementById("closecommentmodal1");
+
+commentbtn1.onclick = function() {
+	commentmodal1.style.display = "block";
+}
+
+commentclosebtn1.onclick = function() {
+	commentmodal1.style.display = "none";
+}
+
+commentmodal1.onclick = function(event) {
+	if (event.target == commentmodal1) {
+		commentmodal1.style.display = "none";
+	}
+}
+</script>
+<script>
+var commentmodal1m = document.getElementById("modal-comment-1m");
+
+var commentbtn1m = document.getElementById("commentbtn1m");
+
+var commentclosebtn1m = document.getElementById("closecommentmodal1m");
+
+commentbtn1m.onclick = function() {
+	commentmodal1m.style.display = "block";
+}
+
+commentclosebtn1m.onclick = function() {
+	commentmodal1m.style.display = "none";
+}
+
+commentmodal1m.onclick = function(event) {
+	if (event.target == commentmodal1m) {
+		commentmodal1m.style.display = "none";
+	}
+}
+</script>
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+<center>
+<a href="#Websites tab"><button class="w3-btn yellow-sand_bg borderbtn" style="border-radius: 50px;" alt="Websites tab" title="Websites tab" onclick="openCity('Websites tab')"><h2>Sites: <i class="fas fa-globe-americas"></i></h2></button></a>
+</center>
+<a name="Websites tab"></a>
+<br />
+<div id="Websites tab" class="city" style="display:none;border-radius: 50px;">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<div class="mobileHide" style="border-radius: 50px;">
+<h4 class="yellow-sand_text yellow-sand_bg" style="margin:10%;border-width:3px;border-color:black;border-style:solid;border-radius: 50px;">
+<div style="margin:3%;">
+<center>
+<div class="w3-animate-zoom">
+<h2 class="mobileHide w3-text-black" style="border-radius: 50px;"><p></p><br /><b>Sites: <span class="w3-text-blue"><span class="borderbtnblue">24</span></span> <i class="fas fa-globe-americas"></i></b><br /><br /><p></p></h2>
+</div>
+<hr class="mobileHide blackhr" />
+<div class="w3-animate-zoom">
+<h4 class="yellow-sand_bg">
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Prints Of Computer Blocks" style="border-radius: 50px;" onclick="window.open('https://printsofcomputer.netlify.app');"><h2>Prints Of Computer Blocks</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Diary 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/📘/');"><h2>Diary 📘</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="My Little Pony 🦄" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/my_little_pony 🦄/');"><h2>My Little Pony 🦄</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Watch History 👁" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/watch 👁/');"><h2>Watch History 👁</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Music 🎵" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/music 🎵/');"><h2>Music 🎵</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Games 🎮" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/games 🎮/');"><h2>Games 🎮</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Foobar_Albums 🎵" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/foobar_albums 🎵/');"><h2>Foobar_Albums 🎵</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Terraria_Talk 🎮" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/terraria_talk 🎮/');"><h2>Terraria_Talk 🎮</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Tasks 🗒" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/tasks 🗒/');"><h2>Tasks 🗒</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Things I Do 🗒" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/things_I_do/');"><h2>Things I Do 🗒</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Years 📅" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/years 📅/');"><h2>Years 📅</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="2018 📅" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/2018/');"><h2>2018 📅</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="2019 📅" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/2019/');"><h2>2019 📅</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="2020 📅" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/2020/');"><h2>2020 📅</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Stories 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/stories_historias 📘/');"><h2>Stories 📘</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="New World ⊡" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/new_world ⊡/');"><h2>New World ⊡</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="The Life of Littletato 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/pequenata 📘/');"><h2>The Life of Littletato 📘</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="SpaceLiving 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/new_world ⊡/spaceliving 📘/');"><h2>SpaceLiving 📘</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="The Story of the Nazzevo Brothers 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/nazzevo 📘/');"><h2>The Story of the Nazzevo Brothers 📘</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Desert Island 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/desert_island/');"><h2>Desert Island 📘</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Lonely Stories 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/lonely stories/');"><h2>Lonely Stories 📘</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Mental_Frameworks" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/mental_frameworks/');"><h2>Mental_Frameworks</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Website Template" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/template/');"><h2>Website Template</h2></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileHide" title="Stake2" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/stake2/');"><h2>Stake2</h2></button>
+</h4>
+</div>
+</center>
+</div>
+</h4>
+</div>
+
+<div class="mobileShow">
+<h4 class="yellow-sand_text yellow-sand_bg" style="margin:10%;border-width:3px;border-color:black;border-style:solid;border-radius: 50px;">
+<div class="mobileShow">
+<div style="margin:3%;"></div>
+<center>
+<div class="w3-animate-zoom">
+<h2 class="mobileShow w3-text-black" style="border-radius: 50px;"><p></p><br /><b>Sites: <span class="w3-text-blue"><span class="borderbtnblue">24</span></span> <i class="fas fa-globe-americas"></i></b><br /><br /><p></p></h2>
+</div>
+<hr class="mobileShow blackhr" />
+<div class="w3-animate-zoom">
+<h4 class="yellow-sand_bg">
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Prints Of Computer Blocks" style="border-radius: 50px;" onclick="window.open('https://printsofcomputer.netlify.app');"><h4>Prints Of Computer Blocks</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Diary 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/📘/');"><h4>Diary 📘</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="My Little Pony 🦄" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/my_little_pony 🦄/');"><h4>My Little Pony 🦄</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Watch History 👁" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/watch 👁/');"><h4>Watch History 👁</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Music 🎵" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/music 🎵/');"><h4>Music 🎵</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Games 🎮" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/games 🎮/');"><h4>Games 🎮</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Foobar_Albums 🎵" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/foobar_albums 🎵/');"><h4>Foobar_Albums 🎵</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Terraria_Talk 🎮" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/terraria_talk 🎮/');"><h4>Terraria_Talk 🎮</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Tasks 🗒" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/tasks 🗒/');"><h4>Tasks 🗒</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Things I Do 🗒" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/things_I_do/');"><h4>Things I Do 🗒</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Years 📅" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/years 📅/');"><h4>Years 📅</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="2018 📅" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/2018/');"><h4>2018 📅</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="2019 📅" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/2019/');"><h4>2019 📅</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="2020 📅" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/2020/');"><h4>2020 📅</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Stories 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/stories_historias 📘/');"><h4>Stories 📘</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="New World ⊡" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/new_world ⊡/');"><h4>New World ⊡</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="The Life of Littletato 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/pequenata 📘/');"><h4>The Life of Littletato 📘</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="SpaceLiving 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/new_world ⊡/spaceliving 📘/');"><h4>SpaceLiving 📘</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="The Story of the Nazzevo Brothers 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/nazzevo 📘/');"><h4>The Story of the Nazzevo Brothers 📘</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Desert Island 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/desert_island/');"><h4>Desert Island 📘</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Lonely Stories 📘" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/lonely stories/');"><h4>Lonely Stories 📘</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Mental_Frameworks" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/mental_frameworks/');"><h4>Mental_Frameworks</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Website Template" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/template/');"><h4>Website Template</h4></button>
+<button class="w3-btn yellow-sand_bg w3-text-black borderbtn mobileShow" title="Stake2" style="border-radius: 50px;" onclick="window.open('https://diario.netlify.app/stake2/');"><h4>Stake2</h4></button>
+</h4>
+</div>
+</center>
+</div>
+</h4>
+</div>
+</div>
+
+<style>
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 684px){
+    .videostyle {
+		width: 350;
+		height: 450;
+	}
+}
+
+button:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shakesidetoside22 0.8s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+span.w3-btn:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shakesidetoside22 0.8s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+.shakesidetoside:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shakesidetoside22 0.8s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+.animationthing {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shakesidetoside22 0.5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+.animationthing2 {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: animatezoom22 0.5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes animatezoom22 {
+  0% {transform: width(5px)} 
+  100% {transform: width(15px)}
+}
+
+@keyframes shakesidetoside22 {
+  0% {transform: translateX(-10px);} 
+  50% {transform: translateX(10px);} 
+  100% {transform: translateX(-10px);} 
+}
+</style>
+
+
+<script>
+function OpenChapter() {
+	var site = window.location;
+	var site2 = '"' + site + '"';
+	var userLang = navigator.language || navigator.userLanguage;
+	var captext1 = "chapter-";
+	
+	if (userLang == "pt-BR" || userLang == "pt-PT") {
+		var captext2 = "ler-capitulo-";
+	}
+
+	else {
+		var captext2 = "read-chapter-";
+	}
+	
+	var first_check_1 = site2.includes(captext2 + "1");
+	var second_check_1 = site2.includes(captext2 + "[1]");
+	var third_check_1 = site2.includes(captext2 + '"' + 1 + '"');
+	var fourth_check_1 = site2.includes(captext2 + "%221%22");
+
+	if (first_check_1 === true || second_check_1 === true || third_check_1 === true || fourth_check_1 === true) {
+		var captext = captext1 + "1";
+		openCity(captext);
+		document.getElementById(captext).scrollIntoView();
+	}
+
+}
+console.log("Open Chapter Script was loaded.");
+
+OpenChapter();
+</script>
+
+<center>
 </body>
 </html>

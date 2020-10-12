@@ -4,14 +4,6 @@ body {
     margin: 0;
     padding: 0;
 } 
-
-.mobileShow { display: none;}
-
-@media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 480px){ 
-    .mobileShow {display: inline;}
-}
  
 .shadow {
   border: 20px solid;
@@ -19,16 +11,8 @@ body {
   box-shadow: 5px 5px #888888;
 }
 
-h1,h2,h3,h4,h5,h6,a,button {
+h1, h2, h3, h4, h5, h6, a, button {
   text-shadow: 2px 2px 5px gray;
-}
- 
-.mobileHide { display: inline; }
-
-@media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 480px){
-   .mobileHide { display: none;}
 }
 
 .mobHide { display: none; }
@@ -252,7 +236,7 @@ h1,h2,h3,h4,h5,h6,a,button {
     box-shadow: 0 15px 17px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 } */
 
-/* End of Top,bottom buttons */
+/* End of Top, Bottom buttons */
 
 .bkbutton {
     border: none;
@@ -498,11 +482,6 @@ input {
 @keyframes animatebottom { 
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
-}
-
-#myDiv {
-  display: none;
-  text-align: center;
 }
 
 .sees {
