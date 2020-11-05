@@ -430,7 +430,7 @@ function Rodar() {
 		}
 	}
 
-	if (titulo == "A New Story Geral" && check == false) {
+	if (titulo == "Desert Island Geral" && check == false) {
 		var lang = "a";
 		var sitename = "Desert_Island";
 
@@ -446,7 +446,7 @@ function Rodar() {
 		}
 	}
 
-	if (titulo == "A New Story" && check == false) {
+	if (titulo == "Desert Island" && check == false) {
 		var lang = "en-US";
 		var sitename = "Desert_Island";
 
@@ -462,7 +462,7 @@ function Rodar() {
 		}
 	}
 
-	if (titulo == "Uma Nova História" && check == false) {
+	if (titulo == "Ilha Deserta" && check == false) {
 		var lang = "pt-BR";
 		var sitename = "Ilha_Deserta";
 
