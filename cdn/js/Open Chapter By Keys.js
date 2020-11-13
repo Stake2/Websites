@@ -1,7 +1,11 @@
 document.addEventListener("keyup", function() {
+	var left_arrow = 37;
+	var right_arrow = 39;
 	var is_ctrl;
 	var is_shift;
 	var is_alt;
+	var supported_keys_array;
+	var modifier_key_is_pressed;
 	var opening_chapter_text;
 	var userLang = navigator.language || navigator.userLanguage;
 
@@ -13,14 +17,31 @@ document.addEventListener("keyup", function() {
 		var chapter_div_text = "chapter-";
 	}
 
-	if (event.keyCode === 37 || event.keyCode === 39) {
+	var active_element = document.activeElement;
+	var chapter_title_text_area = document.getElementById("edit_chapter_title_text_textarea_number_" + ChapterNumber);
+	var chapter_story_text_area = document.getElementById("edit_chapter_story_text_textarea_number_" + ChapterNumber);
+
+	if (event.keyCode === left_arrow || event.keyCode === right_arrow) {
 		event.preventDefault();
 		is_ctrl = !!event.ctrlKey;
 		is_shift = !!event.shiftKey;
 		is_alt = !!event.altKey;
 
-		if (is_alt === true) {
-			if (event.keyCode === 37) {
+		supported_keys_array = [is_ctrl, is_shift, is_alt]
+
+		var i = 0;
+		while (i <= supported_keys_array.length) {
+			modifier_key = supported_keys_array[i];
+
+			if (modifier_key == true) {
+				modifier_key_is_pressed = true;
+			}
+
+			i++;
+		}
+
+		if (modifier_key_is_pressed == true && active_element != chapter_title_text_area && active_element != chapter_story_text_area) {
+			if (event.keyCode === left_arrow) {
 				if (ChapterNumber != 1) {
 					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber - 1) + ".";
 
@@ -30,7 +51,7 @@ document.addEventListener("keyup", function() {
 				}
 			}
 
-			if (event.keyCode === 39) {
+			if (event.keyCode === right_arrow) {
 				if (ChapterNumber != Last_Chapter) {
 					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber + 1) + ".";
 
