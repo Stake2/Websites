@@ -13,21 +13,21 @@ document.addEventListener("keyup", function() {
 		if (is_alt === true) {
 			if (event.keyCode === 37) {
 				if (ChapterNumber != 1) {
-					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber - 1) + "...";
+					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber - 1) + ".";
 
 					console.log(opening_chapter_text);
 					openCity("chapter-" + (ChapterNumber - 1));
-					DefineChapter((ChapterNumber -= 1));
+					DefineChapter((ChapterNumber - 1));
 				}
 			}
 
 			if (event.keyCode === 39) {
 				if (ChapterNumber != Last_Chapter) {
-					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber + 1) + "...";
+					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber + 1) + ".";
 
 					console.log(opening_chapter_text);
 					openCity("chapter-" + (ChapterNumber + 1));
-					DefineChapter((ChapterNumber += 1));
+					DefineChapter((ChapterNumber + 1));
 				}
 			}
 		}
