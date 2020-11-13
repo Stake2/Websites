@@ -27,7 +27,7 @@ document.addEventListener("keyup", function() {
 		is_shift = !!event.shiftKey;
 		is_alt = !!event.altKey;
 
-		supported_keys_array = [is_ctrl, is_shift, is_alt]
+		supported_keys_array = [is_ctrl, is_shift]
 
 		var i = 0;
 		while (i <= supported_keys_array.length) {
@@ -43,7 +43,7 @@ document.addEventListener("keyup", function() {
 		if (modifier_key_is_pressed == true && active_element != chapter_title_text_area && active_element != chapter_story_text_area) {
 			if (event.keyCode === left_arrow) {
 				if (ChapterNumber != 1) {
-					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber - 1) + ".";
+					opening_chapter_text = "Opening chapter number " + (ChapterNumber - 1) + ".";
 
 					console.log(opening_chapter_text);
 					openCity(chapter_div_text + (ChapterNumber - 1));
@@ -53,7 +53,7 @@ document.addEventListener("keyup", function() {
 
 			if (event.keyCode === right_arrow) {
 				if (ChapterNumber != Last_Chapter) {
-					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber + 1) + ".";
+					opening_chapter_text = "Opening chapter number " + (ChapterNumber + 1) + ".";
 
 					console.log(opening_chapter_text);
 					openCity(chapter_div_text + (ChapterNumber + 1));
