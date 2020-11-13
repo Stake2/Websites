@@ -24,12 +24,14 @@ function openCity(evt, cityName) {
 function openCity(cityName) {
 	var i;
 	var x = document.getElementsByClassName("city");
+	var selected_city = document.getElementById(cityName);
 
 	for (i = 0; i < x.length; i++) {
 		x[i].style.display = "none";
     }
 
-	document.getElementById(cityName).style.display = "block";
+	selected_city.style.display = "block";
+	selected_city.scrollIntoView();
 }
 
 console.log("Tabs Script was loaded.");
