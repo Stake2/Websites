@@ -6,8 +6,8 @@ var userLang = navigator.language || navigator.userLanguage;
 
 function DefineChapter(number) {
     ChapterNumber = number;
-	readattribute = $("#readbtnattribute" + ChapterNumber).html();
-	writeattribute = $("#writebtnattribute" + ChapterNumber).html();
+	readattribute = $("#show_story_chapter_text_button_number_" + ChapterNumber).html();
+	writeattribute = $("#edit_story_chapter_button_number_" + ChapterNumber).html();
 }
 
 if (userLang == "pt-BR" || userLang == "pt-PT") {
@@ -22,14 +22,14 @@ else {
 	
 function WriteChapter(ChapterWriteContent) {
     $("#chapter-text-" + ChapterNumber).html(ChapterWriteContent);
-    $("#write-button-" + ChapterNumber).html('<h2><i class="fas fa-book"></i></h2>');
+    $("#write-button-" + ChapterNumber).html('<h3><i class="fas fa-book"></i></h3>');
     $("#write-button-" + ChapterNumber).attr('onclick', 'OpenChapter2(' + readattribute + ');');
 }
 
 function OpenChapter2(ChapterReadContent) {
     openCity(captext1 + '-' + ChapterNumber);
     $("#chapter-text-" + ChapterNumber).html(ChapterReadContent);
-    $("#write-button-" + ChapterNumber).html('<h2><i class="fas fa-pen"></i></h2>');
+    $("#write-button-" + ChapterNumber).html('<h3><i class="fas fa-pen"></i></h3>');
     $("#write-button-" + ChapterNumber).attr('onclick', 'WriteChapter(' + writeattribute + ');');
 }
 
