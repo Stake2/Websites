@@ -3,6 +3,15 @@ document.addEventListener("keyup", function() {
 	var is_shift;
 	var is_alt;
 	var opening_chapter_text;
+	var userLang = navigator.language || navigator.userLanguage;
+
+	if (userLang == "pt-BR" || userLang == "pt-PT") {
+		var chapter_div_text = "capítulo-";
+	}
+
+	else {
+		var chapter_div_text = "chapter-";
+	}
 
 	if (event.keyCode === 37 || event.keyCode === 39) {
 		event.preventDefault();
@@ -16,7 +25,7 @@ document.addEventListener("keyup", function() {
 					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber - 1) + ".";
 
 					console.log(opening_chapter_text);
-					openCity("chapter-" + (ChapterNumber - 1));
+					openCity(chapter_div_text + (ChapterNumber - 1));
 					DefineChapter((ChapterNumber - 1));
 				}
 			}
@@ -26,7 +35,7 @@ document.addEventListener("keyup", function() {
 					opening_chapter_text = "Opening chapter number " + '"' + (ChapterNumber + 1) + ".";
 
 					console.log(opening_chapter_text);
-					openCity("chapter-" + (ChapterNumber + 1));
+					openCity(chapter_div_text + (ChapterNumber + 1));
 					DefineChapter((ChapterNumber + 1));
 				}
 			}
