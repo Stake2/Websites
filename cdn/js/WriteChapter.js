@@ -11,26 +11,30 @@ function DefineChapter(number) {
 }
 
 if (userLang == "pt-BR" || userLang == "pt-PT") {
-	var captext1 = "capítulo";
-	var captext2 = "ler-capitulo-";
+	var chapter_text = "capítulo";
+	var read_chapter_text = "ler-capitulo-";
+	var chapter_text_name = "texto-capítulo-";
+	var write_chapter_button_text = "botão-de-escrever-";
 }
 	
 else {
-	var captext1 = "chapter";
-	var captext2 = "read-chapter-";
+	var chapter_text = "chapter";
+	var read_chapter_text = "read-chapter-";
+	var chapter_text_name = "chapter-text-";
+	var write_chapter_button_text = "write-button-";
 }
 	
 function WriteChapter(ChapterWriteContent) {
-    $("#chapter-text-" + ChapterNumber).html(ChapterWriteContent);
-    $("#write-button-" + ChapterNumber).html('<h3><i class="fas fa-book"></i></h3>');
-    $("#write-button-" + ChapterNumber).attr('onclick', 'OpenChapter2(' + readattribute + ');');
+    $("#" + chapter_text_name + ChapterNumber).html(ChapterWriteContent);
+    $("#w" + write_chapter_button_text + ChapterNumber).html('<h3><i class="fas fa-book"></i></h3>');
+    $("#w" + write_chapter_button_text + ChapterNumber).attr('onclick', 'OpenChapter2(' + readattribute + ');');
 }
 
 function OpenChapter2(ChapterReadContent) {
-    openCity(captext1 + '-' + ChapterNumber);
-    $("#chapter-text-" + ChapterNumber).html(ChapterReadContent);
-    $("#write-button-" + ChapterNumber).html('<h3><i class="fas fa-pen"></i></h3>');
-    $("#write-button-" + ChapterNumber).attr('onclick', 'WriteChapter(' + writeattribute + ');');
+    openCity(chapter_text + '-' + ChapterNumber);
+    $("#" + chapter_text_name + ChapterNumber).html(ChapterReadContent);
+    $("#" + write_chapter_button_text + ChapterNumber).html('<h3><i class="fas fa-pen"></i></h3>');
+    $("#" + write_chapter_button_text + ChapterNumber).attr('onclick', 'WriteChapter(' + writeattribute + ');');
 }
 
 console.log("WriteChapter Script was loaded.");
