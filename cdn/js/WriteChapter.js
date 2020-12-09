@@ -26,8 +26,8 @@ else {
 	
 function WriteChapter(ChapterWriteContent) {
     $("#" + chapter_text_name + ChapterNumber).html(ChapterWriteContent);
-    $("#w" + write_chapter_button_text + ChapterNumber).html('<h3><i class="fas fa-book"></i></h3>');
-    $("#w" + write_chapter_button_text + ChapterNumber).attr('onclick', 'OpenChapter2(' + readattribute + ');');
+    $("#" + write_chapter_button_text + ChapterNumber).html('<h3><i class="fas fa-book"></i></h3>');
+    $("#" + write_chapter_button_text + ChapterNumber).attr('onclick', 'OpenChapter2(' + readattribute + ');');
 }
 
 function OpenChapter2(ChapterReadContent) {
