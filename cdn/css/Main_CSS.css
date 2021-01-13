@@ -127,3 +127,37 @@ button:hover h4 span.w3-text-grey,
 button:hover h4 span.w3-text-yellow {
 	color: black!important;
 }
+
+.mobile_button_sidebar_css {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.mobile_button_sidebar_css a {
+  padding: 6px 6px 6px 26px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.mobile_button_sidebar_css a:hover {
+  color: #f1f1f1;
+}
+
+.mobile_button_sidebar_css a .close_mobile_sidebar_button {
+  position: absolute;
+  top: 0;
+  right: 23px;
+  font-size: 36px;
+  margin-left: 50px;
+}
