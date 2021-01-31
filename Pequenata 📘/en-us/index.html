@@ -23,7 +23,7 @@
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Mobile.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/ImgHover.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Notification.css" />
-<meta name="revised" content="Stake's Enterprisetm, 26/01/2021" />
+<meta name="revised" content="Stake's Enterprisetm, 30/01/2021" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
@@ -34,9 +34,10 @@
 <script src="https://diario.netlify.app/cdn/js/SideMenu.js"></script>
 <script src="https://diario.netlify.app/cdn/js/Set Revised Date.js"></script>
 <script src="https://diario.netlify.app/cdn/js/Open Chapter By Keys.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Change Button Color.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
-<body>
+<body onLoad="Define_Colors_And_Styles();">
 <center>
 
 <div class="w3-animate-zoom">
@@ -44,27 +45,27 @@
 <!--- Computer Button bar on the top -->
 <div id="computer_buttons_bar" class="w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
 <span title="Read story" alt="Read story">
-<a href="#littletato-read story"><button id="computer_button_1" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-read story');"><h2>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [New 29]</span></h2></button></a>
+<a href="#littletato-read story"><button id="computer_button_1" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-read story');Define_Button('computer_button_1');Change_Button_Color();"><h2>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [New 29]</span></h2></button></a>
 </span>
 
 <span title="Readers" alt="Readers">
-<a href="#littletato-readers"><button id="computer_button_2" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-readers');"><h2>Readers: <i class="fas fa-book-reader"></i> ❤️ 😊</h2></button></a>
+<a href="#littletato-readers"><button id="computer_button_2" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-readers');Define_Button('computer_button_2');Change_Button_Color();"><h2>Readers: <i class="fas fa-book-reader"></i> ❤️ 😊</h2></button></a>
 </span>
 
 <span title="Comment" alt="Comment">
-<a href="#littletato-comment"><button id="computer_button_3" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-comment');"><h2>Comment: <i class="fas fa-comments"></i></h2></button></a>
+<a href="#littletato-comment"><button id="computer_button_3" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-comment');Define_Button('computer_button_3');Change_Button_Color();"><h2>Comment: <i class="fas fa-comments"></i></h2></button></a>
 </span>
 
 <span title="Write" alt="Write">
-<a href="#littletato-write"><button id="computer_button_4" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-write');"><h2>Write: <i class="fas fa-pen"></i></h2></button></a>
+<a href="#littletato-write"><button id="computer_button_4" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-write');Define_Button('computer_button_4');Change_Button_Color();"><h2>Write: <i class="fas fa-pen"></i></h2></button></a>
 </span>
 
 <span title="Stories" alt="Stories">
-<a href="#littletato-stories"><button id="computer_button_5" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-stories');"><h2>Stories: <i class="fas fa-book"></i></h2></button></a>
+<a href="#littletato-stories"><button id="computer_button_5" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-stories');Define_Button('computer_button_5');Change_Button_Color();"><h2>Stories: <i class="fas fa-book"></i></h2></button></a>
 </span>
 
 <span title="Change-Log" alt="Change-Log">
-<a href="#littletato-change-log"><button id="computer_button_6" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-change-log');"><h2><i class="fas fa-bell"></i></h2></button></a>
+<a href="#littletato-change-log"><button id="computer_button_6" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-change-log');Define_Button('computer_button_6');Change_Button_Color();"><h2><i class="fas fa-bell"></i></h2></button></a>
 </span>
 
 <br />
@@ -83,17 +84,17 @@
 
 <span style="font-size:30px;" class="mobileShow text_brown">Mobile button menu: </span>
 
-<a href="#littletato-read storym" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-read storym');"><h4>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [New 29]</span></h4></button></a>
+<a href="#littletato-read storym" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-read storym');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Read story: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [New 29]</span></h4></button></a>
 
-<a href="#littletato-readersm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_2" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-readersm');"><h4>Readers: <i class="fas fa-book-reader"></i> ❤️ 😊</h4></button></a>
+<a href="#littletato-readersm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_2" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-readersm');Define_Button('mobile_button_2');Change_Button_Color();"><h4>Readers: <i class="fas fa-book-reader"></i> ❤️ 😊</h4></button></a>
 
-<a href="#littletato-commentm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_3" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-commentm');"><h4>Comment: <i class="fas fa-comments"></i></h4></button></a>
+<a href="#littletato-commentm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_3" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-commentm');Define_Button('mobile_button_3');Change_Button_Color();"><h4>Comment: <i class="fas fa-comments"></i></h4></button></a>
 
-<a href="#littletato-writem" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-writem');"><h4>Write: <i class="fas fa-pen"></i></h4></button></a>
+<a href="#littletato-writem" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-writem');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Write: <i class="fas fa-pen"></i></h4></button></a>
 
-<a href="#littletato-storiesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-storiesm');"><h4>Stories: <i class="fas fa-book"></i></h4></button></a>
+<a href="#littletato-storiesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-storiesm');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Stories: <i class="fas fa-book"></i></h4></button></a>
 
-<a href="#littletato-change-logm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_6" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-change-logm');"><h4><i class="fas fa-bell"></i></h4></button></a>
+<a href="#littletato-change-logm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_6" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('littletato-change-logm');Define_Button('mobile_button_6');Change_Button_Color();"><h4><i class="fas fa-bell"></i></h4></button></a>
 
 
 </div>
@@ -156,7 +157,7 @@ Status: <span class="w3-text-orange">[Revising and editing]</span></h4><br />
 	animation-iteration-count: infinite;
 }
 </style>
-<a href="#chapter-14" title="14 - A Happy New Year (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-14');">14 - A Happy New Year (2019)</button></a> 
+<a href="#chapter-15" title="15 - Memories, The search for a job, And the game"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-15');">15 - Memories, The search for a job, And the game</button></a> 
 </span></b></h3></div>
 <div id="notificationdivm" onload="ChangeTitle();" class="stake2animatebottom border border_3px_solid_black background_brown mobileShow" style="position:fixed;right:0;bottom: 0;padding-top:1%;padding-bottom:1%;padding-left:10%;padding-right:10%;border-radius: 50px;"><h4><span id="notificationclosem" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white border_3px_solid_black notification_text" style="float:left;border-radius: 50px;box-shadow: 0 9px black!important;"><b>X</b></span><br /><br /><b><span class="notification_text"><h3><span id="notificationclose" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white border_3px_solid_black notification_text" style="float:left;margin-left:-10%;border-radius: 50px;box-shadow: 0 9px black!important;"><b>X</b></span><span class="notification_text">New reviewed chapter <i class="fas fa-bell"></i></span><b><span class="notification_text" style="margin-left:2%;"><style>
 @keyframes blink_black_to_white {
@@ -181,7 +182,7 @@ Status: <span class="w3-text-orange">[Revising and editing]</span></h4><br />
 	animation-iteration-count: infinite;
 }
 </style>
-<a href="#chapter-14" title="14 - A Happy New Year (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-14');">14 - A Happy New Year (2019)</button></a> 
+<a href="#chapter-15" title="15 - Memories, The search for a job, And the game"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-15');">15 - Memories, The search for a job, And the game</button></a> 
 </span></b></h3> <i class="fas fa-bell"></i></span></b><br /><br /><b><span class="notification_text"><style>
 @keyframes blink_black_to_white {
 	0% {
@@ -205,7 +206,7 @@ Status: <span class="w3-text-orange">[Revising and editing]</span></h4><br />
 	animation-iteration-count: infinite;
 }
 </style>
-<a href="#chapter-14" title="14 - A Happy New Year (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-14');">14 - A Happy New Year (2019)</button></a> 
+<a href="#chapter-15" title="15 - Memories, The search for a job, And the game"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-15');">15 - Memories, The search for a job, And the game</button></a> 
 </span></b></h4>
 
 <style>
@@ -449,6 +450,22 @@ Status: <span class="w3-text-orange">[Revising and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
+<a href="#chapter-14" title="14 - A Happy New Year (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('chapter-14');">14 - A Happy New Year (2019)</button></a> 
+<center>
+<a href="#chapter-14" title="14 - A Happy New Year (2019)"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/14.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-14');" />
+</div><br class="mobileHide" />
+
+</a>
+
+<a href="#chapter-14">
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/14.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-14');" />
+</div><br class="mobileShow" />
+
+</a>
+</center>
+<br />
+
+</div><div class="shakesidetoside">
 <style>
 @keyframes blink_black_to_white {
 	0% {
@@ -472,15 +489,15 @@ Status: <span class="w3-text-orange">[Revising and editing]</span></h4><br />
 	animation-iteration-count: infinite;
 }
 </style>
-<a href="#chapter-14" title="14 - A Happy New Year (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-14');">14 - A Happy New Year (2019)</button></a> 
+<a href="#chapter-15" title="15 - Memories, The search for a job, And the game"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-15');">15 - Memories, The search for a job, And the game</button></a> 
 <center>
-<a href="#chapter-14" title="14 - A Happy New Year (2019)"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/14.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-14');" />
+<a href="#chapter-15" title="15 - Memories, The search for a job, And the game"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/15.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-15');" />
 </div><br class="mobileHide" />
 
 </a>
 
-<a href="#chapter-14">
-<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/14.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-14');" />
+<a href="#chapter-15">
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/15.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-15');" />
 </div><br class="mobileShow" />
 
 </a>
@@ -488,9 +505,7 @@ Status: <span class="w3-text-orange">[Revising and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-15" title="15 - Memories, The search for a job, And the game"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('chapter-15');">15 - Memories, The search for a job, And the game</button></a> 
-</div><div class="shakesidetoside">
-<a href="#chapter-16" title="16 - 16"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('chapter-16');">16 - 16</button></a> 
+<a href="#chapter-16" title="16 - The city dream, Job message, And the Battle Royale game"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('chapter-16');">16 - The city dream, Job message, And the Battle Royale game</button></a> 
 </div><div class="shakesidetoside">
 <a href="#chapter-17" title="17 - 17"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('chapter-17');">17 - 17</button></a> 
 </div><div class="shakesidetoside">
@@ -740,6 +755,22 @@ Status: <span class="w3-text-orange">[Revising and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
+<a href="#chapter-14" title="14 - A Happy New Year (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('chapter-14');">14 - A Happy New Year (2019)</button></a> 
+<center>
+<a href="#chapter-14" title="14 - A Happy New Year (2019)"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/14.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-14');" />
+</div><br class="mobileHide" />
+
+</a>
+
+<a href="#chapter-14">
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/14.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-14');" />
+</div><br class="mobileShow" />
+
+</a>
+</center>
+<br />
+
+</div><div class="shakesidetoside">
 <style>
 @keyframes blink_black_to_white {
 	0% {
@@ -763,15 +794,15 @@ Status: <span class="w3-text-orange">[Revising and editing]</span></h4><br />
 	animation-iteration-count: infinite;
 }
 </style>
-<a href="#chapter-14" title="14 - A Happy New Year (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-14');">14 - A Happy New Year (2019)</button></a> 
+<a href="#chapter-15" title="15 - Memories, The search for a job, And the game"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('chapter-15');">15 - Memories, The search for a job, And the game</button></a> 
 <center>
-<a href="#chapter-14" title="14 - A Happy New Year (2019)"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/14.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-14');" />
+<a href="#chapter-15" title="15 - Memories, The search for a job, And the game"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/15.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-15');" />
 </div><br class="mobileHide" />
 
 </a>
 
-<a href="#chapter-14">
-<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/14.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-14');" />
+<a href="#chapter-15">
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/15.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-15');" />
 </div><br class="mobileShow" />
 
 </a>
@@ -779,9 +810,7 @@ Status: <span class="w3-text-orange">[Revising and editing]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#chapter-15" title="15 - Memories, The search for a job, And the game"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('chapter-15');">15 - Memories, The search for a job, And the game</button></a> 
-</div><div class="shakesidetoside">
-<a href="#chapter-16" title="16 - 16"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('chapter-16');">16 - 16</button></a> 
+<a href="#chapter-16" title="16 - The city dream, Job message, And the Battle Royale game"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('chapter-16');">16 - The city dream, Job message, And the Battle Royale game</button></a> 
 </div><div class="shakesidetoside">
 <a href="#chapter-17" title="17 - 17"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('chapter-17');">17 - 17</button></a> 
 </div><div class="shakesidetoside">
@@ -3934,10 +3963,14 @@ Chapter: 15 - Memories, The search for a job, And the game</b>
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <center>
+<div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/15.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-15');" />
+</div><br class="mobileHide" />
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/ENUS/15.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('chapter-15');" />
+</div><br class="mobileShow" />
 </center>
 <br />
 <div id="chapter-text-15" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
-It was Monday, it was a little cold, Littletato woke up and got out of bed, she got to work today.
+It was Monday, it was a little cold, Littletato woke up, she got to work today.
 <br />Littletato thought about last night, it was Sunday, day 31 of December 2018, she was happy, watching that superhero movie with Julia while eating Doritos and drinking Coca-cola.
 <br />And also thinking of what she did in 2018, the friends she made, Mia, Yam, Patricia, and others.
 <br />Littletato had these thoughts on her mind while she was in bed, looking at the ceiling, it was five and forty AM.
@@ -3957,7 +3990,7 @@ It was Monday, it was a little cold, Littletato woke up and got out of bed, she 
 <br />Julia got up and did her morning necessities, then the couple walked to the kitchen and sat at the table to eat breakfast.
 <br />
 <br />They both eat breakfast, Julia said that it was delicious, Littletato said thanks while smiling.
-<br />Littletato thought about the rain, how it fell, the sound that it made, she liked the rain, she liked to hear the raindrops hit the roof of her house, she liked thunders too.
+<br />Littletato thought about the rain, how it felt, the sound that it made, she liked the rain, she liked to hear the raindrops hit the roof of her house, she liked thunders too.
 <br />The girl got up, she placed the plates and the cups on top of the sink, after that, she walked to the bedroom.
 <br />She started preparing herself to go to work, Julia was there with her.
 <br />"Hey, honey, what do you think about living with Yam, Mia, Carol, and Patricia?" asked Julia, curious.
@@ -3969,18 +4002,18 @@ It was Monday, it was a little cold, Littletato woke up and got out of bed, she 
 <br />Then Littletato got up, she walked to the front door of the house, opening it.
 <br />Julia hugged her and kissed her lips, "I'm gonna bring the key of the house okay hon? In case you want to go out for something," asked Littletato.
 <br />"Okay, hon, don't worry, I have the spare key," replied Julia.
-<br />Then Littletato got out of the house, started walking to work.
+<br />Then Littletato got out of the house and started walking to work.
 <br />
 <br />Julia locked the front door of the house and walked to the kitchen.
 <br />The kitchen of Littletato's house was on the right of the living room, there was a little room where they had their computers.
 <br />After looking through the window to see the weather, Julia opened the fridge, she grabbed her bottle of water and drank a little of it.
 <br />Then Julia placed the bottle inside the fridge and closed it.
-<br />Julia walked to the bedroom, her smart phone was charging on the socket that existed on the wall, her smart phone was on the floor.
+<br />Julia walked to the bedroom, her smartphone was charging on the socket that existed on the wall, her smartphone was on the floor.
 <br />She threw herself on the bed and looked at the ceiling, she sighed and thought about how she was feeling right now.
 <br />Julia always spends her day inside the house while Littletato works.
 <br />The girl has some money in her bank account, she can help Littletato with the bills if she needs.
 <br />But the salary of Littletato is enough so she can pay the bills, buy food, and store the rest in her bank account.
-<br />So Julia can spend her day laid on the bed, doing nothing all day, but today she is not feeling like doing something.
+<br />So Julia can spend her day laid on the bed, doing nothing all day, but today she is not feeling like doing anything.
 <br />Julia yawned and turned to the left side of the bed, looking at the open window, she could see the yard of the house, there were some trees there.
 <br />The girl stretched herself and got out of bed, walking to the computer room, the room where the computer of Littletato and the laptop of Julia stayed.
 <br />After that, she sat on the chair of Littletato's computer, she could use her computer, Julia had a computer account just for her.
@@ -4002,7 +4035,7 @@ It was Monday, it was a little cold, Littletato woke up and got out of bed, she 
 <br />Her house was all barricaded with planks on the windows, no zombie could see her from outside.
 <br />She had plant seeds, a compost crate, a rain collector barrel with a garbage bag inside it.
 <br />The girl was training her carpentry skills, she dismantled chairs and tables to gain more experience.
-<br />Julia loved to play that game, it felt like she was playing a zombie apocalypse game.
+<br />Julia loved to play that game, it felt like she was really living on the zombie apocalypse.
 <br />
 <br />After playing for some hours, Julia was a little tired, she stretched back on the chair.
 <br />The girl paused the game and clicked on the "Leave" button to go back to the main menu.
@@ -4011,13 +4044,13 @@ It was Monday, it was a little cold, Littletato woke up and got out of bed, she 
 <br />Then Julia grabbed a frying pan and placed it on one of the stove-tops, she walked to the cabinet and grabbed the sack of bread.
 <br />Julia grabbed two slices of bread, she grabbed a plate and placed it on top of the table.
 <br />She turned the stove on and waited for a while, then she placed the two slices of bread on the frying pan.
-<br />They began to toast on top of the stove top, she waited for a while, looking below the slices of bread to check if it was burning.
+<br />They began to toast on top of the stovetop, she waited for a while, looking below the slices of bread to check if it was burning.
 <br />After some minutes, it was ready, Julia turned the stove off and placed the slices on the plate, she grabbed the cheese and artificial meat.
 <br />Julia then placed one slice of cheese on the bread, she placed the artificial meat on the frying pan, turning the stove on.
 <br />After some minutes, the artificial meat began to get warmer, she removed it from the frying pan and placed it on top of the bread.
 <br />The cheese began to melt, she closed the bread and grabbed it, placing it on top of the frying pan and closing it with an aluminum lid.
 <br />Julia waited for a while, then she removed the lid and turned the stove off, putting the bread on the plate.
-<br />She made a cup of chocolate milk for her, then she walked to the living room and turned the TV on, opening the Vegeflix app and selecting her favorite cartoon My Little Pony: Friendship is Magic.
+<br />She made a cup of chocolate milk for her, then she walked to the living room and turned the TV on, opening the Vegeflix app and selecting her favorite cartoon, My Little Pony: Friendship is Magic.
 <br />Julia watched some episodes of MLP: FIM while eating and drinking, it was very delicious, she watched more episodes after eating, then she slept on the couch, the cartoon was still playing.
 <br />
 <br />After some hours, Littletato got home, she opened the front door and closed it, she turned the TV off and woke up Julia with a kiss and a hug.
@@ -4027,10 +4060,10 @@ It was Monday, it was a little cold, Littletato woke up and got out of bed, she 
 <br />The girl told that to Julia, she said that she also watched Vegetower Rangers when she was a kid, she said that a friend showed her the show.
 <br />Julia suggested for them to watch the new movie.
 <br />Littletato was sat at the right of the couch, the side where the front door was.
-<br />Julia was sat on the left side of the couch, she left her smart phone on top of the low table that existed on the left of the couch.
+<br />Julia was sat on the left side of the couch, she left her smartphone on top of the low table that existed on the left of the couch.
 <br />After that, Littletato grabbed the TV controller that was on top of the table that existed in the center of the living room.
 <br />The girl turned the TV on and opened the Vegeflix app, she started searching for the reboot movie of Vegetower Rangers on Vegeflix's catalog.
-<br />Suddenly, Julia's smart phone ringed, she grabbed to see what it was.
+<br />Suddenly, Julia's smartphone ringed, she grabbed to see what it was.
 <br />It was Patricia, Julia's sister, she sent a message to Julia through Vegesapp, asking if she could go to Littletato's house next Sunday to make a barbecue.
 <br />"Hey honey, it is Patricia, she is asking if she can go here on Sunday to make a barbecue with us," asked Julia, looking at Littletato.
 <br />"Oh, that sounds great hon, tell her that she can come," said Littletato.
@@ -4039,7 +4072,7 @@ It was Monday, it was a little cold, Littletato woke up and got out of bed, she 
 <br />"Yes, hehe, we're gonna buy everything, don't worry, and thanks, sis," said Julia who then sent a happy emoji.
 <br />"Okay sis, thanks. ^^," replied Patricia.
 <br />Littletato found the movie on Vegeflix, she pressed play and got up to turn the living room light off.
-<br />Julia blocked the screen of her smart phone and placed it on top of the table on the left of the couch.
+<br />Julia blocked the screen of her smartphone and placed it on top of the table on the left of the couch.
 <br />The couple started watching the movie, it started showing a teenager.
 <br />The movie told the story of five teenagers that got superpowers when they got close to a meteor that landed in the city they lived.
 <br />Both of them watched the movie while hugging and caressing each other's hairs, they were happy watching together.
@@ -4100,13 +4133,13 @@ Chapter: 15 - Memories, The search for a job, And the game</b>
 <div class="mobileHide"><h2 class="background_brown text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
 
 <b>You're reading: The Life Of Littletato<br />
-Chapter: 16 - 16</b>
+Chapter: 16 - The city dream, Job message, And the Battle Royale game</b>
 
 </div></h2></div>
 <div style="margin:3%;"><div class="mobileShow"><h4 class="background_brown text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
 
 <b>You're reading: The Life Of Littletato<br />
-Chapter: 16 - 16</b>
+Chapter: 16 - The city dream, Job message, And the Battle Royale game</b>
 
 </div></h4></div>
 </div>
@@ -4149,16 +4182,99 @@ It was a Tuesday, Littletato was dreaming about traveling the world by bicycle, 
 <br />When she finished eating the sandwich and drinking the decaf latte, she started drinking the Mocha while talking to her friends on Vegesapp and Vegebook.
 <br />Littletato posted the picture she took of the three items on her Vegesapp status, Carol asked her for the location of it.
 <br />She sent a message to Carol saying that it was in Concord, CA, Carol replied saying that she wanted to go to Concord because a relative of her lived there.
-<br />Then Littletato sent the location of the Haute Coffee to Carol, Carol replied saying thanks with a smile face emoji.
+<br />Then Littletato sent the location of the Haute Coffee to Carol, Carol replied saying thanks with a face smiling emoji.
+<br />After that, Littletato paused the music and stored her earphones in her bag, she stored her smartphone there too.
+<br />Littletato walked to the counter to pay for the food, she paid and walked out of the coffee shop.
 <br />
-<br />Concord Museum
-<br />Barrow Bookstore
-<br />Haute Coffee
+<br />The girl wanted to see Louisa May Alcott's Orchard House, it was one of the things that she marked to do in Concord, she heard that it had a lot of history in it.
+<br />She grabbed her bicycle and started riding there while looking at the map, she had something to lock her smartphone on her bicycle.
+<br />After riding for a while, she arrived there, she parked her bicycle on a street sign on the sidewalk and locked it with her bicycle lock.
+<br />The girl looked at the place and read some signs, learning about the house, and the history of the place, there was a Museum Store in there.
+<br />Louisa May Alcott wrote the novel called Little Women.
+<br />Alcott family’s contributed a lot to the fields of literature, education, philosophy, the arts, and social justice through award-winning guided tours, unique educational programs for students of all ages, and lively living history events.
+<br />Littletato was amazed to learn about all that, seeing the local culture and history is really fun.
+<br />Julia was dreaming about traveling the world by van with her family and friends.
+<br />She was having fun there, eating stuff and talking, seeing her cousins that she has not seen in a long time.
+<br />Julia was smiling, looking at her friends, cousins, and family, her dad was driving, her mother was sitting beside him.
+<br />His sister Patricia and her brother Rogerio were sitting on the first row of the van.
 <br />
-<br />It was a Tuesday, Littletato was dreaming of traveling the world by bicycle, she was there with her things, money and supplies, ready to see the world and live with small things, she liked that moment, she wanted to do that in real life, Julia was dreaming of the same, but with a van with friends and family, she thought that would be awesome to travel the world together with family, stopping by gas stations to refuel, stopping by restaurants to buy food, Julia and Littletato thought that life was an interesting and different life, they woke up at the same time, the sun was rising, that sunrise was beautiful too see, because they were together, Littletato always take a picture of the sunrise, to remember the good days, and to remember she loves Julia, Julia also loves Littletato, Littletato have a lot of happy moments with Julia, Littletato woke up to make the breakfast, then Julia and Littletato ate the breakfast, it was delicious, the taste of bread in the morning with some coffee and milk, Julia loved that, Littletato too, Littletato said she was going to work, Littletato came to the door and opened it, Littletato waved goodbye to Julia, Julia waved goodbye back and said: "Take care honey", Littletato said: "You too, honey", then Littletato started walking to her job, she wanted something different today, she put to play some country music on her Vegetify app, she liked the country music genre, she liked to hear the acoustic guitar playing, the banjo and violin, she loved to walk to her job hearing those songs, it was wonderful, she then arrived at her job and turned off the music, she walked inside the building and sat at her desk, her co-worker Mia was there, she liked to talk with her, Littletato thought that Mia was an interesting person, Littletato had a phone to fix today, she started to fix it...
+<br />Then both of them woke up, Julia and Littletato looked at each other, they smiled and hugged, kissing each other's lips.
+<br />Littletato got up and did her morning necessities, Julia did the same.
+<br />They walked to the kitchen and started making breakfast.
+<br />After some minutes, they finished and started eating.
+<br />"Hey, honey, I started searching for jobs yesterday, I signed up for a total of fifty jobs," said Julia while holding her cup of chocolate milk.
+<br />"Oh, that's great honey, are you planning to buy something or just store the money in your bank account?" asked Littletato, curious, fiddling with the bread.
+<br />"I'm thinking of buying a computer, and also a desk to put it.
+<br />I want to put the desk against your desk, so we can play games together," said Julia, looking at the room to the right of her, imagining the desk and her computer there.
+<br />"I think that's good honey, I was really happy when I bought my computer some months after I bought the house.
+<br />Maybe we can play some games together honey, like Rocket League, Call Of Duty: Modern Warfare, Overcooked, Osu!" said Littletato, smiling.
+<br />"Yeah, hehe, those games seem fun, I watched Alanzoka play Overcooked one day, it was good and fun to play with friends, it's funny I think," replied Julia.
+<br />"I agree, honey, I totally want to play it with you!" said Littletato smiling.
+<br />"Me too, honey, I think I'll buy an external hard drive of 1TB to move all the files from my laptop to it, then I'm gonna sell my laptop," said Julia.
+<br />"Oh, okay hon, you'll create a VegeSteam account after you buy your computer?" asked Littletato.
+<br />"Yes," replied Julia, "I'm gonna gift you some games then hon," said Littletato.
+<br />"Thanks, hon," replied Julia.
+<br />After that, the couple finished eating.
+<br />Littletato prepared herself to go to work, she was ready and walked to the front door, Julia hugged her and kissed her lips, saying goodbye.
+<br />Then Littletato started walking to her job.
+<br />After some minutes of walking, she arrived there and entered the building.
 <br />
-<br />Authors Note: "I was a little tired today so maybe it will reflect in my writing, sorry for that, I'm sure that the next chapter will be better!".
+<br />Julia locked the front door and walked to the kitchen, grabbing her bottle of water from the fridge and taking some sips of it, then she stored the bottle on the fridge again.
+<br />She walked to the small room to the right of the kitchen, turning on Littletato's computer, when it turned on, she sat at the chair and logged in her account on the computer.
+<br />The girl opened Mozilla Vegefox and opened some job websites, she continued signing up for jobs, the girl wanted to find one no matter what it was, as long as it paid well.
+<br />Julia applied for fifty jobs, she was happy about that, she closed the web browser tab and opened another, she opened the website called Vegewitch.
+<br />She opened the Livestream of the Alanzoka streamer, he was streaming a game called Tarkov, it was a first-person shooter with a lot of realistic features.
+<br />The girl liked to watch that streamer, she put the Livestream to play on the speakers and turned on the fullscreen mode of the website.
+<br />Julia turned up the volume of the Livestream and got off the chair, she walked to the kitchen and grabbed the bread sack from the cabinet.
+<br />She placed two slices of bread on a plate and cut some cheese slices for her, making a sandwich, then she made a cup of chocolate milk for her.
+<br />After that, she walked back to the computer room, sitting on the chair and eating and drinking while watching the Livestream.
+<br />Julia ate and drank for some minutes while watching, then she finished eating, she grabbed the plate and the cup, placing them on the sink.
+<br />She had left her phone on top of the computer desk, it was charging, her laptop was on top of the table in the bedroom.
+<br />Her phone vibrated, it was in silent mode, she received a message on Vegesapp.
+<br />The girl grabbed the smartphone, it was a message from a business account called "Safeway", it was a supermarket company.
+<br />Julia read the message, it said that she was applied for a job interview at 6 PM tomorrow, and asked if she was up for the interview.
+<br />She replied saying yes, they replied that it was annotated on their agenda.
 <br />
+<br />The girl was so happy, she was smiling and believing that she was going to get the job.
+<br />Julia could not wait for tomorrow at 6 PM, she continued watching the Livestream of Alanzoka.
+<br />She turned her smartphone off so it would charge quickly, then she left the smartphone on top of the table.
+<br />The girl remembered that Littletato had a game called Call Of Duty: Modern Warfare on her computer, its shortcut was on the desktop.
+<br />Julia closed the Livestream and Mozilla Vegefox too, she opened the game to play and waited for it to load.
+<br />It loaded, she selected the Warzone mode, which was the Battle Royale version of CoD: MW, Julia liked to train and practice on that mode.
+<br />She perceived that she was getting better every day, she wanted to have her own computer so she could play it all the time.
+<br />Julia started the match, the Battle Royale game mode consists of one hundred players on a map.
+<br />They have to survive and be the last ones alive, only one player can be the winner on solo mode.
+<br />On four people, three people, or two people mode, the team of people has to be the last one alive.
+<br />The players land on the map and have to find weapons on the buildings of the map, they only arrive there with a pistol.
+<br />There are shields for them to protect themselves, they can have three shields, when they get shot, their shields get broken and they have to replace them.
+<br />If players are killed, they go to the Gulag where they need to kill another player to win the chance of going back to the game.
+<br />Then, if they die in Gulag, they can not play in that game anymore if they are on solo mode.
+<br />If they are in team mode, their team can buy them back with money.
+<br />Julia was in solo mode, she liked to play alone and feel like she could go anywhere, but she also could not count on anyone.
+<br />She landed at the Gorengard Lumber Yard and started picking up weapons and shields from the ground.
+<br />The girl found an M4A1 and three shields, she used the three shields to protect herself.
+<br />After playing for a while, the match ended, Julia finished in #4, she had made many kills.
+<br />Julia continued playing for a while, drinking water sometimes, and eating when she was hungry, stopping to take a break and do some exercise.
+<br />It was a little late at night, Littletato had arrived, Julia turned the computer off and greet Littletato.
+<br />The couple made dinner and ate, Julia said that she got a job interview and she is going there tomorrow at 6 PM.
+<br />Littletato was happy because of that, she smiled while looking at Julia.
+<br />Both of them finished eating, they waited for some minutes before laying on the bed.
+<br />Then, they laid on the bed and slept, hugging tight in the cold night, Julia slept while thinking of her gaming session with CoD: MW.
+<br />
+<br />(It was very good revising this chapter.
+<br />I wrote it on 29/01/2019.
+<br />And I finished revising it on 29/01/2021.
+<br />What a coincidence O_O, Wow.
+<br />
+<br />I loved to revise this chapter while listening to the Yuru Camp soundtrack a lot, I love that anime and that soundtrack.
+<br />It was very good, I loved to think about Julia and the job interview.
+<br />The conversation between Littletato and Julia about computers and games was so much fun!
+<br />I loved searching for good places to spend time in Concord, CA, Haute Coffee and Louisa May Alcott's Orchard House are real places in Concord.
+<br />Littletato buying coffee and eating a sandwich on Haute Coffee remembered me of the second episode of the second season of Yuru Camp at 05:00 where Rin buys some tea and a green cake at a coffee shop on the upper floor of where she bought some teas.
+<br />I think Littletato and Rin are a little bit alike, and the Littletato website too, I think brown passes that sensation of a calm and homey feel.
+<br />Of a place where you can spend time and relax, a warm house of wood in the winter, that's how I feel about this website, Yuru Camp, and The Life of Littletato.
+<br />I feel like this is a quiet, calm, and warm place to spend some time and relax, relaxing while reading a story about a potato. xD
+<br />Thanks for reading this chapter, my dear reader, leave a comment on the Comment button and register your read on the I Read It button. :3)
 <br /><br />Chapter written in: 29/01/2019.</div>
 </div>
 <br /><br />
@@ -4178,7 +4294,7 @@ It was a Tuesday, Littletato was dreaming about traveling the world by bicycle, 
 <br />
 
 <b>You're reading: The Life Of Littletato<br />
-Chapter: 16 - 16</b>
+Chapter: 16 - The city dream, Job message, And the Battle Royale game</b>
 
 <br />
 </span>
@@ -6381,11 +6497,11 @@ readmodal15m.onclick = function(event) {
 <div class="w3-animate-zoom"><div class="modal-content w3-black border_color_brown border_4px" style="border-radius: 50px;">
 <div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal16">&times;</button>
 <form name="pequenata-read-16" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>I read the Chapter: 16 - 16</b></h2></div>
+<div class="w3-animate-zoom"><h2 class="text_brown"><b>I read the Chapter: 16 - The city dream, Job message, And the Battle Royale game</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_brown"><b>Your name:</b></h2></div>
 <input type="text" name="name" class="border_4px_solid_black background_brown text_black w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="I read the Chapter: 16 - 16" class="border_4px_solid_black background_brown text_black w3-input" style="display:none;border-radius: 50px;">
+<input type="text" name="read" value="I read the Chapter: 16 - The city dream, Job message, And the Battle Royale game" class="border_4px_solid_black background_brown text_black w3-input" style="display:none;border-radius: 50px;">
 </div><br /><br /><br /><br /></form>
 </div>
 </div>
@@ -6397,11 +6513,11 @@ readmodal15m.onclick = function(event) {
 <div class="w3-animate-zoom"><div class="modal-content w3-black" style="border-radius: 50px;">
 <div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal16m">&times;</button><br /><br /><br />
 <form name="pequenata-read-16" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>I read the Chapter: 16 - 16</b></h4></div>
+<div class="w3-animate-zoom"><h4 class="text_brown"><b>I read the Chapter: 16 - The city dream, Job message, And the Battle Royale game</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="text_brown"><b>Your name:</b></h4></div>
 <input type="text" name="name" class="border_4px_solid_black background_brown text_black w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="I read the Chapter: 16 - 16" class="border_4px_solid_black background_brown text_black w3-input" style="display:none;border-radius: 50px;">
+<input type="text" name="read" value="I read the Chapter: 16 - The city dream, Job message, And the Battle Royale game" class="border_4px_solid_black background_brown text_black w3-input" style="display:none;border-radius: 50px;">
 </div><br /><br /><br /><br /></form>
 </div>
 </div>
@@ -8782,7 +8898,7 @@ commentmodal15m.onclick = function(event) {
 <div class="modal-content w3-black border_color_brown border_4px" style="border-radius: 50px;">
 <div class="mobileHide">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" id="closecommentmodal16" style="border-radius: 50px;">&times;</button>
-<div class="w3-animate-zoom"><h2 class="text_brown"><p></p><br /><b>Comment in the Chapter 16 - 16 <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
+<div class="w3-animate-zoom"><h2 class="text_brown"><p></p><br /><b>Comment in the Chapter 16 - The city dream, Job message, And the Battle Royale game <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
 <form name="pequenata-comment-16" method="POST" data-netlify="True" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="text_brown"><b>Your name:</b></h2></div>
@@ -8806,7 +8922,7 @@ commentmodal15m.onclick = function(event) {
 <div class="mobileShow">
 <button class="w3-btn dark-pink w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="closecommentmodal16m" style="border-radius: 50px;">&times;</button><br /><br /><br />
 <form name="pequenata-comment-16" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><p></p><br /><b>Comment in the Chapter 16 - 16 <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_4px" />
+<div class="w3-animate-zoom"><h4 class="text_brown"><p></p><br /><b>Comment in the Chapter 16 - The city dream, Job message, And the Battle Royale game <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_4px" />
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="text_brown"><b>Your name:</b></h4></div>
@@ -10037,7 +10153,7 @@ commentmodal29m.onclick = function(event) {
 </script>
 <br /><br /><br /><br /><br /><br /><br /><br /><br />
 <center>
-<a href="#Websites tab"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" alt="Websites tab" title="Websites tab" onclick="openCity('Websites tab')"><h2>Websites: <i class="fas fa-globe-americas"></i></h2></button></a>
+<a href="#Websites tab"><button id="websites_tab_button" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" alt="Websites tab" title="Websites tab" onclick="openCity('Websites tab');Define_Button('websites_tab_button');Change_Button_Color();"><h2>Websites: <i class="fas fa-globe-americas"></i></h2></button></a>
 </center>
 <a name="Websites tab"></a>
 <br />
@@ -10529,6 +10645,13 @@ console.log("Open Chapter Script was loaded.");
 OpenChapter();
 </script>
 
-</center>
+<script>
+function getElementByXpath(path) {
+  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+}
+</script>
+
+<div style="display:none;" id="click_website_button_color">background_light_brown</div><div style="display:none;" id="old_website_button_color">background_darker_brown</div><div style="display:none;" id="button_number">5</div></center>
 </body>
 </html>
+

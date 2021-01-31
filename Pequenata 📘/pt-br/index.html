@@ -23,7 +23,7 @@
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Mobile.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/ImgHover.css" />
 <link rel="stylesheet" type="text/css" href="https://diario.netlify.app/cdn/css/Notification.css" />
-<meta name="revised" content="Stake's Enterprisetm, 26/01/2021" />
+<meta name="revised" content="Stake's Enterprisetm, 30/01/2021" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
@@ -34,9 +34,10 @@
 <script src="https://diario.netlify.app/cdn/js/SideMenu.js"></script>
 <script src="https://diario.netlify.app/cdn/js/Set Revised Date.js"></script>
 <script src="https://diario.netlify.app/cdn/js/Open Chapter By Keys.js"></script>
+<script src="https://diario.netlify.app/cdn/js/Change Button Color.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </head>
-<body>
+<body onLoad="Define_Colors_And_Styles();">
 <center>
 
 <div class="w3-animate-zoom">
@@ -44,27 +45,27 @@
 <!--- Computer Button bar on the top -->
 <div id="computer_buttons_bar" class="w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
 <span title="Ler história" alt="Ler história">
-<a href="#pequenata-ler história"><button id="computer_button_1" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-ler história');"><h2>Ler história: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [Novo 29]</span></h2></button></a>
+<a href="#pequenata-ler história"><button id="computer_button_1" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-ler história');Define_Button('computer_button_1');Change_Button_Color();"><h2>Ler história: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [Novo 29]</span></h2></button></a>
 </span>
 
 <span title="Leitores" alt="Leitores">
-<a href="#pequenata-leitores"><button id="computer_button_2" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-leitores');"><h2>Leitores: <i class="fas fa-book-reader"></i> ❤️ 😊</h2></button></a>
+<a href="#pequenata-leitores"><button id="computer_button_2" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-leitores');Define_Button('computer_button_2');Change_Button_Color();"><h2>Leitores: <i class="fas fa-book-reader"></i> ❤️ 😊</h2></button></a>
 </span>
 
 <span title="Comentar" alt="Comentar">
-<a href="#pequenata-comentar"><button id="computer_button_3" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-comentar');"><h2>Comentar: <i class="fas fa-comments"></i></h2></button></a>
+<a href="#pequenata-comentar"><button id="computer_button_3" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-comentar');Define_Button('computer_button_3');Change_Button_Color();"><h2>Comentar: <i class="fas fa-comments"></i></h2></button></a>
 </span>
 
 <span title="Escrever" alt="Escrever">
-<a href="#pequenata-escrever"><button id="computer_button_4" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-escrever');"><h2>Escrever: <i class="fas fa-pen"></i></h2></button></a>
+<a href="#pequenata-escrever"><button id="computer_button_4" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-escrever');Define_Button('computer_button_4');Change_Button_Color();"><h2>Escrever: <i class="fas fa-pen"></i></h2></button></a>
 </span>
 
 <span title="Histórias" alt="Histórias">
-<a href="#pequenata-histórias"><button id="computer_button_5" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-histórias');"><h2>Histórias: <i class="fas fa-book"></i></h2></button></a>
+<a href="#pequenata-histórias"><button id="computer_button_5" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-histórias');Define_Button('computer_button_5');Change_Button_Color();"><h2>Histórias: <i class="fas fa-book"></i></h2></button></a>
 </span>
 
 <span title="Registro de Mudanças" alt="Registro de Mudanças">
-<a href="#pequenata-registro de mudanças"><button id="computer_button_6" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-registro de mudanças');"><h2><i class="fas fa-bell"></i></h2></button></a>
+<a href="#pequenata-registro de mudanças"><button id="computer_button_6" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-registro de mudanças');Define_Button('computer_button_6');Change_Button_Color();"><h2><i class="fas fa-bell"></i></h2></button></a>
 </span>
 
 <br />
@@ -83,17 +84,17 @@
 
 <span style="font-size:30px;" class="mobileShow text_brown">Menu de botões mobile: </span>
 
-<a href="#pequenata-ler históriam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-ler históriam');"><h4>Ler história: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [Novo 29]</span></h4></button></a>
+<a href="#pequenata-ler históriam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-ler históriam');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Ler história: <i class="fas fa-book-open"></i> <span class="w3-text-yellow"> [Novo 29]</span></h4></button></a>
 
-<a href="#pequenata-leitoresm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_2" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-leitoresm');"><h4>Leitores: <i class="fas fa-book-reader"></i> ❤️ 😊</h4></button></a>
+<a href="#pequenata-leitoresm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_2" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-leitoresm');Define_Button('mobile_button_2');Change_Button_Color();"><h4>Leitores: <i class="fas fa-book-reader"></i> ❤️ 😊</h4></button></a>
 
-<a href="#pequenata-comentarm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_3" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-comentarm');"><h4>Comentar: <i class="fas fa-comments"></i></h4></button></a>
+<a href="#pequenata-comentarm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_3" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-comentarm');Define_Button('mobile_button_3');Change_Button_Color();"><h4>Comentar: <i class="fas fa-comments"></i></h4></button></a>
 
-<a href="#pequenata-escreverm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-escreverm');"><h4>Escrever: <i class="fas fa-pen"></i></h4></button></a>
+<a href="#pequenata-escreverm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-escreverm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Escrever: <i class="fas fa-pen"></i></h4></button></a>
 
-<a href="#pequenata-históriasm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-históriasm');"><h4>Histórias: <i class="fas fa-book"></i></h4></button></a>
+<a href="#pequenata-históriasm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-históriasm');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Histórias: <i class="fas fa-book"></i></h4></button></a>
 
-<a href="#pequenata-registro de mudançasm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_6" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-registro de mudançasm');"><h4><i class="fas fa-bell"></i></h4></button></a>
+<a href="#pequenata-registro de mudançasm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_6" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('pequenata-registro de mudançasm');Define_Button('mobile_button_6');Change_Button_Color();"><h4><i class="fas fa-bell"></i></h4></button></a>
 
 
 </div>
@@ -156,7 +157,7 @@ Status: <span class="w3-text-orange">[Revisando e editando]</span></h4><br />
 	animation-iteration-count: infinite;
 }
 </style>
-<a href="#capítulo-14" title="14 - Um Feliz Ano Novo (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-14');">14 - Um Feliz Ano Novo (2019)</button></a> 
+<a href="#capítulo-15" title="15 - Memórias, A procura de um emprego, E o jogo"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-15');">15 - Memórias, A procura de um emprego, E o jogo</button></a> 
 </span></b></h3></div>
 <div id="notificationdivm" onload="ChangeTitle();" class="stake2animatebottom border border_3px_solid_black background_brown mobileShow" style="position:fixed;right:0;bottom: 0;padding-top:1%;padding-bottom:1%;padding-left:10%;padding-right:10%;border-radius: 50px;"><h4><span id="notificationclosem" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white border_3px_solid_black notification_text" style="float:left;border-radius: 50px;box-shadow: 0 9px black!important;"><b>X</b></span><br /><br /><b><span class="notification_text"><h3><span id="notificationclose" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white border_3px_solid_black notification_text" style="float:left;margin-left:-10%;border-radius: 50px;box-shadow: 0 9px black!important;"><b>X</b></span><span class="notification_text">Novo capítulo revisado <i class="fas fa-bell"></i></span><b><span class="notification_text" style="margin-left:2%;"><style>
 @keyframes blink_black_to_white {
@@ -181,7 +182,7 @@ Status: <span class="w3-text-orange">[Revisando e editando]</span></h4><br />
 	animation-iteration-count: infinite;
 }
 </style>
-<a href="#capítulo-14" title="14 - Um Feliz Ano Novo (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-14');">14 - Um Feliz Ano Novo (2019)</button></a> 
+<a href="#capítulo-15" title="15 - Memórias, A procura de um emprego, E o jogo"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-15');">15 - Memórias, A procura de um emprego, E o jogo</button></a> 
 </span></b></h3> <i class="fas fa-bell"></i></span></b><br /><br /><b><span class="notification_text"><style>
 @keyframes blink_black_to_white {
 	0% {
@@ -205,7 +206,7 @@ Status: <span class="w3-text-orange">[Revisando e editando]</span></h4><br />
 	animation-iteration-count: infinite;
 }
 </style>
-<a href="#capítulo-14" title="14 - Um Feliz Ano Novo (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-14');">14 - Um Feliz Ano Novo (2019)</button></a> 
+<a href="#capítulo-15" title="15 - Memórias, A procura de um emprego, E o jogo"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-15');">15 - Memórias, A procura de um emprego, E o jogo</button></a> 
 </span></b></h4>
 
 <style>
@@ -449,6 +450,22 @@ Status: <span class="w3-text-orange">[Revisando e editando]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
+<a href="#capítulo-14" title="14 - Um Feliz Ano Novo (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-14');">14 - Um Feliz Ano Novo (2019)</button></a> 
+<center>
+<a href="#capítulo-14" title="14 - Um Feliz Ano Novo (2019)"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/14.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-14');" />
+</div><br class="mobileHide" />
+
+</a>
+
+<a href="#capítulo-14">
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/14.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-14');" />
+</div><br class="mobileShow" />
+
+</a>
+</center>
+<br />
+
+</div><div class="shakesidetoside">
 <style>
 @keyframes blink_black_to_white {
 	0% {
@@ -472,15 +489,15 @@ Status: <span class="w3-text-orange">[Revisando e editando]</span></h4><br />
 	animation-iteration-count: infinite;
 }
 </style>
-<a href="#capítulo-14" title="14 - Um Feliz Ano Novo (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-14');">14 - Um Feliz Ano Novo (2019)</button></a> 
+<a href="#capítulo-15" title="15 - Memórias, A procura de um emprego, E o jogo"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-15');">15 - Memórias, A procura de um emprego, E o jogo</button></a> 
 <center>
-<a href="#capítulo-14" title="14 - Um Feliz Ano Novo (2019)"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/14.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-14');" />
+<a href="#capítulo-15" title="15 - Memórias, A procura de um emprego, E o jogo"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/15.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-15');" />
 </div><br class="mobileHide" />
 
 </a>
 
-<a href="#capítulo-14">
-<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/14.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-14');" />
+<a href="#capítulo-15">
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/15.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-15');" />
 </div><br class="mobileShow" />
 
 </a>
@@ -488,9 +505,7 @@ Status: <span class="w3-text-orange">[Revisando e editando]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#capítulo-15" title="15 - 15"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-15');">15 - 15</button></a> 
-</div><div class="shakesidetoside">
-<a href="#capítulo-16" title="16 - 16"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-16');">16 - 16</button></a> 
+<a href="#capítulo-16" title="16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-16');">16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale</button></a> 
 </div><div class="shakesidetoside">
 <a href="#capítulo-17" title="17 - 17"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-17');">17 - 17</button></a> 
 </div><div class="shakesidetoside">
@@ -740,6 +755,22 @@ Status: <span class="w3-text-orange">[Revisando e editando]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
+<a href="#capítulo-14" title="14 - Um Feliz Ano Novo (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-14');">14 - Um Feliz Ano Novo (2019)</button></a> 
+<center>
+<a href="#capítulo-14" title="14 - Um Feliz Ano Novo (2019)"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/14.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-14');" />
+</div><br class="mobileHide" />
+
+</a>
+
+<a href="#capítulo-14">
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/14.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-14');" />
+</div><br class="mobileShow" />
+
+</a>
+</center>
+<br />
+
+</div><div class="shakesidetoside">
 <style>
 @keyframes blink_black_to_white {
 	0% {
@@ -763,15 +794,15 @@ Status: <span class="w3-text-orange">[Revisando e editando]</span></h4><br />
 	animation-iteration-count: infinite;
 }
 </style>
-<a href="#capítulo-14" title="14 - Um Feliz Ano Novo (2019)"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-14');">14 - Um Feliz Ano Novo (2019)</button></a> 
+<a href="#capítulo-15" title="15 - Memórias, A procura de um emprego, E o jogo"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="hidenotif();hidenotifm();openCity('capítulo-15');">15 - Memórias, A procura de um emprego, E o jogo</button></a> 
 <center>
-<a href="#capítulo-14" title="14 - Um Feliz Ano Novo (2019)"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/14.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-14');" />
+<a href="#capítulo-15" title="15 - Memórias, A procura de um emprego, E o jogo"><div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/15.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-15');" />
 </div><br class="mobileHide" />
 
 </a>
 
-<a href="#capítulo-14">
-<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/14.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-14');" />
+<a href="#capítulo-15">
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/15.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-15');" />
 </div><br class="mobileShow" />
 
 </a>
@@ -779,9 +810,7 @@ Status: <span class="w3-text-orange">[Revisando e editando]</span></h4><br />
 <br />
 
 </div><div class="shakesidetoside">
-<a href="#capítulo-15" title="15 - 15"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-15');">15 - 15</button></a> 
-</div><div class="shakesidetoside">
-<a href="#capítulo-16" title="16 - 16"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-16');">16 - 16</button></a> 
+<a href="#capítulo-16" title="16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-16');">16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale</button></a> 
 </div><div class="shakesidetoside">
 <a href="#capítulo-17" title="17 - 17"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-17');">17 - 17</button></a> 
 </div><div class="shakesidetoside">
@@ -3919,13 +3948,13 @@ Capítulo: 14 - Um Feliz Ano Novo (2019)</b>
 <div class="mobileHide"><h2 class="background_brown text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
 
 <b>Você está lendo: A Vida De Pequenata<br />
-Capítulo: 15 - 15</b>
+Capítulo: 15 - Memórias, A procura de um emprego, E o jogo</b>
 
 </div></h2></div>
 <div style="margin:3%;"><div class="mobileShow"><h4 class="background_brown text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
 
 <b>Você está lendo: A Vida De Pequenata<br />
-Capítulo: 15 - 15</b>
+Capítulo: 15 - Memórias, A procura de um emprego, E o jogo</b>
 
 </div></h4></div>
 </div>
@@ -3938,10 +3967,131 @@ Capítulo: 15 - 15</b>
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <center>
+<div class="mobileHide"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/15.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-15');" />
+</div><br class="mobileHide" />
+<div class="mobileShow"><img src="https://diario.netlify.app/cdn/img/Stories/Pequenata/Capas/Kids/PTBR/15.png" width="99%" height="99%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-15');" />
+</div><br class="mobileShow" />
 </center>
 <br />
 <div id="texto-capítulo-15" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
-Era uma segunda-feira, Pequenata estava sonhando com algumas nuvens altas, ela estava sentada em uma nuvem rosa, ela estava com Júlia, ela abraçou Júlia, elas assistiram o sol, os pássaros voando, elas amaram aquele momento, as nuvens rosas eram tão bonitas, elas achavam que estavam em um filme de fantasia, Júlia viu a cor rosa e pensou em Pinkie Pie, e pensou em Rainbow Dash, então uma pessoa aleatória apareceu sentada em uma nuvem não tão longe dali, aquela pessoa era um homem, com um violão, tocando algumas musicas de gênero folk que Pequenata gostava, Júlia e Pequenata amaram aquela música, elas acordaram juntas, Júlia disse que teve um sonho lindo onde elas estavam sentadas em nuvens rosas, e então um homem apareceu, Pequenata disse que teve o mesmo sonho, e disse que foi incrível que os sonhos sincronizaram, elas saíram da cama, Júlia preparou o café da manhã, Pequenata e Júlia comeram juntas, era hora de Pequenata ir para o trabalho, ela se preparou pra sair, ela deu tchau para Júlia e começou a correr enquanto escutava musicas de gênero folk no aplicativo Vegetify, ela amava aquele sentimento, ver as folhas caírem e correr para o trabalho dela de manhã, então ela chegou ao trabalho dela, ela pausou a musica e sentou na mesa dela, ela começou a programar, ela tinha um aplicativo pra programar hoje, era um aplicativo de encontros, ela gostava de programar aquilo, programar a interface, e fazer um aplicativo para ajudar as pessoas a ficarem juntas, então ela terminou o aplicativo e mandou para o chefe dela, ela também tinha um celular pra consertar, ela gostou de consertar ele, Pequenata pensou que era incrível trabalhar em um trabalho misturado igual aquele, então o tempo de trabalho acabou e ela saiu do prédio e chegou em casa, ela disse oi para Júlia e então abraçou ela, Júlia disse: "Bem-vinda de volta amor", Júlia preparou a janta e elas comeram juntas, elas gostaram da comida, então Pequenata lembrou que ela assistia Vegetable Rangers quando criança, com aqueles megazords e robôs, e ela soube que um novo filme reboot lançou naquele mês, então ela disse isso para Júlia, então Pequenata e Júlia assistiram o filme juntas no aplicativo Vegetiflix, foi incrível, os robôs, os efeitos especiais, a animação, Júlia disse que amou o filme, então elas se prepararam para dormir, estava um pouco frio de noite, e a lua estava brilhando muito forte, elas pegaram um cobertor quente e foram pra cama dormir, Pequenata queria mais daqueles momentos, quentinha em um cobertor com Júlia, assistindo um filme, Pequenata realmente amava frio...
+Era uma Segunda-Feira, estava um pouco frio, Pequenata acordou, ela precisava trabalhar hoje.
+<br />Pequenata pensou sobre a noite anterior, era um Domingo, dia 31 de Dezembro de 2018, ela estava feliz, assistindo aquele filme de super herói com Júlia enquanto comia Doritos e bebia Coca-cola.
+<br />E também pensando em o que ela fez em 2018, os amigos que ela fez, Mia, Yam, Patrícia, e outros.
+<br />Pequenata tinha esses pensamentos em sua mente enquanto ela estava na cama, olhando para o teto, eram cinco e quarenta da manhã.
+<br />O sol estava começando a brilhar através das cortinas, Pequenata se espreguiçou, abraçando Júlia e beijando seus lábios.
+<br />Depois disso, Pequenata se levantou, fez suas necessidades matinais, e andou até a cozinha.
+<br />Pequenata pegou dois pratos e colocou eles em cima da mesa da cozinha, ela pegou o saco de pão e o abriu.
+<br />Colocando duas fatias em cada prato, então ela fechou o saco de pão e o guardou dentro do armário da cozinha.
+<br />Depois disso, a garota andou até a geladeira e a abriu, ela pensou sobre aquele anúncio de uma geladeira TPF que ela viu um dia na TV.
+<br />Ela pegou o queijo e o leite, depois disso, ela andou até a mesa da cozinha e colocou o leite e o queijo em cima dela.
+<br />Então ela andou até a pia da cozinha e pegou uma faca e dois copos feitos de vidro.
+<br />Pequenata colocou os dois copos em cima da mesa, então ela pegou uma colher e colocou ela dentro de um dos copos.
+<br />Ela cortou duas fatias de queijo para cada pão, então ela colocou duas fatias em cada pão e fechou eles.
+<br />A garota pegou a colher e deixou ela em cima da mesa, ela encheu os dois copos com leite.
+<br />Depois disso, Pequenata pegou o pacote de chocolate em pó do armário e colocou um pouco de chocolate em pó em cada copo.
+<br />Ela misturou o chocolate em pó nos dois copos com ajuda da colher.
+<br />Então Pequenata andou até o quarto, ela acordou Júlia com um beijo em seus lábios.
+<br />Júlia se levantou e fez suas necessidades matinais, então o casal andou até a cozinha e se sentou na mesa para tomar o café da manhã.
+<br />
+<br />As duas tomaram café da manhã, Júlia disse que estava delicioso, Pequenata disse obrigada enquanto sorria.
+<br />Pequenata pensou sobre a chuva, como ela era, o som que ela fazia, ela gostava da chuva, ela gostava de ouvir os pingos de chuva batendo no telhado de sua casa, ela gostava de trovões também.
+<br />A garota se levantou, ela colocou os pratos e os copos em cima da pia, depois disso, ela andou até o banheiro.
+<br />Ela começou a se preparar para ir ao trabalho, Júlia estava lá com ela.
+<br />"Ei, amor, o que você acha da gente viver com o Yam, Mia, Carol, e Patrícia?" perguntou Júlia, curiosa.
+<br />"Como assim amor?" perguntou Pequenata, sentando-se na cama, colocando suas meias e sapatos.
+<br />"Hm... é um sonho que eu tenho, de ter uma grande casa, e viver com todos os nossos amigos, e minha irmã, o que você acha disso, amor?" perguntou Júlia, que estava sentada ao lado de Pequenata.
+<br />"Eu acho que é um bom sonho amor, eu queria viver com minha irmã também, talvez quando a gente tiver muito dinheiro e eu tiver um cargo mais alto no meu trabalho", respondeu Pequenata.
+<br />"Oh, isso é bom amor, hehe, eu acho que vou começar a trabalhar também então, e guardar meu dinheiro no banco", disse Júlia, beijando a bochecha de Pequenata enquanto sorria.
+<br />"Ok, hehe", disse Pequenata, sorrindo.
+<br />Então Pequenata se levantou, ela andou até a porta da frente da casa, abrindo ela.
+<br />Júlia abraçou ela e beijou seus lábios, "Eu vou levar a chave da casa ok amor? Em caso de você querer sair para algo", perguntou Pequenata.
+<br />"Ok, amor, não se preocupa, eu tenho a chave reserva", respondeu Júlia.
+<br />Então Pequenata saiu de casa e começou a andar até seu trabalho.
+<br />
+<br />Júlia trancou a porta da frente da casa e andou até a cozinha.
+<br />A cozinha da casa de Pequenata era na direita da sala de estar, havia um quarto pequeno onde elas tinham seus computadores.
+<br />Depois de olhar através da janela para ver o clima, Júlia abriu a geladeira, ela pegou sua garrafa de água e bebeu um pouco dela.
+<br />Então Júlia colocou a garrafa dentro da geladeira e a fechou.
+<br />Júlia andou até o quarto, seu celular estava carregando na tomada que existia na parede, seu celular estava no chão.
+<br />Ela se jogou na cama e olhou para o teto, ela suspirou e pensou sobre como ela estava se sentindo agora.
+<br />Júlia sempre passa seus dias dentro de casa enquanto Pequenata trabalha.
+<br />A garota tem algum dinheiro em sua conta do banco, ela pode ajudar Pequenata com as contas se ela precisar.
+<br />Mas o salário de Pequenata é o suficiente então ela pode pagar as contas, comprar comida, e guardar o resto em sua conta do banco.
+<br />Então Júlia pode passar seu dia deitada na cama, fazendo nada o dia todo, mas hoje ela não está sentindo vontade de fazer nada.
+<br />Júlia bocejou e se virou para o lado esquerdo da cama, olhando para a janela aberta, ela podia ver o quintal da casa, havia algumas árvores lá.
+<br />A garota se espreguiçou e saiu da cama, andando até o quarto dos computadores, o quarto onde o computador de Pequenata e o notebook de Júlia ficavam.
+<br />Depois disso, ela sentou-se na cadeira do computador de Pequenata, ela podia usar seu computador, Júlia tinha uma conta de computador só para ela.
+<br />Júlia ligou o computador, ele iniciou muito rápido, ela fez logou usando sua conta.
+<br />A garota olhou para as horas no canto inferior direito da tela, eram 7:30 da manhã, Pequenata provavelmente estava trabalhando agora.
+<br />
+<br />Júlia queria achar um emprego em São Francisco, ela soube que havia muitos empregos lá.
+<br />A garota abriu o navegador da web Mozilla Vegefox e abriu alguns sites de emprego.
+<br />Ela encontrou muitos empregos, a garota criou uma conta naquele site, ela começou a se inscrever em vários empregos.
+<br />Júlia colocou seu número de celular no site.
+<br />Se ela fosse aplicada para uma entrevista de emprego, eles iriam enviar uma mensagem para ela no Vegesapp.
+<br />Júlia se inscreveu para um total de cinquenta empregos, ela estava muito feliz e animada.
+<br />Então ela fechou as abas e fechou o Mozilla Vegefox também, ela abriu um jogo para jogar.
+<br />O jogo se chamava "Project Zomboid", era um jogo de zumbi e de sobrevivência, Júlia gostava bastante dele, o sentimento de solidão que ele causava nela.
+<br />Ela gostava desses tipos de jogos, os que te fazem sentir imerso dentro do universo do jogo, e que te causa uma emoção.
+<br />Júlia clicou no botão continuar para carregar seu último jogo salvo, ela estava controlando uma personagem chamada Anna Thompson, que tinha vinte e sete anos de idade.
+<br />A garota estava dentro de sua casa, ela matou muitos zumbis ao redor do lado de fora da casa com seu machado de bombeiro.
+<br />Então ela não precisava se preocupar sobre zumbis batendo em sua porta.
+<br />Sua casa estava toda barricada com tábuas nas janelas, nenhum zumbi poderia ver ela de fora.
+<br />Ela tinha sementes de planta, uma caixa de adubo, um barril coletor de chuva com um saco de lixo dentro dele.
+<br />A garota estava treinando suas habilidades de carpintaria, ela desmontou cadeiras e mesas para ganhar mais experiência.
+<br />Júlia amava jogar aquele jogo, parecia que ela estava realmente vivendo no apocalipse zumbi.
+<br />
+<br />Depois de jogar por algumas horas, Júlia estava um pouco cansada, ela se espreguiçou na cadeira.
+<br />A garota pausou o jogo e clicou no botão "Sair" para ir de volta para o menu principal.
+<br />Júlia olhou para as horas, eram oito da manhã, ela estava um pouco faminta, ela fechou o jogo e desligou o computador.
+<br />Ela se levantou e andou até a cozinha, abrindo a geladeira, depois disso, ela pegou o leite, o queijo, e um hambúrguer de carne feito de carne artificial que Pequenata comprou.
+<br />Então Júlia pegou uma frigideira e colocou ela em uma das bocas do fogão, ela andou até o armário e pegou o saco de pão.
+<br />Júlia pegou duas fatias de pão, ela pegou um prato e o colocou em cima da mesa.
+<br />Ela ligou o fogão e esperou por um tempo, olhando embaixo das fatias de pão para ver se estavam queimando.
+<br />Depois de alguns minutos, estava pronto, Júlia desligou o fogão e colocou as fatias no prato, ela pegou o queijo e a carne artificial.
+<br />Júlia então colocou uma fatia de queijo no pão, ela colocou a carne artificial na frigideira, ligando o fogão.
+<br />Depois de alguns minutos, a carne artificial começou a ficar quente, ela tirou ela da frigideira e colocou ela em cima do pão.
+<br />O queijo começou a derreter, ela fechou o pão e o pegou, colocando ele em cima da frigideira e fechando ela com uma tampa de alumínio.
+<br />Júlia esperou por um tempo, então ela removeu a tampa e desligou o fogão, colocando o pão no prato.
+<br />Ela fez um copo de achocolatado para ela, então ela andou até a sala de estar e ligou a TV, abrindo o aplicativo Vegeflix e selecionando seu desenho favorito, My Little Pony: A Amizade é Mágica.
+<br />Júlia assistiu alguns episódios de MLP: FIM enquanto comia e bebia, estava muito delicioso, ela assistiu mais episódios depois de comer, então ela dormiu no sofá, o desenho ainda estava tocando.
+<br />
+<br />Depois de algumas horas, Pequenata chegou em casa, ela abriu a porta da frente de casa e fechou, ela desligou a TV e acordou Júlia com um beijo e um abraço.
+<br />Elas prepararam o jantar juntas e comeram, então elas andaram até a sala de estar e sentaram lá.
+<br />Pequenata se lembrou que ela assistia o Vegetower Rangers quando ela era pequena, com os Megazords, armas laser, e robôs.
+<br />Ela soube que um novo filme reboot daquela série saiu alguns dias atrás, Pequenata queria assisti-lo.
+<br />A garota disse aquilo para Júlia, ela disse que ela também assistia o Vegetower Rangers quando ela era criança, ela disse que uma amiga mostrou a série para ela.
+<br />Júlia sugeriu que elas assistissem o novo filme.
+<br />Pequenata estava sentada na direita do sofá, o lado onde a porta da frente estava.
+<br />Júlia estava sentada no lado esquerdo do sofá, ela deixou seu celular em cima da mesa baixa que existia na esquerda do sofá.
+<br />Depois disso, Pequenata pegou o controle da TV que estava em cima da mesa que existia no centro da sala de estar.
+<br />A garota ligou a TV e abriu o aplicativo Vegeflix, ela começou a procurar pelo filme reboot do Vegetower Rangers no catálogo da Vegeflix.
+<br />De repente, o celular de Júlia tocou, ela pegou ele para ver o que era.
+<br />Era Patrícia, a irmã de Júlia, ela enviou uma mensagem para Júlia através do Vegesapp, perguntando se ela podia vir para a casa de Pequenata no próximo Domingo para fazer um churrasco.
+<br />"Ei amor, é a Patrícia, ela tá perguntando se ela pode vir aqui no Domingo pra fazer um churrasco com a gente", perguntou Júlia, olhando para Pequenata.
+<br />"Ah, isso parece bom amor, fala pra ela que ela pode vir", disse Pequenata.
+<br />"Ok", disse Júlia, que respondeu a mensagem de Patrícia, "Sim, pode vir mana, você quer que a gente compre a carne e as linguiças?"
+<br />"Sim, por favor, eu vou ajudar vocês a pagar pela comida, pode comprar pão de alho também? Por favorzinho ^^, vai ser uma delícia, hehe", respondeu Patricia.
+<br />"Sim, hehe, vamos comprar tudo, não se preocupa, e obrigado mana", disse Júlia que então mandou um emoji feliz.
+<br />"Ok maninha, obrigada. ^^", respondeu Patrícia.
+<br />Pequenata encontrou o filme na Vegeflix, ela apertou o play e se levantou para desligar a luz da sala de estar.
+<br />Júlia bloqueou a tela do celular e colocou ela em cima da mesa na esquerda do sofá.
+<br />O casal começou a assistir o filme, ele começou mostrando um adolescente.
+<br />O filme contava a história de cinco adolescentes que conseguiram super poderes quando eles chegaram perto de um meteoro que pousou na cidade onde eles viviam.
+<br />As duas assistiram o filme enquanto se abraçavam e acariciavam o cabelo uma da outra, elas estavam felizes assistindo juntas.
+<br />Depois disso, Júlia e Pequenata desligaram a TV e as luzes da casa, elas andaram até o quarto e se deitaram na cama, se abraçando forte e dormindo alegremente juntas.
+<br />
+<br />(Eu estava muito feliz em revisar esse capítulo de Pequenata, eu escrevi ele em 13/01/2019.
+<br />E eu revisei ele em 23/01/2021.
+<br />Eu já passei 2 horas revisando esse capítulo, é tão bom escrever Pequenata.
+<br />E também passei 46 minutos traduzindo o capítulo para Português.
+<br />Eu terminei de traduzir ele em 29/01/2021, o mesmo dia que terminei de revisar o capítulo 16 em Inglês.
+<br />
+<br />Eu revisei este capítulo enquanto escutava a trilha sonora do anime Yuru Camp, é tão bom e relaxante.
+<br />E traduzi ele enquanto escutava a trilha sonora do anime Heya Camp, que é relaxante mas é mais upbeat e mais animada, uma trilha sonora incrível.
+<br />Eu amo muito escrever Pequenata, eu amo essa história. &colon;3
+<br />Obrigado por ler essa história e este capítulo, hoje eu assisti um episódio do anime Yuru Camp.
+<br />Eu recomendo que você o assista, é muito bom e relaxante, eu amo assistir ele o mesmo tanto que eu amo escrever Pequenata.)
 <br /><br />Capítulo escrito em: 13/01/2019.</div>
 </div>
 <br /><br />
@@ -3961,7 +4111,7 @@ Era uma segunda-feira, Pequenata estava sonhando com algumas nuvens altas, ela e
 <br />
 
 <b>Você está lendo: A Vida De Pequenata<br />
-Capítulo: 15 - 15</b>
+Capítulo: 15 - Memórias, A procura de um emprego, E o jogo</b>
 
 <br />
 </span>
@@ -3989,13 +4139,13 @@ Capítulo: 15 - 15</b>
 <div class="mobileHide"><h2 class="background_brown text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
 
 <b>Você está lendo: A Vida De Pequenata<br />
-Capítulo: 16 - 16</b>
+Capítulo: 16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale</b>
 
 </div></h2></div>
 <div style="margin:3%;"><div class="mobileShow"><h4 class="background_brown text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
 
 <b>Você está lendo: A Vida De Pequenata<br />
-Capítulo: 16 - 16</b>
+Capítulo: 16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale</b>
 
 </div></h4></div>
 </div>
@@ -4033,7 +4183,7 @@ Era uma terça-feira, Pequenata estava sonhando em viajar o mundo de bicicleta, 
 <br />
 
 <b>Você está lendo: A Vida De Pequenata<br />
-Capítulo: 16 - 16</b>
+Capítulo: 16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale</b>
 
 <br />
 </span>
@@ -6164,11 +6314,11 @@ readmodal14m.onclick = function(event) {
 <div class="w3-animate-zoom"><div class="modal-content w3-black border_color_brown border_4px" style="border-radius: 50px;">
 <div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal15">&times;</button>
 <form name="pequenata-read-15" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Eu li o Capítulo: 15 - 15</b></h2></div>
+<div class="w3-animate-zoom"><h2 class="text_brown"><b>Eu li o Capítulo: 15 - Memórias, A procura de um emprego, E o jogo</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
 <input type="text" name="name" class="border_4px_solid_black background_brown text_black w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="Eu li o Capítulo: 15 - 15" class="border_4px_solid_black background_brown text_black w3-input" style="display:none;border-radius: 50px;">
+<input type="text" name="read" value="Eu li o Capítulo: 15 - Memórias, A procura de um emprego, E o jogo" class="border_4px_solid_black background_brown text_black w3-input" style="display:none;border-radius: 50px;">
 </div><br /><br /><br /><br /></form>
 </div>
 </div>
@@ -6180,11 +6330,11 @@ readmodal14m.onclick = function(event) {
 <div class="w3-animate-zoom"><div class="modal-content w3-black" style="border-radius: 50px;">
 <div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal15m">&times;</button><br /><br /><br />
 <form name="pequenata-read-15" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Eu li o Capítulo: 15 - 15</b></h4></div>
+<div class="w3-animate-zoom"><h4 class="text_brown"><b>Eu li o Capítulo: 15 - Memórias, A procura de um emprego, E o jogo</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
 <input type="text" name="name" class="border_4px_solid_black background_brown text_black w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="Eu li o Capítulo: 15 - 15" class="border_4px_solid_black background_brown text_black w3-input" style="display:none;border-radius: 50px;">
+<input type="text" name="read" value="Eu li o Capítulo: 15 - Memórias, A procura de um emprego, E o jogo" class="border_4px_solid_black background_brown text_black w3-input" style="display:none;border-radius: 50px;">
 </div><br /><br /><br /><br /></form>
 </div>
 </div>
@@ -6239,11 +6389,11 @@ readmodal15m.onclick = function(event) {
 <div class="w3-animate-zoom"><div class="modal-content w3-black border_color_brown border_4px" style="border-radius: 50px;">
 <div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal16">&times;</button>
 <form name="pequenata-read-16" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Eu li o Capítulo: 16 - 16</b></h2></div>
+<div class="w3-animate-zoom"><h2 class="text_brown"><b>Eu li o Capítulo: 16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale</b></h2></div>
 <div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
 <input type="text" name="name" class="border_4px_solid_black background_brown text_black w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="Eu li o Capítulo: 16 - 16" class="border_4px_solid_black background_brown text_black w3-input" style="display:none;border-radius: 50px;">
+<input type="text" name="read" value="Eu li o Capítulo: 16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale" class="border_4px_solid_black background_brown text_black w3-input" style="display:none;border-radius: 50px;">
 </div><br /><br /><br /><br /></form>
 </div>
 </div>
@@ -6255,11 +6405,11 @@ readmodal15m.onclick = function(event) {
 <div class="w3-animate-zoom"><div class="modal-content w3-black" style="border-radius: 50px;">
 <div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal16m">&times;</button><br /><br /><br />
 <form name="pequenata-read-16" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Eu li o Capítulo: 16 - 16</b></h4></div>
+<div class="w3-animate-zoom"><h4 class="text_brown"><b>Eu li o Capítulo: 16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale</b></h4></div>
 <div style="margin:3%;"><br /><div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
 <input type="text" name="name" class="border_4px_solid_black background_brown text_black w3-input" style="border-radius: 50px;">
 <button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="Eu li o Capítulo: 16 - 16" class="border_4px_solid_black background_brown text_black w3-input" style="display:none;border-radius: 50px;">
+<input type="text" name="read" value="Eu li o Capítulo: 16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale" class="border_4px_solid_black background_brown text_black w3-input" style="display:none;border-radius: 50px;">
 </div><br /><br /><br /><br /></form>
 </div>
 </div>
@@ -8550,7 +8700,7 @@ commentmodal14m.onclick = function(event) {
 <div class="modal-content w3-black border_color_brown border_4px" style="border-radius: 50px;">
 <div class="mobileHide">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" id="closecommentmodal15" style="border-radius: 50px;">&times;</button>
-<div class="w3-animate-zoom"><h2 class="text_brown"><p></p><br /><b>Comentar no Capítulo 15 - 15 <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
+<div class="w3-animate-zoom"><h2 class="text_brown"><p></p><br /><b>Comentar no Capítulo 15 - Memórias, A procura de um emprego, E o jogo <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
 <form name="pequenata-comment-15" method="POST" data-netlify="True" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
@@ -8574,7 +8724,7 @@ commentmodal14m.onclick = function(event) {
 <div class="mobileShow">
 <button class="w3-btn dark-pink w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="closecommentmodal15m" style="border-radius: 50px;">&times;</button><br /><br /><br />
 <form name="pequenata-comment-15" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><p></p><br /><b>Comentar no Capítulo 15 - 15 <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_4px" />
+<div class="w3-animate-zoom"><h4 class="text_brown"><p></p><br /><b>Comentar no Capítulo 15 - Memórias, A procura de um emprego, E o jogo <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_4px" />
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
@@ -8640,7 +8790,7 @@ commentmodal15m.onclick = function(event) {
 <div class="modal-content w3-black border_color_brown border_4px" style="border-radius: 50px;">
 <div class="mobileHide">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" id="closecommentmodal16" style="border-radius: 50px;">&times;</button>
-<div class="w3-animate-zoom"><h2 class="text_brown"><p></p><br /><b>Comentar no Capítulo 16 - 16 <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
+<div class="w3-animate-zoom"><h2 class="text_brown"><p></p><br /><b>Comentar no Capítulo 16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
 <form name="pequenata-comment-16" method="POST" data-netlify="True" style="border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
@@ -8664,7 +8814,7 @@ commentmodal15m.onclick = function(event) {
 <div class="mobileShow">
 <button class="w3-btn dark-pink w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="closecommentmodal16m" style="border-radius: 50px;">&times;</button><br /><br /><br />
 <form name="pequenata-comment-16" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><p></p><br /><b>Comentar no Capítulo 16 - 16 <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_4px" />
+<div class="w3-animate-zoom"><h4 class="text_brown"><p></p><br /><b>Comentar no Capítulo 16 - O sonho da cidade, Mensagem de emprego, E o jogo de Battle Royale <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_4px" />
 <div style="margin:3%;">
 <br />
 <div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
@@ -9895,7 +10045,7 @@ commentmodal29m.onclick = function(event) {
 </script>
 <br /><br /><br /><br /><br /><br /><br /><br /><br />
 <center>
-<a href="#Aba de sites"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" alt="Aba de sites" title="Aba de sites" onclick="openCity('Aba de sites')"><h2>Sites: <i class="fas fa-globe-americas"></i></h2></button></a>
+<a href="#Aba de sites"><button id="websites_tab_button" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" alt="Aba de sites" title="Aba de sites" onclick="openCity('Aba de sites');Define_Button('websites_tab_button');Change_Button_Color();"><h2>Sites: <i class="fas fa-globe-americas"></i></h2></button></a>
 </center>
 <a name="Aba de sites"></a>
 <br />
@@ -10387,6 +10537,13 @@ console.log("Open Chapter Script was loaded.");
 OpenChapter();
 </script>
 
-</center>
+<script>
+function getElementByXpath(path) {
+  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+}
+</script>
+
+<div style="display:none;" id="click_website_button_color">background_light_brown</div><div style="display:none;" id="old_website_button_color">background_darker_brown</div><div style="display:none;" id="button_number">5</div></center>
 </body>
 </html>
+
