@@ -1,7 +1,10 @@
 var button_element, button_background_color_class, new_button_background_color_class, old_button_background_color_class, old_button, button_number, id, sub_id, query, buttons;
-new_button_background_color_class = document.getElementById("click_website_button_color").textContent;
-old_button_background_color_class = document.getElementById("old_website_button_color").textContent;
-button_number = document.getElementById("button_number").textContent;
+
+function Define_Colors_And_Styles() {
+	new_button_background_color_class = document.getElementById("click_website_button_color").textContent;
+	old_button_background_color_class = document.getElementById("old_website_button_color").textContent;
+	button_number = document.getElementById("button_number").textContent;
+}
 
 function Define_Button(id_parameter) {
 	id = id_parameter;
