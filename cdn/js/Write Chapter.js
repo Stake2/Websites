@@ -37,4 +37,4 @@ function OpenChapter2(ChapterReadContent) {
     $("#" + write_chapter_button_text + ChapterNumber).attr('onclick', 'WriteChapter(' + writeattribute + ');');
 }
 
-console.log("WriteChapter Script was loaded.");
+console.log("Write Chapter Script was loaded.");
