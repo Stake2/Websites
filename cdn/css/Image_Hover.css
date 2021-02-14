@@ -1,22 +1,22 @@
-.gallerycontainer{
+.gallerycontainer {
 	position: relative;
 	/*Add a height attribute and set to largest image's height to prevent overlaying*/
 }
 
-.thumbnail img{
+.thumbnail img {
 	border: 1px solid white;
 	margin: 0 5px 5px 0;
 }
 
-.thumbnail:hover{
+.thumbnail:hover {
 	background-color: transparent;
 }
 
-.thumbnail:hover img{
+.thumbnail:hover img {
 	border: 1px solid blue;
 }
 
-.thumbnail span{ /*CSS for enlarged image*/
+.thumbnail span { /*CSS for enlarged image*/
 	position: absolute;
 	background-color: lightyellow;
 	padding: 5px;
@@ -27,12 +27,12 @@
 	text-decoration: none;
 }
 
-.thumbnail span img{ /*CSS for enlarged image*/
+.thumbnail span img { /*CSS for enlarged image*/
 	border-width: 0;
 	padding: 2px;
 }
 
-.thumbnail:hover span{ /*CSS for enlarged image*/
+.thumbnail:hover span { /*CSS for enlarged image*/
 	visibility: visible;
 	top: 0;
 	left: 230px; /*position where enlarged image should offset horizontally */
