@@ -18,8 +18,8 @@ document.addEventListener("keyup", function() {
 	}
 
 	var active_element = document.activeElement;
-	var chapter_title_text_area = document.getElementById("edit_chapter_title_text_textarea_number_" + ChapterNumber);
-	var chapter_story_text_area = document.getElementById("edit_chapter_story_text_textarea_number_" + ChapterNumber);
+	var chapter_title_text_area = document.getElementById("edit_chapter_title_text_textarea_number_" + Chapter_Number);
+	var chapter_story_text_area = document.getElementById("edit_chapter_story_text_textarea_number_" + Chapter_Number);
 
 	if (event.keyCode === left_arrow || event.keyCode === right_arrow) {
 		event.preventDefault();
@@ -42,22 +42,22 @@ document.addEventListener("keyup", function() {
 
 		if (modifier_key_is_pressed == true && active_element != chapter_title_text_area && active_element != chapter_story_text_area) {
 			if (event.keyCode === left_arrow) {
-				if (ChapterNumber != 1) {
-					opening_chapter_text = "Opening chapter number " + (ChapterNumber - 1) + ".";
+				if (Chapter_Number != 1) {
+					opening_chapter_text = "Opening chapter number " + (Chapter_Number - 1) + ".";
 
 					console.log(opening_chapter_text);
-					openCity(chapter_div_text + (ChapterNumber - 1));
-					DefineChapter((ChapterNumber - 1));
+					openCity(chapter_div_text + (Chapter_Number - 1));
+					Define_Chapter((Chapter_Number - 1));
 				}
 			}
 
 			if (event.keyCode === right_arrow) {
-				if (ChapterNumber != Last_Chapter) {
-					opening_chapter_text = "Opening chapter number " + (ChapterNumber + 1) + ".";
+				if (Chapter_Number != Last_Chapter) {
+					opening_chapter_text = "Opening chapter number " + (Chapter_Number + 1) + ".";
 
 					console.log(opening_chapter_text);
-					openCity(chapter_div_text + (ChapterNumber + 1));
-					DefineChapter((ChapterNumber + 1));
+					openCity(chapter_div_text + (Chapter_Number + 1));
+					Define_Chapter((Chapter_Number + 1));
 				}
 			}
 		}

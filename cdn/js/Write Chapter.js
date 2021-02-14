@@ -1,13 +1,13 @@
-var ChapterNumber;
+var Chapter_Number;
 var Last_Chapter = 29;
 var readattribute;
 var writeattribute;
 var userLang = navigator.language || navigator.userLanguage;
 
-function DefineChapter(number) {
-    ChapterNumber = number;
-	readattribute = $("#show_story_chapter_text_button_number_" + ChapterNumber).html();
-	writeattribute = $("#edit_story_chapter_button_number_" + ChapterNumber).html();
+function Define_Chapter(number) {
+    Chapter_Number = number;
+	readattribute = $("#show_story_chapter_text_button_number_" + Chapter_Number).html();
+	writeattribute = $("#edit_story_chapter_button_number_" + Chapter_Number).html();
 }
 
 if (userLang == "pt-BR" || userLang == "pt-PT") {
@@ -24,17 +24,17 @@ else {
 	var write_chapter_button_text = "write-button-";
 }
 	
-function WriteChapter(ChapterWriteContent) {
-    $("#" + chapter_text_name + ChapterNumber).html(ChapterWriteContent);
-    $("#" + write_chapter_button_text + ChapterNumber).html('<h3><i class="fas fa-book"></i></h3>');
-    $("#" + write_chapter_button_text + ChapterNumber).attr('onclick', 'OpenChapter2(' + readattribute + ');');
+function Write_Chapter(ChapterWriteContent) {
+    $("#" + chapter_text_name + Chapter_Number).html(Chapter_Write_Content);
+    $("#" + write_chapter_button_text + Chapter_Number).html('<h3><i class="fas fa-book"></i></h3>');
+    $("#" + write_chapter_button_text + Chapter_Number).attr('onclick', 'Replace_Chapter_Write_Content_With_Read_Content(' + readattribute + ');');
 }
 
-function OpenChapter2(ChapterReadContent) {
-    openCity(chapter_text + '-' + ChapterNumber);
-    $("#" + chapter_text_name + ChapterNumber).html(ChapterReadContent);
-    $("#" + write_chapter_button_text + ChapterNumber).html('<h3><i class="fas fa-pen"></i></h3>');
-    $("#" + write_chapter_button_text + ChapterNumber).attr('onclick', 'WriteChapter(' + writeattribute + ');');
+function Replace_Chapter_Write_Content_With_Read_Content(Chapter_Read_Content) {
+    openCity(chapter_text + '-' + Chapter_Number);
+    $("#" + chapter_text_name + Chapter_Number).html(ChapterReadContent);
+    $("#" + write_chapter_button_text + Chapter_Number).html('<h3><i class="fas fa-pen"></i></h3>');
+    $("#" + write_chapter_button_text + Chapter_Number).attr('onclick', 'Write_Chapter(' + writeattribute + ');');
 }
 
 console.log("Write Chapter Script was loaded.");
