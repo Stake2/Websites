@@ -15,83 +15,85 @@ else {
 }
 
 //Gets the div element
-var notifdiv = document.getElementById("notificationdiv");
+var notification_div_computer = document.getElementById("notification_div_computer");
 
 //Gets the close button for the div element
-var notifclosebtn = document.getElementById("notificationclose");
+var notification_close_button_computer = document.getElementById("notification_close_button_computer");
 
 //Gets the div element
-var notifdivm = document.getElementById("notificationdivm");
+var notification_div_mobile = document.getElementById("notification_div_mobile");
 
 //Gets the close button for the div element
-var notifclosebtnm = document.getElementById("notificationclosem");
+var notification_close_button_mobile = document.getElementById("notification_close_button_mobile");
 
 //When the user clicks on the click button, it will run this function
-notifclosebtn.onclick = function() {
+notification_close_button_computer.onclick = function() {
 	//Animates the div element from top to bottom, hiding it
-	notifdiv.className = notifdiv.className.replace("stake2animatebottom", "stake2animatebottomrevert");
+	notification_div_computer.className = notification_div_computer.className.replace("stake2animatebottom", "stake2animatebottomrevert");
 
 	//Changes the text of the div element
-	notifdiv.innerHTML = "<h1 width='50%'>" + btnText1 + "</h1>";
+	notification_div_computer.innerHTML = "<h1 width='50%'>" + btnText1 + "</h1>";
 
-	document.title = olddocumenttitle;
+	document.title = old_website_title;
 
 	//Hides the div element after the animation has stopped
 	setTimeout(function() {
-		notifdiv.style.display = "none";
+		notification_div_computer.style.display = "none";
 	}, 10000);
 }
 
 //When the user clicks on the click button, it will run this function
-notifclosebtnm.onclick = function() {
+notification_close_button_mobile.onclick = function() {
 	//Animates the div element from top to bottom, hiding it
-	notifdivm.className = notifdivm.className.replace("stake2animatebottom", "stake2animatebottomrevert");
+	notification_div_mobile.notification_div_mobile = notification_div_mobile.className.replace("stake2animatebottom", "stake2animatebottomrevert");
 
 	//Expands the width of the div element
-	notifdivm.style.width = "100%";
-	notifdivm.innerHTML = "<h2 width='50%'>" + btnText1 + "</h2>";
+	notification_div_mobile.style.width = "100%";
+	notification_div_mobile.innerHTML = "<h2 width='50%'>" + btnText1 + "</h2>";
 
-	document.title = olddocumenttitle;
+	document.title = old_website_title;
 
 	//Hides the div element after the animation has stopped
 	setTimeout(function() {
-		notifdivm.style.display = "none";
+		notification_div_mobile.style.display = "none";
 	}, 10000);
 }
 
 console.log("Notification Script was loaded.");
 
 function Hide_Notification() {
-	var notifdiv = document.getElementById("notificationdiv");
-	var notifclosebtn = document.getElementById("notificationclose");
-	document.title = olddocumenttitle;
+	var notification_div_computer = document.getElementById("notification_div_computer");
+	var notification_close_button_computer = document.getElementById("notification_close_button_computer");
+
+	document.title = old_website_title;
 
 	//Animates the div element from top to bottom, hiding it
-	notifdiv.className = notifdiv.className.replace("stake2animatebottom", "stake2animatebottomrevert");
+	notification_div_computer.className = notification_div_computer.className.replace("stake2animatebottom", "stake2animatebottomrevert");
 
 	//Changes the text of the div element
-	notifdiv.innerHTML = '<h1 width="50%">' + btnText1 + "</h1>";
+	notification_div_computer.innerHTML = '<h1 width="50%">' + btnText1 + "</h1>";
 
 	//Hides the div element after the animation has stopped
 	setTimeout(function() {
-		notifdiv.style.display = "none";
+		notification_div_computer.style.display = "none";
 	}, 10000);
 }
 
 function Hide_Notification_Mobile() {
-	var notifdivm = document.getElementById("notificationdivm");
-	var notifclosebtnm = document.getElementById("notificationclosem");
-	document.title = olddocumenttitle;
+	var notification_div_mobile = document.getElementById("notification_div_mobile");
+	var notification_close_button_mobile = document.getElementById("notification_close_button_mobile");
+
+	document.title = old_website_title;
 
 	//Animates the div element from top to bottom, hiding it
-	notifdivm.className = notifdivm.className.replace("stake2animatebottom", "stake2animatebottomrevert");
+	notification_div_mobile.className = notification_div_mobile.className.replace("stake2animatebottom", "stake2animatebottomrevert");
 
 	//Changes the text of the div element
-	notifdivm.innerHTML = '<h2 width="50%">' + btnText1 + "</h2>";
+	notification_div_mobile.innerHTML = '<h2 width="50%">' + btnText1 + "</h2>";
 
 	//Hides the div element after the animation has stopped
 	setTimeout(function() {
-		notifdivm.style.display = "none";
+		notification_div_mobile.style.display = "none";
 	}, 10000);
 }
 
