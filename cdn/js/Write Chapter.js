@@ -24,7 +24,7 @@ else {
 	var write_chapter_button_text = "write-button-";
 }
 	
-function Write_Chapter(ChapterWriteContent) {
+function Write_Chapter(Chapter_Write_Content) {
     $("#" + chapter_text_name + Chapter_Number).html(Chapter_Write_Content);
     $("#" + write_chapter_button_text + Chapter_Number).html('<h3><i class="fas fa-book"></i></h3>');
     $("#" + write_chapter_button_text + Chapter_Number).attr('onclick', 'Replace_Chapter_Write_Content_With_Read_Content(' + readattribute + ');');
@@ -32,7 +32,7 @@ function Write_Chapter(ChapterWriteContent) {
 
 function Replace_Chapter_Write_Content_With_Read_Content(Chapter_Read_Content) {
     openCity(chapter_text + '-' + Chapter_Number);
-    $("#" + chapter_text_name + Chapter_Number).html(ChapterReadContent);
+    $("#" + chapter_text_name + Chapter_Number).html(Chapter_Read_Content);
     $("#" + write_chapter_button_text + Chapter_Number).html('<h3><i class="fas fa-pen"></i></h3>');
     $("#" + write_chapter_button_text + Chapter_Number).attr('onclick', 'Write_Chapter(' + writeattribute + ');');
 }
