@@ -94,6 +94,20 @@ function Rodar() {
 		}
 	}
 
+	if (titulo == "Watch History PT-PT" && check == false) {
+		var lang = "pt-PT";
+
+		if (userLang == lang) {
+			return;
+		}
+
+		if (userLang != lang) {
+			var choosen_website_url = website_link + "watch 👁" + "/";
+			var res = choosen_website_url + userLang + "/";
+			window.location = res;
+		}
+	}
+
 	if (titulo == "Things I Do Geral" && check == false) {
 		var lang = "a";
 
