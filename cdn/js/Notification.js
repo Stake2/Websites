@@ -42,7 +42,7 @@ function Hide_Notification_Computer() {
 	var notification_div_computer = document.getElementById("notification_div_computer");
 	var notification_close_button_computer = document.getElementById("notification_close_button_computer");
 
-	document.title = old_website_title;
+	Reset_Title("notification");
 
 	//Animates the div element from top to bottom, hiding it
 	notification_div_computer.className = notification_div_computer.className.replace("stake2animatebottom", "stake2animatebottomrevert");
@@ -59,8 +59,6 @@ function Hide_Notification_Computer() {
 function Hide_Notification_Mobile() {
 	var notification_div_mobile = document.getElementById("notification_div_mobile");
 	var notification_close_button_mobile = document.getElementById("notification_close_button_mobile");
-
-	document.title = old_website_title;
 
 	//Animates the div element from top to bottom, hiding it
 	notification_div_mobile.className = notification_div_mobile.className.replace("stake2animatebottom", "stake2animatebottomrevert");
