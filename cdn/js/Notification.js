@@ -42,8 +42,6 @@ function Hide_Notification_Computer() {
 	var notification_div_computer = document.getElementById("notification_div_computer");
 	var notification_close_button_computer = document.getElementById("notification_close_button_computer");
 
-	Reset_Title("notification");
-
 	//Animates the div element from top to bottom, hiding it
 	notification_div_computer.className = notification_div_computer.className.replace("stake2animatebottom", "stake2animatebottomrevert");
 
