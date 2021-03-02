@@ -18,7 +18,7 @@
 <meta name="twitter:website" value="@The_Snakes90" />
 <meta name="twitter:site" value="@The_Snakes90" />
 <meta name="twitter:creator" content="@The_Snakes90" />
-<meta name="revised" content="Stake's Enterprise TM, 18/02/2021" />
+<meta name="revised" content="Stake's Enterprise TM, 01/03/2021" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <meta charset="UTF-8" />
@@ -54,7 +54,7 @@
 <!--- Computer Button bar on the top -->
 <div id="computer_buttons_bar" class="w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
 <span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="To Watch" alt="To Watch">
@@ -85,7 +85,7 @@
 
 <span style="font-size:30px;" class="mobileShow text_blue">Mobile button menu: </span>
 
-<a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a>
+<a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a>
 
 <a href="#watch_history-to watchm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_2" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-to watchm');Define_Button('mobile_button_2');Change_Button_Color();"><h4>To Watch [12]: <i class="fas fa-play"></i></h4></button></a>
 
@@ -107,10 +107,42 @@
 Hide_Mobile_Buttons();
 </script>
 </div>
+<script>
+var old_website_title, current_website_title;
 
+function Get_Title() {
+	old_website_title = document.title;
+	current_website_title = document.title;
+}
+
+function Change_Title() {
+	document.title = "(1) " + document.title;
+	current_website_title = document.title;
+}
+
+function Reset_Title(mode, source = null) {
+	if (mode == "chapter") {
+		document.title = current_website_title;
+
+		if (source == "notification") {
+			document.title = document.title.replace("(1) ", "");
+		}
+	}
+
+	if (mode == "notification") {
+		document.title = document.title.replace("(1) ", "");
+		current_website_title = document.title;
+	}
+}
+
+function Add_To_Website_Title(text_to_add, source = null) {
+	Reset_Title("chapter", source);
+	document.title = document.title + " " + text_to_add;
+}
+</script>
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<div class="background_black border_color_blue border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;"><div class="w3-animate-zoom"><h2 class="text_blue w3-animate-zoom mobileHide"><p><br /><b>Watch History EN-US: <i class="fas fa-eye"></i> <span class="w3-text-yellow">[653 Watched Media]</span></b><br /><br /><p></h2></div>
-<div class="w3-animate-zoom"><h4 class="text_blue w3-animate-zoom mobileShow"><p><br /><b>Watch History EN-US: <i class="fas fa-eye"></i> <span class="w3-text-yellow">[653 Watched Media]</span></b><br /><br /><p></h4></div>
+<div class="background_black border_color_blue border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;"><div class="w3-animate-zoom"><h2 class="text_blue w3-animate-zoom mobileHide"><p><br /><b>Watch History EN-US: <i class="fas fa-eye"></i> <span class="w3-text-yellow">[660 Watched Media]</span></b><br /><br /><p></h2></div>
+<div class="w3-animate-zoom"><h4 class="text_blue w3-animate-zoom mobileShow"><p><br /><b>Watch History EN-US: <i class="fas fa-eye"></i> <span class="w3-text-yellow">[660 Watched Media]</span></b><br /><br /><p></h4></div>
 
 	<hr class="border_color_blue border_1px" />
 	<img src="https://diario.netlify.app/cdn/img/WH.png" width="28%" class="border_3px border_color_blue mobileHide" style="border-radius: 50px;" />
@@ -128,34 +160,34 @@ Hide_Mobile_Buttons();
 <div style="margin:3%;">
 
 <div class="mobileHide"><span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
-<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [3]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [4]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Archived Media" alt="Archived Media">
 <a href="#watched-archived media"><button id="computer_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived media');Define_Button('computer_button_5');Change_Button_Color();"><h2>Archived Media [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
-</div><div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [3]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div><hr class="border_color_blue border_1px" />
-<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Watched 2021: </span><span class="w3-text-yellow"> [59]</span></b><br /><br /><p></p></h2></div><hr class="border_color_blue border_1px" />
+</div><div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [4]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div><hr class="border_color_blue border_1px" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Watched 2021: </span><span class="w3-text-yellow"> [66]</span></b><br /><br /><p></p></h2></div><hr class="border_color_blue border_1px" />
 <h4 class="text_blue" style="text-align:left;">
 <div class="w3-animate-zoom">
-<div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 </a>
 <a href="#Cartoons_2021"><b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
 </a>
-<a href="#Series_2021"><b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<a href="#Series_2021"><b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 </a>
-<a href="#Movies_2021"><b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<a href="#Movies_2021"><b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 </a>
 <a href="#Videos_2021"><b><span class="w3-text-white">Videos: </span><span class="text_blue">3</span></b><br />
 </a>
 <br />
 <a name="Animes_2021"></a>
-<b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Dr. Stone EP24 "Vozes a Uma Distância Infinita"<span class="w3-text-white"> - (19:44 02/01/2021)</span></span><br /></div>
 </div>
@@ -285,6 +317,18 @@ Hide_Mobile_Buttons();
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">43 - </span>Shingeki No Kyojin S04E02(61) "Trem da Noite Escura"<span class="w3-text-white"> - (23:02 17/02/2021)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">44 - </span>Yuru Camp△ Segunda Temporada EP07 "Plano de acampamento solo de Nadeshiko"<span class="w3-text-white"> - (18:48 18/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">45 - </span>Fairy Tail S03EP21(94) "Adeus, Edolas"<span class="w3-text-white"> - (18:42 22/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">46 - </span>Yuru Camp△ Segunda Temporada EP08 "Acampando Sozinha"<span class="w3-text-white"> - (20:19 25/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">47 - </span>Fairy Tail S03EP21(95) "Lisanna"<span class="w3-text-white"> - (20:55 25/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Cartoons_2021"></a>
 <b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
@@ -296,7 +340,7 @@ Hide_Mobile_Buttons();
 </div>
 <br />
 <a name="Series_2021"></a>
-<b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>The Walking Dead S09E11(126) "Recompensa"<span class="w3-text-white"> - (21:36 01/01/2021)</span></span><br /></div>
 </div>
@@ -321,9 +365,15 @@ Hide_Mobile_Buttons();
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>The Walking Dead S10E01(132) "Caminhos Que Cruzamos"<span class="w3-text-white"> - (18:24 12/02/2021)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>The Walking Dead S10E02(133) "Nós Somos o Fim do Mundo"<span class="w3-text-white"> - (16:13 19/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>The Walking Dead S10E03(134) "Fantasmas"<span class="w3-text-white"> - (15:36 26/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Movies_2021"></a>
-<b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment)<span class="w3-text-white"> - (05:02 11/01/2021)</span></span><br /></div>
 </div>
@@ -332,6 +382,9 @@ Hide_Mobile_Buttons();
 </div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Ela Disse, Ele Disse (2019, Imagem Filmes, Claudia Castro)<span class="w3-text-white"> - (17:06 24/01/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Soul (2020, Walt Disney Pictures, Pete Docter)<span class="w3-text-white"> - (20:35 01/03/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Videos_2021"></a>
@@ -346,19 +399,19 @@ Hide_Mobile_Buttons();
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>How It [BONE]Works 1 A - Let's begin with Movement Basics (Nimso Ny <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=YJ6kBKSZNCU"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (21:51 08/02/2021)</span></span><br /></div>
 </div>
 <br />
-</div><div class="mobileShow"><a href="#Animes_2021_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+</div><div class="mobileShow"><a href="#Animes_2021_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 </a>
 <a href="#Cartoons_2021_Mobile"><b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
 </a>
-<a href="#Series_2021_Mobile"><b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<a href="#Series_2021_Mobile"><b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 </a>
-<a href="#Movies_2021_Mobile"><b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<a href="#Movies_2021_Mobile"><b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 </a>
 <a href="#Videos_2021_Mobile"><b><span class="w3-text-white">Videos: </span><span class="text_blue">3</span></b><br />
 </a>
 <br />
 <a name="Animes_2021_Mobile"></a>
-<b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Dr. Stone EP24 "Vozes a Uma Distância Infinita"<span class="w3-text-white"> - (19:44 02/01/2021)</span></span><br /></div>
 </div>
@@ -488,6 +541,18 @@ Hide_Mobile_Buttons();
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">43 - </span>Shingeki No Kyojin S04E02(61) "Trem da Noite Escura"<span class="w3-text-white"> - (23:02 17/02/2021)</span></span><br /></div>
 </div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">44 - </span>Yuru Camp△ Segunda Temporada EP07 "Plano de acampamento solo de Nadeshiko"<span class="w3-text-white"> - (18:48 18/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">45 - </span>Fairy Tail S03EP21(94) "Adeus, Edolas"<span class="w3-text-white"> - (18:42 22/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">46 - </span>Yuru Camp△ Segunda Temporada EP08 "Acampando Sozinha"<span class="w3-text-white"> - (20:19 25/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">47 - </span>Fairy Tail S03EP21(95) "Lisanna"<span class="w3-text-white"> - (20:55 25/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Cartoons_2021_Mobile"></a>
 <b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
@@ -499,7 +564,7 @@ Hide_Mobile_Buttons();
 </div>
 <br />
 <a name="Series_2021_Mobile"></a>
-<b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>The Walking Dead S09E11(126) "Recompensa"<span class="w3-text-white"> - (21:36 01/01/2021)</span></span><br /></div>
 </div>
@@ -524,9 +589,15 @@ Hide_Mobile_Buttons();
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>The Walking Dead S10E01(132) "Caminhos Que Cruzamos"<span class="w3-text-white"> - (18:24 12/02/2021)</span></span><br /></div>
 </div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>The Walking Dead S10E02(133) "Nós Somos o Fim do Mundo"<span class="w3-text-white"> - (16:13 19/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>The Walking Dead S10E03(134) "Fantasmas"<span class="w3-text-white"> - (15:36 26/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Movies_2021_Mobile"></a>
-<b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment)<span class="w3-text-white"> - (05:02 11/01/2021)</span></span><br /></div>
 </div>
@@ -535,6 +606,9 @@ Hide_Mobile_Buttons();
 </div>
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Ela Disse, Ele Disse (2019, Imagem Filmes, Claudia Castro)<span class="w3-text-white"> - (17:06 24/01/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Soul (2020, Walt Disney Pictures, Pete Docter)<span class="w3-text-white"> - (20:35 01/03/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Videos_2021_Mobile"></a>
@@ -562,34 +636,34 @@ Hide_Mobile_Buttons();
 <div style="margin:3%;">
 
 <div class="mobileHide"><span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
-<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [3]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [4]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Archived Media" alt="Archived Media">
 <a href="#watched-archived media"><button id="computer_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived media');Define_Button('computer_button_5');Change_Button_Color();"><h2>Archived Media [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
-</div><div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [3]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div><hr class="border_color_blue border_1px" />
-<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Watched 2021: </span><span class="w3-text-yellow"> [59]</span></b><br /><br /><p></p></h2></div><hr class="border_color_blue border_1px" />
+</div><div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [4]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div><hr class="border_color_blue border_1px" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Watched 2021: </span><span class="w3-text-yellow"> [66]</span></b><br /><br /><p></p></h2></div><hr class="border_color_blue border_1px" />
 <h4 class="text_blue" style="text-align:left;">
 <div class="w3-animate-zoom">
-<div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 </a>
 <a href="#Cartoons_2021"><b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
 </a>
-<a href="#Series_2021"><b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<a href="#Series_2021"><b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 </a>
-<a href="#Movies_2021"><b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<a href="#Movies_2021"><b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 </a>
 <a href="#Videos_2021"><b><span class="w3-text-white">Videos: </span><span class="text_blue">3</span></b><br />
 </a>
 <br />
 <a name="Animes_2021"></a>
-<b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Dr. Stone EP24 "Vozes a Uma Distância Infinita"<span class="w3-text-white"> - (19:44 02/01/2021)</span></span><br /></div>
 </div>
@@ -719,6 +793,18 @@ Hide_Mobile_Buttons();
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">43 - </span>Shingeki No Kyojin S04E02(61) "Trem da Noite Escura"<span class="w3-text-white"> - (23:02 17/02/2021)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">44 - </span>Yuru Camp△ Segunda Temporada EP07 "Plano de acampamento solo de Nadeshiko"<span class="w3-text-white"> - (18:48 18/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">45 - </span>Fairy Tail S03EP21(94) "Adeus, Edolas"<span class="w3-text-white"> - (18:42 22/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">46 - </span>Yuru Camp△ Segunda Temporada EP08 "Acampando Sozinha"<span class="w3-text-white"> - (20:19 25/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">47 - </span>Fairy Tail S03EP21(95) "Lisanna"<span class="w3-text-white"> - (20:55 25/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Cartoons_2021"></a>
 <b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
@@ -730,7 +816,7 @@ Hide_Mobile_Buttons();
 </div>
 <br />
 <a name="Series_2021"></a>
-<b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>The Walking Dead S09E11(126) "Recompensa"<span class="w3-text-white"> - (21:36 01/01/2021)</span></span><br /></div>
 </div>
@@ -755,9 +841,15 @@ Hide_Mobile_Buttons();
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>The Walking Dead S10E01(132) "Caminhos Que Cruzamos"<span class="w3-text-white"> - (18:24 12/02/2021)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>The Walking Dead S10E02(133) "Nós Somos o Fim do Mundo"<span class="w3-text-white"> - (16:13 19/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>The Walking Dead S10E03(134) "Fantasmas"<span class="w3-text-white"> - (15:36 26/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Movies_2021"></a>
-<b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment)<span class="w3-text-white"> - (05:02 11/01/2021)</span></span><br /></div>
 </div>
@@ -766,6 +858,9 @@ Hide_Mobile_Buttons();
 </div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Ela Disse, Ele Disse (2019, Imagem Filmes, Claudia Castro)<span class="w3-text-white"> - (17:06 24/01/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Soul (2020, Walt Disney Pictures, Pete Docter)<span class="w3-text-white"> - (20:35 01/03/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Videos_2021"></a>
@@ -780,19 +875,19 @@ Hide_Mobile_Buttons();
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>How It [BONE]Works 1 A - Let's begin with Movement Basics (Nimso Ny <a class="w3-text-red" target="_newtab" href="https://www.youtube.com/watch?v=YJ6kBKSZNCU"><i class="fab fa-youtube"></i></a>)<span class="w3-text-white"> - (21:51 08/02/2021)</span></span><br /></div>
 </div>
 <br />
-</div><div class="mobileShow"><a href="#Animes_2021_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+</div><div class="mobileShow"><a href="#Animes_2021_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 </a>
 <a href="#Cartoons_2021_Mobile"><b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
 </a>
-<a href="#Series_2021_Mobile"><b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<a href="#Series_2021_Mobile"><b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 </a>
-<a href="#Movies_2021_Mobile"><b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<a href="#Movies_2021_Mobile"><b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 </a>
 <a href="#Videos_2021_Mobile"><b><span class="w3-text-white">Videos: </span><span class="text_blue">3</span></b><br />
 </a>
 <br />
 <a name="Animes_2021_Mobile"></a>
-<b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Dr. Stone EP24 "Vozes a Uma Distância Infinita"<span class="w3-text-white"> - (19:44 02/01/2021)</span></span><br /></div>
 </div>
@@ -922,6 +1017,18 @@ Hide_Mobile_Buttons();
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">43 - </span>Shingeki No Kyojin S04E02(61) "Trem da Noite Escura"<span class="w3-text-white"> - (23:02 17/02/2021)</span></span><br /></div>
 </div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">44 - </span>Yuru Camp△ Segunda Temporada EP07 "Plano de acampamento solo de Nadeshiko"<span class="w3-text-white"> - (18:48 18/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">45 - </span>Fairy Tail S03EP21(94) "Adeus, Edolas"<span class="w3-text-white"> - (18:42 22/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">46 - </span>Yuru Camp△ Segunda Temporada EP08 "Acampando Sozinha"<span class="w3-text-white"> - (20:19 25/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">47 - </span>Fairy Tail S03EP21(95) "Lisanna"<span class="w3-text-white"> - (20:55 25/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Cartoons_2021_Mobile"></a>
 <b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
@@ -933,7 +1040,7 @@ Hide_Mobile_Buttons();
 </div>
 <br />
 <a name="Series_2021_Mobile"></a>
-<b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>The Walking Dead S09E11(126) "Recompensa"<span class="w3-text-white"> - (21:36 01/01/2021)</span></span><br /></div>
 </div>
@@ -958,9 +1065,15 @@ Hide_Mobile_Buttons();
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>The Walking Dead S10E01(132) "Caminhos Que Cruzamos"<span class="w3-text-white"> - (18:24 12/02/2021)</span></span><br /></div>
 </div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>The Walking Dead S10E02(133) "Nós Somos o Fim do Mundo"<span class="w3-text-white"> - (16:13 19/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>The Walking Dead S10E03(134) "Fantasmas"<span class="w3-text-white"> - (15:36 26/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Movies_2021_Mobile"></a>
-<b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment)<span class="w3-text-white"> - (05:02 11/01/2021)</span></span><br /></div>
 </div>
@@ -969,6 +1082,9 @@ Hide_Mobile_Buttons();
 </div>
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Ela Disse, Ele Disse (2019, Imagem Filmes, Claudia Castro)<span class="w3-text-white"> - (17:06 24/01/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Soul (2020, Walt Disney Pictures, Pete Docter)<span class="w3-text-white"> - (20:35 01/03/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Videos_2021_Mobile"></a>
@@ -1464,24 +1580,24 @@ Hide_Mobile_Buttons();
 <div style="margin:3%;">
 
 <div class="mobileHide"><span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
-<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [3]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [4]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Archived Media" alt="Archived Media">
 <a href="#watched-archived media"><button id="computer_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived media');Define_Button('computer_button_5');Change_Button_Color();"><h2>Archived Media [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
-</div><div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [3]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div><hr class="border_color_blue border_1px" />
-<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Movies: </span><span class="w3-text-yellow"> [3]</span></b><br /><br /><p></p></h2></div><hr class="border_color_blue border_1px" />
+</div><div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [4]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div><hr class="border_color_blue border_1px" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Movies: </span><span class="w3-text-yellow"> [4]</span></b><br /><br /><p></p></h2></div><hr class="border_color_blue border_1px" />
 <h4 class="text_blue" style="text-align:left;">
-<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - (Movie) - </span> ﻿Sword Art Online: Ordinal Scale</span> - <span class="w3-text-white">Unknown Watched Time</span></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - (Movie) - </span> ﻿Sword Art Online: Ordinal Scale</span> - <span class="w3-text-white">(Unknown Watched Time)</span></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">2 - (Movie) - </span> Avengers: Infinite War - Vingadores: Guerra Infinita (2018, Marvel Studios)<span class="w3-text-white"> - (06:38 18/08/2018)</span></span> - <a class="text_hover_white" onclick="window.open('https://diario.netlify.app/cdn/txt/Movie Comments/Hoje, Sexta (Vingadores Guerra Infinita).txt');" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
-<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - (Movie) - </span> Spider-Man: Homecoming - Homem Aranha: De Volta Ao Lar (2017, Marvel Studios)</span> - <span class="w3-text-white">Unknown Watched Time</span></div>
-<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - (Movie) - </span> Ready Player One - Jogador Numero 1 (2018, Warner Bros)</span> - <span class="w3-text-white">Unknown Watched Time</span></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - (Movie) - </span> Spider-Man: Homecoming - Homem Aranha: De Volta Ao Lar (2017, Marvel Studios)</span> - <span class="w3-text-white">(Unknown Watched Time)</span></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - (Movie) - </span> Ready Player One - Jogador Numero 1 (2018, Warner Bros)</span> - <span class="w3-text-white">(Unknown Watched Time)</span></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">5 - (Movie) - </span> Saban's Power Rangers - Power Rangers - O Filme (2017, Saban)<span class="w3-text-white"> - (03:11 14/01/2019)</span></span> - <a class="text_hover_white" onclick="window.open('https://diario.netlify.app/cdn/txt/Movie Comments/Hoje, Segunda (Power Rangers 2017).txt');" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">6 - (Movie) - </span> Ralph Breaks the Internet - WiFi Ralph: Quebrando a Internet (2018, Walt Disney Pictures)<span class="w3-text-white"> - (18:56 23/02/2019)</span></span> - <a class="text_hover_white" onclick="window.open('https://diario.netlify.app/cdn/txt/Movie Comments/Hoje, Sabado (Detona Ralph 2 Ralph Quebra a Internet).txt');" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">7 - (Movie) - </span> My Little Pony: Equestria Girls - Spring Breakdown - My Little Pony: Equestria Girls Pânico nas Férias (2019, Hasbro Studios)<span class="w3-text-white"> - (19:55 07/04/2019)</span></span> - <a class="text_hover_white" onclick="window.open('https://diario.netlify.app/cdn/txt/Movie Comments/Hoje, Domingo (Equestria Girls Spring Breakdown).txt');" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
@@ -1505,6 +1621,7 @@ Hide_Mobile_Buttons();
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">25 - (Movie) - </span> Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment)<span class="w3-text-white"> - (05:02 11/01/2021)</span></span> - <a target="_blank" href="https://diario.netlify.app/cdn/txt/Movie Comments/Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment).txt" class="text_hover_white" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">26 - (Movie) - </span> Chronicle - Poder Sem Limites (2012, Davis Entertainment, Josh Trank)<span class="w3-text-white"> - (15:31 24/01/2021)</span></span> - <a target="_blank" href="https://diario.netlify.app/cdn/txt/Movie Comments/Chronicle - Poder Sem Limites (2012, Davis Entertainment, Josh Trank).txt" class="text_hover_white" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">27 - (Movie) - </span> Ela Disse, Ele Disse (2019, Imagem Filmes, Claudia Castro)<span class="w3-text-white"> - (17:06 24/01/2021)</span></span></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">28 - (Movie) - </span> Soul (2020, Walt Disney Pictures, Pete Docter)<span class="w3-text-white"> - (20:35 01/03/2021)</span></span> - <a target="_blank" href="https://diario.netlify.app/cdn/txt/Movie Comments/Soul (2020, Walt Disney Pictures, Pete Docter).txt" class="text_hover_white" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
 </h5></div>
 </h2>
 </div>
@@ -1516,24 +1633,24 @@ Hide_Mobile_Buttons();
 <div style="margin:3%;">
 
 <div class="mobileHide"><span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
-<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [3]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [4]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Archived Media" alt="Archived Media">
 <a href="#watched-archived media"><button id="computer_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived media');Define_Button('computer_button_5');Change_Button_Color();"><h2>Archived Media [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
-</div><div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [3]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div><hr class="border_color_blue border_1px" />
-<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Movies: </span><span class="w3-text-yellow"> [3]</span></b><br /><br /><p></p></h2></div><hr class="border_color_blue border_1px" />
+</div><div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [4]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div><hr class="border_color_blue border_1px" />
+<div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Movies: </span><span class="w3-text-yellow"> [4]</span></b><br /><br /><p></p></h2></div><hr class="border_color_blue border_1px" />
 <h4 class="text_blue" style="text-align:left;">
-<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - (Movie) - </span> ﻿Sword Art Online: Ordinal Scale</span> - <span class="w3-text-white">Unknown Watched Time</span></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - (Movie) - </span> ﻿Sword Art Online: Ordinal Scale</span> - <span class="w3-text-white">(Unknown Watched Time)</span></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">2 - (Movie) - </span> Avengers: Infinite War - Vingadores: Guerra Infinita (2018, Marvel Studios)<span class="w3-text-white"> - (06:38 18/08/2018)</span></span> - <a class="text_hover_white" onclick="window.open('https://diario.netlify.app/cdn/txt/Movie Comments/Hoje, Sexta (Vingadores Guerra Infinita).txt');" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
-<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - (Movie) - </span> Spider-Man: Homecoming - Homem Aranha: De Volta Ao Lar (2017, Marvel Studios)</span> - <span class="w3-text-white">Unknown Watched Time</span></div>
-<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - (Movie) - </span> Ready Player One - Jogador Numero 1 (2018, Warner Bros)</span> - <span class="w3-text-white">Unknown Watched Time</span></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - (Movie) - </span> Spider-Man: Homecoming - Homem Aranha: De Volta Ao Lar (2017, Marvel Studios)</span> - <span class="w3-text-white">(Unknown Watched Time)</span></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - (Movie) - </span> Ready Player One - Jogador Numero 1 (2018, Warner Bros)</span> - <span class="w3-text-white">(Unknown Watched Time)</span></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">5 - (Movie) - </span> Saban's Power Rangers - Power Rangers - O Filme (2017, Saban)<span class="w3-text-white"> - (03:11 14/01/2019)</span></span> - <a class="text_hover_white" onclick="window.open('https://diario.netlify.app/cdn/txt/Movie Comments/Hoje, Segunda (Power Rangers 2017).txt');" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">6 - (Movie) - </span> Ralph Breaks the Internet - WiFi Ralph: Quebrando a Internet (2018, Walt Disney Pictures)<span class="w3-text-white"> - (18:56 23/02/2019)</span></span> - <a class="text_hover_white" onclick="window.open('https://diario.netlify.app/cdn/txt/Movie Comments/Hoje, Sabado (Detona Ralph 2 Ralph Quebra a Internet).txt');" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">7 - (Movie) - </span> My Little Pony: Equestria Girls - Spring Breakdown - My Little Pony: Equestria Girls Pânico nas Férias (2019, Hasbro Studios)<span class="w3-text-white"> - (19:55 07/04/2019)</span></span> - <a class="text_hover_white" onclick="window.open('https://diario.netlify.app/cdn/txt/Movie Comments/Hoje, Domingo (Equestria Girls Spring Breakdown).txt');" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
@@ -1557,6 +1674,7 @@ Hide_Mobile_Buttons();
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">25 - (Movie) - </span> Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment)<span class="w3-text-white"> - (05:02 11/01/2021)</span></span> - <a target="_blank" href="https://diario.netlify.app/cdn/txt/Movie Comments/Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment).txt" class="text_hover_white" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">26 - (Movie) - </span> Chronicle - Poder Sem Limites (2012, Davis Entertainment, Josh Trank)<span class="w3-text-white"> - (15:31 24/01/2021)</span></span> - <a target="_blank" href="https://diario.netlify.app/cdn/txt/Movie Comments/Chronicle - Poder Sem Limites (2012, Davis Entertainment, Josh Trank).txt" class="text_hover_white" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">27 - (Movie) - </span> Ela Disse, Ele Disse (2019, Imagem Filmes, Claudia Castro)<span class="w3-text-white"> - (17:06 24/01/2021)</span></span></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">28 - (Movie) - </span> Soul (2020, Walt Disney Pictures, Pete Docter)<span class="w3-text-white"> - (20:35 01/03/2021)</span></span> - <a target="_blank" href="https://diario.netlify.app/cdn/txt/Movie Comments/Soul (2020, Walt Disney Pictures, Pete Docter).txt" class="text_hover_white" style="cursor:pointer;"><i class="fas fa-comments"></i></a></div>
 </h5></div>
 </h4>
 </div>
@@ -1568,11 +1686,11 @@ Hide_Mobile_Buttons();
 <div style="margin:3%;">
 
 <div class="mobileHide"><span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
-<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [3]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [4]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Archived Media" alt="Archived Media">
@@ -1580,7 +1698,7 @@ Hide_Mobile_Buttons();
 </span>
 
 </div>
-<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [3]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
+<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [4]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
 <hr class="border_color_blue border_1px" />
 <div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Archived Media: </span><span class="w3-text-yellow"> [3]</span></b><br /><br /><p></p></h2></div>
 <hr class="border_color_blue border_1px" />
@@ -1620,11 +1738,11 @@ Hide_Mobile_Buttons();
 <div style="margin:3%;">
 
 <div class="mobileHide"><span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
-<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [3]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [4]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Archived Media" alt="Archived Media">
@@ -1632,7 +1750,7 @@ Hide_Mobile_Buttons();
 </span>
 
 </div>
-<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [3]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
+<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [4]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
 <hr class="border_color_blue border_1px" />
 <div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Archived Media: </span><span class="w3-text-yellow"> [3]</span></b><br /><br /><p></p></h2></div>
 <hr class="border_color_blue border_1px" />
@@ -1693,12 +1811,12 @@ Hide_Mobile_Buttons();
 
 <br /><br />
 22:00 22/05/2020: I changed the way that the Watched Medias are written on the <span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
  tab, making them be separated by the media type, anime, video and stuff<br /><br />
 22:07 22/05/2020: I also changed some of the YouTube videos in the <span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
  tab so you can click on the YouTube button like this one <a href="#"><i class="fab fa-youtube w3-text-red"></i></a> and the YouTube video will open<br /><br />
@@ -1742,12 +1860,12 @@ Making them be created from the year 2018 to the current year automatically.<br 
 
 <br /><br />
 22:00 22/05/2020: I changed the way that the Watched Medias are written on the <span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
  tab, making them be separated by the media type, anime, video and stuff<br /><br />
 22:07 22/05/2020: I also changed some of the YouTube videos in the <span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
  tab so you can click on the YouTube button like this one <a href="#"><i class="fab fa-youtube w3-text-red"></i></a> and the YouTube video will open<br /><br />
@@ -1769,11 +1887,11 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div style="margin:3%;">
 
 <div class="mobileHide"><span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
-<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [3]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [4]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Archived Media" alt="Archived Media">
@@ -1781,7 +1899,7 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </span>
 
 </div>
-<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [3]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
+<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [4]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
 <hr class="border_color_blue border_1px" />
 <div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Medias 2018: <span class="w3-text-yellow"> [52]</span></span></b><br /><br /><p></p></h2></div>
 <hr class="border_color_blue border_1px" />
@@ -2190,11 +2308,11 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div style="margin:3%;">
 
 <div class="mobileHide"><span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
-<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [3]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [4]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Archived Media" alt="Archived Media">
@@ -2202,7 +2320,7 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </span>
 
 </div>
-<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [3]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
+<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [4]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
 <hr class="border_color_blue border_1px" />
 <div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Medias 2018: <span class="w3-text-yellow"> [52]</span></span></b><br /><br /><p></p></h2></div>
 <hr class="border_color_blue border_1px" />
@@ -2234,19 +2352,19 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <br /></div></div>
 <hr class="border_color_blue border_1px" />
 <h4 class="text_blue" style="text-align:left;">
-<div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 </a>
 <a href="#Cartoons_2021"><b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
 </a>
-<a href="#Series_2021"><b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<a href="#Series_2021"><b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 </a>
-<a href="#Movies_2021"><b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<a href="#Movies_2021"><b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 </a>
 <a href="#Videos_2021"><b><span class="w3-text-white">Videos: </span><span class="text_blue">3</span></b><br />
 </a>
 <br />
 <a name="Animes_2021"></a>
-<b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Dr. Stone EP24 "Vozes a Uma Distância Infinita"<span class="w3-text-white"> - (19:44 02/01/2021)</span></span><br /></div>
 </div>
@@ -2376,6 +2494,18 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">43 - </span>Shingeki No Kyojin S04E02(61) "Trem da Noite Escura"<span class="w3-text-white"> - (23:02 17/02/2021)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">44 - </span>Yuru Camp△ Segunda Temporada EP07 "Plano de acampamento solo de Nadeshiko"<span class="w3-text-white"> - (18:48 18/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">45 - </span>Fairy Tail S03EP21(94) "Adeus, Edolas"<span class="w3-text-white"> - (18:42 22/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">46 - </span>Yuru Camp△ Segunda Temporada EP08 "Acampando Sozinha"<span class="w3-text-white"> - (20:19 25/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">47 - </span>Fairy Tail S03EP21(95) "Lisanna"<span class="w3-text-white"> - (20:55 25/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Cartoons_2021"></a>
 <b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
@@ -2387,7 +2517,7 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <br />
 <a name="Series_2021"></a>
-<b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>The Walking Dead S09E11(126) "Recompensa"<span class="w3-text-white"> - (21:36 01/01/2021)</span></span><br /></div>
 </div>
@@ -2412,9 +2542,15 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>The Walking Dead S10E01(132) "Caminhos Que Cruzamos"<span class="w3-text-white"> - (18:24 12/02/2021)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>The Walking Dead S10E02(133) "Nós Somos o Fim do Mundo"<span class="w3-text-white"> - (16:13 19/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>The Walking Dead S10E03(134) "Fantasmas"<span class="w3-text-white"> - (15:36 26/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Movies_2021"></a>
-<b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment)<span class="w3-text-white"> - (05:02 11/01/2021)</span></span><br /></div>
 </div>
@@ -2423,6 +2559,9 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Ela Disse, Ele Disse (2019, Imagem Filmes, Claudia Castro)<span class="w3-text-white"> - (17:06 24/01/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Soul (2020, Walt Disney Pictures, Pete Docter)<span class="w3-text-white"> - (20:35 01/03/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Videos_2021"></a>
@@ -2438,19 +2577,19 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <br />
 </div>
-<div class="mobileShow"><a href="#Animes_2021_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<div class="mobileShow"><a href="#Animes_2021_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 </a>
 <a href="#Cartoons_2021_Mobile"><b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
 </a>
-<a href="#Series_2021_Mobile"><b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<a href="#Series_2021_Mobile"><b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 </a>
-<a href="#Movies_2021_Mobile"><b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<a href="#Movies_2021_Mobile"><b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 </a>
 <a href="#Videos_2021_Mobile"><b><span class="w3-text-white">Videos: </span><span class="text_blue">3</span></b><br />
 </a>
 <br />
 <a name="Animes_2021_Mobile"></a>
-<b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Dr. Stone EP24 "Vozes a Uma Distância Infinita"<span class="w3-text-white"> - (19:44 02/01/2021)</span></span><br /></div>
 </div>
@@ -2580,6 +2719,18 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">43 - </span>Shingeki No Kyojin S04E02(61) "Trem da Noite Escura"<span class="w3-text-white"> - (23:02 17/02/2021)</span></span><br /></div>
 </div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">44 - </span>Yuru Camp△ Segunda Temporada EP07 "Plano de acampamento solo de Nadeshiko"<span class="w3-text-white"> - (18:48 18/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">45 - </span>Fairy Tail S03EP21(94) "Adeus, Edolas"<span class="w3-text-white"> - (18:42 22/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">46 - </span>Yuru Camp△ Segunda Temporada EP08 "Acampando Sozinha"<span class="w3-text-white"> - (20:19 25/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">47 - </span>Fairy Tail S03EP21(95) "Lisanna"<span class="w3-text-white"> - (20:55 25/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Cartoons_2021_Mobile"></a>
 <b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
@@ -2591,7 +2742,7 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <br />
 <a name="Series_2021_Mobile"></a>
-<b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>The Walking Dead S09E11(126) "Recompensa"<span class="w3-text-white"> - (21:36 01/01/2021)</span></span><br /></div>
 </div>
@@ -2616,9 +2767,15 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>The Walking Dead S10E01(132) "Caminhos Que Cruzamos"<span class="w3-text-white"> - (18:24 12/02/2021)</span></span><br /></div>
 </div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>The Walking Dead S10E02(133) "Nós Somos o Fim do Mundo"<span class="w3-text-white"> - (16:13 19/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>The Walking Dead S10E03(134) "Fantasmas"<span class="w3-text-white"> - (15:36 26/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Movies_2021_Mobile"></a>
-<b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment)<span class="w3-text-white"> - (05:02 11/01/2021)</span></span><br /></div>
 </div>
@@ -2627,6 +2784,9 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Ela Disse, Ele Disse (2019, Imagem Filmes, Claudia Castro)<span class="w3-text-white"> - (17:06 24/01/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Soul (2020, Walt Disney Pictures, Pete Docter)<span class="w3-text-white"> - (20:35 01/03/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Videos_2021_Mobile"></a>
@@ -2652,11 +2812,11 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div style="margin:3%;">
 
 <div class="mobileHide"><span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
-<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [3]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [4]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Archived Media" alt="Archived Media">
@@ -2664,7 +2824,7 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </span>
 
 </div>
-<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [3]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
+<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [4]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
 <hr class="border_color_blue border_1px" />
 <div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Medias 2019: <span class="w3-text-yellow"> [294]</span></span></b><br /><br /><p></p></h2></div>
 <hr class="border_color_blue border_1px" />
@@ -4525,11 +4685,11 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div style="margin:3%;">
 
 <div class="mobileHide"><span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
-<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [3]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [4]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Archived Media" alt="Archived Media">
@@ -4537,7 +4697,7 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </span>
 
 </div>
-<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [3]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
+<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [4]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
 <hr class="border_color_blue border_1px" />
 <div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Medias 2019: <span class="w3-text-yellow"> [294]</span></span></b><br /><br /><p></p></h2></div>
 <hr class="border_color_blue border_1px" />
@@ -4569,19 +4729,19 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <br /></div></div>
 <hr class="border_color_blue border_1px" />
 <h4 class="text_blue" style="text-align:left;">
-<div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 </a>
 <a href="#Cartoons_2021"><b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
 </a>
-<a href="#Series_2021"><b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<a href="#Series_2021"><b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 </a>
-<a href="#Movies_2021"><b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<a href="#Movies_2021"><b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 </a>
 <a href="#Videos_2021"><b><span class="w3-text-white">Videos: </span><span class="text_blue">3</span></b><br />
 </a>
 <br />
 <a name="Animes_2021"></a>
-<b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Dr. Stone EP24 "Vozes a Uma Distância Infinita"<span class="w3-text-white"> - (19:44 02/01/2021)</span></span><br /></div>
 </div>
@@ -4711,6 +4871,18 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">43 - </span>Shingeki No Kyojin S04E02(61) "Trem da Noite Escura"<span class="w3-text-white"> - (23:02 17/02/2021)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">44 - </span>Yuru Camp△ Segunda Temporada EP07 "Plano de acampamento solo de Nadeshiko"<span class="w3-text-white"> - (18:48 18/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">45 - </span>Fairy Tail S03EP21(94) "Adeus, Edolas"<span class="w3-text-white"> - (18:42 22/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">46 - </span>Yuru Camp△ Segunda Temporada EP08 "Acampando Sozinha"<span class="w3-text-white"> - (20:19 25/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">47 - </span>Fairy Tail S03EP21(95) "Lisanna"<span class="w3-text-white"> - (20:55 25/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Cartoons_2021"></a>
 <b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
@@ -4722,7 +4894,7 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <br />
 <a name="Series_2021"></a>
-<b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>The Walking Dead S09E11(126) "Recompensa"<span class="w3-text-white"> - (21:36 01/01/2021)</span></span><br /></div>
 </div>
@@ -4747,9 +4919,15 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>The Walking Dead S10E01(132) "Caminhos Que Cruzamos"<span class="w3-text-white"> - (18:24 12/02/2021)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>The Walking Dead S10E02(133) "Nós Somos o Fim do Mundo"<span class="w3-text-white"> - (16:13 19/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>The Walking Dead S10E03(134) "Fantasmas"<span class="w3-text-white"> - (15:36 26/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Movies_2021"></a>
-<b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment)<span class="w3-text-white"> - (05:02 11/01/2021)</span></span><br /></div>
 </div>
@@ -4758,6 +4936,9 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Ela Disse, Ele Disse (2019, Imagem Filmes, Claudia Castro)<span class="w3-text-white"> - (17:06 24/01/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Soul (2020, Walt Disney Pictures, Pete Docter)<span class="w3-text-white"> - (20:35 01/03/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Videos_2021"></a>
@@ -4773,19 +4954,19 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <br />
 </div>
-<div class="mobileShow"><a href="#Animes_2021_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<div class="mobileShow"><a href="#Animes_2021_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 </a>
 <a href="#Cartoons_2021_Mobile"><b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
 </a>
-<a href="#Series_2021_Mobile"><b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<a href="#Series_2021_Mobile"><b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 </a>
-<a href="#Movies_2021_Mobile"><b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<a href="#Movies_2021_Mobile"><b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 </a>
 <a href="#Videos_2021_Mobile"><b><span class="w3-text-white">Videos: </span><span class="text_blue">3</span></b><br />
 </a>
 <br />
 <a name="Animes_2021_Mobile"></a>
-<b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Dr. Stone EP24 "Vozes a Uma Distância Infinita"<span class="w3-text-white"> - (19:44 02/01/2021)</span></span><br /></div>
 </div>
@@ -4915,6 +5096,18 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">43 - </span>Shingeki No Kyojin S04E02(61) "Trem da Noite Escura"<span class="w3-text-white"> - (23:02 17/02/2021)</span></span><br /></div>
 </div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">44 - </span>Yuru Camp△ Segunda Temporada EP07 "Plano de acampamento solo de Nadeshiko"<span class="w3-text-white"> - (18:48 18/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">45 - </span>Fairy Tail S03EP21(94) "Adeus, Edolas"<span class="w3-text-white"> - (18:42 22/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">46 - </span>Yuru Camp△ Segunda Temporada EP08 "Acampando Sozinha"<span class="w3-text-white"> - (20:19 25/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">47 - </span>Fairy Tail S03EP21(95) "Lisanna"<span class="w3-text-white"> - (20:55 25/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Cartoons_2021_Mobile"></a>
 <b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
@@ -4926,7 +5119,7 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <br />
 <a name="Series_2021_Mobile"></a>
-<b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>The Walking Dead S09E11(126) "Recompensa"<span class="w3-text-white"> - (21:36 01/01/2021)</span></span><br /></div>
 </div>
@@ -4951,9 +5144,15 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>The Walking Dead S10E01(132) "Caminhos Que Cruzamos"<span class="w3-text-white"> - (18:24 12/02/2021)</span></span><br /></div>
 </div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>The Walking Dead S10E02(133) "Nós Somos o Fim do Mundo"<span class="w3-text-white"> - (16:13 19/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>The Walking Dead S10E03(134) "Fantasmas"<span class="w3-text-white"> - (15:36 26/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Movies_2021_Mobile"></a>
-<b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment)<span class="w3-text-white"> - (05:02 11/01/2021)</span></span><br /></div>
 </div>
@@ -4962,6 +5161,9 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Ela Disse, Ele Disse (2019, Imagem Filmes, Claudia Castro)<span class="w3-text-white"> - (17:06 24/01/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Soul (2020, Walt Disney Pictures, Pete Docter)<span class="w3-text-white"> - (20:35 01/03/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Videos_2021_Mobile"></a>
@@ -4987,11 +5189,11 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div style="margin:3%;">
 
 <div class="mobileHide"><span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
-<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [3]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [4]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Archived Media" alt="Archived Media">
@@ -4999,7 +5201,7 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </span>
 
 </div>
-<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [3]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
+<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [4]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
 <hr class="border_color_blue border_1px" />
 <div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Medias 2020: <span class="w3-text-yellow"> [248]</span></span></b><br /><br /><p></p></h2></div>
 <hr class="border_color_blue border_1px" />
@@ -6584,11 +6786,11 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div style="margin:3%;">
 
 <div class="mobileHide"><span title="Watched 2021" alt="Watched 2021">
-<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [59]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#watch_history-watched 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Watched 2021 [66]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
-<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [3]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#watched-movies"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-movies');Define_Button('computer_button_4');Change_Button_Color();"><h2>Movies [4]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Archived Media" alt="Archived Media">
@@ -6596,7 +6798,7 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </span>
 
 </div>
-<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [59]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [3]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
+<div class="mobileShow"><a href="#watch_history-watched 2021m" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watch_history-watched 2021m');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Watched 2021 [66]: <i class="fas fa-eye"></i></h4></button></a><a href="#watched-moviesm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-moviesm');Define_Button('mobile_button_4');Change_Button_Color();"><h4>Movies [4]: <i class="fas fa-film"></i></h4></button></a><a href="#watched-archived mediam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_5" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('watched-archived mediam');Define_Button('mobile_button_5');Change_Button_Color();"><h4>Archived Media [3]: <i class="fas fa-archive"></i></h4></button></a></div>
 <hr class="border_color_blue border_1px" />
 <div class="w3-animate-zoom"><h2><p></p><br /><b><span class="text_blue">Medias 2020: <span class="w3-text-yellow"> [248]</span></span></b><br /><br /><p></p></h2></div>
 <hr class="border_color_blue border_1px" />
@@ -6628,19 +6830,19 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <br /></div></div>
 <hr class="border_color_blue border_1px" />
 <h4 class="text_blue" style="text-align:left;">
-<div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 </a>
 <a href="#Cartoons_2021"><b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
 </a>
-<a href="#Series_2021"><b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<a href="#Series_2021"><b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 </a>
-<a href="#Movies_2021"><b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<a href="#Movies_2021"><b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 </a>
 <a href="#Videos_2021"><b><span class="w3-text-white">Videos: </span><span class="text_blue">3</span></b><br />
 </a>
 <br />
 <a name="Animes_2021"></a>
-<b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Dr. Stone EP24 "Vozes a Uma Distância Infinita"<span class="w3-text-white"> - (19:44 02/01/2021)</span></span><br /></div>
 </div>
@@ -6770,6 +6972,18 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">43 - </span>Shingeki No Kyojin S04E02(61) "Trem da Noite Escura"<span class="w3-text-white"> - (23:02 17/02/2021)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">44 - </span>Yuru Camp△ Segunda Temporada EP07 "Plano de acampamento solo de Nadeshiko"<span class="w3-text-white"> - (18:48 18/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">45 - </span>Fairy Tail S03EP21(94) "Adeus, Edolas"<span class="w3-text-white"> - (18:42 22/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">46 - </span>Yuru Camp△ Segunda Temporada EP08 "Acampando Sozinha"<span class="w3-text-white"> - (20:19 25/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">47 - </span>Fairy Tail S03EP21(95) "Lisanna"<span class="w3-text-white"> - (20:55 25/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Cartoons_2021"></a>
 <b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
@@ -6781,7 +6995,7 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <br />
 <a name="Series_2021"></a>
-<b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>The Walking Dead S09E11(126) "Recompensa"<span class="w3-text-white"> - (21:36 01/01/2021)</span></span><br /></div>
 </div>
@@ -6806,9 +7020,15 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>The Walking Dead S10E01(132) "Caminhos Que Cruzamos"<span class="w3-text-white"> - (18:24 12/02/2021)</span></span><br /></div>
 </div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>The Walking Dead S10E02(133) "Nós Somos o Fim do Mundo"<span class="w3-text-white"> - (16:13 19/02/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>The Walking Dead S10E03(134) "Fantasmas"<span class="w3-text-white"> - (15:36 26/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Movies_2021"></a>
-<b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment)<span class="w3-text-white"> - (05:02 11/01/2021)</span></span><br /></div>
 </div>
@@ -6817,6 +7037,9 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Ela Disse, Ele Disse (2019, Imagem Filmes, Claudia Castro)<span class="w3-text-white"> - (17:06 24/01/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Soul (2020, Walt Disney Pictures, Pete Docter)<span class="w3-text-white"> - (20:35 01/03/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Videos_2021"></a>
@@ -6832,19 +7055,19 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <br />
 </div>
-<div class="mobileShow"><a href="#Animes_2021_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<div class="mobileShow"><a href="#Animes_2021_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 </a>
 <a href="#Cartoons_2021_Mobile"><b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
 </a>
-<a href="#Series_2021_Mobile"><b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<a href="#Series_2021_Mobile"><b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 </a>
-<a href="#Movies_2021_Mobile"><b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<a href="#Movies_2021_Mobile"><b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 </a>
 <a href="#Videos_2021_Mobile"><b><span class="w3-text-white">Videos: </span><span class="text_blue">3</span></b><br />
 </a>
 <br />
 <a name="Animes_2021_Mobile"></a>
-<b><span class="w3-text-white">Animes: </span><span class="text_blue">43</span></b><br />
+<b><span class="w3-text-white">Animes: </span><span class="text_blue">47</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Dr. Stone EP24 "Vozes a Uma Distância Infinita"<span class="w3-text-white"> - (19:44 02/01/2021)</span></span><br /></div>
 </div>
@@ -6974,6 +7197,18 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">43 - </span>Shingeki No Kyojin S04E02(61) "Trem da Noite Escura"<span class="w3-text-white"> - (23:02 17/02/2021)</span></span><br /></div>
 </div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">44 - </span>Yuru Camp△ Segunda Temporada EP07 "Plano de acampamento solo de Nadeshiko"<span class="w3-text-white"> - (18:48 18/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">45 - </span>Fairy Tail S03EP21(94) "Adeus, Edolas"<span class="w3-text-white"> - (18:42 22/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">46 - </span>Yuru Camp△ Segunda Temporada EP08 "Acampando Sozinha"<span class="w3-text-white"> - (20:19 25/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">47 - </span>Fairy Tail S03EP21(95) "Lisanna"<span class="w3-text-white"> - (20:55 25/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Cartoons_2021_Mobile"></a>
 <b><span class="w3-text-white">Cartoons: </span><span class="text_blue">2</span></b><br />
@@ -6985,7 +7220,7 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <br />
 <a name="Series_2021_Mobile"></a>
-<b><span class="w3-text-white">Series: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Series: </span><span class="text_blue">10</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>The Walking Dead S09E11(126) "Recompensa"<span class="w3-text-white"> - (21:36 01/01/2021)</span></span><br /></div>
 </div>
@@ -7010,9 +7245,15 @@ Making them be created from the year 2018 to the current year automatically.<br 
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>The Walking Dead S10E01(132) "Caminhos Que Cruzamos"<span class="w3-text-white"> - (18:24 12/02/2021)</span></span><br /></div>
 </div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>The Walking Dead S10E02(133) "Nós Somos o Fim do Mundo"<span class="w3-text-white"> - (16:13 19/02/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>The Walking Dead S10E03(134) "Fantasmas"<span class="w3-text-white"> - (15:36 26/02/2021)</span></span><br /></div>
+</div>
 <br />
 <a name="Movies_2021_Mobile"></a>
-<b><span class="w3-text-white">Movies: </span><span class="text_blue">3</span></b><br />
+<b><span class="w3-text-white">Movies: </span><span class="text_blue">4</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Spider-Man Into the Spider-Verse - Homem-Aranha no Aranhaverso (2019, Sony Pictures Animation, Marvel Entertainment)<span class="w3-text-white"> - (05:02 11/01/2021)</span></span><br /></div>
 </div>
@@ -7021,6 +7262,9 @@ Making them be created from the year 2018 to the current year automatically.<br 
 </div>
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Ela Disse, Ele Disse (2019, Imagem Filmes, Claudia Castro)<span class="w3-text-white"> - (17:06 24/01/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Soul (2020, Walt Disney Pictures, Pete Docter)<span class="w3-text-white"> - (20:35 01/03/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Videos_2021_Mobile"></a>
@@ -7306,9 +7550,9 @@ function getElementByXpath(path) {
 </style>
 
 <script>
-	Define_Colors_And_Styles();
-	</script>
+Define_Colors_And_Styles();
+</script>
 
 </center>
 </body>
-	</html>
+</html>
