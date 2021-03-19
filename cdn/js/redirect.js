@@ -279,7 +279,7 @@ function Rodar() {
 		}
 	}
 
-	if (titulo == "Pequenata - Littletato" && check == false) {
+	if (titulo == "Littletato - Pequenata" && check == false) {
 		var lang = "a";
 
 		if (lang == userLang) {
