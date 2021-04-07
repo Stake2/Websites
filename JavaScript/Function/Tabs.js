@@ -1,5 +1,5 @@
 function openCity(evt, cityName) {
-	// Declara todas as variaveis
+	// Declara todas as variáveis
 	var i, tabcontent, tablinks;
 
 	// Pega todos os elementos com class="tabcontent" e esconde eles
