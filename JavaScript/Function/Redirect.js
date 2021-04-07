@@ -1,5 +1,5 @@
 function Rodar() {
-	var website_link = "https://diario.netlify.app/";
+	var website_link = "https://thestake2.netlify.app/";
 	var userLang = navigator.language || navigator.userLanguage;
 
 	var title = document.getElementsByTagName("title")[0];
