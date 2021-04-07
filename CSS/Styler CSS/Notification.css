@@ -1,0 +1,42 @@
+.stake2animatebottom {
+	position:relative;
+	animation:animatebottom 3s;
+}
+
+@keyframes animatebottom {
+	from {
+		bottom:-300px;
+		opacity:0;
+	}
+
+	to {
+		bottom:0;
+		opacity:1;
+	}
+}
+
+.stake2animatebottomrevert {
+	position:relative;
+	animation:animatebottomrevert 10s;
+}
+
+@keyframes animatebottomrevert {
+	from {
+		bottom:0px;
+		opacity:1;
+	}
+
+	to {
+		bottom:-300px;
+		opacity:0;
+	}
+}
+
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 684px){
+    .videostyle {
+		width: 350;
+		height: 450;
+	}
+}

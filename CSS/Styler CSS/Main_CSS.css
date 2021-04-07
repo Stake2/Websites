@@ -1,0 +1,160 @@
+.border_1px {
+	border-width: 1px!important;
+	border-style: solid!important;
+}
+
+.border_3px {
+	border-width: 3px!important;
+	border-style: solid!important;
+}
+
+.border_4px {
+	border-width: 3px!important;
+	border-style: solid!important;
+}
+
+.border_1px {
+	border-width: 1px;
+	border-style: solid;
+}
+
+.create_border_on_hover:hover {
+	border-width:3px;
+	border-style:solid;
+	background-color:white!important;
+}
+
+.20px_font_size {
+	font-size: 20px!important;
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 684px) { 
+    .20px_font_size {
+		font-size: 24px!important;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+b {
+	white-space: unset !important;
+}
+
+textarea {
+	outline: none!important;
+}
+
+button,
+span#notificationclose {
+	padding: 15px 25px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	border-radius: 15px;
+	box-shadow: 0 9px black!important;
+	white-space: unset !important;
+}
+
+button:hover,
+span#notificationclose {
+	box-shadow: 0 9px black!important;
+}
+
+button:active,
+span#notificationclose:active {
+	box-shadow: 0 5px black!important;
+	transform: translateY(4px)!important;
+}
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal_close_button {
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.modal_close_button:hover,
+.modal_close_button:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button:hover h2 span.w3-text-white,
+button:hover h2 span.w3-text-blue,
+button:hover h2 span.w3-text-cyan,
+button:hover h2 span.w3-text-orange,
+button:hover h2 span.w3-text-grey,
+button:hover h2 span.w3-text-yellow {
+	color: black!important;
+}
+
+button:hover h4 span.w3-text-white,
+button:hover h4 span.w3-text-blue,
+button:hover h4 span.w3-text-cyan,
+button:hover h4 span.w3-text-orange,
+button:hover h4 span.w3-text-grey,
+button:hover h4 span.w3-text-yellow {
+	color: black!important;
+}
+
+.mobile_button_sidebar_css {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.mobile_button_sidebar_css a {
+  padding: 6px 6px 6px 26px;
+  text-decoration: none;
+  font-size: 23px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.mobile_button_sidebar_css a:hover {
+  color: #f1f1f1;
+}
+
+.mobile_button_sidebar_css a .close_mobile_sidebar_button {
+  position: absolute;
+  top: 0;
+  right: 23px;
+  font-size: 36px;
+  margin-left: 50px;
+}
