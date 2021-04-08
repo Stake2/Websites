@@ -43,7 +43,7 @@ function Rodar() {
 			var lang = "pt-BR";
 		}
 
-		if (titulo == "Diário") {
+		if (titulo == "Diário PT-PT") {
 			var lang = "pt-PT";
 		}
 
