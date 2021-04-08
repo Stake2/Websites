@@ -18,8 +18,8 @@ function Rodar() {
 		}
 
 		if (userLang != lang) {
-			var choosen_website_url = website_link + "📘" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var choosen_website_url = website_link + "diary" + "/";
+			var res = choosen_website_url;
 			window.location = res;
 		}
 	}
@@ -32,22 +32,28 @@ function Rodar() {
 		}
 
 		if (userLang != lang) {
-			var choosen_website_url = website_link + "📘" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var choosen_website_url = website_link + "diary" + "/";
+			var res = choosen_website_url;
 			window.location = res;
 		}
 	}
 
-	if (titulo == "Diário PT-BR" || titulo == "Diário PT-PT" && check == false) {
-		var lang = "pt-BR";
+	if (titulo == "Diário" || titulo == "Diário PT-PT" && check == false) {
+		if (titulo == "Diário") {
+			var lang = "pt-BR";
+		}
+
+		if (titulo == "Diário") {
+			var lang = "pt-PT";
+		}
 
 		if (userLang == lang) {
 			return;
 		}
 
 		if (userLang != lang) {
-			var choosen_website_url = website_link + "📘" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var choosen_website_url = website_link + "diario" + "/";
+			var res = choosen_website_url;
 			window.location = res;
 		}
 	}
