@@ -308,7 +308,7 @@ function Rodar() {
 		}
 
 		if (lang != userLang) {
-			var choosen_website_url = website_link + "pequenata 📘/";
+			var choosen_website_url = website_link + "littletato 📘/";
 			var res = choosen_website_url + userLang + "/";
 			window.location = res;
 			return;
