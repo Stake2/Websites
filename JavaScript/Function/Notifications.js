@@ -47,7 +47,7 @@ function Hide_Notification_Computer() {
 	var notification_close_button_computer = document.getElementById("notification_close_button_computer");
 
 	// Animates the div element from top to bottom, hiding it
-	notification_div_computer.className = notification_div_computer.className.replace("stake2animatebottom", "stake2animatebottomrevert");
+	notification_div_computer.className = notification_div_computer.className.replace("element_appear_from_bottom", "element_disappear_to_bottom");
 
 	// Changes the text of the div element
 	notification_div_computer.innerHTML = '<h2 width="60%">' + button_text + "</h2>";
@@ -65,7 +65,7 @@ function Hide_Notification_Mobile() {
 	var notification_close_button_mobile = document.getElementById("notification_close_button_mobile");
 
 	// Animates the div element from top to bottom, hiding it
-	notification_div_mobile.className = notification_div_mobile.className.replace("stake2animatebottom", "stake2animatebottomrevert");
+	notification_div_mobile.className = notification_div_mobile.className.replace("element_appear_from_bottom", "element_disappear_to_bottom");
 
 	// Changes the text of the div element
 	notification_div_mobile.innerHTML = '<h1 width="60%">' + button_text + "</h1>";

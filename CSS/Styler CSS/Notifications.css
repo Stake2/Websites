@@ -1,9 +1,9 @@
-.stake2animatebottom {
+.element_appear_from_bottom {
 	position:relative;
-	animation:animatebottom 3s;
+	animation:element_appear_from_bottom_keyframe 3s;
 }
 
-@keyframes animatebottom {
+@keyframes element_appear_from_bottom_keyframe {
 	from {
 		bottom:-300px;
 		opacity:0;
@@ -15,12 +15,12 @@
 	}
 }
 
-.stake2animatebottomrevert {
+.element_disappear_to_bottom {
 	position:relative;
-	animation:animatebottomrevert 10s;
+	animation:element_disappear_to_bottom_keyframe 10s;
 }
 
-@keyframes animatebottomrevert {
+@keyframes element_disappear_to_bottom_keyframe {
 	from {
 		bottom:0px;
 		opacity:1;
