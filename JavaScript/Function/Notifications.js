@@ -1,12 +1,12 @@
-var userLang = navigator.language || navigator.userLanguage;
+var user_language = navigator.language || navigator.userLanguage;
 
 //Defines the button text if the user language is English
-if (userLang == "en-US") {
+if (user_language == "en-US") {
 	var button_text = "Okay, byeeeee...";
 }
 
 //Defines the button text if the user language is Brazilian Portuguese
-if (userLang == "pt-BR" || userLang == "pt-PT") {
+if (user_language == "pt-BR" || user_language == "pt-PT") {
 	var button_text = "Tudo beeeeem...";
 }
 
@@ -14,17 +14,29 @@ else {
 	var button_text = "Okay, byeeeee...";
 }
 
-//Gets the div element
+// Gets the div element
 var notification_div_computer = document.getElementById("notification_div_computer");
 
-//Gets the close button for the div element
-var notification_close_button_computer = document.getElementById("notification_close_button_computer");
+// Gets the close button for the div element
+var notification_close_button_computer;
 
-//Gets the div element
+setTimeout(1000, 
+	function() {
+		notification_close_button_computer = document.getElementById("notification_close_button_computer");
+	};
+)
+
+// Gets the div element
 var notification_div_mobile = document.getElementById("notification_div_mobile");
 
 //Gets the close button for the div element
-var notification_close_button_mobile = document.getElementById("notification_close_button_mobile");
+var notification_close_button_mobile;
+
+setTimeout(1000, 
+	function() {
+		notification_close_button_mobile = document.getElementById("notification_close_button_mobile");
+	};
+)
 
 //When the user clicks on the click button, it will run this function
 notification_close_button_computer.onclick = function() {
