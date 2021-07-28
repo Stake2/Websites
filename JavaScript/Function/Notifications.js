@@ -56,6 +56,8 @@ function Hide_Notification_Computer() {
 	setTimeout(function() {
 		notification_div_computer.style.display = "none";
 	}, 10000);
+
+	document.title = document.title.replace("(1) ", "");
 }
 
 function Hide_Notification_Mobile() {
@@ -66,7 +68,7 @@ function Hide_Notification_Mobile() {
 	notification_div_mobile.className = notification_div_mobile.className.replace("stake2animatebottom", "stake2animatebottomrevert");
 
 	// Changes the text of the div element
-	notification_div_mobile.innerHTML = '<h2 width="60%">' + button_text + "</h2>";
+	notification_div_mobile.innerHTML = '<h1 width="60%">' + button_text + "</h1>";
 
 	// Hides the div element after the animation has stopped
 	setTimeout(function() {
