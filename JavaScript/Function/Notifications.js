@@ -32,17 +32,17 @@ notification_close_button_mobile = document.getElementById("notification_close_b
 
 // When the user clicks on the click button, it will run this function
 notification_close_button_computer.onclick = function() {
-	Hide_Notification_Computer();
+	Hide_Computer_Notification();
 }
 
 // When the user clicks on the click button, it will run this function
 notification_close_button_mobile.onclick = function() {
-	Hide_Notification_Mobile();
+	Hide_Mobile_Notification();
 }
 
 console.log("Notification Script was loaded.");
 
-function Hide_Notification_Computer() {
+function Hide_Computer_Notification() {
 	var notification_div_computer = document.getElementById("notification_div_computer");
 	var notification_close_button_computer = document.getElementById("notification_close_button_computer");
 
@@ -60,7 +60,7 @@ function Hide_Notification_Computer() {
 	document.title = document.title.replace("(1) ", "");
 }
 
-function Hide_Notification_Mobile() {
+function Hide_Mobile_Notification() {
 	var notification_div_mobile = document.getElementById("notification_div_mobile");
 	var notification_close_button_mobile = document.getElementById("notification_close_button_mobile");
 
@@ -74,6 +74,8 @@ function Hide_Notification_Mobile() {
 	setTimeout(function() {
 		notification_div_mobile.style.display = "none";
 	}, 10000);
+
+	document.title = document.title.replace("(1) ", "");
 }
 
 console.log("Hide Notification Script was loaded.");
