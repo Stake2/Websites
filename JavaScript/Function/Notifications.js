@@ -5,7 +5,7 @@ if (user_language == "en-US") {
 	var button_text = "Okay, byeeeee...";
 }
 
-// Defines the button text if the user language is Brazilian Portuguese
+// Defines the button text if the user language is Brazilian Portuguese or European Portuguese
 if (user_language == "pt-BR" || user_language == "pt-PT") {
 	var button_text = "Tudo beeeeem...";
 }
@@ -50,7 +50,7 @@ function Hide_Notification_Computer() {
 	notification_div_computer.className = notification_div_computer.className.replace("stake2animatebottom", "stake2animatebottomrevert");
 
 	// Changes the text of the div element
-	notification_div_computer.innerHTML = '<h1 width="50%">' + button_text + "</h1>";
+	notification_div_computer.innerHTML = '<h2 width="60%">' + button_text + "</h2>";
 
 	// Hides the div element after the animation has stopped
 	setTimeout(function() {
@@ -66,7 +66,7 @@ function Hide_Notification_Mobile() {
 	notification_div_mobile.className = notification_div_mobile.className.replace("stake2animatebottom", "stake2animatebottomrevert");
 
 	// Changes the text of the div element
-	notification_div_mobile.innerHTML = '<h2 width="50%">' + button_text + "</h2>";
+	notification_div_mobile.innerHTML = '<h2 width="60%">' + button_text + "</h2>";
 
 	// Hides the div element after the animation has stopped
 	setTimeout(function() {
