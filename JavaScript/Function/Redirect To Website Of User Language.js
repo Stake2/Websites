@@ -1,4 +1,4 @@
-function Rodar() {
+function Check_Website_Link() {
 	var website_link = "https://thestake2.netlify.app/";
 	var userLang = navigator.language || navigator.userLanguage;
 
