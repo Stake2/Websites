@@ -18,36 +18,33 @@
 <meta name="twitter:website" value="@The_Snakes90" />
 <meta name="twitter:site" value="@The_Snakes90" />
 <meta name="twitter:creator" content="@The_Snakes90" />
-<meta name="revised" content="Stake's Enterprise TM, 26/07/2021" />
+<meta name="revised" content="Stake's Enterprise TM, 28/07/2021" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <meta charset="UTF-8" />
-<script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
 
 <!-- CSS files -->
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/lib/w3.css" />
 <link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/W3.css" />
 <link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Main_CSS.css" />
 <link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Website CSS/SpaceLiving.css" />
 <link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Colors.css" />
-<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Mobile.css" />
-<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Notification.css" />
+<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Notifications.css" />
 
 <!-- JavaScript files -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
 <script src="https://thestake2.netlify.app/JavaScript/Function/Tabs.js"></script>
-<script src="https://thestake2.netlify.app/JavaScript/Function/Redirect.js" onLoad="Rodar();"></script>
+<script src="https://thestake2.netlify.app/JavaScript/Function/Redirect To Website Of User Language.js" onLoad="Check_Website_Link();"></script>
 <script src="https://thestake2.netlify.app/JavaScript/Function/Show Hide.js"></script>
 <script src="https://thestake2.netlify.app/JavaScript/Function/Mobile Side Menu.js"></script>
 <script src="https://thestake2.netlify.app/JavaScript/Function/Set Revised Date.js"></script>
-<script src="https://thestake2.netlify.app/JavaScript/Story Websites/Open Chapter By Keys.js"></script>
-<script src="https://thestake2.netlify.app/JavaScript/Story Websites/Write Chapter.js"></script>
 <script src="https://thestake2.netlify.app/JavaScript/Function/Change Button Color.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-</head>
+<script src="https://thestake2.netlify.app/JavaScript/Function/Hide Chapter Button Images.js"></script>
+<script src="https://thestake2.netlify.app/JavaScript/Story Websites/Open Chapter By Keys.js"></script>
+<script src="https://thestake2.netlify.app/JavaScript/Story Websites/Write Chapter.js"></script></head>
 <body onLoad="Define_Colors_And_Styles();">
 <center>
-
-<div class="w3-animate-zoom">
 
 <!--- Computer Button bar on the top -->
 <div id="computer_buttons_bar" class="w3-center w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
@@ -72,24 +69,35 @@
 <button id="show_computer_buttons" class="w3-center w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" style="display:none;float:right;border-radius: 50px;" onclick="Show_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
 </div>
 
+
 <!--- Mobile Button bar at the left -->
 <div id="mobile_button_sidebar" class="w3-center mobile_button_sidebar_css mobileShow ">
 
-<a href="javascript:void(0)" class="close_mobile_sidebar_button" onclick="Hide_Mobile_Buttons();" style="font-size:35px;"><i class="fas fa-times-circle"></i></a>
+<a href="javascript:void(0)" class="close_mobile_sidebar_button" onclick="Hide_Mobile_Buttons();" style="font-size:35px;">
+<i class="fas fa-times-circle"></i>
+</a>
 
 <span style="font-size:30px;" class="mobileShow text_blue">Menu de botões mobile: </span>
 
-<a href="#spaceliving-ler históriam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('spaceliving-ler históriam');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Ler história: <i class="fas fa-book-open"></i></h4></button></a>
+<a href="#spaceliving-ler históriam" onclick="Hide_Mobile_Buttons();">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('spaceliving-ler históriam');Define_Button('mobile_button_1');Change_Button_Color();">
+<h4>Ler história: <i class="fas fa-book-open"></i></h4>
+</button>
+</a>
+<a href="#spaceliving-leitoresm" onclick="Hide_Mobile_Buttons();">
+<button id="mobile_button_2" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('spaceliving-leitoresm');Define_Button('mobile_button_2');Change_Button_Color();">
+<h4>Leitores: <i class="fas fa-book-reader"></i> ❤️</h4>
+</button>
+</a>
+<a href="#spaceliving-outras históriasm" onclick="Hide_Mobile_Buttons();">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('spaceliving-outras históriasm');Define_Button('mobile_button_3');Change_Button_Color();">
+<h4>Outras histórias:  <i class="fas fa-book"></i></h4>
+</button>
+</a>
 
-<a href="#spaceliving-leitoresm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_2" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('spaceliving-leitoresm');Define_Button('mobile_button_2');Change_Button_Color();"><h4>Leitores: <i class="fas fa-book-reader"></i> ❤️</h4></button></a>
-
-<a href="#spaceliving-outras históriasm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('spaceliving-outras históriasm');Define_Button('mobile_button_3');Change_Button_Color();"><h4>Outras histórias:  <i class="fas fa-book"></i></h4></button></a>
 </div>
 
 <div class="mobileShow"><button id="show_mobile_buttons" class="w3-center w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="Show_Mobile_Buttons();"><h2><i class="fas fa-bars"></i></h2></button>
-</div><script>
-Hide_Mobile_Buttons();
-</script>
 </div>
 <script>
 var old_website_title, current_website_title;
@@ -187,119 +195,50 @@ Data de criação da história: <span class="text_cyan">19/01/2019</span><br />
 Status: <span class="text_cyan">[Revisando e editando]</span></h4>
 <br />
 </div>
-<div id="notification_div_computer" class="stake2animatebottom border border_3px_solid_black background_cyan mobileHide" style="position:fixed;right:0;bottom:0;padding-top:2%;padding-bottom:2%;padding-left:7%;padding-right:7%;border-radius: 50px;">
-<h3 class="mobileHide">
+<script>
+function Change_Website_Title() {
+	document.title = document.title.replace('(1) ', '');
+}
+</script>
+<div id="notification_div_computer" class="element_appear_from_bottom border border_3px_solid_black background_cyan mobileHide" style="position:fixed;right:0;bottom:0;padding-top:2%;padding-bottom:2%;padding-left:7%;padding-right:7%;border-radius: 50px;">
+<h2 class="mobileHide">
 
-<span id="notification_close_button_computer" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white border_3px_solid_black notification_text" style="float:left;margin-left:-7.3%;border-radius: 50px;box-shadow: 0 9px black!important;" onclick="function () {document.title = document.title.replace('(1) ', '')};">
+<span id="notification_close_button_computer" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white border_3px_solid_black" style="float:left;margin-left:-7.3%;border-radius: 50px;box-shadow: 0 9px black!important;">
 <b>
 X
 </b>
 </span>
 
-<span class="notification_text">
 Novo capítulo revisado <i class="fas fa-bell"></i>
-</span>
-
 <b>
-<span class="notification_text" style="margin-left:2%;">
-<style>
-@keyframes blink_black_to_white {
-	0% {
-		color: black;
-		border-color:black;
-	} 
-
-	50% {
-		color: white;
-		border-color:white;
-	}
-
-	100% {
-		color: black;
-		border-color:black;
-	} 
-}
-
-.notification_text {
-	animation: blink_black_to_white 0.8s;
-	animation-iteration-count: infinite;
-}
-</style>
-<a href="#capítulo-5" title="5 - Ted e Monika, Parte 2"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Ted e Monika, Parte 2', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">5 - Ted e Monika, Parte 2</button></a> 
+<span style="margin-left:2%;">
+<a href="#capítulo-5" title="5 - Ted e Monika, Parte 2"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-5');Define_Chapter(5);Add_To_Website_Title(' - Capítulo: 5 - Ted e Monika, Parte 2', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">5 - Ted e Monika, Parte 2</button></a> 
 
 </span>
 </b>
-</h3>
+</h2>
 </div>
-<div id="notification_div_mobile" class="stake2animatebottom border border_3px_solid_black background_cyan mobileShow" style="position:fixed;right:0;bottom: 0;padding-top:1%;padding-bottom:1%;padding-left:10%;padding-right:10%;border-radius: 50px;">
-<h4 class="mobileShow">
+<div id="notification_div_mobile" class="element_appear_from_bottom border border_3px_solid_black background_cyan mobileShow" style="position:fixed;right:0;bottom: 0;padding-top:1%;padding-bottom:1%;padding-left:10%;padding-right:10%;border-radius: 50px;">
+<h2 class="mobileShow">
 
-<span id="notification_close_button_mobile" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white border_3px_solid_black notification_text mobileShow" style="float:left;border-radius: 50px;box-shadow: 0 9px black!important;" onclick="function () {document.title = document.title.replace('(1) ', '')};">
+<span id="notification_close_button_mobile" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white border_3px_solid_black mobileShow" style="float:left;border-radius: 50px;box-shadow: 0 9px black!important;">
 <b>
 X
 </b>
 </span>
 <br /><br /><b>
-<span class="notification_text mobileShow">
+<h4>
 Novo capítulo revisado <i class="fas fa-bell"></i>
-</span>
+</h4>
 </b>
-<br />
 
 <b>
-<span class="notification_text mobileShow">
-<style>
-@keyframes blink_black_to_white {
-	0% {
-		color: black;
-		border-color:black;
-	} 
-
-	50% {
-		color: white;
-		border-color:white;
-	}
-
-	100% {
-		color: black;
-		border-color:black;
-	} 
-}
-
-.notification_text {
-	animation: blink_black_to_white 0.8s;
-	animation-iteration-count: infinite;
-}
-</style>
-<a href="#capítulo-5" title="5 - Ted e Monika, Parte 2"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Ted e Monika, Parte 2', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">5 - Ted e Monika, Parte 2</button></a> 
+<span class="mobileShow">
+<a href="#capítulo-5" title="5 - Ted e Monika, Parte 2"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-5');Define_Chapter(5);Add_To_Website_Title(' - Capítulo: 5 - Ted e Monika, Parte 2', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">5 - Ted e Monika, Parte 2</button></a> 
 
 </span>
 </b>
-</h4>
-
-<style>
-@keyframes blink_black_to_white {
-	0% {
-		color: black!important;
-		border-color:black!important;
-	} 
-
-	50% {
-		color: white!important;
-		border-color:white!important;
-	}
-
-	100% {
-		color: black!important;
-		border-color:black!important;
-	} 
-}
-
-.notification_text {
-	animation: blink_black_to_white 0.8s;
-	animation-iteration-count: infinite;
-}
-</style>
+</h2>
 </div>
 
 <a name="spaceliving-ler história"></a>
@@ -311,9 +250,9 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <h4><b>
 <div class="w3-animate-zoom">
 <div class="shake_side_to_side_animation">
-<a href="#capítulo-1" title="1 - As EspaçoNaves"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - As EspaçoNaves', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">1 - As EspaçoNaves</button></a> 
+<a href="#capítulo-1" title="1 - As EspaçoNaves"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Define_Chapter(1);Add_To_Website_Title(' - Capítulo: 1 - As EspaçoNaves', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">1 - As EspaçoNaves</button></a> 
 <center>
-<a href="#capítulo-1" title="1 - As EspaçoNaves"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/01.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - As EspaçoNaves');" />
+<a id="story_chapter_image_number_1" href="#capítulo-1" title="1 - As EspaçoNaves"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/01.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - As EspaçoNaves');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -327,9 +266,9 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <br />
 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-2" title="2 - A história de John"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - A história de John', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">2 - A história de John</button></a> 
+<a href="#capítulo-2" title="2 - A história de John"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-2');Define_Chapter(2);Add_To_Website_Title(' - Capítulo: 2 - A história de John', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">2 - A história de John</button></a> 
 <center>
-<a href="#capítulo-2" title="2 - A história de John"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/02.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - A história de John');" />
+<a id="story_chapter_image_number_2" href="#capítulo-2" title="2 - A história de John"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/02.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - A história de John');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -343,9 +282,9 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <br />
 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-3" title="3 - As histórias e o reencontro"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - As histórias e o reencontro', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">3 - As histórias e o reencontro</button></a> 
+<a href="#capítulo-3" title="3 - As histórias e o reencontro"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-3');Define_Chapter(3);Add_To_Website_Title(' - Capítulo: 3 - As histórias e o reencontro', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">3 - As histórias e o reencontro</button></a> 
 <center>
-<a href="#capítulo-3" title="3 - As histórias e o reencontro"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/03.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - As histórias e o reencontro');" />
+<a id="story_chapter_image_number_3" href="#capítulo-3" title="3 - As histórias e o reencontro"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/03.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - As histórias e o reencontro');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -359,9 +298,9 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <br />
 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-4" title="4 - Ted e Monika"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Ted e Monika', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">4 - Ted e Monika</button></a> 
+<a href="#capítulo-4" title="4 - Ted e Monika"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-4');Define_Chapter(4);Add_To_Website_Title(' - Capítulo: 4 - Ted e Monika', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">4 - Ted e Monika</button></a> 
 <center>
-<a href="#capítulo-4" title="4 - Ted e Monika"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/04.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Ted e Monika');" />
+<a id="story_chapter_image_number_4" href="#capítulo-4" title="4 - Ted e Monika"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/04.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Ted e Monika');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -375,32 +314,9 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <br />
 
 </div><div class="shake_side_to_side_animation">
-<style>
-@keyframes blink_black_to_white {
-	0% {
-		color: black;
-		border-color:black;
-	} 
-
-	50% {
-		color: white;
-		border-color:white;
-	}
-
-	100% {
-		color: black;
-		border-color:black;
-	} 
-}
-
-.notification_text {
-	animation: blink_black_to_white 0.8s;
-	animation-iteration-count: infinite;
-}
-</style>
-<a href="#capítulo-5" title="5 - Ted e Monika, Parte 2"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Ted e Monika, Parte 2', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">5 - Ted e Monika, Parte 2</button></a> 
+<a href="#capítulo-5" title="5 - Ted e Monika, Parte 2"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-5');Define_Chapter(5);Add_To_Website_Title(' - Capítulo: 5 - Ted e Monika, Parte 2', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">5 - Ted e Monika, Parte 2</button></a> 
 <center>
-<a href="#capítulo-5" title="5 - Ted e Monika, Parte 2"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/05.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Ted e Monika, Parte 2');" />
+<a id="story_chapter_image_number_5" href="#capítulo-5" title="5 - Ted e Monika, Parte 2"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/05.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Ted e Monika, Parte 2');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -414,27 +330,27 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <br />
 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-6" title="6 - A atualização das EspaçoNaves e a reunião dos irmãos"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-6');Add_To_Website_Title(' - Capítulo: 6 - A atualização das EspaçoNaves e a reunião dos irmãos', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">6 - A atualização das EspaçoNaves e a reunião dos irmãos</button></a> 
+<a href="#capítulo-6" title="6 - A atualização das EspaçoNaves e a reunião dos irmãos"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-6');Define_Chapter(6);Add_To_Website_Title(' - Capítulo: 6 - A atualização das EspaçoNaves e a reunião dos irmãos', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">6 - A atualização das EspaçoNaves e a reunião dos irmãos</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-7" title="7 - O teleporte de iniciação"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-7');Add_To_Website_Title(' - Capítulo: 7 - O teleporte de iniciação', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">7 - O teleporte de iniciação</button></a> 
+<a href="#capítulo-7" title="7 - O teleporte de iniciação"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-7');Define_Chapter(7);Add_To_Website_Title(' - Capítulo: 7 - O teleporte de iniciação', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">7 - O teleporte de iniciação</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-8" title="8 - O Terceiro Aniversário da SpaceLiving"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-8');Add_To_Website_Title(' - Capítulo: 8 - O Terceiro Aniversário da SpaceLiving', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">8 - O Terceiro Aniversário da SpaceLiving</button></a> 
+<a href="#capítulo-8" title="8 - O Terceiro Aniversário da SpaceLiving"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-8');Define_Chapter(8);Add_To_Website_Title(' - Capítulo: 8 - O Terceiro Aniversário da SpaceLiving', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">8 - O Terceiro Aniversário da SpaceLiving</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-9" title="9 - O sonho do Nazzevo e My Little Pony"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-9');Add_To_Website_Title(' - Capítulo: 9 - O sonho do Nazzevo e My Little Pony', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">9 - O sonho do Nazzevo e My Little Pony</button></a> 
+<a href="#capítulo-9" title="9 - O sonho do Nazzevo e My Little Pony"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-9');Define_Chapter(9);Add_To_Website_Title(' - Capítulo: 9 - O sonho do Nazzevo e My Little Pony', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">9 - O sonho do Nazzevo e My Little Pony</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-10" title="10 - SpaceNata?"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-10');Add_To_Website_Title(' - Capítulo: 10 - SpaceNata?', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">10 - SpaceNata?</button></a> 
+<a href="#capítulo-10" title="10 - SpaceNata?"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-10');Define_Chapter(10);Add_To_Website_Title(' - Capítulo: 10 - SpaceNata?', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">10 - SpaceNata?</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-11" title="11 - A chegada do novo LonelyShipper"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-11');Add_To_Website_Title(' - Capítulo: 11 - A chegada do novo LonelyShipper', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">11 - A chegada do novo LonelyShipper</button></a> 
+<a href="#capítulo-11" title="11 - A chegada do novo LonelyShipper"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-11');Define_Chapter(11);Add_To_Website_Title(' - Capítulo: 11 - A chegada do novo LonelyShipper', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">11 - A chegada do novo LonelyShipper</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-12" title="12 - Os sonhos estranhos de Izaque"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-12');Add_To_Website_Title(' - Capítulo: 12 - Os sonhos estranhos de Izaque', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">12 - Os sonhos estranhos de Izaque</button></a> 
+<a href="#capítulo-12" title="12 - Os sonhos estranhos de Izaque"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-12');Define_Chapter(12);Add_To_Website_Title(' - Capítulo: 12 - Os sonhos estranhos de Izaque', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">12 - Os sonhos estranhos de Izaque</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-13" title="13 - A rotina de Lisa e a Mansão de Pequenata"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-13');Add_To_Website_Title(' - Capítulo: 13 - A rotina de Lisa e a Mansão de Pequenata', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">13 - A rotina de Lisa e a Mansão de Pequenata</button></a> 
+<a href="#capítulo-13" title="13 - A rotina de Lisa e a Mansão de Pequenata"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-13');Define_Chapter(13);Add_To_Website_Title(' - Capítulo: 13 - A rotina de Lisa e a Mansão de Pequenata', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">13 - A rotina de Lisa e a Mansão de Pequenata</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-14" title="14 - Capítulo Especial de Natal 🎄 🎁"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-14');Add_To_Website_Title(' - Capítulo: 14 - Capítulo Especial de Natal 🎄 🎁', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">14 - Capítulo Especial de Natal 🎄 🎁</button></a> 
+<a href="#capítulo-14" title="14 - Capítulo Especial de Natal 🎄 🎁"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-14');Define_Chapter(14);Add_To_Website_Title(' - Capítulo: 14 - Capítulo Especial de Natal 🎄 🎁', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">14 - Capítulo Especial de Natal 🎄 🎁</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-15" title="15 - O Quarto Aniversário da SpaceLiving"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-15');Add_To_Website_Title(' - Capítulo: 15 - O Quarto Aniversário da SpaceLiving', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">15 - O Quarto Aniversário da SpaceLiving</button></a> 
+<a href="#capítulo-15" title="15 - O Quarto Aniversário da SpaceLiving"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-15');Define_Chapter(15);Add_To_Website_Title(' - Capítulo: 15 - O Quarto Aniversário da SpaceLiving', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">15 - O Quarto Aniversário da SpaceLiving</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-16" title="16 - O vídeo de Onomatopeia Visual e as memórias"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-16');Add_To_Website_Title(' - Capítulo: 16 - O vídeo de Onomatopeia Visual e as memórias', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">16 - O vídeo de Onomatopeia Visual e as memórias <span class="w3-text-yellow">[Novo!]</span></button></a> 
+<a href="#capítulo-16" title="16 - O vídeo de Onomatopeia Visual e as memórias"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-16');Define_Chapter(16);Add_To_Website_Title(' - Capítulo: 16 - O vídeo de Onomatopeia Visual e as memórias', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">16 - O vídeo de Onomatopeia Visual e as memórias <span class="w3-text-yellow">[Novo!]</span></button></a> 
 </div></div>
 </b></h4>
 </div>
@@ -450,9 +366,9 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <h4><b>
 <div class="w3-animate-zoom">
 <div class="shake_side_to_side_animation">
-<a href="#capítulo-1" title="1 - As EspaçoNaves"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - As EspaçoNaves', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">1 - As EspaçoNaves</button></a> 
+<a href="#capítulo-1" title="1 - As EspaçoNaves"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Define_Chapter(1);Add_To_Website_Title(' - Capítulo: 1 - As EspaçoNaves', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">1 - As EspaçoNaves</button></a> 
 <center>
-<a href="#capítulo-1" title="1 - As EspaçoNaves"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/01.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - As EspaçoNaves');" />
+<a id="story_chapter_image_number_1" href="#capítulo-1" title="1 - As EspaçoNaves"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/01.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - As EspaçoNaves');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -466,9 +382,9 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <br />
 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-2" title="2 - A história de John"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - A história de John', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">2 - A história de John</button></a> 
+<a href="#capítulo-2" title="2 - A história de John"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-2');Define_Chapter(2);Add_To_Website_Title(' - Capítulo: 2 - A história de John', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">2 - A história de John</button></a> 
 <center>
-<a href="#capítulo-2" title="2 - A história de John"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/02.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - A história de John');" />
+<a id="story_chapter_image_number_2" href="#capítulo-2" title="2 - A história de John"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/02.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - A história de John');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -482,9 +398,9 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <br />
 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-3" title="3 - As histórias e o reencontro"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - As histórias e o reencontro', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">3 - As histórias e o reencontro</button></a> 
+<a href="#capítulo-3" title="3 - As histórias e o reencontro"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-3');Define_Chapter(3);Add_To_Website_Title(' - Capítulo: 3 - As histórias e o reencontro', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">3 - As histórias e o reencontro</button></a> 
 <center>
-<a href="#capítulo-3" title="3 - As histórias e o reencontro"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/03.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - As histórias e o reencontro');" />
+<a id="story_chapter_image_number_3" href="#capítulo-3" title="3 - As histórias e o reencontro"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/03.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - As histórias e o reencontro');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -498,9 +414,9 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <br />
 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-4" title="4 - Ted e Monika"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Ted e Monika', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">4 - Ted e Monika</button></a> 
+<a href="#capítulo-4" title="4 - Ted e Monika"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-4');Define_Chapter(4);Add_To_Website_Title(' - Capítulo: 4 - Ted e Monika', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">4 - Ted e Monika</button></a> 
 <center>
-<a href="#capítulo-4" title="4 - Ted e Monika"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/04.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Ted e Monika');" />
+<a id="story_chapter_image_number_4" href="#capítulo-4" title="4 - Ted e Monika"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/04.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Ted e Monika');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -514,32 +430,9 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <br />
 
 </div><div class="shake_side_to_side_animation">
-<style>
-@keyframes blink_black_to_white {
-	0% {
-		color: black;
-		border-color:black;
-	} 
-
-	50% {
-		color: white;
-		border-color:white;
-	}
-
-	100% {
-		color: black;
-		border-color:black;
-	} 
-}
-
-.notification_text {
-	animation: blink_black_to_white 0.8s;
-	animation-iteration-count: infinite;
-}
-</style>
-<a href="#capítulo-5" title="5 - Ted e Monika, Parte 2"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white notification_text" style="border-radius: 50px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Ted e Monika, Parte 2', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">5 - Ted e Monika, Parte 2</button></a> 
+<a href="#capítulo-5" title="5 - Ted e Monika, Parte 2"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-5');Define_Chapter(5);Add_To_Website_Title(' - Capítulo: 5 - Ted e Monika, Parte 2', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">5 - Ted e Monika, Parte 2</button></a> 
 <center>
-<a href="#capítulo-5" title="5 - Ted e Monika, Parte 2"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/05.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Ted e Monika, Parte 2');" />
+<a id="story_chapter_image_number_5" href="#capítulo-5" title="5 - Ted e Monika, Parte 2"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Português Brasileiro/Landscape/Chapter/1 - 10/05.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Ted e Monika, Parte 2');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -553,27 +446,27 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <br />
 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-6" title="6 - A atualização das EspaçoNaves e a reunião dos irmãos"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-6');Add_To_Website_Title(' - Capítulo: 6 - A atualização das EspaçoNaves e a reunião dos irmãos', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">6 - A atualização das EspaçoNaves e a reunião dos irmãos</button></a> 
+<a href="#capítulo-6" title="6 - A atualização das EspaçoNaves e a reunião dos irmãos"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-6');Define_Chapter(6);Add_To_Website_Title(' - Capítulo: 6 - A atualização das EspaçoNaves e a reunião dos irmãos', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">6 - A atualização das EspaçoNaves e a reunião dos irmãos</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-7" title="7 - O teleporte de iniciação"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-7');Add_To_Website_Title(' - Capítulo: 7 - O teleporte de iniciação', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">7 - O teleporte de iniciação</button></a> 
+<a href="#capítulo-7" title="7 - O teleporte de iniciação"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-7');Define_Chapter(7);Add_To_Website_Title(' - Capítulo: 7 - O teleporte de iniciação', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">7 - O teleporte de iniciação</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-8" title="8 - O Terceiro Aniversário da SpaceLiving"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-8');Add_To_Website_Title(' - Capítulo: 8 - O Terceiro Aniversário da SpaceLiving', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">8 - O Terceiro Aniversário da SpaceLiving</button></a> 
+<a href="#capítulo-8" title="8 - O Terceiro Aniversário da SpaceLiving"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-8');Define_Chapter(8);Add_To_Website_Title(' - Capítulo: 8 - O Terceiro Aniversário da SpaceLiving', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">8 - O Terceiro Aniversário da SpaceLiving</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-9" title="9 - O sonho do Nazzevo e My Little Pony"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-9');Add_To_Website_Title(' - Capítulo: 9 - O sonho do Nazzevo e My Little Pony', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">9 - O sonho do Nazzevo e My Little Pony</button></a> 
+<a href="#capítulo-9" title="9 - O sonho do Nazzevo e My Little Pony"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-9');Define_Chapter(9);Add_To_Website_Title(' - Capítulo: 9 - O sonho do Nazzevo e My Little Pony', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">9 - O sonho do Nazzevo e My Little Pony</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-10" title="10 - SpaceNata?"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-10');Add_To_Website_Title(' - Capítulo: 10 - SpaceNata?', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">10 - SpaceNata?</button></a> 
+<a href="#capítulo-10" title="10 - SpaceNata?"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-10');Define_Chapter(10);Add_To_Website_Title(' - Capítulo: 10 - SpaceNata?', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">10 - SpaceNata?</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-11" title="11 - A chegada do novo LonelyShipper"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-11');Add_To_Website_Title(' - Capítulo: 11 - A chegada do novo LonelyShipper', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">11 - A chegada do novo LonelyShipper</button></a> 
+<a href="#capítulo-11" title="11 - A chegada do novo LonelyShipper"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-11');Define_Chapter(11);Add_To_Website_Title(' - Capítulo: 11 - A chegada do novo LonelyShipper', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">11 - A chegada do novo LonelyShipper</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-12" title="12 - Os sonhos estranhos de Izaque"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-12');Add_To_Website_Title(' - Capítulo: 12 - Os sonhos estranhos de Izaque', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">12 - Os sonhos estranhos de Izaque</button></a> 
+<a href="#capítulo-12" title="12 - Os sonhos estranhos de Izaque"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-12');Define_Chapter(12);Add_To_Website_Title(' - Capítulo: 12 - Os sonhos estranhos de Izaque', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">12 - Os sonhos estranhos de Izaque</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-13" title="13 - A rotina de Lisa e a Mansão de Pequenata"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-13');Add_To_Website_Title(' - Capítulo: 13 - A rotina de Lisa e a Mansão de Pequenata', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">13 - A rotina de Lisa e a Mansão de Pequenata</button></a> 
+<a href="#capítulo-13" title="13 - A rotina de Lisa e a Mansão de Pequenata"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-13');Define_Chapter(13);Add_To_Website_Title(' - Capítulo: 13 - A rotina de Lisa e a Mansão de Pequenata', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">13 - A rotina de Lisa e a Mansão de Pequenata</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-14" title="14 - Capítulo Especial de Natal 🎄 🎁"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-14');Add_To_Website_Title(' - Capítulo: 14 - Capítulo Especial de Natal 🎄 🎁', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">14 - Capítulo Especial de Natal 🎄 🎁</button></a> 
+<a href="#capítulo-14" title="14 - Capítulo Especial de Natal 🎄 🎁"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-14');Define_Chapter(14);Add_To_Website_Title(' - Capítulo: 14 - Capítulo Especial de Natal 🎄 🎁', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">14 - Capítulo Especial de Natal 🎄 🎁</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-15" title="15 - O Quarto Aniversário da SpaceLiving"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-15');Add_To_Website_Title(' - Capítulo: 15 - O Quarto Aniversário da SpaceLiving', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">15 - O Quarto Aniversário da SpaceLiving</button></a> 
+<a href="#capítulo-15" title="15 - O Quarto Aniversário da SpaceLiving"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-15');Define_Chapter(15);Add_To_Website_Title(' - Capítulo: 15 - O Quarto Aniversário da SpaceLiving', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">15 - O Quarto Aniversário da SpaceLiving</button></a> 
 </div><div class="shake_side_to_side_animation">
-<a href="#capítulo-16" title="16 - O vídeo de Onomatopeia Visual e as memórias"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-16');Add_To_Website_Title(' - Capítulo: 16 - O vídeo de Onomatopeia Visual e as memórias', 'notification');Hide_Notification_Computer();Hide_Notification_Mobile();">16 - O vídeo de Onomatopeia Visual e as memórias <span class="w3-text-yellow">[Novo!]</span></button></a> 
+<a href="#capítulo-16" title="16 - O vídeo de Onomatopeia Visual e as memórias"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-16');Define_Chapter(16);Add_To_Website_Title(' - Capítulo: 16 - O vídeo de Onomatopeia Visual e as memórias', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">16 - O vídeo de Onomatopeia Visual e as memórias <span class="w3-text-yellow">[Novo!]</span></button></a> 
 </div></div>
 </b></h4>
 </div>
@@ -586,8 +479,18 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <h2 class="mobileHide background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Leitores: <span class="w3-text-white text_hover_white" >5</span> <i class="fas fa-book-reader"></i><br />Obrigado à todos 😊 ❤️</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
-<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >1</span> - Mayu-chan (MeWe, Discord)</h2><h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >2</span> - Igor (Discord)</h2><h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >3</span> - Thaíssa (Discord)</h2><h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >4</span> - Lívia (Wattpad, 19/06/2021)</h2><h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >5</span> - Larinha (SAMP - CVR/Discord, 12/07/2021) 😊</h2>
-<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >1</span> - Mayu-chan (MeWe, Discord)</h2><h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >2</span> - Igor (Discord)</h2><h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >3</span> - Thaíssa (Discord)</h2><h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >4</span> - Lívia (Wattpad, 19/06/2021)</h2><h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >5</span> - Larinha (SAMP - CVR/Discord, 12/07/2021) 😊</h2></div>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >1</span> - Mayu-chan (MeWe, Discord)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >2</span> - Igor (Discord)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >3</span> - Thaíssa (Discord)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >4</span> - Lívia (Wattpad, 19/06/2021)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >5</span> - Larinha (SAMP - CVR/Discord, 12/07/2021) 😊</h2>
+
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >1</span> - Mayu-chan (MeWe, Discord)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >2</span> - Igor (Discord)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >3</span> - Thaíssa (Discord)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >4</span> - Lívia (Wattpad, 19/06/2021)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >5</span> - Larinha (SAMP - CVR/Discord, 12/07/2021) 😊</h2>
+</div>
 </h2>
 </div>
 
@@ -597,8 +500,18 @@ Novo capítulo revisado <i class="fas fa-bell"></i>
 <h4 class="mobileShow background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Leitores: <span class="w3-text-white text_hover_white" >5</span> <i class="fas fa-book-reader"></i><br />Obrigado à todos 😊 ❤️</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
-<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >1</span> - Mayu-chan (MeWe, Discord)</h2><h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >2</span> - Igor (Discord)</h2><h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >3</span> - Thaíssa (Discord)</h2><h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >4</span> - Lívia (Wattpad, 19/06/2021)</h2><h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >5</span> - Larinha (SAMP - CVR/Discord, 12/07/2021) 😊</h2>
-<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >1</span> - Mayu-chan (MeWe, Discord)</h2><h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >2</span> - Igor (Discord)</h2><h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >3</span> - Thaíssa (Discord)</h2><h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >4</span> - Lívia (Wattpad, 19/06/2021)</h2><h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >5</span> - Larinha (SAMP - CVR/Discord, 12/07/2021) 😊</h2></div>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >1</span> - Mayu-chan (MeWe, Discord)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >2</span> - Igor (Discord)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >3</span> - Thaíssa (Discord)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >4</span> - Lívia (Wattpad, 19/06/2021)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >5</span> - Larinha (SAMP - CVR/Discord, 12/07/2021) 😊</h2>
+
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >1</span> - Mayu-chan (MeWe, Discord)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >2</span> - Igor (Discord)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >3</span> - Thaíssa (Discord)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >4</span> - Lívia (Wattpad, 19/06/2021)</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >5</span> - Larinha (SAMP - CVR/Discord, 12/07/2021) 😊</h2>
+</div>
 </h4>
 </div>
 
@@ -714,7 +627,7 @@ No ano de 2019, havia uma história de algumas EspaçoNaves que tinham uma casa 
 </div>
 <div class="mobileShow">
 <a href="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/LonelyShip Story Cover.png" target="_blank"><img src="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/LonelyShip Story Cover.png" width="100%" style="float:left;border-width:3px;border-color:black;border-style:solid;" /></a>
-</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br />A cama tinha um cobertor azul, a cama era feita de algum plástico resistente que era cinza claro, e o guarda-roupas era cinza também.
 <br />As espaçonaves também tinham uma Torre de Laser fora delas, ela podia atirar um raio laser para acertar asteroides que se aproximavam.
 <br />A Torre de Laser tinha dois modos, o modo de Alcance Expandido, e o modo Blindado.
@@ -736,6 +649,8 @@ No ano de 2019, havia uma história de algumas EspaçoNaves que tinham uma casa 
 <br />A geladeira TPF analisaria o corpo do residente e faria uma dieta contendo os nutrientes e vitaminas de que o residente precisa.
 <br />Em seguida, ela dividiria os nutrientes necessários para o dia todo em três refeições: café da manhã, almoço e jantar.
 <br />Se o residente quisesse comer mais de três refeições, a quarta e a próxima refeição seriam apenas massa, não nutrientes.
+<br />Os alimentos criados pela geladeira TPF não continham carne ou produtos de origem animal, eles eram veganos.
+<br />As partículas na comida podem alterar os nutrientes que estão nela, mas não podem mudar o sabor, cheiro ou a textura que foram pré-incorporados aos alimentos.
 <br />A espaçonave ou LonelyShip tinha uma Inteligência Artificial, uma AI, ou IA em português, que poderia ajudar os moradores das espaçonaves gerenciarem suas espaçonaves.
 <br />A IA se chamava LonelyShip Artificial Intelligence, Inteligência Artificial da LonelyShip, ou LSAI para abreviar.
 <br />A espaçonave também tinha quatro letreiros pequenos em suas paredes, dois mostrando "SpaceLiving", e outros dois mostrando "LonelyShip" na direita do letreiro da SpaceLiving.
@@ -746,7 +661,7 @@ No ano de 2019, havia uma história de algumas EspaçoNaves que tinham uma casa 
 </div>
 <div class="mobileShow">
 <a href="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/LonelyShip Story Cover Front Signboards.png" target="_blank"><img src="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/LonelyShip Story Cover Front Signboards.png" width="100%" style="float:left;border-width:3px;border-color:black;border-style:solid;" /></a>
-</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br />E também, a LonelyShip tinha dois grandes letreiros na frente dela, um com "SpaceLiving" escrito nele, e outro com "LonelyShip".
 <br />O letreiro da SpaceLiving está acima do da LonelyShip.
 <br />
@@ -883,7 +798,7 @@ No ano de 2019, havia uma história de algumas EspaçoNaves que tinham uma casa 
 <br />Eu escrevi esse capítulo em 09/11/2019.
 <br />Eu terminei de revisar ele pela terceira ou quarta vez em 24/04/2021.
 <br />E terminei de traduzir ele em 10/05/2021, depois de ter revisado do capítulo 1 ao 10 de SpaceLiving (essa linha só existe na versão traduzida).
-<br /><br />Palavras: 3,512.
+<br /><br />Palavras: 3,560.
 </div>
 </div>
 <br /><br />
@@ -1980,7 +1895,7 @@ SpaceLiving, Capítulo Seis, A Atualização da EspaçoNave e a reunião dos irm
 </div>
 <div class="mobileShow">
 <a href="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/Lisa.jpg" target="_blank"><img src="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/Lisa.jpg" width="100%" style="float:left;border-width:3px;border-color:black;border-style:solid;" /></a>
-</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br />"Eu não consigo acreditar... Essa é você? Lisa? Hmm... Posso visitar sua LonelyShip?" perguntou Ted.
 <br />"Ok..." disse Lisa, que enviou o código da LonelyShip dela para Ted.
 <br />
@@ -3303,7 +3218,7 @@ Capítulo: 12 - Os sonhos estranhos de Izaque</b>
 </div>
 <div class="mobileShow">
 <a href="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/LonelyShip Story Cover.png" target="_blank"><img src="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/LonelyShip Story Cover.png" width="100%" style="float:left;border-width:3px;border-color:black;border-style:solid;" /></a>
-</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br />
 <br />Izaque fica muito orgulhoso daquele desenho, ele até compartilha com alguns amigos dele no Discord, Lisa gosta muito do desenho.
 <br />O garoto pensa sobre a história que ele sonhou, A Vida de Pequenata, ele sabe que ele nunca escreveu ela, ele só escreveu Kezzakam e SpaceLiving.
@@ -4121,7 +4036,7 @@ Era um lindo Domingo no universo SpaceLiving, todo mundo estava fazendo suas coi
 </div>
 <div class="mobileShow">
 <a href="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/Audacity Blue Bass Waveform.png" target="_blank"><img src="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/Audacity Blue Bass Waveform.png" width="100%" style="float:left;border-width:3px;border-color:black;border-style:solid;" /></a>
-</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br />Depois disso, ele inseriu as duas fotos da forma de onda no projeto da Onomatopeia Visual no programa de edição de vídeo Sony Vegas.
 <br />Ele nomeou os dois arquivos de forma de onda "Baixo Azul" e "Baixo Vermelho", o azul era para baixos e sintetizadores emocionais na música.
 <br />E o vermelho era para baixos e sintetizadores dark, fortes, ou "fodões".
@@ -4143,7 +4058,7 @@ Era um lindo Domingo no universo SpaceLiving, todo mundo estava fazendo suas coi
 </div>
 <div class="mobileShow">
 <a href="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/Orignal Sharks - FROG PARTY Song Cover.jpg" target="_blank"><img src="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/Orignal Sharks - FROG PARTY Song Cover.jpg" width="100%" style="float:left;border-width:3px;border-color:black;border-style:solid;" /></a>
-</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br />Ele adicionou sua logo Stake2, o corpo inteiro de seu personagem Funkysnipa Cat, Fluttershy de My Little Pony: A Amizade é Mágica, os Among Uses vermelho e marrom, e as fotos do baixo azul e vermelho.
 <br />(Stake2 é um nome que Izaque usa na Internet desde 2008, em todas as contas que ele criou ao longo do tempo.)
 <br />(Funkysnipa Cat é uma conta da rede social Google+ que Izaque criou em 2013.
@@ -4156,7 +4071,7 @@ Era um lindo Domingo no universo SpaceLiving, todo mundo estava fazendo suas coi
 </div>
 <div class="mobileShow">
 <a href="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/Funky Black Cat Original Profile Picture.png" target="_blank"><img src="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/Funky Black Cat Original Profile Picture.png" width="100%" style="float:left;border-width:3px;border-color:black;border-style:solid;" /></a>
-</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br />(Izaque descobriu muitas coisas novas no Google+, ele descobriu My Little Pony, Five Nights at Freddy's, Undertale, começou a gostar mais de Dubstep.
 <br />Ele também conheceu muitas pessoas boas, ele ainda fala com algumas delas até hoje, por exemplo, Lulu, uma amiga que ele conhece desde 2015, já fazem seis anos.
 <br />Google+ faleceu no segundo dia de Abril de 2019, a Google decidiu fechar ele porque ele tinha violações de privacidade e problemas de segurança que a Google havia escondido alguns meses atrás e as pessoas descobriram elas.
@@ -4168,7 +4083,7 @@ Era um lindo Domingo no universo SpaceLiving, todo mundo estava fazendo suas coi
 </div>
 <div class="mobileShow">
 <a href="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/Edited Sharks - FROG PARTY Song Cover.png" target="_blank"><img src="https://thestake2.netlify.app/Images/Website Images/SpaceLiving/Chapter Images/Edited Sharks - FROG PARTY Song Cover.png" width="100%" style="float:left;border-width:3px;border-color:black;border-style:solid;" /></a>
-</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 <br />Izaque colocou a capa da música original nas partes onde a mulher falava "Frog" (Sapo), e a capa da música editada nas partes onde a mulher falava "Party" (Festa).
 <br />Colocando a capa da música editada com mais pessoas nas partes de "Party" (Festa), Izaque pensou que isso dava um sentimento de "Party" (Festa) para aquilo, com mais pessoas.
 <br />Ele também colocou uma animação de um interruptor de liga desliga nas partes que uma voz falava "Switch" (Troque), ligando o interruptor.
@@ -7021,9 +6936,6 @@ comment_modal_16m.onclick = function(event) {
 </h4>
 </div>
 </div>
-<script src="https://thestake2.netlify.app/JavaScript/Function/Notification.js"></script>
-
-
 <script>
 Change_Title();
 </script>
@@ -7047,15 +6959,24 @@ var Last_Chapter = 16;
 </script><script>
 	Get_Title();
 	</script>
-
+<script src="https://thestake2.netlify.app/JavaScript/Function/Notifications.js"></script>
 <script>
+	var chapter_text = "capítulo-";function Really_Open_Chapter(chapter_title, chapter_number) {
+		var new_chapter_text = chapter_text + chapter_number;
+		openCity(new_chapter_text);
+		document.getElementById(new_chapter_text).scrollIntoView();
+		Chapter_Number = chapter_number;
+		Define_Chapter(Chapter_Number);
+		Add_To_Website_Title(chapter_title, "notification");
+		Hide_Computer_Notification();
+		Hide_Mobile_Notification();
+	}
 
 function Open_Chapter() {
 	var first_website_url = window.location;
 	var second_website_url = '"' + first_website_url + '"';
 	var userLang = navigator.language || navigator.userLanguage;
-	var chapter_text = "capítulo-";
-	
+
 	if (userLang == "pt-BR" || userLang == "pt-PT") {
 		var read_chapter_text = "ler-capitulo-";
 	}
@@ -7065,7 +6986,7 @@ function Open_Chapter() {
 	}
 
 	var chapter_number = 17;
-	
+
 	var first_check_1 = second_website_url.includes(read_chapter_text + chapter_number);
 	var second_check_1 = second_website_url.includes(read_chapter_text + "[1]");
 	var third_check_1 = second_website_url.includes(read_chapter_text + '"' + 1 + '"');
@@ -7164,147 +7085,99 @@ function Open_Chapter() {
 	var sixth_check_16 = second_website_url.includes("[16]");
 
 	if (first_check_1 === true || second_check_1 === true || third_check_1 === true || fourth_check_1 === true || fifth_check_1 === true || sixth_check_1 == true) {
-		var new_chapter_text = chapter_text + "1";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 1;
-		Define_Chapter(1);
-		Add_To_Website_Title(" - Capítulo: 1 - As EspaçoNaves", "notification");
+		var chapter_title = " - Capítulo: 1 - As EspaçoNaves";
+		var current_chapter_number = 1;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_2 === true || second_check_2 === true || third_check_2 === true || fourth_check_2 === true || fifth_check_2 === true || sixth_check_2 == true) {
-		var new_chapter_text = chapter_text + "2";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 2;
-		Define_Chapter(2);
-		Add_To_Website_Title(" - Capítulo: 2 - A história de John", "notification");
+		var chapter_title = " - Capítulo: 2 - A história de John";
+		var current_chapter_number = 2;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_3 === true || second_check_3 === true || third_check_3 === true || fourth_check_3 === true || fifth_check_3 === true || sixth_check_3 == true) {
-		var new_chapter_text = chapter_text + "3";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 3;
-		Define_Chapter(3);
-		Add_To_Website_Title(" - Capítulo: 3 - As histórias e o reencontro", "notification");
+		var chapter_title = " - Capítulo: 3 - As histórias e o reencontro";
+		var current_chapter_number = 3;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_4 === true || second_check_4 === true || third_check_4 === true || fourth_check_4 === true || fifth_check_4 === true || sixth_check_4 == true) {
-		var new_chapter_text = chapter_text + "4";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 4;
-		Define_Chapter(4);
-		Add_To_Website_Title(" - Capítulo: 4 - Ted e Monika", "notification");
+		var chapter_title = " - Capítulo: 4 - Ted e Monika";
+		var current_chapter_number = 4;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_5 === true || second_check_5 === true || third_check_5 === true || fourth_check_5 === true || fifth_check_5 === true || sixth_check_5 == true) {
-		var new_chapter_text = chapter_text + "5";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 5;
-		Define_Chapter(5);
-		Add_To_Website_Title(" - Capítulo: 5 - Ted e Monika, Parte 2", "notification");
+		var chapter_title = " - Capítulo: 5 - Ted e Monika, Parte 2";
+		var current_chapter_number = 5;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_6 === true || second_check_6 === true || third_check_6 === true || fourth_check_6 === true || fifth_check_6 === true || sixth_check_6 == true) {
-		var new_chapter_text = chapter_text + "6";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 6;
-		Define_Chapter(6);
-		Add_To_Website_Title(" - Capítulo: 6 - A atualização das EspaçoNaves e a reunião dos irmãos", "notification");
+		var chapter_title = " - Capítulo: 6 - A atualização das EspaçoNaves e a reunião dos irmãos";
+		var current_chapter_number = 6;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_7 === true || second_check_7 === true || third_check_7 === true || fourth_check_7 === true || fifth_check_7 === true || sixth_check_7 == true) {
-		var new_chapter_text = chapter_text + "7";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 7;
-		Define_Chapter(7);
-		Add_To_Website_Title(" - Capítulo: 7 - O teleporte de iniciação", "notification");
+		var chapter_title = " - Capítulo: 7 - O teleporte de iniciação";
+		var current_chapter_number = 7;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_8 === true || second_check_8 === true || third_check_8 === true || fourth_check_8 === true || fifth_check_8 === true || sixth_check_8 == true) {
-		var new_chapter_text = chapter_text + "8";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 8;
-		Define_Chapter(8);
-		Add_To_Website_Title(" - Capítulo: 8 - O Terceiro Aniversário da SpaceLiving", "notification");
+		var chapter_title = " - Capítulo: 8 - O Terceiro Aniversário da SpaceLiving";
+		var current_chapter_number = 8;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_9 === true || second_check_9 === true || third_check_9 === true || fourth_check_9 === true || fifth_check_9 === true || sixth_check_9 == true) {
-		var new_chapter_text = chapter_text + "9";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 9;
-		Define_Chapter(9);
-		Add_To_Website_Title(" - Capítulo: 9 - O sonho do Nazzevo e My Little Pony", "notification");
+		var chapter_title = " - Capítulo: 9 - O sonho do Nazzevo e My Little Pony";
+		var current_chapter_number = 9;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_10 === true || second_check_10 === true || third_check_10 === true || fourth_check_10 === true || fifth_check_10 === true || sixth_check_10 == true) {
-		var new_chapter_text = chapter_text + "10";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 10;
-		Define_Chapter(10);
-		Add_To_Website_Title(" - Capítulo: 10 - SpaceNata?", "notification");
+		var chapter_title = " - Capítulo: 10 - SpaceNata?";
+		var current_chapter_number = 10;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_11 === true || second_check_11 === true || third_check_11 === true || fourth_check_11 === true || fifth_check_11 === true || sixth_check_11 == true) {
-		var new_chapter_text = chapter_text + "11";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 11;
-		Define_Chapter(11);
-		Add_To_Website_Title(" - Capítulo: 11 - A chegada do novo LonelyShipper", "notification");
+		var chapter_title = " - Capítulo: 11 - A chegada do novo LonelyShipper";
+		var current_chapter_number = 11;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_12 === true || second_check_12 === true || third_check_12 === true || fourth_check_12 === true || fifth_check_12 === true || sixth_check_12 == true) {
-		var new_chapter_text = chapter_text + "12";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 12;
-		Define_Chapter(12);
-		Add_To_Website_Title(" - Capítulo: 12 - Os sonhos estranhos de Izaque", "notification");
+		var chapter_title = " - Capítulo: 12 - Os sonhos estranhos de Izaque";
+		var current_chapter_number = 12;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_13 === true || second_check_13 === true || third_check_13 === true || fourth_check_13 === true || fifth_check_13 === true || sixth_check_13 == true) {
-		var new_chapter_text = chapter_text + "13";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 13;
-		Define_Chapter(13);
-		Add_To_Website_Title(" - Capítulo: 13 - A rotina de Lisa e a Mansão de Pequenata", "notification");
+		var chapter_title = " - Capítulo: 13 - A rotina de Lisa e a Mansão de Pequenata";
+		var current_chapter_number = 13;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_14 === true || second_check_14 === true || third_check_14 === true || fourth_check_14 === true || fifth_check_14 === true || sixth_check_14 == true) {
-		var new_chapter_text = chapter_text + "14";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 14;
-		Define_Chapter(14);
-		Add_To_Website_Title(" - Capítulo: 14 - Capítulo Especial de Natal 🎄 🎁", "notification");
+		var chapter_title = " - Capítulo: 14 - Capítulo Especial de Natal 🎄 🎁";
+		var current_chapter_number = 14;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_15 === true || second_check_15 === true || third_check_15 === true || fourth_check_15 === true || fifth_check_15 === true || sixth_check_15 == true) {
-		var new_chapter_text = chapter_text + "15";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 15;
-		Define_Chapter(15);
-		Add_To_Website_Title(" - Capítulo: 15 - O Quarto Aniversário da SpaceLiving", "notification");
+		var chapter_title = " - Capítulo: 15 - O Quarto Aniversário da SpaceLiving";
+		var current_chapter_number = 15;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 	if (first_check_16 === true || second_check_16 === true || third_check_16 === true || fourth_check_16 === true || fifth_check_16 === true || sixth_check_16 == true) {
-		var new_chapter_text = chapter_text + "16";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 16;
-		Define_Chapter(16);
-		Add_To_Website_Title(" - Capítulo: 16 - O vídeo de Onomatopeia Visual e as memórias", "notification");
+		var chapter_title = " - Capítulo: 16 - O vídeo de Onomatopeia Visual e as memórias";
+		var current_chapter_number = 16;
+		Really_Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 }
@@ -7314,6 +7187,8 @@ Open_Chapter();
 </script>
 
 <script>
+Hide_Mobile_Buttons();
+</script><script>
 Define_Colors_And_Styles();
 </script>
 

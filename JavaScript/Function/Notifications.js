@@ -68,7 +68,7 @@ function Hide_Mobile_Notification() {
 	notification_div_mobile.className = notification_div_mobile.className.replace("element_appear_from_bottom", "element_disappear_to_bottom");
 
 	// Changes the text of the div element
-	notification_div_mobile.innerHTML = '<h1 width="60%">' + button_text + "</h1>";
+	notification_div_mobile.innerHTML = '<h2 width="60%">' + button_text + "</h2>";
 
 	// Hides the div element after the animation has stopped
 	setTimeout(function() {
