@@ -18,35 +18,32 @@
 <meta name="twitter:website" value="@The_Snakes90" />
 <meta name="twitter:site" value="@The_Snakes90" />
 <meta name="twitter:creator" content="@The_Snakes90" />
-<meta name="revised" content="Stake's Enterprise TM, 14/07/2021" />
+<meta name="revised" content="Stake's Enterprise TM, 11/08/2021" />
 <meta name="author" content="Stake Ferreira" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <meta charset="UTF-8" />
-<script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
 
 <!-- CSS files -->
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/lib/w3.css" />
 <link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/W3.css" />
 <link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Main_CSS.css" />
 <link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Website CSS/Littletato.css" />
 <link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Colors.css" />
-<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Mobile.css" />
 
 <!-- JavaScript files -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
 <script src="https://thestake2.netlify.app/JavaScript/Function/Tabs.js"></script>
-<script src="https://thestake2.netlify.app/JavaScript/Function/Redirect.js" onLoad="Rodar();"></script>
+<script src="https://thestake2.netlify.app/JavaScript/Function/Redirect To Website Of User Language.js" onLoad="Check_Website_Link();"></script>
 <script src="https://thestake2.netlify.app/JavaScript/Function/Show Hide.js"></script>
 <script src="https://thestake2.netlify.app/JavaScript/Function/Mobile Side Menu.js"></script>
 <script src="https://thestake2.netlify.app/JavaScript/Function/Set Revised Date.js"></script>
-<script src="https://thestake2.netlify.app/JavaScript/Story Websites/Open Chapter By Keys.js"></script>
-<script src="https://thestake2.netlify.app/JavaScript/Story Websites/Write Chapter.js"></script>
 <script src="https://thestake2.netlify.app/JavaScript/Function/Change Button Color.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-</head>
+<script src="https://thestake2.netlify.app/JavaScript/Function/Hide Chapter Button Images.js"></script>
+<script src="https://thestake2.netlify.app/JavaScript/Story Websites/Open Chapter By Keys.js"></script>
+<script src="https://thestake2.netlify.app/JavaScript/Story Websites/Write Chapter.js"></script></head>
 <body onLoad="Define_Colors_And_Styles();">
 <center>
-
-<div class="w3-animate-zoom">
 
 <!--- Computer Button bar on the top -->
 <div id="computer_buttons_bar" class="w3-center w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
@@ -71,24 +68,35 @@
 <button id="show_computer_buttons" class="w3-center w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" style="display:none;float:right;border-radius: 50px;" onclick="Show_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
 </div>
 
+
 <!--- Mobile Button bar at the left -->
 <div id="mobile_button_sidebar" class="w3-center mobile_button_sidebar_css mobileShow ">
 
-<a href="javascript:void(0)" class="close_mobile_sidebar_button" onclick="Hide_Mobile_Buttons();" style="font-size:35px;"><i class="fas fa-times-circle"></i></a>
+<a href="javascript:void(0)" class="close_mobile_sidebar_button" onclick="Hide_Mobile_Buttons();" style="font-size:35px;">
+<i class="fas fa-times-circle"></i>
+</a>
 
 <span style="font-size:30px;" class="mobileShow text_brown">Menu de botões mobile: </span>
 
-<a href="#nazzevo-ler históriam" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_1" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('nazzevo-ler históriam');Define_Button('mobile_button_1');Change_Button_Color();"><h4>Ler história: <i class="fas fa-book-open"></i></h4></button></a>
+<a href="#nazzevo-ler históriam" onclick="Hide_Mobile_Buttons();">
+<button id="mobile_button_1" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('nazzevo-ler históriam');Define_Button('mobile_button_1');Change_Button_Color();">
+<h4>Ler história: <i class="fas fa-book-open"></i></h4>
+</button>
+</a>
+<a href="#nazzevo-leitoresm" onclick="Hide_Mobile_Buttons();">
+<button id="mobile_button_2" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('nazzevo-leitoresm');Define_Button('mobile_button_2');Change_Button_Color();">
+<h4>Leitores: <i class="fas fa-book-reader"></i> ❤️ 😊</h4>
+</button>
+</a>
+<a href="#nazzevo-outras históriasm" onclick="Hide_Mobile_Buttons();">
+<button id="mobile_button_3" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('nazzevo-outras históriasm');Define_Button('mobile_button_3');Change_Button_Color();">
+<h4>Outras histórias: <i class="fas fa-book"></i></h4>
+</button>
+</a>
 
-<a href="#nazzevo-leitoresm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_2" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('nazzevo-leitoresm');Define_Button('mobile_button_2');Change_Button_Color();"><h4>Leitores: <i class="fas fa-book-reader"></i> ❤️ 😊</h4></button></a>
-
-<a href="#nazzevo-outras históriasm" onclick="Hide_Mobile_Buttons();"><button id="mobile_button_3" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('nazzevo-outras históriasm');Define_Button('mobile_button_3');Change_Button_Color();"><h4>Outras histórias: <i class="fas fa-book"></i></h4></button></a>
 </div>
 
 <div class="mobileShow"><button id="show_mobile_buttons" class="w3-center w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="Show_Mobile_Buttons();"><h2><i class="fas fa-bars"></i></h2></button>
-</div><script>
-Hide_Mobile_Buttons();
-</script>
 </div>
 <script>
 var old_website_title, current_website_title;
@@ -124,18 +132,58 @@ function Add_To_Website_Title(text_to_add, source = null) {
 }
 </script>
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<div class="background_black border_color_brown border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;"><div style="margin:3%;">
-<h2 class="text_brown w3-animate-zoom"><p><br /><b>
-A História dos Irmãos Nazzevo: <i class="fas fa-book"></i></b><br /><br /><p></h2></div>
-<hr class="border_color_brown border_1px" />
-<center><img src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Nazzevo Brothers/Português Brasileiro/Landscape/Story/Book Cover.png" width="55%" class="w3-center border_3px border_color_brown mobileHide w3-center" style="border-radius: 50px;" /></center>
-<div class="mobileHide w3-center"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Images/Story Covers/The Story of the Nazzevo Brothers/Português Brasileiro/Landscape/Story/Book Cover.png')"><h4>Link da imagem: <i class="fas fa-images"></i></h4></button></div>
-<center><img src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Nazzevo Brothers/Português Brasileiro/Landscape/Story/Book Cover.png" width="60%" class="border_3px border_color_brown mobileShow w3-center" style="border-radius: 50px;" /></center>
-<div class="mobileShow w3-center"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Images/Story Covers/The Story of the Nazzevo Brothers/Português Brasileiro/Landscape/Story/Book Cover.png')"><h4>Link da imagem: <i class="fas fa-images"></i></h4></button></div>
+<div class="background_black border_color_brown border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;"><!-- Website header -->
+<div class="w3-animate-zoom">
+
+<!-- Website computer title -->
+<h2 class="w3-center text_brown w3-animate-zoom mobileHide">
+<p><br /><b>A História dos Irmãos Nazzevo: <i class="fas fa-book"></i></b><br /><br /><p>
+</h2>
+</div>
+
+<div class="w3-animate-zoom">
+<!-- Website mobile title -->
+<h4 class="text_brown w3-animate-zoom mobileShow">
+<p><br /><b>A História dos Irmãos Nazzevo: <i class="fas fa-book"></i></b><br /><br /><p>
+</h4>
+</div>
+
+<hr class="border_color_brown border_1px" style="margin-left:3%;margin-right:3%;" />
+
+
+<!-- Website images -->
+<div class="w3-center">
+
+<center>
+<img src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Nazzevo Brothers/Português Brasileiro/Landscape/Story/Book Cover.png" width="55%" class="w3-center border_3px border_color_brown mobileHide w3-center" style="border-radius: 50px;" />
+</center>
+
+<div class="mobileHide w3-center">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Images/Story Covers/The Story of the Nazzevo Brothers/Português Brasileiro/Landscape/Story/Book Cover.png')">
+<h4>Link da imagem: <i class="fas fa-images"></i></h4>
+</button>
+</div>
+
+<center>
+<img src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Nazzevo Brothers/Português Brasileiro/Landscape/Story/Book Cover.png" width="60%" class="border_3px border_color_brown mobileShow w3-center" style="border-radius: 50px;" />
+</center>
+
+<div class="mobileShow w3-center">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Images/Story Covers/The Story of the Nazzevo Brothers/Português Brasileiro/Landscape/Story/Book Cover.png')">
+<h4>Link da imagem: <i class="fas fa-images"></i></h4>
+</button>
+</div>
+
+</div>
+
+<hr class="border_color_brown border_1px" style="margin-left:3%;margin-right:3%;" />
+
 
 <h4 class="text_brown" style="margin-left:11%;margin-right:11%;">Sinopse: <i class="fas fa-scroll"></i> "Essa é uma história sobre dois irmãos aventureiros.<br />
 Eles sempre vão em aventuras juntos, se chamam Lulu e Izaque.<br />
 E esse é o começo da história deles."<br /></h4>
+
+
 <h4 class="text_brown">
 Autores da história: <span class="w3-text-orange"><span class="w3-text-orange" >Izaque Sanvezzo (Stake2)</span> <span class="text_brown" >e</span> <span class="w3-text-purple" >Lulu Black Fazbear</span><br /></span>
 Capítulo: <span class="w3-text-orange">1</span><br />
@@ -154,9 +202,9 @@ Status: <span class="w3-text-orange">[Terminada e postando]</span></h4>
 <h4><b>
 <div class="w3-animate-zoom">
 <div class="shake_side_to_side_animation">
-<a href="#capítulo-1" title="1 - O começo, a caverna"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - O começo, a caverna', 'notification');">1 - O começo, a caverna <span class="w3-text-yellow">[Novo!]</span></button></a> 
+<a href="#capítulo-1" title="1 - O começo, a caverna"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Define_Chapter(1);Add_To_Website_Title(' - Capítulo: 1 - O começo, a caverna', 'notification');">1 - O começo, a caverna <span class="w3-text-yellow">[Novo!]</span></button></a> 
 <center>
-<a href="#capítulo-1" title="1 - O começo, a caverna"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Nazzevo Brothers/Português Brasileiro/Landscape/Chapter/1 - 10/01.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - O começo, a caverna');" />
+<a id="story_chapter_image_number_1" href="#capítulo-1" title="1 - O começo, a caverna"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Nazzevo Brothers/Português Brasileiro/Landscape/Chapter/1 - 10/01.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - O começo, a caverna');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -184,9 +232,9 @@ Status: <span class="w3-text-orange">[Terminada e postando]</span></h4>
 <h4><b>
 <div class="w3-animate-zoom">
 <div class="shake_side_to_side_animation">
-<a href="#capítulo-1" title="1 - O começo, a caverna"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - O começo, a caverna', 'notification');">1 - O começo, a caverna <span class="w3-text-yellow">[Novo!]</span></button></a> 
+<a href="#capítulo-1" title="1 - O começo, a caverna"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Define_Chapter(1);Add_To_Website_Title(' - Capítulo: 1 - O começo, a caverna', 'notification');">1 - O começo, a caverna <span class="w3-text-yellow">[Novo!]</span></button></a> 
 <center>
-<a href="#capítulo-1" title="1 - O começo, a caverna"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Nazzevo Brothers/Português Brasileiro/Landscape/Chapter/1 - 10/01.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - O começo, a caverna');" />
+<a id="story_chapter_image_number_1" href="#capítulo-1" title="1 - O começo, a caverna"><div class="mobileHide"><img class="background_black" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Nazzevo Brothers/Português Brasileiro/Landscape/Chapter/1 - 10/01.png" width="60%" height="60%" style="border-color:w3-black;border-style:solid;border-radius: 32px;height: auto;max-width: 4000px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - O começo, a caverna');" />
 </div><br class="mobileHide" />
 
 </a>
@@ -211,8 +259,12 @@ Status: <span class="w3-text-orange">[Terminada e postando]</span></h4>
 <h2 class="mobileHide background_black text_brown border_color_brown border_4px" style="margin:10%;border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2><p></p><br /><b>Leitores: <i class="fas fa-book-reader"></i> <span class="w3-text-orange text_hover_white" >2</span><br />Obrigado à todos 😊 ❤️</b><br /><br /><p></p></h2></div><hr class="border_color_brown border_1px" />
-<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >1</span> - Drêssa uwu (Discord - MLP BR, 21/04/2020) 😊</h2><h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >2</span> - Larinha (SAMP - CVR/Discord, ??/??/????) 😊 (Pré-Leitora)</h2>
-<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >1</span> - Drêssa uwu (Discord - MLP BR, 21/04/2020) 😊</h2><h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >2</span> - Larinha (SAMP - CVR/Discord, ??/??/????) 😊 (Pré-Leitora)</h2></div>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >1</span> - Drêssa uwu (Discord - MLP BR, 21/04/2020) 😊</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >2</span> - Larinha (SAMP - CVR/Discord, ??/??/????) 😊 (Pré-Leitora)</h2>
+
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >1</span> - Drêssa uwu (Discord - MLP BR, 21/04/2020) 😊</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >2</span> - Larinha (SAMP - CVR/Discord, ??/??/????) 😊 (Pré-Leitora)</h2>
+</div>
 </h2>
 </div>
 
@@ -222,8 +274,12 @@ Status: <span class="w3-text-orange">[Terminada e postando]</span></h4>
 <h4 class="mobileShow background_black text_brown border_color_brown border_4px" style="margin:10%;border-radius: 50px;">
 <div style="margin:3%;">
 <div class="w3-animate-zoom"><h2><p></p><br /><b>Leitores: <i class="fas fa-book-reader"></i> <span class="w3-text-orange text_hover_white" >2</span><br />Obrigado à todos 😊 ❤️</b><br /><br /><p></p></h2></div><hr class="border_color_brown border_1px" />
-<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >1</span> - Drêssa uwu (Discord - MLP BR, 21/04/2020) 😊</h2><h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >2</span> - Larinha (SAMP - CVR/Discord, ??/??/????) 😊 (Pré-Leitora)</h2>
-<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >1</span> - Drêssa uwu (Discord - MLP BR, 21/04/2020) 😊</h2><h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >2</span> - Larinha (SAMP - CVR/Discord, ??/??/????) 😊 (Pré-Leitora)</h2></div>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >1</span> - Drêssa uwu (Discord - MLP BR, 21/04/2020) 😊</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >2</span> - Larinha (SAMP - CVR/Discord, ??/??/????) 😊 (Pré-Leitora)</h2>
+
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >1</span> - Drêssa uwu (Discord - MLP BR, 21/04/2020) 😊</h2>
+<h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >2</span> - Larinha (SAMP - CVR/Discord, ??/??/????) 😊 (Pré-Leitora)</h2>
+</div>
 </h4>
 </div>
 
@@ -468,9 +524,6 @@ Capítulo: 1 - O começo, a caverna</b>
 
 
 </div>
-<div class="mobileHide"><br /></div><div class="mobileShow"><br /></div><div class="mobileHide"><h2><b>Leu o Capítulo (1): ✓</b></h2></div><div class="mobileShow"><h4><b>Leu o Capítulo ({1}): ✓</b></h4></div><div class="mobileHide"><br /><br /></div><div class="mobileShow"><br /><br /></div>
-<div style="margin:3%;"><h4 class="background_darker_brown text_black border_3px_solid_black" style="text-align:left;border-radius: 50px;"><div style="margin-left:5%;margin-right:5%;"><br /><b>Leitor: </b>Myn<br /><b>Em:</b> 22:44 20/04/2020 <br /><br /></div></h4></div>
-
 </div>
 </div>
 
@@ -752,14 +805,25 @@ var Last_Chapter = 1;
 	</script>
 
 <script>
+var chapter_text = "capítulo-";
 
-function Open_Chapter() {
+function Open_Chapter(chapter_title, chapter_number) {
+	var new_chapter_text = chapter_text + chapter_number;
+	openCity(new_chapter_text);
+	document.getElementById(new_chapter_text).scrollIntoView();
+	Chapter_Number = chapter_number;
+	Define_Chapter(Chapter_Number);
+	Add_To_Website_Title(chapter_title, "notification");
+	Hide_Computer_Notification();
+	Hide_Mobile_Notification();
+}
+
+function Check_Chapter_Number_On_Link() {
 	var first_website_url = window.location;
 	var second_website_url = '"' + first_website_url + '"';
-	var userLang = navigator.language || navigator.userLanguage;
-	var chapter_text = "capítulo-";
-	
-	if (userLang == "pt-BR" || userLang == "pt-PT") {
+	var user_language = navigator.language || navigator.userLanguage;
+
+	if (user_language == "pt-BR" || user_language == "pt-PT") {
 		var read_chapter_text = "ler-capitulo-";
 	}
 
@@ -768,7 +832,7 @@ function Open_Chapter() {
 	}
 
 	var chapter_number = 2;
-	
+
 	var first_check_1 = second_website_url.includes(read_chapter_text + chapter_number);
 	var second_check_1 = second_website_url.includes(read_chapter_text + "[1]");
 	var third_check_1 = second_website_url.includes(read_chapter_text + '"' + 1 + '"');
@@ -777,21 +841,20 @@ function Open_Chapter() {
 	var sixth_check_1 = second_website_url.includes("[1]");
 
 	if (first_check_1 === true || second_check_1 === true || third_check_1 === true || fourth_check_1 === true || fifth_check_1 === true || sixth_check_1 == true) {
-		var new_chapter_text = chapter_text + "1";
-		openCity(new_chapter_text);
-		document.getElementById(new_chapter_text).scrollIntoView();
-		Chapter_Number = 1;
-		Define_Chapter(1);
-		Add_To_Website_Title(" - Capítulo: 1 - O começo, a caverna", "notification");
+		var chapter_title = " - Capítulo: 1 - O começo, a caverna";
+		var current_chapter_number = 1;
+		Open_Chapter(chapter_title, current_chapter_number);
 	}
 
 }
 console.log("Open Chapter Script was loaded.");
 
-Open_Chapter();
+Check_Chapter_Number_On_Link();
 </script>
 
 <script>
+Hide_Mobile_Buttons();
+</script><script>
 Define_Colors_And_Styles();
 </script>
 
