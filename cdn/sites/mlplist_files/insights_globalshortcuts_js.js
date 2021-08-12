@@ -1,1 +1,0 @@
-require(['GlobalShortcuts'],function(GlobalShortcuts){'use strict';GlobalShortcuts.add('special:Insights','g i');});;
