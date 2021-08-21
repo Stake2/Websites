@@ -405,7 +405,7 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (titulo == "The Story of the Nazzevo Brothers Geral" && check == false) {
+	if (titulo == "The Story of the Bulkan Brothers Geral" && check == false) {
 		var lang = "a";
 
 		if (lang == userLang) {
@@ -413,14 +413,14 @@ function Check_Website_Link() {
 		}
 
 		if (lang != userLang) {
-			var choosen_website_url = website_link + "nazzevo%20%F0%9F%93%98/";
+			var choosen_website_url = website_link + "bulkan%20%F0%9F%93%98/";
 			var res2 = choosen_website_url + userLang + "/";
 			window.location = res2;
 			return;
 		}
 	}
 
-	if (titulo == "The Story of the Nazzevo Brothers" && check == false) {
+	if (titulo == "The Story of the Bulkan Brothers" && check == false) {
 		var lang = "en-US";
 
 		if (lang == userLang) {
@@ -428,14 +428,14 @@ function Check_Website_Link() {
 		}
 
 		if (lang != userLang) {
-			var choosen_website_url = website_link + "nazzevo%20%F0%9F%93%98/";
+			var choosen_website_url = website_link + "bulkan%20%F0%9F%93%98/";
 			var res2 = choosen_website_url + userLang + "/";
 			window.location = res2;
 			return;
 		}
 	}
 
-	if (titulo == "A História dos Irmãos Nazzevo" && check == false) {
+	if (titulo == "A História dos Irmãos Bulkan" && check == false) {
 		var lang = "pt-BR";
 
 		if (lang == userLang) {
@@ -443,7 +443,7 @@ function Check_Website_Link() {
 		}
 
 		if (lang != userLang) {
-			var choosen_website_url = website_link + "nazzevo%20%F0%9F%93%98/";
+			var choosen_website_url = website_link + "bulkan%20%F0%9F%93%98/";
 			var res2 = choosen_website_url + userLang + "/";
 			window.location = res2;
 			return;
@@ -552,94 +552,6 @@ function Check_Website_Link() {
 
 		if (userLang != lang) {
 			var choosen_website_url = website_link + "stake2/";
-			var res = choosen_website_url + userLang + "/";
-			window.location = res;
-		}
-	}
-
-	var sitename = "xenaeizaque";
-	if (titulo == "Xena and Izaque, 3 months of dating :3 Geral" && check == false) {
-		var lang = "a";
-
-		if (userLang == lang) {
-			return;
-		}
-
-		if (userLang != lang) {
-			var choosen_website_url = website_link + sitename + "/";
-			var res = choosen_website_url + userLang + "/";
-			window.location = res;
-		}
-	}
-
-	if (titulo == "Xena and Izaque, 3 months of dating :3" && check == false) {
-		var lang = "en-US";
-
-		if (userLang == lang) {
-			return;
-		}
-
-		if (userLang != lang) {
-			var choosen_website_url = website_link + sitename + "/";
-			var res = choosen_website_url + userLang + "/";
-			window.location = res;
-		}
-	}
-
-	if (titulo == "Xena e Izaque, 3 meses de namoro :3" && check == false) {
-		var lang = "pt-BR";
-
-		if (userLang == lang) {
-			return;
-		}
-
-		if (userLang != lang) {
-			var choosen_website_url = website_link + sitename + "/";
-			var res = choosen_website_url + userLang + "/";
-			window.location = res;
-		}
-	}
-
-	if (titulo == "Yours truly, Izaque. Geral" && check == false) {
-		var lang = "a";
-		var sitename = "Yourstruly_izaque";
-
-		if (userLang == lang) {
-			return;
-		}
-
-		if (userLang != lang) {
-			var choosen_website_url = website_link + sitename + "/";
-			var res = choosen_website_url + userLang + "/";
-			window.location = res;
-		}
-	}
-
-	if (titulo == "Yours truly, Izaque." && check == false) {
-		var lang = "en-US";
-		var sitename = "Yourstruly_izaque";
-
-		if (userLang == lang) {
-			return;
-		}
-
-		if (userLang != lang) {
-			var choosen_website_url = website_link + "Yourstruly_izaque" + "/";
-			var res = choosen_website_url + userLang + "/";
-			window.location = res;
-		}
-	}
-
-	if (titulo == "Sinceramente, Izaque." && check == false) {
-		var lang = "pt-BR";
-		var sitename = "Yourstruly_izaque";
-
-		if (userLang == lang) {
-			return;
-		}
-
-		if (userLang != lang) {
-			var choosen_website_url = website_link + sitename + "/";
 			var res = choosen_website_url + userLang + "/";
 			window.location = res;
 		}
