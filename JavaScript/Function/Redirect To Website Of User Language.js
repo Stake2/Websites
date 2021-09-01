@@ -2,6 +2,9 @@ function Check_Website_Link() {
 	var website_link = "https://thestake2.netlify.app/";
 	var user_language = navigator.language || navigator.userLanguage;
 
+	var english_language = "en-US";
+	var portuguese_language = "pt-BR" || "pt-PT";
+
 	var title = document.getElementsByTagName("title")[0];
 	var titulo = title.innerHTML;
 
@@ -413,10 +416,19 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
-			var redirect_to = choosen_website_url + user_language + "/";
-			window.location = redirect_to;
-			return;
+			if (language == english_language) {
+				var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
+				var redirect_to = choosen_website_url + user_language + "/";
+				window.location = redirect_to;
+				return;
+			}
+
+			if (language == portuguese_language) {
+				var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
+				var redirect_to = choosen_website_url + user_language + "/";
+				window.location = redirect_to;
+				return;
+			}
 		}
 	}
 
@@ -428,10 +440,19 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
-			var redirect_to = choosen_website_url + user_language + "/";
-			window.location = redirect_to;
-			return;
+			if (language == english_language) {
+				var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
+				var redirect_to = choosen_website_url + user_language + "/";
+				window.location = redirect_to;
+				return;
+			}
+
+			if (language == portuguese_language) {
+				var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
+				var redirect_to = choosen_website_url + user_language + "/";
+				window.location = redirect_to;
+				return;
+			}
 		}
 	}
 
@@ -443,10 +464,19 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
-			var redirect_to = choosen_website_url + user_language + "/";
-			window.location = redirect_to;
-			return;
+			if (language == english_language) {
+				var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
+				var redirect_to = choosen_website_url + user_language + "/";
+				window.location = redirect_to;
+				return;
+			}
+
+			if (language == portuguese_language) {
+				var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
+				var redirect_to = choosen_website_url + user_language + "/";
+				window.location = redirect_to;
+				return;
+			}
 		}
 	}
 
@@ -458,10 +488,19 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
-			var redirect_to = choosen_website_url + user_language + "/";
-			window.location = redirect_to;
-			return;
+			if (language == english_language) {
+				var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
+				var redirect_to = choosen_website_url + user_language + "/";
+				window.location = redirect_to;
+				return;
+			}
+
+			if (language == portuguese_language) {
+				var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
+				var redirect_to = choosen_website_url + user_language + "/";
+				window.location = redirect_to;
+				return;
+			}
 		}
 	}
 
