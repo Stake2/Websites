@@ -323,7 +323,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "The Life of Littletato/";
+			var choosen_website_url = website_link + "A Vida de Pequenata/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -338,7 +338,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "The Life of Littletato/";
+			var choosen_website_url = website_link + "A Vida de Pequenata/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -352,8 +352,8 @@ function Check_Website_Link() {
 			return;
 		}
 
-		if (language != user_language) {
-			var choosen_website_url = website_link + "new_world ⊡/spaceliving 📘/";
+		else {
+			var choosen_website_url = website_link + "New_World/SpaceLiving/";
 			var res2 = choosen_website_url + user_language + "/";
 			window.location = res2;
 			return;
@@ -367,8 +367,8 @@ function Check_Website_Link() {
 			return;
 		}
 
-		if (language != user_language) {
-			var choosen_website_url = website_link + "new_world ⊡/spaceliving 📘/";
+		else {
+			var choosen_website_url = website_link + "New_World/SpaceLiving/";
 			var res2 = choosen_website_url + user_language + "/";
 			window.location = res2;
 			return;
@@ -382,8 +382,8 @@ function Check_Website_Link() {
 			return;
 		}
 
-		if (language != user_language) {
-			var choosen_website_url = website_link + "new_world ⊡/spaceliving 📘/";
+		else {
+			var choosen_website_url = website_link + "New_World/SpaceLiving/";
 			var res2 = choosen_website_url + user_language + "/";
 			window.location = res2;
 			return;
@@ -397,8 +397,8 @@ function Check_Website_Link() {
 			return;
 		}
 
-		if (language != user_language) {
-			var choosen_website_url = website_link + "new_world ⊡/spaceliving 📘/";
+		else {
+			var choosen_website_url = website_link + "New_World/SpaceLiving/";
 			var res2 = choosen_website_url + user_language + "/";
 			window.location = res2;
 			return;
