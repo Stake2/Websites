@@ -1,6 +1,6 @@
 function Check_Website_Link() {
 	var website_link = "https://thestake2.netlify.app/";
-	var userLang = navigator.language || navigator.userLanguage;
+	var user_language = navigator.language || navigator.userLanguage;
 
 	var title = document.getElementsByTagName("title")[0];
 	var titulo = title.innerHTML;
@@ -11,13 +11,13 @@ function Check_Website_Link() {
 	var check = current_site_link_string.includes("no-redirect=true");
 
 	if (titulo == "Diary" && check == false) {
-		var lang = "a";
+		var language = "a";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "diary" + "/";
 			var res = choosen_website_url;
 			window.location = res;
@@ -25,13 +25,13 @@ function Check_Website_Link() {
 	}
 
 	if (titulo == "Diary EN-US" && check == false) {
-		var lang = "en-US";
+		var language = "en-US";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "diary" + "/";
 			var res = choosen_website_url;
 			window.location = res;
@@ -40,18 +40,18 @@ function Check_Website_Link() {
 
 	if (titulo == "Diário" || titulo == "Diário PT-PT" && check == false) {
 		if (titulo == "Diário") {
-			var lang = "pt-BR";
+			var language = "pt-BR";
 		}
 
 		if (titulo == "Diário PT-PT") {
-			var lang = "pt-PT";
+			var language = "pt-PT";
 		}
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "diario" + "/";
 			var res = choosen_website_url;
 			window.location = res;
@@ -59,456 +59,456 @@ function Check_Website_Link() {
 	}
 
 	if (titulo == "Watch History" && check == false) {
-		var lang = "a";
+		var language = "a";
 	
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "watch 👁" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "Watch History EN-US" && check == false) {
-		var lang = "en-US";
+		var language = "en-US";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "watch 👁" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "Watch History PT-BR" && check == false) {
-		var lang = "pt-BR";
+		var language = "pt-BR";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "watch 👁" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "Watch History PT-PT" && check == false) {
-		var lang = "pt-PT";
+		var language = "pt-PT";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "watch 👁" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "Things I Do Geral" && check == false) {
-		var lang = "a";
+		var language = "a";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "Things_I_do" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "Things I Do EN-US" && check == false) {
-		var lang = "en-US";
+		var language = "en-US";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "Things_I_do" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "Coisas que eu faço" && check == false) {
-		var lang = "pt-BR";
+		var language = "pt-BR";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "Coisas_que_eu_faço" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "2018" && check == false) {
-		var lang = "a";
+		var language = "a";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "years 📅/" + "2018" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "2018 EN-US" && check == false) {
-		var lang = "en-US";
+		var language = "en-US";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "years 📅/" + "2018" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "2018 PT-BR" && check == false) {
-		var lang = "pt-BR";
+		var language = "pt-BR";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "years 📅/" + "2018" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "2019" && check == false) {
-		var lang = "a";
+		var language = "a";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "years 📅/" + "2019" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "2019 EN-US" && check == false) {
-		var lang = "en-US";
+		var language = "en-US";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "years 📅/" + "2019" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "2019 PT-BR" && check == false) {
-		var lang = "pt-BR";
+		var language = "pt-BR";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "years 📅/" + "2019" + "/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == "New World" && check == false) {
-		var lang = "a";
+		var language = "a";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + "new_world%20%E2%8A%A1/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
 		}
 	}
 
 	if (titulo == "New World PT-BR" && check == false) {
-		var lang = "pt-BR";
+		var language = "pt-BR";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + "new_world%20%E2%8A%A1/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
 		}
 	}
 
 	if (titulo == "New World EN-US" && check == false) {
-		var lang = "en-US";
+		var language = "en-US";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + "new_world%20%E2%8A%A1/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
 		}
 	}
 
 	if (titulo == "Littletato - Pequenata" && check == false) {
-		var lang = "a";
+		var language = "geral";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
-			var choosen_website_url = website_link + "pequenata 📘/";
-			var res = choosen_website_url + userLang + "/";
+		else {
+			var choosen_website_url = website_link + "The Life of Littletato/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
 		}
 	}
 
 	if (titulo == "The Life of Littletato" && check == false) {
-		var lang = "en-US";
+		var language = "en-US";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
-			var choosen_website_url = website_link + "pequenata 📘/";
-			var res = choosen_website_url + userLang + "/";
+		else {
+			var choosen_website_url = website_link + "The Life of Littletato/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
 		}
 	}
 
 	if (titulo == "A Vida de Pequenata" && check == false) {
-		var lang = "pt-BR";
+		var language = "pt-BR";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
-			var choosen_website_url = website_link + "pequenata 📘/";
-			var res = choosen_website_url + userLang + "/";
+		else {
+			var choosen_website_url = website_link + "The Life of Littletato/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
 		}
 	}
 
 	if (titulo == "A Vida de Pequenata PT-PT" && check == false) {
-		var lang = "pt-PT";
+		var language = "pt-PT";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
-			var choosen_website_url = website_link + "pequenata 📘/";
-			var res = choosen_website_url + userLang + "/";
+		else {
+			var choosen_website_url = website_link + "The Life of Littletato/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
 		}
 	}
 
 	if (titulo == "SpaceLiving" && check == false) {
-		var lang = "a";
+		var language = "a";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + "new_world ⊡/spaceliving 📘/";
-			var res2 = choosen_website_url + userLang + "/";
+			var res2 = choosen_website_url + user_language + "/";
 			window.location = res2;
 			return;
 		}
 	}
 
 	if (titulo == "SpaceLiving EN-US" && check == false) {
-		var lang = "en-US";
+		var language = "en-US";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + "new_world ⊡/spaceliving 📘/";
-			var res2 = choosen_website_url + userLang + "/";
+			var res2 = choosen_website_url + user_language + "/";
 			window.location = res2;
 			return;
 		}
 	}
 
 	if (titulo == "SpaceLiving PT-BR" && check == false) {
-		var lang = "pt-BR";
+		var language = "pt-BR";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + "new_world ⊡/spaceliving 📘/";
-			var res2 = choosen_website_url + userLang + "/";
+			var res2 = choosen_website_url + user_language + "/";
 			window.location = res2;
 			return;
 		}
 	}
 
 	if (titulo == "SpaceLiving PT-PT" && check == false) {
-		var lang = "pt-PT";
+		var language = "pt-PT";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + "new_world ⊡/spaceliving 📘/";
-			var res2 = choosen_website_url + userLang + "/";
+			var res2 = choosen_website_url + user_language + "/";
 			window.location = res2;
 			return;
 		}
 	}
 
 	if (titulo == "The Story of the Bulkan Brothers Geral" && check == false) {
-		var lang = "a";
+		var language = "a";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + "bulkan%20%F0%9F%93%98/";
-			var res2 = choosen_website_url + userLang + "/";
+			var res2 = choosen_website_url + user_language + "/";
 			window.location = res2;
 			return;
 		}
 	}
 
 	if (titulo == "The Story of the Bulkan Brothers" && check == false) {
-		var lang = "en-US";
+		var language = "en-US";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + "bulkan%20%F0%9F%93%98/";
-			var res2 = choosen_website_url + userLang + "/";
+			var res2 = choosen_website_url + user_language + "/";
 			window.location = res2;
 			return;
 		}
 	}
 
 	if (titulo == "A História dos Irmãos Bulkan" && check == false) {
-		var lang = "pt-BR";
+		var language = "pt-BR";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + "bulkan%20%F0%9F%93%98/";
-			var res2 = choosen_website_url + userLang + "/";
+			var res2 = choosen_website_url + user_language + "/";
 			window.location = res2;
 			return;
 		}
 	}
 
 	if (titulo == "Desert Island Geral" && check == false) {
-		var lang = "a";
+		var language = "a";
 		var sitename = "Desert_Island";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + sitename + "/";
-			var res = choosen_website_url + userLang.toLowerCase() + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 			return;
 		}
 	}
 
 	if (titulo == "Desert Island" && check == false) {
-		var lang = "en-US";
+		var language = "en-US";
 		var sitename = "Desert_Island";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + sitename + "/";
-			var res = choosen_website_url + userLang.toLowerCase() + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 			return;
 		}
 	}
 
 	if (titulo == "Ilha Deserta" && check == false) {
-		var lang = "pt-BR";
+		var language = "pt-BR";
 		var sitename = "Ilha_Deserta";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + sitename + "/";
-			var res = choosen_website_url + userLang.toLowerCase() + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 			return;
 		}
 	}
 
 	if (titulo == "Uma Nova História PT-PT" && check == false) {
-		var lang = "pt-PT";
+		var language = "pt-PT";
 		var sitename = "Ilha_Deserta";
 
-		if (lang == userLang) {
+		if (language == user_language) {
 			return;
 		}
 
-		if (lang != userLang) {
+		if (language != user_language) {
 			var choosen_website_url = website_link + sitename + "/";
-			var res = choosen_website_url + userLang.toLowerCase() + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 			return;
 		}
@@ -516,43 +516,43 @@ function Check_Website_Link() {
 
 	var sitename = "Stake2"
 	if (titulo == sitename && check == false) {
-		lang = "a";
+		language = "a";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "stake2/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == sitename + " EN-US" && check == false) {
-		lang = "en-US";
+		language = "en-US";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "stake2/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (titulo == sitename + " PT-BR" && check == false) {
-		lang = "pt-BR";
+		language = "pt-BR";
 
-		if (userLang == lang) {
+		if (user_language == language) {
 			return;
 		}
 
-		if (userLang != lang) {
+		if (user_language != language) {
 			var choosen_website_url = website_link + "stake2/";
-			var res = choosen_website_url + userLang + "/";
+			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
