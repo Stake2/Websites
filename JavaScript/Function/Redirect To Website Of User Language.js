@@ -18,7 +18,7 @@ function Check_Website_Link() {
 	var url_addon;
 
 	if (check_chapter_in_link == true) {
-		url_addon = current_site_link_string.split("/").reverse()[0];
+		url_addon = String(current_site_link).split("/").reverse()[0];
 	}
 
 	else {
