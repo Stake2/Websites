@@ -286,7 +286,7 @@ function Check_Website_Link() {
 	}
 
 	if (titulo == "Littletato - Pequenata" && check == false) {
-		var language = "geral";
+		var language = "general_language";
 
 		if (language == user_language) {
 			return;
@@ -405,8 +405,8 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (titulo == "The Story of the Bulkan Siblings" && check == false) {
-		var language = "a";
+	if (titulo == "The Story of the Bulkan Siblings Geral" && check == false) {
+		var language = "general_language";
 
 		if (language == user_language) {
 			return;
