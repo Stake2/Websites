@@ -354,8 +354,8 @@ function Check_Website_Link() {
 
 		else {
 			var choosen_website_url = website_link + "New_World/SpaceLiving/";
-			var res2 = choosen_website_url + user_language + "/";
-			window.location = res2;
+			var redirect_to = choosen_website_url + user_language + "/";
+			window.location = redirect_to;
 			return;
 		}
 	}
@@ -369,8 +369,8 @@ function Check_Website_Link() {
 
 		else {
 			var choosen_website_url = website_link + "New_World/SpaceLiving/";
-			var res2 = choosen_website_url + user_language + "/";
-			window.location = res2;
+			var redirect_to = choosen_website_url + user_language + "/";
+			window.location = redirect_to;
 			return;
 		}
 	}
@@ -384,8 +384,8 @@ function Check_Website_Link() {
 
 		else {
 			var choosen_website_url = website_link + "New_World/SpaceLiving/";
-			var res2 = choosen_website_url + user_language + "/";
-			window.location = res2;
+			var redirect_to = choosen_website_url + user_language + "/";
+			window.location = redirect_to;
 			return;
 		}
 	}
@@ -399,23 +399,23 @@ function Check_Website_Link() {
 
 		else {
 			var choosen_website_url = website_link + "New_World/SpaceLiving/";
-			var res2 = choosen_website_url + user_language + "/";
-			window.location = res2;
+			var redirect_to = choosen_website_url + user_language + "/";
+			window.location = redirect_to;
 			return;
 		}
 	}
 
-	if (titulo == "The Story of the Bulkan Brothers Geral" && check == false) {
+	if (titulo == "The Story of the Bulkan Siblings" && check == false) {
 		var language = "a";
 
 		if (language == user_language) {
 			return;
 		}
 
-		if (language != user_language) {
-			var choosen_website_url = website_link + "bulkan%20%F0%9F%93%98/";
-			var res2 = choosen_website_url + user_language + "/";
-			window.location = res2;
+		else {
+			var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
+			var redirect_to = choosen_website_url + user_language + "/";
+			window.location = redirect_to;
 			return;
 		}
 	}
@@ -427,10 +427,10 @@ function Check_Website_Link() {
 			return;
 		}
 
-		if (language != user_language) {
-			var choosen_website_url = website_link + "bulkan%20%F0%9F%93%98/";
-			var res2 = choosen_website_url + user_language + "/";
-			window.location = res2;
+		else {
+			var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
+			var redirect_to = choosen_website_url + user_language + "/";
+			window.location = redirect_to;
 			return;
 		}
 	}
@@ -442,10 +442,25 @@ function Check_Website_Link() {
 			return;
 		}
 
-		if (language != user_language) {
-			var choosen_website_url = website_link + "bulkan%20%F0%9F%93%98/";
-			var res2 = choosen_website_url + user_language + "/";
-			window.location = res2;
+		else {
+			var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
+			var redirect_to = choosen_website_url + user_language + "/";
+			window.location = redirect_to;
+			return;
+		}
+	}
+
+	if (titulo == "A História dos Irmãos Bulkan PT-PT" && check == false) {
+		var language = "pt-PT";
+
+		if (language == user_language) {
+			return;
+		}
+
+		else {
+			var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
+			var redirect_to = choosen_website_url + user_language + "/";
+			window.location = redirect_to;
 			return;
 		}
 	}
