@@ -13,6 +13,18 @@ function Check_Website_Link() {
 
 	var check = current_site_link_string.includes("no-redirect=true");
 
+	var check_chapter_in_link = current_site_link_string.includes("[");
+
+	var url_addon;
+
+	if (check_chapter_in_link == true) {
+		url_addon = current_site_link_string.split("/").reverse()[0];
+	}
+
+	else {
+		url_addon = "";
+	}
+
 	if (titulo == "Diary" && check == false) {
 		var language = "a";
 
@@ -21,7 +33,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != language) {
-			var choosen_website_url = website_link + "diary" + "/";
+			var choosen_website_url = website_link + "Diary" + "/";
 			var res = choosen_website_url;
 			window.location = res;
 		}
@@ -35,7 +47,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != language) {
-			var choosen_website_url = website_link + "diary" + "/";
+			var choosen_website_url = website_link + "Diary" + "/";
 			var res = choosen_website_url;
 			window.location = res;
 		}
@@ -55,7 +67,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != language) {
-			var choosen_website_url = website_link + "diario" + "/";
+			var choosen_website_url = website_link + "Diário" + "/";
 			var res = choosen_website_url;
 			window.location = res;
 		}
@@ -296,7 +308,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "The Life of Littletato/";
+			var choosen_website_url = website_link + "The Life of Littletato/" + url_addon;
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -311,7 +323,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "The Life of Littletato/";
+			var choosen_website_url = website_link + "The Life of Littletato/" + url_addon;
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -326,7 +338,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "A Vida de Pequenata/";
+			var choosen_website_url = website_link + "A Vida de Pequenata/" + url_addon;
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -341,7 +353,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "A Vida de Pequenata/";
+			var choosen_website_url = website_link + "A Vida de Pequenata/" + url_addon;
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -416,14 +428,14 @@ function Check_Website_Link() {
 		}
 
 		else {
-			if (language == english_language) {
+			if (user_language == english_language) {
 				var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
 				var redirect_to = choosen_website_url + user_language + "/";
 				window.location = redirect_to;
 				return;
 			}
 
-			if (language == portuguese_language) {
+			if (user_language == portuguese_language) {
 				var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
 				var redirect_to = choosen_website_url + user_language + "/";
 				window.location = redirect_to;
@@ -440,14 +452,14 @@ function Check_Website_Link() {
 		}
 
 		else {
-			if (language == english_language) {
+			if (user_language == english_language) {
 				var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
 				var redirect_to = choosen_website_url + user_language + "/";
 				window.location = redirect_to;
 				return;
 			}
 
-			if (language == portuguese_language) {
+			if (user_language == portuguese_language) {
 				var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
 				var redirect_to = choosen_website_url + user_language + "/";
 				window.location = redirect_to;
@@ -464,14 +476,14 @@ function Check_Website_Link() {
 		}
 
 		else {
-			if (language == english_language) {
+			if (user_language == english_language) {
 				var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
 				var redirect_to = choosen_website_url + user_language + "/";
 				window.location = redirect_to;
 				return;
 			}
 
-			if (language == portuguese_language) {
+			if (user_language == portuguese_language) {
 				var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
 				var redirect_to = choosen_website_url + user_language + "/";
 				window.location = redirect_to;
@@ -488,14 +500,14 @@ function Check_Website_Link() {
 		}
 
 		else {
-			if (language == english_language) {
+			if (user_language == english_language) {
 				var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
 				var redirect_to = choosen_website_url + user_language + "/";
 				window.location = redirect_to;
 				return;
 			}
 
-			if (language == portuguese_language) {
+			if (user_language == portuguese_language) {
 				var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
 				var redirect_to = choosen_website_url + user_language + "/";
 				window.location = redirect_to;
