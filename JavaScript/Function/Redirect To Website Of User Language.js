@@ -308,8 +308,8 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "The Life of Littletato/" + url_addon;
-			var res = choosen_website_url + user_language + "/";
+			var choosen_website_url = website_link + "The Life of Littletato/";
+			var res = choosen_website_url + user_language + "/" + url_addon;
 			window.location = res;
 			return;
 		}
@@ -323,8 +323,8 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "The Life of Littletato/" + url_addon;
-			var res = choosen_website_url + user_language + "/";
+			var choosen_website_url = website_link + "The Life of Littletato/";
+			var res = choosen_website_url + user_language + "/" + url_addon;
 			window.location = res;
 			return;
 		}
@@ -338,8 +338,8 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "A Vida de Pequenata/" + url_addon;
-			var res = choosen_website_url + user_language + "/";
+			var choosen_website_url = website_link + "A Vida de Pequenata/";
+			var res = choosen_website_url + user_language + "/" + url_addon;
 			window.location = res;
 			return;
 		}
@@ -353,8 +353,8 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "A Vida de Pequenata/" + url_addon;
-			var res = choosen_website_url + user_language + "/";
+			var choosen_website_url = website_link + "A Vida de Pequenata/";
+			var res = choosen_website_url + user_language + "/" + url_addon;
 			window.location = res;
 			return;
 		}
