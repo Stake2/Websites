@@ -11,9 +11,9 @@ function Check_Website_Link() {
 	var current_site_link = window.location;
 	var current_site_link_string = '"' + current_site_link + '"';
 
-	var check = current_site_link_string.includes("no-redirect=true");
+	var check = String(current_site_link).includes("no-redirect=true");
 
-	var check_chapter_in_link = current_site_link_string.includes("[");
+	var check_chapter_in_link = String(current_site_link).includes("[") || String(current_site_link).includes("(");
 
 	var url_addon;
 
