@@ -26,7 +26,7 @@ function Check_Website_Link() {
 	}
 
 	if (titulo == "Diary" && check == false) {
-		var language = "a";
+		var language = "General";
 
 		if (user_language == language) {
 			return;
@@ -74,7 +74,7 @@ function Check_Website_Link() {
 	}
 
 	if (titulo == "Watch History" && check == false) {
-		var language = "a";
+		var language = "General";
 	
 		if (user_language == language) {
 			return;
