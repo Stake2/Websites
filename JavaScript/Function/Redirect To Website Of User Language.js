@@ -552,32 +552,32 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == "Desert Island Geral" && check == false) {
-		var website_language = "a";
-		var sitename = "Desert_Island";
+	if (website_title == "Desert Island" && check == false) {
+		var website_language = "General";
+		var website_name = "Desert Island";
 
 		if (website_language == user_language) {
 			return;
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + sitename + "/";
+			var choosen_website_url = website_link + website_name + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 			return;
 		}
 	}
 
-	if (website_title == "Desert Island" && check == false) {
+	if (website_title == "Desert Island EN-US" && check == false) {
 		var website_language = "en-US";
-		var sitename = "Desert_Island";
+		var website_name = "Desert Island";
 
 		if (website_language == user_language) {
 			return;
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + sitename + "/";
+			var choosen_website_url = website_link + website_name + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 			return;
@@ -586,38 +586,40 @@ function Check_Website_Link() {
 
 	if (website_title == "Ilha Deserta" && check == false) {
 		var website_language = "pt-BR";
-		var sitename = "Ilha_Deserta";
+		var website_name = "Desert Island";
 
 		if (website_language == user_language) {
 			return;
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + sitename + "/";
+			var choosen_website_url = website_link + website_name + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 			return;
 		}
 	}
 
-	if (website_title == "Uma Nova História PT-PT" && check == false) {
+	if (website_title == "Ilha Deserta PT-PT" && check == false) {
 		var website_language = "pt-PT";
-		var sitename = "Ilha_Deserta";
+		var website_name = "Desert Island";
 
 		if (website_language == user_language) {
 			return;
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + sitename + "/";
+			var choosen_website_url = website_link + website_name + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 			return;
 		}
 	}
 
-	var sitename = "Stake2"
-	if (website_title == sitename && check == false) {
+	var website_name = "Stake2";
+	var website_language;
+
+	if (website_title == website_name && check == false) {
 		website_language = "a";
 
 		if (user_language == website_language) {
@@ -631,7 +633,7 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == sitename + " EN-US" && check == false) {
+	if (website_title == website_name + " EN-US" && check == false) {
 		website_language = "en-US";
 
 		if (user_language == website_language) {
@@ -645,8 +647,22 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == sitename + " PT-BR" && check == false) {
+	if (website_title == website_name + " PT-BR" && check == false) {
 		website_language = "pt-BR";
+
+		if (user_language == website_language) {
+			return;
+		}
+
+		if (user_language != website_language) {
+			var choosen_website_url = website_link + "stake2/";
+			var res = choosen_website_url + user_language + "/";
+			window.location = res;
+		}
+	}
+
+	if (website_title == website_name + " PT-PT" && check == false) {
+		website_language = "pt-PT";
 
 		if (user_language == website_language) {
 			return;
