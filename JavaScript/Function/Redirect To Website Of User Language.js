@@ -68,7 +68,10 @@ function Check_Website_Link() {
 
 		if (user_language != website_language) {
 			var choosen_website_url = website_link + "Diário" + "/";
-			var res = choosen_website_url + user_language + "/";
+			user_language = navigator.website_language || navigator.userLanguage;
+			alert(user_language);
+			alert(choosen_website_url);
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
 	}
