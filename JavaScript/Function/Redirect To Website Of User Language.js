@@ -53,7 +53,7 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == "Diário" || website_title == "Diário PT-PT" && check == false) {
+	if (website_title == "Diário" && check == false || website_title == "Diário PT-PT" && check == false) {
 		if (website_title == "Diário") {
 			var website_language = "pt-BR";
 		}
