@@ -1,6 +1,6 @@
 function Check_Website_Link() {
 	var website_link = "https://thestake2.netlify.app/";
-	var user_language = navigator.website_language || navigator.userLanguage;
+	var user_language = navigator.website_language || navigator.userLanguage || navigator.language;
 
 	var english_language = "en-US";
 	var portuguese_language = "pt-BR" || "pt-PT";
@@ -68,9 +68,6 @@ function Check_Website_Link() {
 
 		if (user_language != website_language) {
 			var choosen_website_url = website_link + "Diário" + "/";
-			user_language = navigator.website_language || navigator.userLanguage;
-			alert(user_language);
-			alert(choosen_website_url);
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
