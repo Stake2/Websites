@@ -81,8 +81,8 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "watch 👁" + "/";
-			var res = choosen_website_url + user_language + "/";
+			var choosen_website_url = website_link + "Watch History" + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
 	}
@@ -95,8 +95,8 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "watch 👁" + "/";
-			var res = choosen_website_url + user_language + "/";
+			var choosen_website_url = website_link + "Watch History" + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
 	}
@@ -109,8 +109,8 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "watch 👁" + "/";
-			var res = choosen_website_url + user_language + "/";
+			var choosen_website_url = website_link + "Watch History" + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
 	}
@@ -123,8 +123,8 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "watch 👁" + "/";
-			var res = choosen_website_url + user_language + "/";
+			var choosen_website_url = website_link + "Watch History" + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
 	}
@@ -138,7 +138,7 @@ function Check_Website_Link() {
 
 		if (user_language != website_language) {
 			var choosen_website_url = website_link + "Things_I_do" + "/";
-			var res = choosen_website_url + user_language + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
 	}
@@ -152,7 +152,7 @@ function Check_Website_Link() {
 
 		if (user_language != website_language) {
 			var choosen_website_url = website_link + "Things_I_do" + "/";
-			var res = choosen_website_url + user_language + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
 	}
@@ -166,7 +166,7 @@ function Check_Website_Link() {
 
 		if (user_language != website_language) {
 			var choosen_website_url = website_link + "Coisas_que_eu_faço" + "/";
-			var res = choosen_website_url + user_language + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
 	}
@@ -180,7 +180,7 @@ function Check_Website_Link() {
 
 		if (user_language != website_language) {
 			var choosen_website_url = website_link + "years 📅/" + "2018" + "/";
-			var res = choosen_website_url + user_language + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
 	}
@@ -194,7 +194,7 @@ function Check_Website_Link() {
 
 		if (user_language != website_language) {
 			var choosen_website_url = website_link + "years 📅/" + "2018" + "/";
-			var res = choosen_website_url + user_language + "/";
+			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
 	}

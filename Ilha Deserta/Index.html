@@ -18,7 +18,7 @@
 <meta name="twitter:website" value="@The_Snakes90" />
 <meta name="twitter:site" value="@The_Snakes90" />
 <meta name="twitter:creator" content="@The_Snakes90" />
-<meta name="revised" content="Stake2's Enterprise TM, 21/09/2021" />
+<meta name="revised" content="Stake2's Enterprise TM, 22/09/2021" />
 <meta name="author" content="Stake2" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <meta charset="UTF-8" />
@@ -402,10 +402,20 @@ I was a boy that always loved to watch videos of survivalism, bushcraft, things 
 </div>
 <br /><br />
 <div class="mobileHide">
+<button class="w3-btn text_black background_green_water border_color_black border_3px background_hover_white mobileHide" id="comment_button_1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i></b></h3></button>
+</div>
+<div class="mobileHide">
 <button class="w3-btn text_black background_green_water border_color_black border_3px background_hover_white mobileHide" id="readbtn1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
+
+<div class="mobileShow"><br /><br />
+</div>
+<div class="mobileShow">
+<button class="w3-btn text_black background_green_water border_color_black border_3px background_hover_white mobileShow" id="comment_button_1m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i>)</b></h4></button>
+<br /><br />
+</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_green_water border_color_black border_3px background_hover_white mobileShow" id="readbtn1m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-1m')"><h4><b>I Read It ✓ (1 <i class="fas fa-book-reader"></i>)</b></h4></button>
 </div>
@@ -500,6 +510,96 @@ readclosebtn1m.onclick = function() {
 readmodal1m.onclick = function(event) {
 	if (event.target == readmodal1m) {
 		readmodal1m.style.display = "none";
+	}
+}
+</script>
+
+<a name="comment-modal-1"></a>
+<div id="comment-modal-1" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_yellow_sand border_3px" style="border-radius: 50px;">
+<div class="mobileHide">
+<button class="w3-btn text_black background_green_water border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_1" style="border-radius: 50px;">&times;</button><br /><br /><br />
+<div class="w3-animate-zoom"><h2 class="text_yellow_sand"><b>Comment on chapter:<br />1 - The shipwreck, the hatchet <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_yellow_sand border_1px" />
+<form name="desert-island-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2 class="text_yellow_sand"><b>Your name:</b></h2></div>
+<input type="text" name="name" class="text_black background_green_water border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
+<br />
+<div class="w3-animate-zoom"><h2 class="text_yellow_sand"><b>Comment what you think about the chapter:</b></h2></div>
+<input type="text" name="comment" class="text_black background_green_water border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_green_water text_black background_hover_white mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
+</div>
+</form>
+</div>
+<br /><br /><br /><br />
+</div>
+</div>
+</div>
+
+<a name="comment-modal-1m"></a>
+<div id="comment-modal-1m" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_yellow_sand border_3px" style="border-radius: 50px;">
+<div class="mobileShow">
+<button class="w3-btn text_black background_green_water border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_1m" style="border-radius: 50px;">&times;</button><br /><br /><br />
+<form name="desert-island-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom"><h4 class="text_yellow_sand"><b>Comment on chapter:<br />1 - The shipwreck, the hatchet <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_yellow_sand border_1px" />
+<div style="margin:3%;">
+<br />
+<div class="w3-animate-zoom"><h4 class="text_yellow_sand"><b>Your name:</b></h4></div>
+<input type="text" name="name" class="text_black background_green_water border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<br />
+<div class="w3-animate-zoom"><h4 class="text_yellow_sand"><b>Comment what you think about the chapter:</b></h4></div>
+<input type="text" name="comment" class="text_black background_green_water border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_green_water text_black background_hover_white mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
+</div>
+</form>
+</div>
+<br /><br /><br /><br />
+</div>
+</div>
+</div>
+
+<script>
+var comment_modal_1 = document.getElementById("comment-modal-1");
+
+var comment_button_1 = document.getElementById("comment_button_1");
+
+var close_comment_modal_button_1 = document.getElementById("close_comment_modal_button_1");
+
+comment_button_1.onclick = function() {
+	comment_modal_1.style.display = "block";
+}
+
+close_comment_modal_button_1.onclick = function() {
+	comment_modal_1.style.display = "none";
+}
+
+comment_modal_1.onclick = function(event) {
+	if (event.target == comment_modal_1) {
+		comment_modal_1.style.display = "none";
+	}
+}
+</script>
+<script>
+var comment_modal_1m = document.getElementById("comment-modal-1m");
+
+var comment_button_1m = document.getElementById("comment_button_1m");
+
+var close_comment_modal_button_1m = document.getElementById("close_comment_modal_button_1m");
+
+comment_button_1m.onclick = function() {
+	comment_modal_1m.style.display = "block";
+}
+
+close_comment_modal_button_1m.onclick = function() {
+	comment_modal_1m.style.display = "none";
+}
+
+comment_modal_1m.onclick = function(event) {
+	if (event.target == comment_modal_1m) {
+		comment_modal_1m.style.display = "none";
 	}
 }
 </script>
