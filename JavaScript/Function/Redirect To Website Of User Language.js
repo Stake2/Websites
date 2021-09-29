@@ -671,6 +671,7 @@ function Check_Website_Link() {
 			var choosen_website_url = website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
+			var thiss = that;
 		}
 	}
 }
