@@ -130,7 +130,7 @@ function Check_Website_Link() {
 	}
 
 	if (website_title == "Things I Do Geral" && check == false) {
-		var website_language = "a";
+		var website_language = "General";
 
 		if (user_language == website_language) {
 			return;
@@ -172,14 +172,14 @@ function Check_Website_Link() {
 	}
 
 	if (website_title == "2018" && check == false) {
-		var website_language = "a";
+		var website_language = "General";
 
 		if (user_language == website_language) {
 			return;
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "years 📅/" + "2018" + "/";
+			var choosen_website_url = website_link + "Years/" + "2018" + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -193,7 +193,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "years 📅/" + "2018" + "/";
+			var choosen_website_url = website_link + "Years/" + "2018" + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -207,21 +207,21 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "years 📅/" + "2018" + "/";
+			var choosen_website_url = website_link + "Years/" + "2018" + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (website_title == "2019" && check == false) {
-		var website_language = "a";
+		var website_language = "General";
 
 		if (user_language == website_language) {
 			return;
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "years 📅/" + "2019" + "/";
+			var choosen_website_url = website_link + "Years/" + "2019" + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
@@ -235,7 +235,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "years 📅/" + "2019" + "/";
+			var choosen_website_url = website_link + "Years/" + "2019" + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
@@ -249,21 +249,21 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "years 📅/" + "2019" + "/";
+			var choosen_website_url = website_link + "Years/" + "2019" + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
 	}
 
 	if (website_title == "New World" && check == false) {
-		var website_language = "a";
+		var website_language = "General";
 
 		if (website_language == user_language) {
 			return;
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + "new_world%20%E2%8A%A1/";
+			var choosen_website_url = website_link + "New_World/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -278,7 +278,7 @@ function Check_Website_Link() {
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + "new_world%20%E2%8A%A1/";
+			var choosen_website_url = website_link + "New_World/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -293,7 +293,7 @@ function Check_Website_Link() {
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + "new_world%20%E2%8A%A1/";
+			var choosen_website_url = website_link + "New_World/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -301,7 +301,7 @@ function Check_Website_Link() {
 	}
 
 	if (website_title == "Littletato - Pequenata" && check == false) {
-		var website_language = "general_language";
+		var website_language = "General";
 
 		if (website_language == user_language) {
 			return;
@@ -397,7 +397,7 @@ function Check_Website_Link() {
 	}
 
 	if (website_title == "SpaceLiving" && check == false) {
-		var website_language = "general_language";
+		var website_language = "General";
 
 		if (website_language == user_language) {
 			return;
@@ -457,7 +457,7 @@ function Check_Website_Link() {
 	}
 
 	if (website_title == "The Story of the Bulkan Siblings Geral" && check == false) {
-		var website_language = "general_language";
+		var website_language = "General";
 
 		if (website_language == user_language) {
 			return;
@@ -617,17 +617,16 @@ function Check_Website_Link() {
 	}
 
 	var website_name = "Stake2";
-	var website_language;
 
 	if (website_title == website_name && check == false) {
-		website_language = "a";
+		var website_language = "General";
 
 		if (user_language == website_language) {
 			return;
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "stake2/";
+			var choosen_website_url = website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
@@ -641,7 +640,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "stake2/";
+			var choosen_website_url = website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
@@ -655,7 +654,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "stake2/";
+			var choosen_website_url = website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
@@ -669,7 +668,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "stake2/";
+			var choosen_website_url = website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
