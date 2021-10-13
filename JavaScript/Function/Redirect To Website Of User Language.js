@@ -616,9 +616,10 @@ function Check_Website_Link() {
 		}
 	}
 
-	var website_name = "Stake2, Funkysnipa Cat";
+	var website_name = "Stake2";
+	var second_website_name = "Stake2, Funkysnipa Cat";
 
-	if (website_title == website_name && check == false) {
+	if (website_title == second_website_name && check == false) {
 		var website_language = "General";
 
 		if (user_language == website_language) {
@@ -632,7 +633,7 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == website_name + " EN-US" && check == false) {
+	if (website_title == second_website_name + " EN-US" && check == false) {
 		website_language = "en-US";
 
 		if (user_language == website_language) {
@@ -646,7 +647,7 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == website_name + " PT-BR" && check == false) {
+	if (website_title == second_website_name + " PT-BR" && check == false) {
 		website_language = "pt-BR";
 
 		if (user_language == website_language) {
@@ -660,7 +661,7 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == website_name + " PT-PT" && check == false) {
+	if (website_title == second_website_name + " PT-PT" && check == false) {
 		website_language = "pt-PT";
 
 		if (user_language == website_language) {
