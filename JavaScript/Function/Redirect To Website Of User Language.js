@@ -616,7 +616,7 @@ function Check_Website_Link() {
 		}
 	}
 
-	var website_name = "Stake2";
+	var website_name = "Stake2, Funkysnipa Cat";
 
 	if (website_title == website_name && check == false) {
 		var website_language = "General";
