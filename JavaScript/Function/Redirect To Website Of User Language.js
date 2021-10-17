@@ -554,23 +554,133 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == "Desert Island" && check == false) {
+	var website_name = "The Secret of the Crystals";
+	var portuguese_website_name = "O Segredo dos Cristais";
+
+	if (website_title == website_name + " Geral" && check == false) {
 		var website_language = "General";
-		var website_name = "Desert Island";
 
 		if (website_language == user_language) {
 			return;
 		}
 
-		if (website_language != user_language) {
-			var choosen_website_url = website_link + website_name + "/";
-			var res = choosen_website_url + user_language.toLowerCase() + "/";
-			window.location = res;
-			return;
+		else {
+			if (user_language == english_language) {
+				var choosen_website_url = website_link + website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+
+			if (user_language == portuguese_language) {
+				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
 		}
 	}
 
-	if (website_title == "Desert Island EN-US" && check == false) {
+	if (website_title == website_name && check == false) {
+		var website_language = "en-US";
+
+		if (website_language == user_language) {
+			return;
+		}
+
+		else {
+			if (user_language == english_language) {
+				var choosen_website_url = website_link + website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+
+			if (user_language == portuguese_language) {
+				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+		}
+	}
+
+	if (website_title == portuguese_website_name && check == false) {
+		var website_language = "pt-BR";
+
+		if (website_language == user_language) {
+			return;
+		}
+
+		else {
+			if (user_language == english_language) {
+				var choosen_website_url = website_link + website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+
+			if (user_language == portuguese_language) {
+				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+		}
+	}
+
+	if (website_title == portuguese_website_name + " PT-PT" && check == false) {
+		var website_language = "pt-PT";
+
+		if (website_language == user_language) {
+			return;
+		}
+
+		else {
+			if (user_language == english_language) {
+				var choosen_website_url = website_link + website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+
+			if (user_language == portuguese_language) {
+				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+		}
+	}
+
+	var website_name = "Desert Island";
+	var portuguese_website_name = "Ilha Deserta";
+
+	if (website_title == website_name && check == false) {
+		var website_language = "General";
+
+		if (website_language == user_language) {
+			return;
+		}
+
+		else {
+			if (user_language == english_language) {
+				var choosen_website_url = website_link + website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+
+			if (user_language == portuguese_language) {
+				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+		}
+	}
+
+	if (website_title == website_name + " EN-US" && check == false) {
 		var website_language = "en-US";
 		var website_name = "Desert Island";
 
@@ -578,43 +688,68 @@ function Check_Website_Link() {
 			return;
 		}
 
-		if (website_language != user_language) {
-			var choosen_website_url = website_link + website_name + "/";
-			var res = choosen_website_url + user_language.toLowerCase() + "/";
-			window.location = res;
-			return;
+		else {
+			if (user_language == english_language) {
+				var choosen_website_url = website_link + website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+
+			if (user_language == portuguese_language) {
+				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
 		}
 	}
 
-	if (website_title == "Ilha Deserta" && check == false) {
+	if (website_title == portuguese_website_name && check == false) {
 		var website_language = "pt-BR";
-		var website_name = "Desert Island";
 
 		if (website_language == user_language) {
 			return;
 		}
 
-		if (website_language != user_language) {
-			var choosen_website_url = website_link + website_name + "/";
-			var res = choosen_website_url + user_language.toLowerCase() + "/";
-			window.location = res;
-			return;
+		else {
+			if (user_language == english_language) {
+				var choosen_website_url = website_link + website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+
+			if (user_language == portuguese_language) {
+				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
 		}
 	}
 
-	if (website_title == "Ilha Deserta PT-PT" && check == false) {
+	if (website_title == portuguese_website_name + " PT-PT" && check == false) {
 		var website_language = "pt-PT";
-		var website_name = "Desert Island";
 
 		if (website_language == user_language) {
 			return;
 		}
 
-		if (website_language != user_language) {
-			var choosen_website_url = website_link + website_name + "/";
-			var res = choosen_website_url + user_language.toLowerCase() + "/";
-			window.location = res;
-			return;
+		else {
+			if (user_language == english_language) {
+				var choosen_website_url = website_link + website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+
+			if (user_language == portuguese_language) {
+				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
 		}
 	}
 
