@@ -230,48 +230,6 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == "2019" && check == false) {
-		var website_language = "General";
-
-		if (user_language == website_language) {
-			return;
-		}
-
-		if (user_language != website_language) {
-			var choosen_website_url = website_link + "Years/" + "2019" + "/";
-			var res = choosen_website_url + user_language + "/";
-			window.location = res;
-		}
-	}
-
-	if (website_title == "2019 EN-US" && check == false) {
-		var website_language = "en-US";
-
-		if (user_language == website_language) {
-			return;
-		}
-
-		if (user_language != website_language) {
-			var choosen_website_url = website_link + "Years/" + "2019" + "/";
-			var res = choosen_website_url + user_language + "/";
-			window.location = res;
-		}
-	}
-
-	if (website_title == "2019 PT-BR" && check == false) {
-		var website_language = "pt-BR";
-
-		if (user_language == website_language) {
-			return;
-		}
-
-		if (user_language != website_language) {
-			var choosen_website_url = website_link + "Years/" + "2019" + "/";
-			var res = choosen_website_url + user_language + "/";
-			window.location = res;
-		}
-	}
-
 	if (website_title == "New World" && check == false) {
 		var website_language = "General";
 
@@ -833,7 +791,7 @@ function Check_Website_Link() {
 
 	var year_websites = [];
 
-	while (current_variable_year <= Number(current_year) - 1) {
+	while (current_variable_year <= Number(current_year)) {
 		year_websites.push(String(current_variable_year));
 
 		current_variable_year += 1;
