@@ -90,7 +90,7 @@ function Check_Website_Link() {
 
 	var website_name = "Diary Slim";
 
-	if (website_title == website_name && check == false) {
+	if (website_title == website_name + " General" && check == false) {
 		var website_language = "General";
 
 		if (user_language == website_language) {
@@ -104,7 +104,7 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == website_name + " EN-US" && check == false) {
+	if (website_title == website_name && check == false) {
 		website_language = "en-US";
 
 		if (user_language == website_language) {
