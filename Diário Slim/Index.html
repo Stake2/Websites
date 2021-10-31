@@ -49703,7 +49703,11 @@ Chapter: 468 - 31 Domingo, 31-10-2021</b>
 <br />Fiz algo para abrir o último capítulo da história em sites de história no Open_Chapter_Script.php.
 <br />Consertado erros no site Diário Slim de não encontrar o arquivo correto do Diário Slim.
 <br />Removido alguns nomes do array de substituidor de texto no arquivo Variables.php do site Diário Slim.
-<br /><br />Words: 197.
+<br />
+<br />19:49 31/10/2021:
+<br />Atualizado site Diário Slim para consertar os erros de não encontrar o arquivo correto do Diário Slim, atualizar Diários Slim.
+<br />E também para atualizar o Open_Chapter_Script para adicionar o recurso "abrir último capítulo".
+<br /><br />Words: 238.
 </div>
 </div>
 <br /><br />
@@ -55513,7 +55517,7 @@ var last_chapter_texts = [
 "ultimo capítulo",
 ];
 
-var parameter_text = local_website_url.split("&")[local_website_url.split("&").length - 1];
+var parameter_text = local_website_url.split("?")[local_website_url.split("?").length - 1];
 var parameter_text_replaced = parameter_text.replace("[", "").replace("]", "").replace("(", "").replace(")", "").replace("%20", " ");
 
 console.log("Parameter Text: " + parameter_text);
