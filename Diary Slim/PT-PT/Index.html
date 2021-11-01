@@ -14,10 +14,13 @@
 <link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Website Icons/Diário Slim.png" />
 <link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Website Icons/Diário Slim.png" />
 <meta name="description" content="Site sobre a minha história, Diário Slim, feito por Stake2, Funkysnipa Cat, Izaque." />
+<meta content="#916f3b" name="theme-color" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:website" value="@Stake2__" />
 <meta name="twitter:site" value="@Stake2__" />
 <meta name="twitter:creator" content="@Stake2__" />
+<meta content="summary_large_image" name="twitter:card" />
+<meta content="https://thestake2.netlify.app/Diário%20Slim/pt-pt/" name="twitter:url" />
 <meta name="revised" content="Stake2's Enterprise TM, 31/10/2021" />
 <meta name="author" content="Stake2" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
@@ -49707,7 +49710,10 @@ Capítulo: 468 - 31 Domingo, 31-10-2021</b>
 <br />19:49 31/10/2021:
 <br />Atualizado site Diário Slim para consertar os erros de não encontrar o arquivo correto do Diário Slim, atualizar Diários Slim.
 <br />E também para atualizar o Open_Chapter_Script para adicionar o recurso "abrir último capítulo".
-<br /><br />Palavras: 238.
+<br />
+<br />19:52 31/10/2021:
+<br />Atualizado site Diário Slim para mudar o separador de texto de link de "&" para "?" porque estava dando problema no Netlify.
+<br /><br />Palavras: 259.
 </div>
 </div>
 <br /><br />
@@ -55518,7 +55524,7 @@ var last_chapter_texts = [
 ];
 
 var parameter_text = local_website_url.split("?")[local_website_url.split("?").length - 1];
-var parameter_text_replaced = parameter_text.replace("[", "").replace("]", "").replace("(", "").replace(")", "").replace("%20", " ");
+var parameter_text_replaced = parameter_text.replace("[", "").replace("]", "").replace("(", "").replace(")", "").replace("%20", " ").replace("#", " ");
 
 console.log("Parameter Text: " + parameter_text);
 console.log("Replaced Parameter Text: " + parameter_text_replaced);
