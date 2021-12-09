@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
-<title>Diário</title>
+<title>Diário PT-PT</title>
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Diário" />
-<meta property="og:site_name" content="Diário" />
+<meta property="og:title" content="Diário PT-PT" />
+<meta property="og:site_name" content="Diário PT-PT" />
 <meta property="og:url" content="https://thestake2.netlify.app/Diário/pt-pt/" />
 <meta property="og:image" content="https://thestake2.netlify.app/Images/Story Covers/Diary/Português Brasileiro/Landscape/Story/Book Cover.png" />
 <meta property="og:description" content="Site para mostrar o meu Diário em forma de HTML, feito por Stake2, Funkysnipa Cat, Izaque." />
@@ -21,7 +21,7 @@
 <meta name="twitter:creator" content="@Stake2__" />
 <meta content="summary_large_image" name="twitter:card" />
 <meta content="https://thestake2.netlify.app/Diário/pt-pt/" name="twitter:url" />
-<meta name="revised" content="Stake2's Enterprise TM, 19/11/2021" />
+<meta name="revised" content="Stake2's Enterprise TM, 09/12/2021" />
 <meta name="author" content="Stake2" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <meta charset="UTF-8" />
@@ -34,7 +34,7 @@
 <link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Colors.css" />
 
 <!-- JavaScript files -->
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 <script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
 <script src="https://thestake2.netlify.app/JavaScript/Function/Tabs.js"></script>
 <script src="https://thestake2.netlify.app/JavaScript/Function/Redirect To Website Of User Language.js" onLoad="Check_Website_Link();"></script>
@@ -51,15 +51,15 @@
 <!--- Computer Button bar on the top -->
 <div id="computer_buttons_bar" class="w3-center w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
 <span title="Ler o Diário" alt="Ler o Diário">
-<a href="#Diary-ler o diário"><button id="computer_button_1" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Diary-ler o diário');Define_Button('computer_button_1');Change_Button_Color();"><h2>Ler o Diário: <i class="fas fa-book-open"></i></h2></button></a>
+<a href="#Diary_Ler o Diário"><button id="computer_button_1" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Diary_Ler o Diário');Define_Button('computer_button_1');Change_Button_Color();"><h2>Ler o Diário: <i class="fas fa-book-open"></i></h2></button></a>
 </span>
 
 <span title="Personagens" alt="Personagens">
-<a href="#Diary-personagens"><button id="computer_button_2" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Diary-personagens');Define_Button('computer_button_2');Change_Button_Color();"><h2>Personagens: <i class="fas fa-user-friends"></i></h2></button></a>
+<a href="#Diary_Personagens"><button id="computer_button_2" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Diary_Personagens');Define_Button('computer_button_2');Change_Button_Color();"><h2>Personagens: <i class="fas fa-user-friends"></i></h2></button></a>
 </span>
 
 <span title="Histórias" alt="Histórias">
-<a href="#Diary-histórias"><button id="computer_button_3" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Diary-histórias');Define_Button('computer_button_3');Change_Button_Color();"><h2>Histórias: <i class="fas fa-comments"></i></h2></button></a>
+<a href="#Diary_Histórias"><button id="computer_button_3" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Diary_Histórias');Define_Button('computer_button_3');Change_Button_Color();"><h2>Histórias: <i class="fas fa-comments"></i></h2></button></a>
 </span>
 
 <br />
@@ -81,18 +81,18 @@
 
 <span style="font-size:30px;" class="mobileShow text_grey">Menu de botões mobile: </span>
 
-<a href="#Diary-ler o diáriom" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Diary-ler o diáriom');Define_Button('mobile_button_1');Change_Button_Color();">
+<a href="#Diary_Ler o Diário_Mobile" onclick="Hide_Mobile_Buttons();">
+<button id="mobile_button_1" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Diary_Ler o Diário_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
 <h4>Ler o Diário: <i class="fas fa-book-open"></i></h4>
 </button>
 </a>
-<a href="#Diary-personagensm" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_2" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Diary-personagensm');Define_Button('mobile_button_2');Change_Button_Color();">
+<a href="#Diary_Personagens_Mobile" onclick="Hide_Mobile_Buttons();">
+<button id="mobile_button_2" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Diary_Personagens_Mobile');Define_Button('mobile_button_2');Change_Button_Color();">
 <h4>Personagens: <i class="fas fa-user-friends"></i></h4>
 </button>
 </a>
-<a href="#Diary-históriasm" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Diary-históriasm');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Diary_Histórias_Mobile" onclick="Hide_Mobile_Buttons();">
+<button id="mobile_button_3" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Diary_Histórias_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
 <h4>Histórias: <i class="fas fa-comments"></i></h4>
 </button>
 </a>
@@ -140,14 +140,14 @@ function Add_To_Website_Title(text_to_add, source = null) {
 
 <!-- Website computer title -->
 <h2 class="w3-center text_grey w3-animate-zoom mobileHide">
-<p><br /><b>Diário PT-PT: <i class="fas fa-book"></i></b><br /><br /><p>
+<p><br /><b>Diário Português Europeu: <i class="fas fa-book"></i></b><br /><br /><p>
 </h2>
 </div>
 
 <div class="w3-animate-zoom">
 <!-- Website mobile title -->
 <h4 class="text_grey w3-animate-zoom mobileShow">
-<p><br /><b>Diário PT-PT: <i class="fas fa-book"></i></b><br /><br /><p>
+<p><br /><b>Diário Português Europeu: <i class="fas fa-book"></i></b><br /><br /><p>
 </h4>
 </div>
 
@@ -193,39 +193,39 @@ Status: <span class="w3-text-white">[Escrevendo]</span></h4>
 <br />
 </div>
 
-<a name="Diary-ler o diário"></a>
-<div id="Diary-ler o diário" class="city mobileHide" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_grey border_color_grey border_4px" style="margin:10%;border-radius: 50px;">
-<div style="margin:3%;">
+<a id="computer_tab_1" name="Diary_Ler o Diário"></a>
+<div id="Diary_Ler o Diário" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide background_black text_grey border_color_grey border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_1">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Capítulos em Português Brasileiro: 🇧🇷</b><br /><br /><p></p></h2></div><hr class="border_color_grey border_1px" />
 <h4><b><div class="w3-animate-zoom"><div class="shake_side_to_side_animation">
 <a href="#capítulo-1" title="1 - 2016"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Define_Chapter(1);Add_To_Website_Title(' - Capítulo: 1 - 2016', 'notification');">1 - 2016</button></a> 
 </div><div class="shake_side_to_side_animation">
 <a href="#capítulo-2" title="2 - 2016"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-2');Define_Chapter(2);Add_To_Website_Title(' - Capítulo: 2 - 2016', 'notification');">2 - 2016</button></a> 
-</div></div></b></h4></div>
-</h2>
+</div></div></b></h4>
+</div>
+</div></h2>
+
 </div>
 
-<a name="Diary-ler o diáriom"></a>
-<div id="Diary-ler o diáriom" class="city mobileShow" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_grey border_color_grey border_4px" style="margin:10%;border-radius: 50px;">
-<div style="margin:3%;">
+
+<a id="mobile_tab_1" name="Diary_Ler o Diário_Mobile"></a>
+<div id="Diary_Ler o Diário_Mobile" class="city mobileShow" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow background_black text_grey border_color_grey border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_1">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Capítulos em Português Brasileiro: 🇧🇷</b><br /><br /><p></p></h2></div><hr class="border_color_grey border_1px" />
 <h4><b><div class="w3-animate-zoom"><div class="shake_side_to_side_animation">
 <a href="#capítulo-1" title="1 - 2016"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Define_Chapter(1);Add_To_Website_Title(' - Capítulo: 1 - 2016', 'notification');">1 - 2016</button></a> 
 </div><div class="shake_side_to_side_animation">
 <a href="#capítulo-2" title="2 - 2016"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-2');Define_Chapter(2);Add_To_Website_Title(' - Capítulo: 2 - 2016', 'notification');">2 - 2016</button></a> 
-</div></div></b></h4></div>
-</h4>
+</div></div></b></h4>
+</div>
+</div></h4>
+
 </div>
 
-<a name="Diary-personagens"></a>
-<div id="Diary-personagens" class="city mobileHide" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_grey border_color_grey border_4px" style="margin:10%;border-radius: 50px;">
-<div style="margin:3%;">
+
+<a id="computer_tab_2" name="Diary_Personagens"></a>
+<div id="Diary_Personagens" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide background_black text_grey border_color_grey border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_2">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Personagens: <i class="fas fa-user-friends"></i></b><br /><br /><p></p></h2></div><hr class="border_color_grey border_1px" />
 <div style="text-align:left;"><span class="w3-text-white"><div class="w3-animate-zoom" ><div style="margin:3%;">
 <div style="margin:3%;">
@@ -286,15 +286,16 @@ Em outras palavras:<br />
 </div>
 </div>
 </div>
-</div></span></div></div>
-</h2>
+</div></span></div>
+</div>
+</div></h2>
+
 </div>
 
-<a name="Diary-personagensm"></a>
-<div id="Diary-personagensm" class="city mobileShow" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_grey border_color_grey border_4px" style="margin:10%;border-radius: 50px;">
-<div style="margin:3%;">
+
+<a id="mobile_tab_2" name="Diary_Personagens_Mobile"></a>
+<div id="Diary_Personagens_Mobile" class="city mobileShow" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow background_black text_grey border_color_grey border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_2">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Personagens: <i class="fas fa-user-friends"></i></b><br /><br /><p></p></h2></div><hr class="border_color_grey border_1px" />
 <div style="text-align:left;"><span class="w3-text-white"><div class="w3-animate-zoom" ><div style="margin:3%;">
 <div style="margin:3%;">
@@ -355,15 +356,16 @@ Em outras palavras:<br />
 </div>
 </div>
 </div>
-</div></span></div></div>
-</h4>
+</div></span></div>
+</div>
+</div></h4>
+
 </div>
 
-<a name="Diary-histórias"></a>
-<div id="Diary-histórias" class="city mobileHide" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_grey border_color_grey border_4px" style="margin:10%;border-radius: 50px;">
-<div style="margin:3%;">
+
+<a id="computer_tab_3" name="Diary_Histórias"></a>
+<div id="Diary_Histórias" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide background_black text_grey border_color_grey border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_3">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Histórias: <span class="w3-text-white" >6</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="border_color_grey border_1px" />
 
 <div class="w3-animate-zoom"><div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/A%20Vida%20de%20Pequenata/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">A Vida de Pequenata</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português Brasileiro/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/A%20Vida%20de%20Pequenata/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">A Vida de Pequenata</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português Brasileiro/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
@@ -385,15 +387,16 @@ Em outras palavras:<br />
 <br />
 
 </div>
+
 </div>
-</h2>
+</div></h2>
+
 </div>
 
-<a name="Diary-históriasm"></a>
-<div id="Diary-históriasm" class="city mobileShow" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_grey border_color_grey border_4px" style="margin:10%;border-radius: 50px;">
-<div style="margin:3%;">
+
+<a id="mobile_tab_3" name="Diary_Histórias_Mobile"></a>
+<div id="Diary_Histórias_Mobile" class="city mobileShow" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow background_black text_grey border_color_grey border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_3">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Histórias: <span class="w3-text-white" >6</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="border_color_grey border_1px" />
 
 <div class="w3-animate-zoom"><div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/A%20Vida%20de%20Pequenata/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">A Vida de Pequenata</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português Brasileiro/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/A%20Vida%20de%20Pequenata/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">A Vida de Pequenata</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português Brasileiro/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
@@ -415,9 +418,12 @@ Em outras palavras:<br />
 <br />
 
 </div>
+
 </div>
-</h4>
+</div></h4>
+
 </div>
+
 
 <div id="capítulos-div">
 
@@ -441,8 +447,8 @@ Capítulo: 1 - 2016</b>
 
 <h5 class="background_grey text_black" style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
 <a href="#capítulo-2"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - 07/11/2016', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
-<a href="#Diary-ler o diário"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('Diary-ler o diário')"><h3><i class="fas fa-bars"></i></h3></button></a>
-<a href="#Diary-ler o diáriom"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('Diary-ler o diáriom')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#Diary_Ler o Diário"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('Diary_Ler o Diário')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#Diary_Ler o Diário_Mobile"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('Diary_Ler o Diário_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <div id="capítulo-text-1" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
@@ -634,8 +640,8 @@ Capítulo: 2 - 2016</b>
 
 <h5 class="background_grey text_black" style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
 <a href="#capítulo-1"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - 03/11/2016', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#Diary-ler o diário"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white mobileHide" style="float: right;border-radius: 50px;" onclick="openCity('Diary-ler o diário')"><h3><i class="fas fa-bars"></i></h3></button></a>
-<a href="#Diary-ler o diáriom"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white mobileShow" style="float: right;border-radius: 50px;" onclick="openCity('Diary-ler o diáriom')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#Diary_Ler o Diário"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white mobileHide" style="float: right;border-radius: 50px;" onclick="openCity('Diary_Ler o Diário')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#Diary_Ler o Diário_Mobile"><button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white mobileShow" style="float: right;border-radius: 50px;" onclick="openCity('Diary_Ler o Diário_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <div id="capítulo-text-2" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
@@ -886,95 +892,6 @@ Capítulo: 2 - 2016</b>
 </h5>
 </div>
 </div>
-<br /><br /><br /><br /><br /><br /><br /><br /><br />
-<center>
-<a href="#Sites de Sites: : "><button id="websites_tab_button" class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" style="border-radius: 50px;" alt="Sites de Sites: : " title="Sites de Sites: : " onclick="openCity('Sites de Sites: : ');Define_Button('websites_tab_button');Change_Button_Color();"><h2>Sites: <i class="fas fa-globe-americas"></i></h2></button></a>
-</center>
-<a name="Sites de Sites: : "></a>
-<br />
-<div id="Sites de Sites: : " class="city" style="display:none;border-radius: 50px;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<div class="mobileHide" style="border-radius: 50px;">
-<h4 class="border_color_grey w3-black border_3px border_color_grey" style="margin:10%;border-radius: 50px;"><div style="margin:3%;">
-<center>
-<div class="w3-animate-zoom">
-<h2 class="mobileHide text_grey" style="border-radius: 50px;"><p></p><br /><b>Sites: <span class="w3-text-white text_hover_white">26</span> <i class="fas fa-globe-americas"></i></b><br /><br /><p></p></h2>
-</div>
-<hr class="mobileHide border_color_grey border_1px" />
-<div class="w3-animate-zoom">
-<h4 class="w3-black" style="border-radius: 50px;">
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Stake2" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Stake2/');"><h2>Stake2</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Prints of Computer Blocks" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Prints of Computer Blocks/');"><h2>Prints of Computer Blocks</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Diário Slim" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Diary Slim/');"><h2>Diário Slim</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="My Little Pony: A Amizade é Mágica" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/My Little Pony Friendship is Magic/');"><h2>My Little Pony: A Amizade é Mágica</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Watch History" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Watch History/');"><h2>Watch History</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Música" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Music/');"><h2>Música</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Jogos" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Games/');"><h2>Jogos</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Álbuns do Foobar (Foobar Albums)" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Foobar Albums/');"><h2>Álbuns do Foobar (Foobar Albums)</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Tarefas" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Tasks/');"><h2>Tarefas</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Coisas Que Eu Faço" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Things I Do/');"><h2>Coisas Que Eu Faço</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Status Dos Sites" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Website Status/');"><h2>Status Dos Sites</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Histórias" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Stories/');"><h2>Histórias</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="New World" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/New World/');"><h2>New World</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Multiverso Izaque" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Izaque Multiverse/');"><h2>Multiverso Izaque</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="A Vida de Pequenata" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/');"><h2>A Vida de Pequenata</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="O Segredo dos Cristais" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Secret of the Crystals/');"><h2>O Segredo dos Cristais</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="SpaceLiving" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/SpaceLiving/');"><h2>SpaceLiving</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="A História dos Irmãos Bulkan" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/');"><h2>A História dos Irmãos Bulkan</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Ilha Deserta" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Desert Island/');"><h2>Ilha Deserta</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Anos" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/');"><h2>Anos</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="2018" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2018/');"><h2>2018</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="2019" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2019/');"><h2>2019</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="2020" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2020/');"><h2>2020</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="2021" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2021/');"><h2>2021</h2></button><br />
-</h4>
-</div>
-</center>
-</div>
-</h4>
-</div>
-
-<div class="mobileShow">
-<h4 class="border_color_grey w3-black border_3px border_color_grey" style="margin:10%;border-radius: 50px;"><div class="mobileShow">
-<div style="margin:3%;"></div>
-<center>
-<div class="w3-animate-zoom">
-<h2 class="mobileShow text_grey" style="border-radius: 50px;"><p></p><br /><b>Sites: <span class="w3-text-white text_hover_white">26</span> <i class="fas fa-globe-americas"></i></b><br /><br /><p></p></h2>
-</div>
-<hr class="mobileShow border_color_grey border_1px" />
-<div class="w3-animate-zoom">
-<h4 class="w3-black" style="border-radius: 50px;">
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Stake2" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Stake2/');"><h2>Stake2</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Prints of Computer Blocks" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Prints of Computer Blocks/');"><h2>Prints of Computer Blocks</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Diário Slim" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Diary Slim/');"><h2>Diário Slim</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="My Little Pony: A Amizade é Mágica" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/My Little Pony Friendship is Magic/');"><h2>My Little Pony: A Amizade é Mágica</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Watch History" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Watch History/');"><h2>Watch History</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Música" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Music/');"><h2>Música</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Jogos" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Games/');"><h2>Jogos</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Álbuns do Foobar (Foobar Albums)" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Foobar Albums/');"><h2>Álbuns do Foobar (Foobar Albums)</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Tarefas" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Tasks/');"><h2>Tarefas</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Coisas Que Eu Faço" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Things I Do/');"><h2>Coisas Que Eu Faço</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Status Dos Sites" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Website Status/');"><h2>Status Dos Sites</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Histórias" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Stories/');"><h2>Histórias</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="New World" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/New World/');"><h2>New World</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Multiverso Izaque" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Izaque Multiverse/');"><h2>Multiverso Izaque</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="A Vida de Pequenata" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/');"><h2>A Vida de Pequenata</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="O Segredo dos Cristais" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Secret of the Crystals/');"><h2>O Segredo dos Cristais</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="SpaceLiving" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/SpaceLiving/');"><h2>SpaceLiving</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="A História dos Irmãos Bulkan" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/');"><h2>A História dos Irmãos Bulkan</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Ilha Deserta" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Desert Island/');"><h2>Ilha Deserta</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="Anos" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/');"><h2>Anos</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="2018" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2018/');"><h2>2018</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="2019" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2019/');"><h2>2019</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="2020" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2020/');"><h2>2020</h2></button><br />
-<button class="w3-btn text_black background_grey border_color_black border_3px background_hover_white" title="2021" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2021/');"><h2>2021</h2></button><br />
-</h4>
-</div>
-</center>
-</div>
-</h4>
-</div>
-</div>
 
 <style>
 
@@ -1084,10 +1001,13 @@ var last_chapter_texts = [
 var parameter_text = local_website_url.split("?")[local_website_url.split("?").length - 1];
 var parameter_text_replaced = parameter_text.replace("[", "").replace("]", "").replace("(", "").replace(")", "").replace("%20", " ").replace("#", " ");
 
+parameter_text_replaced = parameter_text_replaced.split("&")[parameter_text_replaced.split("&").length - 1];
+
 console.log("Parameter Text: " + parameter_text);
 console.log("Replaced Parameter Text: " + parameter_text_replaced);
 
 if (last_chapter_texts.indexOf(parameter_text_replaced) != -1) {
+	console.log("Website URL includes last chapter text.");
 	Open_Chapter(Last_Chapter_Title, Last_Chapter);
 }
 </script>
