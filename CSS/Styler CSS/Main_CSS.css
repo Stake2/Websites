@@ -321,22 +321,28 @@ span.w3-btn:hover {
 .mobileShow { display: none; }
 
 @media only screen
-	and (min-device-width : 300px)
-	and (max-device-width : 1250px){ 
+	and (min-device-width: 300px)
+	and (max-device-width: 1250px) { 
 		.mobileShow {display: block; }
 }
  
 .mobileHide { display: block; }
 
 @media only screen
-	and (min-device-width : 300px)
-	and (max-device-width : 1250px){
+	and (min-device-width: 300px)
+	and (max-device-width: 1250px) {
 	 .mobileHide { display: none; }
 }
 
 @media screen and (max-height: 450px) {
 	.mobile_button_sidebar_css {padding-top: 15px;}
 	.mobile_button_sidebar_css a {font-size: 18px;}
+}
+
+@media screen and (min-height: 500px) and (max-device-width: 1250px) {
+	div[id=mobile_button_sidebar] a[onclick="Hide_Mobile_Buttons();"] button h4 {
+		font-size: 18px;
+	}
 }
 
 .gallerycontainer {
