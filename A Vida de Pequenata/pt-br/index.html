@@ -21,7 +21,7 @@
 <meta name="twitter:creator" content="@Stake2__" />
 <meta content="summary_large_image" name="twitter:card" />
 <meta content="https://thestake2.netlify.app/A%20Vida%20de%20Pequenata/pt-br/" name="twitter:url" />
-<meta name="revised" content="Stake2's Enterprise TM, 09/12/2021" />
+<meta name="revised" content="Stake2's Enterprise TM, 15/12/2021" />
 <meta name="author" content="Stake2" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <meta charset="UTF-8" />
@@ -52,18 +52,22 @@
 <!--- Computer Button bar on the top -->
 <div id="computer_buttons_bar" class="w3-center w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
 <span title="Ler história" alt="Ler história">
-<a href="#The Life of Littletato_Ler história"><button id="computer_button_1" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('The Life of Littletato_Ler história');Define_Button('computer_button_1');Change_Button_Color();"><h2>Ler história: <i class="fas fa-book-open"></i></h2></button></a>
+<a href="#The Life of Littletato_Ler história"><button id="computer_button_1" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('The Life of Littletato_Ler história');Define_Button('computer_button_1');Change_Button_Color();"><h2>Ler história: <i class="fas fa-book-open"></i></h2></button></a>
 </span>
 
 <span title="Leitores" alt="Leitores">
-<a href="#The Life of Littletato_Leitores"><button id="computer_button_2" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('The Life of Littletato_Leitores');Define_Button('computer_button_2');Change_Button_Color();"><h2>Leitores: <i class="fas fa-book-reader"></i> ❤️</h2></button></a>
+<a href="#The Life of Littletato_Leitores"><button id="computer_button_2" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('The Life of Littletato_Leitores');Define_Button('computer_button_2');Change_Button_Color();"><h2>Leitores: <i class="fas fa-book-reader"></i> ❤️</h2></button></a>
 </span>
 
 <span title="Outras histórias" alt="Outras histórias">
-<a href="#The Life of Littletato_Outras histórias"><button id="computer_button_3" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('The Life of Littletato_Outras histórias');Define_Button('computer_button_3');Change_Button_Color();"><h2>Outras histórias: <i class="fas fa-book"></i></h2></button></a>
+<a href="#The Life of Littletato_Outras histórias"><button id="computer_button_3" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('The Life of Littletato_Outras histórias');Define_Button('computer_button_3');Change_Button_Color();"><h2>Outras histórias: <i class="fas fa-book"></i></h2></button></a>
 </span>
 
-<br />
+<span class="mobileHide" >
+<a class="" href="#Aba de Sites">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" id="websites_tab_button" style="border-radius: 50px;" alt="Aba de Sites" title="Aba de Sites" onclick="Hide_Computer_Buttons();openCity('Aba de Sites');Define_Button('websites_tab_button');Change_Button_Color();"><h2 class="" >
+Sites: <i class="fas fa-globe-americas"></i></h2></button></a>
+</span><br />
 <center><button id="hide_computer_buttons" class="w3-center w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button></center>
 </div>
 
@@ -97,7 +101,11 @@
 <h4>Outras histórias: <i class="fas fa-book"></i></h4>
 </button>
 </a>
-
+<span class="mobileShow" >
+<a class="" href="#Aba de Sites">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" id="websites_tab_button" style="border-radius: 50px;" alt="Aba de Sites" title="Aba de Sites" onclick="Hide_Computer_Buttons();openCity('Aba de Sites');Define_Button('websites_tab_button');Change_Button_Color();"><h4 class="" >
+Sites: <i class="fas fa-globe-americas"></i></h4></button></a>
+</span>
 </div>
 
 <div class="mobileShow"><button id="show_mobile_buttons" class="w3-center w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="Show_Mobile_Buttons();"><h2><i class="fas fa-bars"></i></h2></button>
@@ -1490,9 +1498,11 @@ Capítulo: 1 - O Começo, Parte 1</b>
 <br />
 <div id="capítulo-text-1" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
 Olá, eu sou Izaque, Stake2, e Funkysnipa Cat.
-<br />Essa é A Vida de Pequenata, uma história minha, que eu criei em 05/08/2017 no site de histórias Wattpad, foi minha primeira história.
+<br />Essa é A Vida de Pequenata, uma história minha, que criei em 05/08/2017 no site de histórias Wattpad, foi minha primeira história.
 <br />Eu criei uma conta no Wattpad e queria testar o site, criando uma história chamada "Littletato" (Pequenata).
 <br />Que era a mistura de "Little" e "Potato" (Pequena e Batata), eu comecei a escrever ela.
+<br />Escrevia um capítulo inteiro em uma linha só, com erros gramaticais e de digitação, com poucas coisas interessantes.
+<br />Então em 2021 eu comecei a revisar todos os capítulos de Pequenata, melhorar eles, fazer eles no estilo da minha história SpaceLiving, com assuntos separados por parágrafos.
 <br />Eu fiquei inspirado a começar a escrever histórias por causa de uma história Brasileira no formato de green text chamada "Ano 2035".
 <br />Era tão boa e atraente, eu podia sentir coisas sobre a história e os personagens.
 <br />E eu queria fazer as pessoas sentirem isso também, é por isso que eu comecei a escrever Pequenata.
@@ -1503,14 +1513,14 @@ Olá, eu sou Izaque, Stake2, e Funkysnipa Cat.
 <br />
 <br />Pequenata era uma batata que vivia sozinha, ela estava sempre viajando e andando pelas cidades, ela amava viver, e ver novas coisas.
 <br />Ela tinha dezenove anos.
-<br />A batata parou em uma cidade chamada São Francisco e começou a olhar para as lojas, as pessoas e o clima.
+<br />A batata parou em uma cidade chamada São Francisco e começou a olhar para as lojas, as pessoas, e o clima.
 <br />São Francisco era uma cidade onde vegetais e frutas podiam viver seguras sem humanos por perto.
 <br />Ela achou outra batata enquanto andava em São Francisco, elas começaram a conversar um pouco.
-<br />O nome daquela batata era Júlia, ela era rosa e tinha dezoito anos, elas notaram que tinham muito em comum.
-<br />"Ei, você gosta de ler histórias?" perguntou Pequenata.
-<br />"Sim, eu amo! E você Pequenata?" perguntou Júlia.
-<br />"Eu também, hehe, é tão bom conhecer alguém que gosta da mesma coisa que você", disse Pequenata.
-<br />"Eu concordo", respondeu Júlia, sorrindo.
+<br />O nome daquela batata era Júlia, ela era rosa e tinha dezoito anos, elas notaram que tinham muito em comum, Júlia também gostava de viajar.
+<br />"Cê gosta de ler histórias?" perguntou Pequenata.
+<br />"Sim, adoro, e você Pequenata?" perguntou Júlia.
+<br />"Também, hehe, é tão bom conhecer alguém que gosta das mesmas coisa que você", disse Pequenata.
+<br />"Concordo, hehe", respondeu Júlia, sorrindo.
 <br />Júlia disse que que ela vivia sozinha, pagando aluguel.
 <br />Então Júlia deu seu número para Pequenata, para elas poderem conversar novamente.
 <br />Pequenata disse que ela era uma garota viajante, e talvez ela não ficaria em São Francisco.
@@ -1518,14 +1528,12 @@ Olá, eu sou Izaque, Stake2, e Funkysnipa Cat.
 <br />
 <br />Pequenata pegou um ônibus e começou a viajar pela cidade novamente.
 <br />Ela estava pensando sobre Júlia, sobre seu cabelo e sua voz gentil.
-<br />Pequenata pensou que ela estava apaixonada.
-<br />Só pensando sobre a voz dela a fez sorrir.
+<br />Pequenata pensou que ela estava apaixonada, só pensar sobre a voz dela a fez sorrir.
 <br />Ela estava refletindo e olhando para baixo enquanto o ônibus estava se movendo.
 <br />Pequenata disse para o motorista do ônibus parar para que ela pudesse descer.
 <br />Ela começou a andar na cidade, com seu celular e suas coisas.
 <br />A garota pensou que ela gostava de programar as vezes, fazer aplicativos e programas para ajuda-la.
 <br />Ela pensou que ela gostaria de trabalhar em um emprego de programação, seria divertido.
-<br />
 <br />Então a garota começou a procurar por empregos de programação em São Francisco na Internet.
 <br />Ela achou um e se inscreveu para a entrevista.
 <br />Pequenata passou sua noite em um hotel.
@@ -1534,47 +1542,50 @@ Olá, eu sou Izaque, Stake2, e Funkysnipa Cat.
 <br />Ela entrou no prédio e alguém a recebeu.
 <br />Então Pequenata fez a entrevista e esperou eles responderem.
 <br />Algum tempo passou, já estava de noite, ela voltou para o hotel e pegou seu celular, olhando para o número de Júlia.
-<br />(Vegesapp é um aplicativo que você pode instalar em seu celular, ele te deixa conversar com as pessoas, você precisa de um número de celular e um cartão SIM para usa-lo.)
+<br />(Vegesapp é um aplicativo que você pode instalar em seu celular, ele te deixa conversar com as pessoas, você precisa de um número de celular e um cartão SIM para usá-lo.)
 <br />Ela enviou uma mensagem para Júlia via Vegesapp, dizendo:
 <br />"Ei Júlia, sou eu, Pequenata.
-<br />Eu estava pensando sobre ficar em São Francisco.
+<br />Tava pensando em ficar aqui em São Francisco.
 <br />Parece ser uma boa cidade.
-<br />Eu fiz uma entrevista de emprego hoje, eu espero que eu consiga."
+<br />Fiz uma entrevista de emprego hoje, acho que vou conseguir."
 <br />
 <br />Júlia respondeu alguns minutos depois:
 <br />"Ah, sério?!
-<br />Eu tô tão feliz por causa disso.
-<br />Bom... Boa sorte! Eu espero que consiga o emprego Pequenata ^^."
-<br />"Obrigada, eu aprecio isso.
-<br />Você tá feliz por que vou ficar?" disse Pequenata.
-<br />"Sim, eu acho que você é legal, e eu gosto de você... Como amiga... Você me considera sua amiga?" perguntou Júlia.
-<br />"Sim, eu te considero minha amiga, e obrigada, eu também acho que você é legal Júlia, hehe", respondeu Pequenata.
-<br />"Hehe, eu vou dormir agora Pequenata, boa noite, durma bem ^^", disse Júlia.
-<br />"Boa noite Júlia, te vejo amanhã eu acho. :3", disse Pequenata.
-<br />Então Pequenata dormiu, quando ela acordou, ela notou que ela recebeu uma mensagem em seu celular.
+<br />Tô tão feliz por causa disso.
+<br />Boa sorte! Espero que tu consiga o emprego ^^."
+<br />"Obrigada, hihi.
+<br />Tá feliz porque vou ficar? Hehe", disse Pequenata.
+<br />"Sim, acho que você é legal, e eu gosto de você... Como amiga... Você me considera sua amiga?" perguntou Júlia.
+<br />"Sim, te considero minha amiga, e obrigada, eu também acho que você é legal Júlia, hehe.
+<br />Posso te chamar de Ju?" perguntou Pequenata.
+<br />"Hehe, sim, posso te chamar de Nata?" perguntou Júlia.
+<br />"Pode sim Ju, hihi", respondeu Pequenata.
+<br />"Ok, vou dormir agora Nata, boa noite, durma bem ^^", disse Júlia.
+<br />"Boa noite Ju, te vejo amanhã eu acho. :3", disse Pequenata.
+<br />Então Pequenata dormiu, quando ela acordou, notou que recebeu uma mensagem em seu celular.
 <br />Ela ligou ele para checar, era da empresa que entrevistou ela, ela tinha sido aceita no emprego.
-<br />Pequenata estava tão feliz, ela estava sorrindo muito, e enviou uma mensagem para Júlia para dizer para ela.
-<br />"Ei Júlia, eu consegui o emprego!" disse ela.
-<br />"Sério?! Isso é bom! Eu disse que você conseguiria, parabéns Pequenata!" respondeu Júlia.
+<br />Pequenata estava tão feliz, ela estava sorrindo muito, e enviou uma mensagem para Júlia para contar.
+<br />"Ei Ju, eu consegui o emprego!" disse ela.
+<br />"Sério?! Isso é bom! Sabia que tu ia conseguir, parabéns Nata!" respondeu Júlia.
 <br />
 <br />Pequenata começou a trabalhar, três meses se passaram, ela estava pensando em alugar uma casa.
-<br />A relação entre Júlia continuou a crescer cada vez mais forte.
+<br />A relação entre Júlia continuou a crescer cada vez mais forte, elas ficaram mais próximas.
 <br />Pequenata estava no hotel, ela já tinha trabalhado hoje.
 <br />Ela pegou seu celular e abriu o aplicativo do Vegesapp.
-<br />"Ei... Júlia, eu tenho algo pra te falar...
-<br />Hm... Posso perguntar algo antes?"
-<br />"Hm... Sim, vá em frente", respondeu Júlia.
-<br />"Podemos se encontrar naquela cafeteria onde a gente se conheceu pela primeira vez?" perguntou Pequenata.
+<br />"Ei... Ju, eu tenho algo pra te falar...
+<br />Hmm... Posso perguntar algo antes?"
+<br />"Hmm... Sim, vá em frente Nata", respondeu Júlia.
+<br />"A gente pode se encontrar naquela cafeteria onde a gente se conheceu pela primeira vez?" perguntou Pequenata.
 <br />"Ok, eu vou me preparar, quando você vai estar lá?" perguntou Júlia.
-<br />"6 horas da tarde", respondeu Pequenata.
+<br />"Ás seis da tarde", respondeu Pequenata.
 <br />"Ok", disse Júlia.
 <br />
 <br />Então Pequenata começou a se preparar.
 <br />As duas chegaram lá, elas pediram um café descafeinado.
-<br />"Então... O que quer me dizer Pequenata?" perguntou Júlia, enquanto olhava para os olhos de Pequenata.
-<br />"Hm... Então... Eu... Te amo, Júlia... Você é tão gentil comigo, e me ajudou muito.
+<br />"Então... O que quer me dizer Nata?" perguntou Júlia, enquanto olhava para os olhos de Pequenata.
+<br />"Hmm... Então... Eu... Te amo, Ju... Você é tão gentil comigo, e me ajudou muito.
 <br />Eu acho que seu cabelo é fofo, sua voz também, você é tão linda..." disse Pequenata, um pouco hesitante.
-<br />"Um... Obrigada Pequenata, Eu... Amo você também... Você é fofa, eu gosto do seu cabelo.
+<br />"Um... Obrigada Nata, Eu... Amo você também... Você é fofa, eu gosto do seu cabelo.
 <br />Eu gosto do fato de que eu tenho os mesmos interesses que você", disse Júlia, sorrindo enquanto olhava para Pequenata.
 <br />Pequenata pegou sua cadeira e sentou-se ao lado de Júlia, ela a abraçou e disse "Eu te amo", Júlia disse o mesmo.
 <br />Elas olharam para os lábios uma da outra, suas cabeças começaram a se aproximar e Pequenata deu um beijo rápido em Júlia.
@@ -1600,11 +1611,11 @@ Olá, eu sou Izaque, Stake2, e Funkysnipa Cat.
 <br />Elas foram até o quarto e se deitaram na cama, se cobrindo com o cobertor.
 <br />Pequenata abraçou Júlia forte por trás e beijou seu pescoço.
 <br />Júlia ficou arrepiada e fechou seus olhos.
-<br />"Eu te amo Pequenata", disse Júlia.
-<br />"Eu te amo também Júlia", disse Pequenata.
+<br />"Eu te amo Nata", disse Júlia.
+<br />"Eu te amo também Ju", disse Pequenata.
 <br />Elas dormiram suavemente de noite, esperando pelo amanhã.
 <br /><br />Capítulo escrito em: 05/08/2017.
-<br />Palavras: 1,436.
+<br />Palavras: 1,500.
 </div>
 </div>
 <br /><br />
@@ -1708,42 +1719,42 @@ Pequenata estava voltando para casa, ela terminou seu trabalho e estava carregan
 <br />Ela encontrou um amigo dela, Pequenata fez esse amigo enquanto ela estava viajando por São Francisco, eles se conheceram no ônibus.
 <br />Seu amigo ela uma batata doce chamada Yam, ele era um homem.
 <br />"Oi Yam, bom te ver!" disse Pequenata olhando para Yam.
-<br />"Bom te ver também, Pequenata", respondeu Yam enquanto sorria.
+<br />"Bom te ver também, Nata", respondeu Yam enquanto sorria.
 <br />Eles conversaram por algum tempo.
-<br />"Ei Pequenata, você sabia que em Las Vegas eles vendem carne e vegetais mesmo que tenha vacas lá?" perguntou Yam.
-<br />"Não, eu não sabia sobre isso, é muito ruim", disse Pequenata.
+<br />"Ei Nata, sabia que em Las Vegas eles vendem carne e vegetais mesmo que tenha vacas lá?" perguntou Yam.
+<br />"Não sabia, é muito ruim", disse Pequenata.
 <br />"Sim, eu concordo", respondeu Yam, enquanto parecia um pouco triste.
 <br />"Bem, eu tenho que ir, minha irmã tá na cidade de novo, eu comprei os chocolates favoritos dela.
-<br />Eu tenho que ir para casa, se não ela vai ficar um pouco brava comigo, hehe, vejo você depois Pequenata", disse Yam, que começou a andar de volta para casa, dando tchau para Pequenata.
+<br />Eu tenho que ir para casa, se não ela vai ficar brava comigo, hehe, vejo você depois Nata", disse Yam, que começou a andar de volta para casa, dando tchau para Pequenata.
 <br />"Tchau, até mais Yam", respondeu Pequenata, acenando de volta.
 <br />
 <br />Pequenata chegou em casa, ela falou para Júlia sobre a conversa que ela teve com Yam.
 <br />Júlia disse que ela queria conhecer Yam algum dia, Pequenata disse que ela vai apresentar Yam à ela.
 <br />Pequenata colocou a sacola de comida em cima da mesa e ajudou Júlia a fazer o jantar.
-<br />Elas comeram jantar juntos enquanto conversavam.
-<br />Júlia perguntou para Pequenata como seu trabalho foi hoje.
-<br />Pequenata respondeu que foi muito legal, ela conheceu uma nova colega de trabalho que começou a trabalhar na empresa.
-<br />Seu nome era Mia, ela era uma cenoura, Pequenata ajudou ela com um problema que ela teve com o programa.
+<br />Elas comeram jantar juntas enquanto conversavam.
+<br />Júlia perguntou para Pequenata como foi seu trabalho hoje.
+<br />Pequenata disse que foi muito legal, ela conheceu uma nova colega de trabalho que começou a trabalhar na empresa.
+<br />Seu nome era Mia, ela era uma cenoura, Pequenata ajudou ela com um problema que ela teve com o programa que ela estava fazendo.
 <br />Então Júlia e Pequenata terminaram de comer, elas fizeram suas necessidades e foram até o quarto.
 <br />O casal deitou-se na cama e se cobriu com o cobertor.
-<br />Pequenata abraçou Júlia apertado por que estava frio, elas dormiram.
+<br />Pequenata abraçou Júlia apertado porque estava frio, elas dormiram.
 <br />
 <br />No outro dia, Pequenata acordou mas Júlia não.
 <br />Ela olhou para o relógio e viu que eram cinco da manhã.
 <br />Pequenata levantou-se da cama e andou até o banheiro para fazer suas necessidades matinais.
 <br />Depois disso, ela andou até a cozinha e começou a fazer o café da manhã.
-<br />Ela pegou duas canecas e colocou leite e achocolatado em pó neles, misturando o pó e leite, com ajuda de uma colher.
+<br />Pegou duas canecas e colocou leite e achocolatado em pó neles, misturando o pó e leite, com ajuda de uma colher.
 <br />Então ela pegou dois pratos e colocou duas fatias de pão em cada um.
 <br />Ela pegou uma faca e manteiga, passando manteiga em todas as fatias de pão.
 <br />Então ela voltou para o quarto e acordou Júlia.
 <br />Júlia andou até o banheiro para fazer suas necessidades matinais.
 <br />
-<br />Então as duas caminharam até a cozinha e tomaram café da manhã juntos.
+<br />Ambas caminharam até a cozinha e tomaram café da manhã juntos.
 <br />"Você ainda tem um tempinho antes de ir pro trabalho, né querida?" perguntou Júlia.
-<br />"Sim, por que você pergunta meu amor?" perguntou Pequenata.
-<br />"É por que eu sinto sua falta quando você vai trabalhar amor", disse Júlia, parecendo um pouco triste.
+<br />"Sim, por que a pergunta meu amor?" perguntou Pequenata.
+<br />"É porque sinto sua falta quando você vai trabalhar amor", disse Júlia, parecendo um pouco triste.
 <br />Pequenata sentou-se ao lado de Júlia e abraçou ela apertado, dando um beijo em seus lábios.
-<br />"Tá tudo bem amor, quando eu voltar pra casa, eu serei todinha sua ok?" perguntou Pequenata.
+<br />"Tá tudo bem amor, quando eu voltar pra casa, eu vou ser todinha sua ok?" perguntou Pequenata.
 <br />"Ok, hehe, eu te amo minha batatinha", disse Júlia, olhando apaixonada para Pequenata.
 <br />As duas terminaram de comer, Júlia achou que estava delicioso, Pequenata também.
 <br />
@@ -1754,7 +1765,7 @@ Pequenata estava voltando para casa, ela terminou seu trabalho e estava carregan
 <br />Ela o ligou e começou a usá-lo, abrindo o navegador para navegar na Internet.
 <br />Depois de um tempo usando o navegador, Júlia abriu o jogo Countable Vegestrike 1.6 para jogar um pouco.
 <br />Esse jogo era um FPS ou jogo de tiro em primeira-pessoa onde você precisava completar um objetivo.
-<br />Pequenata olhou para o lado e notou Júlia ali, então olhou para o computador, abriu o site Vegebook, e entrou em sua conta.
+<br />Pequenata olhou para o lado e notou Júlia ali, ela sorriu, e então abriu o site Vegebook, e entrou em sua conta.
 <br />(Vegebook é um site onde você pode conversar com muitas pessoas e pode ter um perfil, muitas pessoas usam ele só para conversar e manter contato com a família.)
 <br />Ela olhou para o bate-papo, vendo seus amigos online.
 <br />Mesmo que esses amigos sejam só amigos digitais, ela estava feliz de ter eles.
@@ -1771,17 +1782,16 @@ Pequenata estava voltando para casa, ela terminou seu trabalho e estava carregan
 <br />Ela clicou na mensagem para ver o que era.
 <br />Yam disse que em Nova Iorque havia bons empregos, que era uma boa cidade para se viver.
 <br />Pequenata disse que ela já tinha um trabalho em São Francisco, e havia comprado uma casa também.
-<br />Ela também disse que ela estava vivendo com sua namorada nela.
-<br />Yam disse que isso era bom e que ele estava feliz por Pequenata.
-<br />Ele desejou felicidade para o casal.
+<br />Ela também disse que ela estava vivendo com sua namorada.
+<br />Yam disse que isso era bom e que ele estava feliz por Pequenata, ele desejou felicidade para o casal.
 <br />Pequenata enviou um emoji de sorriso e disse obrigada.
-<br />"E você Yam, você tem uma namorada?" perguntou Pequenata.
+<br />"E você Yam, tem namorada?" perguntou Pequenata.
 <br />"Não, estou solteiro, hehe, tô focando mais no trabalho, e terminar minha faculdade", disse Yam.
-<br />"Oh, que faculdade está fazendo?" perguntou Pequenata.
+<br />"Ah, que faculdade está fazendo?" perguntou Pequenata.
 <br />"É engenharia mecânica", respondeu Yam.
 <br />"Isso parece bem legal, boa sorte!" disse Pequenata.
-<br />"Obrigado, Pequenata. ^^" disse Yam.
-<br />Ela disse que ela iria fazer outra coisa, e disse tchau para Yam, ele disse tchau de volta.
+<br />"Obrigado, Nata ^^," disse Yam.
+<br />Ela disse que ela iria para o trabalho, e disse tchau para Yam, ele a desejou boa sorte e disse tchau de volta.
 <br />Pequenata fechou o site do Vegebook e desligou seu computador, então ela se preparou para ir para o trabalho.
 <br />Então a garota andou até a porta da sala de estar, a partida de Júlia já havia terminado, ela saiu de sua cadeira e andou para onde Pequenata estava.
 <br />Júlia abraçou Pequenata forte e beijou seus lábios, "Boa sorte amor, bom trabalho", disse Júlia, sorrindo.
@@ -1800,29 +1810,29 @@ Pequenata estava voltando para casa, ela terminou seu trabalho e estava carregan
 <br />Pequenata olhou para sua direita e viu Júlia, ela abraçou Júlia apertado e beijou seus lábios, dizendo "Eu te amo".
 <br />Júlia disse eu te amo de volta e beijou os lábios de Pequenata.
 <br />Então Júlia fechou a Livestream de jogo, ela abriu o jogo Countable Vegestrike 1.6 para jogar novamente.
-<br />A garota estava no time dos terroristas, ela precisava plantar uma bomba, o time dos Contra-terroristas precisavam desarma-la.
-<br />Júlia era muito boa nisso, ela tinha feito muitas baixas e tiros na cabeça.
+<br />A garota estava no time dos terroristas, ela precisava plantar uma bomba, o time dos Contra-terroristas precisavam desarmá-la.
+<br />Júlia era muito boa nisso, ela tinha feito muitas baixas e headshots.
 <br />
-<br />Pequenata perguntou se la poderia jogar com ela.
+<br />Pequenata perguntou se poderia jogar com ela.
 <br />Júlia disse sim e enviou o IP do servidor que ela estava jogando para o Vegesapp de Pequenata, Júlia usou o site Vegesapp web para enviar o IP do servidor para Pequenata.
 <br />Pequenata então abriu o Vegesapp no aplicativo de seu computador para pegar o IP, também usando o Vegesapp Web.
 <br />(Vegesapp é um aplicativo que você pode instalar em seu celular, ele te deixa conversar com pessoas, você precisa de um número de celular e um cartão SIM para usá-lo.)
 <br />Ela abriu o jogo de FPS, voltou para o navegador e copiou o IP.
 <br />Então abriu o jogo novamente e colou o IP.
-<br />Ela começou a jogar o jogo, ela estava no mesmo time que Júlia.
+<br />Ela começou a jogar o jogo e estava no mesmo time que Júlia.
 <br />Júlia estava à sua direita, jogando em seu notebook.
 <br />Quando Júlia morria, Pequenata podia ver onde o inimigo estava, olhando na tela de Júlia.
 <br />Pequenata e Júlia fizeram muitas baixas juntas, elas estavam felizes jogando o jogo.
 <br />
 <br />O casal estava um pouco cansado, elas desligaram seus dispositivos e Júlia deixou seu notebook carregando.
 <br />Eram onze da noite, Pequenata começou a preparar o jantar com Júlia.
-<br />Elas comeram juntas e esperaram um pouco para dormir, elas beberam algumas garrafas de água também.
+<br />Elas comeram juntas e esperaram um pouco para dormir, elas beberam um pouco de água também.
 <br />Pequenata e Júlia trancaram a porta da frente e desligaram as luzes.
 <br />A garota pegou Júlia no colo, andando com ela até o quarto.
-<br />Então ela deixou Júlia deitada na cama e deitou-se ao lado dela, cobrindo as duas com o cobertor.
+<br />Então ela deixou Júlia deitada na cama e deitou-se ao lado dela, cobrindo a si mesma e Júlia com o cobertor.
 <br />Ela beijou os lábios de Júlia e abraçou ela forte, dormindo com ela, sonhando bons sonhos.
 <br /><br />Capítulo escrito em: 06/08/2017.
-<br />Palavras: 1,753.
+<br />Palavras: 1,745.
 </div>
 </div>
 <br /><br />
@@ -13841,13 +13851,9 @@ comment_modal_33m.onclick = function(event) {
 	}
 }
 </script>
-<br /><br /><br /><br /><br /><br /><br /><br /><br />
-<center>
-<a href="#Sites de Sites: : "><button id="websites_tab_button" class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="border-radius: 50px;" alt="Sites de Sites: : " title="Sites de Sites: : " onclick="openCity('Sites de Sites: : ');Define_Button('websites_tab_button');Change_Button_Color();"><h2>Sites: <i class="fas fa-globe-americas"></i></h2></button></a>
-</center>
-<a name="Sites de Sites: : "></a>
+<a name="Aba de Sites"></a>
 <br />
-<div id="Sites de Sites: : " class="city" style="display:none;border-radius: 50px;">
+<div id="Aba de Sites" class="city" style="display:none;border-radius: 50px;">
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <div class="mobileHide" style="border-radius: 50px;">
 <h4 class="border_color_brown w3-black border_3px border_color_brown" style="margin:10%;border-radius: 50px;"><div style="margin:3%;">
@@ -13967,6 +13973,7 @@ function Open_Chapter(chapter_title, chapter_number) {
 	Chapter_Number = chapter_number;
 	Define_Chapter(Chapter_Number);
 	Add_To_Website_Title(chapter_title, "notification");
+	Hide_Computer_Buttons();
 	Hide_Computer_Notification();
 	Hide_Mobile_Notification();
 }
