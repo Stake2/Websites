@@ -21,7 +21,7 @@
 <meta name="twitter:creator" content="@Stake2__" />
 <meta content="summary_large_image" name="twitter:card" />
 <meta content="https://thestake2.netlify.app/The%20Secret%20of%20the%20Crystals/en-us/" name="twitter:url" />
-<meta name="revised" content="Stake2's Enterprise TM, 24/11/2021" />
+<meta name="revised" content="Stake2's Enterprise TM, 16/12/2021" />
 <meta name="author" content="Stake2" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <meta charset="UTF-8" />
@@ -51,14 +51,18 @@
 <!--- Computer Button bar on the top -->
 <div id="computer_buttons_bar" class="w3-center w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
 <span title="Read story" alt="Read story">
-<a href="#The Secret of the Crystals-read story"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('The Secret of the Crystals-read story');Define_Button('computer_button_1');Change_Button_Color();"><h2>Read story: <i class="fas fa-book-open"></i></h2></button></a>
+<a href="#The Secret of the Crystals_Read story"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('The Secret of the Crystals_Read story');Define_Button('computer_button_1');Change_Button_Color();"><h2>Read story: <i class="fas fa-book-open"></i></h2></button></a>
 </span>
 
 <span title="Other stories" alt="Other stories">
-<a href="#The Secret of the Crystals-other stories"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('The Secret of the Crystals-other stories');Define_Button('computer_button_3');Change_Button_Color();"><h2>Other stories:  <i class="fas fa-book"></i></h2></button></a>
+<a href="#The Secret of the Crystals_Other stories"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('The Secret of the Crystals_Other stories');Define_Button('computer_button_3');Change_Button_Color();"><h2>Other stories:  <i class="fas fa-book"></i></h2></button></a>
 </span>
 
-<br />
+<span class="mobileHide" >
+<a class="" href="#Websites tab">
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" id="websites_tab_button" style="border-radius: 50px;" alt="Websites tab" title="Websites tab" onclick="Hide_Computer_Buttons();openCity('Websites tab');Define_Button('websites_tab_button');Change_Button_Color();"><h2 class="" >
+Websites: <i class="fas fa-globe-americas"></i></h2></button></a>
+</span><br />
 <center><button id="hide_computer_buttons" class="w3-center w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button></center>
 </div>
 
@@ -77,17 +81,21 @@
 
 <span style="font-size:30px;" class="mobileShow text_blue">Mobile button menu: </span>
 
-<a href="#The Secret of the Crystals-read storym" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('The Secret of the Crystals-read storym');Define_Button('mobile_button_1');Change_Button_Color();">
+<a href="#The Secret of the Crystals_Read story_Mobile" onclick="Hide_Mobile_Buttons();">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('The Secret of the Crystals_Read story_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
 <h4>Read story: <i class="fas fa-book-open"></i></h4>
 </button>
 </a>
-<a href="#The Secret of the Crystals-other storiesm" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('The Secret of the Crystals-other storiesm');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#The Secret of the Crystals_Other stories_Mobile" onclick="Hide_Mobile_Buttons();">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('The Secret of the Crystals_Other stories_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
 <h4>Other stories:  <i class="fas fa-book"></i></h4>
 </button>
 </a>
-
+<span class="mobileShow" >
+<a class="" href="#Websites tab">
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" id="websites_tab_button" style="border-radius: 50px;" alt="Websites tab" title="Websites tab" onclick="Hide_Computer_Buttons();openCity('Websites tab');Define_Button('websites_tab_button');Change_Button_Color();"><h4 class="" >
+Websites: <i class="fas fa-globe-americas"></i></h4></button></a>
+</span>
 </div>
 
 <div class="mobileShow"><button id="show_mobile_buttons" class="w3-center w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="Show_Mobile_Buttons();"><h2><i class="fas fa-bars"></i></h2></button>
@@ -131,14 +139,14 @@ function Add_To_Website_Title(text_to_add, source = null) {
 
 <!-- Website computer title -->
 <h2 class="w3-center text_blue w3-animate-zoom mobileHide">
-<p><br /><b>The Secret of the Crystals: <i class="fas fa-book"></i></b><br /><br /><p>
+<p><br /><b>The Secret of the Crystals General: <i class="fas fa-book"></i>: <i class="fas fa-book"></i></b><br /><br /><p>
 </h2>
 </div>
 
 <div class="w3-animate-zoom">
 <!-- Website mobile title -->
 <h4 class="text_blue w3-animate-zoom mobileShow">
-<p><br /><b>The Secret of the Crystals: <i class="fas fa-book"></i></b><br /><br /><p>
+<p><br /><b>The Secret of the Crystals General: <i class="fas fa-book"></i>: <i class="fas fa-book"></i></b><br /><br /><p>
 </h4>
 </div>
 
@@ -191,12 +199,9 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 <br />
 </div>
 
-<a name="The Secret of the Crystals-read story"></a>
-<div id="The Secret of the Crystals-read story" class="city mobileHide" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;">
-<div style="margin:3%;">
-<div id="computer_tab_content_1">
+<a id="computer_tab_1" name="The Secret of the Crystals_Read story"></a>
+<div id="The Secret of the Crystals_Read story" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_1">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Chapters in English: 🇺🇸</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
 <h4><b>
 <div class="w3-animate-zoom">
@@ -204,17 +209,16 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 <a href="#chapter-1" title="1 - The start of the journey"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('chapter-1');Define_Chapter(1);Add_To_Website_Title(' - Chapter: 1 - The start of the journey', 'notification');">1 - The start of the journey</button></a> 
 </div></div>
 </b></h4>
+
 </div>
-</div>
-</h2>
+</div></h2>
+
 </div>
 
-<a name="The Secret of the Crystals-read storym"></a>
-<div id="The Secret of the Crystals-read storym" class="city mobileShow" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;">
-<div style="margin:3%;">
-<div id="computer_tab_content_1">
+
+<a id="mobile_tab_1" name="The Secret of the Crystals_Read story_Mobile"></a>
+<div id="The Secret of the Crystals_Read story_Mobile" class="city mobileShow" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_1">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Chapters in English: 🇺🇸</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
 <h4><b>
 <div class="w3-animate-zoom">
@@ -222,47 +226,44 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 <a href="#chapter-1" title="1 - The start of the journey"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('chapter-1');Define_Chapter(1);Add_To_Website_Title(' - Chapter: 1 - The start of the journey', 'notification');">1 - The start of the journey</button></a> 
 </div></div>
 </b></h4>
+
 </div>
-</div>
-</h4>
+</div></h4>
+
 </div>
 
-<a name="The Secret of the Crystals-readers"></a>
-<div id="The Secret of the Crystals-readers" class="city mobileHide" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;">
-<div style="margin:3%;">
-<div id="computer_tab_content_2">
+
+<a id="computer_tab_2" name="The Secret of the Crystals_Readers"></a>
+<div id="The Secret of the Crystals_Readers" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_2">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Readers: <span class="w3-text-white text_hover_white" >1</span> <i class="fas fa-book-reader"></i><br />Thanks everyone 😊 ❤️</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
 <h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >1</span> - No Readers - Sem Leitores</h2>
 
 <h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >1</span> - No Readers - Sem Leitores</h2>
+
 </div>
-</div>
-</h2>
+</div></h2>
+
 </div>
 
-<a name="The Secret of the Crystals-readersm"></a>
-<div id="The Secret of the Crystals-readersm" class="city mobileShow" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;">
-<div style="margin:3%;">
-<div id="computer_tab_content_2">
+
+<a id="mobile_tab_2" name="The Secret of the Crystals_Readers_Mobile"></a>
+<div id="The Secret of the Crystals_Readers_Mobile" class="city mobileShow" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_2">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Readers: <span class="w3-text-white text_hover_white" >1</span> <i class="fas fa-book-reader"></i><br />Thanks everyone 😊 ❤️</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
 <h2 class="text_hover_white w3-animate-zoom mobileHide " ><span class="w3-text-white" >1</span> - No Readers - Sem Leitores</h2>
 
 <h2 class="text_hover_white w3-animate-zoom mobileShow " ><span class="w3-text-white" >1</span> - No Readers - Sem Leitores</h2>
+
 </div>
-</div>
-</h4>
+</div></h4>
+
 </div>
 
-<a name="The Secret of the Crystals-other stories"></a>
-<div id="The Secret of the Crystals-other stories" class="city mobileHide" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;">
-<div style="margin:3%;">
-<div id="computer_tab_content_3">
+
+<a id="computer_tab_3" name="The Secret of the Crystals_Other stories"></a>
+<div id="The Secret of the Crystals_Other stories" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_3">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Other stories: <span class="w3-text-white" >6</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
 
 <div class="w3-animate-zoom"><div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The%20Life%20of%20Littletato/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The%20Life%20of%20Littletato/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
@@ -284,17 +285,16 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 <br />
 
 </div>
+
 </div>
-</div>
-</h2>
+</div></h2>
+
 </div>
 
-<a name="The Secret of the Crystals-other storiesm"></a>
-<div id="The Secret of the Crystals-other storiesm" class="city mobileShow" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;">
-<div style="margin:3%;">
-<div id="computer_tab_content_3">
+
+<a id="mobile_tab_3" name="The Secret of the Crystals_Other stories_Mobile"></a>
+<div id="The Secret of the Crystals_Other stories_Mobile" class="city mobileShow" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow background_black text_blue border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_3">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Other stories: <span class="w3-text-white" >6</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
 
 <div class="w3-animate-zoom"><div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The%20Life%20of%20Littletato/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The%20Life%20of%20Littletato/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
@@ -316,10 +316,12 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 <br />
 
 </div>
+
 </div>
+</div></h4>
+
 </div>
-</h4>
-</div>
+
 
 <div id="chapters-div">
 
@@ -342,8 +344,8 @@ Chapter: 1 - The start of the journey</b>
 </div>
 
 <h5 class="background_cyan text_black" style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#The Secret of the Crystals-read story"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" style="float: right;border-radius: 50px;" onclick="openCity('The Secret of the Crystals-read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
-<a href="#The Secret of the Crystals-read storym"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileShow" style="float: right;border-radius: 50px;" onclick="openCity('The Secret of the Crystals-read storym')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#The Secret of the Crystals_Read story"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" style="float: right;border-radius: 50px;" onclick="openCity('The Secret of the Crystals_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#The Secret of the Crystals_Read story_Mobile"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileShow" style="float: right;border-radius: 50px;" onclick="openCity('The Secret of the Crystals_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <div id="chapter-text-1" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
@@ -674,13 +676,9 @@ comment_modal_1m.onclick = function(event) {
 	}
 }
 </script>
-<br /><br /><br /><br /><br /><br /><br /><br /><br />
-<center>
-<a href="#Websites:  tab: "><button id="websites_tab_button" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" alt="Websites:  tab: " title="Websites:  tab: " onclick="openCity('Websites:  tab: ');Define_Button('websites_tab_button');Change_Button_Color();"><h2>Websites: <i class="fas fa-globe-americas"></i></h2></button></a>
-</center>
-<a name="Websites:  tab: "></a>
+<a name="Websites tab"></a>
 <br />
-<div id="Websites:  tab: " class="city" style="display:none;border-radius: 50px;">
+<div id="Websites tab" class="city" style="display:none;border-radius: 50px;">
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <div class="mobileHide" style="border-radius: 50px;">
 <h4 class="border_color_cyan w3-black border_3px border_color_cyan" style="margin:10%;border-radius: 50px;"><div style="margin:3%;">
@@ -798,6 +796,7 @@ function Open_Chapter(chapter_title, chapter_number) {
 	Chapter_Number = chapter_number;
 	Define_Chapter(Chapter_Number);
 	Add_To_Website_Title(chapter_title, "notification");
+	Hide_Computer_Buttons();
 }
 
 function Check_Chapter_Number_On_Link() {
@@ -862,10 +861,13 @@ var last_chapter_texts = [
 var parameter_text = local_website_url.split("?")[local_website_url.split("?").length - 1];
 var parameter_text_replaced = parameter_text.replace("[", "").replace("]", "").replace("(", "").replace(")", "").replace("%20", " ").replace("#", " ");
 
+parameter_text_replaced = parameter_text_replaced.split("&")[parameter_text_replaced.split("&").length - 1];
+
 console.log("Parameter Text: " + parameter_text);
 console.log("Replaced Parameter Text: " + parameter_text_replaced);
 
 if (last_chapter_texts.indexOf(parameter_text_replaced) != -1) {
+	console.log("Website URL includes last chapter text.");
 	Open_Chapter(Last_Chapter_Title, Last_Chapter);
 }
 </script>
