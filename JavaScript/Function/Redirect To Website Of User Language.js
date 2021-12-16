@@ -205,6 +205,105 @@ function Check_Website_Link() {
 		}
 	}
 
+	var english_website_name = "My Little Pony: Friendship Is Magic";
+	var portuguese_website_name = "My Little Pony: A Amizade É Mágica";
+
+	if (website_title == english_website_name + " General" && check == false) {
+		var website_language = "General";
+
+		if (website_language == user_language) {
+			return;
+		}
+
+		else {
+			if (user_language == english_language) {
+				var choosen_website_url = website_link + english_website_name.replace(":", "") + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+
+			if (user_language == portuguese_language) {
+				var choosen_website_url = website_link + portuguese_website_name.replace(":", "") + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+		}
+	}
+
+	if (website_title == english_website_name && check == false) {
+		var website_language = "en-US";
+
+		if (website_language == user_language) {
+			return;
+		}
+
+		else {
+			if (user_language == english_language) {
+				var choosen_website_url = website_link + english_website_name.replace(":", "") + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+
+			if (user_language == portuguese_language) {
+				var choosen_website_url = website_link + portuguese_website_name.replace(":", "") + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+		}
+	}
+
+	if (website_title == portuguese_website_name && check == false) {
+		var website_language = "pt-BR";
+
+		if (website_language == user_language) {
+			return;
+		}
+
+		else {
+			if (user_language == english_language) {
+				var choosen_website_url = website_link + english_website_name.replace(":", "") + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+
+			if (user_language == portuguese_language) {
+				var choosen_website_url = website_link + portuguese_website_name.replace(":", "") + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+		}
+	}
+
+	if (website_title == portuguese_website_name + " PT-PT" && check == false) {
+		var website_language = "pt-PT";
+
+		if (website_language == user_language) {
+			return;
+		}
+
+		else {
+			if (user_language == english_language) {
+				var choosen_website_url = website_link + english_website_name.replace(":", "") + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+
+			if (user_language == portuguese_language) {
+				var choosen_website_url = website_link + portuguese_website_name.replace(":", "") + "/";
+				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
+				window.location = redirect_to;
+				return;
+			}
+		}
+	}
+
 	if (website_title == "Things I Do Geral" && check == false) {
 		var website_language = "General";
 
