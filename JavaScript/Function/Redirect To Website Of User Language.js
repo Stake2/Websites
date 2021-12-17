@@ -688,7 +688,7 @@ function Check_Website_Link() {
 	var website_name = "The Secret of the Crystals";
 	var portuguese_website_name = "O Segredo dos Cristais";
 
-	if (website_title == website_name + " Geral" && check == false) {
+	if (website_title == website_name + " General" && check == false) {
 		var website_language = "General";
 
 		if (website_language == user_language) {
