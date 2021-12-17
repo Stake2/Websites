@@ -21,7 +21,7 @@
 <meta name="twitter:creator" content="@Stake2__" />
 <meta content="summary_large_image" name="twitter:card" />
 <meta content="https://thestake2.netlify.app/O%20Segredo%20dos%20Cristais/pt-pt/" name="twitter:url" />
-<meta name="revised" content="Stake2's Enterprise TM, 16/12/2021" />
+<meta name="revised" content="Stake2's Enterprise TM, 17/12/2021" />
 <meta name="author" content="Stake2" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <meta charset="UTF-8" />
@@ -32,6 +32,7 @@
 <link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Main_CSS.css" />
 <link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Website CSS/The Secret of the Crystals.css" />
 <link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Colors.css" />
+<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Notifications.css" />
 
 <!-- JavaScript files -->
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
@@ -193,10 +194,55 @@ Teremos que ler para saber, aqui começa O Segredo dos Cristais."<br /></h4>
 
 <h4 class="text_blue">
 Autor da história: <span class="text_cyan"><span class="w3-text-orange" >Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span><br /></span>
-Capítulo: <span class="text_cyan">1 <i class="fas fa-book-open"></i></span><br />
+Capítulos: <span class="text_cyan">2 <i class="fas fa-book-open"></i></span><br />
 Data de criação da história: <span class="text_cyan">02/04/2020</span><br />
 Status: <span class="text_cyan">[Escrevendo]</span></h4>
 <br />
+</div>
+<script>
+function Change_Website_Title() {
+	document.title = document.title.replace('(1) ', '');
+}
+</script>
+<div id="notification_div_computer" class="element_appear_from_bottom border border_3px_solid_black background_cyan mobileHide" style="position:fixed;right:0;bottom:0;padding-top:2%;padding-bottom:2%;padding-left:7%;padding-right:7%;border-radius: 50px;">
+<h3 class="mobileHide">
+
+<span id="notification_close_button_computer" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white border_3px_solid_black" style="float:left;margin-left:-7.3%;border-radius: 50px;box-shadow: 0 9px black!important;">
+<b>
+X
+</b>
+</span>
+
+Novo capítulo revisado <i class="fas fa-bell"></i>
+<b>
+<span style="margin-left:2%;">
+<a href="#capítulo-2" title="2 - O segredo e a sobrevivência"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-2');Define_Chapter(2);Add_To_Website_Title(' - Capítulo: 2 - O segredo e a sobrevivência', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">2 - O segredo e a sobrevivência</button></a> 
+
+</span>
+</b>
+</h3>
+</div>
+<div id="notification_div_mobile" class="element_appear_from_bottom border border_3px_solid_black background_cyan mobileShow" style="position:fixed;right:0;bottom: 0;padding-top:1%;padding-bottom:1%;padding-left:10%;padding-right:10%;border-radius: 50px;">
+<h2 class="mobileShow">
+
+<span id="notification_close_button_mobile" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white border_3px_solid_black mobileShow" style="float:left;border-radius: 50px;box-shadow: 0 9px black!important;">
+<b>
+X
+</b>
+</span>
+<br /><br /><b>
+<h4>
+Novo capítulo revisado <i class="fas fa-bell"></i>
+</h4>
+</b>
+
+<b>
+<span class="mobileShow">
+<a href="#capítulo-2" title="2 - O segredo e a sobrevivência"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-2');Define_Chapter(2);Add_To_Website_Title(' - Capítulo: 2 - O segredo e a sobrevivência', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">2 - O segredo e a sobrevivência</button></a> 
+
+</span>
+</b>
+</h2>
 </div>
 
 <a id="computer_tab_1" name="The Secret of the Crystals_Ler história"></a>
@@ -206,7 +252,9 @@ Status: <span class="text_cyan">[Escrevendo]</span></h4>
 <h4><b>
 <div class="w3-animate-zoom">
 <div class="shake_side_to_side_animation">
-<a href="#capítulo-1" title="1 - O começo da jornada"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Define_Chapter(1);Add_To_Website_Title(' - Capítulo: 1 - O começo da jornada', 'notification');">1 - O começo da jornada</button></a> 
+<a href="#capítulo-1" title="1 - O começo da jornada"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Define_Chapter(1);Add_To_Website_Title(' - Capítulo: 1 - O começo da jornada', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">1 - O começo da jornada</button></a> 
+</div><div class="shake_side_to_side_animation">
+<a href="#capítulo-2" title="2 - O segredo e a sobrevivência"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-2');Define_Chapter(2);Add_To_Website_Title(' - Capítulo: 2 - O segredo e a sobrevivência', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">2 - O segredo e a sobrevivência</button></a> 
 </div></div>
 </b></h4>
 
@@ -223,7 +271,9 @@ Status: <span class="text_cyan">[Escrevendo]</span></h4>
 <h4><b>
 <div class="w3-animate-zoom">
 <div class="shake_side_to_side_animation">
-<a href="#capítulo-1" title="1 - O começo da jornada"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Define_Chapter(1);Add_To_Website_Title(' - Capítulo: 1 - O começo da jornada', 'notification');">1 - O começo da jornada</button></a> 
+<a href="#capítulo-1" title="1 - O começo da jornada"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-1');Define_Chapter(1);Add_To_Website_Title(' - Capítulo: 1 - O começo da jornada', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">1 - O começo da jornada</button></a> 
+</div><div class="shake_side_to_side_animation">
+<a href="#capítulo-2" title="2 - O segredo e a sobrevivência"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('capítulo-2');Define_Chapter(2);Add_To_Website_Title(' - Capítulo: 2 - O segredo e a sobrevivência', 'notification');Hide_Computer_Notification();Hide_Mobile_Notification();">2 - O segredo e a sobrevivência</button></a> 
 </div></div>
 </b></h4>
 
@@ -344,8 +394,9 @@ Capítulo: 1 - O começo da jornada</b>
 </div>
 
 <h5 class="background_cyan text_black" style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#The Secret of the Crystals_Ler história"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" style="float: right;border-radius: 50px;" onclick="openCity('The Secret of the Crystals_Ler história')"><h3><i class="fas fa-bars"></i></h3></button></a>
-<a href="#The Secret of the Crystals_Ler história_Mobile"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileShow" style="float: right;border-radius: 50px;" onclick="openCity('The Secret of the Crystals_Ler história_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#capítulo-2"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - O segredo e a sobrevivência', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#The Secret of the Crystals_Ler história"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Secret of the Crystals_Ler história')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#The Secret of the Crystals_Ler história_Mobile"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Secret of the Crystals_Ler história_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <div id="capítulo-text-1" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
@@ -356,7 +407,7 @@ Comecei a escrever essa história em 02/04/2020.
 <br />(<a class="text_white" href="https://www.youtube.com/watch?v=B1wglf-7EkU" target="_blank">Link do YouTube</a>).
 <br />Músicas: Out My Head, Amethyst, Maelstrom, Mermaid, Coral
 <br />
-<br />Fui inspirado pelo álbum acima, e um cara escreveu um comentário na página do SoundCloud da música chamada Coral <a class="text_white" href="https://soundcloud.com/rushdownrecs/sharks-coral?in=sharkstunes/sets/maelstrom-ep-rushdown-release" target="_blank">Coral</a> do álbum.
+<br />Fui inspirado pelo álbum acima, e um cara escreveu um comentário na página do SoundCloud da música chamada <a class="text_white" href="https://soundcloud.com/rushdownrecs/sharks-coral?in=sharkstunes/sets/maelstrom-ep-rushdown-release" target="_blank">Coral</a> do álbum.
 <br />Seu nome de usuário é TImeShocked, o link é vinod-mahadik-806863844, ele comentou em 0:44 da música.
 <br />Esse é seu comentário:
 <br />Para concluir o EP, eu fiz uma história que resume o EP, Havia uma garota chamada Anna que conheceu uma colega de classe que pode ler sua mente e Anna parece nunca notar. Depois de alguns dias, Anna suspeitou de sua colega de classe tendo um "?". "Como ela pode ler minha mente?". Ela decidiu confrontar ela e dizer para ela sair de sua mente "OUT MY HEAD". Depois que ela fez isso, sua colega de classe parou de ler sua mente. Mas elas ainda eram amigas. Depois disso elas foram para a praia depois de algumas horas, Anna viu uma "AMETHYST" (ametista) brilhando na costa. Anna foi pegar e estava difícil de tirar. Depois de tirar ela do chão, Anna notou que ela estava sendo sugada para o oceano, mas não era o oceano, era um "MAELSTROM" (redemoinho)! Depois de ser sugada Anna estava chocada pelo fato de que ela podia respirar debaixo d'água e estava admirando as algas mágicas dos oceanos brilhando. Depois de algum tempo ela encontrou uma "MERMAID" (sereia) que parecia legal e lhe ofereceu abrigo. Depois disso, ela viveu nas algas de "CORAL" para sempre.
@@ -401,7 +452,6 @@ Comecei a escrever essa história em 02/04/2020.
 <br />Então ela preparou uma fogueira e deixou ela a queimar, pegou um pouco de lama, e fez dois potes com ela.
 <br />Ela encontrou uma peneira de metal deixada ali, pegou ela, e derreteu a resina de árvore que ela pegou das árvores com a ajuda do pote de lama, então filtrou as impurezas da resina em outro pote.
 <br />Ana adicionou o carvão em pó na mistura e mexeu, ela acabou de fazer uma cola natural com resina de árvore.
-<br />
 <br />Ela derreteu ela novamente porque já estava seca e consertou sua jóia que estava quebrada ao meio, ela começou a brilhar com uma luz azul.
 <br />As asas de Ana apareceram novamente em suas costas, brilhando muito em azul e soltando glitter, ela bateu elas um pouco, sua jóia rosa brilhando na mesma coisa.
 <br />
@@ -411,7 +461,6 @@ Comecei a escrever essa história em 02/04/2020.
 <br />Então, uma criatura parecida com um pássaro começou a voar ao lado dela, ele perguntou onde ela estava indo, ela disse que ela só estava viajando e voando pelo mundo.
 <br />A criatura disse que seu nome era Tod, ele era um Kódek, uma criatura que é como um pássaro, um gavião, e vive nas Montanhas de Aris, perto da Ilha dos Vulcões da Morte.
 <br />Tod disse que era perigoso lá porque era perto dos Vulcões da Morte, algumas vezes um dos vulcões entrava em erupção e invadia suas casas.
-<br />
 <br />Ela disse que sentia falta de casa, Tod disse que ele sentia falta de sua também, ele disse que iria viajar de volta para casa, para ver sua família, e aconselhou Ana a fazer o mesmo.
 <br />Ana respondeu a Tod, o desejando boa sorte, querendo que ele esteja seguro, Tod desejou boa sorte para Ana também.
 <br />
@@ -471,10 +520,11 @@ Comecei a escrever essa história em 02/04/2020.
 <br />Ana conhecia muitas ilhas e lugares para ir, nesse mundo, esse planeta que ela vivia, ela está acostumada a viajar muito e conhece bastante do mundo.
 <br />A fada tinha um mapa do mundo em sua mente, ela conhecia as Nuvens da Loucura, Terras de Cristal, Montanhas de Aris, e os Vulcões da Morte.
 <br />Ela pensa que Tod falou um pouco sobre as Montanhas de Aris, perto dos Vulcões da Morte, ela queria ir para lá para visitar ele.
-<br /><br />Palavras: 2,219.
+<br /><br />Palavras: 2,218.
 </div>
 </div>
 <br /><br />
+<a href="#capítulo-2"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - O segredo e a sobrevivência', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" id="comment_button_1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comentar <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -502,6 +552,249 @@ Comecei a escrever essa história em 02/04/2020.
 
 <b>Você está lendo: O Segredo dos Cristais<br />
 Capítulo: 1 - O começo da jornada</b>
+
+<br />
+</span>
+</div>
+</div>
+<div class="mobileShow"><br /></div>
+</h5>
+</div>
+
+<a name="capítulo-2"></a>
+<div id="capítulo-2" class="city background_cyan text_black border_color_black border_1px  border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<br />
+<div class="mobileHide"><h2 class="background_cyan text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+
+<b>Você está lendo: O Segredo dos Cristais<br />
+Capítulo: 2 - O segredo e a sobrevivência</b>
+
+</div></h2></div>
+<div style="margin:3%;"><div class="mobileShow"><h4 class="background_cyan text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+
+<b>Você está lendo: O Segredo dos Cristais<br />
+Capítulo: 2 - O segredo e a sobrevivência</b>
+
+</div></h4></div>
+</div>
+
+<h5 class="background_cyan text_black" style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
+<a href="#capítulo-1"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - O começo da jornada', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
+<a href="#The Secret of the Crystals_Ler história"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" style="float: right;border-radius: 50px;" onclick="openCity('The Secret of the Crystals_Ler história')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#The Secret of the Crystals_Ler história_Mobile"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileShow" style="float: right;border-radius: 50px;" onclick="openCity('The Secret of the Crystals_Ler história_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<br /><br /><br /><br />
+<div class="w3-animate-zoom">
+<div id="capítulo-text-2" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
+Ana ainda estava voando, ela chegou perto das Montanhas de Aris, era uma ilha com muitos cristais de várias cores que saiam de dentro do chão.
+<br />Eles eram muito bonitos, haviam cristais vermelhos, azuis, azul claros, rosas, laranjas, amarelos, brancos, pretos, e verdes.
+<br />Eles eram brilhantes e pontudos, Ana gostava da visão deles, ela queria chegar perto para sentir os cristais com sua mão.
+<br />Ela voou mais e pousou na areia, um Kódek recebeu ela, perguntando quem ela era.
+<br />"Sou uma amiga de um Kódek chamado Tod, você conhece ele?" perguntou ANa.
+<br />"Ah, Tod, sim, acho que ele foi pra uma ilha ao norte, ele nunca fica em casa, algumas vezes eu fico preocupada com ele.
+<br />Algumas vezes penso que ele vai se meter em encrenca", disse o Kódek.
+<br />"Ah, obrigada, acho que vou lá pra falar com ele, pra ver se ele tá bem, ok?" disse Ana.
+<br />"Ok, obrigada, minha querida, qual seu nome?" perguntou o Kódek.
+<br />"Meu nome é Ana, qual o seu?" perguntou Ana.
+<br />"Meu nome é Sophia, sou a mãe de Tod..." disse o Kódek.
+<br />"Ah, vou ter certeza de que ele esteja bem Sophia! Não se preocupa, vou trazer seu filho de volta pra casa", disse Ana, animada e corajosa, fechando sua mão.
+<br />"Muito obrigada, minha querida, tô tão feliz agora", disse Sophia, ela voou e abraçou Ana, Ana a abraçou de volta.
+<br />Então Ana deu tchau para Sophia e começou a voar para a ilha ao norte.
+<br />
+<br />Ela estava voando alto no céu, começou a chover, ela estava com seu colar rosa.
+<br />Ana estava pegando a chuva, estava um pouco frio, "Posso pegar um resfriado aqui", pensou ela.
+<br />Então ela segurou seu colar e criou uma bolha de fogo ao redor dela, se protegendo da chuva fria.
+<br />Sua mãe havia lhe ensinado a como usar a magia do colar, era muito poderosa e tinha muitos feitiços.
+<br />Ana continuou voando até a ilha do norte, procurando por Tod.
+<br />Ela pensou sobre o mistério dos cristais, qual era sua história de origem, como eles apareceram naquela ilha.
+<br />De repente, a chuva parou, um lindo arco-íris apareceu no céu, e o sol apareceu novamente.
+<br />Ana olhou para aquilo e pensou que era muito bonito e uma vista maravilhosa.
+<br />Ela continuou voando com suas asas azuis, procurando pela ilha do norte.
+<br />
+<br />Ana viu uma ilha lá, com palmeiras, uma floresta, e areia ao redor da ilha, era manhã.
+<br />Ela pensou que era aquela ilha, então ela voou para perto dela e pousou na areia.
+<br />Ana andou pela ilha procurando por Tod, olhando para as árvores, a areia, a terra.
+<br />A fada encontrou um pássaro humanoide lá, um pássaro com a forma de um humano, ela olhou para ele com curiosidade.
+<br />"Olá... Quem é você?..." perguntou Ana, olhando para a criatura.
+<br />"Ei... Eu sou um Kódek, acho que você nunca viu um Kódek assim né?" perguntou o Kódek, olhando para Ana.
+<br />"É... Eu nunca vi um assim, posso perguntar seu nome?" perguntou Ana.
+<br />"Sim... Meu nome é Tod, desculpa por te fazer me ver assim... Sou feio né?" perguntou Tod, se sentindo mal por mostrar esse lado dele para Ana.
+<br />"Não, você é lindo Tod, eu não acho que você seja feio! Você tá mais legal do que antes!" respondeu Ana, olhando para Tod.
+<br />"Sério?... Obrigado, Ana, isso significa muito pra mim, é que os Kódeks não mostram suas formas humanoides para todo mundo...
+<br />Isso é um segredo entre nós Kódeks e ninguém sabe sobre isso, então por favor, não fale pra ninguém que você viu isso, ok?" perguntou Tod.
+<br />"Não vou contar pra ninguém, eu prometo... Então... Como você se transforma em um humano ou um pássaro humanoide?" perguntou Ana.
+<br />"Eu tenho sangue humano, todos os Kódeks tem, a história é que há muito tempo atrás, uma raça das trevas dominava o planeta.
+<br />Eles nos amaldiçoaram, e nos transformaram em pássaros, a gente era humano antes.
+<br />Então, um grande mágico ajudou a gente, ele nos curou, e nós pudemos se transformar em humanos novamente.
+<br />Mas a gente não aceitou isso, nós nos acostumamos a ser pássaros, e esse segredo da gente ter sangue humano foi escondido.
+<br />Então eu sempre vou para ilhas onde não tem ninguém, pra mim poder me transformar em um pássaro humanoide e ser eu mesmo porque é assim que eu sinto que sou.
+<br />Eu posso até me transformar em um humano", diz Tod, se transformando em um humano, "Viu?"
+<br />"Isso é incrível Tod! Eu queria poder me transformar em um pássaro, um pássaro legal como você, e sua forma de pássaro humanoide é legal também.
+<br />Sinto muito por você não poder se transformar em um pássaro humanoide ou um humano na frente dos outros... Mas você se transformou nisso na minha frente.
+<br />E você não correu ou tentou esconder quando me viu chegando... Por que?" perguntou Ana.
+<br />"Porque eu pensei que você iria entender... Pensei que você não teria preconceito... E não iria me julgar pela minha aparência", respondeu Tod.
+<br />"Ah, fico feliz de saber que você pensa isso de mim, é claro, eu nunca iria te julgar pela sua aparência..." disse Ana.
+<br />"Hehe, fico feliz de ter uma amiga como você Ana", disse Tod, sorrindo para Ana.
+<br />"Sério? Somos amigos?" perguntou Ana, surpresa, sorrindo um pouco.
+<br />"É claro que a gente é amigo bobinha", disse Tod, sorrindo para Ana, ele andou para perto dela em sua forma de humano, abraçando ela.
+<br />Ana aceitou o abraço e sorriu, "Obrigada Tod, você é um bom amigo", disse ela.
+<br />(É assim que a forma humanoide de Tod se parece.)
+<br /><br /><div class="mobileHide">
+<a href="https://thestake2.netlify.app/Images/Website Images/The Secret of the Crystals/Chapter Images/Humanoid Kódek.jpg" target="_blank"><img src="https://thestake2.netlify.app/Images/Website Images/The Secret of the Crystals/Chapter Images/Humanoid Kódek.jpg" width="50%" style="border-width:3px;border-color:black;border-style:solid;border-radius:32px;" /></a>
+</div>
+<div class="mobileShow">
+<a href="https://thestake2.netlify.app/Images/Website Images/The Secret of the Crystals/Chapter Images/Humanoid Kódek.jpg" target="_blank"><img src="https://thestake2.netlify.app/Images/Website Images/The Secret of the Crystals/Chapter Images/Humanoid Kódek.jpg" width="100%%" style="border-width:3px;border-color:black;border-style:solid;border-radius:32px;" /></a>
+</div><div class="mobileHide"></div>
+<br />(O falcão na esquerda do Plumbob do Atlas de No Man's Sky na capa da história é a versão pássaro do Tod.)
+<br />
+<br />"Então... O que você tá fazendo aqui nessa ilha Tod?" perguntou Ana.
+<br />"Só tô construindo coisas da natureza, construindo casas, fogueiras, caçando, e tal, amo fazer coisas da natureza", disse Tod.
+<br />"Sério? Eu amo fazer isso também, é uma grande paixão pra mim, a gente devia fazer juntos alguma hora!" disse Ana, animada, sorrindo para Tod.
+<br />"É claro, sobreviver é sempre mais legal com um amigo", disse Tod, sorrindo.
+<br />Então Ana andou pela ilha, olhando para as árvores e a areia.
+<br />"Você já construiu algo aqui?" perguntou Ana, olhando para Tod em sua forma humana.
+<br />"Não, acabei de chegar, faz alguns minutos, eu tava pensando no que construir primeiro, e aí você chegou, hehe", disse Tod sorrindo.
+<br />"Hehe, deveríamos fazer um machado?" perguntou Ana, olhando para ele.
+<br />"Parece bom!" disse Tod.
+<br />Então eles procuraram uma boa árvore para fazer um cabo de machado, eles encontraram uma pedra pequena que parecia com uma faca.
+<br />Tod pegou essa pedra e pegou um galho de árvore espesso.
+<br />Ele pegou uma grande pedra e andou para perto da água, ele encharcou a pedra com água e andou para perto da floresta, sentando lá.
+<br />Ana seguiu ele, olhando para o que ele havia feito, Tod começou a talhar a pedra pequena para fazê-la ficar mais afiada, tipo uma faca.
+<br />Então ele andou para perto de uma boa árvore e começou a cortar ela com a ajuda da faca e do galho de árvore espesso.
+<br />Depois disso, Ana e ele pegaram o tronco juntos e andaram para perto da saída da floresta, deixando o tronco lá.
+<br />Ana pegou a faca e o galho de árvore espesso, partindo o tronco ao meio.
+<br />Ela começou a fazer um buraco na metade do tronco para colocar uma pedra afiada dentro dele, ela deu a faca e o galho de árvore para Tod.
+<br />Tod fez o mesmo que Ana, fazendo um buraco na outra metade do tronco para colocar uma pedra afiada dentro dele.
+<br />
+<br />Ambos andaram até a floresta para procurar por pedras largas e retangulares.
+<br />Os dois encontraram duas pedras retangulares e trouxeram elas para o lugar onde as metades de troncos estavam.
+<br />Ana começou a talhar a pedra retangular com a grande pedra molhada, afiando ela para parecer com uma lâmina de machado.
+<br />Então ela deixou a pedra molhada lá, pegou seu cabo de machado e sua lâmina de machado, e esperou por Tod terminar sua lâmina.
+<br />Tod pegou a pedra retangular que ele tinha e afiou ela usando a pedra molhada.
+<br />Ana olhou para ele, e as coisas que eles já fizeram juntos, ela estava feliz de sobreviver com ele, era legal fazer coisas da natureza com outra pessoa.
+<br />Então Tod e Ana pegaram suas partes de seus machados.
+<br />Ambos pegaram o galho de árvore espesso e começaram a colocar a lâmina de machado dentro do buraco do cabo de machado.
+<br />Depois de alguns minutos, ambos terminaram de fazer dois machados com pedras afiadas como as lâminas.
+<br />Eles estavam felizes e gritaram animados.
+<br />Os dois pegaram maçãs para comer, eles comeram e sorriram um para o outro.
+<br />"O que acha da gente fazer uma fogueira e algumas jarras de barro?" perguntou Ana.
+<br />"Acho que é uma boa idéia, Ana", respondeu Tod.
+<br />Então Ana procurou por uma pedra grande na floresta, ela encontrou ela e trouxe para perto de onde Tod estavam.
+<br />Havia um pequeno riacho na floresta, ele tinha água corrente e lama.
+<br />Ana e Tod andaram até esse riacho, eles começaram a pegar um pouco de lama e trazer ela para perto da grande pedra.
+<br />Ana fez uma jarra de barro e Tod também, eles começaram a cortar árvores e pegar galhos de árvores para fazer um fogo.
+<br />
+<br />Eles também pegaram algumas folhas secas para usar como pavio, eles sentaram-se no chão juntos e arrumaram os gravetos, galhos, e folhas como uma fogueira.
+<br />Eles cortaram três buracos em um graveto e colocaram ele em cima das folhas secas.
+<br />Então Ana colocou um graveto em um dos buracos do outro graveto, virando ele contra o outro até que fumaça saia das folhas secas.
+<br />Depois que a fumaça aparece, Ana tira os dois gravetos de cima das folhas e pega elas com suas mãos, soprando elas gentilmente para fazer um fogo.
+<br />Então, depois que o fogo aparece, Ana deixa as folhas secas em cima dos gravetos e galhos organizados como uma fogueira.
+<br />Eles continuam adicionando galhos secos e gravetos ao fogo para abastecerem ele.
+<br />Então Tod pega a grande pedra seca e coloca ela perto do fogo, ele pega as duas jarras de barro e coloca elas em cima da pedra para elas secarem.
+<br />As jarras secam e Ana pega elas, ela enche ambas com água do oceano.
+<br />"Ei, devemos fazer uma fornalha aqui?" pergunta Tod.
+<br />"Sim, assim a gente pode cozinhar comida em cima dela, e ferver água também, a gente não pode beber água do oceano, a gente tem que ferver ela", disse Ana.
+<br />Então Tod começou a pegar um pouco de lama do riacho pequeno que estava dentro da floresta.
+<br />Ele trouxe a lama para perto da fogueira e começou a fazer tijolos com ela, deixando eles perto do fogo para secar.
+<br />Então, com a ajuda de Ana, Tod conseguiu fazer uma fornalha no fogo.
+<br />Eles podem abastecer o fogo de baixo, e o fogo sai para fora por cima.
+<br />Ana fez uma tampa de lama para a jarra, ela coloca ela em cima da fornalha para secar.
+<br />Depois de alguns minutos, Tod pega uma jarra de água e coloca a tampa em cima dela, então ele deixa a jarra em cima da fornalha.
+<br />A água começa a ferver, Ana e Tod esperaram por um tempo, eles pegaram dois galhos de árvore espessos e cuidadosamente tiraram a jarra quente de cima da fornalha.
+<br />
+<br />Os dois esperaram a água ficar mais fria, Ana fez um copo de lama para ela e para Tod também, eles deixaram os copos em cima da fornalha para secarem.
+<br />Então, eles pegaram a água fria da jarra, e colocaram ela em seus copos, sentaram-se na areia, bebendo enquanto olhavam um para o outro.
+<br />Ana e Tod olharam para tudo o que eles construíram juntos, as jarras, a fogueira, os machados, eles estavam tão felizes.
+<br />"Não sabia que você gostava de fazer coisas da natureza, é muito interessante... Esse interesse que você tem, hehe", disse Tod sorrindo.
+<br />"Hehe, eu não sabia que você gostava de fazer artes da mata também, é uma coisa muito boa, relaxante.
+<br />Faz você esquecer dos problemas e parar de pensar neles, é por isso que eu gosto.
+<br />Me sinto em casa aqui, é o que eu amo fazer", diz Ana, sorrindo para Tod.
+<br />"Olha pra tudo que a gente fez, hehe, tô tão orgulhoso!" disse Tod, olhando para os machados, a fogueira, e as jarras.
+<br />"Eu também! É legal sobreviver juntos, eu nunca compartilhei esse interesse com ninguém, é bom ter alguém pra compartilhá-lo", disse Ana.
+<br />"Concordo contigo, é muito bom compartilhar ele, algumas vezes me sinto tão solitário sobrevivendo sozinho... Eu queria ter alguém lá comigo.
+<br />E olha o que eu tenho agora... Você! Hehe, obrigado Ana", disse Tod, sorrindo para Ana.
+<br />"Não há de que, hehe, eu sempre aprecio uma boa companhia", disse Ana.
+<br />"Então... O que a gente devia fazer agora?" perguntou Tod.
+<br />"Podemos pescar algo?" perguntou Ana.
+<br />"É, acho que é uma boa idéia!" disse Tod.
+<br />"A gente tem que fazer uma lança primeiro", disse Ana.
+<br />"Sim, vamos fazer ela então", disse Tod, que começou a procurar por uma boa árvore fina para cortar, ele encontrou uma e cortou ela.
+<br />Tod então andou até o fogo e colocou a ponta da lança no fogo para queimar a ponta cega.
+<br />Depois disso, ele pegou a lança com sua ponta queimando e raspou ela em uma pedra para afiá-la.
+<br />Então ele se sentou no chão e pegou um pedaço de madeira, Tod poliu a ponta da lança com ela.
+<br />"Então, quem vai primeiro?" perguntou Tod, olhando para Ana.
+<br />"Não sei, você pode ir se quiser, eu nunca usei uma lança", respondeu Ana.
+<br />"Ok, posso te ensinar a como usar?" perguntou Tod.
+<br />"É claro, eu amaria uma ajuda!" disse Ana, sorrindo, animada para aprender a como usar a lança.
+<br />Então Tod e Ana andaram para perto da água, haviam alguns peixes perto da costa.
+<br />Tod deu a lança para Ana e mostrou a ela como mirar, ele disse para ela esperar até que a água e os peixes ficassem calmos, então ela poderia atirar.
+<br />Ela esperou por alguns segundos e atirou a lança em um peixe, ela conseguiu pegá-lo, Ana gritou animada.
+<br />"Você conseguiu! De primeira, hehe", disse Tod, sorrindo para Ana, orgulhoso dela.
+<br />"Sim! Obrigada por me ensinar, Tod", disse Ana.
+<br />"Não há de que, hehe", disse Tod.
+<br />
+<br />Então Tod pegou outro, eles começaram a pegar um pouco de lama no riacho da floresta para fazer duas paredes pequenas nos lados da fornalha.
+<br />Depois disso, eles andaram pela floresta, tentando encontrar árvores com um Y no meio do galho.
+<br />Eles cortaram duas dessas árvores e trouxeram elas para perto da fornalha, então eles inseriram esses galhos dentro das paredes de lama.
+<br />Os dois encontraram outro graveto fino e colocaram ele em cima dos dois galhos em forma de Y.
+<br />Ana pegou um peixe e o limpou, tirando as escamas com a pedra que parecia uma faca e tirando as coisas de dentro dele.
+<br />Então ela pegou o graveto de cima dos dois galhos e começou a colocar o peixe no graveto.
+<br />O fogo estava ficando um pouco baixo, Tod andou até a floresta e pegou mais madeira e gravetos.
+<br />Ele voltou e começou a reabastecer o fogo, Ana colocou o graveto com o peixe em cima dos dois galhos em forma de Y.
+<br />O peixe começou a cozinhar, Ana e Tod esperaram pacientemente, olhando para o peixe.
+<br />Ana se levantou para pegar uma banana em uma árvore, ela pegou e comeu.
+<br />Tod olhou para o céu e notou que estava de tarde, somente algumas horas restantes para ser noite.
+<br />Depois de esperar por alguns minutos, o peixe estava cozido, Tod removeu ele do graveto e disse para Ana segurá-lo.
+<br />Ele pegou uma pedra grande e andou até onde Ana estava, ele deixou a pedra no chão e pegou o peixe.
+<br />Tod colocou o peixe em cima da pedra e o cortou ao meio, tirando os ossos e espinhos.
+<br />Ambos começaram a comer o peixe, sorrindo um para o outro, o peixe estava bom mesmo sem sal ou temperos.
+<br />Eles cozinharam o outro peixe e comeram também.
+<br />
+<br />Ana estava muito feliz lá, ela não tinha que pensar sobre a casa, os cristais, ela só aproveitava o momento pelo o que ele era.
+<br />Ela estava feliz de sobreviver e construir coisas junto de Tod, era muito divertido.
+<br />"Ei, Tod, eu amei construir isso contigo, foi tão legal!" disse Ana, sorrindo.
+<br />"Hehe, tô feliz que você pensa isso, Ana, foi legal sobreviver junto de ti", disse Tod, sorrindo também.
+<br />"Então... Podemos ir pra casa?" perguntou Ana.
+<br />"Por que você quer ir pra casa?" perguntou Tod.
+<br />"É porque sua mãe tá preocupada contigo, ela não sabia onde você foi, você sumiu do nada", respondeu Ana.
+<br />"Ah... Minha mãe tá sempre preocupada comigo, eu fico saindo de casa sem falar nada..." disse Tod, olhando para baixo, um pouco triste.
+<br />"Eu também... Eles sempre estão preocupados comigo também..." disse Ana.
+<br />"Sério?... Hmm..." disse Tod, "Foi bom sobreviver e construir coisas contigo, Ana, obrigado, hehe, vamos voltar pra casa? Te mostro onde eu moro".
+<br />"Claro! Eu iria amar que você me mostrasse o lugar", disse Ana, sorrindo para Tod.
+<br />Então Ana ativou suas asas e Tod se transformou em um pássaro parecido com um falcão novamente.
+<br />Ana e Tod pegaram uma banana de uma árvore, eles começaram a voar baixo na ilha, olhando para a fogueira, a fornalha, pedras, machados, pedras parecidas com facas, a lança.
+<br /><br />Palavras: 3,090.
+</div>
+</div>
+<br /><br />
+<a href="#capítulo-1"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - O começo da jornada', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
+<div class="mobileHide">
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" id="comment_button_2" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comentar <i class="fas fa-comments"></i></b></h3></button>
+</div>
+<div class="mobileHide">
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" id="readbtn2" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h3></button>
+</div>
+<div class="mobileShow"><br /><br /><br /></div>
+<div class="mobileHide"><br /><br /><br /><br /><br /></div>
+
+<div class="mobileShow"><br /><br />
+</div>
+<div class="mobileShow">
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileShow" id="comment_button_2m" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comentar <i class="fas fa-comments"></i>)</b></h4></button>
+<br /><br />
+</div>
+<div class="mobileShow">
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileShow" id="readbtn2m" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('modal-read-2m')"><h4><b>Eu Li ✓ (5 <i class="fas fa-book-reader"></i>)</b></h4></button>
+</div>
+<br /><div class="mobileShow"><br /><br />
+</div>
+<div style="text-align:center;">
+<div class="w3-animate-zoom">
+<span class="background_cyan text_black">
+<br />
+
+<b>Você está lendo: O Segredo dos Cristais<br />
+Capítulo: 2 - O segredo e a sobrevivência</b>
 
 <br />
 </span>
@@ -583,6 +876,81 @@ readclosebtn1m.onclick = function() {
 readmodal1m.onclick = function(event) {
 	if (event.target == readmodal1m) {
 		readmodal1m.style.display = "none";
+	}
+}
+</script>
+
+<a name="modal-read-2"></a>
+<div id="modal-read-2" class="modal" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom"><div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal2">&times;</button><br /><br /><br />
+<div class="w3-animate-zoom"><h2 class="text_blue"><b>Eu li o capítulo:<br />2 - O segredo e a sobrevivência <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_cyan border_1px" />
+<form name="The Secret of the Crystals-read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_blue"><b>Seu nome:</b></h2></div>
+<input type="text" name="name" class="text_black background_blue border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_blue text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
+<input type="text" name="read" value="2 - O segredo e a sobrevivência" class="text_black background_blue border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
+</div><br /><br /><br /><br /></form>
+</div>
+</div>
+</div>
+</div>
+
+<a name="modal-read-2m"></a>
+<div id="modal-read-2m" class="modal" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom"><div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal2m">&times;</button><br /><br /><br />
+<div class="w3-animate-zoom"><h4 class="text_blue"><b>Eu li o capítulo:<br />2 - O segredo e a sobrevivência <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_cyan border_1px" />
+<div style="margin:3%;"><br /><form name="The Secret of the Crystals-read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom"><h4 class="text_blue"><b>Seu nome:</b></h4></div>
+<input type="text" name="name" class="text_black background_blue border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_blue text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
+<input type="text" name="read" value="2 - O segredo e a sobrevivência" class="text_black background_blue border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
+</div><br /><br /><br /><br /></form>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var readmodal2 = document.getElementById("modal-read-2");
+
+var readbtn2 = document.getElementById("readbtn2");
+
+var readclosebtn2 = document.getElementById("closereadmodal2");
+
+readbtn2.onclick = function() {
+	readmodal2.style.display = "block";
+}
+
+readclosebtn2.onclick = function() {
+	readmodal2.style.display = "none";
+}
+
+readmodal2.onclick = function(event) {
+	if (event.target == readmodal2) {
+		readmodal2.style.display = "none";
+	}
+}
+</script>
+<script>
+var readmodal2m = document.getElementById("modal-read-2m");
+
+var readbtn2m = document.getElementById("readbtn2m");
+
+var readclosebtn2m = document.getElementById("closereadmodal2m");
+
+readbtn2m.onclick = function() {
+	readmodal2m.style.display = "block";
+}
+
+readclosebtn2m.onclick = function() {
+	readmodal2m.style.display = "none";
+}
+
+readmodal2m.onclick = function(event) {
+	if (event.target == readmodal2m) {
+		readmodal2m.style.display = "none";
 	}
 }
 </script>
@@ -676,6 +1044,96 @@ comment_modal_1m.onclick = function(event) {
 	}
 }
 </script>
+
+<a name="comment-modal-2"></a>
+<div id="comment-modal-2" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<div class="mobileHide">
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_2" style="border-radius: 50px;">&times;</button><br /><br /><br />
+<div class="w3-animate-zoom"><h2 class="text_blue"><b>Comentar no capítulo:<br />2 - O segredo e a sobrevivência <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_cyan border_1px" />
+<form name="The Secret of the Crystals-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom"><h2 class="text_blue"><b>Seu nome:</b></h2></div>
+<input type="text" name="name" class="text_black background_blue border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
+<br />
+<div class="w3-animate-zoom"><h2 class="text_blue"><b>Comente o que achou do capítulo:</b></h2></div>
+<input type="text" name="comment" class="text_black background_blue border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_blue text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
+</div>
+</form>
+</div>
+<br /><br /><br /><br />
+</div>
+</div>
+</div>
+
+<a name="comment-modal-2m"></a>
+<div id="comment-modal-2m" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<div class="mobileShow">
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_2m" style="border-radius: 50px;">&times;</button><br /><br /><br />
+<form name="The Secret of the Crystals-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom"><h4 class="text_blue"><b>Comentar no capítulo:<br />2 - O segredo e a sobrevivência <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_cyan border_1px" />
+<div style="margin:3%;">
+<br />
+<div class="w3-animate-zoom"><h4 class="text_blue"><b>Seu nome:</b></h4></div>
+<input type="text" name="name" class="text_black background_blue border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<br />
+<div class="w3-animate-zoom"><h4 class="text_blue"><b>Comente o que achou do capítulo:</b></h4></div>
+<input type="text" name="comment" class="text_black background_blue border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_blue text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
+</div>
+</form>
+</div>
+<br /><br /><br /><br />
+</div>
+</div>
+</div>
+
+<script>
+var comment_modal_2 = document.getElementById("comment-modal-2");
+
+var comment_button_2 = document.getElementById("comment_button_2");
+
+var close_comment_modal_button_2 = document.getElementById("close_comment_modal_button_2");
+
+comment_button_2.onclick = function() {
+	comment_modal_2.style.display = "block";
+}
+
+close_comment_modal_button_2.onclick = function() {
+	comment_modal_2.style.display = "none";
+}
+
+comment_modal_2.onclick = function(event) {
+	if (event.target == comment_modal_2) {
+		comment_modal_2.style.display = "none";
+	}
+}
+</script>
+<script>
+var comment_modal_2m = document.getElementById("comment-modal-2m");
+
+var comment_button_2m = document.getElementById("comment_button_2m");
+
+var close_comment_modal_button_2m = document.getElementById("close_comment_modal_button_2m");
+
+comment_button_2m.onclick = function() {
+	comment_modal_2m.style.display = "block";
+}
+
+close_comment_modal_button_2m.onclick = function() {
+	comment_modal_2m.style.display = "none";
+}
+
+comment_modal_2m.onclick = function(event) {
+	if (event.target == comment_modal_2m) {
+		comment_modal_2m.style.display = "none";
+	}
+}
+</script>
 <a name="Aba de Sites"></a>
 <br />
 <div id="Aba de Sites" class="city" style="display:none;border-radius: 50px;">
@@ -763,7 +1221,9 @@ comment_modal_1m.onclick = function(event) {
 </h4>
 </div>
 </div>
-
+<script>
+Change_Title();
+</script>
 <style>
 
 </style>
@@ -780,12 +1240,12 @@ function getElementByXpath(path) {
 
 <script>
 Chapter_Number = 1;
-var Last_Chapter = 1;
-var Last_Chapter_Title = "1 - O começo da jornada";
+var Last_Chapter = 2;
+var Last_Chapter_Title = "2 - O segredo e a sobrevivência";
 </script><script>
 Get_Title();
 </script>
-
+<script src="https://thestake2.netlify.app/JavaScript/Function/Notifications.js"></script>
 <script>
 var chapter_text = "capítulo-";
 
@@ -797,6 +1257,8 @@ function Open_Chapter(chapter_title, chapter_number) {
 	Define_Chapter(Chapter_Number);
 	Add_To_Website_Title(chapter_title, "notification");
 	Hide_Computer_Buttons();
+	Hide_Computer_Notification();
+	Hide_Mobile_Notification();
 }
 
 function Check_Chapter_Number_On_Link() {
@@ -812,7 +1274,7 @@ function Check_Chapter_Number_On_Link() {
 		var read_chapter_text = "read-chapter-";
 	}
 
-	var chapter_number = 2;
+	var chapter_number = 3;
 
 	var first_check_1 = second_website_url.includes(read_chapter_text + chapter_number);
 	var second_check_1 = second_website_url.includes(read_chapter_text + "[1]");
@@ -820,10 +1282,22 @@ function Check_Chapter_Number_On_Link() {
 	var fourth_check_1 = second_website_url.includes(read_chapter_text + "%221%22");
 	var fifth_check_1 = second_website_url.includes("(1)");
 	var sixth_check_1 = second_website_url.includes("[1]");
+	var first_check_2 = second_website_url.includes(read_chapter_text + chapter_number);
+	var second_check_2 = second_website_url.includes(read_chapter_text + "[2]");
+	var third_check_2 = second_website_url.includes(read_chapter_text + '"' + 2 + '"');
+	var fourth_check_2 = second_website_url.includes(read_chapter_text + "%222%22");
+	var fifth_check_2 = second_website_url.includes("(2)");
+	var sixth_check_2 = second_website_url.includes("[2]");
 
 	if (first_check_1 === true || second_check_1 === true || third_check_1 === true || fourth_check_1 === true || fifth_check_1 === true || sixth_check_1 == true) {
 		var chapter_title = " - Capítulo: 1 - O começo da jornada";
 		var current_chapter_number = 1;
+		Open_Chapter(chapter_title, current_chapter_number);
+	}
+
+	if (first_check_2 === true || second_check_2 === true || third_check_2 === true || fourth_check_2 === true || fifth_check_2 === true || sixth_check_2 == true) {
+		var chapter_title = " - Capítulo: 2 - O segredo e a sobrevivência";
+		var current_chapter_number = 2;
 		Open_Chapter(chapter_title, current_chapter_number);
 	}
 
