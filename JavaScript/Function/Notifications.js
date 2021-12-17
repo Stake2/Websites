@@ -33,7 +33,6 @@ notification_close_button_mobile = document.getElementById("notification_close_b
 // When the user clicks on the click button, it will run this function
 notification_close_button_computer.onclick = function() {
 	Hide_Computer_Notification();
-	Hide_Computer_Buttons();
 }
 
 // When the user clicks on the click button, it will run this function
