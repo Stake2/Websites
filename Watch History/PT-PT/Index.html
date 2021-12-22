@@ -21,7 +21,7 @@
 <meta name="twitter:creator" content="@Stake2__" />
 <meta content="summary_large_image" name="twitter:card" />
 <meta content="https://thestake2.netlify.app/Watch History/pt-pt/" name="twitter:url" />
-<meta name="revised" content="Stake2's Enterprise TM, 09/12/2021" />
+<meta name="revised" content="Stake2's Enterprise TM, 22/12/2021" />
 <meta name="author" content="Stake2" />
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 <meta charset="UTF-8" />
@@ -49,18 +49,22 @@
 <!--- Computer Button bar on the top -->
 <div id="computer_buttons_bar" class="w3-center w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
 <span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Mídias Sendo Assitidas" alt="Mídias Sendo Assitidas">
-<a href="#Watch History_Mídias Sendo Assitidas"><button id="computer_button_2" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Sendo Assitidas');Define_Button('computer_button_2');Change_Button_Color();"><h2>Mídias Sendo Assitidas [29]: <i class="fas fa-play"></i></h2></button></a>
+<a href="#Watch History_Mídias Sendo Assitidas"><button id="computer_button_2" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Sendo Assitidas');Define_Button('computer_button_2');Change_Button_Color();" title="Mídias Sendo Assitidas" alt="Mídias Sendo Assitidas"><h2>Mídias Sendo Assitidas [28]: <i class="fas fa-play"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
-<br />
+<span class="mobileHide" >
+<a class="" href="#Aba de Sites">
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" id="websites_tab_button" style="border-radius: 50px;" alt="Aba de Sites" title="Aba de Sites" onclick="Hide_Computer_Buttons();openCity('Aba de Sites');Define_Button('websites_tab_button');Change_Button_Color();"><h2 class="" >
+Sites: <i class="fas fa-globe-americas"></i></h2></button></a>
+</span><br />
 <center><button id="hide_computer_buttons" class="w3-center w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button></center>
 </div>
 
@@ -79,22 +83,26 @@
 
 <span style="font-size:30px;" class="mobileShow text_blue">Menu de botões mobile: </span>
 
-<a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+<a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Mídias Sendo Assitidas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_2" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Sendo Assitidas_Mobile');Define_Button('mobile_button_2');Change_Button_Color();">
-<h4>Mídias Sendo Assitidas [29]: <i class="fas fa-play"></i></h4>
+<a href="#Watch History_Mídias Sendo Assitidas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Sendo Assitidas" alt="Mídias Sendo Assitidas">
+<button id="mobile_button_2" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Sendo Assitidas_Mobile');Define_Button('computer_button_2');Change_Button_Color();">
+<h4>Mídias Sendo Assitidas [28]: <i class="fas fa-play"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-
+<span class="mobileShow" >
+<a class="" href="#Aba de Sites">
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" id="websites_tab_button" style="border-radius: 50px;" alt="Aba de Sites" title="Aba de Sites" onclick="Hide_Computer_Buttons();openCity('Aba de Sites');Define_Button('websites_tab_button');Change_Button_Color();"><h4 class="" >
+Sites: <i class="fas fa-globe-americas"></i></h4></button></a>
+</span>
 </div>
 
 <div class="mobileShow"><button id="show_mobile_buttons" class="w3-center w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="Show_Mobile_Buttons();"><h2><i class="fas fa-bars"></i></h2></button>
@@ -140,14 +148,14 @@ function Add_To_Website_Title(text_to_add, source = null) {
 <div class="w3-animate-zoom">
 <!-- Website computer title -->
 <h2 class="w3-center text_blue w3-animate-zoom mobileHide">
-<p><br /><b>Watch History Português Europeu: <i class="fas fa-eye"></i> <span class="w3-text-yellow">[773 Midias Assistidas]</span></b><br /><br /><p>
+<p><br /><b>Watch History Português Europeu: <i class="fas fa-eye"></i> <span class="w3-text-yellow">[778 Midias Assistidas]</span></b><br /><br /><p>
 </h2>
 </div>
 
 <div class="w3-animate-zoom">
 <!-- Website mobile title -->
 <h4 class="text_blue w3-animate-zoom mobileShow">
-<p><br /><b>Watch History Português Europeu: <i class="fas fa-eye"></i> <span class="w3-text-yellow">[773 Midias Assistidas]</span></b><br /><br /><p>
+<p><br /><b>Watch History Português Europeu: <i class="fas fa-eye"></i> <span class="w3-text-yellow">[778 Midias Assistidas]</span></b><br /><br /><p>
 </h4>
 </div>
 
@@ -193,45 +201,44 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </h4></div>
 <br />
 </div>
-
-<a id="computer_tab_1" name="Watch History_Mídias Assistidas em 2021"></a>
+<a id="computer_tab_1_id" name="Watch History_Mídias Assistidas em 2021"></a>
 <div id="Watch History_Mídias Assistidas em 2021" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_1">
 
 <div class="mobileHide"><span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Mídias Arquivadas" alt="Mídias Arquivadas">
-<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
+<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();" title="Mídias Arquivadas" alt="Mídias Arquivadas"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
-</div><div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+</div><div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('mobile_button_4');Change_Button_Color();">
+<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Arquivadas" alt="Mídias Arquivadas">
+<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
 <h4>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h4>
 </button>
 </a>
 </div><hr class="border_color_blue border_1px" />
-<div class="w3-animate-zoom"><h2 class="mobileHide"><p></p><br /><b><span class="text_blue mobileHide">Mídias Assistidas em 2021<span class="text_yellow" > [180]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h2><h4 class="mobileShow"><p></p><br /><b><span class="text_blue mobileShow">Mídias Assistidas em 2021<span class="text_yellow" > [180]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h4></div><hr class="border_color_blue border_1px" />
+<div class="w3-animate-zoom"><h2 class="mobileHide"><p></p><br /><b><span class="text_blue mobileHide">Mídias Assistidas em 2021<span class="text_yellow" > [185]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h2><h4 class="mobileShow"><p></p><br /><b><span class="text_blue mobileShow">Mídias Assistidas em 2021<span class="text_yellow" > [185]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h4></div><hr class="border_color_blue border_1px" />
 <h4 class="text_blue" style="text-align:left;">
 <div class="w3-animate-zoom">
 <div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">112</span></b><br />
 </a>
-<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 </a>
 <a href="#Séries_2021"><b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
 </a>
@@ -580,7 +587,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <br />
 <a name="Desenhos_2021"></a>
-<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Rick and Morty T04E02(33) "O Velho e o Assento"<span class="w3-text-white"> - (21:06 05/01/2021)</span></span><br /></div>
 </div>
@@ -604,6 +611,21 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>My Little Pony: Friendship is Magic Nona Temporada E17(213) "O Contratempo de Sol de Verão"<span class="w3-text-white"> - (20:24 20/11/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>My Little Pony: Friendship is Magic Nona Temporada E18(214) "Ela Fala com Angel"<span class="w3-text-white"> - (21:20 09/12/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>My Little Pony: Friendship is Magic Nona Temporada E19(215) "Dragão Disputado"<span class="w3-text-white"> - (20:48 10/12/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">11 - </span>My Little Pony: Friendship is Magic Nona Temporada E20(216) "Com Um Casco Dentro"<span class="w3-text-white"> - (18:28 12/12/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">12 - </span>My Little Pony: Friendship is Magic Nona Temporada E21(217) "Daring em Dúvida"<span class="w3-text-white"> - (17:41 16/12/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">13 - </span>My Little Pony: Friendship is Magic Nona Temporada E22(218) "Crescer É uma Coisa Difícil"<span class="w3-text-white"> - (22:24 17/12/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Séries_2021"></a>
@@ -797,7 +819,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <br />
 </div><div class="mobileShow"><a href="#Animes_2021_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">112</span></b><br />
 </a>
-<a href="#Desenhos_2021_Mobile"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<a href="#Desenhos_2021_Mobile"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 </a>
 <a href="#Séries_2021_Mobile"><b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
 </a>
@@ -1146,7 +1168,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <br />
 <a name="Desenhos_2021_Mobile"></a>
-<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Rick and Morty T04E02(33) "O Velho e o Assento"<span class="w3-text-white"> - (21:06 05/01/2021)</span></span><br /></div>
 </div>
@@ -1170,6 +1192,21 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>My Little Pony: Friendship is Magic Nona Temporada E17(213) "O Contratempo de Sol de Verão"<span class="w3-text-white"> - (20:24 20/11/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>My Little Pony: Friendship is Magic Nona Temporada E18(214) "Ela Fala com Angel"<span class="w3-text-white"> - (21:20 09/12/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>My Little Pony: Friendship is Magic Nona Temporada E19(215) "Dragão Disputado"<span class="w3-text-white"> - (20:48 10/12/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">11 - </span>My Little Pony: Friendship is Magic Nona Temporada E20(216) "Com Um Casco Dentro"<span class="w3-text-white"> - (18:28 12/12/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">12 - </span>My Little Pony: Friendship is Magic Nona Temporada E21(217) "Daring em Dúvida"<span class="w3-text-white"> - (17:41 16/12/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">13 - </span>My Little Pony: Friendship is Magic Nona Temporada E22(218) "Crescer É uma Coisa Difícil"<span class="w3-text-white"> - (22:24 17/12/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Séries_2021_Mobile"></a>
@@ -1375,39 +1412,39 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_1">
 
 <div class="mobileHide"><span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Mídias Arquivadas" alt="Mídias Arquivadas">
-<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
+<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();" title="Mídias Arquivadas" alt="Mídias Arquivadas"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
-</div><div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+</div><div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('mobile_button_4');Change_Button_Color();">
+<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Arquivadas" alt="Mídias Arquivadas">
+<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
 <h4>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h4>
 </button>
 </a>
 </div><hr class="border_color_blue border_1px" />
-<div class="w3-animate-zoom"><h2 class="mobileHide"><p></p><br /><b><span class="text_blue mobileHide">Mídias Assistidas em 2021<span class="text_yellow" > [180]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h2><h4 class="mobileShow"><p></p><br /><b><span class="text_blue mobileShow">Mídias Assistidas em 2021<span class="text_yellow" > [180]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h4></div><hr class="border_color_blue border_1px" />
+<div class="w3-animate-zoom"><h2 class="mobileHide"><p></p><br /><b><span class="text_blue mobileHide">Mídias Assistidas em 2021<span class="text_yellow" > [185]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h2><h4 class="mobileShow"><p></p><br /><b><span class="text_blue mobileShow">Mídias Assistidas em 2021<span class="text_yellow" > [185]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h4></div><hr class="border_color_blue border_1px" />
 <h4 class="text_blue" style="text-align:left;">
 <div class="w3-animate-zoom">
 <div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">112</span></b><br />
 </a>
-<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 </a>
 <a href="#Séries_2021"><b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
 </a>
@@ -1756,7 +1793,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <br />
 <a name="Desenhos_2021"></a>
-<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Rick and Morty T04E02(33) "O Velho e o Assento"<span class="w3-text-white"> - (21:06 05/01/2021)</span></span><br /></div>
 </div>
@@ -1780,6 +1817,21 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>My Little Pony: Friendship is Magic Nona Temporada E17(213) "O Contratempo de Sol de Verão"<span class="w3-text-white"> - (20:24 20/11/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>My Little Pony: Friendship is Magic Nona Temporada E18(214) "Ela Fala com Angel"<span class="w3-text-white"> - (21:20 09/12/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>My Little Pony: Friendship is Magic Nona Temporada E19(215) "Dragão Disputado"<span class="w3-text-white"> - (20:48 10/12/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">11 - </span>My Little Pony: Friendship is Magic Nona Temporada E20(216) "Com Um Casco Dentro"<span class="w3-text-white"> - (18:28 12/12/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">12 - </span>My Little Pony: Friendship is Magic Nona Temporada E21(217) "Daring em Dúvida"<span class="w3-text-white"> - (17:41 16/12/2021)</span></span><br /></div>
+</div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">13 - </span>My Little Pony: Friendship is Magic Nona Temporada E22(218) "Crescer É uma Coisa Difícil"<span class="w3-text-white"> - (22:24 17/12/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Séries_2021"></a>
@@ -1973,7 +2025,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <br />
 </div><div class="mobileShow"><a href="#Animes_2021_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">112</span></b><br />
 </a>
-<a href="#Desenhos_2021_Mobile"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<a href="#Desenhos_2021_Mobile"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 </a>
 <a href="#Séries_2021_Mobile"><b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
 </a>
@@ -2322,7 +2374,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <br />
 <a name="Desenhos_2021_Mobile"></a>
-<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Rick and Morty T04E02(33) "O Velho e o Assento"<span class="w3-text-white"> - (21:06 05/01/2021)</span></span><br /></div>
 </div>
@@ -2346,6 +2398,21 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>My Little Pony: Friendship is Magic Nona Temporada E17(213) "O Contratempo de Sol de Verão"<span class="w3-text-white"> - (20:24 20/11/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>My Little Pony: Friendship is Magic Nona Temporada E18(214) "Ela Fala com Angel"<span class="w3-text-white"> - (21:20 09/12/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>My Little Pony: Friendship is Magic Nona Temporada E19(215) "Dragão Disputado"<span class="w3-text-white"> - (20:48 10/12/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">11 - </span>My Little Pony: Friendship is Magic Nona Temporada E20(216) "Com Um Casco Dentro"<span class="w3-text-white"> - (18:28 12/12/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">12 - </span>My Little Pony: Friendship is Magic Nona Temporada E21(217) "Daring em Dúvida"<span class="w3-text-white"> - (17:41 16/12/2021)</span></span><br /></div>
+</div>
+<div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">13 - </span>My Little Pony: Friendship is Magic Nona Temporada E22(218) "Crescer É uma Coisa Difícil"<span class="w3-text-white"> - (22:24 17/12/2021)</span></span><br /></div>
 </div>
 <br />
 <a name="Séries_2021_Mobile"></a>
@@ -2546,10 +2613,10 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 
 
-<a id="computer_tab_2" name="Watch History_Mídias Sendo Assitidas"></a>
+<a id="computer_tab_2_id" name="Watch History_Mídias Sendo Assitidas"></a>
 <div id="Watch History_Mídias Sendo Assitidas" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_2">
-<div class="w3-animate-zoom"><h2 class="text_green"><p></p><br /><b>Mídias Sendo Assitidas<span class="text_yellow" > [29]</span>: <i class="fas fa-play"></i></b><br /><br /><p></p></h2></div><hr class="text_green" />
+<div class="w3-animate-zoom"><h2 class="text_green"><p></p><br /><b>Mídias Sendo Assitidas<span class="text_yellow" > [28]</span>: <i class="fas fa-play"></i></b><br /><br /><p></p></h2></div><hr class="text_green" />
 <h3 class="text_blue mobileHide" ><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Animes:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >BanG Dream! (Episódio: EP11 "PAREO Não Existe Mais")</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >Boku no Kanojo ga Majimesugiru Sho-bitch na Ken (Episódio: EP07 "Caramba... Eu não consigo tirar minha mente disso...")</span><br />
@@ -2565,12 +2632,11 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <span class="text_blue text_hover_white" >12</span> - <span class="text_hover_white" >Maoujou De Oyasumi (Episódio: EP05 "Quinta Noite)</span><br />
 <span class="text_blue text_hover_white" >13</span> - <span class="text_hover_white" >One Punch Man (Episódio: EP06 "A Insurreição das Criaturas")</span><br />
 <span class="text_blue text_hover_white" >14</span> - <span class="text_hover_white" >One Room (Episódio: 3rd Season EP02 "Kotokawa Akira está preocupado com isso")</span><br />
-<span class="text_blue text_hover_white" >15</span> - <span class="text_hover_white" >Re:Zero kara Hajimeru Isekai Seikatsu (Episódio: EP01(39) Aposta Direta)</span><br />
-<span class="text_blue text_hover_white" >16</span> - <span class="text_hover_white" >Shingeki No Kyojin (Episódio: Shingeki No Kyojin S04E15(74) "Única Salvação")</span><br />
+<span class="text_blue text_hover_white" >15</span> - <span class="text_hover_white" >Shingeki No Kyojin (Episódio: Shingeki No Kyojin S04E15(74) "Única Salvação")</span><br />
 </div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Desenhos:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Infinity Train (Episódio: EP02(02) "O Vagão da Praia")</span><br />
-<span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >My Little Pony: Friendship is Magic (Episódio: E18(214) "Ela Fala com Angel")</span><br />
+<span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >My Little Pony: Friendship is Magic (Episódio: E23(219) "A Pergunta do Big Mac")</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Rick and Morty (Episódio: E04(35) "Garra e Hoarder)</span><br />
 <span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >Spider-Man - Homem-Aranha (Episódio: None)</span><br />
 </div>
@@ -2604,12 +2670,11 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <span class="text_blue text_hover_white" >12</span> - <span class="text_hover_white" >Maoujou De Oyasumi (Episódio: EP05 "Quinta Noite)</span><br />
 <span class="text_blue text_hover_white" >13</span> - <span class="text_hover_white" >One Punch Man (Episódio: EP06 "A Insurreição das Criaturas")</span><br />
 <span class="text_blue text_hover_white" >14</span> - <span class="text_hover_white" >One Room (Episódio: 3rd Season EP02 "Kotokawa Akira está preocupado com isso")</span><br />
-<span class="text_blue text_hover_white" >15</span> - <span class="text_hover_white" >Re:Zero kara Hajimeru Isekai Seikatsu (Episódio: EP01(39) Aposta Direta)</span><br />
-<span class="text_blue text_hover_white" >16</span> - <span class="text_hover_white" >Shingeki No Kyojin (Episódio: Shingeki No Kyojin S04E15(74) "Única Salvação")</span><br />
+<span class="text_blue text_hover_white" >15</span> - <span class="text_hover_white" >Shingeki No Kyojin (Episódio: Shingeki No Kyojin S04E15(74) "Única Salvação")</span><br />
 </div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Desenhos:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Infinity Train (Episódio: EP02(02) "O Vagão da Praia")</span><br />
-<span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >My Little Pony: Friendship is Magic (Episódio: E18(214) "Ela Fala com Angel")</span><br />
+<span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >My Little Pony: Friendship is Magic (Episódio: E23(219) "A Pergunta do Big Mac")</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Rick and Morty (Episódio: E04(35) "Garra e Hoarder)</span><br />
 <span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >Spider-Man - Homem-Aranha (Episódio: None)</span><br />
 </div>
@@ -2638,7 +2703,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <a id="mobile_tab_2" name="Watch History_Mídias Sendo Assitidas_Mobile"></a>
 <div id="Watch History_Mídias Sendo Assitidas_Mobile" class="city mobileShow" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_2">
-<div class="w3-animate-zoom"><h2 class="text_green"><p></p><br /><b>Mídias Sendo Assitidas<span class="text_yellow" > [29]</span>: <i class="fas fa-play"></i></b><br /><br /><p></p></h2></div><hr class="text_green" />
+<div class="w3-animate-zoom"><h2 class="text_green"><p></p><br /><b>Mídias Sendo Assitidas<span class="text_yellow" > [28]</span>: <i class="fas fa-play"></i></b><br /><br /><p></p></h2></div><hr class="text_green" />
 <h3 class="text_blue mobileHide" ><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Animes:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >BanG Dream! (Episódio: EP11 "PAREO Não Existe Mais")</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >Boku no Kanojo ga Majimesugiru Sho-bitch na Ken (Episódio: EP07 "Caramba... Eu não consigo tirar minha mente disso...")</span><br />
@@ -2654,12 +2719,11 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <span class="text_blue text_hover_white" >12</span> - <span class="text_hover_white" >Maoujou De Oyasumi (Episódio: EP05 "Quinta Noite)</span><br />
 <span class="text_blue text_hover_white" >13</span> - <span class="text_hover_white" >One Punch Man (Episódio: EP06 "A Insurreição das Criaturas")</span><br />
 <span class="text_blue text_hover_white" >14</span> - <span class="text_hover_white" >One Room (Episódio: 3rd Season EP02 "Kotokawa Akira está preocupado com isso")</span><br />
-<span class="text_blue text_hover_white" >15</span> - <span class="text_hover_white" >Re:Zero kara Hajimeru Isekai Seikatsu (Episódio: EP01(39) Aposta Direta)</span><br />
-<span class="text_blue text_hover_white" >16</span> - <span class="text_hover_white" >Shingeki No Kyojin (Episódio: Shingeki No Kyojin S04E15(74) "Única Salvação")</span><br />
+<span class="text_blue text_hover_white" >15</span> - <span class="text_hover_white" >Shingeki No Kyojin (Episódio: Shingeki No Kyojin S04E15(74) "Única Salvação")</span><br />
 </div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Desenhos:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Infinity Train (Episódio: EP02(02) "O Vagão da Praia")</span><br />
-<span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >My Little Pony: Friendship is Magic (Episódio: E18(214) "Ela Fala com Angel")</span><br />
+<span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >My Little Pony: Friendship is Magic (Episódio: E23(219) "A Pergunta do Big Mac")</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Rick and Morty (Episódio: E04(35) "Garra e Hoarder)</span><br />
 <span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >Spider-Man - Homem-Aranha (Episódio: None)</span><br />
 </div>
@@ -2693,12 +2757,11 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <span class="text_blue text_hover_white" >12</span> - <span class="text_hover_white" >Maoujou De Oyasumi (Episódio: EP05 "Quinta Noite)</span><br />
 <span class="text_blue text_hover_white" >13</span> - <span class="text_hover_white" >One Punch Man (Episódio: EP06 "A Insurreição das Criaturas")</span><br />
 <span class="text_blue text_hover_white" >14</span> - <span class="text_hover_white" >One Room (Episódio: 3rd Season EP02 "Kotokawa Akira está preocupado com isso")</span><br />
-<span class="text_blue text_hover_white" >15</span> - <span class="text_hover_white" >Re:Zero kara Hajimeru Isekai Seikatsu (Episódio: EP01(39) Aposta Direta)</span><br />
-<span class="text_blue text_hover_white" >16</span> - <span class="text_hover_white" >Shingeki No Kyojin (Episódio: Shingeki No Kyojin S04E15(74) "Única Salvação")</span><br />
+<span class="text_blue text_hover_white" >15</span> - <span class="text_hover_white" >Shingeki No Kyojin (Episódio: Shingeki No Kyojin S04E15(74) "Única Salvação")</span><br />
 </div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Desenhos:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Infinity Train (Episódio: EP02(02) "O Vagão da Praia")</span><br />
-<span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >My Little Pony: Friendship is Magic (Episódio: E18(214) "Ela Fala com Angel")</span><br />
+<span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >My Little Pony: Friendship is Magic (Episódio: E23(219) "A Pergunta do Big Mac")</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Rick and Morty (Episódio: E04(35) "Garra e Hoarder)</span><br />
 <span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >Spider-Man - Homem-Aranha (Episódio: None)</span><br />
 </div>
@@ -2724,34 +2787,34 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 
 
-<a id="computer_tab_3" name="Watch History_Filmes"></a>
+<a id="computer_tab_3_id" name="Watch History_Filmes"></a>
 <div id="Watch History_Filmes" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_3">
 
 <div class="mobileHide"><span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Mídias Arquivadas" alt="Mídias Arquivadas">
-<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
+<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();" title="Mídias Arquivadas" alt="Mídias Arquivadas"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
-</div><div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+</div><div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('mobile_button_4');Change_Button_Color();">
+<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Arquivadas" alt="Mídias Arquivadas">
+<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
 <h4>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h4>
 </button>
 </a>
@@ -2804,29 +2867,29 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_3">
 
 <div class="mobileHide"><span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Mídias Arquivadas" alt="Mídias Arquivadas">
-<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
+<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();" title="Mídias Arquivadas" alt="Mídias Arquivadas"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
-</div><div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+</div><div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('mobile_button_4');Change_Button_Color();">
+<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Arquivadas" alt="Mídias Arquivadas">
+<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
 <h4>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h4>
 </button>
 </a>
@@ -2874,35 +2937,35 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 
 
-<a id="computer_tab_4" name="Watched_Mídias Arquivadas"></a>
+<a id="computer_tab_4_id" name="Watched_Mídias Arquivadas"></a>
 <div id="Watched_Mídias Arquivadas" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_4">
 
 <div class="mobileHide"><span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Mídias Arquivadas" alt="Mídias Arquivadas">
-<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
+<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();" title="Mídias Arquivadas" alt="Mídias Arquivadas"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
 </div>
-<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('mobile_button_4');Change_Button_Color();">
+<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Arquivadas" alt="Mídias Arquivadas">
+<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
 <h4>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h4>
 </button>
 </a>
@@ -2947,30 +3010,30 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_4">
 
 <div class="mobileHide"><span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Mídias Arquivadas" alt="Mídias Arquivadas">
-<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
+<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();" title="Mídias Arquivadas" alt="Mídias Arquivadas"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
 </div>
-<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('mobile_button_4');Change_Button_Color();">
+<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Arquivadas" alt="Mídias Arquivadas">
+<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
 <h4>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h4>
 </button>
 </a>
@@ -3281,35 +3344,55 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 </div>
 </div>
-<a id="Watched_Arquivado_Computer_180" name="Watched_Arquivado_2018_Computer"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a id="Watched_Arquivado_Computer_185_id" name="Watched_Arquivado_2018_Computer"></a>
 <div id="Watched_Arquivado_2018_Computer" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_180">
+<h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_185">
 
 <div class="mobileHide"><span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Mídias Arquivadas" alt="Mídias Arquivadas">
-<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
+<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();" title="Mídias Arquivadas" alt="Mídias Arquivadas"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
 </div>
-<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('mobile_button_4');Change_Button_Color();">
+<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Arquivadas" alt="Mídias Arquivadas">
+<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
 <h4>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h4>
 </button>
 </a>
@@ -3347,7 +3430,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <h4 class="text_blue" style="text-align:left;">
 <div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">112</span></b><br />
 </a>
-<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 </a>
 <a href="#Séries_2021"><b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
 </a>
@@ -3696,7 +3779,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <br />
 <a name="Desenhos_2021"></a>
-<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Rick and Morty T04E02(33) "O Velho e o Assento"<span class="w3-text-white"> - (21:06 05/01/2021)</span></span><br /></div>
 <div style="margin-left:30px;">
@@ -3713,6 +3796,16 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">7 - </span>My Little Pony: Friendship is Magic Nona Temporada E16(212) "Uma Busca Trivial"<span class="w3-text-white"> - (16:36 19/11/2021)</span></span><br /></div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>My Little Pony: Friendship is Magic Nona Temporada E17(213) "O Contratempo de Sol de Verão"<span class="w3-text-white"> - (20:24 20/11/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>My Little Pony: Friendship is Magic Nona Temporada E18(214) "Ela Fala com Angel"<span class="w3-text-white"> - (21:20 09/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>My Little Pony: Friendship is Magic Nona Temporada E19(215) "Dragão Disputado"<span class="w3-text-white"> - (20:48 10/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">11 - </span>My Little Pony: Friendship is Magic Nona Temporada E20(216) "Com Um Casco Dentro"<span class="w3-text-white"> - (18:28 12/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">12 - </span>My Little Pony: Friendship is Magic Nona Temporada E21(217) "Daring em Dúvida"<span class="w3-text-white"> - (17:41 16/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">13 - </span>My Little Pony: Friendship is Magic Nona Temporada E22(218) "Crescer É uma Coisa Difícil"<span class="w3-text-white"> - (22:24 17/12/2021)</span></span><br /></div>
 <br />
 <a name="Séries_2021"></a>
 <b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
@@ -3852,35 +3945,35 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 
 
-<a id="Watched_Arquivado_Mobile_180" name="Watched_Arquivado_2018_Mobile"></a>
+<a id="Watched_Arquivado_Mobile_185" name="Watched_Arquivado_2018_Mobile"></a>
 <div id="Watched_Arquivado_2018_Mobile" class="city mobileShow" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_180">
+<h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_185">
 
 <div class="mobileHide"><span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Mídias Arquivadas" alt="Mídias Arquivadas">
-<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
+<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();" title="Mídias Arquivadas" alt="Mídias Arquivadas"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
 </div>
-<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('mobile_button_4');Change_Button_Color();">
+<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Arquivadas" alt="Mídias Arquivadas">
+<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
 <h4>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h4>
 </button>
 </a>
@@ -3918,7 +4011,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <h4 class="text_blue" style="text-align:left;">
 <div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">112</span></b><br />
 </a>
-<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 </a>
 <a href="#Séries_2021"><b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
 </a>
@@ -4267,7 +4360,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <br />
 <a name="Desenhos_2021"></a>
-<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Rick and Morty T04E02(33) "O Velho e o Assento"<span class="w3-text-white"> - (21:06 05/01/2021)</span></span><br /></div>
 <div style="margin-left:30px;">
@@ -4284,6 +4377,16 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">7 - </span>My Little Pony: Friendship is Magic Nona Temporada E16(212) "Uma Busca Trivial"<span class="w3-text-white"> - (16:36 19/11/2021)</span></span><br /></div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>My Little Pony: Friendship is Magic Nona Temporada E17(213) "O Contratempo de Sol de Verão"<span class="w3-text-white"> - (20:24 20/11/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>My Little Pony: Friendship is Magic Nona Temporada E18(214) "Ela Fala com Angel"<span class="w3-text-white"> - (21:20 09/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>My Little Pony: Friendship is Magic Nona Temporada E19(215) "Dragão Disputado"<span class="w3-text-white"> - (20:48 10/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">11 - </span>My Little Pony: Friendship is Magic Nona Temporada E20(216) "Com Um Casco Dentro"<span class="w3-text-white"> - (18:28 12/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">12 - </span>My Little Pony: Friendship is Magic Nona Temporada E21(217) "Daring em Dúvida"<span class="w3-text-white"> - (17:41 16/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">13 - </span>My Little Pony: Friendship is Magic Nona Temporada E22(218) "Crescer É uma Coisa Difícil"<span class="w3-text-white"> - (22:24 17/12/2021)</span></span><br /></div>
 <br />
 <a name="Séries_2021"></a>
 <b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
@@ -4694,35 +4797,55 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 </div>
 </div>
-<a id="Watched_Arquivado_Computer_180" name="Watched_Arquivado_2019_Computer"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a id="Watched_Arquivado_Computer_185_id" name="Watched_Arquivado_2019_Computer"></a>
 <div id="Watched_Arquivado_2019_Computer" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_180">
+<h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_185">
 
 <div class="mobileHide"><span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Mídias Arquivadas" alt="Mídias Arquivadas">
-<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
+<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();" title="Mídias Arquivadas" alt="Mídias Arquivadas"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
 </div>
-<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('mobile_button_4');Change_Button_Color();">
+<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Arquivadas" alt="Mídias Arquivadas">
+<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
 <h4>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h4>
 </button>
 </a>
@@ -4760,7 +4883,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <h4 class="text_blue" style="text-align:left;">
 <div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">112</span></b><br />
 </a>
-<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 </a>
 <a href="#Séries_2021"><b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
 </a>
@@ -5109,7 +5232,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <br />
 <a name="Desenhos_2021"></a>
-<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Rick and Morty T04E02(33) "O Velho e o Assento"<span class="w3-text-white"> - (21:06 05/01/2021)</span></span><br /></div>
 <div style="margin-left:30px;">
@@ -5126,6 +5249,16 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">7 - </span>My Little Pony: Friendship is Magic Nona Temporada E16(212) "Uma Busca Trivial"<span class="w3-text-white"> - (16:36 19/11/2021)</span></span><br /></div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>My Little Pony: Friendship is Magic Nona Temporada E17(213) "O Contratempo de Sol de Verão"<span class="w3-text-white"> - (20:24 20/11/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>My Little Pony: Friendship is Magic Nona Temporada E18(214) "Ela Fala com Angel"<span class="w3-text-white"> - (21:20 09/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>My Little Pony: Friendship is Magic Nona Temporada E19(215) "Dragão Disputado"<span class="w3-text-white"> - (20:48 10/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">11 - </span>My Little Pony: Friendship is Magic Nona Temporada E20(216) "Com Um Casco Dentro"<span class="w3-text-white"> - (18:28 12/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">12 - </span>My Little Pony: Friendship is Magic Nona Temporada E21(217) "Daring em Dúvida"<span class="w3-text-white"> - (17:41 16/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">13 - </span>My Little Pony: Friendship is Magic Nona Temporada E22(218) "Crescer É uma Coisa Difícil"<span class="w3-text-white"> - (22:24 17/12/2021)</span></span><br /></div>
 <br />
 <a name="Séries_2021"></a>
 <b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
@@ -5265,35 +5398,35 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 
 
-<a id="Watched_Arquivado_Mobile_180" name="Watched_Arquivado_2019_Mobile"></a>
+<a id="Watched_Arquivado_Mobile_185" name="Watched_Arquivado_2019_Mobile"></a>
 <div id="Watched_Arquivado_2019_Mobile" class="city mobileShow" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_180">
+<h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_185">
 
 <div class="mobileHide"><span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Mídias Arquivadas" alt="Mídias Arquivadas">
-<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
+<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();" title="Mídias Arquivadas" alt="Mídias Arquivadas"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
 </div>
-<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('mobile_button_4');Change_Button_Color();">
+<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Arquivadas" alt="Mídias Arquivadas">
+<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
 <h4>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h4>
 </button>
 </a>
@@ -5331,7 +5464,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <h4 class="text_blue" style="text-align:left;">
 <div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">112</span></b><br />
 </a>
-<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 </a>
 <a href="#Séries_2021"><b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
 </a>
@@ -5680,7 +5813,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <br />
 <a name="Desenhos_2021"></a>
-<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Rick and Morty T04E02(33) "O Velho e o Assento"<span class="w3-text-white"> - (21:06 05/01/2021)</span></span><br /></div>
 <div style="margin-left:30px;">
@@ -5697,6 +5830,16 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">7 - </span>My Little Pony: Friendship is Magic Nona Temporada E16(212) "Uma Busca Trivial"<span class="w3-text-white"> - (16:36 19/11/2021)</span></span><br /></div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>My Little Pony: Friendship is Magic Nona Temporada E17(213) "O Contratempo de Sol de Verão"<span class="w3-text-white"> - (20:24 20/11/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>My Little Pony: Friendship is Magic Nona Temporada E18(214) "Ela Fala com Angel"<span class="w3-text-white"> - (21:20 09/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>My Little Pony: Friendship is Magic Nona Temporada E19(215) "Dragão Disputado"<span class="w3-text-white"> - (20:48 10/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">11 - </span>My Little Pony: Friendship is Magic Nona Temporada E20(216) "Com Um Casco Dentro"<span class="w3-text-white"> - (18:28 12/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">12 - </span>My Little Pony: Friendship is Magic Nona Temporada E21(217) "Daring em Dúvida"<span class="w3-text-white"> - (17:41 16/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">13 - </span>My Little Pony: Friendship is Magic Nona Temporada E22(218) "Crescer É uma Coisa Difícil"<span class="w3-text-white"> - (22:24 17/12/2021)</span></span><br /></div>
 <br />
 <a name="Séries_2021"></a>
 <b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
@@ -6107,35 +6250,55 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 </div>
 </div>
-<a id="Watched_Arquivado_Computer_180" name="Watched_Arquivado_2020_Computer"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a id="Watched_Arquivado_Computer_185_id" name="Watched_Arquivado_2020_Computer"></a>
 <div id="Watched_Arquivado_2020_Computer" class="city mobileHide" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_180">
+<h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_185">
 
 <div class="mobileHide"><span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Mídias Arquivadas" alt="Mídias Arquivadas">
-<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
+<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();" title="Mídias Arquivadas" alt="Mídias Arquivadas"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
 </div>
-<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('mobile_button_4');Change_Button_Color();">
+<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Arquivadas" alt="Mídias Arquivadas">
+<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
 <h4>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h4>
 </button>
 </a>
@@ -6173,7 +6336,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <h4 class="text_blue" style="text-align:left;">
 <div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">112</span></b><br />
 </a>
-<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 </a>
 <a href="#Séries_2021"><b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
 </a>
@@ -6522,7 +6685,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <br />
 <a name="Desenhos_2021"></a>
-<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Rick and Morty T04E02(33) "O Velho e o Assento"<span class="w3-text-white"> - (21:06 05/01/2021)</span></span><br /></div>
 <div style="margin-left:30px;">
@@ -6539,6 +6702,16 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">7 - </span>My Little Pony: Friendship is Magic Nona Temporada E16(212) "Uma Busca Trivial"<span class="w3-text-white"> - (16:36 19/11/2021)</span></span><br /></div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>My Little Pony: Friendship is Magic Nona Temporada E17(213) "O Contratempo de Sol de Verão"<span class="w3-text-white"> - (20:24 20/11/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>My Little Pony: Friendship is Magic Nona Temporada E18(214) "Ela Fala com Angel"<span class="w3-text-white"> - (21:20 09/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>My Little Pony: Friendship is Magic Nona Temporada E19(215) "Dragão Disputado"<span class="w3-text-white"> - (20:48 10/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">11 - </span>My Little Pony: Friendship is Magic Nona Temporada E20(216) "Com Um Casco Dentro"<span class="w3-text-white"> - (18:28 12/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">12 - </span>My Little Pony: Friendship is Magic Nona Temporada E21(217) "Daring em Dúvida"<span class="w3-text-white"> - (17:41 16/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">13 - </span>My Little Pony: Friendship is Magic Nona Temporada E22(218) "Crescer É uma Coisa Difícil"<span class="w3-text-white"> - (22:24 17/12/2021)</span></span><br /></div>
 <br />
 <a name="Séries_2021"></a>
 <b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
@@ -6678,35 +6851,35 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 
 
-<a id="Watched_Arquivado_Mobile_180" name="Watched_Arquivado_2020_Mobile"></a>
+<a id="Watched_Arquivado_Mobile_185" name="Watched_Arquivado_2020_Mobile"></a>
 <div id="Watched_Arquivado_2020_Mobile" class="city mobileShow" style="display:none;"><div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_180">
+<h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_185">
 
 <div class="mobileHide"><span title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
-<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();"><h2>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Mídias Assistidas em 2021"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021');Define_Button('computer_button_1');Change_Button_Color();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021"><h2>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Filmes" alt="Filmes">
-<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
+<a href="#Watch History_Filmes"><button id="computer_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes');Define_Button('computer_button_3');Change_Button_Color();" title="Filmes" alt="Filmes"><h2>Filmes [10]: <i class="fas fa-film"></i></h2></button></a>
 </span>
 
 <span title="Mídias Arquivadas" alt="Mídias Arquivadas">
-<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
+<a href="#Watched_Mídias Arquivadas"><button id="computer_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas');Define_Button('computer_button_4');Change_Button_Color();" title="Mídias Arquivadas" alt="Mídias Arquivadas"><h2>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h2></button></a>
 </span>
 
 </div>
-<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('mobile_button_1');Change_Button_Color();">
-<h4>Mídias Assistidas em 2021 [180]: <i class="fas fa-eye"></i></h4>
+<div class="mobileShow"><a href="#Watch History_Mídias Assistidas em 2021_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Assistidas em 2021" alt="Mídias Assistidas em 2021">
+<button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Mídias Assistidas em 2021_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<h4>Mídias Assistidas em 2021 [185]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
-<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watch History_Filmes_Mobile');Define_Button('mobile_button_3');Change_Button_Color();">
+<a href="#Watch History_Filmes_Mobile" onclick="Hide_Mobile_Buttons();" title="Filmes" alt="Filmes">
+<button id="mobile_button_3" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Filmes_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Filmes [10]: <i class="fas fa-film"></i></h4>
 </button>
 </a>
-<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();">
-<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('mobile_button_4');Change_Button_Color();">
+<a href="#Watched_Mídias Arquivadas_Mobile" onclick="Hide_Mobile_Buttons();" title="Mídias Arquivadas" alt="Mídias Arquivadas">
+<button id="mobile_button_4" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watched_Mídias Arquivadas_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
 <h4>Mídias Arquivadas [3]: <i class="fas fa-archive"></i></h4>
 </button>
 </a>
@@ -6744,7 +6917,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <h4 class="text_blue" style="text-align:left;">
 <div class="mobileHide"><a href="#Animes_2021"><b><span class="w3-text-white">Animes: </span><span class="text_blue">112</span></b><br />
 </a>
-<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<a href="#Desenhos_2021"><b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 </a>
 <a href="#Séries_2021"><b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
 </a>
@@ -7093,7 +7266,7 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 </div>
 <br />
 <a name="Desenhos_2021"></a>
-<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">8</span></b><br />
+<b><span class="w3-text-white">Desenhos: </span><span class="text_blue">13</span></b><br />
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">1 - </span>Rick and Morty T04E02(33) "O Velho e o Assento"<span class="w3-text-white"> - (21:06 05/01/2021)</span></span><br /></div>
 <div style="margin-left:30px;">
@@ -7110,6 +7283,16 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">7 - </span>My Little Pony: Friendship is Magic Nona Temporada E16(212) "Uma Busca Trivial"<span class="w3-text-white"> - (16:36 19/11/2021)</span></span><br /></div>
 <div style="margin-left:30px;">
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>My Little Pony: Friendship is Magic Nona Temporada E17(213) "O Contratempo de Sol de Verão"<span class="w3-text-white"> - (20:24 20/11/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">9 - </span>My Little Pony: Friendship is Magic Nona Temporada E18(214) "Ela Fala com Angel"<span class="w3-text-white"> - (21:20 09/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">10 - </span>My Little Pony: Friendship is Magic Nona Temporada E19(215) "Dragão Disputado"<span class="w3-text-white"> - (20:48 10/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">11 - </span>My Little Pony: Friendship is Magic Nona Temporada E20(216) "Com Um Casco Dentro"<span class="w3-text-white"> - (18:28 12/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">12 - </span>My Little Pony: Friendship is Magic Nona Temporada E21(217) "Daring em Dúvida"<span class="w3-text-white"> - (17:41 16/12/2021)</span></span><br /></div>
+<div style="margin-left:30px;">
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">13 - </span>My Little Pony: Friendship is Magic Nona Temporada E22(218) "Crescer É uma Coisa Difícil"<span class="w3-text-white"> - (22:24 17/12/2021)</span></span><br /></div>
 <br />
 <a name="Séries_2021"></a>
 <b><span class="w3-text-white">Séries: </span><span class="text_blue">37</span></b><br />
@@ -7248,13 +7431,9 @@ Site para mostrar <span class="w3-text-yellow w3-text-white">Animes</span>, <spa
 
 </div>
 
-<br /><br /><br /><br /><br /><br /><br /><br /><br />
-<center>
-<a href="#Sites de Sites: : "><button id="websites_tab_button" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" alt="Sites de Sites: : " title="Sites de Sites: : " onclick="openCity('Sites de Sites: : ');Define_Button('websites_tab_button');Change_Button_Color();"><h2>Sites: <i class="fas fa-globe-americas"></i></h2></button></a>
-</center>
-<a name="Sites de Sites: : "></a>
-<br />
-<div id="Sites de Sites: : " class="city" style="display:none;border-radius: 50px;">
+
+<a name="Aba de Sites"></a>
+<div id="Aba de Sites" class="city" style="display:none;border-radius: 50px;">
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <div class="mobileHide" style="border-radius: 50px;">
 <h4 class="border_color_blue w3-black border_3px border_color_blue" style="margin:10%;border-radius: 50px;"><div style="margin:3%;">
