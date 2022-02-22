@@ -21,7 +21,7 @@
 	<meta name="twitter:creator" content="@Stake2_" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content="https://thestake2.netlify.app/Watch History/en-us/" />
-	<meta name="revised" content="Stake2's Enterprise TM, 18/02/2022." />
+	<meta name="revised" content="Stake2's Enterprise TM, 22/02/2022." />
 	<meta name="author" content="Stake2" />
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 	<meta charset="UTF-8" />
@@ -37,6 +37,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 	<script src="https://kit.fontawesome.com/df0c191291.js" crossorigin="anonymous"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Tabs.js"></script>
+	<script src="https://thestake2.netlify.app/JavaScript/Function/Redirect To Website Of User Language.js" onLoad="Check_Website_Link();"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Show Hide.js"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Mobile Side Menu.js"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Set Revised Date.js"></script>
@@ -49,7 +50,7 @@
 <!--- Computer Button bar on the top -->
 <div id="computer_buttons_bar" class="w3-center w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
 <span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Media Being Watched" alt="Media Being Watched">
@@ -85,7 +86,7 @@ Websites: <i class="fas fa-globe-americas"></i></h2></button></a>
 
 <a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Media Being Watched_Mobile" onclick="Hide_Mobile_Buttons();" title="Media Being Watched" alt="Media Being Watched">
@@ -206,7 +207,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_1">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -219,7 +220,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 
 </div><div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -233,7 +234,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </button>
 </a>
 </div><hr class="border_color_blue border_1px" />
-<div class="w3-animate-zoom"><h2 class="mobileHide"><p></p><br /><b><span class="text_blue mobileHide">Watched Media in 2022<span class="text_yellow" > [18]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h2><h4 class="mobileShow"><p></p><br /><b><span class="text_blue mobileShow">Watched Media in 2022<span class="text_yellow" > [18]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h4></div><hr class="border_color_blue border_1px" />
+<div class="w3-animate-zoom"><h2 class="mobileHide"><p></p><br /><b><span class="text_blue mobileHide">Watched Media in 2022<span class="text_yellow" > [21]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h2><h4 class="mobileShow"><p></p><br /><b><span class="text_blue mobileShow">Watched Media in 2022<span class="text_yellow" > [21]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h4></div><hr class="border_color_blue border_1px" />
 <h4 class="text_blue" style="text-align:left;">
 <div class="w3-animate-zoom">
 <div class="mobileHide"><a href="#Animes_2022"><b><span class="w3-text-white">Animes: </span><span class="text_blue">7</span></b><br />
@@ -244,7 +245,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </a>
 <a href="#Movies_2022"><b><span class="w3-text-white">Movies: </span><span class="text_blue">1</span></b><br />
 </a>
-<a href="#Videos_2022"><b><span class="w3-text-white">Videos: </span><span class="text_blue">5</span></b><br />
+<a href="#Videos_2022"><b><span class="w3-text-white">Videos: </span><span class="text_blue">8</span></b><br />
 </a>
 <br />
 <a name="Animes_2022"></a>
@@ -280,6 +281,9 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Lives do alanzoka: alanzoka jogando Crab Game com os amigos<span class="w3-text-white"> - (07:07 14/02/2022)</span></span><br /></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Lives do alanzoka: alanzoka jogando Crab Game com os amigos - #2<span class="w3-text-white"> - (17:24 14/02/2022)</span></span><br /></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">5 - </span>Lives do alanzoka: alanzoka jogando Deathloop - Parte #8<span class="w3-text-white"> - (01:01 17/02/2022)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">6 - </span>Lives do alanzoka: alanzoka jogando Deathloop - Parte #9<span class="w3-text-white"> - (20:17 19/02/2022)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">7 - </span>SINXPLAYSBR: Sunset Overdrive Parte 1 - Inicio do Fim!!<span class="w3-text-white"> - (15:32 20/02/2022)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>Lives do alanzoka: alanzoka jogando Deathloop - Parte #10 / FINAL<span class="w3-text-white"> - (23:26 20/02/2022)</span></span><br /></div>
 </div><div class="mobileShow"><a href="#Animes_2022_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">7</span></b><br />
 </a>
 <a href="#Cartoons_2022_Mobile"><b><span class="w3-text-white">Cartoons: </span><span class="text_blue">0</span></b><br />
@@ -288,7 +292,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </a>
 <a href="#Movies_2022_Mobile"><b><span class="w3-text-white">Movies: </span><span class="text_blue">1</span></b><br />
 </a>
-<a href="#Videos_2022_Mobile"><b><span class="w3-text-white">Videos: </span><span class="text_blue">5</span></b><br />
+<a href="#Videos_2022_Mobile"><b><span class="w3-text-white">Videos: </span><span class="text_blue">8</span></b><br />
 </a>
 <br />
 <a name="Animes_2022_Mobile"></a>
@@ -324,6 +328,9 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Lives do alanzoka: alanzoka jogando Crab Game com os amigos<span class="w3-text-white"> - (07:07 14/02/2022)</span></span><br /></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Lives do alanzoka: alanzoka jogando Crab Game com os amigos - #2<span class="w3-text-white"> - (17:24 14/02/2022)</span></span><br /></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">5 - </span>Lives do alanzoka: alanzoka jogando Deathloop - Parte #8<span class="w3-text-white"> - (01:01 17/02/2022)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">6 - </span>Lives do alanzoka: alanzoka jogando Deathloop - Parte #9<span class="w3-text-white"> - (20:17 19/02/2022)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">7 - </span>SINXPLAYSBR: Sunset Overdrive Parte 1 - Inicio do Fim!!<span class="w3-text-white"> - (15:32 20/02/2022)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>Lives do alanzoka: alanzoka jogando Deathloop - Parte #10 / FINAL<span class="w3-text-white"> - (23:26 20/02/2022)</span></span><br /></div>
 </div></div>
 </h4>
 
@@ -338,7 +345,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_1">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -351,7 +358,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 
 </div><div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -365,7 +372,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </button>
 </a>
 </div><hr class="border_color_blue border_1px" />
-<div class="w3-animate-zoom"><h2 class="mobileHide"><p></p><br /><b><span class="text_blue mobileHide">Watched Media in 2022<span class="text_yellow" > [18]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h2><h4 class="mobileShow"><p></p><br /><b><span class="text_blue mobileShow">Watched Media in 2022<span class="text_yellow" > [18]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h4></div><hr class="border_color_blue border_1px" />
+<div class="w3-animate-zoom"><h2 class="mobileHide"><p></p><br /><b><span class="text_blue mobileHide">Watched Media in 2022<span class="text_yellow" > [21]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h2><h4 class="mobileShow"><p></p><br /><b><span class="text_blue mobileShow">Watched Media in 2022<span class="text_yellow" > [21]</span>: <i class="fas fa-eye"></i></b><br /><p></p></h4></div><hr class="border_color_blue border_1px" />
 <h4 class="text_blue" style="text-align:left;">
 <div class="w3-animate-zoom">
 <div class="mobileHide"><a href="#Animes_2022"><b><span class="w3-text-white">Animes: </span><span class="text_blue">7</span></b><br />
@@ -376,7 +383,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </a>
 <a href="#Movies_2022"><b><span class="w3-text-white">Movies: </span><span class="text_blue">1</span></b><br />
 </a>
-<a href="#Videos_2022"><b><span class="w3-text-white">Videos: </span><span class="text_blue">5</span></b><br />
+<a href="#Videos_2022"><b><span class="w3-text-white">Videos: </span><span class="text_blue">8</span></b><br />
 </a>
 <br />
 <a name="Animes_2022"></a>
@@ -412,6 +419,9 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Lives do alanzoka: alanzoka jogando Crab Game com os amigos<span class="w3-text-white"> - (07:07 14/02/2022)</span></span><br /></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Lives do alanzoka: alanzoka jogando Crab Game com os amigos - #2<span class="w3-text-white"> - (17:24 14/02/2022)</span></span><br /></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">5 - </span>Lives do alanzoka: alanzoka jogando Deathloop - Parte #8<span class="w3-text-white"> - (01:01 17/02/2022)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">6 - </span>Lives do alanzoka: alanzoka jogando Deathloop - Parte #9<span class="w3-text-white"> - (20:17 19/02/2022)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">7 - </span>SINXPLAYSBR: Sunset Overdrive Parte 1 - Inicio do Fim!!<span class="w3-text-white"> - (15:32 20/02/2022)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>Lives do alanzoka: alanzoka jogando Deathloop - Parte #10 / FINAL<span class="w3-text-white"> - (23:26 20/02/2022)</span></span><br /></div>
 </div><div class="mobileShow"><a href="#Animes_2022_Mobile"><b><span class="w3-text-white">Animes: </span><span class="text_blue">7</span></b><br />
 </a>
 <a href="#Cartoons_2022_Mobile"><b><span class="w3-text-white">Cartoons: </span><span class="text_blue">0</span></b><br />
@@ -420,7 +430,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </a>
 <a href="#Movies_2022_Mobile"><b><span class="w3-text-white">Movies: </span><span class="text_blue">1</span></b><br />
 </a>
-<a href="#Videos_2022_Mobile"><b><span class="w3-text-white">Videos: </span><span class="text_blue">5</span></b><br />
+<a href="#Videos_2022_Mobile"><b><span class="w3-text-white">Videos: </span><span class="text_blue">8</span></b><br />
 </a>
 <br />
 <a name="Animes_2022_Mobile"></a>
@@ -456,6 +466,9 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">3 - </span>Lives do alanzoka: alanzoka jogando Crab Game com os amigos<span class="w3-text-white"> - (07:07 14/02/2022)</span></span><br /></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">4 - </span>Lives do alanzoka: alanzoka jogando Crab Game com os amigos - #2<span class="w3-text-white"> - (17:24 14/02/2022)</span></span><br /></div>
 <div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">5 - </span>Lives do alanzoka: alanzoka jogando Deathloop - Parte #8<span class="w3-text-white"> - (01:01 17/02/2022)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">6 - </span>Lives do alanzoka: alanzoka jogando Deathloop - Parte #9<span class="w3-text-white"> - (20:17 19/02/2022)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">7 - </span>SINXPLAYSBR: Sunset Overdrive Parte 1 - Inicio do Fim!!<span class="w3-text-white"> - (15:32 20/02/2022)</span></span><br /></div>
+<div class="w3-animate-zoom"><span class="text_hover_white"><span class="w3-text-white">8 - </span>Lives do alanzoka: alanzoka jogando Deathloop - Parte #10 / FINAL<span class="w3-text-white"> - (23:26 20/02/2022)</span></span><br /></div>
 </div></div>
 </h4>
 
@@ -501,7 +514,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Arkantos (Episode: X) (Series: Oxygen Not Included)</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >ChratosGameplayer (Episode: None) (Series: Life in Bunker)</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >LCarrafaBR (Episode: No Man's Sky - Expedition (NOVA ATUALIZAÇÂO) - LIVE) (Series: No Man's Sky Origins)</span><br />
-<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >Lives do alanzoka (Episode: alanzoka jogando Deathloop - Parte #9) (Series: Deathloop)</span><br />
+<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >SINXPLAYSBR (Episode: Sunset Overdrive Parte 2 - ANIMALPOCALIPSE) (Series: Sunset Overdrive)</span><br />
 </div>
 <br /></h3><h4 class="text_blue mobileShow" ><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Animes:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Boku no Kanojo ga Majimesugiru Sho-bitch na Ken (Episode: EP07 "Caramba... Eu não consigo tirar minha mente disso...")</span><br />
@@ -535,7 +548,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Arkantos (Episode: X) (Series: Oxygen Not Included)</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >ChratosGameplayer (Episode: None) (Series: Life in Bunker)</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >LCarrafaBR (Episode: No Man's Sky - Expedition (NOVA ATUALIZAÇÂO) - LIVE) (Series: No Man's Sky Origins)</span><br />
-<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >Lives do alanzoka (Episode: alanzoka jogando Deathloop - Parte #9) (Series: Deathloop)</span><br />
+<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >SINXPLAYSBR (Episode: Sunset Overdrive Parte 2 - ANIMALPOCALIPSE) (Series: Sunset Overdrive)</span><br />
 </div>
 <br /></h4>
 </div>
@@ -580,7 +593,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Arkantos (Episode: X) (Series: Oxygen Not Included)</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >ChratosGameplayer (Episode: None) (Series: Life in Bunker)</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >LCarrafaBR (Episode: No Man's Sky - Expedition (NOVA ATUALIZAÇÂO) - LIVE) (Series: No Man's Sky Origins)</span><br />
-<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >Lives do alanzoka (Episode: alanzoka jogando Deathloop - Parte #9) (Series: Deathloop)</span><br />
+<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >SINXPLAYSBR (Episode: Sunset Overdrive Parte 2 - ANIMALPOCALIPSE) (Series: Sunset Overdrive)</span><br />
 </div>
 <br /></h3><h4 class="text_blue mobileShow" ><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Animes:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Boku no Kanojo ga Majimesugiru Sho-bitch na Ken (Episode: EP07 "Caramba... Eu não consigo tirar minha mente disso...")</span><br />
@@ -614,7 +627,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Arkantos (Episode: X) (Series: Oxygen Not Included)</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >ChratosGameplayer (Episode: None) (Series: Life in Bunker)</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >LCarrafaBR (Episode: No Man's Sky - Expedition (NOVA ATUALIZAÇÂO) - LIVE) (Series: No Man's Sky Origins)</span><br />
-<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >Lives do alanzoka (Episode: alanzoka jogando Deathloop - Parte #9) (Series: Deathloop)</span><br />
+<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >SINXPLAYSBR (Episode: Sunset Overdrive Parte 2 - ANIMALPOCALIPSE) (Series: Sunset Overdrive)</span><br />
 </div>
 <br /></h4>
 </div>
@@ -628,7 +641,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_3">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -641,7 +654,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 
 </div><div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -704,7 +717,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_3">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -717,7 +730,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 
 </div><div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -780,7 +793,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_4">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -794,7 +807,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </div>
 <div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -856,7 +869,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_4">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -870,7 +883,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </div>
 <div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -931,7 +944,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_52">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -945,7 +958,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </div>
 <div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -1100,7 +1113,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_52">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -1114,7 +1127,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </div>
 <div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -1268,7 +1281,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_293">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -1282,7 +1295,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </div>
 <div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -1678,7 +1691,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_293">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -1692,7 +1705,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </div>
 <div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -2087,7 +2100,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_248">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -2101,7 +2114,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </div>
 <div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -2452,7 +2465,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_248">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -2466,7 +2479,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </div>
 <div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -2816,7 +2829,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_194">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -2830,7 +2843,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </div>
 <div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
@@ -3127,7 +3140,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_194">
 
 <div class="mobileHide"><span title="Watched Media in 2022" alt="Watched Media in 2022">
-<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h2></button></a>
+<a href="#Watch History_Watched Media in 2022"><button id="computer_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022');Define_Button('computer_button_1');Change_Button_Color();" title="Watched Media in 2022" alt="Watched Media in 2022"><h2>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h2></button></a>
 </span>
 
 <span title="Movies" alt="Movies">
@@ -3141,7 +3154,7 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 </div>
 <div class="mobileShow"><a href="#Watch History_Watched Media in 2022_Mobile" onclick="Hide_Mobile_Buttons();" title="Watched Media in 2022" alt="Watched Media in 2022">
 <button id="mobile_button_1" class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Watch History_Watched Media in 2022_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Watched Media in 2022 [18]: <i class="fas fa-eye"></i></h4>
+<h4>Watched Media in 2022 [21]: <i class="fas fa-eye"></i></h4>
 </button>
 </a>
 <a href="#Watch History_Movies_Mobile" onclick="Hide_Mobile_Buttons();" title="Movies" alt="Movies">
