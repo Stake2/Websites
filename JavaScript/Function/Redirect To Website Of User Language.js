@@ -388,51 +388,6 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == "New World" && check == false) {
-		var website_language = "General";
-
-		if (website_language == user_language) {
-			return;
-		}
-
-		if (website_language != user_language) {
-			var choosen_website_url = website_link + "New_World/";
-			var res = choosen_website_url + user_language + "/";
-			window.location = res;
-			return;
-		}
-	}
-
-	if (website_title == "New World PT-BR" && check == false) {
-		var website_language = "pt-BR";
-
-		if (website_language == user_language) {
-			return;
-		}
-
-		if (website_language != user_language) {
-			var choosen_website_url = website_link + "New_World/";
-			var res = choosen_website_url + user_language + "/";
-			window.location = res;
-			return;
-		}
-	}
-
-	if (website_title == "New World EN-US" && check == false) {
-		var website_language = "en-US";
-
-		if (website_language == user_language) {
-			return;
-		}
-
-		if (website_language != user_language) {
-			var choosen_website_url = website_link + "New_World/";
-			var res = choosen_website_url + user_language + "/";
-			window.location = res;
-			return;
-		}
-	}
-
 	if (website_title == "Littletato - Pequenata" && check == false) {
 		var website_language = "General";
 
@@ -529,7 +484,69 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == "SpaceLiving" && check == false) {
+	var website_name = "New World";
+	if (website_title == website_name && check == false) {
+		var website_language = "General";
+
+		if (website_language == user_language) {
+			return;
+		}
+
+		if (website_language != user_language) {
+			var choosen_website_url = website_link + "New_World/";
+			var res = choosen_website_url + user_language + "/";
+			window.location = res;
+			return;
+		}
+	}
+
+	if (website_title == website_name + " EN-US" && check == false) {
+		var website_language = "en-US";
+
+		if (website_language == user_language) {
+			return;
+		}
+
+		if (website_language != user_language) {
+			var choosen_website_url = website_link + "New_World/";
+			var res = choosen_website_url + user_language + "/";
+			window.location = res;
+			return;
+		}
+	}
+
+	if (website_title == website_name + " PT-BR" && check == false) {
+		var website_language = "pt-BR";
+
+		if (website_language == user_language) {
+			return;
+		}
+
+		if (website_language != user_language) {
+			var choosen_website_url = website_link + "New_World/";
+			var res = choosen_website_url + user_language + "/";
+			window.location = res;
+			return;
+		}
+	}
+
+	if (website_title == website_name + " PT-PT" && check == false) {
+		var website_language = "pt-PT";
+
+		if (website_language == user_language) {
+			return;
+		}
+
+		if (website_language != user_language) {
+			var choosen_website_url = website_link + "New_World/";
+			var res = choosen_website_url + user_language + "/";
+			window.location = res;
+			return;
+		}
+	}
+
+	var website_name = "SpaceLiving";
+	if (website_title == website_name && check == false) {
 		var website_language = "General";
 
 		if (website_language == user_language) {
@@ -544,7 +561,7 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == "SpaceLiving EN-US" && check == false) {
+	if (website_title == website_name + " EN-US" && check == false) {
 		var website_language = "en-US";
 
 		if (website_language == user_language) {
@@ -559,7 +576,7 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == "SpaceLiving PT-BR" && check == false) {
+	if (website_title == website_name + " PT-BR" && check == false) {
 		var website_language = "pt-BR";
 
 		if (website_language == user_language) {
@@ -574,7 +591,7 @@ function Check_Website_Link() {
 		}
 	}
 
-	if (website_title == "SpaceLiving PT-PT" && check == false) {
+	if (website_title == website_name + " PT-PT" && check == false) {
 		var website_language = "pt-PT";
 
 		if (website_language == user_language) {
@@ -959,6 +976,8 @@ function Check_Website_Link() {
 	var current_year = new Date().getFullYear();
 
 	year_websites.forEach(Check_Website_Link_By_Language);
+
+	
 }
 
 function Check_Website_Link_By_Language(item) {
