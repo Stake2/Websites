@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+	<title>Lista de Jogos Flash</title>
+	<link rel="canonical" href="https://thestake2.netlify.app/Lista de Jogos Flash/pt-br/" />
+	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Website Icons/Watch History.png" />
+	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Website Icons/Watch History.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Lista de Jogos Flash" />
+	<meta property="og:site_name" content="Lista de Jogos Flash" />
+	<meta property="og:url" content="https://thestake2.netlify.app/Lista de Jogos Flash/pt-br/" />
+	<meta property="og:image" content="https://thestake2.netlify.app/Images/Website Icons/Watch History.png" />
+	<meta property="og:description" content="Uma lista de jogos Flash para mim jogar." />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:locale:alternate" content="pt_BR" />
+	<meta property="og:locale:alternate" content="pt_PT" />
+	<meta name="description" content="Uma lista de jogos Flash para mim jogar." />
+	<meta name="theme-color" content="#916f3b" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:website" value="@Stake2_" />
+	<meta name="twitter:site" value="@Stake2_" />
+	<meta name="twitter:creator" content="@Stake2_" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content="https://thestake2.netlify.app/Lista de Jogos Flash/pt-br/" />
+	<meta name="revised" content="Stake2's Enterprise TM, 07/03/2022." />
+	<meta name="author" content="Stake2" />
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
+	<meta charset="UTF-8" />
+
+	<!-- CSS files -->
+	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/lib/w3.css" />
+	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/W3.css" />
+	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Main_CSS.css" />
+	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Website CSS/Watch History.css" />
+	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Colors.css" />
+
+	<!-- JavaScript files -->
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+	<script src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>
+	<script src="https://thestake2.netlify.app/JavaScript/Function/Tabs.js"></script>
+	<script src="https://thestake2.netlify.app/JavaScript/Function/Redirect To Website Of User Language.js" onLoad="Check_Website_Link();"></script>
+	<script src="https://thestake2.netlify.app/JavaScript/Function/Show Hide.js"></script>
+	<script src="https://thestake2.netlify.app/JavaScript/Function/Mobile Side Menu.js"></script>
+	<script src="https://thestake2.netlify.app/JavaScript/Function/Set Revised Date.js"></script>
+	<script src="https://thestake2.netlify.app/JavaScript/Function/Change Button Color.js"></script>
+	<script src="https://thestake2.netlify.app/JavaScript/Function/Hide Chapter Button Images.js"></script>
+</head>
+<body onLoad="Define_Colors_And_Styles();">
+<center>
+
+
+
+<script>
+var old_website_title, current_website_title;
+
+function Get_Title() {
+	old_website_title = document.title;
+	current_website_title = document.title;
+}
+
+function Change_Title() {
+	document.title = "(1) " + document.title;
+	current_website_title = document.title;
+}
+
+function Reset_Title(mode, source = null) {
+	if (mode == "chapter") {
+		document.title = current_website_title;
+
+		if (source == "notification") {
+			document.title = document.title.replace("(1) ", "");
+		}
+	}
+
+	if (mode == "notification") {
+		document.title = document.title.replace("(1) ", "");
+		current_website_title = document.title;
+	}
+}
+
+function Add_To_Website_Title(text_to_add, source = null) {
+	Reset_Title("chapter", source);
+	document.title = document.title + " " + text_to_add;
+}
+</script>
+
+<!-- Website header -->
+<div class="background_black border_color_blue border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<!-- Website computer title -->
+<h2 class="w3-center text_blue w3-animate-zoom mobileHide">
+<p><br /><b>Lista de Jogos Flash: <i class="fa-solid fa-gamepad"></i></b><br /><br /><p>
+</h2>
+</div>
+
+<!-- Website mobile title -->
+<div class="w3-animate-zoom"><h4 class="w3-center text_blue w3-animate-zoom mobileShow">
+<p><br /><b>Lista de Jogos Flash: <i class="fa-solid fa-gamepad"></i></b><br /><br /><p>
+</h4>
+</div>
+<hr class="border_color_blue border_1px" style="margin-left:3%;margin-right:3%;" />
+<!-- Website Images -->
+<div class="w3-center">
+
+<!-- Computer website image -->
+<center>
+<img src="https://thestake2.netlify.app/Images/Website Icons/Watch History.png" width="31%" class="w3-center border_3px border_color_blue mobileHide w3-center" style="border-radius: 50px;" />
+</center>
+
+<!-- Computer website image link button -->
+<div class="mobileHide w3-center">
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Images/Website Icons/Watch History.png')">
+<h4>Link da imagem: <i class="fas fa-images"></i></h4>
+</button>
+</div>
+
+<!-- Mobile website image -->
+<center>
+<img src="https://thestake2.netlify.app/Images/Website Icons/Watch History.png" width="55%" class="border_3px border_color_blue mobileShow w3-center" style="border-radius: 50px;" />
+</center>
+
+<!-- Mobile website image link button -->
+<div class="mobileShow w3-center">
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Images/Website Icons/Watch History.png')">
+<h4>Link da imagem: <i class="fas fa-images"></i></h4>
+</button>
+</div>
+
+</div>
+
+<hr class="border_color_blue border_1px" style="margin-left:3%;margin-right:3%;" /><!-- Computer website header description -->
+<h2 class="w3-center text_blue mobileHide">
+Uma lista de jogos Flash para mim jogar.
+</h2>
+
+<!-- Mobile website header description -->
+<h4 class="w3-center text_blue mobileShow">
+Uma lista de jogos Flash para mim jogar.
+</h4>
+<br /></div>
+<!-- End of header -->
+
+<br /><br />
+
+<style>
+
+</style>
+
+
+
+<script>
+function getElementByXpath(path) {
+  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+}
+</script><div style="display:none;" id="click_website_button_color">background_yellow</div>
+<div style="display:none;" id="old_website_button_color">background_blue</div>
+<div style="display:none;" id="button_number">4</div>
+<script>
+Hide_Mobile_Buttons();
+</script>
+
+<a id="computer_tab_1_id" name="computer_tab_1"></a>
+<div id="computer_tab_1" class="city mobileHide">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h2 class="mobileHide background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_1">
+<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Lista de Jogos Flash: <i class="fa-solid fa-gamepad"></i></b><br /><br /><p></p></h2></div><hr class="border_color_blue border_1px" />
+<b><a class="a" target="" onclick="window.open('https://www.kongregate.com/games/ArmorGames/flight', '_blank', 'height=' + screen.height + ',width=' + screen.width + ', resizable=yes, scrollbars=yes, toolbar=yes, menubar=yes, location=yes')" style="cursor: pointer;text-decoration: underline;">Flight</a></b>
+</div>
+</div></h2>
+
+</div>
+
+
+<a id="mobile_tab_1" name="computer_tab_1"></a>
+<div id="computer_tab_1" class="city mobileShow">
+<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
+<h4 class="mobileShow background_black text_blue border_color_blue border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_1">
+<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Lista de Jogos Flash: <i class="fa-solid fa-gamepad"></i></b><br /><br /><p></p></h2></div><hr class="border_color_blue border_1px" />
+<b><a class="a" target="" onclick="window.open('https://www.kongregate.com/games/ArmorGames/flight', '_blank', 'height=' + screen.height + ',width=' + screen.width + ', resizable=yes, scrollbars=yes, toolbar=yes, menubar=yes, location=yes')" style="cursor: pointer;text-decoration: underline;">Flight</a></b>
+</div>
+</div></h4>
+
+</div>
+
+<script>
+Define_Colors_And_Styles();
+</script>
+
+</center>
+</body>
+</html>
