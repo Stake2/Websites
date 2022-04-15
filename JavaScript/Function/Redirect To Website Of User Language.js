@@ -493,7 +493,7 @@ function Check_Website_Link() {
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + "New_World/";
+			var choosen_website_url = website_link + "New World/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -508,7 +508,7 @@ function Check_Website_Link() {
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + "New_World/";
+			var choosen_website_url = website_link + "New World/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -523,7 +523,7 @@ function Check_Website_Link() {
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + "New_World/";
+			var choosen_website_url = website_link + "New World/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -538,7 +538,7 @@ function Check_Website_Link() {
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + "New_World/";
+			var choosen_website_url = website_link + "New World/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -554,7 +554,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "New_World/SpaceLiving/";
+			var choosen_website_url = website_link + "New World/SpaceLiving/";
 			var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 			window.location = redirect_to;
 			return;
@@ -569,7 +569,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "New_World/SpaceLiving/";
+			var choosen_website_url = website_link + "New World/SpaceLiving/";
 			var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 			window.location = redirect_to;
 			return;
@@ -584,7 +584,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "New_World/SpaceLiving/";
+			var choosen_website_url = website_link + "New World/SpaceLiving/";
 			var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 			window.location = redirect_to;
 			return;
@@ -599,7 +599,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "New_World/SpaceLiving/";
+			var choosen_website_url = website_link + "New World/SpaceLiving/";
 			var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 			window.location = redirect_to;
 			return;
