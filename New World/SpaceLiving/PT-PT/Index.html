@@ -4925,18 +4925,18 @@ Era outro dia no mundo SpaceLiving, os residentes estavam vivendo em Janeiro de 
 <br />Pequenata algumas vezes fazia caminhada em um parque em Los Angeles com Júlia e comprou alguns lanchinhos também.
 <br />Ela passou seu Natal junto de sua família e amigos na casa de seus pais.
 <br />Lisa havia terminado de fazer a line art do desenho que ela estava fazendo, eram dez da manhã.
-<br />A garota fechou o programa e o script de Python "Drawing_Manager.py", definiu o status para "Pintando", ela se espreguiçou na cadeira.
+<br />A garota fechou o programa e o script de Python "Drawing_Manager.py", definiu o status para "Pintando", e ela se espreguiçou na cadeira.
 <br />Um novo item apareceu no Catálogo de Objetos SpaceLiving alguns dias atrás.
 <br />Era um Stream Deck, que era tipo um tablet pequeno com botões, e esses botões eram como telas pequenas.
 <br />Você podia personalizar eles para fazer qualquer coisa que você quiser no seu computador, como mudar as luzes, desligar o computador, abrir um programa.
 <br />Lisa usou ele para diminuir as luzes de sua espaçonave e fazer elas menos azuis, ela pegou sua garrafa de água da geladeira e bebeu alguns goles dela.
-<br />Izaque usou o Stream Deck para também diminuir as luzes da espaçonave, abrir seus scripts Python, navegador, e também fazer coisas na LonelyShip.
+<br />Izaque usou o Stream Deck para também diminuir as luzes da espaçonave, abrir seus scripts Python, e navegador, e também fazer coisas na LonelyShip.
 <br />Tipo abrir portas, ligar seu PS4 ou Xbox One, colocar seu grande monitor de computador para fora para assistir coisas.
 <br />Lisa guardou sua garrafa de água dentro da geladeira, ela a fechou e abriu novamente, pegando uma garrafa de água menor.
 <br />A garota se trocou e andou até seu LST, fechando sua porta e selecionado a foto da Mansão de Pequenata em sua tela.
 <br />Agora ela estava na Mansão de Pequenata, a garota havia recentemente comprado um carro com o dinheiro que ela ganhou com ajuda dos cursos de investimento.
 <br />Ela andou até a cozinha, a garota trouxe seu celular, bebeu mais água, e pegou um pacote de bolachas recheadas de chocolate da geladeira TPF da cozinha.
-<br />Lisa se sentou em uma cadeira na mesa, abrindo o pacote e começando a comer algumas bolachas, ela viu uma nova mensagem no grupo do WhatsApp da Mansão de Pequenata.
+<br />Lisa se sentou em uma cadeira na mesa, abriu o pacote e começou a comer algumas bolachas, ela viu uma nova mensagem no grupo do WhatsApp da Mansão de Pequenata.
 <br />Era uma mensagem de Pequenata, dizendo que ela, Júlia, e seus amigos estavam na casa de Yam, fazendo uma festa, dizendo que tinha muita comida lá.
 <br />E que Ted havia convertido a geladeira de Yam em uma TPF, Lisa respondeu aquela mensagem perguntando se a festa ainda estava acontecendo.
 <br />Pequenata respondeu dizendo sim, e perguntou se ela estava vindo, Lisa respondeu dizendo sim, ela havia terminado de comer o pacote de bolachas recheadas de chocolate.
@@ -4967,13 +4967,13 @@ Era outro dia no mundo SpaceLiving, os residentes estavam vivendo em Janeiro de 
 <br />"Sim, eu quero um pedaço de bolo com um pouco de crise existencial", disse Lisa, que riu um pouco, o trio riu também.
 <br />Ela pegou um prato vazio e uma colher da TPF de Yam, então cortou um pedaço de bolo para ela.
 <br />Haviam Coca-cola lá também, Lisa encheu um copo com ela, ela sentou-se à mesa para comer e beber, e também para conversar com sua cunhada, seu irmão, e Patrícia.
-<br />Eles conversaram mais sobre o Izaque da Terra, Izaque SpaceLiving, como é viver na Rede SpaceLiving, planos para a vida e o novo ano, coisas filosóficas.
+<br />Eles conversaram mais sobre o Izaque da Terra, Izaque SpaceLiving, como é viver na Rede SpaceLiving, planos para a vida e o novo ano, e coisas filosóficas.
 <br />Patrícia disse que ela iria fazer um curso de investimento, para aprender a como investir seu dinheiro, Lisa disse que ela fez um também, foi assim que ela comprou seu Porsche.
 <br />Depois de comer um pouco, jogar, conversar, ouvir música, e assistir algumas coisas na Netflix, o grupo de amigos andou para seus quartos para dormir.
 <br />A casa de Yam tinha sete quartos, Pequenata e Júlia dormiram juntas, Ted e Monika também, Patrícia, Yam, Carol, e Lisa dormiram sozinhos em seus quartos.
 <br />O grupo de amigos dormiu em uma noite fria com cobertores, na noite de uma Sexta-feira em Janeiro de 2022.
 <br />Eles queriam acordar amanhã, Sábado, e festejar mais, passar mais tempo juntos, talvez fazer um churrasco, viajar, ir em uma pista de corrida com seus carros.
-<br /><br />Palavras: 2,397.
+<br /><br />Palavras: 2,400.
 </div>
 </div>
 <br /><br />
@@ -8112,6 +8112,7 @@ function Open_Chapter(chapter_title, chapter_number) {
 	Define_Chapter(Chapter_Number);
 	Add_To_Website_Title(chapter_title, "notification");
 	Hide_Computer_Buttons();
+	console.log("Opened chapter number " + chapter_number);
 	Hide_Computer_Notification();
 	Hide_Mobile_Notification();
 }
@@ -8131,92 +8132,92 @@ function Check_Chapter_Number_On_Link() {
 
 	var chapter_number = 19;
 
-	var first_check_1 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_1 = second_website_url.includes(read_chapter_text + 1);
 	var second_check_1 = second_website_url.includes(read_chapter_text + "[1]");
 	var third_check_1 = second_website_url.includes(read_chapter_text + '"' + 1 + '"');
 	var fourth_check_1 = second_website_url.includes(read_chapter_text + "%221%22");
 	var fifth_check_1 = second_website_url.includes("(1)");	var sixth_check_1 = second_website_url.includes("[1]");
-	var first_check_2 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_2 = second_website_url.includes(read_chapter_text + 2);
 	var second_check_2 = second_website_url.includes(read_chapter_text + "[2]");
 	var third_check_2 = second_website_url.includes(read_chapter_text + '"' + 2 + '"');
 	var fourth_check_2 = second_website_url.includes(read_chapter_text + "%222%22");
 	var fifth_check_2 = second_website_url.includes("(2)");	var sixth_check_2 = second_website_url.includes("[2]");
-	var first_check_3 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_3 = second_website_url.includes(read_chapter_text + 3);
 	var second_check_3 = second_website_url.includes(read_chapter_text + "[3]");
 	var third_check_3 = second_website_url.includes(read_chapter_text + '"' + 3 + '"');
 	var fourth_check_3 = second_website_url.includes(read_chapter_text + "%223%22");
 	var fifth_check_3 = second_website_url.includes("(3)");	var sixth_check_3 = second_website_url.includes("[3]");
-	var first_check_4 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_4 = second_website_url.includes(read_chapter_text + 4);
 	var second_check_4 = second_website_url.includes(read_chapter_text + "[4]");
 	var third_check_4 = second_website_url.includes(read_chapter_text + '"' + 4 + '"');
 	var fourth_check_4 = second_website_url.includes(read_chapter_text + "%224%22");
 	var fifth_check_4 = second_website_url.includes("(4)");	var sixth_check_4 = second_website_url.includes("[4]");
-	var first_check_5 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_5 = second_website_url.includes(read_chapter_text + 5);
 	var second_check_5 = second_website_url.includes(read_chapter_text + "[5]");
 	var third_check_5 = second_website_url.includes(read_chapter_text + '"' + 5 + '"');
 	var fourth_check_5 = second_website_url.includes(read_chapter_text + "%225%22");
 	var fifth_check_5 = second_website_url.includes("(5)");	var sixth_check_5 = second_website_url.includes("[5]");
-	var first_check_6 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_6 = second_website_url.includes(read_chapter_text + 6);
 	var second_check_6 = second_website_url.includes(read_chapter_text + "[6]");
 	var third_check_6 = second_website_url.includes(read_chapter_text + '"' + 6 + '"');
 	var fourth_check_6 = second_website_url.includes(read_chapter_text + "%226%22");
 	var fifth_check_6 = second_website_url.includes("(6)");	var sixth_check_6 = second_website_url.includes("[6]");
-	var first_check_7 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_7 = second_website_url.includes(read_chapter_text + 7);
 	var second_check_7 = second_website_url.includes(read_chapter_text + "[7]");
 	var third_check_7 = second_website_url.includes(read_chapter_text + '"' + 7 + '"');
 	var fourth_check_7 = second_website_url.includes(read_chapter_text + "%227%22");
 	var fifth_check_7 = second_website_url.includes("(7)");	var sixth_check_7 = second_website_url.includes("[7]");
-	var first_check_8 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_8 = second_website_url.includes(read_chapter_text + 8);
 	var second_check_8 = second_website_url.includes(read_chapter_text + "[8]");
 	var third_check_8 = second_website_url.includes(read_chapter_text + '"' + 8 + '"');
 	var fourth_check_8 = second_website_url.includes(read_chapter_text + "%228%22");
 	var fifth_check_8 = second_website_url.includes("(8)");	var sixth_check_8 = second_website_url.includes("[8]");
-	var first_check_9 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_9 = second_website_url.includes(read_chapter_text + 9);
 	var second_check_9 = second_website_url.includes(read_chapter_text + "[9]");
 	var third_check_9 = second_website_url.includes(read_chapter_text + '"' + 9 + '"');
 	var fourth_check_9 = second_website_url.includes(read_chapter_text + "%229%22");
 	var fifth_check_9 = second_website_url.includes("(9)");	var sixth_check_9 = second_website_url.includes("[9]");
-	var first_check_10 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_10 = second_website_url.includes(read_chapter_text + 10);
 	var second_check_10 = second_website_url.includes(read_chapter_text + "[10]");
 	var third_check_10 = second_website_url.includes(read_chapter_text + '"' + 10 + '"');
 	var fourth_check_10 = second_website_url.includes(read_chapter_text + "%2210%22");
 	var fifth_check_10 = second_website_url.includes("(10)");	var sixth_check_10 = second_website_url.includes("[10]");
-	var first_check_11 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_11 = second_website_url.includes(read_chapter_text + 11);
 	var second_check_11 = second_website_url.includes(read_chapter_text + "[11]");
 	var third_check_11 = second_website_url.includes(read_chapter_text + '"' + 11 + '"');
 	var fourth_check_11 = second_website_url.includes(read_chapter_text + "%2211%22");
 	var fifth_check_11 = second_website_url.includes("(11)");	var sixth_check_11 = second_website_url.includes("[11]");
-	var first_check_12 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_12 = second_website_url.includes(read_chapter_text + 12);
 	var second_check_12 = second_website_url.includes(read_chapter_text + "[12]");
 	var third_check_12 = second_website_url.includes(read_chapter_text + '"' + 12 + '"');
 	var fourth_check_12 = second_website_url.includes(read_chapter_text + "%2212%22");
 	var fifth_check_12 = second_website_url.includes("(12)");	var sixth_check_12 = second_website_url.includes("[12]");
-	var first_check_13 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_13 = second_website_url.includes(read_chapter_text + 13);
 	var second_check_13 = second_website_url.includes(read_chapter_text + "[13]");
 	var third_check_13 = second_website_url.includes(read_chapter_text + '"' + 13 + '"');
 	var fourth_check_13 = second_website_url.includes(read_chapter_text + "%2213%22");
 	var fifth_check_13 = second_website_url.includes("(13)");	var sixth_check_13 = second_website_url.includes("[13]");
-	var first_check_14 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_14 = second_website_url.includes(read_chapter_text + 14);
 	var second_check_14 = second_website_url.includes(read_chapter_text + "[14]");
 	var third_check_14 = second_website_url.includes(read_chapter_text + '"' + 14 + '"');
 	var fourth_check_14 = second_website_url.includes(read_chapter_text + "%2214%22");
 	var fifth_check_14 = second_website_url.includes("(14)");	var sixth_check_14 = second_website_url.includes("[14]");
-	var first_check_15 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_15 = second_website_url.includes(read_chapter_text + 15);
 	var second_check_15 = second_website_url.includes(read_chapter_text + "[15]");
 	var third_check_15 = second_website_url.includes(read_chapter_text + '"' + 15 + '"');
 	var fourth_check_15 = second_website_url.includes(read_chapter_text + "%2215%22");
 	var fifth_check_15 = second_website_url.includes("(15)");	var sixth_check_15 = second_website_url.includes("[15]");
-	var first_check_16 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_16 = second_website_url.includes(read_chapter_text + 16);
 	var second_check_16 = second_website_url.includes(read_chapter_text + "[16]");
 	var third_check_16 = second_website_url.includes(read_chapter_text + '"' + 16 + '"');
 	var fourth_check_16 = second_website_url.includes(read_chapter_text + "%2216%22");
 	var fifth_check_16 = second_website_url.includes("(16)");	var sixth_check_16 = second_website_url.includes("[16]");
-	var first_check_17 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_17 = second_website_url.includes(read_chapter_text + 17);
 	var second_check_17 = second_website_url.includes(read_chapter_text + "[17]");
 	var third_check_17 = second_website_url.includes(read_chapter_text + '"' + 17 + '"');
 	var fourth_check_17 = second_website_url.includes(read_chapter_text + "%2217%22");
 	var fifth_check_17 = second_website_url.includes("(17)");	var sixth_check_17 = second_website_url.includes("[17]");
-	var first_check_18 = second_website_url.includes(read_chapter_text + chapter_number);
+	var first_check_18 = second_website_url.includes(read_chapter_text + 18);
 	var second_check_18 = second_website_url.includes(read_chapter_text + "[18]");
 	var third_check_18 = second_website_url.includes(read_chapter_text + '"' + 18 + '"');
 	var fourth_check_18 = second_website_url.includes(read_chapter_text + "%2218%22");
@@ -8331,6 +8332,7 @@ function Check_Chapter_Number_On_Link() {
 	}
 
 }
+
 console.log("Open Chapter Script was loaded.");
 
 Check_Chapter_Number_On_Link();
