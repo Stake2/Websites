@@ -1,90 +1,83 @@
-var website_link = "https://thestake2.netlify.app/";
+var root_website_link = "https://thestake2.netlify.app/";
+
 var user_language = navigator.website_language || navigator.userLanguage || navigator.language;
 
+var title = document.getElementsByTagName("title")[0];
+var website_title = title.innerHTML;
+
+var url_addon;
 var english_language = "en-US";
+var english_languages = ["en", "en-US", "en-BZ", "en-CA", "en-IE", "en-JM", "en-NZ", "en-PH", "en-ZA", "en-TT", "en-GB", "en-ZW"]
+
 var portuguese_language = "pt-BR" || "pt-PT";
+var portuguese_languages = ["pt", "pt-BR", "pt-PT"];
 
 function Language_Item_Definer(english_text, portuguese_text, website_language) {
-	portuguese_language = ["pt-BR", "pt-PT"];
 	var language_text;
 
-	if (website_language == english_language) {
+	if (english_languages.includes(website_language) == true) {
 		language_text = english_text;
 	}
 
-	if (portuguese_language.includes(website_language) == true) {
+	if (portuguese_languages.includes(website_language) == true) {
 		language_text = portuguese_text;
 	}
 
 	return language_text;
 }
 
+function English_Language_Check(language) {
+	if (english_languages.includes(language) == true) {
+		return true;
+	}
+
+	if (english_languages.includes(language) == false) {
+		return false;
+	}
+}
+
+function Portuguese_Language_Check(language) {
+	if (portuguese_languages.includes(language) == true) {
+		return true;
+	}
+
+	if (portuguese_languages.includes(language) == false) {
+		return false;
+	}
+}
+
+function Redirect(website_link) {
+	var redirect = website_link + Language_Item_Definer("EN-US", "PT-BR", user_language) + "/" + url_addon;
+	window.location = redirect;
+}
+
+var current_website_link = String(window.location);
+var check = current_website_link.includes("no-redirect=true");
+var check_chapter_in_link = current_website_link.includes("[") || current_website_link.includes("(");
+
+url_addon = "";
+
+if (check_chapter_in_link == true) {
+	url_addon = current_website_link.split("/").reverse()[0];
+}
+
 function Check_Website_Link() {
-	var title = document.getElementsByTagName("title")[0];
-	var website_title = title.innerHTML;
+	var website_name = "Diary";
+	var website_link = root_website_link + website_name + "/"
 
-	var current_site_link = window.location;
-	var current_site_link_string = '"' + current_site_link + '"';
-
-	var check = String(current_site_link).includes("no-redirect=true");
-
-	var check_chapter_in_link = String(current_site_link).includes("[") || String(current_site_link).includes("(");
-
-	var url_addon;
-
-	if (check_chapter_in_link == true) {
-		url_addon = String(current_site_link).split("/").reverse()[0];
+	if (website_title == website_name && check == false) {
+		Redirect(website_link)
 	}
 
-	else {
-		url_addon = "";
-	}
-
-	if (website_title == "Diary" && check == false) {
-		var website_language = "General";
-
-		if (user_language == website_language) {
-			return;
-		}
-
-		if (user_language != website_language) {
-			var choosen_website_url = website_link + "Diary" + "/";
-			var res = choosen_website_url + user_language + "/";
-			window.location = res;
+	if (website_title == website_name + " EN-US" && check == false) {
+		if (Portuguese_Language_Check(user_language).includes(user_language) == True) {
+			Redirect(website_link)
 		}
 	}
 
-	if (website_title == "Diary EN-US" && check == false) {
-		var website_language = "en-US";
-
-		if (user_language == website_language) {
-			return;
-		}
-
-		if (user_language != website_language) {
-			var choosen_website_url = website_link + "Diary" + "/";
-			var res = choosen_website_url + user_language + "/";
-			window.location = res;
-		}
-	}
-
-	if (website_title == "Diário" && check == false || website_title == "Diário PT-PT" && check == false) {
-		if (website_title == "Diário") {
-			var website_language = "pt-BR";
-		}
-
-		if (website_title == "Diário PT-PT") {
-			var website_language = "pt-PT";
-		}
-
-		if (user_language == website_language) {
-			return;
-		}
-
-		if (user_language != website_language) {
-			var choosen_website_url = website_link + "Diário" + "/";
-			var res = choosen_website_url + user_language.toLowerCase() + "/";
-			window.location = res;
+	if (website_title == website_name + " PT-BR" && check == false) {
+		if (English_Language_Check(user_language).includes(user_language) == True) {
+			Redirect(website_link)
 		}
 	}
 
@@ -98,7 +91,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + website_name + "/";
+			var choosen_website_url = root_website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
@@ -112,7 +105,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + website_name + "/";
+			var choosen_website_url = root_website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
@@ -126,7 +119,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + website_name + "/";
+			var choosen_website_url = root_website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
@@ -140,7 +133,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + website_name + "/";
+			var choosen_website_url = root_website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			var thiss = that;
@@ -157,7 +150,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + website_name + "/";
+			var choosen_website_url = root_website_link + website_name + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -171,7 +164,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + website_name + "/";
+			var choosen_website_url = root_website_link + website_name + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -185,7 +178,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + website_name + "/";
+			var choosen_website_url = root_website_link + website_name + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -199,7 +192,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + website_name + "/";
+			var choosen_website_url = root_website_link + website_name + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -217,14 +210,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + english_website_name.replace(":", "") + "/";
+				var choosen_website_url = root_website_link + english_website_name.replace(":", "") + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + portuguese_website_name.replace(":", "") + "/";
+				var choosen_website_url = root_website_link + portuguese_website_name.replace(":", "") + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -241,14 +234,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + english_website_name.replace(":", "") + "/";
+				var choosen_website_url = root_website_link + english_website_name.replace(":", "") + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + portuguese_website_name.replace(":", "") + "/";
+				var choosen_website_url = root_website_link + portuguese_website_name.replace(":", "") + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -265,14 +258,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + english_website_name.replace(":", "") + "/";
+				var choosen_website_url = root_website_link + english_website_name.replace(":", "") + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + portuguese_website_name.replace(":", "") + "/";
+				var choosen_website_url = root_website_link + portuguese_website_name.replace(":", "") + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -289,14 +282,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + english_website_name.replace(":", "") + "/";
+				var choosen_website_url = root_website_link + english_website_name.replace(":", "") + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + portuguese_website_name.replace(":", "") + "/";
+				var choosen_website_url = root_website_link + portuguese_website_name.replace(":", "") + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -312,7 +305,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "Things_I_do" + "/";
+			var choosen_website_url = root_website_link + "Things_I_do" + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -326,7 +319,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "Things_I_do" + "/";
+			var choosen_website_url = root_website_link + "Things_I_do" + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -340,7 +333,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "Coisas_que_eu_faço" + "/";
+			var choosen_website_url = root_website_link + "Coisas_que_eu_faço" + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -354,7 +347,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "Years/" + "2018" + "/";
+			var choosen_website_url = root_website_link + "Years/" + "2018" + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -368,7 +361,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "Years/" + "2018" + "/";
+			var choosen_website_url = root_website_link + "Years/" + "2018" + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -382,7 +375,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + "Years/" + "2018" + "/";
+			var choosen_website_url = root_website_link + "Years/" + "2018" + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
@@ -397,14 +390,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + "The Life of Littletato/";
+				var choosen_website_url = root_website_link + "The Life of Littletato/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + "A Vida de Pequenata/";
+				var choosen_website_url = root_website_link + "A Vida de Pequenata/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -421,14 +414,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + "The Life of Littletato/";
+				var choosen_website_url = root_website_link + "The Life of Littletato/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + "A Vida de Pequenata/";
+				var choosen_website_url = root_website_link + "A Vida de Pequenata/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -445,14 +438,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + "The Life of Littletato/";
+				var choosen_website_url = root_website_link + "The Life of Littletato/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + "A Vida de Pequenata/";
+				var choosen_website_url = root_website_link + "A Vida de Pequenata/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -469,14 +462,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + "The Life of Littletato/";
+				var choosen_website_url = root_website_link + "The Life of Littletato/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + "A Vida de Pequenata/";
+				var choosen_website_url = root_website_link + "A Vida de Pequenata/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -493,7 +486,7 @@ function Check_Website_Link() {
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + "New World/";
+			var choosen_website_url = root_website_link + "New World/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -508,7 +501,7 @@ function Check_Website_Link() {
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + "New World/";
+			var choosen_website_url = root_website_link + "New World/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -523,7 +516,7 @@ function Check_Website_Link() {
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + "New World/";
+			var choosen_website_url = root_website_link + "New World/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -538,7 +531,7 @@ function Check_Website_Link() {
 		}
 
 		if (website_language != user_language) {
-			var choosen_website_url = website_link + "New World/";
+			var choosen_website_url = root_website_link + "New World/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			return;
@@ -554,7 +547,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "New World/SpaceLiving/";
+			var choosen_website_url = root_website_link + "New World/SpaceLiving/";
 			var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 			window.location = redirect_to;
 			return;
@@ -569,7 +562,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "New World/SpaceLiving/";
+			var choosen_website_url = root_website_link + "New World/SpaceLiving/";
 			var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 			window.location = redirect_to;
 			return;
@@ -584,7 +577,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "New World/SpaceLiving/";
+			var choosen_website_url = root_website_link + "New World/SpaceLiving/";
 			var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 			window.location = redirect_to;
 			return;
@@ -599,7 +592,7 @@ function Check_Website_Link() {
 		}
 
 		else {
-			var choosen_website_url = website_link + "New World/SpaceLiving/";
+			var choosen_website_url = root_website_link + "New World/SpaceLiving/";
 			var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 			window.location = redirect_to;
 			return;
@@ -615,14 +608,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
+				var choosen_website_url = root_website_link + "The Story of the Bulkan Siblings/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
+				var choosen_website_url = root_website_link + "A História dos Irmãos Bulkan/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -639,14 +632,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
+				var choosen_website_url = root_website_link + "The Story of the Bulkan Siblings/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
+				var choosen_website_url = root_website_link + "A História dos Irmãos Bulkan/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -663,14 +656,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
+				var choosen_website_url = root_website_link + "The Story of the Bulkan Siblings/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
+				var choosen_website_url = root_website_link + "A História dos Irmãos Bulkan/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -687,14 +680,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + "The Story of the Bulkan Siblings/";
+				var choosen_website_url = root_website_link + "The Story of the Bulkan Siblings/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + "A História dos Irmãos Bulkan/";
+				var choosen_website_url = root_website_link + "A História dos Irmãos Bulkan/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -714,14 +707,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + website_name + "/";
+				var choosen_website_url = root_website_link + website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var choosen_website_url = root_website_link + portuguese_website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -738,14 +731,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + website_name + "/";
+				var choosen_website_url = root_website_link + website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var choosen_website_url = root_website_link + portuguese_website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -762,14 +755,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + website_name + "/";
+				var choosen_website_url = root_website_link + website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var choosen_website_url = root_website_link + portuguese_website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -786,14 +779,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + website_name + "/";
+				var choosen_website_url = root_website_link + website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var choosen_website_url = root_website_link + portuguese_website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -813,14 +806,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + website_name + "/";
+				var choosen_website_url = root_website_link + website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var choosen_website_url = root_website_link + portuguese_website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -838,14 +831,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + website_name + "/";
+				var choosen_website_url = root_website_link + website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var choosen_website_url = root_website_link + portuguese_website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -862,14 +855,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + website_name + "/";
+				var choosen_website_url = root_website_link + website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var choosen_website_url = root_website_link + portuguese_website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -886,14 +879,14 @@ function Check_Website_Link() {
 
 		else {
 			if (user_language == english_language) {
-				var choosen_website_url = website_link + website_name + "/";
+				var choosen_website_url = root_website_link + website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
 			}
 
 			if (user_language == portuguese_language) {
-				var choosen_website_url = website_link + portuguese_website_name + "/";
+				var choosen_website_url = root_website_link + portuguese_website_name + "/";
 				var redirect_to = choosen_website_url + user_language + "/" + url_addon;
 				window.location = redirect_to;
 				return;
@@ -912,7 +905,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + website_name + "/";
+			var choosen_website_url = root_website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
@@ -926,7 +919,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + website_name + "/";
+			var choosen_website_url = root_website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
@@ -940,7 +933,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + website_name + "/";
+			var choosen_website_url = root_website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 		}
@@ -954,7 +947,7 @@ function Check_Website_Link() {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + website_name + "/";
+			var choosen_website_url = root_website_link + website_name + "/";
 			var res = choosen_website_url + user_language + "/";
 			window.location = res;
 			var thiss = that;
@@ -976,8 +969,6 @@ function Check_Website_Link() {
 	var current_year = new Date().getFullYear();
 
 	year_websites.forEach(Check_Website_Link_By_Language);
-
-	
 }
 
 function Check_Website_Link_By_Language(item) {
@@ -1002,7 +993,7 @@ function Check_Website_Link_By_Language(item) {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + backup_website_name + "/";
+			var choosen_website_url = root_website_link + backup_website_name + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -1016,7 +1007,7 @@ function Check_Website_Link_By_Language(item) {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + backup_website_name + "/";
+			var choosen_website_url = root_website_link + backup_website_name + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -1034,7 +1025,7 @@ function Check_Website_Link_By_Language(item) {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + backup_website_name + "/";
+			var choosen_website_url = root_website_link + backup_website_name + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}
@@ -1048,7 +1039,7 @@ function Check_Website_Link_By_Language(item) {
 		}
 
 		if (user_language != website_language) {
-			var choosen_website_url = website_link + backup_website_name + "/";
+			var choosen_website_url = root_website_link + backup_website_name + "/";
 			var res = choosen_website_url + user_language.toLowerCase() + "/";
 			window.location = res;
 		}

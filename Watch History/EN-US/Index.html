@@ -14,14 +14,14 @@
 	<meta property="og:locale:alternate" content="pt_BR" />
 	<meta property="og:locale:alternate" content="pt_PT" />
 	<meta name="description" content="Website to show Animes, Cartoons, Series, Movies, and Videos that I watched, and medias that I will watch, made by Stake2." />
-	<meta name="theme-color" content="#916f3b" />
+	<meta name="theme-color" content="#2196F3" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:website" value="@Stake2_" />
 	<meta name="twitter:site" value="@Stake2_" />
 	<meta name="twitter:creator" content="@Stake2_" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content="https://thestake2.netlify.app/Watch History/en-us/" />
-	<meta name="revised" content="Stake2's Enterprise TM, 07/07/2022." />
+	<meta name="revised" content="Stake2's Enterprise TM, 07/09/2022." />
 	<meta name="author" content="Stake2" />
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 	<meta charset="UTF-8" />
@@ -37,7 +37,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 	<script src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Tabs.js"></script>
-	<script src="https://thestake2.netlify.app/JavaScript/Function/Redirect To Website Of User Language.js" onLoad="Check_Website_Link();"></script>
+	<script src="https://thestake2.netlify.app/JavaScript/Function/Language Redirector.js" onLoad="Check_Language();"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Show Hide.js"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Mobile Side Menu.js"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Set Revised Date.js"></script>
@@ -66,12 +66,15 @@
 Websites: <i class="fas fa-globe-americas"></i></h2></button></a>
 </span><br />
 <center><button id="hide_computer_buttons" class="w3-center w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button></center>
+
 </div>
 
 <!-- "Show Computer Buttons" button bar -->
 <div id="show_computer_button_bar" class="w3-bar" style="position:fixed;float:right;">
 <button id="show_computer_buttons" class="w3-center w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileHide" style="display:none;float:right;border-radius: 50px;" onclick="Show_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
+
 </div>
+
 
 
 <!--- Mobile Button bar at the left -->
@@ -100,15 +103,15 @@ Websites: <i class="fas fa-globe-americas"></i></h2></button></a>
 </a>
 <span class="mobileShow" >
 <a class="" href="#Websites tab">
-<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" id="websites_tab_button" style="border-radius: 50px;" alt="Websites tab" title="Websites tab" onclick="Hide_Computer_Buttons();openCity('Websites tab');Define_Button('websites_tab_button');Change_Button_Color();"><h4 class="" >
+<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" id="websites_tab_button" style="border-radius: 50px;" alt="Websites tab" title="Websites tab" onclick="Hide_Mobile_Buttons();openCity('Websites tab');Define_Button('websites_tab_button');Change_Button_Color();"><h4 class="" >
 Websites: <i class="fas fa-globe-americas"></i></h4></button></a>
 </span>
 </div>
 
 <div class="mobileShow"><button id="show_mobile_buttons" class="w3-center w3-btn text_black background_blue border_color_black border_3px background_hover_white mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="Show_Mobile_Buttons();"><h2><i class="fas fa-bars"></i></h2></button>
 </div>
-<div class="mobileHide">
-<br /><br /><br /><br /><br />
+<div id="computer_buttons_bar_space" class="mobileHide">
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 </div>
 
 
@@ -147,7 +150,7 @@ function Add_To_Website_Title(text_to_add, source = null) {
 </script>
 
 <!-- Website header -->
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><div class="background_black border_color_blue border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;">
+<div class="background_black border_color_blue border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;">
 <div class="w3-animate-zoom">
 <!-- Website computer title -->
 <h2 class="w3-center text_blue w3-animate-zoom mobileHide">
@@ -683,26 +686,22 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <span class="text_blue text_hover_white" >13</span> - <span class="text_hover_white" >One Punch Man</span><br />
 <span class="text_blue text_hover_white" >14</span> - <span class="text_hover_white" >One Room</span><br />
 <span class="text_blue text_hover_white" >15</span> - <span class="text_hover_white" >Re:Zero kara Hajimeru Isekai Seikatsu</span><br />
-<span class="text_blue text_hover_white" >16</span> - <span class="text_hover_white" >Shingeki no Kyojin</span><br />
-</div>
+<span class="text_blue text_hover_white" >16</span> - <span class="text_hover_white" >Shingeki no Kyojin</span><br /></div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Cartoons:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Infinity Train</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >Rick and Morty</span><br />
-<span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Spider-Man - Homem-Aranha (Episode: None)</span><br />
-</div>
+<span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Spider-Man - Homem-Aranha (Episode: None)</span><br /></div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Series:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Atypical</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >Ned's Declassified School Survival Guide</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Squid Game</span><br />
-<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >The Walking Dead</span><br />
-</div>
+<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >The Walking Dead</span><br /></div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">YouTube Channels:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Arkantos</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >ChratosGameplayer</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >LCarrafaBR</span><br />
 <span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >Lives do alanzoka</span><br />
-<span class="text_blue text_hover_white" >5</span> - <span class="text_hover_white" >SINXPLAYSBR</span><br />
-</div>
+<span class="text_blue text_hover_white" >5</span> - <span class="text_hover_white" >SINXPLAYSBR</span><br /></div>
 <br /></h3><h4 class="text_blue mobileShow" ><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Animes:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >BanG Dream!</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >Boku no Kanojo ga Majimesugiru Sho-bitch na Ken (Episode: EP07 "Caramba... Eu não consigo tirar minha mente disso...")</span><br />
@@ -719,26 +718,22 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <span class="text_blue text_hover_white" >13</span> - <span class="text_hover_white" >One Punch Man</span><br />
 <span class="text_blue text_hover_white" >14</span> - <span class="text_hover_white" >One Room</span><br />
 <span class="text_blue text_hover_white" >15</span> - <span class="text_hover_white" >Re:Zero kara Hajimeru Isekai Seikatsu</span><br />
-<span class="text_blue text_hover_white" >16</span> - <span class="text_hover_white" >Shingeki no Kyojin</span><br />
-</div>
+<span class="text_blue text_hover_white" >16</span> - <span class="text_hover_white" >Shingeki no Kyojin</span><br /></div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Cartoons:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Infinity Train</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >Rick and Morty</span><br />
-<span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Spider-Man - Homem-Aranha (Episode: None)</span><br />
-</div>
+<span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Spider-Man - Homem-Aranha (Episode: None)</span><br /></div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Series:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Atypical</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >Ned's Declassified School Survival Guide</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Squid Game</span><br />
-<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >The Walking Dead</span><br />
-</div>
+<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >The Walking Dead</span><br /></div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">YouTube Channels:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Arkantos</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >ChratosGameplayer</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >LCarrafaBR</span><br />
 <span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >Lives do alanzoka</span><br />
-<span class="text_blue text_hover_white" >5</span> - <span class="text_hover_white" >SINXPLAYSBR</span><br />
-</div>
+<span class="text_blue text_hover_white" >5</span> - <span class="text_hover_white" >SINXPLAYSBR</span><br /></div>
 <br /></h4>
 </div>
 </div></h2>
@@ -767,26 +762,22 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <span class="text_blue text_hover_white" >13</span> - <span class="text_hover_white" >One Punch Man</span><br />
 <span class="text_blue text_hover_white" >14</span> - <span class="text_hover_white" >One Room</span><br />
 <span class="text_blue text_hover_white" >15</span> - <span class="text_hover_white" >Re:Zero kara Hajimeru Isekai Seikatsu</span><br />
-<span class="text_blue text_hover_white" >16</span> - <span class="text_hover_white" >Shingeki no Kyojin</span><br />
-</div>
+<span class="text_blue text_hover_white" >16</span> - <span class="text_hover_white" >Shingeki no Kyojin</span><br /></div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Cartoons:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Infinity Train</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >Rick and Morty</span><br />
-<span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Spider-Man - Homem-Aranha (Episode: None)</span><br />
-</div>
+<span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Spider-Man - Homem-Aranha (Episode: None)</span><br /></div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Series:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Atypical</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >Ned's Declassified School Survival Guide</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Squid Game</span><br />
-<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >The Walking Dead</span><br />
-</div>
+<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >The Walking Dead</span><br /></div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">YouTube Channels:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Arkantos</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >ChratosGameplayer</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >LCarrafaBR</span><br />
 <span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >Lives do alanzoka</span><br />
-<span class="text_blue text_hover_white" >5</span> - <span class="text_hover_white" >SINXPLAYSBR</span><br />
-</div>
+<span class="text_blue text_hover_white" >5</span> - <span class="text_hover_white" >SINXPLAYSBR</span><br /></div>
 <br /></h3><h4 class="text_blue mobileShow" ><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Animes:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >BanG Dream!</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >Boku no Kanojo ga Majimesugiru Sho-bitch na Ken (Episode: EP07 "Caramba... Eu não consigo tirar minha mente disso...")</span><br />
@@ -803,26 +794,22 @@ Website to show <span class="w3-text-yellow">Animes</span>, <span class="w3-text
 <span class="text_blue text_hover_white" >13</span> - <span class="text_hover_white" >One Punch Man</span><br />
 <span class="text_blue text_hover_white" >14</span> - <span class="text_hover_white" >One Room</span><br />
 <span class="text_blue text_hover_white" >15</span> - <span class="text_hover_white" >Re:Zero kara Hajimeru Isekai Seikatsu</span><br />
-<span class="text_blue text_hover_white" >16</span> - <span class="text_hover_white" >Shingeki no Kyojin</span><br />
-</div>
+<span class="text_blue text_hover_white" >16</span> - <span class="text_hover_white" >Shingeki no Kyojin</span><br /></div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Cartoons:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Infinity Train</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >Rick and Morty</span><br />
-<span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Spider-Man - Homem-Aranha (Episode: None)</span><br />
-</div>
+<span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Spider-Man - Homem-Aranha (Episode: None)</span><br /></div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">Series:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Atypical</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >Ned's Declassified School Survival Guide</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >Squid Game</span><br />
-<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >The Walking Dead</span><br />
-</div>
+<span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >The Walking Dead</span><br /></div>
 <br /><div class="w3-animate-zoom" ><b class="" style="color: var(--green-color)!important;">YouTube Channels:</b></div>
 <div class="w3-animate-zoom" style="color: var(--green-color)!important;"><span class="text_blue text_hover_white" >1</span> - <span class="text_hover_white" >Arkantos</span><br />
 <span class="text_blue text_hover_white" >2</span> - <span class="text_hover_white" >ChratosGameplayer</span><br />
 <span class="text_blue text_hover_white" >3</span> - <span class="text_hover_white" >LCarrafaBR</span><br />
 <span class="text_blue text_hover_white" >4</span> - <span class="text_hover_white" >Lives do alanzoka</span><br />
-<span class="text_blue text_hover_white" >5</span> - <span class="text_hover_white" >SINXPLAYSBR</span><br />
-</div>
+<span class="text_blue text_hover_white" >5</span> - <span class="text_hover_white" >SINXPLAYSBR</span><br /></div>
 <br /></h4>
 </div>
 </div></h4>

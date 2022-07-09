@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <head>
-	<title>A História dos Irmãos Bulkan</title>
+	<title>A História dos Irmãos Bulkan PT-BR</title>
 	<link rel="canonical" href="https://thestake2.netlify.app/A História dos Irmãos Bulkan/pt-br/" />
 	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português Brasileiro/Landscape/Story/Book Cover.png" />
 	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português Brasileiro/Landscape/Story/Book Cover.png" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="A História dos Irmãos Bulkan" />
-	<meta property="og:site_name" content="A História dos Irmãos Bulkan" />
+	<meta property="og:title" content="A História dos Irmãos Bulkan PT-BR" />
+	<meta property="og:site_name" content="A História dos Irmãos Bulkan PT-BR" />
 	<meta property="og:url" content="https://thestake2.netlify.app/A História dos Irmãos Bulkan/pt-br/" />
 	<meta property="og:image" content="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português Brasileiro/Landscape/Story/Book Cover.png" />
 	<meta property="og:description" content="Site sobre a minha história, A História dos Irmãos Bulkan, feito por Stake2, Funkysnipa Cat, Izaque." />
@@ -21,7 +21,7 @@
 	<meta name="twitter:creator" content="@Stake2_" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content="https://thestake2.netlify.app/A História dos Irmãos Bulkan/pt-br/" />
-	<meta name="revised" content="Stake2's Enterprise TM, 07/07/2022." />
+	<meta name="revised" content="Stake2's Enterprise TM, 09/07/2022." />
 	<meta name="author" content="Stake2" />
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 	<meta charset="UTF-8" />
@@ -38,7 +38,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 	<script src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Tabs.js"></script>
-	<script src="https://thestake2.netlify.app/JavaScript/Function/Redirect To Website Of User Language.js" onLoad="Check_Website_Link();"></script>
+	<script src="https://thestake2.netlify.app/JavaScript/Function/Language Redirector.js" onLoad="Check_Language();"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Show Hide.js"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Mobile Side Menu.js"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Set Revised Date.js"></script>
@@ -67,12 +67,15 @@
 Sites: <i class="fas fa-globe-americas"></i></h2></button></a>
 </span><br />
 <center><button id="hide_computer_buttons" class="w3-center w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button></center>
+
 </div>
 
 <!-- "Show Computer Buttons" button bar -->
 <div id="show_computer_button_bar" class="w3-bar" style="position:fixed;float:right;">
 <button id="show_computer_buttons" class="w3-center w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" style="display:none;float:right;border-radius: 50px;" onclick="Show_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
+
 </div>
+
 
 
 <!--- Mobile Button bar at the left -->
@@ -103,8 +106,8 @@ Sites: <i class="fas fa-globe-americas"></i></h4></button></a>
 
 <div class="mobileShow"><button id="show_mobile_buttons" class="w3-center w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="Show_Mobile_Buttons();"><h2><i class="fas fa-bars"></i></h2></button>
 </div>
-<div class="mobileHide">
-<br /><br /><br /><br /><br />
+<div id="computer_buttons_bar_space" class="mobileHide">
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 </div>
 
 <script>
@@ -188,17 +191,17 @@ function Add_To_Website_Title(text_to_add, source = null) {
 </script>
 
 <!-- Website header -->
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><div class="background_black border_color_brown border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;">
+<div class="background_black border_color_brown border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;">
 <div class="w3-animate-zoom">
 <!-- Website computer title -->
 <h2 class="w3-center text_brown w3-animate-zoom mobileHide">
-<p><br /><b>A História dos Irmãos Bulkan: <i class="fas fa-book"></i></b><br /><br /><p>
+<p><br /><b>A História dos Irmãos Bulkan PT-BR: <i class="fas fa-book"></i></b><br /><br /><p>
 </h2>
 </div>
 
 <!-- Website mobile title -->
 <div class="w3-animate-zoom"><h4 class="w3-center text_brown w3-animate-zoom mobileShow">
-<p><br /><b>A História dos Irmãos Bulkan: <i class="fas fa-book"></i></b><br /><br /><p>
+<p><br /><b>A História dos Irmãos Bulkan PT-BR: <i class="fas fa-book"></i></b><br /><br /><p>
 </h4>
 </div>
 <hr class="border_color_brown border_1px" style="margin-left:3%;margin-right:3%;" />
@@ -408,25 +411,34 @@ Status: <span class="w3-text-orange">[Completada e Publicada]</span></h4>
 <div id="capítulos-div">
 
 <a name="capítulo-1"></a>
-<div id="capítulo-1" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
-<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<div id="capítulo-1" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display: none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<div class="mobileHide">
+<h2 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
 <br />
-<div class="mobileHide"><h2 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
-
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 1 - O começo, a masmorra</b>
-
-</div></h2></div>
-<div style="margin:3%;"><div class="mobileShow"><h4 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
-
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 1 - O começo, a masmorra</b>
-
-</div></h4></div>
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 1 - O começo, a masmorra
+</b>
+</div>
+</h2>
+</div>
+<div class="mobileShow">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 1 - O começo, a masmorra
+</b>
+</div>
+</h3>
 </div>
 
 <h5 class="background_brown text_black " style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#capítulo-2"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - O quarto e a primeira arma', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#capítulo-2"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - O quarto e a primeira arma', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história_Mobile"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
@@ -529,11 +541,14 @@ Essa é uma história feita por mim e minha amiga e tulpa Ana.
 <br />A prática de espionar e perseguir alguém é denominada "stalking" (espreitar). O termo é usado desde a década de 1980 quando havia uma obstinada perseguição a celebridades. Em muitos países passou a ser considerado um crime dependendo do sentimento da vítima em relação ao stalker. Um exemplo de stalker é Stalker Sarah, uma jovem conhecida por tirar fotos com um grande número de pessoas famosas, e publicá-las na internet.
 <br />
 <br />Fonte: https://www.significados.com.br/stalker/
-<br /><br />Palavras: 1,379.
+<br /><br />
+Palavras: 1.469.
 </div>
 </div>
 <br /><br />
-<a href="#capítulo-2"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - O quarto e a primeira arma', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#capítulo-2"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - O quarto e a primeira arma', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" id="comment_button_1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comentar <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -542,34 +557,52 @@ Essa é uma história feita por mim e minha amiga e tulpa Ana.
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
-
-<div class="mobileShow"><br /><br />
-</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="comment_button_1_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comentar <i class="fas fa-comments"></i></b></h4></button>
-<br /><br />
+<br /><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_1_mobile" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('read-modal-1_mobile')"><h4><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h4></button>
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_1_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
-<br /><div class="mobileShow"><br /><br />
-</div>
-<div style="text-align:center;">
+<div class="mobileShow"><br /><br /><br /><br /></div>
+<div style="text-align: center;">
+<div class="mobileHide">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
 <div class="w3-animate-zoom">
-<span class="background_brown text_black ">
 <br />
-
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 1 - O começo, a masmorra</b>
-
+<b>Você está lendo: A História dos Irmãos Bulkan
 <br />
-</span>
+Capítulo: 1 - O começo, a masmorra
+</b>
+</div>
+</h3>
+</div>
+<div class="mobileShow">
+<h4 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 1 - O começo, a masmorra
+</b>
+</div>
+</h4>
 </div>
 </div>
 <div class="mobileShow"><br /></div>
 </h5>
-<div class="mobileHide"><br /></div><div class="mobileShow"><br /><br /></div><div class="mobileHide"><h2><b>Comentários (1):</b> <i class="fas fa-comments"></i></h2></div><div class="mobileShow"><h4><b>Comentários (1):</b> <i class="fas fa-comments"></i></h4></div><div class="mobileShow"><br /><br /></div><div class="mobileHide"><br /><br /></div><div style="margin:3%;">
-<h4 class="background_darker_brown text_black border_3px_solid_black" style="text-align:left;border-radius: 50px;">
+<div style="margin:3%;">
+<div style="margin:3%;">
+<hr class="border_color_black border_1px" />
+</div>
+</div>
+<div class="mobileHide"><br /></div>
+<div class="mobileShow"><br /><br /></div>
+<h2><b>Comentários (1):</b> <i class="fas fa-comments"></i></h2>
+<br /><br />
+<div style="margin:3%;">
+
+<h4 class="background_darker_brown text_black border_3px_solid_black" style="text-align: left;border-radius: 50px;">
 <div style="margin-left:5%;margin-right:5%;">
 <br />
 <b>Andressa :3</b><br />
@@ -586,27 +619,287 @@ Capítulo: 1 - O começo, a masmorra</b>
 </div>
 </div>
 
-<a name="capítulo-2"></a>
-<div id="capítulo-2" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
-<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<a name="read-modal-1"></a>
+<div id="read-modal-1" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_read_modal_button_1" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Eu li o capítulo: <br />1 - O começo, a masmorra <i class="fas fa-book-reader"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+<input type="text" name="read" value="1 - O começo, a masmorra" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+<a name="read-modal-1_mobile"></a>
+<div id="read-modal-1_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" style="border-radius: 50px;" id="close_read_modal_button_1_mobile">&times;</button>
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Eu li o capítulo: <br />1 - O começo, a masmorra <i class="fas fa-book-reader"></i></b>
+</h4>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+<input type="text" name="read" value="1 - O começo, a masmorra" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</form>
+<br /><br /><br />
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var read_modal_1 = document.getElementById("read-modal-1");
+
+var read_button_1 = document.getElementById("read_button_1");
+
+var close_read_modal_button_1 = document.getElementById("close_read_modal_button_1");
+
+read_button_1.onclick = function() {
+	read_modal_1.style.display = "block";
+	document.activeElement.blur();
+	read_modal_1.tabIndex = "-1";
+	read_modal_1.focus();
+}
+
+close_read_modal_button_1.onclick = function() {
+	read_modal_1.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_1.onclick = function(event) {
+	if (event.target == read_modal_1) {
+		read_modal_1.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+read_modal_1.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var read_modal_1_mobile = document.getElementById("read-modal-1_mobile");
+
+var read_button_1_mobile = document.getElementById("read_button_1_mobile");
+
+var close_read_modal_button_1_mobile = document.getElementById("close_read_modal_button_1_mobile");
+
+read_button_1_mobile.onclick = function() {
+	read_modal_1_mobile.style.display = "block";
+	document.activeElement.blur();
+	read_modal_1.tabIndex = "-1";
+	read_modal_1.focus();
+}
+
+close_read_modal_button_1_mobile.onclick = function() {
+	read_modal_1_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_1_mobile.onclick = function(event) {
+	if (event.target == read_modal_1_mobile) {
+		read_modal_1_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="comment-modal-1"></a>
+<div id="comment-modal-1" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_1" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />1 - O começo, a masmorra <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h2>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+
+<a name="comment-modal-1_mobile"></a>
+<div id="comment-modal-1_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_1_mobile" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />1 - O começo, a masmorra <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
 <br />
-<div class="mobileHide"><h2 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h4>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
 
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 2 - O quarto e a primeira arma</b>
+<script>
+var comment_modal_1 = document.getElementById("comment-modal-1");
 
-</div></h2></div>
-<div style="margin:3%;"><div class="mobileShow"><h4 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+var comment_button_1 = document.getElementById("comment_button_1");
 
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 2 - O quarto e a primeira arma</b>
+var close_comment_modal_button_1 = document.getElementById("close_comment_modal_button_1");
 
-</div></h4></div>
+comment_button_1.onclick = function() {
+	comment_modal_1.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_1.tabIndex = "-1";
+	comment_modal_1.focus();
+}
+
+close_comment_modal_button_1.onclick = function() {
+	comment_modal_1.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_1.onclick = function(event) {
+	if (event.target == comment_modal_1) {
+		comment_modal_1.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+comment_modal_1.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var comment_modal_1_mobile = document.getElementById("comment-modal-1_mobile");
+
+var comment_button_1_mobile = document.getElementById("comment_button_1_mobile");
+
+var close_comment_modal_button_1_mobile = document.getElementById("close_comment_modal_button_1_mobile");
+
+comment_button_1_mobile.onclick = function() {
+	comment_modal_1_mobile.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_1_mobile.tabIndex = "-1";
+	comment_modal_1_mobile.focus();
+}
+
+close_comment_modal_button_1_mobile.onclick = function() {
+	comment_modal_1_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_1_mobile.onclick = function(event) {
+	if (event.target == comment_modal_1_mobile) {
+		comment_modal_1_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="capítulo-2"></a>
+<div id="capítulo-2" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display: none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<div class="mobileHide">
+<h2 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 2 - O quarto e a primeira arma
+</b>
+</div>
+</h2>
+</div>
+<div class="mobileShow">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 2 - O quarto e a primeira arma
+</b>
+</div>
+</h3>
 </div>
 
 <h5 class="background_brown text_black " style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#capítulo-1"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - O começo, a masmorra', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#capítulo-3"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - Retorno e preocupação', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#capítulo-1"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - O começo, a masmorra', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#capítulo-3"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - Retorno e preocupação', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história_Mobile"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
@@ -676,12 +969,17 @@ Eles chegam em um beco sem saída, tem um papel no chão.
 <br />"Eu acho que a gente deve ir pra casa e limpar essa sua espada empoeirada, mano", diz ela, que beija a bochecha de Izaque.
 <br />"Ok, hehe", responde Izaque, sorrindo.
 <br />Os dois irmãos começam a voltar para casa a pé, Izaque guarda a espada na bainha que está em sua cintura.
-<br /><br />Palavras: 942.
+<br /><br />
+Palavras: 998.
 </div>
 </div>
 <br /><br />
-<a href="#capítulo-1"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - O começo, a masmorra', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#capítulo-3"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - Retorno e preocupação', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#capítulo-1"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-1');Add_To_Website_Title(' - Capítulo: 1 - O começo, a masmorra', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#capítulo-3"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - Retorno e preocupação', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" id="comment_button_2" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comentar <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -690,55 +988,323 @@ Eles chegam em um beco sem saída, tem um papel no chão.
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
-
-<div class="mobileShow"><br /><br />
-</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="comment_button_2_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comentar <i class="fas fa-comments"></i></b></h4></button>
-<br /><br />
+<br /><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_2_mobile" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('read-modal-2_mobile')"><h4><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h4></button>
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_2_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
-<br /><div class="mobileShow"><br /><br />
-</div>
-<div style="text-align:center;">
+<div class="mobileShow"><br /><br /><br /><br /></div>
+<div style="text-align: center;">
+<div class="mobileHide">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
 <div class="w3-animate-zoom">
-<span class="background_brown text_black ">
 <br />
-
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 2 - O quarto e a primeira arma</b>
-
+<b>Você está lendo: A História dos Irmãos Bulkan
 <br />
-</span>
+Capítulo: 2 - O quarto e a primeira arma
+</b>
+</div>
+</h3>
+</div>
+<div class="mobileShow">
+<h4 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 2 - O quarto e a primeira arma
+</b>
+</div>
+</h4>
 </div>
 </div>
 <div class="mobileShow"><br /></div>
 </h5>
 </div>
 
-<a name="capítulo-3"></a>
-<div id="capítulo-3" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
-<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<a name="read-modal-2"></a>
+<div id="read-modal-2" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_read_modal_button_2" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Eu li o capítulo: <br />2 - O quarto e a primeira arma <i class="fas fa-book-reader"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+<input type="text" name="read" value="2 - O quarto e a primeira arma" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+<a name="read-modal-2_mobile"></a>
+<div id="read-modal-2_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" style="border-radius: 50px;" id="close_read_modal_button_2_mobile">&times;</button>
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Eu li o capítulo: <br />2 - O quarto e a primeira arma <i class="fas fa-book-reader"></i></b>
+</h4>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+<input type="text" name="read" value="2 - O quarto e a primeira arma" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</form>
+<br /><br /><br />
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var read_modal_2 = document.getElementById("read-modal-2");
+
+var read_button_2 = document.getElementById("read_button_2");
+
+var close_read_modal_button_2 = document.getElementById("close_read_modal_button_2");
+
+read_button_2.onclick = function() {
+	read_modal_2.style.display = "block";
+	document.activeElement.blur();
+	read_modal_2.tabIndex = "-1";
+	read_modal_2.focus();
+}
+
+close_read_modal_button_2.onclick = function() {
+	read_modal_2.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_2.onclick = function(event) {
+	if (event.target == read_modal_2) {
+		read_modal_2.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+read_modal_2.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var read_modal_2_mobile = document.getElementById("read-modal-2_mobile");
+
+var read_button_2_mobile = document.getElementById("read_button_2_mobile");
+
+var close_read_modal_button_2_mobile = document.getElementById("close_read_modal_button_2_mobile");
+
+read_button_2_mobile.onclick = function() {
+	read_modal_2_mobile.style.display = "block";
+	document.activeElement.blur();
+	read_modal_2.tabIndex = "-1";
+	read_modal_2.focus();
+}
+
+close_read_modal_button_2_mobile.onclick = function() {
+	read_modal_2_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_2_mobile.onclick = function(event) {
+	if (event.target == read_modal_2_mobile) {
+		read_modal_2_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="comment-modal-2"></a>
+<div id="comment-modal-2" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_2" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />2 - O quarto e a primeira arma <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h2>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+
+<a name="comment-modal-2_mobile"></a>
+<div id="comment-modal-2_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_2_mobile" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />2 - O quarto e a primeira arma <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
 <br />
-<div class="mobileHide"><h2 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h4>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
 
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 3 - Retorno e preocupação</b>
+<script>
+var comment_modal_2 = document.getElementById("comment-modal-2");
 
-</div></h2></div>
-<div style="margin:3%;"><div class="mobileShow"><h4 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+var comment_button_2 = document.getElementById("comment_button_2");
 
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 3 - Retorno e preocupação</b>
+var close_comment_modal_button_2 = document.getElementById("close_comment_modal_button_2");
 
-</div></h4></div>
+comment_button_2.onclick = function() {
+	comment_modal_2.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_2.tabIndex = "-1";
+	comment_modal_2.focus();
+}
+
+close_comment_modal_button_2.onclick = function() {
+	comment_modal_2.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_2.onclick = function(event) {
+	if (event.target == comment_modal_2) {
+		comment_modal_2.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+comment_modal_2.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var comment_modal_2_mobile = document.getElementById("comment-modal-2_mobile");
+
+var comment_button_2_mobile = document.getElementById("comment_button_2_mobile");
+
+var close_comment_modal_button_2_mobile = document.getElementById("close_comment_modal_button_2_mobile");
+
+comment_button_2_mobile.onclick = function() {
+	comment_modal_2_mobile.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_2_mobile.tabIndex = "-1";
+	comment_modal_2_mobile.focus();
+}
+
+close_comment_modal_button_2_mobile.onclick = function() {
+	comment_modal_2_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_2_mobile.onclick = function(event) {
+	if (event.target == comment_modal_2_mobile) {
+		comment_modal_2_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="capítulo-3"></a>
+<div id="capítulo-3" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display: none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<div class="mobileHide">
+<h2 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 3 - Retorno e preocupação
+</b>
+</div>
+</h2>
+</div>
+<div class="mobileShow">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 3 - Retorno e preocupação
+</b>
+</div>
+</h3>
 </div>
 
 <h5 class="background_brown text_black " style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#capítulo-2"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - O quarto e a primeira arma', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#capítulo-4"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Uma nova arma e uma transformação estranha', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#capítulo-2"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - O quarto e a primeira arma', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#capítulo-4"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Uma nova arma e uma transformação estranha', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história_Mobile"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
@@ -864,12 +1430,17 @@ Depois de muito tempo, eles chegam em casa e batem na porta.
 <br />A prática de espionar e perseguir alguém é denominada "stalking" (espreitar). O termo é usado desde a década de 1980 quando havia uma obstinada perseguição a celebridades. Em muitos países passou a ser considerado um crime dependendo do sentimento da vítima em relação ao stalker. Um exemplo de stalker é Stalker Sarah, uma jovem conhecida por tirar fotos com um grande número de pessoas famosas, e publicá-las na internet.
 <br />
 <br />Fonte: $source_bulkan_reference_1_chapter_3;
-<br /><br />Palavras: 1,609.
+<br /><br />
+Palavras: 1.721.
 </div>
 </div>
 <br /><br />
-<a href="#capítulo-2"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - O quarto e a primeira arma', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#capítulo-4"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Uma nova arma e uma transformação estranha', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#capítulo-2"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-2');Add_To_Website_Title(' - Capítulo: 2 - O quarto e a primeira arma', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#capítulo-4"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Uma nova arma e uma transformação estranha', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" id="comment_button_3" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comentar <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -878,55 +1449,323 @@ Depois de muito tempo, eles chegam em casa e batem na porta.
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
-
-<div class="mobileShow"><br /><br />
-</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="comment_button_3_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comentar <i class="fas fa-comments"></i></b></h4></button>
-<br /><br />
+<br /><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_3_mobile" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('read-modal-3_mobile')"><h4><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h4></button>
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_3_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
-<br /><div class="mobileShow"><br /><br />
-</div>
-<div style="text-align:center;">
+<div class="mobileShow"><br /><br /><br /><br /></div>
+<div style="text-align: center;">
+<div class="mobileHide">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
 <div class="w3-animate-zoom">
-<span class="background_brown text_black ">
 <br />
-
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 3 - Retorno e preocupação</b>
-
+<b>Você está lendo: A História dos Irmãos Bulkan
 <br />
-</span>
+Capítulo: 3 - Retorno e preocupação
+</b>
+</div>
+</h3>
+</div>
+<div class="mobileShow">
+<h4 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 3 - Retorno e preocupação
+</b>
+</div>
+</h4>
 </div>
 </div>
 <div class="mobileShow"><br /></div>
 </h5>
 </div>
 
-<a name="capítulo-4"></a>
-<div id="capítulo-4" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
-<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<a name="read-modal-3"></a>
+<div id="read-modal-3" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_read_modal_button_3" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Eu li o capítulo: <br />3 - Retorno e preocupação <i class="fas fa-book-reader"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+<input type="text" name="read" value="3 - Retorno e preocupação" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+<a name="read-modal-3_mobile"></a>
+<div id="read-modal-3_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" style="border-radius: 50px;" id="close_read_modal_button_3_mobile">&times;</button>
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Eu li o capítulo: <br />3 - Retorno e preocupação <i class="fas fa-book-reader"></i></b>
+</h4>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+<input type="text" name="read" value="3 - Retorno e preocupação" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</form>
+<br /><br /><br />
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var read_modal_3 = document.getElementById("read-modal-3");
+
+var read_button_3 = document.getElementById("read_button_3");
+
+var close_read_modal_button_3 = document.getElementById("close_read_modal_button_3");
+
+read_button_3.onclick = function() {
+	read_modal_3.style.display = "block";
+	document.activeElement.blur();
+	read_modal_3.tabIndex = "-1";
+	read_modal_3.focus();
+}
+
+close_read_modal_button_3.onclick = function() {
+	read_modal_3.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_3.onclick = function(event) {
+	if (event.target == read_modal_3) {
+		read_modal_3.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+read_modal_3.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var read_modal_3_mobile = document.getElementById("read-modal-3_mobile");
+
+var read_button_3_mobile = document.getElementById("read_button_3_mobile");
+
+var close_read_modal_button_3_mobile = document.getElementById("close_read_modal_button_3_mobile");
+
+read_button_3_mobile.onclick = function() {
+	read_modal_3_mobile.style.display = "block";
+	document.activeElement.blur();
+	read_modal_3.tabIndex = "-1";
+	read_modal_3.focus();
+}
+
+close_read_modal_button_3_mobile.onclick = function() {
+	read_modal_3_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_3_mobile.onclick = function(event) {
+	if (event.target == read_modal_3_mobile) {
+		read_modal_3_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="comment-modal-3"></a>
+<div id="comment-modal-3" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_3" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />3 - Retorno e preocupação <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h2>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+
+<a name="comment-modal-3_mobile"></a>
+<div id="comment-modal-3_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_3_mobile" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />3 - Retorno e preocupação <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
 <br />
-<div class="mobileHide"><h2 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h4>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
 
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 4 - Uma nova arma e uma transformação estranha</b>
+<script>
+var comment_modal_3 = document.getElementById("comment-modal-3");
 
-</div></h2></div>
-<div style="margin:3%;"><div class="mobileShow"><h4 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+var comment_button_3 = document.getElementById("comment_button_3");
 
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 4 - Uma nova arma e uma transformação estranha</b>
+var close_comment_modal_button_3 = document.getElementById("close_comment_modal_button_3");
 
-</div></h4></div>
+comment_button_3.onclick = function() {
+	comment_modal_3.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_3.tabIndex = "-1";
+	comment_modal_3.focus();
+}
+
+close_comment_modal_button_3.onclick = function() {
+	comment_modal_3.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_3.onclick = function(event) {
+	if (event.target == comment_modal_3) {
+		comment_modal_3.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+comment_modal_3.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var comment_modal_3_mobile = document.getElementById("comment-modal-3_mobile");
+
+var comment_button_3_mobile = document.getElementById("comment_button_3_mobile");
+
+var close_comment_modal_button_3_mobile = document.getElementById("close_comment_modal_button_3_mobile");
+
+comment_button_3_mobile.onclick = function() {
+	comment_modal_3_mobile.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_3_mobile.tabIndex = "-1";
+	comment_modal_3_mobile.focus();
+}
+
+close_comment_modal_button_3_mobile.onclick = function() {
+	comment_modal_3_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_3_mobile.onclick = function(event) {
+	if (event.target == comment_modal_3_mobile) {
+		comment_modal_3_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="capítulo-4"></a>
+<div id="capítulo-4" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display: none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<div class="mobileHide">
+<h2 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 4 - Uma nova arma e uma transformação estranha
+</b>
+</div>
+</h2>
+</div>
+<div class="mobileShow">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 4 - Uma nova arma e uma transformação estranha
+</b>
+</div>
+</h3>
 </div>
 
 <h5 class="background_brown text_black " style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#capítulo-3"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - Retorno e preocupação', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#capítulo-5"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Um item mágico e o novo amigo', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#capítulo-3"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - Retorno e preocupação', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#capítulo-5"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Um item mágico e o novo amigo', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história_Mobile"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
@@ -1147,12 +1986,17 @@ Os irmãos acordam e veem o sol brilhando através da janela.
 <br />E eu gosto bastante de dragões, é por isso que eu amei virar um dragão, hehe, foi legal conversar com outro dragão", responde Izaque.
 <br />"Ah, hehe, você tem muito conhecimento mano", diz Ana, sorrindo.
 <br />"Obrigado, maninha", diz Izaque sorrindo também.
-<br /><br />Palavras: 3,148.
+<br /><br />
+Palavras: 3.355.
 </div>
 </div>
 <br /><br />
-<a href="#capítulo-3"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - Retorno e preocupação', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#capítulo-5"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Um item mágico e o novo amigo', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#capítulo-3"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-3');Add_To_Website_Title(' - Capítulo: 3 - Retorno e preocupação', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#capítulo-5"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Um item mágico e o novo amigo', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" id="comment_button_4" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comentar <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -1161,55 +2005,323 @@ Os irmãos acordam e veem o sol brilhando através da janela.
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
-
-<div class="mobileShow"><br /><br />
-</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="comment_button_4_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comentar <i class="fas fa-comments"></i></b></h4></button>
-<br /><br />
+<br /><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_4_mobile" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('read-modal-4_mobile')"><h4><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h4></button>
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_4_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
-<br /><div class="mobileShow"><br /><br />
-</div>
-<div style="text-align:center;">
+<div class="mobileShow"><br /><br /><br /><br /></div>
+<div style="text-align: center;">
+<div class="mobileHide">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
 <div class="w3-animate-zoom">
-<span class="background_brown text_black ">
 <br />
-
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 4 - Uma nova arma e uma transformação estranha</b>
-
+<b>Você está lendo: A História dos Irmãos Bulkan
 <br />
-</span>
+Capítulo: 4 - Uma nova arma e uma transformação estranha
+</b>
+</div>
+</h3>
+</div>
+<div class="mobileShow">
+<h4 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 4 - Uma nova arma e uma transformação estranha
+</b>
+</div>
+</h4>
 </div>
 </div>
 <div class="mobileShow"><br /></div>
 </h5>
 </div>
 
-<a name="capítulo-5"></a>
-<div id="capítulo-5" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
-<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<a name="read-modal-4"></a>
+<div id="read-modal-4" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_read_modal_button_4" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Eu li o capítulo: <br />4 - Uma nova arma e uma transformação estranha <i class="fas fa-book-reader"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+<input type="text" name="read" value="4 - Uma nova arma e uma transformação estranha" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+<a name="read-modal-4_mobile"></a>
+<div id="read-modal-4_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" style="border-radius: 50px;" id="close_read_modal_button_4_mobile">&times;</button>
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Eu li o capítulo: <br />4 - Uma nova arma e uma transformação estranha <i class="fas fa-book-reader"></i></b>
+</h4>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+<input type="text" name="read" value="4 - Uma nova arma e uma transformação estranha" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</form>
+<br /><br /><br />
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var read_modal_4 = document.getElementById("read-modal-4");
+
+var read_button_4 = document.getElementById("read_button_4");
+
+var close_read_modal_button_4 = document.getElementById("close_read_modal_button_4");
+
+read_button_4.onclick = function() {
+	read_modal_4.style.display = "block";
+	document.activeElement.blur();
+	read_modal_4.tabIndex = "-1";
+	read_modal_4.focus();
+}
+
+close_read_modal_button_4.onclick = function() {
+	read_modal_4.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_4.onclick = function(event) {
+	if (event.target == read_modal_4) {
+		read_modal_4.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+read_modal_4.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var read_modal_4_mobile = document.getElementById("read-modal-4_mobile");
+
+var read_button_4_mobile = document.getElementById("read_button_4_mobile");
+
+var close_read_modal_button_4_mobile = document.getElementById("close_read_modal_button_4_mobile");
+
+read_button_4_mobile.onclick = function() {
+	read_modal_4_mobile.style.display = "block";
+	document.activeElement.blur();
+	read_modal_4.tabIndex = "-1";
+	read_modal_4.focus();
+}
+
+close_read_modal_button_4_mobile.onclick = function() {
+	read_modal_4_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_4_mobile.onclick = function(event) {
+	if (event.target == read_modal_4_mobile) {
+		read_modal_4_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="comment-modal-4"></a>
+<div id="comment-modal-4" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_4" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />4 - Uma nova arma e uma transformação estranha <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h2>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+
+<a name="comment-modal-4_mobile"></a>
+<div id="comment-modal-4_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_4_mobile" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />4 - Uma nova arma e uma transformação estranha <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
 <br />
-<div class="mobileHide"><h2 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h4>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
 
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 5 - Um item mágico e o novo amigo</b>
+<script>
+var comment_modal_4 = document.getElementById("comment-modal-4");
 
-</div></h2></div>
-<div style="margin:3%;"><div class="mobileShow"><h4 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+var comment_button_4 = document.getElementById("comment_button_4");
 
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 5 - Um item mágico e o novo amigo</b>
+var close_comment_modal_button_4 = document.getElementById("close_comment_modal_button_4");
 
-</div></h4></div>
+comment_button_4.onclick = function() {
+	comment_modal_4.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_4.tabIndex = "-1";
+	comment_modal_4.focus();
+}
+
+close_comment_modal_button_4.onclick = function() {
+	comment_modal_4.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_4.onclick = function(event) {
+	if (event.target == comment_modal_4) {
+		comment_modal_4.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+comment_modal_4.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var comment_modal_4_mobile = document.getElementById("comment-modal-4_mobile");
+
+var comment_button_4_mobile = document.getElementById("comment_button_4_mobile");
+
+var close_comment_modal_button_4_mobile = document.getElementById("close_comment_modal_button_4_mobile");
+
+comment_button_4_mobile.onclick = function() {
+	comment_modal_4_mobile.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_4_mobile.tabIndex = "-1";
+	comment_modal_4_mobile.focus();
+}
+
+close_comment_modal_button_4_mobile.onclick = function() {
+	comment_modal_4_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_4_mobile.onclick = function(event) {
+	if (event.target == comment_modal_4_mobile) {
+		comment_modal_4_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="capítulo-5"></a>
+<div id="capítulo-5" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display: none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<div class="mobileHide">
+<h2 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 5 - Um item mágico e o novo amigo
+</b>
+</div>
+</h2>
+</div>
+<div class="mobileShow">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 5 - Um item mágico e o novo amigo
+</b>
+</div>
+</h3>
 </div>
 
 <h5 class="background_brown text_black " style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#capítulo-4"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Uma nova arma e uma transformação estranha', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#capítulo-6"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-6');Add_To_Website_Title(' - Capítulo: 6 - A segunda visita', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#capítulo-4"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Uma nova arma e uma transformação estranha', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#capítulo-6"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-6');Add_To_Website_Title(' - Capítulo: 6 - A segunda visita', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história_Mobile"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
@@ -1329,12 +2441,17 @@ Eles começam a voltar para casa com o baú dourado, espada azul, e um saco de m
 <br />"Eu gosto do Kirin Gerard, ele é bem amigável, você não acha, maninha?" pergunta Izaque.
 <br />"É, ele foi bem pacífico e gentil mano", responde Ana.
 <br />Os dois decidem ir novamente para o buraco estranho que eles viram no outro dia.
-<br /><br />Palavras: 1,429.
+<br /><br />
+Palavras: 1.535.
 </div>
 </div>
 <br /><br />
-<a href="#capítulo-4"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Uma nova arma e uma transformação estranha', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#capítulo-6"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-6');Add_To_Website_Title(' - Capítulo: 6 - A segunda visita', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#capítulo-4"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-4');Add_To_Website_Title(' - Capítulo: 4 - Uma nova arma e uma transformação estranha', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#capítulo-6"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-6');Add_To_Website_Title(' - Capítulo: 6 - A segunda visita', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" id="comment_button_5" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comentar <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -1343,55 +2460,323 @@ Eles começam a voltar para casa com o baú dourado, espada azul, e um saco de m
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
-
-<div class="mobileShow"><br /><br />
-</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="comment_button_5_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comentar <i class="fas fa-comments"></i></b></h4></button>
-<br /><br />
+<br /><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_5_mobile" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('read-modal-5_mobile')"><h4><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h4></button>
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_5_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
-<br /><div class="mobileShow"><br /><br />
-</div>
-<div style="text-align:center;">
+<div class="mobileShow"><br /><br /><br /><br /></div>
+<div style="text-align: center;">
+<div class="mobileHide">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
 <div class="w3-animate-zoom">
-<span class="background_brown text_black ">
 <br />
-
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 5 - Um item mágico e o novo amigo</b>
-
+<b>Você está lendo: A História dos Irmãos Bulkan
 <br />
-</span>
+Capítulo: 5 - Um item mágico e o novo amigo
+</b>
+</div>
+</h3>
+</div>
+<div class="mobileShow">
+<h4 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 5 - Um item mágico e o novo amigo
+</b>
+</div>
+</h4>
 </div>
 </div>
 <div class="mobileShow"><br /></div>
 </h5>
 </div>
 
-<a name="capítulo-6"></a>
-<div id="capítulo-6" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
-<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<a name="read-modal-5"></a>
+<div id="read-modal-5" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_read_modal_button_5" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Eu li o capítulo: <br />5 - Um item mágico e o novo amigo <i class="fas fa-book-reader"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+<input type="text" name="read" value="5 - Um item mágico e o novo amigo" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+<a name="read-modal-5_mobile"></a>
+<div id="read-modal-5_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" style="border-radius: 50px;" id="close_read_modal_button_5_mobile">&times;</button>
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Eu li o capítulo: <br />5 - Um item mágico e o novo amigo <i class="fas fa-book-reader"></i></b>
+</h4>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+<input type="text" name="read" value="5 - Um item mágico e o novo amigo" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</form>
+<br /><br /><br />
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var read_modal_5 = document.getElementById("read-modal-5");
+
+var read_button_5 = document.getElementById("read_button_5");
+
+var close_read_modal_button_5 = document.getElementById("close_read_modal_button_5");
+
+read_button_5.onclick = function() {
+	read_modal_5.style.display = "block";
+	document.activeElement.blur();
+	read_modal_5.tabIndex = "-1";
+	read_modal_5.focus();
+}
+
+close_read_modal_button_5.onclick = function() {
+	read_modal_5.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_5.onclick = function(event) {
+	if (event.target == read_modal_5) {
+		read_modal_5.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+read_modal_5.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var read_modal_5_mobile = document.getElementById("read-modal-5_mobile");
+
+var read_button_5_mobile = document.getElementById("read_button_5_mobile");
+
+var close_read_modal_button_5_mobile = document.getElementById("close_read_modal_button_5_mobile");
+
+read_button_5_mobile.onclick = function() {
+	read_modal_5_mobile.style.display = "block";
+	document.activeElement.blur();
+	read_modal_5.tabIndex = "-1";
+	read_modal_5.focus();
+}
+
+close_read_modal_button_5_mobile.onclick = function() {
+	read_modal_5_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_5_mobile.onclick = function(event) {
+	if (event.target == read_modal_5_mobile) {
+		read_modal_5_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="comment-modal-5"></a>
+<div id="comment-modal-5" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_5" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />5 - Um item mágico e o novo amigo <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h2>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+
+<a name="comment-modal-5_mobile"></a>
+<div id="comment-modal-5_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_5_mobile" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />5 - Um item mágico e o novo amigo <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
 <br />
-<div class="mobileHide"><h2 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h4>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
 
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 6 - A segunda visita</b>
+<script>
+var comment_modal_5 = document.getElementById("comment-modal-5");
 
-</div></h2></div>
-<div style="margin:3%;"><div class="mobileShow"><h4 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+var comment_button_5 = document.getElementById("comment_button_5");
 
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 6 - A segunda visita</b>
+var close_comment_modal_button_5 = document.getElementById("close_comment_modal_button_5");
 
-</div></h4></div>
+comment_button_5.onclick = function() {
+	comment_modal_5.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_5.tabIndex = "-1";
+	comment_modal_5.focus();
+}
+
+close_comment_modal_button_5.onclick = function() {
+	comment_modal_5.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_5.onclick = function(event) {
+	if (event.target == comment_modal_5) {
+		comment_modal_5.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+comment_modal_5.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var comment_modal_5_mobile = document.getElementById("comment-modal-5_mobile");
+
+var comment_button_5_mobile = document.getElementById("comment_button_5_mobile");
+
+var close_comment_modal_button_5_mobile = document.getElementById("close_comment_modal_button_5_mobile");
+
+comment_button_5_mobile.onclick = function() {
+	comment_modal_5_mobile.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_5_mobile.tabIndex = "-1";
+	comment_modal_5_mobile.focus();
+}
+
+close_comment_modal_button_5_mobile.onclick = function() {
+	comment_modal_5_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_5_mobile.onclick = function(event) {
+	if (event.target == comment_modal_5_mobile) {
+		comment_modal_5_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="capítulo-6"></a>
+<div id="capítulo-6" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display: none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<div class="mobileHide">
+<h2 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 6 - A segunda visita
+</b>
+</div>
+</h2>
+</div>
+<div class="mobileShow">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 6 - A segunda visita
+</b>
+</div>
+</h3>
 </div>
 
 <h5 class="background_brown text_black " style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#capítulo-5"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Um item mágico e o novo amigo', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#capítulo-7"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-7');Add_To_Website_Title(' - Capítulo: 7 - A descoberta, a reconciliação e o fim', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#capítulo-5"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Um item mágico e o novo amigo', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#capítulo-7"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-7');Add_To_Website_Title(' - Capítulo: 7 - A descoberta, a reconciliação e o fim', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história_Mobile"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
@@ -1471,12 +2856,17 @@ Depois de algum tempo, os dois irmãos chegam lá voando com suas asas de dragã
 <br />"Não tenho certeza, ele não é da nossa família, então acho que isso é difícil", diz Izaque.
 <br />"Hmm..." diz Ana, pensativa.
 <br />Então os dois irmãos começam a andar para casa.
-<br /><br />Palavras: 826.
+<br /><br />
+Palavras: 892.
 </div>
 </div>
 <br /><br />
-<a href="#capítulo-5"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Um item mágico e o novo amigo', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#capítulo-7"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-7');Add_To_Website_Title(' - Capítulo: 7 - A descoberta, a reconciliação e o fim', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#capítulo-5"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-5');Add_To_Website_Title(' - Capítulo: 5 - Um item mágico e o novo amigo', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#capítulo-7"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('capítulo-7');Add_To_Website_Title(' - Capítulo: 7 - A descoberta, a reconciliação e o fim', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" id="comment_button_6" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comentar <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -1485,53 +2875,320 @@ Depois de algum tempo, os dois irmãos chegam lá voando com suas asas de dragã
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
-
-<div class="mobileShow"><br /><br />
-</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="comment_button_6_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comentar <i class="fas fa-comments"></i></b></h4></button>
-<br /><br />
+<br /><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_6_mobile" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('read-modal-6_mobile')"><h4><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h4></button>
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_6_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
-<br /><div class="mobileShow"><br /><br />
-</div>
-<div style="text-align:center;">
+<div class="mobileShow"><br /><br /><br /><br /></div>
+<div style="text-align: center;">
+<div class="mobileHide">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
 <div class="w3-animate-zoom">
-<span class="background_brown text_black ">
 <br />
-
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 6 - A segunda visita</b>
-
+<b>Você está lendo: A História dos Irmãos Bulkan
 <br />
-</span>
+Capítulo: 6 - A segunda visita
+</b>
+</div>
+</h3>
+</div>
+<div class="mobileShow">
+<h4 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 6 - A segunda visita
+</b>
+</div>
+</h4>
 </div>
 </div>
 <div class="mobileShow"><br /></div>
 </h5>
 </div>
 
-<a name="capítulo-7"></a>
-<div id="capítulo-7" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
-<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<a name="read-modal-6"></a>
+<div id="read-modal-6" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_read_modal_button_6" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Eu li o capítulo: <br />6 - A segunda visita <i class="fas fa-book-reader"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+<input type="text" name="read" value="6 - A segunda visita" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+<a name="read-modal-6_mobile"></a>
+<div id="read-modal-6_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" style="border-radius: 50px;" id="close_read_modal_button_6_mobile">&times;</button>
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Eu li o capítulo: <br />6 - A segunda visita <i class="fas fa-book-reader"></i></b>
+</h4>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+<input type="text" name="read" value="6 - A segunda visita" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</form>
+<br /><br /><br />
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var read_modal_6 = document.getElementById("read-modal-6");
+
+var read_button_6 = document.getElementById("read_button_6");
+
+var close_read_modal_button_6 = document.getElementById("close_read_modal_button_6");
+
+read_button_6.onclick = function() {
+	read_modal_6.style.display = "block";
+	document.activeElement.blur();
+	read_modal_6.tabIndex = "-1";
+	read_modal_6.focus();
+}
+
+close_read_modal_button_6.onclick = function() {
+	read_modal_6.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_6.onclick = function(event) {
+	if (event.target == read_modal_6) {
+		read_modal_6.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+read_modal_6.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var read_modal_6_mobile = document.getElementById("read-modal-6_mobile");
+
+var read_button_6_mobile = document.getElementById("read_button_6_mobile");
+
+var close_read_modal_button_6_mobile = document.getElementById("close_read_modal_button_6_mobile");
+
+read_button_6_mobile.onclick = function() {
+	read_modal_6_mobile.style.display = "block";
+	document.activeElement.blur();
+	read_modal_6.tabIndex = "-1";
+	read_modal_6.focus();
+}
+
+close_read_modal_button_6_mobile.onclick = function() {
+	read_modal_6_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_6_mobile.onclick = function(event) {
+	if (event.target == read_modal_6_mobile) {
+		read_modal_6_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="comment-modal-6"></a>
+<div id="comment-modal-6" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_6" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />6 - A segunda visita <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h2>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+
+<a name="comment-modal-6_mobile"></a>
+<div id="comment-modal-6_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_6_mobile" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />6 - A segunda visita <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
 <br />
-<div class="mobileHide"><h2 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h4>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
 
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 7 - A descoberta, a reconciliação e o fim</b>
+<script>
+var comment_modal_6 = document.getElementById("comment-modal-6");
 
-<span class="w3-text-white" ><b>[Novo!]</b></span><br /></div></h2></div>
-<div class="mobileShow"><h4 class="background_brown text_black " style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+var comment_button_6 = document.getElementById("comment_button_6");
 
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 7 - A descoberta, a reconciliação e o fim</b>
+var close_comment_modal_button_6 = document.getElementById("close_comment_modal_button_6");
 
-<span class="w3-text-white" ><b>[Novo!]</b></span></div></h4></div>
+comment_button_6.onclick = function() {
+	comment_modal_6.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_6.tabIndex = "-1";
+	comment_modal_6.focus();
+}
+
+close_comment_modal_button_6.onclick = function() {
+	comment_modal_6.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_6.onclick = function(event) {
+	if (event.target == comment_modal_6) {
+		comment_modal_6.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+comment_modal_6.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var comment_modal_6_mobile = document.getElementById("comment-modal-6_mobile");
+
+var comment_button_6_mobile = document.getElementById("comment_button_6_mobile");
+
+var close_comment_modal_button_6_mobile = document.getElementById("close_comment_modal_button_6_mobile");
+
+comment_button_6_mobile.onclick = function() {
+	comment_modal_6_mobile.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_6_mobile.tabIndex = "-1";
+	comment_modal_6_mobile.focus();
+}
+
+close_comment_modal_button_6_mobile.onclick = function() {
+	comment_modal_6_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_6_mobile.onclick = function(event) {
+	if (event.target == comment_modal_6_mobile) {
+		comment_modal_6_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="capítulo-7"></a>
+<div id="capítulo-7" class="city background_brown text_black  border_color_black border_1px border_color_black border_4px" style="display: none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<div class="mobileHide">
+<h2 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 7 - A descoberta, a reconciliação e o fim<span class="w3-text-white" >[Novo!]</span>
+</b>
+</div>
+</h2>
+</div>
+<div class="mobileShow">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 7 - A descoberta, a reconciliação e o fim<span class="w3-text-white" >[Novo!]</span>
+</b>
+</div>
+</h3>
+</div>
 
 <h5 class="background_brown text_black " style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#capítulo-6"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-6');Add_To_Website_Title(' - Capítulo: 6 - A segunda visita', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
+<a href="#capítulo-6"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-6');Add_To_Website_Title(' - Capítulo: 6 - A segunda visita', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" style="float: right;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <a href="#The Story of the Bulkan Siblings_Ler história_Mobile"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" style="float: right;border-radius: 50px;" onclick="openCity('The Story of the Bulkan Siblings_Ler história_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
@@ -1686,11 +3343,14 @@ Os dois irmãos chegam em sua casa para o almoço.
 <br />Terminada em 24/01/2019.
 <br />Revisada e consertada em 08/04/2019.
 <br />Mas a gente continuou editando e revisando algumas coisas recentemente, em 2021.
-<br /><br />Palavras: 1,667.
+<br /><br />
+Palavras: 1.808.
 </div>
 </div>
 <br /><br />
-<a href="#capítulo-6"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-6');Add_To_Website_Title(' - Capítulo: 6 - A segunda visita', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
+<a href="#capítulo-6"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('capítulo-6');Add_To_Website_Title(' - Capítulo: 6 - A segunda visita', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide" id="comment_button_7" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comentar <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -1699,29 +3359,36 @@ Os dois irmãos chegam em sua casa para o almoço.
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
-
-<div class="mobileShow"><br /><br />
-</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="comment_button_7_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comentar <i class="fas fa-comments"></i></b></h4></button>
-<br /><br />
+<br /><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_7_mobile" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('read-modal-7_mobile')"><h4><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h4></button>
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow" id="read_button_7_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Eu Li ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
-<br /><div class="mobileShow"><br /><br />
-</div>
-<div style="text-align:center;">
+<div class="mobileShow"><br /><br /><br /><br /></div>
+<div style="text-align: center;">
+<div class="mobileHide">
+<h3 class="background_brown text_black " style="border-radius: 250px;">
 <div class="w3-animate-zoom">
-<span class="background_brown text_black ">
 <br />
-
-<b>Você está lendo: A História dos Irmãos Bulkan<br />
-Capítulo: 7 - A descoberta, a reconciliação e o fim</b>
-
-
-<span class="w3-text-white" ><b>[Novo!]</b></span>
-<br /></span>
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 7 - A descoberta, a reconciliação e o fim<span class="w3-text-white" >[Novo!]</span>
+</b>
+</div>
+</h3>
+</div>
+<div class="mobileShow">
+<h4 class="background_brown text_black " style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>Você está lendo: A História dos Irmãos Bulkan
+<br />
+Capítulo: 7 - A descoberta, a reconciliação e o fim<span class="w3-text-white" >[Novo!]</span>
+</b>
+</div>
+</h4>
 </div>
 </div>
 <div class="mobileShow"><br /></div>
@@ -1729,567 +3396,64 @@ Capítulo: 7 - A descoberta, a reconciliação e o fim</b>
 </div>
 </div>
 
-<a name="read-modal-1"></a>
-<div id="read-modal-1" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal1">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Eu li o capítulo:<br />1 - O começo, a masmorra <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="1 - O começo, a masmorra" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<a name="read-modal-1_mobile"></a>
-<div id="read-modal-1_mobile" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal1_mobile">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Eu li o capítulo:<br />1 - O começo, a masmorra <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;"><br /><form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="1 - O começo, a masmorra" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var read_modal_1 = document.getElementById("read-modal-1");
-
-var read_button_1 = document.getElementById("read_button_1");
-
-var close_read_modal_button_1 = document.getElementById("closereadmodal1");
-
-read_button_1.onclick = function() {
-	read_modal_1.style.display = "block";
-	document.activeElement.blur();
-	read_modal_1.tabIndex = "-1";
-	read_modal_1.focus();
-}
-
-close_read_modal_button_1.onclick = function() {
-	read_modal_1.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_1.onclick = function(event) {
-	if (event.target == read_modal_1) {
-		read_modal_1.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_1.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var read_modal_1_mobile = document.getElementById("read-modal-1_mobile");
-
-var read_button_1_mobile = document.getElementById("read_button_1_mobile");
-
-var close_read_modal_button_1_mobile = document.getElementById("closereadmodal1_mobile");
-
-read_button_1_mobile.onclick = function() {
-	read_modal_1_mobile.style.display = "block";
-	document.activeElement.blur();
-	read_modal_1.tabIndex = "-1";
-	read_modal_1.focus();
-}
-
-close_read_modal_button_1_mobile.onclick = function() {
-	read_modal_1_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_1_mobile.onclick = function(event) {
-	if (event.target == read_modal_1_mobile) {
-		read_modal_1_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_1.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="read-modal-2"></a>
-<div id="read-modal-2" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal2">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Eu li o capítulo:<br />2 - O quarto e a primeira arma <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="2 - O quarto e a primeira arma" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<a name="read-modal-2_mobile"></a>
-<div id="read-modal-2_mobile" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal2_mobile">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Eu li o capítulo:<br />2 - O quarto e a primeira arma <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;"><br /><form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="2 - O quarto e a primeira arma" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var read_modal_2 = document.getElementById("read-modal-2");
-
-var read_button_2 = document.getElementById("read_button_2");
-
-var close_read_modal_button_2 = document.getElementById("closereadmodal2");
-
-read_button_2.onclick = function() {
-	read_modal_2.style.display = "block";
-	document.activeElement.blur();
-	read_modal_2.tabIndex = "-1";
-	read_modal_2.focus();
-}
-
-close_read_modal_button_2.onclick = function() {
-	read_modal_2.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_2.onclick = function(event) {
-	if (event.target == read_modal_2) {
-		read_modal_2.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_2.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var read_modal_2_mobile = document.getElementById("read-modal-2_mobile");
-
-var read_button_2_mobile = document.getElementById("read_button_2_mobile");
-
-var close_read_modal_button_2_mobile = document.getElementById("closereadmodal2_mobile");
-
-read_button_2_mobile.onclick = function() {
-	read_modal_2_mobile.style.display = "block";
-	document.activeElement.blur();
-	read_modal_2.tabIndex = "-1";
-	read_modal_2.focus();
-}
-
-close_read_modal_button_2_mobile.onclick = function() {
-	read_modal_2_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_2_mobile.onclick = function(event) {
-	if (event.target == read_modal_2_mobile) {
-		read_modal_2_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_2.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="read-modal-3"></a>
-<div id="read-modal-3" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal3">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Eu li o capítulo:<br />3 - Retorno e preocupação <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="3 - Retorno e preocupação" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<a name="read-modal-3_mobile"></a>
-<div id="read-modal-3_mobile" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal3_mobile">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Eu li o capítulo:<br />3 - Retorno e preocupação <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;"><br /><form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="3 - Retorno e preocupação" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var read_modal_3 = document.getElementById("read-modal-3");
-
-var read_button_3 = document.getElementById("read_button_3");
-
-var close_read_modal_button_3 = document.getElementById("closereadmodal3");
-
-read_button_3.onclick = function() {
-	read_modal_3.style.display = "block";
-	document.activeElement.blur();
-	read_modal_3.tabIndex = "-1";
-	read_modal_3.focus();
-}
-
-close_read_modal_button_3.onclick = function() {
-	read_modal_3.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_3.onclick = function(event) {
-	if (event.target == read_modal_3) {
-		read_modal_3.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_3.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var read_modal_3_mobile = document.getElementById("read-modal-3_mobile");
-
-var read_button_3_mobile = document.getElementById("read_button_3_mobile");
-
-var close_read_modal_button_3_mobile = document.getElementById("closereadmodal3_mobile");
-
-read_button_3_mobile.onclick = function() {
-	read_modal_3_mobile.style.display = "block";
-	document.activeElement.blur();
-	read_modal_3.tabIndex = "-1";
-	read_modal_3.focus();
-}
-
-close_read_modal_button_3_mobile.onclick = function() {
-	read_modal_3_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_3_mobile.onclick = function(event) {
-	if (event.target == read_modal_3_mobile) {
-		read_modal_3_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_3.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="read-modal-4"></a>
-<div id="read-modal-4" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal4">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Eu li o capítulo:<br />4 - Uma nova arma e uma transformação estranha <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="4 - Uma nova arma e uma transformação estranha" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<a name="read-modal-4_mobile"></a>
-<div id="read-modal-4_mobile" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal4_mobile">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Eu li o capítulo:<br />4 - Uma nova arma e uma transformação estranha <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;"><br /><form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="4 - Uma nova arma e uma transformação estranha" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var read_modal_4 = document.getElementById("read-modal-4");
-
-var read_button_4 = document.getElementById("read_button_4");
-
-var close_read_modal_button_4 = document.getElementById("closereadmodal4");
-
-read_button_4.onclick = function() {
-	read_modal_4.style.display = "block";
-	document.activeElement.blur();
-	read_modal_4.tabIndex = "-1";
-	read_modal_4.focus();
-}
-
-close_read_modal_button_4.onclick = function() {
-	read_modal_4.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_4.onclick = function(event) {
-	if (event.target == read_modal_4) {
-		read_modal_4.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_4.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var read_modal_4_mobile = document.getElementById("read-modal-4_mobile");
-
-var read_button_4_mobile = document.getElementById("read_button_4_mobile");
-
-var close_read_modal_button_4_mobile = document.getElementById("closereadmodal4_mobile");
-
-read_button_4_mobile.onclick = function() {
-	read_modal_4_mobile.style.display = "block";
-	document.activeElement.blur();
-	read_modal_4.tabIndex = "-1";
-	read_modal_4.focus();
-}
-
-close_read_modal_button_4_mobile.onclick = function() {
-	read_modal_4_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_4_mobile.onclick = function(event) {
-	if (event.target == read_modal_4_mobile) {
-		read_modal_4_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_4.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="read-modal-5"></a>
-<div id="read-modal-5" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal5">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Eu li o capítulo:<br />5 - Um item mágico e o novo amigo <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="5 - Um item mágico e o novo amigo" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<a name="read-modal-5_mobile"></a>
-<div id="read-modal-5_mobile" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal5_mobile">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Eu li o capítulo:<br />5 - Um item mágico e o novo amigo <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;"><br /><form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="5 - Um item mágico e o novo amigo" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var read_modal_5 = document.getElementById("read-modal-5");
-
-var read_button_5 = document.getElementById("read_button_5");
-
-var close_read_modal_button_5 = document.getElementById("closereadmodal5");
-
-read_button_5.onclick = function() {
-	read_modal_5.style.display = "block";
-	document.activeElement.blur();
-	read_modal_5.tabIndex = "-1";
-	read_modal_5.focus();
-}
-
-close_read_modal_button_5.onclick = function() {
-	read_modal_5.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_5.onclick = function(event) {
-	if (event.target == read_modal_5) {
-		read_modal_5.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_5.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var read_modal_5_mobile = document.getElementById("read-modal-5_mobile");
-
-var read_button_5_mobile = document.getElementById("read_button_5_mobile");
-
-var close_read_modal_button_5_mobile = document.getElementById("closereadmodal5_mobile");
-
-read_button_5_mobile.onclick = function() {
-	read_modal_5_mobile.style.display = "block";
-	document.activeElement.blur();
-	read_modal_5.tabIndex = "-1";
-	read_modal_5.focus();
-}
-
-close_read_modal_button_5_mobile.onclick = function() {
-	read_modal_5_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_5_mobile.onclick = function(event) {
-	if (event.target == read_modal_5_mobile) {
-		read_modal_5_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_5.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="read-modal-6"></a>
-<div id="read-modal-6" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal6">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Eu li o capítulo:<br />6 - A segunda visita <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="6 - A segunda visita" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<a name="read-modal-6_mobile"></a>
-<div id="read-modal-6_mobile" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal6_mobile">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Eu li o capítulo:<br />6 - A segunda visita <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;"><br /><form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="6 - A segunda visita" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var read_modal_6 = document.getElementById("read-modal-6");
-
-var read_button_6 = document.getElementById("read_button_6");
-
-var close_read_modal_button_6 = document.getElementById("closereadmodal6");
-
-read_button_6.onclick = function() {
-	read_modal_6.style.display = "block";
-	document.activeElement.blur();
-	read_modal_6.tabIndex = "-1";
-	read_modal_6.focus();
-}
-
-close_read_modal_button_6.onclick = function() {
-	read_modal_6.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_6.onclick = function(event) {
-	if (event.target == read_modal_6) {
-		read_modal_6.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_6.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var read_modal_6_mobile = document.getElementById("read-modal-6_mobile");
-
-var read_button_6_mobile = document.getElementById("read_button_6_mobile");
-
-var close_read_modal_button_6_mobile = document.getElementById("closereadmodal6_mobile");
-
-read_button_6_mobile.onclick = function() {
-	read_modal_6_mobile.style.display = "block";
-	document.activeElement.blur();
-	read_modal_6.tabIndex = "-1";
-	read_modal_6.focus();
-}
-
-close_read_modal_button_6_mobile.onclick = function() {
-	read_modal_6_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_6_mobile.onclick = function(event) {
-	if (event.target == read_modal_6_mobile) {
-		read_modal_6_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_6.addEventListener("keydown", Check_Modal_Key);
-</script>
-
 <a name="read-modal-7"></a>
-<div id="read-modal-7" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal7">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Eu li o capítulo:<br />7 - A descoberta, a reconciliação e o fim <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="7 - A descoberta, a reconciliação e o fim" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
+<div id="read-modal-7" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_read_modal_button_7" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Eu li o capítulo: <br />7 - A descoberta, a reconciliação e o fim <i class="fas fa-book-reader"></i></b>
+</h2>
 </div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+<input type="text" name="read" value="7 - A descoberta, a reconciliação e o fim" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</div>
+<br /><br /><br />
+</form>
 </div>
 </div>
 </div>
 
 <a name="read-modal-7_mobile"></a>
-<div id="read-modal-7_mobile" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal7_mobile">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Eu li o capítulo:<br />7 - A descoberta, a reconciliação e o fim <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;"><br /><form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
+<div id="read-modal-7_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" style="border-radius: 50px;" id="close_read_modal_button_7_mobile">&times;</button>
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Eu li o capítulo: <br />7 - A descoberta, a reconciliação e o fim <i class="fas fa-book-reader"></i></b>
+</h4>
+</div>
+<hr class="border_color_brown border_1px" />
+<form name="The Story of the Bulkan Siblings_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
 <input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="7 - A descoberta, a reconciliação e o fim" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+<input type="text" name="read" value="7 - A descoberta, a reconciliação e o fim" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</form>
+<br /><br /><br />
 </div>
 </div>
 </div>
@@ -2300,7 +3464,7 @@ var read_modal_7 = document.getElementById("read-modal-7");
 
 var read_button_7 = document.getElementById("read_button_7");
 
-var close_read_modal_button_7 = document.getElementById("closereadmodal7");
+var close_read_modal_button_7 = document.getElementById("close_read_modal_button_7");
 
 read_button_7.onclick = function() {
 	read_modal_7.style.display = "block";
@@ -2328,7 +3492,7 @@ var read_modal_7_mobile = document.getElementById("read-modal-7_mobile");
 
 var read_button_7_mobile = document.getElementById("read_button_7_mobile");
 
-var close_read_modal_button_7_mobile = document.getElementById("closereadmodal7_mobile");
+var close_read_modal_button_7_mobile = document.getElementById("close_read_modal_button_7_mobile");
 
 read_button_7_mobile.onclick = function() {
 	read_modal_7_mobile.style.display = "block";
@@ -2348,677 +3512,80 @@ read_modal_7_mobile.onclick = function(event) {
 		document.activeElement.blur();
 	}
 }
-
-read_modal_7.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="comment-modal-1"></a>
-<div id="comment-modal-1" class="modal mobileHide" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_1" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comentar no capítulo:<br />1 - O começo, a masmorra <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;">
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comente o que achou do capítulo:</b></h2></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<a name="comment-modal-1_mobile"></a>
-<div id="comment-modal-1_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_1_mobile" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comentar no capítulo:<br />1 - O começo, a masmorra <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comente o que achou do capítulo:</b></h4></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<script>
-var comment_modal_1 = document.getElementById("comment-modal-1");
-
-var comment_button_1 = document.getElementById("comment_button_1");
-
-var close_comment_modal_button_1 = document.getElementById("close_comment_modal_button_1");
-
-comment_button_1.onclick = function() {
-	comment_modal_1.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_1.tabIndex = "-1";
-	comment_modal_1.focus();
-}
-
-close_comment_modal_button_1.onclick = function() {
-	comment_modal_1.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_1.onclick = function(event) {
-	if (event.target == comment_modal_1) {
-		comment_modal_1.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_1.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var comment_modal_1_mobile = document.getElementById("comment-modal-1_mobile");
-
-var comment_button_1_mobile = document.getElementById("comment_button_1_mobile");
-
-var close_comment_modal_button_1_mobile = document.getElementById("close_comment_modal_button_1_mobile");
-
-comment_button_1_mobile.onclick = function() {
-	comment_modal_1_mobile.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_1_mobile.tabIndex = "-1";
-	comment_modal_1_mobile.focus();
-}
-
-close_comment_modal_button_1_mobile.onclick = function() {
-	comment_modal_1_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_1_mobile.onclick = function(event) {
-	if (event.target == comment_modal_1_mobile) {
-		comment_modal_1_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_1.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="comment-modal-2"></a>
-<div id="comment-modal-2" class="modal mobileHide" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_2" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comentar no capítulo:<br />2 - O quarto e a primeira arma <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;">
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comente o que achou do capítulo:</b></h2></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<a name="comment-modal-2_mobile"></a>
-<div id="comment-modal-2_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_2_mobile" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comentar no capítulo:<br />2 - O quarto e a primeira arma <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comente o que achou do capítulo:</b></h4></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<script>
-var comment_modal_2 = document.getElementById("comment-modal-2");
-
-var comment_button_2 = document.getElementById("comment_button_2");
-
-var close_comment_modal_button_2 = document.getElementById("close_comment_modal_button_2");
-
-comment_button_2.onclick = function() {
-	comment_modal_2.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_2.tabIndex = "-1";
-	comment_modal_2.focus();
-}
-
-close_comment_modal_button_2.onclick = function() {
-	comment_modal_2.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_2.onclick = function(event) {
-	if (event.target == comment_modal_2) {
-		comment_modal_2.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_2.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var comment_modal_2_mobile = document.getElementById("comment-modal-2_mobile");
-
-var comment_button_2_mobile = document.getElementById("comment_button_2_mobile");
-
-var close_comment_modal_button_2_mobile = document.getElementById("close_comment_modal_button_2_mobile");
-
-comment_button_2_mobile.onclick = function() {
-	comment_modal_2_mobile.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_2_mobile.tabIndex = "-1";
-	comment_modal_2_mobile.focus();
-}
-
-close_comment_modal_button_2_mobile.onclick = function() {
-	comment_modal_2_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_2_mobile.onclick = function(event) {
-	if (event.target == comment_modal_2_mobile) {
-		comment_modal_2_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_2.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="comment-modal-3"></a>
-<div id="comment-modal-3" class="modal mobileHide" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_3" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comentar no capítulo:<br />3 - Retorno e preocupação <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;">
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comente o que achou do capítulo:</b></h2></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<a name="comment-modal-3_mobile"></a>
-<div id="comment-modal-3_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_3_mobile" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comentar no capítulo:<br />3 - Retorno e preocupação <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comente o que achou do capítulo:</b></h4></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<script>
-var comment_modal_3 = document.getElementById("comment-modal-3");
-
-var comment_button_3 = document.getElementById("comment_button_3");
-
-var close_comment_modal_button_3 = document.getElementById("close_comment_modal_button_3");
-
-comment_button_3.onclick = function() {
-	comment_modal_3.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_3.tabIndex = "-1";
-	comment_modal_3.focus();
-}
-
-close_comment_modal_button_3.onclick = function() {
-	comment_modal_3.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_3.onclick = function(event) {
-	if (event.target == comment_modal_3) {
-		comment_modal_3.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_3.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var comment_modal_3_mobile = document.getElementById("comment-modal-3_mobile");
-
-var comment_button_3_mobile = document.getElementById("comment_button_3_mobile");
-
-var close_comment_modal_button_3_mobile = document.getElementById("close_comment_modal_button_3_mobile");
-
-comment_button_3_mobile.onclick = function() {
-	comment_modal_3_mobile.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_3_mobile.tabIndex = "-1";
-	comment_modal_3_mobile.focus();
-}
-
-close_comment_modal_button_3_mobile.onclick = function() {
-	comment_modal_3_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_3_mobile.onclick = function(event) {
-	if (event.target == comment_modal_3_mobile) {
-		comment_modal_3_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_3.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="comment-modal-4"></a>
-<div id="comment-modal-4" class="modal mobileHide" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_4" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comentar no capítulo:<br />4 - Uma nova arma e uma transformação estranha <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;">
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comente o que achou do capítulo:</b></h2></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<a name="comment-modal-4_mobile"></a>
-<div id="comment-modal-4_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_4_mobile" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comentar no capítulo:<br />4 - Uma nova arma e uma transformação estranha <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comente o que achou do capítulo:</b></h4></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<script>
-var comment_modal_4 = document.getElementById("comment-modal-4");
-
-var comment_button_4 = document.getElementById("comment_button_4");
-
-var close_comment_modal_button_4 = document.getElementById("close_comment_modal_button_4");
-
-comment_button_4.onclick = function() {
-	comment_modal_4.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_4.tabIndex = "-1";
-	comment_modal_4.focus();
-}
-
-close_comment_modal_button_4.onclick = function() {
-	comment_modal_4.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_4.onclick = function(event) {
-	if (event.target == comment_modal_4) {
-		comment_modal_4.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_4.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var comment_modal_4_mobile = document.getElementById("comment-modal-4_mobile");
-
-var comment_button_4_mobile = document.getElementById("comment_button_4_mobile");
-
-var close_comment_modal_button_4_mobile = document.getElementById("close_comment_modal_button_4_mobile");
-
-comment_button_4_mobile.onclick = function() {
-	comment_modal_4_mobile.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_4_mobile.tabIndex = "-1";
-	comment_modal_4_mobile.focus();
-}
-
-close_comment_modal_button_4_mobile.onclick = function() {
-	comment_modal_4_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_4_mobile.onclick = function(event) {
-	if (event.target == comment_modal_4_mobile) {
-		comment_modal_4_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_4.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="comment-modal-5"></a>
-<div id="comment-modal-5" class="modal mobileHide" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_5" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comentar no capítulo:<br />5 - Um item mágico e o novo amigo <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;">
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comente o que achou do capítulo:</b></h2></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<a name="comment-modal-5_mobile"></a>
-<div id="comment-modal-5_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_5_mobile" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comentar no capítulo:<br />5 - Um item mágico e o novo amigo <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comente o que achou do capítulo:</b></h4></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<script>
-var comment_modal_5 = document.getElementById("comment-modal-5");
-
-var comment_button_5 = document.getElementById("comment_button_5");
-
-var close_comment_modal_button_5 = document.getElementById("close_comment_modal_button_5");
-
-comment_button_5.onclick = function() {
-	comment_modal_5.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_5.tabIndex = "-1";
-	comment_modal_5.focus();
-}
-
-close_comment_modal_button_5.onclick = function() {
-	comment_modal_5.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_5.onclick = function(event) {
-	if (event.target == comment_modal_5) {
-		comment_modal_5.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_5.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var comment_modal_5_mobile = document.getElementById("comment-modal-5_mobile");
-
-var comment_button_5_mobile = document.getElementById("comment_button_5_mobile");
-
-var close_comment_modal_button_5_mobile = document.getElementById("close_comment_modal_button_5_mobile");
-
-comment_button_5_mobile.onclick = function() {
-	comment_modal_5_mobile.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_5_mobile.tabIndex = "-1";
-	comment_modal_5_mobile.focus();
-}
-
-close_comment_modal_button_5_mobile.onclick = function() {
-	comment_modal_5_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_5_mobile.onclick = function(event) {
-	if (event.target == comment_modal_5_mobile) {
-		comment_modal_5_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_5.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="comment-modal-6"></a>
-<div id="comment-modal-6" class="modal mobileHide" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_6" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comentar no capítulo:<br />6 - A segunda visita <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
-<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;">
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comente o que achou do capítulo:</b></h2></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<a name="comment-modal-6_mobile"></a>
-<div id="comment-modal-6_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_6_mobile" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comentar no capítulo:<br />6 - A segunda visita <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_1px" />
-<div style="margin:3%;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comente o que achou do capítulo:</b></h4></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<script>
-var comment_modal_6 = document.getElementById("comment-modal-6");
-
-var comment_button_6 = document.getElementById("comment_button_6");
-
-var close_comment_modal_button_6 = document.getElementById("close_comment_modal_button_6");
-
-comment_button_6.onclick = function() {
-	comment_modal_6.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_6.tabIndex = "-1";
-	comment_modal_6.focus();
-}
-
-close_comment_modal_button_6.onclick = function() {
-	comment_modal_6.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_6.onclick = function(event) {
-	if (event.target == comment_modal_6) {
-		comment_modal_6.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_6.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var comment_modal_6_mobile = document.getElementById("comment-modal-6_mobile");
-
-var comment_button_6_mobile = document.getElementById("comment_button_6_mobile");
-
-var close_comment_modal_button_6_mobile = document.getElementById("close_comment_modal_button_6_mobile");
-
-comment_button_6_mobile.onclick = function() {
-	comment_modal_6_mobile.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_6_mobile.tabIndex = "-1";
-	comment_modal_6_mobile.focus();
-}
-
-close_comment_modal_button_6_mobile.onclick = function() {
-	comment_modal_6_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_6_mobile.onclick = function(event) {
-	if (event.target == comment_modal_6_mobile) {
-		comment_modal_6_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_6.addEventListener("keydown", Check_Modal_Key);
 </script>
 
 <a name="comment-modal-7"></a>
 <div id="comment-modal-7" class="modal mobileHide" style="display:none;border-radius: 50px;">
 <div class="w3-animate-zoom">
 <div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileHide">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_7" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comentar no capítulo:<br />7 - A descoberta, a reconciliação e o fim <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_brown border_1px" />
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_7" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />7 - A descoberta, a reconciliação e o fim <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
 <form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
 <div style="margin:3%;">
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Seu nome:</b></h2></div>
-<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h2 class="text_brown"><b>Comente o que achou do capítulo:</b></h2></div>
-<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Enviar: <i class="fas fa-paper-plane"></i></b></h2></button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Seu nome:</b>
+</h2>
 </div>
+<input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h2>
+</div>
+<input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+</div>
+<br /><br /><br />
 </form>
 </div>
-<br /><br /><br /><br />
 </div>
 </div>
-</div>
+
 
 <a name="comment-modal-7_mobile"></a>
 <div id="comment-modal-7_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
 <div class="w3-animate-zoom">
 <div class="modal-content background_black border_color_brown border_4px" style="border-radius: 50px;">
-<div class="mobileShow">
-<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_7_mobile" style="border-radius: 50px;">&times;</button><br /><br /><br />
+<button class="w3-btn text_black background_darker_brown border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_7_mobile" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_brown">
+<b>Comentar no capítulo: <br />7 - A descoberta, a reconciliação e o fim <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_brown border_1px" />
 <form name="The Story of the Bulkan Siblings-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comentar no capítulo:<br />7 - A descoberta, a reconciliação e o fim <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_brown border_1px" />
 <div style="margin:3%;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Seu nome:</b></h4></div>
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Seu nome:</b>
+</h4>
+</div>
 <input type="text" name="name" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
 <br />
-<div class="w3-animate-zoom"><h4 class="text_brown"><b>Comente o que achou do capítulo:</b></h4></div>
+<div class="w3-animate-zoom">
+<h4 class="text_brown">
+<b>Comente o que achou do capítulo:</b>
+</h4>
+</div>
 <input type="text" name="comment" class="text_black background_darker_brown border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Enviar: <i class="fas fa-paper-plane"></i></b></h4></button>
+<button type="submit" class="w3-btn border_3px_solid_black background_darker_brown text_black" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
 </div>
+<br /><br /><br />
 </form>
-</div>
-<br /><br /><br /><br />
 </div>
 </div>
 </div>
@@ -3076,8 +3643,6 @@ comment_modal_7_mobile.onclick = function(event) {
 		document.activeElement.blur();
 	}
 }
-
-comment_modal_7.addEventListener("keydown", Check_Modal_Key);
 </script>
 
 <a name="Aba de Sites"></a>
@@ -3225,7 +3790,7 @@ function Check_Chapter_Number_On_Link() {
 		var read_chapter_text = "read-chapter-";
 	}
 
-	var chapter_number = 8;
+	var chapter_number = 3;
 
 	var first_check_1 = second_website_url.includes(read_chapter_text + 1);
 	var second_check_1 = second_website_url.includes(read_chapter_text + "[1]");
