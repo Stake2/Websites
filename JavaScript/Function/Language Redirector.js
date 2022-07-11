@@ -1,13 +1,15 @@
 var root_website_link = "https://thestake2.netlify.app/";
 var websites_list_text_files = root_website_link + "Texts/Websites List/";
-var english_website_names_url = websites_list_text_files + "English Websites.txt";
+var english_website_names_url = websites_list_text_files + "English Websites Array.txt";
 var portuguese_website_names_url = websites_list_text_files + "Portuguese Websites Keyed.txt";
 
 var user_language = navigator.website_language || navigator.userLanguage || navigator.language;
 var website_language = user_language;
 
 var title = document.getElementsByTagName("title")[0];
-var website_title = title.innerHTML;
+var website_title = String(title.innerHTML).replace("(1) ", "");
+
+var meta_title = document.head.querySelector('[name="language_title"]').content;
 
 var url_addon;
 var english_language = "en-US";
@@ -15,6 +17,11 @@ var english_languages = ["en", "en-US", "en-BZ", "en-CA", "en-IE", "en-JM", "en-
 
 var portuguese_language = "pt-BR" || "pt-PT";
 var portuguese_languages = ["pt", "pt-BR", "pt-PT"];
+
+var languages_dict = {
+"PT-BR": "pt",
+"EN-US": "en",
+}
 
 async function Convert_Text_File_To_Object(url) {
 	var x = await fetch(url);
@@ -25,8 +32,8 @@ async function Convert_Text_File_To_Object(url) {
 	return object;
 }
 
-var english_website_names = await Convert_Text_File_To_Object("English Websites Array.txt");
-var portuguese_website_names = await Convert_Text_File_To_Object("Portuguese Websites Keyed.txt");
+var english_website_names = await Convert_Text_File_To_Object(english_website_names_url);
+var portuguese_website_names = await Convert_Text_File_To_Object(portuguese_website_names_url);
 
 function Language_Item_Definer(english_text, portuguese_text) {
 	var language_text;
@@ -63,7 +70,7 @@ function Portuguese_Language_Check(language) {
 }
 
 function Redirect(website_link) {
-	var redirect = website_link + Language_Item_Definer("EN-US", "PT-BR", user_language) + "/" + url_addon;
+	var redirect = website_link + Language_Item_Definer("en", "pt", user_language) + "/" + url_addon;
 	window.location = redirect;
 }
 
@@ -71,15 +78,15 @@ function Check_Language(english_website_name) {
 	var website_link = root_website_link + english_website_name + "/"
 	var portuguese_website_name = portuguese_website_names[String(english_website_name).replace(/ /gi, "_").toLowerCase()];
 
-	if (website_title == english_website_name) {
+	if (meta_title == english_website_name) {
 		console.log(Language_Item_Definer("The user is in the index website, redirecting to user language website", "O usuário está no site raíz, redirecionando para o site do idioma") + "...");
-		Redirect(website_link)
+		Redirect(website_link);
 	}
 
-	if (website_title == english_website_name + " English") {
+	if (meta_title == english_website_name + " English") {
 		if (Portuguese_Language_Check(user_language) == true) {
 			console.log(Language_Item_Definer("The user is in the English website, redirecting to Portuguese language website", "O usuário está no site em Inglês, redirecionando para o site em idioma Português") + "...");
-			Redirect(website_link)
+			Redirect(website_link);
 		}
 
 		else {
@@ -87,10 +94,10 @@ function Check_Language(english_website_name) {
 		}
 	}
 
-	if (website_title == portuguese_website_name + " Português") {
+	if (meta_title == portuguese_website_name + " Português") {
 		if (English_Language_Check(user_language) == true) {
 			console.log(Language_Item_Definer("The user is in the Portuguese website, redirecting to English language website", "O usuário está no site em Português, redirecionando para o site em idioma Inglês") + "...");
-			Redirect(website_link)
+			Redirect(website_link);
 		}
 
 		else {

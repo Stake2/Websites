@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <head>
-	<title>New World EN-US</title>
-	<link rel="canonical" href="https://thestake2.netlify.app/New World/en-us/" />
+	<title>New World</title>
+	<link rel="canonical" href="https://thestake2.netlify.app/New World/en/" />
 	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Website Icons/New World.png" />
 	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Website Icons/New World.png" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="New World EN-US" />
-	<meta property="og:site_name" content="New World EN-US" />
-	<meta property="og:url" content="https://thestake2.netlify.app/New World/en-us/" />
+	<meta property="og:title" content="New World" />
+	<meta property="og:site_name" content="New World" />
+	<meta property="og:url" content="https://thestake2.netlify.app/New World/en/" />
 	<meta property="og:image" content="https://thestake2.netlify.app/Images/Website Icons/New World.png" />
 	<meta property="og:description" content="Website about my story, New World, made by Stake2, Funkysnipa Cat, Izaque." />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:locale:alternate" content="pt_BR" />
 	<meta property="og:locale:alternate" content="pt_PT" />
+	<meta name="language_title" content="New World English" />
 	<meta name="description" content="Website about my story, New World, made by Stake2, Funkysnipa Cat, Izaque." />
 	<meta name="theme-color" content="#5cc6ca" />
 	<meta name="twitter:card" content="summary" />
@@ -20,8 +21,8 @@
 	<meta name="twitter:site" value="@Stake2_" />
 	<meta name="twitter:creator" content="@Stake2_" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:url" content="https://thestake2.netlify.app/New World/en-us/" />
-	<meta name="revised" content="Stake2's Enterprise TM, 07/07/2022." />
+	<meta name="twitter:url" content="https://thestake2.netlify.app/New World/en/" />
+	<meta name="revised" content="Stake2's Enterprise TM, 07/11/2022." />
 	<meta name="author" content="Stake2" />
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 	<meta charset="UTF-8" />
@@ -37,7 +38,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 	<script src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Tabs.js"></script>
-	<script src="https://thestake2.netlify.app/JavaScript/Function/Redirect To Website Of User Language.js" onLoad="Check_Website_Link();"></script>
+	<script src="https://thestake2.netlify.app/JavaScript/Function/Language Redirector.js"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Show Hide.js"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Mobile Side Menu.js"></script>
 	<script src="https://thestake2.netlify.app/JavaScript/Function/Set Revised Date.js"></script>
@@ -66,12 +67,15 @@
 Websites: <i class="fas fa-globe-americas"></i></h2></button></a>
 </span><br />
 <center><button id="hide_computer_buttons" class="w3-center w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button></center>
+
 </div>
 
 <!-- "Show Computer Buttons" button bar -->
 <div id="show_computer_button_bar" class="w3-bar" style="position:fixed;float:right;">
 <button id="show_computer_buttons" class="w3-center w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="display:none;float:right;border-radius: 50px;" onclick="Show_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
+
 </div>
+
 
 
 <!--- Mobile Button bar at the left -->
@@ -102,8 +106,8 @@ Websites: <i class="fas fa-globe-americas"></i></h4></button></a>
 
 <div class="mobileShow"><button id="show_mobile_buttons" class="w3-center w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="Show_Mobile_Buttons();"><h2><i class="fas fa-bars"></i></h2></button>
 </div>
-<div class="mobileHide">
-<br /><br /><br /><br /><br />
+<div id="computer_buttons_bar_space" class="mobileHide">
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 </div>
 
 
@@ -142,17 +146,17 @@ function Add_To_Website_Title(text_to_add, source = null) {
 </script>
 
 <!-- Website header -->
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div><div class="background_black border_color_cyan border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;">
+<div class="background_black border_color_cyan border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;">
 <div class="w3-animate-zoom">
 <!-- Website computer title -->
 <h2 class="w3-center text_light_cyan w3-animate-zoom mobileHide">
-<p><br /><b>New World EN-US: <i class="fas fa-book"></i></b><br /><br /><p>
+<p><br /><b>New World: <i class="fas fa-book"></i></b><br /><br /><p>
 </h2>
 </div>
 
 <!-- Website mobile title -->
 <div class="w3-animate-zoom"><h4 class="w3-center text_light_cyan w3-animate-zoom mobileShow">
-<p><br /><b>New World EN-US: <i class="fas fa-book"></i></b><br /><br /><p>
+<p><br /><b>New World: <i class="fas fa-book"></i></b><br /><br /><p>
 </h4>
 </div>
 <hr class="border_color_cyan border_1px" style="margin-left:3%;margin-right:3%;" />
@@ -210,7 +214,7 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 <div id="New World_Read story" class="city mobileHide" style="display:none;">
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide background_black text_light_cyan border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_1">
-<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Chapters in English: 🇺🇸</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
+<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Read storyChapters in English: 🇺🇸</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
 <h4><b>
 <div class="w3-animate-zoom">
 <div class="shake_side_to_side_animation">
@@ -236,7 +240,7 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 <div id="New World_Read story_Mobile" class="city mobileShow" style="display:none;">
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h4 class="mobileShow background_black text_light_cyan border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_1">
-<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Chapters in English: 🇺🇸</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
+<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Read storyChapters in English: 🇺🇸</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
 <h4><b>
 <div class="w3-animate-zoom">
 <div class="shake_side_to_side_animation">
@@ -294,25 +298,25 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 <h2 class="mobileHide background_black text_light_cyan border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_3">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Other stories: <span class="w3-text-white" >7</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
 
-<div class="w3-animate-zoom"><div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The%20Life%20of%20Littletato/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The%20Life%20of%20Littletato/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="w3-animate-zoom"><div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Life of Littletato/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Life of Littletato/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The%20Secret%20of%20the%20Crystals/" style="border-radius: 50px;"><h2 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The%20Secret%20of%20the%20Crystals/" style="border-radius: 50px;"><h4 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The Secret of the Crystals/" style="border-radius: 50px;"><h2 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The Secret of the Crystals/" style="border-radius: 50px;"><h4 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
 <div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/" style="border-radius: 50px;"><h2 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">SpaceLiving</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/" style="border-radius: 50px;"><h4 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">SpaceLiving</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The%20Story%20of%20the%20Bulkan%20Siblings/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The%20Story%20of%20the%20Bulkan%20Siblings/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert%20Island/" style="border-radius: 50px;"><h2 class="text_cyan shake_side_to_side_animation"><b style="white-space: break-spaces;">Desert Island</b></h2><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert%20Island/" style="border-radius: 50px;"><h4 class="text_cyan shake_side_to_side_animation"><b style="white-space: break-spaces;">Desert Island</b></h4><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert Island/" style="border-radius: 50px;"><h2 class="text_cyan shake_side_to_side_animation"><b style="white-space: break-spaces;">Desert Island</b></h2><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert Island/" style="border-radius: 50px;"><h4 class="text_cyan shake_side_to_side_animation"><b style="white-space: break-spaces;">Desert Island</b></h4><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
 <div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_grey border_4px_solid_black" href="https://thestake2.netlify.app/Diary/" style="border-radius: 50px;"><h2 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_grey border_4px_solid_black" href="https://thestake2.netlify.app/Diary/" style="border-radius: 50px;"><h4 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary%20Slim/" style="border-radius: 50px;"><h2 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary Slim</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary%20Slim/" style="border-radius: 50px;"><h4 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary Slim</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary Slim/" style="border-radius: 50px;"><h2 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary Slim</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary Slim/" style="border-radius: 50px;"><h4 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary Slim</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
 </div>
@@ -329,25 +333,25 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 <h4 class="mobileShow background_black text_light_cyan border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_3">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Other stories: <span class="w3-text-white" >7</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
 
-<div class="w3-animate-zoom"><div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The%20Life%20of%20Littletato/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The%20Life%20of%20Littletato/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="w3-animate-zoom"><div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Life of Littletato/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Life of Littletato/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The%20Secret%20of%20the%20Crystals/" style="border-radius: 50px;"><h2 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The%20Secret%20of%20the%20Crystals/" style="border-radius: 50px;"><h4 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The Secret of the Crystals/" style="border-radius: 50px;"><h2 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The Secret of the Crystals/" style="border-radius: 50px;"><h4 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
 <div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/" style="border-radius: 50px;"><h2 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">SpaceLiving</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/" style="border-radius: 50px;"><h4 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">SpaceLiving</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The%20Story%20of%20the%20Bulkan%20Siblings/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The%20Story%20of%20the%20Bulkan%20Siblings/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert%20Island/" style="border-radius: 50px;"><h2 class="text_cyan shake_side_to_side_animation"><b style="white-space: break-spaces;">Desert Island</b></h2><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert%20Island/" style="border-radius: 50px;"><h4 class="text_cyan shake_side_to_side_animation"><b style="white-space: break-spaces;">Desert Island</b></h4><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert Island/" style="border-radius: 50px;"><h2 class="text_cyan shake_side_to_side_animation"><b style="white-space: break-spaces;">Desert Island</b></h2><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert Island/" style="border-radius: 50px;"><h4 class="text_cyan shake_side_to_side_animation"><b style="white-space: break-spaces;">Desert Island</b></h4><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
 <div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_grey border_4px_solid_black" href="https://thestake2.netlify.app/Diary/" style="border-radius: 50px;"><h2 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_grey border_4px_solid_black" href="https://thestake2.netlify.app/Diary/" style="border-radius: 50px;"><h4 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary%20Slim/" style="border-radius: 50px;"><h2 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary Slim</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary%20Slim/" style="border-radius: 50px;"><h4 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary Slim</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary Slim/" style="border-radius: 50px;"><h2 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary Slim</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary Slim/" style="border-radius: 50px;"><h4 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary Slim</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
 </div>
@@ -361,25 +365,34 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 <div id="chapters-div">
 
 <a name="chapter-1"></a>
-<div id="chapter-1" class="city background_light_cyan text_black border_color_black border_1px border_color_black border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
-<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<div id="chapter-1" class="city background_light_cyan text_black border_color_black border_1px border_color_black border_4px" style="display: none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<div class="mobileHide">
+<h2 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
 <br />
-<div class="mobileHide"><h2 class="background_light_cyan text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
-
-<b>You are reading: New World<br />
-Chapter: 1 - The creation of New World</b>
-
-</div></h2></div>
-<div style="margin:3%;"><div class="mobileShow"><h4 class="background_light_cyan text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
-
-<b>You are reading: New World<br />
-Chapter: 1 - The creation of New World</b>
-
-</div></h4></div>
+<b>You are reading: New World
+<br />
+Chapter: 1 - The creation of New World
+</b>
+</div>
+</h2>
+</div>
+<div class="mobileShow">
+<h3 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 1 - The creation of New World
+</b>
+</div>
+</h3>
 </div>
 
 <h5 class="background_light_cyan text_black" style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#chapter-2"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-2');Add_To_Website_Title(' - Chapter: 2 - The continuation', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#chapter-2"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-2');Add_To_Website_Title(' - Chapter: 2 - The continuation', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <a href="#New World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <a href="#New World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
@@ -656,11 +669,14 @@ New World was started on 05/06/2016, by a being, human, named Izaque Sanvezzo, o
 <br />He placed the Genesis device on the table of the room, it was a hologram now.
 <br />Izaque transformed the table into a holographic table with the physical proprieties of the old table, the touch, smell, and look.
 <br />He created the New World Logo, which was the "New World" phrase written in light blue, and a holographic neon light blue cube with transparent filling.
-<br /><br />Words: 4,515.
+<br /><br />
+Words: 4,785.
 </div>
 </div>
 <br /><br />
-<a href="#chapter-2"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-2');Add_To_Website_Title(' - Chapter: 2 - The continuation', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#chapter-2"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-2');Add_To_Website_Title(' - Chapter: 2 - The continuation', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" id="comment_button_1" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -669,55 +685,323 @@ New World was started on 05/06/2016, by a being, human, named Izaque Sanvezzo, o
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
-
-<div class="mobileShow"><br /><br />
-</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="comment_button_1_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i></b></h4></button>
-<br /><br />
+<br /><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="read_button_1_mobile" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('read-modal-1_mobile')"><h4><b>I Read It ✓ <i class="fas fa-book-reader"></i></b></h4></button>
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="read_button_1_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
-<br /><div class="mobileShow"><br /><br />
-</div>
-<div style="text-align:center;">
+<div class="mobileShow"><br /><br /><br /><br /></div>
+<div style="text-align: center;">
+<div class="mobileHide">
+<h3 class="background_light_cyan text_black" style="border-radius: 250px;">
 <div class="w3-animate-zoom">
-<span class="background_light_cyan text_black">
 <br />
-
-<b>You are reading: New World<br />
-Chapter: 1 - The creation of New World</b>
-
+<b>You are reading: New World
 <br />
-</span>
+Chapter: 1 - The creation of New World
+</b>
+</div>
+</h3>
+</div>
+<div class="mobileShow">
+<h4 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 1 - The creation of New World
+</b>
+</div>
+</h4>
 </div>
 </div>
 <div class="mobileShow"><br /></div>
 </h5>
 </div>
 
-<a name="chapter-2"></a>
-<div id="chapter-2" class="city background_light_cyan text_black border_color_black border_1px border_color_black border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
-<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<a name="read-modal-1"></a>
+<div id="read-modal-1" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_read_modal_button_1" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>I read the chapter: <br />1 - The creation of New World <i class="fas fa-book-reader"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Your name:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+<input type="text" name="read" value="1 - The creation of New World" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+<a name="read-modal-1_mobile"></a>
+<div id="read-modal-1_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" style="border-radius: 50px;" id="close_read_modal_button_1_mobile">&times;</button>
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>I read the chapter: <br />1 - The creation of New World <i class="fas fa-book-reader"></i></b>
+</h4>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Your name:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+<input type="text" name="read" value="1 - The creation of New World" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</form>
+<br /><br /><br />
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var read_modal_1 = document.getElementById("read-modal-1");
+
+var read_button_1 = document.getElementById("read_button_1");
+
+var close_read_modal_button_1 = document.getElementById("close_read_modal_button_1");
+
+read_button_1.onclick = function() {
+	read_modal_1.style.display = "block";
+	document.activeElement.blur();
+	read_modal_1.tabIndex = "-1";
+	read_modal_1.focus();
+}
+
+close_read_modal_button_1.onclick = function() {
+	read_modal_1.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_1.onclick = function(event) {
+	if (event.target == read_modal_1) {
+		read_modal_1.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+read_modal_1.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var read_modal_1_mobile = document.getElementById("read-modal-1_mobile");
+
+var read_button_1_mobile = document.getElementById("read_button_1_mobile");
+
+var close_read_modal_button_1_mobile = document.getElementById("close_read_modal_button_1_mobile");
+
+read_button_1_mobile.onclick = function() {
+	read_modal_1_mobile.style.display = "block";
+	document.activeElement.blur();
+	read_modal_1.tabIndex = "-1";
+	read_modal_1.focus();
+}
+
+close_read_modal_button_1_mobile.onclick = function() {
+	read_modal_1_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_1_mobile.onclick = function(event) {
+	if (event.target == read_modal_1_mobile) {
+		read_modal_1_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="comment-modal-1"></a>
+<div id="comment-modal-1" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_1" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment on chapter: <br />1 - The creation of New World <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Your name:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment what you think about the chapter:</b>
+</h2>
+</div>
+<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+
+<a name="comment-modal-1_mobile"></a>
+<div id="comment-modal-1_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_1_mobile" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment on chapter: <br />1 - The creation of New World <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Your name:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
 <br />
-<div class="mobileHide"><h2 class="background_light_cyan text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Comment what you think about the chapter:</b>
+</h4>
+</div>
+<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
 
-<b>You are reading: New World<br />
-Chapter: 2 - The continuation</b>
+<script>
+var comment_modal_1 = document.getElementById("comment-modal-1");
 
-</div></h2></div>
-<div style="margin:3%;"><div class="mobileShow"><h4 class="background_light_cyan text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+var comment_button_1 = document.getElementById("comment_button_1");
 
-<b>You are reading: New World<br />
-Chapter: 2 - The continuation</b>
+var close_comment_modal_button_1 = document.getElementById("close_comment_modal_button_1");
 
-</div></h4></div>
+comment_button_1.onclick = function() {
+	comment_modal_1.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_1.tabIndex = "-1";
+	comment_modal_1.focus();
+}
+
+close_comment_modal_button_1.onclick = function() {
+	comment_modal_1.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_1.onclick = function(event) {
+	if (event.target == comment_modal_1) {
+		comment_modal_1.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+comment_modal_1.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var comment_modal_1_mobile = document.getElementById("comment-modal-1_mobile");
+
+var comment_button_1_mobile = document.getElementById("comment_button_1_mobile");
+
+var close_comment_modal_button_1_mobile = document.getElementById("close_comment_modal_button_1_mobile");
+
+comment_button_1_mobile.onclick = function() {
+	comment_modal_1_mobile.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_1_mobile.tabIndex = "-1";
+	comment_modal_1_mobile.focus();
+}
+
+close_comment_modal_button_1_mobile.onclick = function() {
+	comment_modal_1_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_1_mobile.onclick = function(event) {
+	if (event.target == comment_modal_1_mobile) {
+		comment_modal_1_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="chapter-2"></a>
+<div id="chapter-2" class="city background_light_cyan text_black border_color_black border_1px border_color_black border_4px" style="display: none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<div class="mobileHide">
+<h2 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 2 - The continuation
+</b>
+</div>
+</h2>
+</div>
+<div class="mobileShow">
+<h3 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 2 - The continuation
+</b>
+</div>
+</h3>
 </div>
 
 <h5 class="background_light_cyan text_black" style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#chapter-1"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-1');Add_To_Website_Title(' - Chapter: 1 - The creation of New World', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#chapter-3"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-3');Add_To_Website_Title(' - Chapter: 3 - New World expansion', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#chapter-1"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-1');Add_To_Website_Title(' - Chapter: 1 - The creation of New World', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#chapter-3"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-3');Add_To_Website_Title(' - Chapter: 3 - New World expansion', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <a href="#New World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <a href="#New World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
@@ -951,12 +1235,17 @@ Some days had passed, it was 11/07/2016, a Sunday, mid-day.
 <br />But New World cures every disease that you have after you get transformed into a Hologram Soul, it leaves you with a perfect body, no diseases or deficiencies.
 <br />Izaque and his friends continued working on New World, thinking of new systems, holograms, and policies, new ways to help beings who are suffering.
 <br />They were in the office in the New World Enterprise Building, working with the New World holograms.
-<br /><br />Words: 4,173.
+<br /><br />
+Words: 4,401.
 </div>
 </div>
 <br /><br />
-<a href="#chapter-1"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-1');Add_To_Website_Title(' - Chapter: 1 - The creation of New World', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#chapter-3"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-3');Add_To_Website_Title(' - Chapter: 3 - New World expansion', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#chapter-1"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-1');Add_To_Website_Title(' - Chapter: 1 - The creation of New World', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#chapter-3"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-3');Add_To_Website_Title(' - Chapter: 3 - New World expansion', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" id="comment_button_2" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -965,55 +1254,323 @@ Some days had passed, it was 11/07/2016, a Sunday, mid-day.
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
-
-<div class="mobileShow"><br /><br />
-</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="comment_button_2_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i></b></h4></button>
-<br /><br />
+<br /><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="read_button_2_mobile" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('read-modal-2_mobile')"><h4><b>I Read It ✓ <i class="fas fa-book-reader"></i></b></h4></button>
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="read_button_2_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
-<br /><div class="mobileShow"><br /><br />
-</div>
-<div style="text-align:center;">
+<div class="mobileShow"><br /><br /><br /><br /></div>
+<div style="text-align: center;">
+<div class="mobileHide">
+<h3 class="background_light_cyan text_black" style="border-radius: 250px;">
 <div class="w3-animate-zoom">
-<span class="background_light_cyan text_black">
 <br />
-
-<b>You are reading: New World<br />
-Chapter: 2 - The continuation</b>
-
+<b>You are reading: New World
 <br />
-</span>
+Chapter: 2 - The continuation
+</b>
+</div>
+</h3>
+</div>
+<div class="mobileShow">
+<h4 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 2 - The continuation
+</b>
+</div>
+</h4>
 </div>
 </div>
 <div class="mobileShow"><br /></div>
 </h5>
 </div>
 
-<a name="chapter-3"></a>
-<div id="chapter-3" class="city background_light_cyan text_black border_color_black border_1px border_color_black border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
-<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<a name="read-modal-2"></a>
+<div id="read-modal-2" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_read_modal_button_2" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>I read the chapter: <br />2 - The continuation <i class="fas fa-book-reader"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Your name:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+<input type="text" name="read" value="2 - The continuation" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+<a name="read-modal-2_mobile"></a>
+<div id="read-modal-2_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" style="border-radius: 50px;" id="close_read_modal_button_2_mobile">&times;</button>
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>I read the chapter: <br />2 - The continuation <i class="fas fa-book-reader"></i></b>
+</h4>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Your name:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+<input type="text" name="read" value="2 - The continuation" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</form>
+<br /><br /><br />
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var read_modal_2 = document.getElementById("read-modal-2");
+
+var read_button_2 = document.getElementById("read_button_2");
+
+var close_read_modal_button_2 = document.getElementById("close_read_modal_button_2");
+
+read_button_2.onclick = function() {
+	read_modal_2.style.display = "block";
+	document.activeElement.blur();
+	read_modal_2.tabIndex = "-1";
+	read_modal_2.focus();
+}
+
+close_read_modal_button_2.onclick = function() {
+	read_modal_2.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_2.onclick = function(event) {
+	if (event.target == read_modal_2) {
+		read_modal_2.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+read_modal_2.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var read_modal_2_mobile = document.getElementById("read-modal-2_mobile");
+
+var read_button_2_mobile = document.getElementById("read_button_2_mobile");
+
+var close_read_modal_button_2_mobile = document.getElementById("close_read_modal_button_2_mobile");
+
+read_button_2_mobile.onclick = function() {
+	read_modal_2_mobile.style.display = "block";
+	document.activeElement.blur();
+	read_modal_2.tabIndex = "-1";
+	read_modal_2.focus();
+}
+
+close_read_modal_button_2_mobile.onclick = function() {
+	read_modal_2_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_2_mobile.onclick = function(event) {
+	if (event.target == read_modal_2_mobile) {
+		read_modal_2_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="comment-modal-2"></a>
+<div id="comment-modal-2" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_2" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment on chapter: <br />2 - The continuation <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Your name:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment what you think about the chapter:</b>
+</h2>
+</div>
+<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+
+<a name="comment-modal-2_mobile"></a>
+<div id="comment-modal-2_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_2_mobile" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment on chapter: <br />2 - The continuation <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Your name:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
 <br />
-<div class="mobileHide"><h2 class="background_light_cyan text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Comment what you think about the chapter:</b>
+</h4>
+</div>
+<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
 
-<b>You are reading: New World<br />
-Chapter: 3 - New World expansion</b>
+<script>
+var comment_modal_2 = document.getElementById("comment-modal-2");
 
-</div></h2></div>
-<div style="margin:3%;"><div class="mobileShow"><h4 class="background_light_cyan text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+var comment_button_2 = document.getElementById("comment_button_2");
 
-<b>You are reading: New World<br />
-Chapter: 3 - New World expansion</b>
+var close_comment_modal_button_2 = document.getElementById("close_comment_modal_button_2");
 
-</div></h4></div>
+comment_button_2.onclick = function() {
+	comment_modal_2.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_2.tabIndex = "-1";
+	comment_modal_2.focus();
+}
+
+close_comment_modal_button_2.onclick = function() {
+	comment_modal_2.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_2.onclick = function(event) {
+	if (event.target == comment_modal_2) {
+		comment_modal_2.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+comment_modal_2.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var comment_modal_2_mobile = document.getElementById("comment-modal-2_mobile");
+
+var comment_button_2_mobile = document.getElementById("comment_button_2_mobile");
+
+var close_comment_modal_button_2_mobile = document.getElementById("close_comment_modal_button_2_mobile");
+
+comment_button_2_mobile.onclick = function() {
+	comment_modal_2_mobile.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_2_mobile.tabIndex = "-1";
+	comment_modal_2_mobile.focus();
+}
+
+close_comment_modal_button_2_mobile.onclick = function() {
+	comment_modal_2_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_2_mobile.onclick = function(event) {
+	if (event.target == comment_modal_2_mobile) {
+		comment_modal_2_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="chapter-3"></a>
+<div id="chapter-3" class="city background_light_cyan text_black border_color_black border_1px border_color_black border_4px" style="display: none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<div class="mobileHide">
+<h2 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 3 - New World expansion
+</b>
+</div>
+</h2>
+</div>
+<div class="mobileShow">
+<h3 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 3 - New World expansion
+</b>
+</div>
+</h3>
 </div>
 
 <h5 class="background_light_cyan text_black" style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#chapter-2"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-2');Add_To_Website_Title(' - Chapter: 2 - The continuation', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#chapter-4"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-4');Add_To_Website_Title(' - Chapter: 4 - Media universes visitation', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#chapter-2"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-2');Add_To_Website_Title(' - Chapter: 2 - The continuation', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#chapter-4"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-4');Add_To_Website_Title(' - Chapter: 4 - Media universes visitation', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <a href="#New World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <a href="#New World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
@@ -1310,12 +1867,17 @@ Izaque and his three friends were receiving a lot of questions through the Quest
 <br />They could sing, say, or vocalize things, sounds, and frequencies that normal humans can not.
 <br />Izaque could sing the Dubstep basses using his mouth, with the electricity string or thread going from the left of his mouth to the right.
 <br />The video styles that Creator Izaque did were listed as "Visual Representation Of Audio" in the rules of the Video Library.
-<br /><br />Words: 5,969.
+<br /><br />
+Words: 6,259.
 </div>
 </div>
 <br /><br />
-<a href="#chapter-2"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-2');Add_To_Website_Title(' - Chapter: 2 - The continuation', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#chapter-4"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-4');Add_To_Website_Title(' - Chapter: 4 - Media universes visitation', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#chapter-2"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-2');Add_To_Website_Title(' - Chapter: 2 - The continuation', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#chapter-4"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-4');Add_To_Website_Title(' - Chapter: 4 - Media universes visitation', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" id="comment_button_3" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -1324,55 +1886,323 @@ Izaque and his three friends were receiving a lot of questions through the Quest
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
-
-<div class="mobileShow"><br /><br />
-</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="comment_button_3_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i></b></h4></button>
-<br /><br />
+<br /><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="read_button_3_mobile" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('read-modal-3_mobile')"><h4><b>I Read It ✓ <i class="fas fa-book-reader"></i></b></h4></button>
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="read_button_3_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
-<br /><div class="mobileShow"><br /><br />
-</div>
-<div style="text-align:center;">
+<div class="mobileShow"><br /><br /><br /><br /></div>
+<div style="text-align: center;">
+<div class="mobileHide">
+<h3 class="background_light_cyan text_black" style="border-radius: 250px;">
 <div class="w3-animate-zoom">
-<span class="background_light_cyan text_black">
 <br />
-
-<b>You are reading: New World<br />
-Chapter: 3 - New World expansion</b>
-
+<b>You are reading: New World
 <br />
-</span>
+Chapter: 3 - New World expansion
+</b>
+</div>
+</h3>
+</div>
+<div class="mobileShow">
+<h4 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 3 - New World expansion
+</b>
+</div>
+</h4>
 </div>
 </div>
 <div class="mobileShow"><br /></div>
 </h5>
 </div>
 
-<a name="chapter-4"></a>
-<div id="chapter-4" class="city background_light_cyan text_black border_color_black border_1px border_color_black border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
-<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<a name="read-modal-3"></a>
+<div id="read-modal-3" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_read_modal_button_3" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>I read the chapter: <br />3 - New World expansion <i class="fas fa-book-reader"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Your name:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+<input type="text" name="read" value="3 - New World expansion" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+<a name="read-modal-3_mobile"></a>
+<div id="read-modal-3_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" style="border-radius: 50px;" id="close_read_modal_button_3_mobile">&times;</button>
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>I read the chapter: <br />3 - New World expansion <i class="fas fa-book-reader"></i></b>
+</h4>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Your name:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+<input type="text" name="read" value="3 - New World expansion" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</form>
+<br /><br /><br />
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var read_modal_3 = document.getElementById("read-modal-3");
+
+var read_button_3 = document.getElementById("read_button_3");
+
+var close_read_modal_button_3 = document.getElementById("close_read_modal_button_3");
+
+read_button_3.onclick = function() {
+	read_modal_3.style.display = "block";
+	document.activeElement.blur();
+	read_modal_3.tabIndex = "-1";
+	read_modal_3.focus();
+}
+
+close_read_modal_button_3.onclick = function() {
+	read_modal_3.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_3.onclick = function(event) {
+	if (event.target == read_modal_3) {
+		read_modal_3.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+read_modal_3.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var read_modal_3_mobile = document.getElementById("read-modal-3_mobile");
+
+var read_button_3_mobile = document.getElementById("read_button_3_mobile");
+
+var close_read_modal_button_3_mobile = document.getElementById("close_read_modal_button_3_mobile");
+
+read_button_3_mobile.onclick = function() {
+	read_modal_3_mobile.style.display = "block";
+	document.activeElement.blur();
+	read_modal_3.tabIndex = "-1";
+	read_modal_3.focus();
+}
+
+close_read_modal_button_3_mobile.onclick = function() {
+	read_modal_3_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_3_mobile.onclick = function(event) {
+	if (event.target == read_modal_3_mobile) {
+		read_modal_3_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="comment-modal-3"></a>
+<div id="comment-modal-3" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_3" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment on chapter: <br />3 - New World expansion <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Your name:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment what you think about the chapter:</b>
+</h2>
+</div>
+<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+
+<a name="comment-modal-3_mobile"></a>
+<div id="comment-modal-3_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_3_mobile" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment on chapter: <br />3 - New World expansion <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Your name:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
 <br />
-<div class="mobileHide"><h2 class="background_light_cyan text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Comment what you think about the chapter:</b>
+</h4>
+</div>
+<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
 
-<b>You are reading: New World<br />
-Chapter: 4 - Media universes visitation</b>
+<script>
+var comment_modal_3 = document.getElementById("comment-modal-3");
 
-</div></h2></div>
-<div style="margin:3%;"><div class="mobileShow"><h4 class="background_light_cyan text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+var comment_button_3 = document.getElementById("comment_button_3");
 
-<b>You are reading: New World<br />
-Chapter: 4 - Media universes visitation</b>
+var close_comment_modal_button_3 = document.getElementById("close_comment_modal_button_3");
 
-</div></h4></div>
+comment_button_3.onclick = function() {
+	comment_modal_3.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_3.tabIndex = "-1";
+	comment_modal_3.focus();
+}
+
+close_comment_modal_button_3.onclick = function() {
+	comment_modal_3.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_3.onclick = function(event) {
+	if (event.target == comment_modal_3) {
+		comment_modal_3.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+comment_modal_3.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var comment_modal_3_mobile = document.getElementById("comment-modal-3_mobile");
+
+var comment_button_3_mobile = document.getElementById("comment_button_3_mobile");
+
+var close_comment_modal_button_3_mobile = document.getElementById("close_comment_modal_button_3_mobile");
+
+comment_button_3_mobile.onclick = function() {
+	comment_modal_3_mobile.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_3_mobile.tabIndex = "-1";
+	comment_modal_3_mobile.focus();
+}
+
+close_comment_modal_button_3_mobile.onclick = function() {
+	comment_modal_3_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_3_mobile.onclick = function(event) {
+	if (event.target == comment_modal_3_mobile) {
+		comment_modal_3_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="chapter-4"></a>
+<div id="chapter-4" class="city background_light_cyan text_black border_color_black border_1px border_color_black border_4px" style="display: none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<div class="mobileHide">
+<h2 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 4 - Media universes visitation
+</b>
+</div>
+</h2>
+</div>
+<div class="mobileShow">
+<h3 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 4 - Media universes visitation
+</b>
+</div>
+</h3>
 </div>
 
 <h5 class="background_light_cyan text_black" style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#chapter-3"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-3');Add_To_Website_Title(' - Chapter: 3 - New World expansion', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#chapter-5"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-5');Add_To_Website_Title(' - Chapter: 5 - SpaceLiving Network and Random Events', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#chapter-3"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-3');Add_To_Website_Title(' - Chapter: 3 - New World expansion', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#chapter-5"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-5');Add_To_Website_Title(' - Chapter: 5 - SpaceLiving Network and Random Events', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <a href="#New World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <a href="#New World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
@@ -1699,12 +2529,17 @@ It was 16/03/2017, Creator Izaque modified the Multiverse Teleport System (MTS) 
 <br />The TOTB company thought that they would live a better life on their spaceships.
 <br />Now, two things could get to unregistered universes first, New World or the SpaceLiving Network.
 <br />In the New World part, there was the Soft New World, and the Full New World, which were delivered by the Soft Wave and Blue Wave respectively.
-<br /><br />Words: 6,797.
+<br /><br />
+Words: 7,117.
 </div>
 </div>
 <br /><br />
-<a href="#chapter-3"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-3');Add_To_Website_Title(' - Chapter: 3 - New World expansion', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
-<a href="#chapter-5"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-5');Add_To_Website_Title(' - Chapter: 5 - SpaceLiving Network and Random Events', 'notification');"><h3><i class="fas fa-arrow-circle-right"></i></h3></button></a>
+<a href="#chapter-3"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-3');Add_To_Website_Title(' - Chapter: 3 - New World expansion', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
+<a href="#chapter-5"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-5');Add_To_Website_Title(' - Chapter: 5 - SpaceLiving Network and Random Events', 'notification');">
+<h3><i class="fas fa-arrow-circle-right"></i></h3>
+</button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" id="comment_button_4" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -1713,53 +2548,320 @@ It was 16/03/2017, Creator Izaque modified the Multiverse Teleport System (MTS) 
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
-
-<div class="mobileShow"><br /><br />
-</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="comment_button_4_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i></b></h4></button>
-<br /><br />
+<br /><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="read_button_4_mobile" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('read-modal-4_mobile')"><h4><b>I Read It ✓ <i class="fas fa-book-reader"></i></b></h4></button>
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="read_button_4_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
-<br /><div class="mobileShow"><br /><br />
-</div>
-<div style="text-align:center;">
+<div class="mobileShow"><br /><br /><br /><br /></div>
+<div style="text-align: center;">
+<div class="mobileHide">
+<h3 class="background_light_cyan text_black" style="border-radius: 250px;">
 <div class="w3-animate-zoom">
-<span class="background_light_cyan text_black">
 <br />
-
-<b>You are reading: New World<br />
-Chapter: 4 - Media universes visitation</b>
-
+<b>You are reading: New World
 <br />
-</span>
+Chapter: 4 - Media universes visitation
+</b>
+</div>
+</h3>
+</div>
+<div class="mobileShow">
+<h4 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 4 - Media universes visitation
+</b>
+</div>
+</h4>
 </div>
 </div>
 <div class="mobileShow"><br /></div>
 </h5>
 </div>
 
-<a name="chapter-5"></a>
-<div id="chapter-5" class="city background_light_cyan text_black border_color_black border_1px border_color_black border_4px" style="display:none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
-<br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" /><br class="mobileShow" />
+<a name="read-modal-4"></a>
+<div id="read-modal-4" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_read_modal_button_4" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>I read the chapter: <br />4 - Media universes visitation <i class="fas fa-book-reader"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Your name:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+<input type="text" name="read" value="4 - Media universes visitation" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+<a name="read-modal-4_mobile"></a>
+<div id="read-modal-4_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" style="border-radius: 50px;" id="close_read_modal_button_4_mobile">&times;</button>
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>I read the chapter: <br />4 - Media universes visitation <i class="fas fa-book-reader"></i></b>
+</h4>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Your name:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+<input type="text" name="read" value="4 - Media universes visitation" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</form>
+<br /><br /><br />
+</div>
+</div>
+</div>
+</div>
+
+<script>
+var read_modal_4 = document.getElementById("read-modal-4");
+
+var read_button_4 = document.getElementById("read_button_4");
+
+var close_read_modal_button_4 = document.getElementById("close_read_modal_button_4");
+
+read_button_4.onclick = function() {
+	read_modal_4.style.display = "block";
+	document.activeElement.blur();
+	read_modal_4.tabIndex = "-1";
+	read_modal_4.focus();
+}
+
+close_read_modal_button_4.onclick = function() {
+	read_modal_4.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_4.onclick = function(event) {
+	if (event.target == read_modal_4) {
+		read_modal_4.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+read_modal_4.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var read_modal_4_mobile = document.getElementById("read-modal-4_mobile");
+
+var read_button_4_mobile = document.getElementById("read_button_4_mobile");
+
+var close_read_modal_button_4_mobile = document.getElementById("close_read_modal_button_4_mobile");
+
+read_button_4_mobile.onclick = function() {
+	read_modal_4_mobile.style.display = "block";
+	document.activeElement.blur();
+	read_modal_4.tabIndex = "-1";
+	read_modal_4.focus();
+}
+
+close_read_modal_button_4_mobile.onclick = function() {
+	read_modal_4_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+read_modal_4_mobile.onclick = function(event) {
+	if (event.target == read_modal_4_mobile) {
+		read_modal_4_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="comment-modal-4"></a>
+<div id="comment-modal-4" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_4" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment on chapter: <br />4 - Media universes visitation <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Your name:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment what you think about the chapter:</b>
+</h2>
+</div>
+<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
+
+
+<a name="comment-modal-4_mobile"></a>
+<div id="comment-modal-4_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_4_mobile" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment on chapter: <br />4 - Media universes visitation <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Your name:</b>
+</h4>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
 <br />
-<div class="mobileHide"><h2 class="background_light_cyan text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Comment what you think about the chapter:</b>
+</h4>
+</div>
+<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+</div>
+<br /><br /><br />
+</form>
+</div>
+</div>
+</div>
 
-<b>You are reading: New World<br />
-Chapter: 5 - SpaceLiving Network and Random Events</b>
+<script>
+var comment_modal_4 = document.getElementById("comment-modal-4");
 
-<span class="text_white" ><b>[New!]</b></span><br /></div></h2></div>
-<div class="mobileShow"><h4 class="background_light_cyan text_black" style="border-radius: 250px;"><div class="w3-animate-zoom"><br />
+var comment_button_4 = document.getElementById("comment_button_4");
 
-<b>You are reading: New World<br />
-Chapter: 5 - SpaceLiving Network and Random Events</b>
+var close_comment_modal_button_4 = document.getElementById("close_comment_modal_button_4");
 
-<span class="text_white" ><b>[New!]</b></span></div></h4></div>
+comment_button_4.onclick = function() {
+	comment_modal_4.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_4.tabIndex = "-1";
+	comment_modal_4.focus();
+}
+
+close_comment_modal_button_4.onclick = function() {
+	comment_modal_4.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_4.onclick = function(event) {
+	if (event.target == comment_modal_4) {
+		comment_modal_4.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+
+comment_modal_4.addEventListener("keydown", Check_Modal_Key);
+</script>
+<script>
+var comment_modal_4_mobile = document.getElementById("comment-modal-4_mobile");
+
+var comment_button_4_mobile = document.getElementById("comment_button_4_mobile");
+
+var close_comment_modal_button_4_mobile = document.getElementById("close_comment_modal_button_4_mobile");
+
+comment_button_4_mobile.onclick = function() {
+	comment_modal_4_mobile.style.display = "block";
+	document.activeElement.blur();
+	comment_modal_4_mobile.tabIndex = "-1";
+	comment_modal_4_mobile.focus();
+}
+
+close_comment_modal_button_4_mobile.onclick = function() {
+	comment_modal_4_mobile.style.display = "none";
+	document.activeElement.blur();
+}
+
+comment_modal_4_mobile.onclick = function(event) {
+	if (event.target == comment_modal_4_mobile) {
+		comment_modal_4_mobile.style.display = "none";
+		document.activeElement.blur();
+	}
+}
+</script>
+
+<a name="chapter-5"></a>
+<div id="chapter-5" class="city background_light_cyan text_black border_color_black border_1px border_color_black border_4px" style="display: none;margin:10%;border-width:3px;border-color:background_brown;border-style:solid;border-radius: 50px;">
+<div class="mobileHide">
+<h2 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 5 - SpaceLiving Network and Random Events<span class="text_white" >[New!]</span>
+</b>
+</div>
+</h2>
+</div>
+<div class="mobileShow">
+<h3 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 5 - SpaceLiving Network and Random Events<span class="text_white" >[New!]</span>
+</b>
+</div>
+</h3>
+</div>
 
 <h5 class="background_light_cyan text_black" style="margin:5%;text-align:left;"><hr class="border_color_black border_1px" />
-<a href="#chapter-4"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-4');Add_To_Website_Title(' - Chapter: 4 - Media universes visitation', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
+<a href="#chapter-4"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-4');Add_To_Website_Title(' - Chapter: 4 - Media universes visitation', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
 <a href="#New World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;border-radius: 50px;" onclick="openCity('New World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <a href="#New World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;border-radius: 50px;" onclick="openCity('New World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
@@ -1973,11 +3075,14 @@ Some months had passed, it was 17/06/2020, SpaceLiving Creator continued working
 <br />Made a new drawing, song, video, 3D model, system, hologram, New World change, 
 <br />He liked to write his story "New World", to register everything about New World, what happened, and how he created it.
 <br />Izaque wrote everything there, every system and hologram that he created, and how he lived, the things that happened in the New World and the human universes.
-<br /><br />Words: 3,970.
+<br /><br />
+Words: 4,177.
 </div>
 </div>
 <br /><br />
-<a href="#chapter-4"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-4');Add_To_Website_Title(' - Chapter: 4 - Media universes visitation', 'notification');"><h3><i class="fas fa-arrow-circle-left"></i></h3></button></a>
+<a href="#chapter-4"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-4');Add_To_Website_Title(' - Chapter: 4 - Media universes visitation', 'notification');">
+<h3><i class="fas fa-arrow-circle-left"></i></h3>
+</button></a>
 <div class="mobileHide">
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" id="comment_button_5" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>Comment <i class="fas fa-comments"></i></b></h3></button>
 </div>
@@ -1986,29 +3091,36 @@ Some months had passed, it was 17/06/2020, SpaceLiving Creator continued working
 </div>
 <div class="mobileShow"><br /><br /><br /></div>
 <div class="mobileHide"><br /><br /><br /><br /><br /></div>
-
-<div class="mobileShow"><br /><br />
-</div>
 <div class="mobileShow">
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="comment_button_5_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h4><b>Comment <i class="fas fa-comments"></i></b></h4></button>
-<br /><br />
+<br /><br /><br />
 </div>
 <div class="mobileShow">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="read_button_5_mobile" style="margin-left:15px;float:right;border-radius: 50px;" onclick="openCity('read-modal-5_mobile')"><h4><b>I Read It ✓ <i class="fas fa-book-reader"></i></b></h4></button>
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" id="read_button_5_mobile" style="margin-left:15px;float:right;border-radius: 50px;"><h3><b>I Read It ✓ <i class="fas fa-book-reader"></i></b></h3></button>
 </div>
-<br /><div class="mobileShow"><br /><br />
-</div>
-<div style="text-align:center;">
+<div class="mobileShow"><br /><br /><br /><br /></div>
+<div style="text-align: center;">
+<div class="mobileHide">
+<h3 class="background_light_cyan text_black" style="border-radius: 250px;">
 <div class="w3-animate-zoom">
-<span class="background_light_cyan text_black">
 <br />
-
-<b>You are reading: New World<br />
-Chapter: 5 - SpaceLiving Network and Random Events</b>
-
-
-<span class="text_white" ><b>[New!]</b></span>
-<br /></span>
+<b>You are reading: New World
+<br />
+Chapter: 5 - SpaceLiving Network and Random Events<span class="text_white" >[New!]</span>
+</b>
+</div>
+</h3>
+</div>
+<div class="mobileShow">
+<h4 class="background_light_cyan text_black" style="border-radius: 250px;">
+<div class="w3-animate-zoom">
+<br />
+<b>You are reading: New World
+<br />
+Chapter: 5 - SpaceLiving Network and Random Events<span class="text_white" >[New!]</span>
+</b>
+</div>
+</h4>
 </div>
 </div>
 <div class="mobileShow"><br /></div>
@@ -2016,389 +3128,64 @@ Chapter: 5 - SpaceLiving Network and Random Events</b>
 </div>
 </div>
 
-<a name="read-modal-1"></a>
-<div id="read-modal-1" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal1">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>I read the chapter:<br />1 - The creation of New World <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_cyan border_1px" />
-<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Your name:</b></h2></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="1 - The creation of New World" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<a name="read-modal-1_mobile"></a>
-<div id="read-modal-1_mobile" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal1_mobile">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>I read the chapter:<br />1 - The creation of New World <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_cyan border_1px" />
-<div style="margin:3%;"><br /><form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Your name:</b></h4></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="1 - The creation of New World" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var read_modal_1 = document.getElementById("read-modal-1");
-
-var read_button_1 = document.getElementById("read_button_1");
-
-var close_read_modal_button_1 = document.getElementById("closereadmodal1");
-
-read_button_1.onclick = function() {
-	read_modal_1.style.display = "block";
-	document.activeElement.blur();
-	read_modal_1.tabIndex = "-1";
-	read_modal_1.focus();
-}
-
-close_read_modal_button_1.onclick = function() {
-	read_modal_1.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_1.onclick = function(event) {
-	if (event.target == read_modal_1) {
-		read_modal_1.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_1.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var read_modal_1_mobile = document.getElementById("read-modal-1_mobile");
-
-var read_button_1_mobile = document.getElementById("read_button_1_mobile");
-
-var close_read_modal_button_1_mobile = document.getElementById("closereadmodal1_mobile");
-
-read_button_1_mobile.onclick = function() {
-	read_modal_1_mobile.style.display = "block";
-	document.activeElement.blur();
-	read_modal_1.tabIndex = "-1";
-	read_modal_1.focus();
-}
-
-close_read_modal_button_1_mobile.onclick = function() {
-	read_modal_1_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_1_mobile.onclick = function(event) {
-	if (event.target == read_modal_1_mobile) {
-		read_modal_1_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_1.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="read-modal-2"></a>
-<div id="read-modal-2" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal2">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>I read the chapter:<br />2 - The continuation <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_cyan border_1px" />
-<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Your name:</b></h2></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="2 - The continuation" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<a name="read-modal-2_mobile"></a>
-<div id="read-modal-2_mobile" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal2_mobile">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>I read the chapter:<br />2 - The continuation <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_cyan border_1px" />
-<div style="margin:3%;"><br /><form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Your name:</b></h4></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="2 - The continuation" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var read_modal_2 = document.getElementById("read-modal-2");
-
-var read_button_2 = document.getElementById("read_button_2");
-
-var close_read_modal_button_2 = document.getElementById("closereadmodal2");
-
-read_button_2.onclick = function() {
-	read_modal_2.style.display = "block";
-	document.activeElement.blur();
-	read_modal_2.tabIndex = "-1";
-	read_modal_2.focus();
-}
-
-close_read_modal_button_2.onclick = function() {
-	read_modal_2.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_2.onclick = function(event) {
-	if (event.target == read_modal_2) {
-		read_modal_2.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_2.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var read_modal_2_mobile = document.getElementById("read-modal-2_mobile");
-
-var read_button_2_mobile = document.getElementById("read_button_2_mobile");
-
-var close_read_modal_button_2_mobile = document.getElementById("closereadmodal2_mobile");
-
-read_button_2_mobile.onclick = function() {
-	read_modal_2_mobile.style.display = "block";
-	document.activeElement.blur();
-	read_modal_2.tabIndex = "-1";
-	read_modal_2.focus();
-}
-
-close_read_modal_button_2_mobile.onclick = function() {
-	read_modal_2_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_2_mobile.onclick = function(event) {
-	if (event.target == read_modal_2_mobile) {
-		read_modal_2_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_2.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="read-modal-3"></a>
-<div id="read-modal-3" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal3">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>I read the chapter:<br />3 - New World expansion <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_cyan border_1px" />
-<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Your name:</b></h2></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="3 - New World expansion" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<a name="read-modal-3_mobile"></a>
-<div id="read-modal-3_mobile" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal3_mobile">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>I read the chapter:<br />3 - New World expansion <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_cyan border_1px" />
-<div style="margin:3%;"><br /><form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Your name:</b></h4></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="3 - New World expansion" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var read_modal_3 = document.getElementById("read-modal-3");
-
-var read_button_3 = document.getElementById("read_button_3");
-
-var close_read_modal_button_3 = document.getElementById("closereadmodal3");
-
-read_button_3.onclick = function() {
-	read_modal_3.style.display = "block";
-	document.activeElement.blur();
-	read_modal_3.tabIndex = "-1";
-	read_modal_3.focus();
-}
-
-close_read_modal_button_3.onclick = function() {
-	read_modal_3.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_3.onclick = function(event) {
-	if (event.target == read_modal_3) {
-		read_modal_3.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_3.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var read_modal_3_mobile = document.getElementById("read-modal-3_mobile");
-
-var read_button_3_mobile = document.getElementById("read_button_3_mobile");
-
-var close_read_modal_button_3_mobile = document.getElementById("closereadmodal3_mobile");
-
-read_button_3_mobile.onclick = function() {
-	read_modal_3_mobile.style.display = "block";
-	document.activeElement.blur();
-	read_modal_3.tabIndex = "-1";
-	read_modal_3.focus();
-}
-
-close_read_modal_button_3_mobile.onclick = function() {
-	read_modal_3_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_3_mobile.onclick = function(event) {
-	if (event.target == read_modal_3_mobile) {
-		read_modal_3_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_3.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="read-modal-4"></a>
-<div id="read-modal-4" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal4">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>I read the chapter:<br />4 - Media universes visitation <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_cyan border_1px" />
-<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Your name:</b></h2></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="4 - Media universes visitation" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<a name="read-modal-4_mobile"></a>
-<div id="read-modal-4_mobile" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal4_mobile">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>I read the chapter:<br />4 - Media universes visitation <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_cyan border_1px" />
-<div style="margin:3%;"><br /><form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Your name:</b></h4></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="4 - Media universes visitation" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-var read_modal_4 = document.getElementById("read-modal-4");
-
-var read_button_4 = document.getElementById("read_button_4");
-
-var close_read_modal_button_4 = document.getElementById("closereadmodal4");
-
-read_button_4.onclick = function() {
-	read_modal_4.style.display = "block";
-	document.activeElement.blur();
-	read_modal_4.tabIndex = "-1";
-	read_modal_4.focus();
-}
-
-close_read_modal_button_4.onclick = function() {
-	read_modal_4.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_4.onclick = function(event) {
-	if (event.target == read_modal_4) {
-		read_modal_4.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_4.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var read_modal_4_mobile = document.getElementById("read-modal-4_mobile");
-
-var read_button_4_mobile = document.getElementById("read_button_4_mobile");
-
-var close_read_modal_button_4_mobile = document.getElementById("closereadmodal4_mobile");
-
-read_button_4_mobile.onclick = function() {
-	read_modal_4_mobile.style.display = "block";
-	document.activeElement.blur();
-	read_modal_4.tabIndex = "-1";
-	read_modal_4.focus();
-}
-
-close_read_modal_button_4_mobile.onclick = function() {
-	read_modal_4_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-read_modal_4_mobile.onclick = function(event) {
-	if (event.target == read_modal_4_mobile) {
-		read_modal_4_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-read_modal_4.addEventListener("keydown", Check_Modal_Key);
-</script>
-
 <a name="read-modal-5"></a>
-<div id="read-modal-5" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileHide" style="border-radius: 50px;"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide modal_close_button" style="border-radius: 50px;" id="closereadmodal5">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>I read the chapter:<br />5 - SpaceLiving Network and Random Events <i class="fas fa-book-reader"></i></b></h2></div><hr class="border_color_cyan border_1px" />
-<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;"><div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Your name:</b></h2></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-<input type="text" name="read" value="5 - SpaceLiving Network and Random Events" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
+<div id="read-modal-5" class="modal mobileHide" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_read_modal_button_5" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>I read the chapter: <br />5 - SpaceLiving Network and Random Events <i class="fas fa-book-reader"></i></b>
+</h2>
 </div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div style="margin:3%;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Your name:</b>
+</h2>
+</div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+<input type="text" name="read" value="5 - SpaceLiving Network and Random Events" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</div>
+<br /><br /><br />
+</form>
 </div>
 </div>
 </div>
 
 <a name="read-modal-5_mobile"></a>
-<div id="read-modal-5_mobile" class="modal" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom"><div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileShow" style="border-radius: 50px;"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow modal_close_button" style="border-radius: 50px;" id="closereadmodal5_mobile">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>I read the chapter:<br />5 - SpaceLiving Network and Random Events <i class="fas fa-book-reader"></i></b></h4></div><hr class="border_color_cyan border_1px" />
-<div style="margin:3%;"><br /><form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Your name:</b></h4></div>
+<div id="read-modal-5_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
+<div class="w3-animate-zoom">
+<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" style="border-radius: 50px;" id="close_read_modal_button_5_mobile">&times;</button>
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>I read the chapter: <br />5 - SpaceLiving Network and Random Events <i class="fas fa-book-reader"></i></b>
+</h4>
+</div>
+<hr class="border_color_cyan border_1px" />
+<form name="New World_Read" method="POST" data-netlify="True" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Your name:</b>
+</h4>
+</div>
 <input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-<input type="text" name="read" value="5 - SpaceLiving Network and Random Events" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display:none;border-radius: 50px;">
-</div><br /><br /><br /><br /></form>
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
+<input type="text" name="read" value="5 - SpaceLiving Network and Random Events" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="display: none;border-radius: 50px;">
+</form>
+<br /><br /><br />
 </div>
 </div>
 </div>
@@ -2409,7 +3196,7 @@ var read_modal_5 = document.getElementById("read-modal-5");
 
 var read_button_5 = document.getElementById("read_button_5");
 
-var close_read_modal_button_5 = document.getElementById("closereadmodal5");
+var close_read_modal_button_5 = document.getElementById("close_read_modal_button_5");
 
 read_button_5.onclick = function() {
 	read_modal_5.style.display = "block";
@@ -2437,7 +3224,7 @@ var read_modal_5_mobile = document.getElementById("read-modal-5_mobile");
 
 var read_button_5_mobile = document.getElementById("read_button_5_mobile");
 
-var close_read_modal_button_5_mobile = document.getElementById("closereadmodal5_mobile");
+var close_read_modal_button_5_mobile = document.getElementById("close_read_modal_button_5_mobile");
 
 read_button_5_mobile.onclick = function() {
 	read_modal_5_mobile.style.display = "block";
@@ -2457,469 +3244,80 @@ read_modal_5_mobile.onclick = function(event) {
 		document.activeElement.blur();
 	}
 }
-
-read_modal_5.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="comment-modal-1"></a>
-<div id="comment-modal-1" class="modal mobileHide" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileHide">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_1" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Comment on chapter:<br />1 - The creation of New World <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_cyan border_1px" />
-<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;">
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Your name:</b></h2></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Comment what you think about the chapter:</b></h2></div>
-<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<a name="comment-modal-1_mobile"></a>
-<div id="comment-modal-1_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileShow">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_1_mobile" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Comment on chapter:<br />1 - The creation of New World <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_cyan border_1px" />
-<div style="margin:3%;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Your name:</b></h4></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Comment what you think about the chapter:</b></h4></div>
-<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<script>
-var comment_modal_1 = document.getElementById("comment-modal-1");
-
-var comment_button_1 = document.getElementById("comment_button_1");
-
-var close_comment_modal_button_1 = document.getElementById("close_comment_modal_button_1");
-
-comment_button_1.onclick = function() {
-	comment_modal_1.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_1.tabIndex = "-1";
-	comment_modal_1.focus();
-}
-
-close_comment_modal_button_1.onclick = function() {
-	comment_modal_1.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_1.onclick = function(event) {
-	if (event.target == comment_modal_1) {
-		comment_modal_1.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_1.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var comment_modal_1_mobile = document.getElementById("comment-modal-1_mobile");
-
-var comment_button_1_mobile = document.getElementById("comment_button_1_mobile");
-
-var close_comment_modal_button_1_mobile = document.getElementById("close_comment_modal_button_1_mobile");
-
-comment_button_1_mobile.onclick = function() {
-	comment_modal_1_mobile.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_1_mobile.tabIndex = "-1";
-	comment_modal_1_mobile.focus();
-}
-
-close_comment_modal_button_1_mobile.onclick = function() {
-	comment_modal_1_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_1_mobile.onclick = function(event) {
-	if (event.target == comment_modal_1_mobile) {
-		comment_modal_1_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_1.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="comment-modal-2"></a>
-<div id="comment-modal-2" class="modal mobileHide" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileHide">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_2" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Comment on chapter:<br />2 - The continuation <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_cyan border_1px" />
-<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;">
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Your name:</b></h2></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Comment what you think about the chapter:</b></h2></div>
-<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<a name="comment-modal-2_mobile"></a>
-<div id="comment-modal-2_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileShow">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_2_mobile" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Comment on chapter:<br />2 - The continuation <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_cyan border_1px" />
-<div style="margin:3%;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Your name:</b></h4></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Comment what you think about the chapter:</b></h4></div>
-<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<script>
-var comment_modal_2 = document.getElementById("comment-modal-2");
-
-var comment_button_2 = document.getElementById("comment_button_2");
-
-var close_comment_modal_button_2 = document.getElementById("close_comment_modal_button_2");
-
-comment_button_2.onclick = function() {
-	comment_modal_2.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_2.tabIndex = "-1";
-	comment_modal_2.focus();
-}
-
-close_comment_modal_button_2.onclick = function() {
-	comment_modal_2.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_2.onclick = function(event) {
-	if (event.target == comment_modal_2) {
-		comment_modal_2.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_2.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var comment_modal_2_mobile = document.getElementById("comment-modal-2_mobile");
-
-var comment_button_2_mobile = document.getElementById("comment_button_2_mobile");
-
-var close_comment_modal_button_2_mobile = document.getElementById("close_comment_modal_button_2_mobile");
-
-comment_button_2_mobile.onclick = function() {
-	comment_modal_2_mobile.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_2_mobile.tabIndex = "-1";
-	comment_modal_2_mobile.focus();
-}
-
-close_comment_modal_button_2_mobile.onclick = function() {
-	comment_modal_2_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_2_mobile.onclick = function(event) {
-	if (event.target == comment_modal_2_mobile) {
-		comment_modal_2_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_2.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="comment-modal-3"></a>
-<div id="comment-modal-3" class="modal mobileHide" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileHide">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_3" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Comment on chapter:<br />3 - New World expansion <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_cyan border_1px" />
-<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;">
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Your name:</b></h2></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Comment what you think about the chapter:</b></h2></div>
-<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<a name="comment-modal-3_mobile"></a>
-<div id="comment-modal-3_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileShow">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_3_mobile" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Comment on chapter:<br />3 - New World expansion <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_cyan border_1px" />
-<div style="margin:3%;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Your name:</b></h4></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Comment what you think about the chapter:</b></h4></div>
-<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<script>
-var comment_modal_3 = document.getElementById("comment-modal-3");
-
-var comment_button_3 = document.getElementById("comment_button_3");
-
-var close_comment_modal_button_3 = document.getElementById("close_comment_modal_button_3");
-
-comment_button_3.onclick = function() {
-	comment_modal_3.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_3.tabIndex = "-1";
-	comment_modal_3.focus();
-}
-
-close_comment_modal_button_3.onclick = function() {
-	comment_modal_3.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_3.onclick = function(event) {
-	if (event.target == comment_modal_3) {
-		comment_modal_3.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_3.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var comment_modal_3_mobile = document.getElementById("comment-modal-3_mobile");
-
-var comment_button_3_mobile = document.getElementById("comment_button_3_mobile");
-
-var close_comment_modal_button_3_mobile = document.getElementById("close_comment_modal_button_3_mobile");
-
-comment_button_3_mobile.onclick = function() {
-	comment_modal_3_mobile.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_3_mobile.tabIndex = "-1";
-	comment_modal_3_mobile.focus();
-}
-
-close_comment_modal_button_3_mobile.onclick = function() {
-	comment_modal_3_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_3_mobile.onclick = function(event) {
-	if (event.target == comment_modal_3_mobile) {
-		comment_modal_3_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_3.addEventListener("keydown", Check_Modal_Key);
-</script>
-
-<a name="comment-modal-4"></a>
-<div id="comment-modal-4" class="modal mobileHide" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileHide">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_4" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Comment on chapter:<br />4 - Media universes visitation <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_cyan border_1px" />
-<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div style="margin:3%;">
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Your name:</b></h2></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Comment what you think about the chapter:</b></h2></div>
-<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<a name="comment-modal-4_mobile"></a>
-<div id="comment-modal-4_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileShow">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_4_mobile" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Comment on chapter:<br />4 - Media universes visitation <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_cyan border_1px" />
-<div style="margin:3%;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Your name:</b></h4></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Comment what you think about the chapter:</b></h4></div>
-<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
-</div>
-</form>
-</div>
-<br /><br /><br /><br />
-</div>
-</div>
-</div>
-
-<script>
-var comment_modal_4 = document.getElementById("comment-modal-4");
-
-var comment_button_4 = document.getElementById("comment_button_4");
-
-var close_comment_modal_button_4 = document.getElementById("close_comment_modal_button_4");
-
-comment_button_4.onclick = function() {
-	comment_modal_4.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_4.tabIndex = "-1";
-	comment_modal_4.focus();
-}
-
-close_comment_modal_button_4.onclick = function() {
-	comment_modal_4.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_4.onclick = function(event) {
-	if (event.target == comment_modal_4) {
-		comment_modal_4.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_4.addEventListener("keydown", Check_Modal_Key);
-</script>
-<script>
-var comment_modal_4_mobile = document.getElementById("comment-modal-4_mobile");
-
-var comment_button_4_mobile = document.getElementById("comment_button_4_mobile");
-
-var close_comment_modal_button_4_mobile = document.getElementById("close_comment_modal_button_4_mobile");
-
-comment_button_4_mobile.onclick = function() {
-	comment_modal_4_mobile.style.display = "block";
-	document.activeElement.blur();
-	comment_modal_4_mobile.tabIndex = "-1";
-	comment_modal_4_mobile.focus();
-}
-
-close_comment_modal_button_4_mobile.onclick = function() {
-	comment_modal_4_mobile.style.display = "none";
-	document.activeElement.blur();
-}
-
-comment_modal_4_mobile.onclick = function(event) {
-	if (event.target == comment_modal_4_mobile) {
-		comment_modal_4_mobile.style.display = "none";
-		document.activeElement.blur();
-	}
-}
-
-comment_modal_4.addEventListener("keydown", Check_Modal_Key);
 </script>
 
 <a name="comment-modal-5"></a>
 <div id="comment-modal-5" class="modal mobileHide" style="display:none;border-radius: 50px;">
 <div class="w3-animate-zoom">
 <div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileHide">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide modal_close_button" id="close_comment_modal_button_5" style="border-radius: 50px;">&times;</button><br /><br /><br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Comment on chapter:<br />5 - SpaceLiving Network and Random Events <i class="fas fa-comments"></i></b></h2></div><hr class="border_color_cyan border_1px" />
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_5" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment on chapter: <br />5 - SpaceLiving Network and Random Events <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
 <form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
 <div style="margin:3%;">
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Your name:</b></h2></div>
-<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input unexistant class" style="border-radius: 50px;">
-<br />
-<div class="w3-animate-zoom"><h2 class="text_light_cyan"><b>Comment what you think about the chapter:</b></h2></div>
-<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileHide" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h2><b>Send: <i class="fas fa-paper-plane"></i></b></h2></button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Your name:</b>
+</h2>
 </div>
+<input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment what you think about the chapter:</b>
+</h2>
+</div>
+<input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h2>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h2>
+</button>
+</div>
+<br /><br /><br />
 </form>
 </div>
-<br /><br /><br /><br />
 </div>
 </div>
-</div>
+
 
 <a name="comment-modal-5_mobile"></a>
 <div id="comment-modal-5_mobile" class="modal mobileShow" style="display:none;border-radius: 50px;">
 <div class="w3-animate-zoom">
 <div class="modal-content background_black border_color_cyan border_4px" style="border-radius: 50px;">
-<div class="mobileShow">
-<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white w3-text-black border_3px border_color_black background_hover_white mobileShow modal_close_button" id="close_comment_modal_button_5_mobile" style="border-radius: 50px;">&times;</button><br /><br /><br />
+<button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white modal_close_button" id="close_comment_modal_button_5_mobile" style="border-radius: 50px;">&times;</button>
+<div class="w3-animate-zoom">
+<h2 class="text_light_cyan">
+<b>Comment on chapter: <br />5 - SpaceLiving Network and Random Events <i class="fas fa-comments"></i></b>
+</h2>
+</div>
+<hr class="border_color_cyan border_1px" />
 <form name="New World-comment" method="POST" data-netlify="True" style="border-radius: 50px;">
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Comment on chapter:<br />5 - SpaceLiving Network and Random Events <i class="fas fa-comments"></i></b></h4></div><hr class="border_color_cyan border_1px" />
 <div style="margin:3%;">
-<br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Your name:</b></h4></div>
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Your name:</b>
+</h4>
+</div>
 <input type="text" name="name" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
 <br />
-<div class="w3-animate-zoom"><h4 class="text_light_cyan"><b>Comment what you think about the chapter:</b></h4></div>
+<div class="w3-animate-zoom">
+<h4 class="text_light_cyan">
+<b>Comment what you think about the chapter:</b>
+</h4>
+</div>
 <input type="text" name="comment" class="text_black background_cyan border_color_black border_3px background_hover_white w3-input" style="border-radius: 50px;">
-<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white mobileShow" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;"><h4><b>Send: <i class="fas fa-paper-plane"></i></b></h4></button>
+<button type="submit" class="w3-btn border_3px_solid_black background_light_cyan text_black background_hover_white" style="margin-top:1px;margin-left:15px;float:right;border-radius: 50px;">
+<h4>
+<b>Send: <i class="fas fa-paper-plane"></i></b>
+</h4>
+</button>
 </div>
+<br /><br /><br />
 </form>
-</div>
-<br /><br /><br /><br />
 </div>
 </div>
 </div>
@@ -2977,8 +3375,6 @@ comment_modal_5_mobile.onclick = function(event) {
 		document.activeElement.blur();
 	}
 }
-
-comment_modal_5.addEventListener("keydown", Check_Modal_Key);
 </script>
 
 <a name="Websites tab"></a>
@@ -3120,7 +3516,7 @@ function Check_Chapter_Number_On_Link() {
 		var read_chapter_text = "read-chapter-";
 	}
 
-	var chapter_number = 6;
+	var chapter_number = 3;
 
 	var first_check_1 = second_website_url.includes(read_chapter_text + 1);
 	var second_check_1 = second_website_url.includes(read_chapter_text + "[1]");
@@ -3231,6 +3627,5 @@ Hide_Mobile_Buttons();
 Define_Colors_And_Styles();
 </script>
 
-</center>
 </body>
 </html>
