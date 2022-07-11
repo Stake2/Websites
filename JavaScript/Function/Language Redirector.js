@@ -1,9 +1,10 @@
 var root_website_link = "https://thestake2.netlify.app/";
-var websites_list_text_files = root_website_link + "/Texts/Websites List/";
+var websites_list_text_files = root_website_link + "Texts/Websites List/";
 var english_website_names_url = websites_list_text_files + "English Websites.txt";
 var portuguese_website_names_url = websites_list_text_files + "Portuguese Websites Keyed.txt";
 
 var user_language = navigator.website_language || navigator.userLanguage || navigator.language;
+var website_language = user_language;
 
 var title = document.getElementsByTagName("title")[0];
 var website_title = title.innerHTML;
@@ -19,18 +20,15 @@ async function Convert_Text_File_To_Object(url) {
 	var x = await fetch(url);
 	var object = await x.text();
 
-	if (object.includes('\": ') {
-		object = "{" + object + "}";		
-		object = JSON.parse(object);
-	}
+	object = JSON.parse(object);
 
 	return object;
 }
 
-var english_website_names = await Convert_Text_File_To_Object(english_website_names_url);
-var portuguese_website_names = await Convert_Text_File_To_Object(portuguese_website_names_url);
+var english_website_names = await Convert_Text_File_To_Object("English Websites Array.txt");
+var portuguese_website_names = await Convert_Text_File_To_Object("Portuguese Websites Keyed.txt");
 
-function Language_Item_Definer(english_text, portuguese_text, website_language) {
+function Language_Item_Definer(english_text, portuguese_text) {
 	var language_text;
 
 	if (english_languages.includes(website_language) == true) {
@@ -74,18 +72,29 @@ function Check_Language(english_website_name) {
 	var portuguese_website_name = portuguese_website_names[String(english_website_name).replace(/ /gi, "_").toLowerCase()];
 
 	if (website_title == english_website_name) {
+		console.log(Language_Item_Definer("The user is in the index website, redirecting to user language website", "O usuário está no site raíz, redirecionando para o site do idioma") + "...");
 		Redirect(website_link)
 	}
 
-	if (website_title == english_website_name + " EN-US") {
+	if (website_title == english_website_name + " English") {
 		if (Portuguese_Language_Check(user_language) == true) {
+			console.log(Language_Item_Definer("The user is in the English website, redirecting to Portuguese language website", "O usuário está no site em Inglês, redirecionando para o site em idioma Português") + "...");
 			Redirect(website_link)
+		}
+
+		else {
+			console.log(Language_Item_Definer("The user is in the correct website for their language", "O usuário está no site correto para seu idioma") + ".");
 		}
 	}
 
-	if (website_title == portuguese_website_name + " PT-BR") {
+	if (website_title == portuguese_website_name + " Português") {
 		if (English_Language_Check(user_language) == true) {
+			console.log(Language_Item_Definer("The user is in the Portuguese website, redirecting to English language website", "O usuário está no site em Português, redirecionando para o site em idioma Inglês") + "...");
 			Redirect(website_link)
+		}
+
+		else {
+			console.log(Language_Item_Definer("The user is in the correct website for their language", "O usuário está no site correto para seu idioma") + ".");
 		}
 	}
 }
