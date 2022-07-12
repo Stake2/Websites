@@ -1,7 +1,7 @@
 var root_website_link = "https://thestake2.netlify.app/";
-var websites_list_text_files = root_website_link + "Texts/Websites List/";
-var english_website_names_url = websites_list_text_files + "English Websites Array.txt";
-var portuguese_website_names_url = websites_list_text_files + "Portuguese Websites Keyed.txt";
+var websites_list_text_files = root_website_link + "Texts/Websites%20List/";
+var english_website_names_url = websites_list_text_files + "English%20Websites%20Array.txt";
+var portuguese_website_names_url = websites_list_text_files + "Portuguese%20Websites%20Keyed.txt";
 
 var user_language = navigator.website_language || navigator.userLanguage || navigator.language;
 var website_language = user_language;
@@ -23,17 +23,17 @@ var languages_dict = {
 "EN-US": "en",
 }
 
+var object;
+
 async function Convert_Text_File_To_Object(url) {
 	var x = await fetch(url);
-	var object = await x.text();
-
-	object = JSON.parse(object);
-
-	return object;
+	object = await x.text();
 }
 
-var english_website_names = await Convert_Text_File_To_Object(english_website_names_url);
-var portuguese_website_names = await Convert_Text_File_To_Object(portuguese_website_names_url);
+await Convert_Text_File_To_Object(english_website_names_url);
+var english_website_names = JSON.parse(object);
+await Convert_Text_File_To_Object(portuguese_website_names_url);
+var portuguese_website_names = JSON.parse(object);
 
 function Language_Item_Definer(english_text, portuguese_text) {
 	var language_text;
