@@ -28,12 +28,29 @@ var object;
 async function Convert_Text_File_To_Object(url) {
 	var x = await fetch(url);
 	object = await x.text();
+
+	return object;
 }
 
-await Convert_Text_File_To_Object(english_website_names_url);
-var english_website_names = JSON.parse(object);
-await Convert_Text_File_To_Object(portuguese_website_names_url);
-var portuguese_website_names = JSON.parse(object);
+var english_website_names, portuguese_website_names;
+
+Convert_Text_File_To_Object(english_website_names_url).then(
+	function(value) {
+		english_website_names = JSON.parse(value);
+		console.log(english_website_names);
+	}
+);
+
+Convert_Text_File_To_Object(portuguese_website_names_url).then(
+	function(value) {
+		portuguese_website_names = JSON.parse(value);
+		console.log(portuguese_website_names);
+	}
+).then(
+	function() {
+		english_website_names.forEach(Check_Language);
+	}
+);
 
 function Language_Item_Definer(english_text, portuguese_text) {
 	var language_text;
@@ -114,10 +131,6 @@ url_addon = "";
 
 if (check_chapter_in_link == true) {
 	url_addon = current_website_link.split("/").reverse()[0];
-}
-
-if (check == false) {
-	english_website_names.forEach(Check_Language);
 }
 
 console.log("Redirect Script was loaded and checked the redirect status.");
