@@ -92,18 +92,30 @@ function Redirect(website_link) {
 }
 
 function Check_Language(english_website_name) {
-	var website_link = root_website_link + english_website_name + "/"
+	var website_folder_name = english_website_name;
+
+	if (english_website_name == "SpaceLiving") {
+		website_folder_name = "New World/" + english_website_name;
+	}
+
+	var website_link = root_website_link + website_folder_name + "/"
 	var portuguese_website_name = portuguese_website_names[String(english_website_name).replace(/ /gi, "_").toLowerCase()];
 
 	if (meta_title == english_website_name) {
 		console.log(Language_Item_Definer("The user is in the index website, redirecting to user language website", "O usuário está no site raíz, redirecionando para o site do idioma") + "...");
-		Redirect(website_link);
+
+		if (check == false) {
+			Redirect(website_link);
+		}
 	}
 
 	if (meta_title == english_website_name + " English") {
 		if (Portuguese_Language_Check(user_language) == true) {
 			console.log(Language_Item_Definer("The user is in the English website, redirecting to Portuguese language website", "O usuário está no site em Inglês, redirecionando para o site em idioma Português") + "...");
-			Redirect(website_link);
+
+			if (check == false) {
+				Redirect(website_link);
+			}
 		}
 
 		else {
@@ -114,7 +126,10 @@ function Check_Language(english_website_name) {
 	if (meta_title == portuguese_website_name + " Português") {
 		if (English_Language_Check(user_language) == true) {
 			console.log(Language_Item_Definer("The user is in the Portuguese website, redirecting to English language website", "O usuário está no site em Português, redirecionando para o site em idioma Inglês") + "...");
-			Redirect(website_link);
+
+			if (check == false) {
+				Redirect(website_link);
+			}
 		}
 
 		else {
