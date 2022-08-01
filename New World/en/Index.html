@@ -22,7 +22,7 @@
 	<meta name="twitter:creator" content="@Stake2_" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content="https://thestake2.netlify.app/New World/en/" />
-	<meta name="revised" content="Stake2's Enterprise TM, 07/11/2022." />
+	<meta name="revised" content="Stake2's Enterprise TM, 08/01/2022." />
 	<meta name="author" content="Stake2" />
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 	<meta charset="UTF-8" />
@@ -31,8 +31,8 @@
 	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/lib/w3.css" />
 	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/W3.css" />
 	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Main_CSS.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Website CSS/New World.css" />
 	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Colors.css" />
+	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Website CSS/New World.css" />
 
 	<!-- JavaScript files -->
 	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
@@ -50,15 +50,14 @@
 </head>
 <body onLoad="Define_Colors_And_Styles();">
 <center>
-
 	<!--- Computer Button bar on the top -->
 <div id="computer_buttons_bar" class="w3-center w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
 <span title="Read story" alt="Read story">
-<a href="#New World_Read story"><button id="computer_button_1" class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('New World_Read story');Define_Button('computer_button_1');Change_Button_Color();" title="Read story" alt="Read story"><h2>Read story: <i class="fas fa-book-open"></i></h2></button></a>
+<a href="#New_World_Read story_Computer"><button id="computer_button_1" class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('New_World_Read story_Computer');Define_Button('computer_button_1');Change_Button_Color();" title="Read story" alt="Read story"><h2>Read story: <i class="fas fa-book-open"></i></h2></button></a>
 </span>
 
 <span title="Other stories" alt="Other stories">
-<a href="#New World_Other stories"><button id="computer_button_3" class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('New World_Other stories');Define_Button('computer_button_3');Change_Button_Color();" title="Other stories" alt="Other stories"><h2>Other stories:  <i class="fas fa-book"></i></h2></button></a>
+<a href="#New_World_Other stories_Computer"><button id="computer_button_3" class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('New_World_Other stories_Computer');Define_Button('computer_button_3');Change_Button_Color();" title="Other stories" alt="Other stories"><h2>Other stories:  <i class="fas fa-book"></i></h2></button></a>
 </span>
 
 <span class="mobileHide" >
@@ -87,13 +86,13 @@ Websites: <i class="fas fa-globe-americas"></i></h2></button></a>
 
 <span style="font-size:30px;" class="mobileShow text_light_cyan">Mobile button menu: </span>
 
-<a href="#New World_Read story_Mobile" onclick="Hide_Mobile_Buttons();" title="Read story" alt="Read story">
-<button id="mobile_button_1" class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('New World_Read story_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
+<a href="#New_World_Read story_Mobile" onclick="Hide_Mobile_Buttons();" title="Read story" alt="Read story">
+<button id="mobile_button_1" class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('New_World_Read story_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
 <h4>Read story: <i class="fas fa-book-open"></i></h4>
 </button>
 </a>
-<a href="#New World_Other stories_Mobile" onclick="Hide_Mobile_Buttons();" title="Other stories" alt="Other stories">
-<button id="mobile_button_3" class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('New World_Other stories_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
+<a href="#New_World_Other stories_Mobile" onclick="Hide_Mobile_Buttons();" title="Other stories" alt="Other stories">
+<button id="mobile_button_3" class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('New_World_Other stories_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
 <h4>Other stories:  <i class="fas fa-book"></i></h4>
 </button>
 </a>
@@ -210,8 +209,8 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 
 <br /><br />
 <!-- Start of website tabs -->
-<a id="computer_tab_1_id" name="New World_Read story"></a>
-<div id="New World_Read story" class="city mobileHide" style="display:none;">
+<a id="computer_tab_1" name="New_World_Read story_Computer"></a>
+<div id="New_World_Read story_Computer" class="city mobileHide" style="display:none;">
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide background_black text_light_cyan border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_1">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Read storyChapters in English: 🇺🇸</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
@@ -236,8 +235,8 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 </div>
 
 
-<a id="mobile_tab_1" name="New World_Read story_Mobile"></a>
-<div id="New World_Read story_Mobile" class="city mobileShow" style="display:none;">
+<a id="mobile_tab_1" name="New_World_Read story_Mobile"></a>
+<div id="New_World_Read story_Mobile" class="city mobileShow" style="display:none;">
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h4 class="mobileShow background_black text_light_cyan border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_1">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Read storyChapters in English: 🇺🇸</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
@@ -262,8 +261,8 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 </div>
 
 
-<a id="computer_tab_2_id" name="New World_Readers"></a>
-<div id="New World_Readers" class="city mobileHide" style="display:none;">
+<a id="computer_tab_2" name="New_World_Readers_Computer"></a>
+<div id="New_World_Readers_Computer" class="city mobileHide" style="display:none;">
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide background_black text_light_cyan border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_2">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Readers: <span class="w3-text-white text_hover_white" >1</span> <i class="fas fa-book-reader"></i><br />Thanks everyone 😊 ❤️</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
@@ -277,8 +276,8 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 </div>
 
 
-<a id="mobile_tab_2" name="New World_Readers_Mobile"></a>
-<div id="New World_Readers_Mobile" class="city mobileShow" style="display:none;">
+<a id="mobile_tab_2" name="New_World_Readers_Mobile"></a>
+<div id="New_World_Readers_Mobile" class="city mobileShow" style="display:none;">
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h4 class="mobileShow background_black text_light_cyan border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_2">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Readers: <span class="w3-text-white text_hover_white" >1</span> <i class="fas fa-book-reader"></i><br />Thanks everyone 😊 ❤️</b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
@@ -292,31 +291,31 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 </div>
 
 
-<a id="computer_tab_3_id" name="New World_Other stories"></a>
-<div id="New World_Other stories" class="city mobileHide" style="display:none;">
+<a id="computer_tab_3" name="New_World_Other stories_Computer"></a>
+<div id="New_World_Other stories_Computer" class="city mobileHide" style="display:none;">
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h2 class="mobileHide background_black text_light_cyan border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_3">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Other stories: <span class="w3-text-white" >7</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
 
-<div class="w3-animate-zoom"><div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Life of Littletato/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Life of Littletato/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="w3-animate-zoom"><div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_salmon border_4px_solid_darker_salmon" href="https://thestake2.netlify.app/The Life of Littletato/" style="border-radius: 50px;"><h2 class="text_second_dark_purple"><b style="white-space: break-spaces;">The Life of Littletato</b></h2><img class="border_4px_solid_darker_salmon" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_salmon border_4px_solid_darker_salmon" href="https://thestake2.netlify.app/The Life of Littletato/" style="border-radius: 50px;"><h4 class="text_second_dark_purple"><b style="white-space: break-spaces;">The Life of Littletato</b></h4><img class="border_4px_solid_darker_salmon" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The Secret of the Crystals/" style="border-radius: 50px;"><h2 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The Secret of the Crystals/" style="border-radius: 50px;"><h4 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The Secret of the Crystals/" style="border-radius: 50px;"><h2 class="text_dark_blue"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The Secret of the Crystals/" style="border-radius: 50px;"><h4 class="text_dark_blue"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/" style="border-radius: 50px;"><h2 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">SpaceLiving</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/" style="border-radius: 50px;"><h4 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">SpaceLiving</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/" style="border-radius: 50px;"><h2 class="text_dark_blue"><b style="white-space: break-spaces;">SpaceLiving</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/" style="border-radius: 50px;"><h4 class="text_dark_blue"><b style="white-space: break-spaces;">SpaceLiving</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/" style="border-radius: 50px;"><h2 class="text_dark_brown"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/" style="border-radius: 50px;"><h4 class="text_dark_brown"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert Island/" style="border-radius: 50px;"><h2 class="text_cyan shake_side_to_side_animation"><b style="white-space: break-spaces;">Desert Island</b></h2><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert Island/" style="border-radius: 50px;"><h4 class="text_cyan shake_side_to_side_animation"><b style="white-space: break-spaces;">Desert Island</b></h4><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert Island/" style="border-radius: 50px;"><h2 class="text_cyan"><b style="white-space: break-spaces;">Desert Island</b></h2><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert Island/" style="border-radius: 50px;"><h4 class="text_cyan"><b style="white-space: break-spaces;">Desert Island</b></h4><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_grey border_4px_solid_black" href="https://thestake2.netlify.app/Diary/" style="border-radius: 50px;"><h2 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_grey border_4px_solid_black" href="https://thestake2.netlify.app/Diary/" style="border-radius: 50px;"><h4 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_grey border_4px_solid_black" href="https://thestake2.netlify.app/Diary/" style="border-radius: 50px;"><h2 class="text_black"><b style="white-space: break-spaces;">Diary</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_grey border_4px_solid_black" href="https://thestake2.netlify.app/Diary/" style="border-radius: 50px;"><h4 class="text_black"><b style="white-space: break-spaces;">Diary</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary Slim/" style="border-radius: 50px;"><h2 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary Slim</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary Slim/" style="border-radius: 50px;"><h4 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary Slim</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary Slim/" style="border-radius: 50px;"><h2 class="text_black"><b style="white-space: break-spaces;">Diary Slim</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary Slim/" style="border-radius: 50px;"><h4 class="text_black"><b style="white-space: break-spaces;">Diary Slim</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
 </div>
@@ -327,31 +326,31 @@ Status: <span class="text_cyan">[Writing]</span></h4>
 </div>
 
 
-<a id="mobile_tab_3" name="New World_Other stories_Mobile"></a>
-<div id="New World_Other stories_Mobile" class="city mobileShow" style="display:none;">
+<a id="mobile_tab_3" name="New_World_Other stories_Mobile"></a>
+<div id="New_World_Other stories_Mobile" class="city mobileShow" style="display:none;">
 <div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
 <h4 class="mobileShow background_black text_light_cyan border_color_cyan border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_3">
 <div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Other stories: <span class="w3-text-white" >7</span> <i class="fas fa-book"></i></b><br /><br /><p></p></h2></div><hr class="border_color_cyan border_1px" />
 
-<div class="w3-animate-zoom"><div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Life of Littletato/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Life of Littletato/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Life of Littletato</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="w3-animate-zoom"><div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_salmon border_4px_solid_darker_salmon" href="https://thestake2.netlify.app/The Life of Littletato/" style="border-radius: 50px;"><h2 class="text_second_dark_purple"><b style="white-space: break-spaces;">The Life of Littletato</b></h2><img class="border_4px_solid_darker_salmon" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_salmon border_4px_solid_darker_salmon" href="https://thestake2.netlify.app/The Life of Littletato/" style="border-radius: 50px;"><h4 class="text_second_dark_purple"><b style="white-space: break-spaces;">The Life of Littletato</b></h4><img class="border_4px_solid_darker_salmon" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The Secret of the Crystals/" style="border-radius: 50px;"><h2 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The Secret of the Crystals/" style="border-radius: 50px;"><h4 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The Secret of the Crystals/" style="border-radius: 50px;"><h2 class="text_dark_blue"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/The Secret of the Crystals/" style="border-radius: 50px;"><h4 class="text_dark_blue"><b style="white-space: break-spaces;">The Secret of the Crystals</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/" style="border-radius: 50px;"><h2 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">SpaceLiving</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/" style="border-radius: 50px;"><h4 class="text_dark_blue shake_side_to_side_animation"><b style="white-space: break-spaces;">SpaceLiving</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/" style="border-radius: 50px;"><h2 class="text_dark_blue"><b style="white-space: break-spaces;">SpaceLiving</b></h2><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_blue border_4px_solid_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/" style="border-radius: 50px;"><h4 class="text_dark_blue"><b style="white-space: break-spaces;">SpaceLiving</b></h4><img class="border_4px_solid_dark_blue" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/" style="border-radius: 50px;"><h2 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/" style="border-radius: 50px;"><h4 class="text_dark_brown shake_side_to_side_animation"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/" style="border-radius: 50px;"><h2 class="text_dark_brown"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h2><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_brown border_4px_solid_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/" style="border-radius: 50px;"><h4 class="text_dark_brown"><b style="white-space: break-spaces;">The Story of the Bulkan Siblings</b></h4><img class="border_4px_solid_dark_brown" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert Island/" style="border-radius: 50px;"><h2 class="text_cyan shake_side_to_side_animation"><b style="white-space: break-spaces;">Desert Island</b></h2><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert Island/" style="border-radius: 50px;"><h4 class="text_cyan shake_side_to_side_animation"><b style="white-space: break-spaces;">Desert Island</b></h4><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert Island/" style="border-radius: 50px;"><h2 class="text_cyan"><b style="white-space: break-spaces;">Desert Island</b></h2><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_yellow_sand border_4px_solid_cyan" href="https://thestake2.netlify.app/Desert Island/" style="border-radius: 50px;"><h4 class="text_cyan"><b style="white-space: break-spaces;">Desert Island</b></h4><img class="border_4px_solid_cyan" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_grey border_4px_solid_black" href="https://thestake2.netlify.app/Diary/" style="border-radius: 50px;"><h2 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_grey border_4px_solid_black" href="https://thestake2.netlify.app/Diary/" style="border-radius: 50px;"><h4 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_grey border_4px_solid_black" href="https://thestake2.netlify.app/Diary/" style="border-radius: 50px;"><h2 class="text_black"><b style="white-space: break-spaces;">Diary</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_grey border_4px_solid_black" href="https://thestake2.netlify.app/Diary/" style="border-radius: 50px;"><h4 class="text_black"><b style="white-space: break-spaces;">Diary</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
-<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary Slim/" style="border-radius: 50px;"><h2 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary Slim</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary Slim/" style="border-radius: 50px;"><h4 class="text_black shake_side_to_side_animation"><b style="white-space: break-spaces;">Diary Slim</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
+<div class="mobileHide" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary Slim/" style="border-radius: 50px;"><h2 class="text_black"><b style="white-space: break-spaces;">Diary Slim</b></h2><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="650" style="border-radius: 5%;white-space: initial!important;"><br /><br /></a><br /></div><div class="mobileShow" ><a class="w3-btn background_hover_white shake_side_to_side_animation background_orange border_4px_solid_black" href="https://thestake2.netlify.app/Diary Slim/" style="border-radius: 50px;"><h4 class="text_black"><b style="white-space: break-spaces;">Diary Slim</b></h4><img class="border_4px_solid_black" src="https://thestake2.netlify.app/Images/Story Covers/Diary Slim/English/Landscape/Story/Book Cover.png" width="230" style="border-radius: 9%;white-space: initial!important;"><br /><br /></a><br /></div>
 <br />
 
 </div>
@@ -393,8 +392,8 @@ Chapter: 1 - The creation of New World
 <a href="#chapter-2"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-2');Add_To_Website_Title(' - Chapter: 2 - The continuation', 'notification');">
 <h3><i class="fas fa-arrow-circle-right"></i></h3>
 </button></a>
-<a href="#New World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
-<a href="#New World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#New_World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New_World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#New_World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New_World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <div id="chapter-text-1" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
@@ -610,7 +609,7 @@ New World was started on 05/06/2016, by a being, human, named Izaque Sanvezzo, o
 <br />He knew that the Blue Wave reached other universes and that his origin universe was the neighbor of the universe he was in right now.
 <br />The Universe_ID, Planet_ID, and Being_ID Systems were already activated.
 <br />The Soft Wave that Genesis created helped that system catalog and give an Universe_ID to universes that were close to the one where Izaque was.
-<br />The Planet_ID gave a unique identifier to every planet on every galaxy, with their Human-given name or scientific name and galaxy initials, like EarthMW.
+<br />The Planet_ID gave a unique identifier to every planet on every galaxy, with their Human-given name or scientific name and galaxy initials, like Earth_MW.
 <br />The Being_ID gave a unique identifier number to every being of every Human universe.
 <br />Izaque felt so happy and good at that time, he wanted to be transformed into New World.
 <br />So the boy fused himself with the Genesis device, becoming New World itself, and being able to control every aspect of it.
@@ -632,8 +631,8 @@ New World was started on 05/06/2016, by a being, human, named Izaque Sanvezzo, o
 <br />He made beings that would die of hunger, disease, thirst, or any physical needs become Hologram Souls, saving them.
 <br />The boy also transformed poor, vulnerable, and sick people into Hologram Souls, removing poverty from the planet.
 <br />He also did that to people without education or economic participation, now they had the power to participate in society and their country.
-<br />And empowered women implemented gender and being equality and freedom around the planet.
-<br />They can not suffer physical, sexual, domestic, or any other type of violence, have social protection.
+<br />The boy empowered women, implemented gender and being equality and freedom around the planet.
+<br />They can not suffer physical, sexual, domestic, or any other type of violence, they have social protection.
 <br />There is equal sharing of care work, women can not be forced into early marriage, they participate more in parliament and positions of leadership.
 <br />Women who had abusive partners are now free from their abusers, and freely make their own decisions about sexual relations, contraceptive use, and health care.
 <br />They have the birth protection for their child to be born safely without putting her life or her child at risk.
@@ -670,7 +669,7 @@ New World was started on 05/06/2016, by a being, human, named Izaque Sanvezzo, o
 <br />Izaque transformed the table into a holographic table with the physical proprieties of the old table, the touch, smell, and look.
 <br />He created the New World Logo, which was the "New World" phrase written in light blue, and a holographic neon light blue cube with transparent filling.
 <br /><br />
-Words: 4,785.
+Words: 4,788.
 </div>
 </div>
 <br /><br />
@@ -1002,8 +1001,8 @@ Chapter: 2 - The continuation
 <a href="#chapter-3"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-3');Add_To_Website_Title(' - Chapter: 3 - New World expansion', 'notification');">
 <h3><i class="fas fa-arrow-circle-right"></i></h3>
 </button></a>
-<a href="#New World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
-<a href="#New World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#New_World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New_World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#New_World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New_World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <div id="chapter-text-2" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
@@ -1016,7 +1015,7 @@ Some days had passed, it was 11/07/2016, a Sunday, mid-day.
 <br />The boy created some laws for the New World universes.
 <br />1. Beings can not be forced to do what they do not want.
 <br />
-<br />2. Beings can do anything they want as long as it does not interfere with others' will.
+<br />2. Beings can do anything they want as long as it does not interfere with others will.
 <br />The actions of beings should only be limited to prevent harm to other beings or other beings' property, they will be limited by the system.
 <br />
 <br />3. Beings can not modify, destroy, or change other beings' property against their will.
@@ -1027,6 +1026,7 @@ Some days had passed, it was 11/07/2016, a Sunday, mid-day.
 <br />Crimes stopped happening, as no being could kill or hurt another being.
 <br />Izaque implemented a currency system into New World, he gave Old World beings the ability to clone food and water.
 <br />Beings could clone meat from the origin meats which were meats taken from animals and used in food.
+<br />They were meat that were extracted before New World was installed.
 <br />They could also clone vegetables and fruits from the root vegetables and root fruits, without needing to plant them.
 <br />Izaque had made a copy of every animal, insect, and plant on Earth, placing them into a Sub-Universe, using the Sub-Universe System.
 <br />The Sub-Universe System could be only used by Izaque and his friends.
@@ -1136,7 +1136,7 @@ Some days had passed, it was 11/07/2016, a Sunday, mid-day.
 <br />The colors of his dragon wings, tail, and scales were dark orange, and the rest of his body was orange.
 <br />His hair could catch fire and stay burning, he could burp and fart fire.
 <br />Izaque discovered that every audiovisual media, story, or game that humanity created existed inside Multiverse Bubbles.
-<br />For example, the SpongeBob cartoon existed inside a universe of the said cartoon.
+<br />For example, the "SpongeBob SquarePants" cartoon existed inside a universe of the said cartoon.
 <br />That universe existed inside the SpongeBob universe bubble, where other SpongeBob universes existed.
 <br />And all cartoon Multiverse Bubbles existed inside the Cartoon Multiverse Bubble (CMB).
 <br />The Anime, Cartoon, Series, Movie, and Video Multiverse Bubbles existed inside the Audiovisual Multiverse Bubble (AMB).
@@ -1146,8 +1146,89 @@ Some days had passed, it was 11/07/2016, a Sunday, mid-day.
 <br />He watched it in 2011, and discovered it through Google+, in a Brazilian video called "Não assista ao desenho chamado My Little Pony".
 <br />That means "Do not watch the cartoon called My Little Pony", and he watched the video and the cartoon, it was his childhood, he loved it, and wanted to meet its characters.
 <br />The Mane Six, the main characters of the cartoon, Twilight Sparkle, Pinkie Pie, Fluttershy, Applejack, Rainbow Dash, and Rarity.
+<br />There were Primary, Secondary, Tertiary, and Group Multiverse Bubbles.
+<br />These were the Primary ones:
+<br />	Human Multiverse Bubble (HMB)
+<br />	Anime Multiverse Bubble (OMB)
+<br />	Cartoon Multiverse Bubble (CMB)
+<br />	Series Multiverse Bubble (SMB)
+<br />	Movie Multiverse Bubble (MMB)
+<br />	Video Multiverse Bubble (VMB)
+<br />	Game Multiverse Bubble (GMB)
+<br />	Literature Multiverse Bubble (LMB)
 <br />
-<br />New World only had the Hologram Souls, Laws, Universe_IDs, Planet_IDs, Being_IDs, Sub-Universes System, Multi-Layer Universe System, and the Multiverse Bubbles.
+<br />Secondary:
+<br />	HMB: (Ha no secondary bubble)
+<br />	OMB: "Fairy Tail" Multiverse Bubble (FT MB, contains deviated universes)
+<br />	CMB: "My Little Pony: Friendship Is Magic" Multiverse Bubble (MLP: FIM MB, contains deviated universes)
+<br />	SMB: "The Walking Dead" Multiverse Bubble (TWD MB, contains deviated universes)
+<br />	MMB: "Spider-Man: Homecoming" Multiverse Bubble (SM: H MB, contains deviated universes)
+<br />	VMB: PewDiePie Multiverse Bubble (P MB, contains the original universe and the Twisted Tertiary Multiverse Bubble)
+<br />	GMB: Overwatch Multiverse Bubble (O MB, contains deviated universes)
+<br />	LMB: "The Life of Littletato" Multiverse Bubble (TLOL MB, contains the original universe and the fan-content Multiverse Tertiary Bubble)
+<br />
+<br />Tertiary:
+<br />	PewDiePie Multiverse Bubble (P MB): contains the Twisted Multiverse Tertiary Bubble
+<br />	"The Life of Littletato" Multiverse Bubble (TLOL MB): contains the Fan-content Multiverse Tertiary Bubble
+<br />
+<br />Group (groups Multiverse Bubbles but is not the Primary Multiverse Bubble of a universe):
+<br />	Audiovisual Multiverse Bubble (AMB):
+<br />		Anime Multiverse Bubble (OMB)
+<br />		Cartoon Multiverse Bubble (CMB)
+<br />		Series Multiverse Bubble (SMB)
+<br />		Movie Multiverse Bubble (MMB)
+<br />		Video Multiverse Bubble (VMB)
+<br />
+<br />So, in the Literature Primary Multiverse Bubble (LMB), there was the Secondary Multiverse Bubble with the name of the story.
+<br />Inside the Secondary one, there was the original story universe, and a Tertiary Multiverse Bubble to store fan content.
+<br />Inside the Tertiary one, there will be other universes with different versions of the story.
+<br />The Human Multiverse Bubble has no Secondary or Tertiary Multiverse Bubble.
+<br />In the Video Multiverse Bubble, there are the Secondary Multiverse Bubbles, which are YouTube channels for example.
+<br />Just like the Secondary Multiverse Bubble of Literature universes, there is the original universe and the Twisted Tertiary Multiverse Bubble, for alternate universes.
+<br />The Secondary Multiverse Bubbles with the "deviated universes" characteristic are just like the twisted Multiverse Bubbles on VMB.
+<br />But without an original universe and a Tertiary Multiverse Bubble, just all of the universes of "MLP: FIM" inside the Secondary Multiverse Bubble for example.
+<br />There is also a Universe Archive Box (UAB) inside all of the Primary Multiverse Bubbles.
+<br />It is where dead and off universes go, to be archived.
+<br />A universe is considered alive when there is still life on it.
+<br />In all of the Multiverse Bubbles except the Literature one, a universe is considered dead when all of the life inside it ceased to exist.
+<br />In the Literature Multiverse Bubble, the original universe is considered dead when the author decides to end the story by extinguishing all life in the universe.
+<br />Only universes in side the Audiovisual, Game, and Literature Multiverse Bubbles can be considered off.
+<br />In the Audiovisual and Game ones, the story must end on a closed-end, or continue in another media, for example, a next generation, or a sequel for movies or games.
+<br />In the Literature one, the story must also end on a closed-end, or the author can stop writing, then it will be considered off.
+<br />For the Audiovisual Universes excluding the Video ones to be considered "on", life needs to keep existing inside the universes.
+<br />For a Video Universe to be considered "on", the channel owner of the Secondary Multiverse Bubble must keep uploading videos to the channel.
+<br />In the case of a Literature Universe, the author must still be writing it or end it on an open end.
+<br />Human Universes are not considered on, only alive.
+<br />
+<br />The connection between two universes is allowed to happen when they are not inside the same Secondary Multiverse Bubble.
+<br />When there is no Secondary Multiverse Bubble, like in a Human Universe, the connection is not allowed.
+<br />They happen through three different actions, New World Tech, Universal Machinery, and Connection by Author Power.
+<br />
+<br />New World Tech:
+<br />A connection between two Human Universes is allowed, but the Earths would need to be mixed, and one element between two equal ones would need to be chosen.
+<br />Because of this, the connection is not allowed.
+<br />
+<br />Universal Machinery:
+<br />A connection between a "Powerpuff Girls" universe and a "My Little Pony: Friendship Is Magic" universe.
+<br />The planet of "Powerpuff Girls" would exist in its universe, in its Secondary Multiverse Bubble, and the "MLP: FIM" universe at the same time.
+<br />The beings on the "MLP: FIM" universe would need to use Universal Machinery to mirror the planet of "Powerpuff Girls".
+<br />If another planet existed, called planet X, only beings on the planet of PG would see it, not beings on the planet where Equestria resides.
+<br />The same way a planet could exist in the "MLP: FIM" universe, called the purple planet, and only beings inside the "MLP: FIM" planet would see it.
+<br />
+<br />Connection by Author Power:
+<br />A connection between the "SpaceLiving" original story universe and the story universe of "The Life of Littletato" can happen if:
+<br />The author inserts one unique element from one universe into the other one, like a story crossover.
+<br />
+<br />Possibility, way of achieving, and allowance of two universes on the same Primary Multiverse Bubble:
+<br />Two Human Universes (HMB): Possible, achievable by New World Tech, not allowed.
+<br />Two Audiovisual Universes (AMB): Possible, achievable by Universal Machinery, allowed.
+<br />Two Game Universes (GMB): Possible, achievable by Universal Machinery, allowed.
+<br />Two Literature Universes (LMB): Possible, achievable using Connection by Author Power, allowed.
+<br />
+<br />Universe Teleport:
+<br />Any being with Universe Teleport Technology such as New World Tech or the complete Infinity Gauntlet of Thanos can teleport between universes.
+<br />
+<br />New World only had the Hologram Souls, Laws, Universe_IDs, Planet_IDs, Being_IDs, Sub-Universes System, Multi-Layer Universe System, and the Primary Multiverse Bubbles.
 <br />Izaque wanted to create something else, he wanted to give beings the power to transform New World into what they wanted.
 <br />He wanted to give them the power to customize New World for themselves.
 <br />Then Izaque developed an interface system with his friends, that interface was where beings could customize New World as they liked.
@@ -1160,7 +1241,7 @@ Some days had passed, it was 11/07/2016, a Sunday, mid-day.
 <br />It was called the "New World Visual Interface" or VI.
 <br />Beings could browse the Internet on the "Visual Interface Browser", and the settings button was on the top right.
 <br />The Visual Interface System was a system that said how the holograms would be displayed, their colors, style, borders, transparency, and how you could interact with them, move, hide, show, and close them.
-<br />The default holograms of the Visual Interface had light blue borders that looked like a neon light, and the background of the visual elements was blue.
+<br />The default holograms of the Visual Interface had light blue borders that looked like neon light, and the background of the visual elements was blue.
 <br />New World beings could adjust the transparency of the interface how they liked, to be able to see through it.
 <br />They could configure that on the "Visual Interface" tab on the settings hologram or screen, it was the third tab, and the second one was the "Signal Receptor" one.
 <br />The first tab was the "Hologram Soul" one, and its only option was "Immortality", for beings who did not want to be immortal.
@@ -1236,7 +1317,7 @@ Some days had passed, it was 11/07/2016, a Sunday, mid-day.
 <br />Izaque and his friends continued working on New World, thinking of new systems, holograms, and policies, new ways to help beings who are suffering.
 <br />They were in the office in the New World Enterprise Building, working with the New World holograms.
 <br /><br />
-Words: 4,401.
+Words: 5,409.
 </div>
 </div>
 <br /><br />
@@ -1571,8 +1652,8 @@ Chapter: 3 - New World expansion
 <a href="#chapter-4"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-4');Add_To_Website_Title(' - Chapter: 4 - Media universes visitation', 'notification');">
 <h3><i class="fas fa-arrow-circle-right"></i></h3>
 </button></a>
-<a href="#New World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
-<a href="#New World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#New_World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New_World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#New_World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New_World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <div id="chapter-text-3" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
@@ -2203,15 +2284,15 @@ Chapter: 4 - Media universes visitation
 <a href="#chapter-5"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:right;border-radius: 50px;" onclick="openCity('chapter-5');Add_To_Website_Title(' - Chapter: 5 - SpaceLiving Network and Random Events', 'notification');">
 <h3><i class="fas fa-arrow-circle-right"></i></h3>
 </button></a>
-<a href="#New World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
-<a href="#New World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#New_World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New_World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#New_World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;margin-right: 15px;border-radius: 50px;" onclick="openCity('New_World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <div id="chapter-text-4" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
 It was 16/03/2017, Creator Izaque modified the Multiverse Teleport System (MTS) only for him to experiment a little with it.
 <br />He created a way to teleport to the outside of the Human Multiverse Bubble (HMB), he could see it from outside really big.
-<br />And also could see the other three Multiverse Bubbles, the Audiovisual, Literature, and Game ones.
-<br />Izaque could float inside that thing, that vacuum that hosted the Multiverse Bubbles.
+<br />And also could see the other three Primary Multiverse Bubbles, the Audiovisual, Game, and Literature ones.
+<br />Izaque could float inside that thing, that vacuum that hosted the Primary Multiverse Bubbles.
 <br />He float to the Audiovisual Multiverse Bubble (AMB), and entered inside it, he felt something different while doing that.
 <br />Then he entered the Cartoon Multiverse Bubble (CMB), and then the "My Little Pony: Friendship Is Magic" Multiverse Bubble.
 <br />Inside that Multiverse Bubble, there were a lot of universes in the cartoon, Izaque tried to analyze those universes using his omniscience and omnipresence.
@@ -2230,7 +2311,7 @@ It was 16/03/2017, Creator Izaque modified the Multiverse Teleport System (MTS) 
 <br />Izaque sat on a couch and began explaining everything about the humans and the New World, Twilight was taking notes.
 <br />He said that there were a lot of human universes, and explained that she was in a cartoon on the human universes and that other universes like hers existed.
 <br />The man said that the human universe she talked about was in reality the cartoon "My Little Pony: Equestria Girls".
-<br />Izaque explained about the Multiverse Bubbles, the creation of the New World, and what he wanted to do.
+<br />Izaque explained about the Primary Multiverse Bubbles, the creation of the New World, and what he wanted to do.
 <br />The man wanted to allow beings to visit the world of "My Little Pony: Friendship Is Magic" to meet their favorite ponies.
 <br />Twilight Sparkle thought about ways to do that, she said that first, she needed to explain to Princess Celestia and the ponies about humans.
 <br />Princess Celestia was the ruler of Equestria, the land of the ponies, along with her sister, Princess Luna, they both were alicorns, unicorns with wings, Celestia raised the sun and Luna raised the moon.
@@ -2257,20 +2338,20 @@ It was 16/03/2017, Creator Izaque modified the Multiverse Teleport System (MTS) 
 <br />Beings could select a human universe in the MTS using the Wave Monitor Hologram view style as a module.
 <br />They could select a Blue or Soft Wave universe to teleport to, visually, insert their Universe_ID, or select one from a list of Universe_IDs.
 <br />Izaque modified it, adding tab functionality, the initial tab that appeared when a being opened the hologram was the "Select Multiverse Bubble" tab.
-<br />It had squared buttons of the Human, Audiovisual, Game, and Literature Multiverse Bubbles, for the being to choose.
-<br />The acronyms for these Multiverse Bubbles are HMB, AMB, GMB, and LMB.
-<br />After the being chose one, its tab would open, with its name, and a plus button would appear at its right, for the being to open another Multiverse Bubble tab if they wanted.
+<br />It had squared buttons of the Human, Audiovisual, Game, and Literature Primary Multiverse Bubbles, for the being to choose.
+<br />The acronyms for these Primary Multiverse Bubbles are HMB, AMB, GMB, and LMB.
+<br />After the being chose one, its tab would open, with its name, and a plus button would appear at its right, for the being to open another Primary Multiverse Bubble tab if they wanted.
 <br />They could select a universe visually using the Wave Monitor Hologram view style as a module, where the center universe was the broadcast one.
 <br />Every universe on the Universe Map but the broadcast one was blue, the broadcast one was white.
-<br />In the Audiovisual Multiverse Bubble, you needed to select a sub-Multiverse Bubble first.
+<br />In the Audiovisual Group Multiverse Bubble, you needed to select a Primary Multiverse Bubble first.
 <br />Beings could also select the universe where they wanted to go by inserting its Universe_ID or selecting one Universe_ID from the list.
-<br />Creator Izaque had created a policy to protect the beings who exist on non-Human Multiverse Bubbles.
+<br />Creator Izaque had created a policy to protect the beings who exist on non-Human Primary Multiverse Bubbles.
 <br />The beings there were protected by the first four New World laws, protected from beings that come from the Human Multiverse Bubble.
 <br />For example, if a pony hurts a pony, then it is up to the local authorities and laws to judge them, but a human can not hurt a pony.
-<br />Then Creator Izaque created the "Multiverse Bubble Portal Hubs" system.
-<br />Now, every human universe on the HMB had a Portal Hub for each non-Human Multiverse Bubble, and a Portal Hub with portals to each one of the bubble Portal Hubs called the Main Portal Hub.
+<br />Then Creator Izaque created the "Primary Multiverse Bubble Portal Hubs" system.
+<br />Now, every human universe on the HMB had a Portal Hub for each non-Human Primary Multiverse Bubble, and a Portal Hub with portals to each one of the bubble Portal Hubs called the Main Portal Hub.
 <br />So every human universe had an Anime, Cartoon, Series, Movie, Video, Literature, and Game Portal Hub, those Portal Hubs existed in space in every universe.
-<br />Inside the Cartoon Portal Hubs, there were portals to every cartoon on the Cartoon Multiverse Bubble, but only one portal for each cartoon, the Portal Hub was huge.
+<br />Inside the Cartoon Portal Hubs, there were portals to every cartoon on the Cartoon Primary Multiverse Bubble, but only one portal for each cartoon, the Portal Hub was huge.
 <br />These portals were mapped to specific cartoon universes, the same for anime, series, movies, video, literature, and game Portal Hubs.
 <br />Izaque then pushed the update of the MTS to its public version, beings now could visit non-Human Multiverse Bubbles.
 <br />They could use the Teleport Hologram to get to their local Main Portal Hub, and then to the non-Human Multiverse Bubble Portal Hubs.
@@ -2310,7 +2391,7 @@ It was 16/03/2017, Creator Izaque modified the Multiverse Teleport System (MTS) 
 <br />Beings were visiting universes of audiovisual media, stories, and games every day, some even wanted to live inside those universes.
 <br />The universes on the Literature Multiverse Bubble (LMB) were the story content converted to beings and things.
 <br />If the author did not describe the appearance of a character in the story, then it would look like how the author imagined it.
-<br />If a game does not have a story, then its universe would not exist, nor its Multiverse Bubble, cause it was really created by humans, not received by them.
+<br />If a game does not have a story, then its universe would not exist, nor its Secondary Multiverse Bubble, cause it was really created by humans, not received by them.
 <br />Also, if a game has a story but its gameplay is repetitive, like MOBAs, FPS, or TPS, its universe would have only the story and daily life of characters, not gameplay.
 <br />Like Overwatch, where you can battle other players, its universe would not have those battles, only the history of the game world.
 <br />If a being visits the broadcast version of an audiovisual media, it would probably see what happens in the world before the broadcast version shows it.
@@ -2329,11 +2410,17 @@ It was 16/03/2017, Creator Izaque modified the Multiverse Teleport System (MTS) 
 <br />Creator Izaque modified the Wave Monitor Hologram, renaming it "Multiverse Bubble Monitor".
 <br />It now would have the capability of monitoring Multiverse Bubbles, using its Multiverse Bubble view style.
 <br />It is the same thing that it did before, but now it could monitor non-Human Multiverse Bubbles.
+<br />Now, universes would be represented by a sphere.
 <br />It could also monitor specific universes, if Creator Izaque selected one, it would zoom inside the universe and show its galaxies.
 <br />To see every detail of every universe, see the planets, plants, animals, the stars, sun, black holes, and supernovas, just like a space camera.
 <br />Creator Izaque released the system to the public, in the universe view, beings could see which being discovered which galaxy, planet, plant, animal, intelligent species, and when they did.
 <br />They could also see for how much time each thing existed in years, or centuries and millennium if the time is too big, and see the composition of planets, and their atmosphere gasses.
 <br />Izaque could turn on the "Exploration" view on the universe viewing mode, to see galaxies as green neon hexagons, the not discovered and named ones were white, and the Milky Way was blue.
+<br />The Universe Archive Box that exists inside all of the Primary Multiverse Bubbles is represented by a brown nonagon in the Multiverse Bubble Monitor (MBM).
+<br />The alive and on universes are represented by a blue sphere, the dead and off ones are moved to the Universe Archive Box, being represented by a brown nonagon.
+<br />The original universe of a story in the Literature Multiverse Bubble would be represented by a yellow sphere if the author is still writing the story.
+<br />It would be represented by a blue sphere if the author ended it on an open end.
+<br />The universe would be moved to the Universe Archive Box if the author ended the story on a closed end, stopped writing, or decided to end it by extinguishing all life inside it.
 <br />
 <br />Some days passed, it was 23/03/2017, Izaque was happy knowing he updated the Multiverse Teleportation System to allow beings to teleport to non-Human Multiverse Bubbles.
 <br />And also created the "Space Exploration Program", he wanted New World to be more inclusive than it was, it had gender equality, and called humans and others "beings", to include everyone.
@@ -2373,7 +2460,7 @@ It was 16/03/2017, Creator Izaque modified the Multiverse Teleport System (MTS) 
 <br />Izaque created an object called "Golden Vector", which was the golden version of the Alpha Vector spaceship of the No Man's Sky game.
 <br />He used it to travel through Earth and also space, he uploaded the spaceship to the Hologram Maker Store.
 <br />It embedded the same system that the "New World Spaceship" did, but was customized for it, and had some modifications, like a music player which used the Audio Media Library.
-<br />The spaceship could travel between universes and Multiverse Bubbles, a lot of beings imported that spaceship, the imports number was high, it was just like a downloads number.
+<br />The spaceship could travel between universes and Primary Multiverse Bubbles, a lot of beings imported that spaceship, the imports number was high, it was just like a downloads number.
 <br />Some months had passed without a new system or hologram, it was 11/06/2018.
 <br />Creator Izaque wanted to create a new planet in every human universe, he thought that it would be cool to have the New World Building and core there.
 <br />He created a big planet that looked like Mars, red and orange, it had the size of Neptune, and had a lot of New World basses around it, on the surface.
@@ -2530,7 +2617,7 @@ It was 16/03/2017, Creator Izaque modified the Multiverse Teleport System (MTS) 
 <br />Now, two things could get to unregistered universes first, New World or the SpaceLiving Network.
 <br />In the New World part, there was the Soft New World, and the Full New World, which were delivered by the Soft Wave and Blue Wave respectively.
 <br /><br />
-Words: 7,117.
+Words: 7,275.
 </div>
 </div>
 <br /><br />
@@ -2862,8 +2949,8 @@ Chapter: 5 - SpaceLiving Network and Random Events<span class="text_white" >[New
 <a href="#chapter-4"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" style="float:left;border-radius: 50px;" onclick="openCity('chapter-4');Add_To_Website_Title(' - Chapter: 4 - Media universes visitation', 'notification');">
 <h3><i class="fas fa-arrow-circle-left"></i></h3>
 </button></a>
-<a href="#New World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;border-radius: 50px;" onclick="openCity('New World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
-<a href="#New World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;border-radius: 50px;" onclick="openCity('New World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#New_World_Read story"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileHide" style="float: right;border-radius: 50px;" onclick="openCity('New_World_Read story')"><h3><i class="fas fa-bars"></i></h3></button></a>
+<a href="#New_World_Read story_Mobile"><button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white mobileShow" style="float: right;border-radius: 50px;" onclick="openCity('New_World_Read story_Mobile')"><h3><i class="fas fa-bars"></i></h3></button></a>
 <br /><br /><br /><br />
 <div class="w3-animate-zoom">
 <div id="chapter-text-5" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">
@@ -3384,7 +3471,7 @@ comment_modal_5_mobile.onclick = function(event) {
 <h4 class="border_color_cyan w3-black border_3px border_color_cyan" style="margin:10%;border-radius: 50px;"><div style="margin:3%;">
 <center>
 <div class="w3-animate-zoom">
-<h2 class="mobileHide text_light_cyan" style="border-radius: 50px;"><p></p><br /><b>Websites: <span class="text_cyan text_hover_white">28</span> <i class="fas fa-globe-americas"></i></b><br /><br /><p></p></h2>
+<h2 class="mobileHide text_light_cyan" style="border-radius: 50px;"><p></p><br /><b>Websites: <span class="text_cyan text_hover_white">25</span> <i class="fas fa-globe-americas"></i></b><br /><br /><p></p></h2>
 </div>
 <hr class="mobileHide border_color_cyan border_1px" />
 <div class="w3-animate-zoom">
@@ -3403,10 +3490,10 @@ comment_modal_5_mobile.onclick = function(event) {
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="Website Status" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Website Status/');"><h2>Website Status</h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="Flash Games List" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Flash Games List/');"><h2>Flash Games List</h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="Stories 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Stories/');"><h2>Stories <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_light_cyan border_color_black border_3px background_hover_white" title="New World 📗" style="border-radius: 50px;" onclick="function() {return false;}"><h2>New World <i class="fas fa-book"></i></h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="Izaque Multiverse 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Izaque Multiverse/');"><h2>Izaque Multiverse <i class="fas fa-book"></i></h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="The Life of Littletato 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/');"><h2>The Life of Littletato <i class="fas fa-book"></i></h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="The Secret of the Crystals 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Secret of the Crystals/');"><h2>The Secret of the Crystals <i class="fas fa-book"></i></h2></button><br />
+<button class="w3-btn text_black background_light_cyan border_color_black border_3px background_hover_white" title="New World 📗" style="border-radius: 50px;" onclick="function() {return false;}"><h2>New World <i class="fas fa-book"></i></h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="SpaceLiving 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/New_World/SpaceLiving/');"><h2>SpaceLiving <i class="fas fa-book"></i></h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="The Story of the Bulkan Siblings 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/');"><h2>The Story of the Bulkan Siblings <i class="fas fa-book"></i></h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="Desert Island 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Desert Island/');"><h2>Desert Island <i class="fas fa-book"></i></h2></button><br />
@@ -3427,7 +3514,7 @@ comment_modal_5_mobile.onclick = function(event) {
 <div style="margin:3%;"></div>
 <center>
 <div class="w3-animate-zoom">
-<h2 class="mobileShow text_light_cyan" style="border-radius: 50px;"><p></p><br /><b>Websites: <span class="text_cyan text_hover_white">28</span> <i class="fas fa-globe-americas"></i></b><br /><br /><p></p></h2>
+<h2 class="mobileShow text_light_cyan" style="border-radius: 50px;"><p></p><br /><b>Websites: <span class="text_cyan text_hover_white">25</span> <i class="fas fa-globe-americas"></i></b><br /><br /><p></p></h2>
 </div>
 <hr class="mobileShow border_color_cyan border_1px" />
 <div class="w3-animate-zoom">
@@ -3446,10 +3533,10 @@ comment_modal_5_mobile.onclick = function(event) {
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="Website Status" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Website Status/');"><h2>Website Status</h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="Flash Games List" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Flash Games List/');"><h2>Flash Games List</h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="Stories 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Stories/');"><h2>Stories <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_light_cyan border_color_black border_3px background_hover_white" title="New World 📗" style="border-radius: 50px;" onclick="function() {return false;}"><h2>New World <i class="fas fa-book"></i></h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="Izaque Multiverse 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Izaque Multiverse/');"><h2>Izaque Multiverse <i class="fas fa-book"></i></h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="The Life of Littletato 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/');"><h2>The Life of Littletato <i class="fas fa-book"></i></h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="The Secret of the Crystals 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Secret of the Crystals/');"><h2>The Secret of the Crystals <i class="fas fa-book"></i></h2></button><br />
+<button class="w3-btn text_black background_light_cyan border_color_black border_3px background_hover_white" title="New World 📗" style="border-radius: 50px;" onclick="function() {return false;}"><h2>New World <i class="fas fa-book"></i></h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="SpaceLiving 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/New_World/SpaceLiving/');"><h2>SpaceLiving <i class="fas fa-book"></i></h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="The Story of the Bulkan Siblings 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/');"><h2>The Story of the Bulkan Siblings <i class="fas fa-book"></i></h2></button><br />
 <button class="w3-btn text_black background_cyan border_color_black border_3px background_hover_white" title="Desert Island 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Desert Island/');"><h2>Desert Island <i class="fas fa-book"></i></h2></button><br />
