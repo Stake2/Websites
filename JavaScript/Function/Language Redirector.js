@@ -98,6 +98,10 @@ function Check_Language(english_website_name) {
 		website_folder_name = "New World/" + english_website_name;
 	}
 
+	if (english_website_name == "My Little Pony: Friendship Is Magic") {
+		website_folder_name = "My Little Pony/Friendship Is Magic";
+	}
+
 	var website_link = root_website_link + website_folder_name + "/"
 	var portuguese_website_name = portuguese_website_names[String(english_website_name).replace(/ /gi, "_").toLowerCase()];
 
