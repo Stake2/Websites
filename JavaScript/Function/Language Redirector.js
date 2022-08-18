@@ -19,8 +19,8 @@ var portuguese_language = "pt-BR" || "pt-PT";
 var portuguese_languages = ["pt", "pt-BR", "pt-PT"];
 
 var languages_dict = {
-"PT-BR": "pt",
-"EN-US": "en",
+	"PT-BR": "pt",
+	"EN-US": "en",
 }
 
 var object;
