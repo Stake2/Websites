@@ -6,7 +6,7 @@
 [![Contributors](https://img.shields.io/github/contributors/Stake2/Websites.svg)](https://github.com/Stake2/Websites/graphs/contributors)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8cd84069-5194-4080-9e49-a8eae5111cf7/deploy-status)](https://app.netlify.com/sites/thestake2/deploys)
 
-The HTML5, CSS3, and JavaScript files for all my websites<br>
+The HTML5, CSS3, and JavaScript files for all my websites.<br>
 This repository also contains all of my websites, deployed to [Netlify](https://netlify.com/).
 
 ## License

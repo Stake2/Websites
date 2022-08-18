@@ -1,2 +1,3 @@
-There is no reason to contribute to this repository, as its files are generated automatically by a PHP script I wrote.<br>
-However, you can contribute to my other repo which uses PHP [here](https://github.com/Stake2/stake2-php), and give advice, open issues saying what I can do better, and open pull requests too.
+There is no reason to contribute to this repository, as its files are generated automatically by a PHP file I programmed.<br>
+However, you can contribute with PHP advice in my other repository [here](https://github.com/Stake2/PHP).
+Open an issue saying what needs to be improved or fixed, you can open pull requests too, with code changes.
