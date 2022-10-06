@@ -11,7 +11,6 @@ var website_title = String(title.innerHTML).replace("(1) ", "");
 
 var meta_title = document.head.querySelector('[name="language_title"]').content;
 
-var url_addon;
 var english_language = "en-US";
 var english_languages = ["en", "en-US", "en-BZ", "en-CA", "en-IE", "en-JM", "en-NZ", "en-PH", "en-ZA", "en-TT", "en-GB", "en-ZW"]
 
@@ -21,6 +20,16 @@ var portuguese_languages = ["pt", "pt-BR", "pt-PT"];
 var languages_dict = {
 	"PT-BR": "pt",
 	"EN-US": "en",
+}
+
+var current_website_link = String(window.location);
+var check = current_website_link.includes("no-redirect=true");
+var check_chapter_in_link = current_website_link.includes("[") || current_website_link.includes("(");
+
+var url_addon = "";
+
+if (check_chapter_in_link == true) {
+	url_addon = current_website_link.split("/").reverse()[0];
 }
 
 var object;
@@ -102,6 +111,8 @@ function Check_Language(english_website_name) {
 		website_folder_name = "My Little Pony/Friendship Is Magic";
 	}
 
+	console.log(english_website_name);
+
 	var website_link = root_website_link + website_folder_name + "/"
 	var portuguese_website_name = portuguese_website_names[String(english_website_name).replace(/ /gi, "_").toLowerCase()];
 
@@ -127,7 +138,7 @@ function Check_Language(english_website_name) {
 		}
 	}
 
-	if (meta_title == portuguese_website_name + " Português") {
+	if (meta_title == english_website_name + " Português") {
 		if (English(user_language) == true) {
 			console.log(Language_Item_Definer("The user is in the Portuguese website, redirecting to English language website", "O usuário está no site em Português, redirecionando para o site em idioma Inglês") + "...");
 
@@ -142,12 +153,11 @@ function Check_Language(english_website_name) {
 	}
 }
 
-var current_website_link = String(window.location);
-var check = current_website_link.includes("no-redirect=true");
-var check_chapter_in_link = current_website_link.includes("[") || current_website_link.includes("(");
+var current_year = new Date().getFullYear();
+var year_websites = [];
 
-url_addon = "";
-
-if (check_chapter_in_link == true) {
-	url_addon = current_website_link.split("/").reverse()[0];
+for (year = 2018; year <= current_year; year++) {
+	year_websites.push(year);
 }
+
+year_websites.forEach(Check_Language);
