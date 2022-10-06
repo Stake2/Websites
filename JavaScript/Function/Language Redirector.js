@@ -43,6 +43,13 @@ async function Convert_Text_File_To_Object(url) {
 
 var english_website_names, portuguese_website_names;
 
+var current_year = new Date().getFullYear();
+var year_websites = [];
+
+for (year = 2018; year <= current_year; year++) {
+	year_websites.push(year);
+}
+
 Convert_Text_File_To_Object(english_website_names_url).then(
 	function(value) {
 		english_website_names = JSON.parse(value);
@@ -58,6 +65,7 @@ Convert_Text_File_To_Object(portuguese_website_names_url).then(
 ).then(
 	function() {
 		english_website_names.forEach(Check_Language);
+		year_websites.forEach(Check_Language);
 	}
 );
 
@@ -152,12 +160,3 @@ function Check_Language(english_website_name) {
 		}
 	}
 }
-
-var current_year = new Date().getFullYear();
-var year_websites = [];
-
-for (year = 2018; year <= current_year; year++) {
-	year_websites.push(year);
-}
-
-year_websites.forEach(Check_Language);
