@@ -66,7 +66,7 @@ function Language_Item_Definer(english_text, portuguese_text) {
 	return language_text;
 }
 
-function English_Language_Check(language) {
+function English(language) {
 	if (english_languages.includes(language) == true) {
 		return true;
 	}
@@ -76,7 +76,7 @@ function English_Language_Check(language) {
 	}
 }
 
-function Portuguese_Language_Check(language) {
+function Portuguese(language) {
 	if (portuguese_languages.includes(language) == true) {
 		return true;
 	}
@@ -114,7 +114,7 @@ function Check_Language(english_website_name) {
 	}
 
 	if (meta_title == english_website_name + " English") {
-		if (Portuguese_Language_Check(user_language) == true) {
+		if (Portuguese(user_language) == true) {
 			console.log(Language_Item_Definer("The user is in the English website, redirecting to Portuguese language website", "O usuário está no site em Inglês, redirecionando para o site em idioma Português") + "...");
 
 			if (check == false) {
@@ -128,7 +128,7 @@ function Check_Language(english_website_name) {
 	}
 
 	if (meta_title == portuguese_website_name + " Português") {
-		if (English_Language_Check(user_language) == true) {
+		if (English(user_language) == true) {
 			console.log(Language_Item_Definer("The user is in the Portuguese website, redirecting to English language website", "O usuário está no site em Português, redirecionando para o site em idioma Inglês") + "...");
 
 			if (check == false) {
@@ -151,5 +151,3 @@ url_addon = "";
 if (check_chapter_in_link == true) {
 	url_addon = current_website_link.split("/").reverse()[0];
 }
-
-console.log("Redirect Script was loaded and checked the redirect status.");
