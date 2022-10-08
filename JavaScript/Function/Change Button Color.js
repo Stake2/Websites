@@ -1,161 +1,70 @@
-var button_element, button_background_color_class, new_button_background_color_class, old_button_background_color_class, old_button, button_number, id, sub_id, query, buttons;
+var button_background, new_button_background, button_number
+
+function print(text) {
+	console.log(text)
+}
 
 function Define_Colors_And_Styles() {
-	new_button_background_color_class = document.getElementById("click_website_button_color").textContent;
-	old_button_background_color_class = document.getElementById("old_website_button_color").textContent;
-	button_number = document.getElementById("button_number").textContent;
+	new_button_background = document.getElementById("click_button_background").textContent
+	button_background = document.getElementById("button_background").textContent
+	button_number = document.getElementById("button_number").textContent
 }
 
-function Define_Button(id_parameter) {
-	id = id_parameter;
-	button_element = document.getElementById(id);
-	button_background_color_class = button_element.classList[2];
+function Change_Class(button_id, id_parameter, find = button_background, change = new_button_background) {
+	var i = 0
+	var length = button_number
+	while (i <= length) {
+		id = id_parameter
 
-	query = '[id=' + id + ']';
-	buttons = document.querySelectorAll(query);
-}
-
-function Change_Button_Color() {
-	var i = 0;
-	while (i <= button_number) {
-		sub_id = "computer_button_" + (i + 1);
-		old_button = document.getElementById(sub_id);
-
-		if (old_button == null) {
-			i += 1;
+		if (id_parameter.slice(-1) == "_") {
+			id = id_parameter + (i + 1)
 		}
 
-		else {
-			query = '[id=' + sub_id + ']';
-			sub_buttons = document.querySelectorAll(query);
+		button = null
 
-			if (sub_buttons != undefined) {
-				var x = 0;
-				while (x <= sub_buttons.length) {
-					if (sub_buttons[x] != undefined) {
-						sub_buttons[x].className = sub_buttons[x].className.replace(new_button_background_color_class, button_background_color_class);
+		if (id != "websites_tab_button") {
+			button = document.getElementById(id)
+		}
 
-						x += 1;
-					}
-
-					else {
-						x += 1;
-					}
+		if (button != null) {
+			if (i == button_id - 1) {
+				if (button.classList.contains(find) == true && button.classList.contains(change) == false) {
+					button.classList.toggle(find)
+					button.classList.add(change)
 				}
 			}
 
-			i += 1;
-		}
-	}
-
-	var i = 0;
-	while (i <= button_number) {
-		sub_id = "mobile_button_" + (i + 1);
-		old_button = document.getElementById(sub_id);
-
-		if (old_button == null) {
-			i += 1;
-		}
-
-		else {
-			query = '[id=' + sub_id + ']';
-			sub_buttons = document.querySelectorAll(query);
-
-			if (sub_buttons != undefined) {
-				var x = 0;
-				while (x <= sub_buttons.length) {
-					if (sub_buttons[x] != undefined) {
-						sub_buttons[x].className = sub_buttons[x].className.replace(new_button_background_color_class, button_background_color_class);
-
-						x += 1;
-					}
-
-					else {
-						x += 1;
-					}
+			if (i != button_id - 1) {
+				if (button.classList.contains(change) == true && button.classList.contains(find) == false) {
+					button.classList.toggle(change)
+					button.classList.add(find)
 				}
 			}
-
-			i += 1;
 		}
+
+		i += 1
 	}
 
-	var i = 0;
-	while (i <= button_number) {
-		sub_id = "watched_archived_button_" + (i + 1);
-		old_button = document.getElementById(sub_id);
+	if (id_parameter == "websites_tab_button") {
+		button = document.getElementById(id_parameter)
 
-		if (old_button == null) {
-			i += 1;
+		if (button_id == button && button.classList.contains(find) == true) {
+			button.classList.toggle(find)
+			button.classList.add(change)
 		}
 
-		else {
-			query = '[id=' + sub_id + ']';
-			sub_buttons = document.querySelectorAll(query);
-
-			if (sub_buttons != undefined) {
-				var x = 0;
-				while (x <= sub_buttons.length) {
-					if (sub_buttons[x] != undefined) {
-						sub_buttons[x].className = sub_buttons[x].className.replace(new_button_background_color_class, button_background_color_class);
-
-						x += 1;
-					}
-
-					else {
-						x += 1;
-					}
-				}
-			}
-
-			i += 1;
-		}
-	}
-
-	var i = 0;
-	while (i <= 1) {
-		sub_id = "websites_tab_button";
-		old_button = document.getElementById(sub_id);
-
-		if (old_button == null) {
-			i += 1;
-		}
-
-		else {
-			query = '[id=' + sub_id + ']';
-			sub_buttons = document.querySelectorAll(query);
-
-			if (sub_buttons != undefined) {
-				var x = 0;
-				while (x <= sub_buttons.length) {
-					if (sub_buttons[x] != undefined) {
-						sub_buttons[x].className = sub_buttons[x].className.replace(new_button_background_color_class, button_background_color_class);
-
-						x += 1;
-					}
-
-					else {
-						x += 1;
-					}
-				}
-			}
-
-			i += 1;
-		}
-	}
-
-	var i = 0;
-	while (i <= buttons.length) {
-		if (buttons[i] != undefined) {
-			buttons[i].className = buttons[i].className.replace(button_background_color_class, new_button_background_color_class);
-
-			i += 1;
-		}
-
-		else {
-			i += 1;
+		if (button_id != button && button.classList.contains(change) == true) {
+			button.classList.toggle(change)
+			button.classList.add(find)
 		}
 	}
 }
 
-console.log("Change Button Color Script was loaded.");
+function Change_Button_Color(button_id) {
+	Change_Class(button_id, "computer_button_")
+	Change_Class(button_id, "mobile_button_")
+	Change_Class(button_id, "watched_archived_button_")
+	Change_Class(button_id, "websites_tab_button")
+}
+
+console.log("Change Button Color Script was loaded.")
