@@ -15,6 +15,7 @@ body {
 	--orange-color: orange;
 	--yellow-color: #ffeb3b;
 	--yellow-sand-color: #ffffb3;
+	--dark-yellow-color: #aa9d26;
 	--light-brown-color: #e0a448;
 	--brown-color: #b88e50;
 	--darker-brown-color: #916f3b;
@@ -38,175 +39,180 @@ body {
 }
 
 body {
-	--box-shadow-grey: 0 -8px 20px var(--spread-btn) var(--grey-color)60,
-	0 8px 20px var(--spread-btn) var(--grey-color)60,
-	0 6px 20px var(--spread-btn) var(--grey-color)60,
-	0 -6px 20px var(--spread-btn) var(--grey-color)60 !important;
+	--box-shadow-grey: 0 -8px 20px var(--spread-btn) #80808060,
+	0 8px 20px var(--spread-btn) #80808060,
+	0 6px 20px var(--spread-btn) #80808060,
+	0 -6px 20px var(--spread-btn) #80808060 !important;
 
-	--box-shadow-white: 0 -8px 20px var(--spread-btn) var(--white-color)60,
-	0 8px 20px var(--spread-btn) var(--white-color)60,
-	0 6px 20px var(--spread-btn) var(--white-color)60,
-	0 -6px 20px var(--spread-btn) var(--white-color)60 !important;
+	--box-shadow-white: 0 -8px 20px var(--spread-btn) #FFFFFF60,
+	0 8px 20px var(--spread-btn) #FFFFFF60,
+	0 6px 20px var(--spread-btn) #FFFFFF60,
+	0 -6px 20px var(--spread-btn) #FFFFFF60 !important;
 
-	--box-shadow-black: 0 -8px 20px var(--spread-btn) var(--black-color)60,
-	0 8px 20px var(--spread-btn) var(--black-color)60,
-	0 6px 20px var(--spread-btn) var(--black-color)60,
-	0 -6px 20px var(--spread-btn) var(--black-color)60 !important;
+	--box-shadow-black: 0 -8px 20px var(--spread-btn) #00000060,
+	0 8px 20px var(--spread-btn) #00000060,
+	0 6px 20px var(--spread-btn) #00000060,
+	0 -6px 20px var(--spread-btn) #00000060 !important;
 
-	--box-shadow-red: 0 -8px 20px var(--spread-btn) var(--red-color)60,
-	0 8px 20px var(--spread-btn) var(--red-color)60,
-	0 6px 20px var(--spread-btn) var(--red-color)60,
-	0 -6px 20px var(--spread-btn) var(--red-color)60 !important;
+	--box-shadow-red: 0 -8px 20px var(--spread-btn) #f4433660,
+	0 8px 20px var(--spread-btn) #f4433660,
+	0 6px 20px var(--spread-btn) #f4433660,
+	0 -6px 20px var(--spread-btn) #f4433660 !important;
 
-	--box-shadow-dark-red: 0 -8px 20px var(--spread-btn) var(--dark-red-color)60,
-	0 8px 20px var(--spread-btn) var(--dark-red-color)60,
-	0 6px 20px var(--spread-btn) var(--dark-red-color)60,
-	0 -6px 20px var(--spread-btn) var(--dark-red-color)60 !important;
+	--box-shadow-dark-red: 0 -8px 20px var(--spread-btn) #790e0660,
+	0 8px 20px var(--spread-btn) #790e0660,
+	0 6px 20px var(--spread-btn) #790e0660,
+	0 -6px 20px var(--spread-btn) #790e0660 !important;
 
-	--box-shadow-blue: 0 -8px 20px var(--spread-btn) var(--blue-color)60,
-	0 8px 20px var(--spread-btn) var(--blue-color)60,
-	0 6px 20px var(--spread-btn) var(--blue-color)60,
-	0 -6px 20px var(--spread-btn) var(--blue-color)60 !important;
+	--box-shadow-blue: 0 -8px 20px var(--spread-btn) #2196F360,
+	0 8px 20px var(--spread-btn) #2196F360,
+	0 6px 20px var(--spread-btn) #2196F360,
+	0 -6px 20px var(--spread-btn) #2196F360 !important;
 
-	--box-shadow-darker-blue: 0 -8px 20px var(--spread-btn) var(--darker-blue-color)60,
-	0 8px 20px var(--spread-btn) var(--darker-blue-color)60,
-	0 6px 20px var(--spread-btn) var(--darker-blue-color)60,
-	0 -6px 20px var(--spread-btn) var(--darker-blue-color)60 !important;
+	--box-shadow-darker-blue: 0 -8px 20px var(--spread-btn) #349EF460,
+	0 8px 20px var(--spread-btn) #349EF460,
+	0 6px 20px var(--spread-btn) #349EF460,
+	0 -6px 20px var(--spread-btn) #349EF460 !important;
 
-	--box-shadow-dark-blue: 0 -8px 20px var(--spread-btn) var(--dark-blue-color)60,
-	0 8px 20px var(--spread-btn) var(--dark-blue-color)60,
-	0 6px 20px var(--spread-btn) var(--dark-blue-color)60,
-	0 -6px 20px var(--spread-btn) var(--dark-blue-color)60 !important;
+	--box-shadow-dark-blue: 0 -8px 20px var(--spread-btn) #07518D60,
+	0 8px 20px var(--spread-btn) #07518D60,
+	0 6px 20px var(--spread-btn) #07518D60,
+	0 -6px 20px var(--spread-btn) #07518D60 !important;
 
-	--box-shadow-super-dark-blue: 0 -8px 20px var(--spread-btn) var(--super-dark-blue-color)60,
-	0 8px 20px var(--spread-btn) var(--super-dark-blue-color)60,
-	0 6px 20px var(--spread-btn) var(--super-dark-blue-color)60,
-	0 -6px 20px var(--spread-btn) var(--super-dark-blue-color)60 !important;
+	--box-shadow-super-dark-blue: 0 -8px 20px var(--spread-btn) #05386160,
+	0 8px 20px var(--spread-btn) #05386160,
+	0 6px 20px var(--spread-btn) #05386160,
+	0 -6px 20px var(--spread-btn) #05386160 !important;
 
-	--box-shadow-cyan: 0 -8px 20px var(--spread-btn) var(--cyan-color)60,
-	0 8px 20px var(--spread-btn) var(--cyan-color)60,
-	0 6px 20px var(--spread-btn) var(--cyan-color)60,
-	0 -6px 20px var(--spread-btn) var(--cyan-color)60 !important;
+	--box-shadow-cyan: 0 -8px 20px var(--spread-btn) #00bcd460,
+	0 8px 20px var(--spread-btn) #00bcd460,
+	0 6px 20px var(--spread-btn) #00bcd460,
+	0 -6px 20px var(--spread-btn) #00bcd460 !important;
 
-	--box-shadow-green: 0 -8px 20px var(--spread-btn) var(--green-color)60,
-	0 8px 20px var(--spread-btn) var(--green-color)60,
-	0 6px 20px var(--spread-btn) var(--green-color)60,
-	0 -6px 20px var(--spread-btn) var(--green-color)60 !important;
+	--box-shadow-green: 0 -8px 20px var(--spread-btn) #4CAF5060,
+	0 8px 20px var(--spread-btn) #4CAF5060,
+	0 6px 20px var(--spread-btn) #4CAF5060,
+	0 -6px 20px var(--spread-btn) #4CAF5060 !important;
 
-	--box-shadow-green-water: 0 -8px 20px var(--spread-btn) var(--green-water-color)60,
-	0 8px 20px var(--spread-btn) var(--green-water-color)60,
-	0 6px 20px var(--spread-btn) var(--green-water-color)60,
-	0 -6px 20px var(--spread-btn) var(--green-water-color)60 !important;
+	--box-shadow-green-water: 0 -8px 20px var(--spread-btn) #86ffe660,
+	0 8px 20px var(--spread-btn) #86ffe660,
+	0 6px 20px var(--spread-btn) #86ffe660,
+	0 -6px 20px var(--spread-btn) #86ffe660 !important;
 
-	--box-shadow-dark-green-water: 0 -8px 20px var(--spread-btn) var(--dark-green-water-color)60,
-	0 8px 20px var(--spread-btn) var(--dark-green-water-color)60,
-	0 6px 20px var(--spread-btn) var(--dark-green-water-color)60,
-	0 -6px 20px var(--spread-btn) var(--dark-green-water-color)60 !important;
+	--box-shadow-dark-green-water: 0 -8px 20px var(--spread-btn) #153e4360,
+	0 8px 20px var(--spread-btn) #153e4360,
+	0 6px 20px var(--spread-btn) #153e4360,
+	0 -6px 20px var(--spread-btn) #153e4360 !important;
 
-	--box-shadow-orange: 0 -8px 20px var(--spread-btn) var(--orange-color)60,
-	0 8px 20px var(--spread-btn) var(--orange-color)60,
-	0 6px 20px var(--spread-btn) var(--orange-color)60,
-	0 -6px 20px var(--spread-btn) var(--orange-color)60 !important;
+	--box-shadow-orange: 0 -8px 20px var(--spread-btn) #ffa50060,
+	0 8px 20px var(--spread-btn) #ffa50060,
+	0 6px 20px var(--spread-btn) #ffa50060,
+	0 -6px 20px var(--spread-btn) #ffa50060 !important;
 
-	--box-shadow-yellow: 0 -8px 20px var(--spread-btn) var(--yellow-color)60,
-	0 8px 20px var(--spread-btn) var(--yellow-color)60,
-	0 6px 20px var(--spread-btn) var(--yellow-color)60,
-	0 -6px 20px var(--spread-btn) var(--yellow-color)60 !important;
+	--box-shadow-yellow: 0 -8px 20px var(--spread-btn) #ffeb3b60,
+	0 8px 20px var(--spread-btn) #ffeb3b60,
+	0 6px 20px var(--spread-btn) #ffeb3b60,
+	0 -6px 20px var(--spread-btn) #ffeb3b60 !important;
 
-	--box-shadow-yellow-sand: 0 -8px 20px var(--spread-btn) var(--yellow-sand-color)60,
-	0 8px 20px var(--spread-btn) var(--yellow-sand-color)60,
-	0 6px 20px var(--spread-btn) var(--yellow-sand-color)60,
-	0 -6px 20px var(--spread-btn) var(--yellow-sand-color)60 !important;
+	--box-shadow-yellow-sand: 0 -8px 20px var(--spread-btn) #ffffb360,
+	0 8px 20px var(--spread-btn) #ffffb360,
+	0 6px 20px var(--spread-btn) #ffffb360,
+	0 -6px 20px var(--spread-btn) #ffffb360 !important;
 
-	--box-shadow-light-brown: 0 -8px 20px var(--spread-btn) var(--light-brown-color)60,
-	0 8px 20px var(--spread-btn) var(--light-brown-color)60,
-	0 6px 20px var(--spread-btn) var(--light-brown-color)60,
-	0 -6px 20px var(--spread-btn) var(--light-brown-color)60 !important;
+	--box-shadow-dark-yellow: 0 -8px 20px var(--spread-btn) #aa9d2660,
+	0 8px 20px var(--spread-btn) #aa9d2660,
+	0 6px 20px var(--spread-btn) #aa9d2660,
+	0 -6px 20px var(--spread-btn) #aa9d2660 !important;
 
-	--box-shadow-brown: 0 -8px 20px var(--spread-btn) var(--brown-color)60,
-	0 8px 20px var(--spread-btn) var(--brown-color)60,
-	0 6px 20px var(--spread-btn) var(--brown-color)60,
-	0 -6px 20px var(--spread-btn) var(--brown-color)60 !important;
+	--box-shadow-light-brown: 0 -8px 20px var(--spread-btn) #e0a44860,
+	0 8px 20px var(--spread-btn) #e0a44860,
+	0 6px 20px var(--spread-btn) #e0a44860,
+	0 -6px 20px var(--spread-btn) #e0a44860 !important;
 
-	--box-shadow-darker-brown: 0 -8px 20px var(--spread-btn) var(--darker-brown-color)60,
-	0 8px 20px var(--spread-btn) var(--darker-brown-color)60,
-	0 6px 20px var(--spread-btn) var(--darker-brown-color)60,
-	0 -6px 20px var(--spread-btn) var(--darker-brown-color)60 !important;
+	--box-shadow-brown: 0 -8px 20px var(--spread-btn) #b88e5060,
+	0 8px 20px var(--spread-btn) #b88e5060,
+	0 6px 20px var(--spread-btn) #b88e5060,
+	0 -6px 20px var(--spread-btn) #b88e5060 !important;
 
-	--box-shadow-dark-brown: 0 -8px 20px var(--spread-btn) var(--dark-brown-color)60,
-	0 8px 20px var(--spread-btn) var(--dark-brown-color)60,
-	0 6px 20px var(--spread-btn) var(--dark-brown-color)60,
-	0 -6px 20px var(--spread-btn) var(--dark-brown-color)60 !important;
+	--box-shadow-darker-brown: 0 -8px 20px var(--spread-btn) #916f3b60,
+	0 8px 20px var(--spread-btn) #916f3b60,
+	0 6px 20px var(--spread-btn) #916f3b60,
+	0 -6px 20px var(--spread-btn) #916f3b60 !important;
 
-	--box-shadow-pink: 0 -8px 20px var(--spread-btn) var(--pink-color)60,
-	0 8px 20px var(--spread-btn) var(--pink-color)60,
-	0 6px 20px var(--spread-btn) var(--pink-color)60,
-	0 -6px 20px var(--spread-btn) var(--pink-color)60 !important;
+	--box-shadow-dark-brown: 0 -8px 20px var(--spread-btn) #26180460,
+	0 8px 20px var(--spread-btn) #26180460,
+	0 6px 20px var(--spread-btn) #26180460,
+	0 -6px 20px var(--spread-btn) #26180460 !important;
 
-	--box-shadow-dark-pink: 0 -8px 20px var(--spread-btn) var(--dark-pink-color)60,
-	0 8px 20px var(--spread-btn) var(--dark-pink-color)60,
-	0 6px 20px var(--spread-btn) var(--dark-pink-color)60,
-	0 -6px 20px var(--spread-btn) var(--dark-pink-color)60 !important;
+	--box-shadow-pink: 0 -8px 20px var(--spread-btn) #ff008060,
+	0 8px 20px var(--spread-btn) #ff008060,
+	0 6px 20px var(--spread-btn) #ff008060,
+	0 -6px 20px var(--spread-btn) #ff008060 !important;
 
-	--box-shadow-salmon: 0 -8px 20px var(--spread-btn) var(--salmon-color)60,
-	0 8px 20px var(--spread-btn) var(--salmon-color)60,
-	0 6px 20px var(--spread-btn) var(--salmon-color)60,
-	0 -6px 20px var(--spread-btn) var(--salmon-color)60 !important;
+	--box-shadow-dark-pink: 0 -8px 20px var(--spread-btn) #440b2860,
+	0 8px 20px var(--spread-btn) #440b2860,
+	0 6px 20px var(--spread-btn) #440b2860,
+	0 -6px 20px var(--spread-btn) #440b2860 !important;
 
-	--box-shadow-dark-salmon: 0 -8px 20px var(--spread-btn) var(--dark-salmon-color)60,
-	0 8px 20px var(--spread-btn) var(--dark-salmon-color)60,
-	0 6px 20px var(--spread-btn) var(--dark-salmon-color)60,
-	0 -6px 20px var(--spread-btn) var(--dark-salmon-color)60 !important;
+	--box-shadow-salmon: 0 -8px 20px var(--spread-btn) #f2858c60,
+	0 8px 20px var(--spread-btn) #f2858c60,
+	0 6px 20px var(--spread-btn) #f2858c60,
+	0 -6px 20px var(--spread-btn) #f2858c60 !important;
 
-	--box-shadow-darker-salmon: 0 -8px 20px var(--spread-btn) var(--darker-salmon-color)60,
-	0 8px 20px var(--spread-btn) var(--darker-salmon-color)60,
-	0 6px 20px var(--spread-btn) var(--darker-salmon-color)60,
-	0 -6px 20px var(--spread-btn) var(--darker-salmon-color)60 !important;
+	--box-shadow-dark-salmon: 0 -8px 20px var(--spread-btn) #c26e7360,
+	0 8px 20px var(--spread-btn) #c26e7360,
+	0 6px 20px var(--spread-btn) #c26e7360,
+	0 -6px 20px var(--spread-btn) #c26e7360 !important;
 
-	--box-shadow-light-salmon: 0 -8px 20px var(--spread-btn) var(--light-salmon-color)60,
-	0 8px 20px var(--spread-btn) var(--light-salmon-color)60,
-	0 6px 20px var(--spread-btn) var(--light-salmon-color)60,
-	0 -6px 20px var(--spread-btn) var(--light-salmon-color)60 !important;
+	--box-shadow-darker-salmon: 0 -8px 20px var(--spread-btn) #854d5160,
+	0 8px 20px var(--spread-btn) #854d5160,
+	0 6px 20px var(--spread-btn) #854d5160,
+	0 -6px 20px var(--spread-btn) #854d5160 !important;
 
-	--box-shadow-purple: 0 -8px 20px var(--spread-btn) var(--purple-color)60,
-	0 8px 20px var(--spread-btn) var(--purple-color)60,
-	0 6px 20px var(--spread-btn) var(--purple-color)60,
-	0 -6px 20px var(--spread-btn) var(--purple-color)60 !important;
+	--box-shadow-light-salmon: 0 -8px 20px var(--spread-btn) #f1858d60,
+	0 8px 20px var(--spread-btn) #f1858d60,
+	0 6px 20px var(--spread-btn) #f1858d60,
+	0 -6px 20px var(--spread-btn) #f1858d60 !important;
 
-	--box-shadow-second-purple: 0 -8px 20px var(--spread-btn) var(--second-purple-color)60,
-	0 8px 20px var(--spread-btn) var(--second-purple-color)60,
-	0 6px 20px var(--spread-btn) var(--second-purple-color)60,
-	0 -6px 20px var(--spread-btn) var(--second-purple-color)60 !important;
+	--box-shadow-purple: 0 -8px 20px var(--spread-btn) #9425a760,
+	0 8px 20px var(--spread-btn) #9425a760,
+	0 6px 20px var(--spread-btn) #9425a760,
+	0 -6px 20px var(--spread-btn) #9425a760 !important;
 
-	--box-shadow-second-dark-purple: 0 -8px 20px var(--spread-btn) var(--second-dark-purple-color)60,
-	0 8px 20px var(--spread-btn) var(--second-dark-purple-color)60,
-	0 6px 20px var(--spread-btn) var(--second-dark-purple-color)60,
-	0 -6px 20px var(--spread-btn) var(--second-dark-purple-color)60 !important;
+	--box-shadow-second-purple: 0 -8px 20px var(--spread-btn) #b56bcc60,
+	0 8px 20px var(--spread-btn) #b56bcc60,
+	0 6px 20px var(--spread-btn) #b56bcc60,
+	0 -6px 20px var(--spread-btn) #b56bcc60 !important;
 
-	--box-shadow-darker-purple: 0 -8px 20px var(--spread-btn) var(--darker-purple-color)60,
-	0 8px 20px var(--spread-btn) var(--darker-purple-color)60,
-	0 6px 20px var(--spread-btn) var(--darker-purple-color)60,
-	0 -6px 20px var(--spread-btn) var(--darker-purple-color)60 !important;
+	--box-shadow-second-dark-purple: 0 -8px 20px var(--spread-btn) #8d53a060,
+	0 8px 20px var(--spread-btn) #8d53a060,
+	0 6px 20px var(--spread-btn) #8d53a060,
+	0 -6px 20px var(--spread-btn) #8d53a060 !important;
 
-	--box-shadow-light-purple: 0 -8px 20px var(--spread-btn) var(--light-purple-color)60,
-	0 8px 20px var(--spread-btn) var(--light-purple-color)60,
-	0 6px 20px var(--spread-btn) var(--light-purple-color)60,
-	0 -6px 20px var(--spread-btn) var(--light-purple-color)60 !important;
+	--box-shadow-darker-purple: 0 -8px 20px var(--spread-btn) #623b6f60,
+	0 8px 20px var(--spread-btn) #623b6f60,
+	0 6px 20px var(--spread-btn) #623b6f60,
+	0 -6px 20px var(--spread-btn) #623b6f60 !important;
 
-	--box-shadow-light-cyan: 0 -8px 20px var(--spread-btn) var(--light-cyan-color)60,
-	0 8px 20px var(--spread-btn) var(--light-cyan-color)60,
-	0 6px 20px var(--spread-btn) var(--light-cyan-color)60,
-	0 -6px 20px var(--spread-btn) var(--light-cyan-color)60 !important;
+	--box-shadow-light-purple: 0 -8px 20px var(--spread-btn) #dc96e860,
+	0 8px 20px var(--spread-btn) #dc96e860,
+	0 6px 20px var(--spread-btn) #dc96e860,
+	0 -6px 20px var(--spread-btn) #dc96e860 !important;
 
-	--box-shadow-darker-light-cyan: 0 -8px 20px var(--spread-btn) var(--darker-light-cyan-color)60,
-	0 8px 20px var(--spread-btn) var(--darker-light-cyan-color)60,
-	0 6px 20px var(--spread-btn) var(--darker-light-cyan-color)60,
-	0 -6px 20px var(--spread-btn) var(--darker-light-cyan-color)60 !important;
+	--box-shadow-light-cyan: 0 -8px 20px var(--spread-btn) #5cc6ca60,
+	0 8px 20px var(--spread-btn) #5cc6ca60,
+	0 6px 20px var(--spread-btn) #5cc6ca60,
+	0 -6px 20px var(--spread-btn) #5cc6ca60 !important;
 
-	--box-shadow-dark-cyan: 0 -8px 20px var(--spread-btn) var(--dark-cyan-color)60,
-	0 8px 20px var(--spread-btn) var(--dark-cyan-color)60,
-	0 6px 20px var(--spread-btn) var(--dark-cyan-color)60,
-	0 -6px 20px var(--spread-btn) var(--dark-cyan-color)60 !important;
+	--box-shadow-darker-light-cyan: 0 -8px 20px var(--spread-btn) #35a6aa60,
+	0 8px 20px var(--spread-btn) #35a6aa60,
+	0 6px 20px var(--spread-btn) #35a6aa60,
+	0 -6px 20px var(--spread-btn) #35a6aa60 !important;
+
+	--box-shadow-dark-cyan: 0 -8px 20px var(--spread-btn) #257c7f60,
+	0 8px 20px var(--spread-btn) #257c7f60,
+	0 6px 20px var(--spread-btn) #257c7f60,
+	0 -6px 20px var(--spread-btn) #257c7f60 !important;
 }
 
 .border_1px_solid_grey {
@@ -271,6 +277,10 @@ body {
 
 .border_1px_solid_yellow_sand {
 	border: 1px solid var(--yellow-sand-color);
+}
+
+.border_1px_solid_dark_yellow {
+	border: 1px solid var(--dark-yellow-color);
 }
 
 .border_1px_solid_light_brown {
@@ -409,6 +419,10 @@ body {
 	border: 3px solid var(--yellow-sand-color);
 }
 
+.border_3px_solid_dark_yellow {
+	border: 3px solid var(--dark-yellow-color);
+}
+
 .border_3px_solid_light_brown {
 	border: 3px solid var(--light-brown-color);
 }
@@ -543,6 +557,10 @@ body {
 
 .border_4px_solid_yellow_sand {
 	border: 4px solid var(--yellow-sand-color);
+}
+
+.border_4px_solid_dark_yellow {
+	border: 4px solid var(--dark-yellow-color);
 }
 
 .border_4px_solid_light_brown {
@@ -681,6 +699,10 @@ body {
 	border-color: var(--yellow-sand-color);
 }
 
+.border_color_dark_yellow {
+	border-color: var(--dark-yellow-color);
+}
+
 .border_color_light_brown {
 	border-color: var(--light-brown-color);
 }
@@ -815,6 +837,10 @@ body {
 
 .background_yellow_sand {
 	background-color: var(--yellow-sand-color);
+}
+
+.background_dark_yellow {
+	background-color: var(--dark-yellow-color);
 }
 
 .background_light_brown {
@@ -953,6 +979,10 @@ body {
 	background-color: var(--yellow-sand-color);
 }
 
+.background_hover_dark_yellow:hover {
+	background-color: var(--dark-yellow-color);
+}
+
 .background_hover_light_brown:hover {
 	background-color: var(--light-brown-color);
 }
@@ -1087,6 +1117,10 @@ body {
 
 .text_yellow_sand {
 	color: var(--yellow-sand-color);
+}
+
+.text_dark_yellow {
+	color: var(--dark-yellow-color);
 }
 
 .text_light_brown {
@@ -1225,6 +1259,10 @@ body {
 	color: var(--yellow-sand-color);
 }
 
+.text_hover_dark_yellow:hover {
+	color: var(--dark-yellow-color);
+}
+
 .text_hover_light_brown:hover {
 	color: var(--light-brown-color);
 }
@@ -1359,6 +1397,10 @@ body {
 
 .box_shadow_yellow_sand {
 	box-shadow: var(--box-shadow-yellow-sand) !important;
+}
+
+.box_shadow_dark_yellow {
+	box-shadow: var(--box-shadow-dark-yellow) !important;
 }
 
 .box_shadow_light_brown {
