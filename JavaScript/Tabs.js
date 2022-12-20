@@ -97,7 +97,9 @@ function Open_Tab(tab_id) {
 	tab_button = document.getElementById("button_" + (tab_number + 1))
 
 	// Hide clicked tab button
-	tab_button.style.display = "none"
+	if (tab_button != null) {
+		tab_button.style.display = "none"
+	}
 
 	return tab
 }
