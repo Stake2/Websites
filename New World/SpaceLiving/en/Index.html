@@ -49,24 +49,16 @@
 	<!-- Define website box shadow -->
 	<style>
 	body {
-		--shadow-color-container: #2196F370;
+		--shadow-color: #2196F360;
 		--spread-container: 10px;
-		--shadow-color-btn: #2196F340;
 		--spread-btn: 0.5px;
 	}
 
-	.box_shadow {
-		box-shadow: 0 -8px 20px var(--spread-btn) var(--shadow-color-btn),
-		0 8px 20px var(--spread-btn) var(--shadow-color-btn),
-		0 6px 20px var(--spread-btn) var(--shadow-color-btn),
-		0 -6px 20px var(--spread-btn) var(--shadow-color-btn);
-	}
-
 	.w3-btn, .w3-container, .modal-content, .w3-input {
-		box-shadow: 0 -8px 20px var(--spread-btn) var(--shadow-color-btn),
-		0 8px 20px var(--spread-btn) var(--shadow-color-btn),
-		0 6px 20px var(--spread-btn) var(--shadow-color-btn),
-		0 -6px 20px var(--spread-btn) var(--shadow-color-btn);
+		box-shadow: 0 -8px 20px var(--spread-btn) var(--shadow-color),
+		0 8px 20px var(--spread-btn) var(--shadow-color),
+		0 6px 20px var(--spread-btn) var(--shadow-color),
+		0 -6px 20px var(--spread-btn) var(--shadow-color);
 	}
 	</style>
 
@@ -147,21 +139,14 @@
 </div>
 
 <!-- Website header -->
-<div id="header" class="w3-container w3-animate-zoom background_black text_blue border_4px border_color_blue border_radius_15_cent header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
+<div id="header" class="w3-container w3-animate-zoom background_black text_blue border_4px border_color_cyan border_radius_15_cent header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
 	<!-- Website title -->
 	<h2 class="text_size">
 		<p><br /><b>SpaceLiving <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i></b><br /><br /><p>
 	</h2>
 
 	<!-- Website image -->
-	<img class="box_shadow_dark_blue image_size border_4px border_color_blue border_radius_8_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="height: auto;" /><br />
-
-	<!-- Website image button -->
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="window.open('https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif')">
-		<h4 class="text_size text_black">
-			Open image in new tab: <i class="fas fa-images"></i>
-		</h4>
-	</button>
+	<img class="box_shadow_cyan image_size border_4px border_color_cyan border_radius_8_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="height: auto;" /><br />
 	<br />
 
 	<!-- Website description -->
@@ -187,137 +172,137 @@
 
 <!-- "Read story" tab -->
 <a id="read_story_anchor" name="Read story"></a>
-<div id="read_story" class="w3-container tab header_size background_black text_blue border_4px border_color_blue padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="read_story" class="w3-container tab header_size background_black text_blue border_4px border_color_cyan padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size">
-		<p><br /><b id="read_story_title">Chapters in English: 🇺🇸 <span class="text_white">18</span></b><br /><br /><p>
+		<p><br /><b id="read_story_title">Chapters in English: 🇺🇸 <span class="text_cyan">18</span></b><br /><br /><p>
 	</h2>
 
-	<hr class="border_1px border_color_blue margin_sides_5_cent" />
+	<hr class="border_1px border_color_cyan margin_sides_5_cent" />
 	<h2 class="text_size margin_sides_5_cent" style="">
 		
 			<!-- Chapter button for "1 - The SpaceShips" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('1', 'The SpaceShips');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				1 - The SpaceShips
 			</h3>
 		</button>
 
 			<!-- Chapter button for "2 - The story of Fred" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('2', 'The story of Fred');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				2 - The story of Fred
 			</h3>
 		</button>
 
 			<!-- Chapter button for "3 - The stories and the re-meeting" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('3', 'The stories and the re-meeting');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				3 - The stories and the re-meeting
 			</h3>
 		</button>
 
 			<!-- Chapter button for "4 - Ted and Monika" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('4', 'Ted and Monika');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				4 - Ted and Monika
 			</h3>
 		</button>
 
 			<!-- Chapter button for "5 - Ted and Monika, Part 2" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('5', 'Ted and Monika, Part 2');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				5 - Ted and Monika, Part 2
 			</h3>
 		</button>
 
 			<!-- Chapter button for "6 - The SpaceShips update and the reunion of brothers" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('6', 'The SpaceShips update and the reunion of brothers');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				6 - The SpaceShips update and the reunion of brothers
 			</h3>
 		</button>
 
 			<!-- Chapter button for "7 - The initiation teleport" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('7', 'The initiation teleport');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				7 - The initiation teleport
 			</h3>
 		</button>
 
 			<!-- Chapter button for "8 - The First SpaceLiving Anniversary" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('8', 'The First SpaceLiving Anniversary');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				8 - The First SpaceLiving Anniversary
 			</h3>
 		</button>
 
 			<!-- Chapter button for "9 - The Bulkan and My Little Pony dream" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('9', 'The Bulkan and My Little Pony dream');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				9 - The Bulkan and My Little Pony dream
 			</h3>
 		</button>
 
 			<!-- Chapter button for "10 - SpaceTato?" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('10', 'SpaceTato?');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				10 - SpaceTato?
 			</h3>
 		</button>
 
 			<!-- Chapter button for "11 - Arrival of the new LonelyShipper" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('11', 'Arrival of the new LonelyShipper');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				11 - Arrival of the new LonelyShipper
 			</h3>
 		</button>
 
 			<!-- Chapter button for "12 - The weird dreams of Izaque" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('12', 'The weird dreams of Izaque');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				12 - The weird dreams of Izaque
 			</h3>
 		</button>
 
 			<!-- Chapter button for "13 - Lisa's routine and Littletato's Mansion" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('13', 'Lisa's routine and Littletato's Mansion');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				13 - Lisa's routine and Littletato's Mansion
 			</h3>
 		</button>
 
 			<!-- Chapter button for "14 - Special Christmas chapter 🎄 🎁" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('14', 'Special Christmas chapter 🎄 🎁');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				14 - Special Christmas chapter 🎄 🎁
 			</h3>
 		</button>
 
 			<!-- Chapter button for "15 - The Second SpaceLiving Anniversary" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('15', 'The Second SpaceLiving Anniversary');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				15 - The Second SpaceLiving Anniversary
 			</h3>
 		</button>
 
 			<!-- Chapter button for "16 - The Visual Onomatopoeia video and the memories" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('16', 'The Visual Onomatopoeia video and the memories');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				16 - The Visual Onomatopoeia video and the memories
 			</h3>
 		</button>
 
 			<!-- Chapter button for "17 - The visit and the gaming morning" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('17', 'The visit and the gaming morning');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				17 - The visit and the gaming morning
 			</h3>
 		</button>
 
 			<!-- Chapter button for "18 - The New Year in the SpaceLiving" chapter -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('18', 'The New Year in the SpaceLiving');" style="border-radius: 50px;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+			<h3 class="text_size background_blue text_black border_4px border_color_black background_hover_white" style="font-weight: bold;">
 				18 - The New Year in the SpaceLiving
 			</h3>
 		</button>
@@ -326,31 +311,31 @@
 
 <!-- "Readers" tab -->
 <a id="readers_anchor" name="Readers"></a>
-<div id="readers" class="w3-container tab header_size background_black text_blue border_4px border_color_blue padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="readers" class="w3-container tab header_size background_black text_blue border_4px border_color_cyan padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size">
-		<p><br /><b id="readers_title">Readers: <i class="fas fa-book-reader"></i> <span class="text_white">4</span></b><br /><br /><p>
+		<p><br /><b id="readers_title">Readers: <i class="fas fa-book-reader"></i> <span class="text_cyan">4</span></b><br /><br /><p>
 	</h2>
 
-	<hr class="border_1px border_color_blue margin_sides_5_cent" />
+	<hr class="border_1px border_color_cyan margin_sides_5_cent" />
 	<h2 class="text_size margin_sides_5_cent" style="">
-		<span class="text_white">1 - </span><span class="text_hover_white">Mayu-chan (MeWe, Discord)</span><br />
-<span class="text_white">2 - </span><span class="text_hover_white">Thaíssa (Discord)</span><br />
-<span class="text_white">3 - </span><span class="text_hover_white">Lívia (Wattpad, 19/06/2021)</span><br />
-<span class="text_white">4 - </span><span class="text_hover_white">Esleine (Minecraft/Instagram, 16/04/2022)</span><br />
+		<span class="text_cyan">1 - </span><span class="text_hover_white">Mayu-chan (MeWe, Discord)</span><br />
+<span class="text_cyan">2 - </span><span class="text_hover_white">Thaíssa (Discord)</span><br />
+<span class="text_cyan">3 - </span><span class="text_hover_white">Lívia (Wattpad, 19/06/2021)</span><br />
+<span class="text_cyan">4 - </span><span class="text_hover_white">Esleine (Minecraft/Instagram, 16/04/2022)</span><br />
 
 	</h2>
 </div>
 
 <!-- "Other stories" tab -->
 <a id="other_stories_anchor" name="Other stories"></a>
-<div id="other_stories" class="w3-container tab header_size background_black text_blue border_4px border_color_blue padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="other_stories" class="w3-container tab header_size background_black text_blue border_4px border_color_cyan padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size">
-		<p><br /><b id="other_stories_title">Other stories: <i class="fas fa-book"></i> <span class="text_white">8</span></b><br /><br /><p>
+		<p><br /><b id="other_stories_title">Other stories: <i class="fas fa-book"></i> <span class="text_cyan">8</span></b><br /><br /><p>
 	</h2>
 
-	<hr class="border_1px border_color_blue margin_sides_5_cent" />
+	<hr class="border_1px border_color_cyan margin_sides_5_cent" />
 	<h2 class="text_size margin_sides_5_cent" style="">
 		
 		<!-- "Desert Island" story card -->
@@ -360,7 +345,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/Desert Island/English/Cover.png" style="width: 100%;" /><br />
+			<img class="border_4px border_color_green_water border_radius_5_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/Desert Island/English/Cover.png" style="width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -374,7 +359,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_cyan border_radius_5_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/New World/Cover.png" style="width: 100%;" /><br />
+			<img class="box_shadow_cyan border_4px border_color_cyan border_radius_5_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/New World/Cover.png" style="width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -400,7 +385,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="width: 100%;" /><br />
+			<img class="box_shadow_blue border_4px border_color_blue border_radius_5_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -426,7 +411,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_darker_purple border_radius_5_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/The Life of Littletato/English/Cover.png" style="width: 100%;" /><br />
+			<img class="box_shadow_second_purple border_4px border_color_second_purple border_radius_5_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/The Life of Littletato/English/Cover.png" style="width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -440,7 +425,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.png" style="width: 100%;" /><br />
+			<img class="border_4px border_color_blue border_radius_5_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.png" style="width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -454,7 +439,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Cover.png" style="width: 100%;" /><br />
+			<img class="box_shadow_brown border_4px border_color_brown border_radius_5_cent" src="https://thestake2-testing.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/English/Cover.png" style="width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -463,13 +448,13 @@
 
 <!-- "Websites" tab -->
 <a id="websites_tab_anchor" name="Websites"></a>
-<div id="websites_tab" class="w3-container tab header_size background_black text_blue border_4px border_color_blue padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="websites_tab" class="w3-container tab header_size background_black text_blue border_4px border_color_cyan padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size">
-		<p><br /><b id="websites_tab_title">Websites: <i class="fas fa-globe"></i> <span class="text_white">25</span></b><br /><br /><p>
+		<p><br /><b id="websites_tab_title">Websites: <i class="fas fa-globe"></i> <span class="text_cyan">25</span></b><br /><br /><p>
 	</h2>
 
-	<hr class="border_1px border_color_blue margin_sides_5_cent" />
+	<hr class="border_1px border_color_cyan margin_sides_5_cent" />
 	<h2 class="text_size margin_sides_5_cent" style="">
 		
 		<!-- "Stake2" link button -->
@@ -652,7 +637,7 @@
 
 <!-- Chapter tab for "1 - The SpaceShips" chapter -->
 <a id="chapter_1_anchor" name="1 - The SpaceShips"></a>
-<div id="chapter_1" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_1" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">1 - The SpaceShips</span></b><br /><br /><p>
@@ -660,11 +645,11 @@
 
 	<!-- Chapter button, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('2', 'The SpaceShips');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('2', 'The SpaceShips');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -673,7 +658,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_1" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/01.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_1" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/01.png" />
 		</center>
 		<br />
 
@@ -873,20 +858,20 @@
 		
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('2', 'The SpaceShips');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('2', 'The SpaceShips');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '1 - The SpaceShips')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '1 - The SpaceShips')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '1 - The SpaceShips')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '1 - The SpaceShips')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -899,32 +884,32 @@
 	<h3 class="text_size">
 		<p><br /><b>You just read: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">1 - The SpaceShips</span></b><br /><br /><p>
 	</h3>
-<hr class="border_1px border_color_black margin_sides_5_cent" />
+<hr class="border_1px border_color_dark_blue margin_sides_5_cent" />
 	<!-- Chapter reads for chapter "1 - The SpaceShips" -->
-	<h3 class="text_size text_black margin_sides_5_cent margin_top_bottom_3_cent">
+	<h3 class="text_size text_dark_blue margin_sides_5_cent margin_top_bottom_3_cent">
 		<b class="margin_top_bottom_2_cent">Reads (2): </b>
 	</h3>
 
 	<!-- Chapter read number 1 -->
-	<div class="background_cyan border_4px border_color_black border_radius_50px" style="width: 33%;">
-		<h4 class="text_size text_black margin_sides_10_cent margin_top_bottom_3_cent" style="text-align: left;">
-			<b>Lívia (Wattpad, 19/06/2021)</b><br /><b>In</b>: 00:19 19/06/2021
+	<div class="w3-container background_cyan border_4px border_color_dark_blue border_radius_50px" style="width: 33%;">
+		<h4 class="text_size text_dark_blue margin_sides_10_cent margin_top_bottom_3_cent" style="text-align: left;">
+			<b>Anonymous reader 1</b><br /><b>In</b>: 00:19 19/06/2021
 		</h4>
 	</div>
 
 	<br />
 
 	<!-- Chapter read number 2 -->
-	<div class="background_cyan border_4px border_color_black border_radius_50px" style="width: 33%;">
-		<h4 class="text_size text_black margin_sides_10_cent margin_top_bottom_3_cent" style="text-align: left;">
-			<b>Esleine (Minecraft, 16/04/2022) 😊</b><br /><b>In</b>: 20:27 16/04/2022
+	<div class="w3-container background_cyan border_4px border_color_dark_blue border_radius_50px" style="width: 33%;">
+		<h4 class="text_size text_dark_blue margin_sides_10_cent margin_top_bottom_3_cent" style="text-align: left;">
+			<b>Anonymous reader 2</b><br /><b>In</b>: 20:27 16/04/2022
 		</h4>
 	</div>
 </div>
 
 <!-- Chapter tab for "2 - The story of Fred" chapter -->
 <a id="chapter_2_anchor" name="2 - The story of Fred"></a>
-<div id="chapter_2" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_2" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">2 - The story of Fred</span></b><br /><br /><p>
@@ -932,18 +917,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('1', 'The story of Fred');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('1', 'The story of Fred');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('3', 'The story of Fred');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('3', 'The story of Fred');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -952,7 +937,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_2" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/02.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_2" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/02.png" />
 		</center>
 		<br />
 
@@ -1094,27 +1079,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('1', 'The story of Fred');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('1', 'The story of Fred');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('3', 'The story of Fred');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('3', 'The story of Fred');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '2 - The story of Fred')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '2 - The story of Fred')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '2 - The story of Fred')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '2 - The story of Fred')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -1127,34 +1112,34 @@
 	<h3 class="text_size">
 		<p><br /><b>You just read: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">2 - The story of Fred</span></b><br /><br /><p>
 	</h3>
-<hr class="border_1px border_color_black margin_sides_5_cent" />
+<hr class="border_1px border_color_dark_blue margin_sides_5_cent" />
 	<!-- Chapter comments for chapter "2 - The story of Fred" -->
-<div style="position: relative; width: 37%; float: left; margin-left: 10%;">	<h3 class="text_size text_black margin_sides_5_cent margin_top_bottom_3_cent">
+<div style="position: relative; width: 37%; float: left; margin-left: 10%;">	<h3 class="text_size text_dark_blue margin_sides_5_cent margin_top_bottom_3_cent">
 		<b class="margin_top_bottom_2_cent">Comment: </b>
 	</h3>
 
 	<!-- Chapter read number 1 -->
-	<div class="background_cyan border_4px border_color_black border_radius_50px" style="width: 100%;">
-		<h4 class="text_size text_black margin_sides_10_cent margin_top_bottom_3_cent" style="text-align: left;">
-			<b>Lívia (Wattpad, 19/06/2021)</b><br /><b>In</b>: 02:51 07/07/2021<hr class="border_1px border_color_black margin_sides_5_cent" />Continueeee
+	<div class="w3-container background_cyan border_4px border_color_dark_blue border_radius_50px" style="width: 100%;">
+		<h4 class="text_size text_dark_blue margin_sides_10_cent margin_top_bottom_3_cent" style="text-align: left;">
+			<b>Anonymous commentator 1</b><br /><b>In</b>: 02:51 07/07/2021<hr class="border_1px border_color_cyan margin_sides_5_cent" />Continueeee
 		</h4>
 	</div></div>
 	<!-- Chapter reads for chapter "2 - The story of Fred" -->
-<div style="position: relative; width: 37%; float: right; margin-right: 10%;">	<h3 class="text_size text_black margin_sides_5_cent margin_top_bottom_3_cent">
+<div style="position: relative; width: 37%; float: right; margin-right: 10%;">	<h3 class="text_size text_dark_blue margin_sides_5_cent margin_top_bottom_3_cent">
 		<b class="margin_top_bottom_2_cent">Read: </b>
 	</h3>
 
 	<!-- Chapter read number 1 -->
-	<div class="background_cyan border_4px border_color_black border_radius_50px" style="width: 100%;">
-		<h4 class="text_size text_black margin_sides_10_cent margin_top_bottom_3_cent" style="text-align: left;">
-			<b>Lívia (Wattpad, 19/06/2021)</b><br /><b>In</b>: 04:03 06/07/2021
+	<div class="w3-container background_cyan border_4px border_color_dark_blue border_radius_50px" style="width: 100%;">
+		<h4 class="text_size text_dark_blue margin_sides_10_cent margin_top_bottom_3_cent" style="text-align: left;">
+			<b>Anonymous reader 1</b><br /><b>In</b>: 04:03 06/07/2021
 		</h4>
 	</div></div>
 </div>
 
 <!-- Chapter tab for "3 - The stories and the re-meeting" chapter -->
 <a id="chapter_3_anchor" name="3 - The stories and the re-meeting"></a>
-<div id="chapter_3" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_3" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">3 - The stories and the re-meeting</span></b><br /><br /><p>
@@ -1162,18 +1147,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('2', 'The stories and the re-meeting');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('2', 'The stories and the re-meeting');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('4', 'The stories and the re-meeting');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('4', 'The stories and the re-meeting');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -1182,7 +1167,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_3" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/03.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_3" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/03.png" />
 		</center>
 		<br />
 
@@ -1354,27 +1339,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('2', 'The stories and the re-meeting');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('2', 'The stories and the re-meeting');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('4', 'The stories and the re-meeting');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('4', 'The stories and the re-meeting');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '3 - The stories and the re-meeting')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '3 - The stories and the re-meeting')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '3 - The stories and the re-meeting')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '3 - The stories and the re-meeting')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -1391,7 +1376,7 @@
 
 <!-- Chapter tab for "4 - Ted and Monika" chapter -->
 <a id="chapter_4_anchor" name="4 - Ted and Monika"></a>
-<div id="chapter_4" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_4" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">4 - Ted and Monika</span></b><br /><br /><p>
@@ -1399,18 +1384,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('3', 'Ted and Monika');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('3', 'Ted and Monika');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('5', 'Ted and Monika');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('5', 'Ted and Monika');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -1419,7 +1404,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_4" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/04.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_4" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/04.png" />
 		</center>
 		<br />
 
@@ -1574,27 +1559,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('3', 'Ted and Monika');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('3', 'Ted and Monika');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('5', 'Ted and Monika');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('5', 'Ted and Monika');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '4 - Ted and Monika')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '4 - Ted and Monika')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '4 - Ted and Monika')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '4 - Ted and Monika')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -1611,7 +1596,7 @@
 
 <!-- Chapter tab for "5 - Ted and Monika, Part 2" chapter -->
 <a id="chapter_5_anchor" name="5 - Ted and Monika, Part 2"></a>
-<div id="chapter_5" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_5" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">5 - Ted and Monika, Part 2</span></b><br /><br /><p>
@@ -1619,18 +1604,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('4', 'Ted and Monika, Part 2');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('4', 'Ted and Monika, Part 2');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('6', 'Ted and Monika, Part 2');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('6', 'Ted and Monika, Part 2');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -1639,7 +1624,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_5" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/05.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_5" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/05.png" />
 		</center>
 		<br />
 
@@ -1779,27 +1764,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('4', 'Ted and Monika, Part 2');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('4', 'Ted and Monika, Part 2');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('6', 'Ted and Monika, Part 2');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('6', 'Ted and Monika, Part 2');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '5 - Ted and Monika, Part 2')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '5 - Ted and Monika, Part 2')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '5 - Ted and Monika, Part 2')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '5 - Ted and Monika, Part 2')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -1816,7 +1801,7 @@
 
 <!-- Chapter tab for "6 - The SpaceShips update and the reunion of brothers" chapter -->
 <a id="chapter_6_anchor" name="6 - The SpaceShips update and the reunion of brothers"></a>
-<div id="chapter_6" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_6" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">6 - The SpaceShips update and the reunion of brothers</span></b><br /><br /><p>
@@ -1824,18 +1809,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('5', 'The SpaceShips update and the reunion of brothers');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('5', 'The SpaceShips update and the reunion of brothers');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('7', 'The SpaceShips update and the reunion of brothers');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('7', 'The SpaceShips update and the reunion of brothers');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -1844,7 +1829,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_6" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/06.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_6" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/06.png" />
 		</center>
 		<br />
 
@@ -2054,27 +2039,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('5', 'The SpaceShips update and the reunion of brothers');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('5', 'The SpaceShips update and the reunion of brothers');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('7', 'The SpaceShips update and the reunion of brothers');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('7', 'The SpaceShips update and the reunion of brothers');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '6 - The SpaceShips update and the reunion of brothers')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '6 - The SpaceShips update and the reunion of brothers')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '6 - The SpaceShips update and the reunion of brothers')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '6 - The SpaceShips update and the reunion of brothers')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -2091,7 +2076,7 @@
 
 <!-- Chapter tab for "7 - The initiation teleport" chapter -->
 <a id="chapter_7_anchor" name="7 - The initiation teleport"></a>
-<div id="chapter_7" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_7" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">7 - The initiation teleport</span></b><br /><br /><p>
@@ -2099,18 +2084,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('6', 'The initiation teleport');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('6', 'The initiation teleport');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('8', 'The initiation teleport');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('8', 'The initiation teleport');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -2119,7 +2104,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_7" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/07.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_7" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/07.png" />
 		</center>
 		<br />
 
@@ -2279,27 +2264,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('6', 'The initiation teleport');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('6', 'The initiation teleport');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('8', 'The initiation teleport');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('8', 'The initiation teleport');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '7 - The initiation teleport')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '7 - The initiation teleport')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '7 - The initiation teleport')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '7 - The initiation teleport')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -2316,7 +2301,7 @@
 
 <!-- Chapter tab for "8 - The First SpaceLiving Anniversary" chapter -->
 <a id="chapter_8_anchor" name="8 - The First SpaceLiving Anniversary"></a>
-<div id="chapter_8" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_8" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">8 - The First SpaceLiving Anniversary</span></b><br /><br /><p>
@@ -2324,18 +2309,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('7', 'The First SpaceLiving Anniversary');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('7', 'The First SpaceLiving Anniversary');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('9', 'The First SpaceLiving Anniversary');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('9', 'The First SpaceLiving Anniversary');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -2344,7 +2329,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_8" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/08.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_8" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/08.png" />
 		</center>
 		<br />
 
@@ -2524,27 +2509,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('7', 'The First SpaceLiving Anniversary');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('7', 'The First SpaceLiving Anniversary');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('9', 'The First SpaceLiving Anniversary');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('9', 'The First SpaceLiving Anniversary');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '8 - The First SpaceLiving Anniversary')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '8 - The First SpaceLiving Anniversary')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '8 - The First SpaceLiving Anniversary')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '8 - The First SpaceLiving Anniversary')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -2561,7 +2546,7 @@
 
 <!-- Chapter tab for "9 - The Bulkan and My Little Pony dream" chapter -->
 <a id="chapter_9_anchor" name="9 - The Bulkan and My Little Pony dream"></a>
-<div id="chapter_9" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_9" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">9 - The Bulkan and My Little Pony dream</span></b><br /><br /><p>
@@ -2569,18 +2554,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('8', 'The Bulkan and My Little Pony dream');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('8', 'The Bulkan and My Little Pony dream');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('10', 'The Bulkan and My Little Pony dream');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('10', 'The Bulkan and My Little Pony dream');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -2589,7 +2574,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_9" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/09.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_9" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/09.png" />
 		</center>
 		<br />
 
@@ -2752,27 +2737,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('8', 'The Bulkan and My Little Pony dream');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('8', 'The Bulkan and My Little Pony dream');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('10', 'The Bulkan and My Little Pony dream');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('10', 'The Bulkan and My Little Pony dream');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '9 - The Bulkan and My Little Pony dream')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '9 - The Bulkan and My Little Pony dream')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '9 - The Bulkan and My Little Pony dream')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '9 - The Bulkan and My Little Pony dream')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -2789,7 +2774,7 @@
 
 <!-- Chapter tab for "10 - SpaceTato?" chapter -->
 <a id="chapter_10_anchor" name="10 - SpaceTato?"></a>
-<div id="chapter_10" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_10" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">10 - SpaceTato?</span></b><br /><br /><p>
@@ -2797,18 +2782,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('9', 'SpaceTato?');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('9', 'SpaceTato?');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('11', 'SpaceTato?');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('11', 'SpaceTato?');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -2817,7 +2802,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_10" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/10.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_10" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/1 - 10/10.png" />
 		</center>
 		<br />
 
@@ -2978,27 +2963,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('9', 'SpaceTato?');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('9', 'SpaceTato?');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('11', 'SpaceTato?');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('11', 'SpaceTato?');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '10 - SpaceTato?')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '10 - SpaceTato?')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '10 - SpaceTato?')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '10 - SpaceTato?')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -3015,7 +3000,7 @@
 
 <!-- Chapter tab for "11 - Arrival of the new LonelyShipper" chapter -->
 <a id="chapter_11_anchor" name="11 - Arrival of the new LonelyShipper"></a>
-<div id="chapter_11" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_11" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">11 - Arrival of the new LonelyShipper</span></b><br /><br /><p>
@@ -3023,18 +3008,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('10', 'Arrival of the new LonelyShipper');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('10', 'Arrival of the new LonelyShipper');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('12', 'Arrival of the new LonelyShipper');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('12', 'Arrival of the new LonelyShipper');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -3043,7 +3028,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_11" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/11.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_11" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/11.png" />
 		</center>
 		<br />
 
@@ -3160,27 +3145,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('10', 'Arrival of the new LonelyShipper');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('10', 'Arrival of the new LonelyShipper');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('12', 'Arrival of the new LonelyShipper');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('12', 'Arrival of the new LonelyShipper');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '11 - Arrival of the new LonelyShipper')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '11 - Arrival of the new LonelyShipper')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '11 - Arrival of the new LonelyShipper')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '11 - Arrival of the new LonelyShipper')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -3197,7 +3182,7 @@
 
 <!-- Chapter tab for "12 - The weird dreams of Izaque" chapter -->
 <a id="chapter_12_anchor" name="12 - The weird dreams of Izaque"></a>
-<div id="chapter_12" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_12" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">12 - The weird dreams of Izaque</span></b><br /><br /><p>
@@ -3205,18 +3190,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('11', 'The weird dreams of Izaque');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('11', 'The weird dreams of Izaque');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('13', 'The weird dreams of Izaque');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('13', 'The weird dreams of Izaque');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -3225,7 +3210,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_12" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/12.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_12" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/12.png" />
 		</center>
 		<br />
 
@@ -3347,27 +3332,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('11', 'The weird dreams of Izaque');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('11', 'The weird dreams of Izaque');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('13', 'The weird dreams of Izaque');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('13', 'The weird dreams of Izaque');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '12 - The weird dreams of Izaque')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '12 - The weird dreams of Izaque')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '12 - The weird dreams of Izaque')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '12 - The weird dreams of Izaque')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -3384,7 +3369,7 @@
 
 <!-- Chapter tab for "13 - Lisa's routine and Littletato's Mansion" chapter -->
 <a id="chapter_13_anchor" name="13 - Lisa's routine and Littletato's Mansion"></a>
-<div id="chapter_13" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_13" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">13 - Lisa's routine and Littletato's Mansion</span></b><br /><br /><p>
@@ -3392,18 +3377,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('12', 'Lisa's routine and Littletato's Mansion');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('12', 'Lisa's routine and Littletato's Mansion');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('14', 'Lisa's routine and Littletato's Mansion');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('14', 'Lisa's routine and Littletato's Mansion');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -3412,7 +3397,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_13" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/13.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_13" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/13.png" />
 		</center>
 		<br />
 
@@ -3635,27 +3620,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('12', 'Lisa's routine and Littletato's Mansion');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('12', 'Lisa's routine and Littletato's Mansion');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('14', 'Lisa's routine and Littletato's Mansion');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('14', 'Lisa's routine and Littletato's Mansion');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '13 - Lisa's routine and Littletato's Mansion')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '13 - Lisa's routine and Littletato's Mansion')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '13 - Lisa's routine and Littletato's Mansion')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '13 - Lisa's routine and Littletato's Mansion')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -3672,7 +3657,7 @@
 
 <!-- Chapter tab for "14 - Special Christmas chapter 🎄 🎁" chapter -->
 <a id="chapter_14_anchor" name="14 - Special Christmas chapter 🎄 🎁"></a>
-<div id="chapter_14" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_14" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">14 - Special Christmas chapter 🎄 🎁</span></b><br /><br /><p>
@@ -3680,18 +3665,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('13', 'Special Christmas chapter 🎄 🎁');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('13', 'Special Christmas chapter 🎄 🎁');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('15', 'Special Christmas chapter 🎄 🎁');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('15', 'Special Christmas chapter 🎄 🎁');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -3700,7 +3685,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_14" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/14.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_14" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/14.png" />
 		</center>
 		<br />
 
@@ -3806,27 +3791,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('13', 'Special Christmas chapter 🎄 🎁');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('13', 'Special Christmas chapter 🎄 🎁');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('15', 'Special Christmas chapter 🎄 🎁');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('15', 'Special Christmas chapter 🎄 🎁');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '14 - Special Christmas chapter 🎄 🎁')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '14 - Special Christmas chapter 🎄 🎁')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '14 - Special Christmas chapter 🎄 🎁')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '14 - Special Christmas chapter 🎄 🎁')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -3843,7 +3828,7 @@
 
 <!-- Chapter tab for "15 - The Second SpaceLiving Anniversary" chapter -->
 <a id="chapter_15_anchor" name="15 - The Second SpaceLiving Anniversary"></a>
-<div id="chapter_15" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_15" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">15 - The Second SpaceLiving Anniversary</span></b><br /><br /><p>
@@ -3851,18 +3836,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('14', 'The Second SpaceLiving Anniversary');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('14', 'The Second SpaceLiving Anniversary');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('16', 'The Second SpaceLiving Anniversary');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('16', 'The Second SpaceLiving Anniversary');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -3871,7 +3856,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_15" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/15.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_15" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/15.png" />
 		</center>
 		<br />
 
@@ -4039,27 +4024,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('14', 'The Second SpaceLiving Anniversary');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('14', 'The Second SpaceLiving Anniversary');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('16', 'The Second SpaceLiving Anniversary');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('16', 'The Second SpaceLiving Anniversary');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '15 - The Second SpaceLiving Anniversary')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '15 - The Second SpaceLiving Anniversary')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '15 - The Second SpaceLiving Anniversary')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '15 - The Second SpaceLiving Anniversary')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -4076,7 +4061,7 @@
 
 <!-- Chapter tab for "16 - The Visual Onomatopoeia video and the memories" chapter -->
 <a id="chapter_16_anchor" name="16 - The Visual Onomatopoeia video and the memories"></a>
-<div id="chapter_16" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_16" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">16 - The Visual Onomatopoeia video and the memories</span></b><br /><br /><p>
@@ -4084,18 +4069,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('15', 'The Visual Onomatopoeia video and the memories');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('15', 'The Visual Onomatopoeia video and the memories');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('17', 'The Visual Onomatopoeia video and the memories');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('17', 'The Visual Onomatopoeia video and the memories');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -4104,7 +4089,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_16" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/16.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_16" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/16.png" />
 		</center>
 		<br />
 
@@ -4267,27 +4252,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('15', 'The Visual Onomatopoeia video and the memories');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('15', 'The Visual Onomatopoeia video and the memories');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('17', 'The Visual Onomatopoeia video and the memories');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('17', 'The Visual Onomatopoeia video and the memories');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '16 - The Visual Onomatopoeia video and the memories')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '16 - The Visual Onomatopoeia video and the memories')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '16 - The Visual Onomatopoeia video and the memories')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '16 - The Visual Onomatopoeia video and the memories')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -4304,7 +4289,7 @@
 
 <!-- Chapter tab for "17 - The visit and the gaming morning" chapter -->
 <a id="chapter_17_anchor" name="17 - The visit and the gaming morning"></a>
-<div id="chapter_17" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_17" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">17 - The visit and the gaming morning</span></b><br /><br /><p>
@@ -4312,18 +4297,18 @@
 
 	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('16', 'The visit and the gaming morning');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('16', 'The visit and the gaming morning');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('18', 'The visit and the gaming morning');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('18', 'The visit and the gaming morning');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
@@ -4332,7 +4317,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_17" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/17.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_17" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/17.png" />
 		</center>
 		<br />
 
@@ -4443,27 +4428,27 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('16', 'The visit and the gaming morning');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('16', 'The visit and the gaming morning');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('18', 'The visit and the gaming morning');" style="border-radius: 50px; float: right;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('18', 'The visit and the gaming morning');" style="border-radius: 50px; float: right;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '17 - The visit and the gaming morning')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '17 - The visit and the gaming morning')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '17 - The visit and the gaming morning')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '17 - The visit and the gaming morning')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -4480,7 +4465,7 @@
 
 <!-- Chapter tab for "18 - The New Year in the SpaceLiving" chapter -->
 <a id="chapter_18_anchor" name="18 - The New Year in the SpaceLiving"></a>
-<div id="chapter_18" class="w3-container tab header_size background_blue text_black border_4px border_color_black border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_18" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>You are reading: <span class="text_dark_blue">SpaceLiving</span><br />Chapter: <span class="text_dark_blue">18 - The New Year in the SpaceLiving</span></b><br /><br /><p>
@@ -4488,11 +4473,11 @@
 
 	<!-- Chapter button, image, and text -->
 	<div class="margin_sides_5_cent">
-		<hr class="border_1px border_color_black" />		
+		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('17', 'The New Year in the SpaceLiving');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('17', 'The New Year in the SpaceLiving');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
@@ -4501,7 +4486,7 @@
 
 		<!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_black border_radius_8_cent" id="chapter_cover_18" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/18.png" />
+			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_18" src="https://thestake2-testing.netlify.app/Images/Story Covers/SpaceLiving/English/11 - 20/18.png" />
 		</center>
 		<br />
 
@@ -4611,20 +4596,20 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Open_Chapter('17', 'The New Year in the SpaceLiving');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_black" style="font-weight: bold;">
+		<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('17', 'The New Year in the SpaceLiving');" style="border-radius: 50px; float: left;">
+			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
 		</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('comment', '18 - The New Year in the SpaceLiving')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('comment', '18 - The New Year in the SpaceLiving')" style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_black" onclick="Open_Modal('read', '18 - The New Year in the SpaceLiving')" style="font-weight: bold;">
+	<button class="w3-btn background_cyan text_black border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_blue" onclick="Open_Modal('read', '18 - The New Year in the SpaceLiving')" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -4642,7 +4627,7 @@
 <!-- Chapter comment modal for all chapters -->
 <a id="chapter_comment_anchor" name="chapter_comment"></a>
 <div id="chapter_comment" class="modal" style="display: none; border-radius: 50px;">
-	<div class="modal-content header_size background_black text_blue border_4px border_color_blue padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom text_blue margin_6_cent_auto" style="width: 50%; border-radius: 50px; padding-bottom: 7%;">
+	<div class="modal-content header_size background_black text_blue border_4px border_color_cyan padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom text_blue margin_6_cent_auto" style="width: 50%; border-radius: 50px; padding-bottom: 7%;">
 		<!-- Hide modal button -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Hide_Modal('comment');" style="float: right; padding: 2px 14px 3px 15px !important;">
 			<h4 class="text_size" style="font-weight: bold;">
@@ -4659,7 +4644,7 @@
 		<br />
 
 		<!-- Comment form -->
-		<form method="POST" name="Story_Comment">
+		<form name="Story_Comment" method="POST" data-netlify="True">
 			<input type="hidden" name="form-name" value="Story_Comment">
 			<input type="hidden" name="website_title" value="SpaceLiving">
 	
@@ -4694,7 +4679,7 @@
 <!-- Chapter read modal for all chapters -->
 <a id="chapter_read_anchor" name="chapter_read"></a>
 <div id="chapter_read" class="modal" style="display: none; border-radius: 50px;">
-	<div class="modal-content header_size background_black text_blue border_4px border_color_blue padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom text_blue" style="width: 50%; border-radius: 50px; padding-bottom: 7%;">
+	<div class="modal-content header_size background_black text_blue border_4px border_color_cyan padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom text_blue" style="width: 50%; border-radius: 50px; padding-bottom: 7%;">
 		<!-- Hide modal button -->
 		<button class="w3-btn background_blue text_black border_4px border_color_black background_hover_white" onclick="Hide_Modal('read');" style="float: right; padding: 2px 14px 3px 15px !important;">
 			<h4 class="text_size" style="font-weight: bold;">
@@ -4711,7 +4696,7 @@
 		<br />
 
 		<!-- Read form -->
-		<form method="POST" name="Story_Read">
+		<form name="Story_Read" method="POST" data-netlify="True">
 			<input type="hidden" name="form-name" value="Story_Read">
 			<input type="hidden" name="website_title" value="SpaceLiving">
 	
