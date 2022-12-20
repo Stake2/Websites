@@ -26,18 +26,18 @@ Read [Code of Conduct](https://github.com/Stake2/Websites/blob/main/CODE_OF_COND
 
 [Diary Slim](https://thestake2.netlify.app/Diary%20Slim/)
 
-[My Little Pony Friendship Is Magic](https://thestake2.netlify.app/My%20Little%20Pony%20Friendship%20Is%20Magic/)
+[My Little Pony Friendship Is Magic](https://thestake2.netlify.app/My%20Little%20Pony%2FFriendship%20Is%20Magic/)
 
 [Watch History](https://thestake2.netlify.app/Watch%20History/)
 
-[The Life of Littletato](https://thestake2.netlify.app/The%20Life%20of%20Littletato/)
-
-[The Secret of the Crystals](https://thestake2.netlify.app/The%20Secret%20of%20the%20Crystals/)
+[Desert Island](https://thestake2.netlify.app/Desert%20Island/)
 
 [New World](https://thestake2.netlify.app/New%20World/)
 
 [SpaceLiving](https://thestake2.netlify.app/New_World/SpaceLiving/)
 
-[The Story of the Bulkan Siblings](https://thestake2.netlify.app/The%20Story%20of%20the%20Bulkan%20Siblings/)
+[The Life of Littletato](https://thestake2.netlify.app/The%20Life%20of%20Littletato/)
 
-[Desert Island](https://thestake2.netlify.app/Desert%20Island/)
+[The Secret of the Crystals](https://thestake2.netlify.app/The%20Secret%20of%20the%20Crystals/)
+
+[The Story of the Bulkan Siblings](https://thestake2.netlify.app/The%20Story%20of%20the%20Bulkan%20Siblings/)

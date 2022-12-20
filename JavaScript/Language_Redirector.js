@@ -82,7 +82,7 @@ Object.keys(parameters).forEach(
 
 function Check_Language() {
 	var text = Language_Redirector.language_texts["script_name"] + ".Check_Language():\n\n" +
-	Language_Redirector.language_texts["website_title"] + ": " + website["title"] + "\n\n" +
+	Language_Redirector.language_texts["website_title"] + ": " + website["title"] + "\n" +
 	Language_Redirector.language_texts["website_link"] + ": " + website["link"] + "\n\n" +
 	Language_Redirector.language_texts["user_language"] + ": " + languages["full_translated"][languages["user"]][languages["user"]] + "\n" +
 	Language_Redirector.language_texts["website_language"] + ": " + languages["full_translated"][languages["full_to_small"][languages["meta"]]][languages["user"]]
@@ -95,8 +95,6 @@ function Check_Language() {
 
 	var meta_language = languages["full_translated"][languages["full_to_small"][languages["meta"]]][languages["user"]]
 	var translated_user_language = languages["full_translated"][languages["user"]][languages["user"]]
-
-	text += "\n\n" + Language_Redirector.language_texts["link, title()"] + ": " + website["link"]
 
 	var add_text = format(Language_Redirector.language_texts["the_user_is_in_the_{0}_redirecting_to_{1}_website"] + "...", meta_language, translated_user_language)
 

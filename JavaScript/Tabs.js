@@ -11,6 +11,10 @@ class Tabs_Class {
 			"en": 'Opened the tab with id "{0}", title "{1}", and number "{2}"',
 			"pt": 'Aberto a aba com id "{0}", título "{1}", e número "{2}"',
 		},
+		"undefined": {
+			"en": "Undefined",
+			"pt": "Indefinido",
+		},
 	}
 }
 
@@ -49,7 +53,15 @@ function Open_Tab(tab_id) {
 	}
 
 	// Get tab title
-	var tab_title = String(document.getElementById(tab_id + "_title").innerHTML).split(": ")[0]
+	tab_title_element = document.getElementById(tab_id + "_title")
+
+	if (typeof tab_title_element != "undefined" && tab_title_element != null) {
+		var tab_title = String(document.getElementById(tab_id + "_title").innerHTML).split(": ")[0]
+	}
+
+	else {
+		var tab_title = Tabs.language_texts["undefined"]
+	}
 
 	// Define tab number
 	var i = 0
