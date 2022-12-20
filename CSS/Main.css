@@ -1,0 +1,310 @@
+body {
+	--max-width: 70%;
+}
+
+:root {
+	--one-dot-six-line-height: 1.6;
+}
+
+/* Mobile resolution below width 200px */
+@media only screen
+	and (min-device-width: 0px)
+	and (max-device-width: 299px) {
+	.text_size {
+		font-size: 13px !important;
+	}
+
+	.image_size {
+		max-width: 100%;
+	}
+
+	.div_size {
+		width: 100%;
+	}
+
+	.header_size {
+		width: 100%;
+	}
+
+	.width_size {
+		width: 100%;
+	}
+}
+
+/* Mobile resolution smaller */
+@media only screen
+	and (min-device-width: 300px)
+	and (max-device-width: 512px) {
+	.text_size {
+		font-size: 15px !important;
+	}
+
+	.image_size {
+		max-width: 80%;
+	}
+
+	.header_size {
+		width: 80%;
+	}
+
+	.width_size {
+		width: 60%;
+	}
+}
+
+/* Mobile resolution */
+@media only screen
+	and (min-device-width: 513px)
+	and (max-device-width: 1024px) {
+	.text_size {
+		font-size: 17px !important;  /* h4 + 1 */
+	}
+
+	.image_size {
+		max-width: var(--max-width);
+	}
+
+	.header_size {
+		width: 80%;
+	}
+
+	.width_size {
+		width: 70% !important;
+	}
+}
+
+/* Computer resolution */
+@media only screen
+	and (min-device-width: 1025px) {
+
+	.image_size {
+		max-width: var(--max-width);
+	}
+
+	.header_size {
+		width: 80%;
+	}
+
+	.width_size {
+		width: 60% !important;
+	}
+}
+
+.h2 {
+	font-size: 24px !important;
+}
+
+.h4 {
+	font-size: 16px !important;
+}
+
+.height_auto {
+	height: auto;
+}
+
+/* Hide mobile elements on desktop */
+.mobile {
+	display: none;
+}
+
+/* Show desktop elements on desktop */
+.desktop {
+	display: block;
+}
+
+@media only screen
+	and (min-device-width: 0px)
+	and (max-device-width: 1024px) {
+	/* Show mobile elements on mobile */
+	.mobile {
+		display: block;
+	}
+
+	/* Hide mobile elements on desktop */
+	.desktop {
+		display: none;
+	}
+}
+
+.border_1px {
+	border-width: 1px!important;
+	border-style: solid!important;
+}
+
+.border_2px {
+	border-width: 2px!important;
+	border-style: solid!important;
+}
+
+.border_3px {
+	border-width: 3px!important;
+	border-style: solid!important;
+}
+
+.border_4px {
+	border-width: 4px!important;
+	border-style: solid!important;
+}
+
+.border_5px {
+	border-width: 5px!important;
+	border-style: solid!important;
+}
+
+.border_radius_30_cent {
+	border-radius: 30%;
+}
+
+.border_radius_50px {
+	border-radius: 50px;
+}
+
+.margin_10_cent {
+	margin: 10%;
+}
+
+.margin_sides_5_cent {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.margin_sides_10_cent {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.margin_sides_42_cent {
+	margin-left: 42%;
+	margin-right: 42%;
+}
+
+.margin_sides_45_cent {
+	margin-left: 45%;
+	margin-right: 45%;
+}
+
+.margin_bottom_2_cent {
+	margin-bottom: 2%;
+}
+
+.margin_bottom_10_cent {
+	margin-bottom: 10%;
+}
+
+.margin_bottom_20px {
+	margin-bottom: 20px;
+}
+
+.transform_scale_2 {
+	transform: scale(2);
+}
+
+.padding_bottom_1_cent {
+	padding-bottom: 1%;
+}
+
+.padding_20px {
+	padding: 20px;
+}
+
+.font_style_bold {
+	font-style: bold;
+}
+
+.font_size_18_72px {
+	font-size: 18.72px;
+}
+
+.font_size_20px {
+	font-size: 20px;
+}
+
+.width_40_cent {
+	width: 40%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+b {
+	white-space: unset !important;
+	line-height: var(--one-dot-six-line-height) !important;
+}
+
+textarea {
+	outline: none !important;
+}
+
+button {
+	padding: 15px 25px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	border-radius: 15px;
+	white-space: unset !important;
+}
+
+button:hover h2 span,
+button:hover h4 span {
+	color: black !important;
+}
+
+button:hover {
+	/* Start the shake animation and make the animation last for 0.5 seconds */
+	animation: animation_shake_side 0.8s;
+
+	/* When the animation is finished, start again */
+	animation-iteration-count: infinite;
+}
+
+@keyframes animation_shake_side {
+	0% {
+		transform: translateX(-10px);
+	}
+
+	50% {
+		transform: translateX(10px);
+	}
+
+	100% {
+		transform: translateX(-10px);
+	} 
+}
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+	margin: 15% auto; /* 15% from the top and centered */
+	padding: 20px;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal_close_button {
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.modal_close_button:hover,
+.modal_close_button:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
