@@ -1,5 +1,7 @@
+// Language.js
+
 // Define Language_Class for definition of language texts
-export class Language_Class {
+class Language_Class {
 	languages = {
 		"user": String(navigator.website_language || navigator.userLanguage || navigator.language).split("-")[0],
 		"meta": document.head.querySelector('[name="meta_language"]').content,
@@ -51,8 +53,12 @@ export class Language_Class {
 			for (var i = 0; i < Object.keys(item).length; i++) {
 				var key = Object.keys(item)[i]
 
-				if (this.languages["user"] in item[key]) {
+				if (typeof item[key] === "object" && this.languages["user"] in item[key]) {
 					dictionary[key] = item[key][this.languages["user"]]
+				}
+
+				if (typeof item[key] === "string") {
+					dictionary[key] = item[key]
 				}
 			}
 
@@ -62,37 +68,14 @@ export class Language_Class {
 
 	Define_Texts() {
 		this.texts = {
-			"website_title": {
-				"en": "Website title",
-				"pt": "Título do site",
+			"script_name": "Language",
+			"language_script_name": {
+				"en": "Language",
+				"pt": "Idioma",
 			},
-			"website_link": {
-				"en": "Website link",
-				"pt": "Link do site",
-			},
-			"website_language": {
-				"en": "Website language",
-				"pt": "Idioma do site",
-			},
-			"user_language": {
-				"en": "User language",
-				"pt": "Idioma do usuário",
-			},
-			"link, title()": {
-				"en": "Link",
-				"pt": "Link",
-			},
-			"the_user_is_in_the_{0}_redirecting_to_{1}_website": {
-				"en": `The user is in the {0} website, redirecting to {1} website`,
-				"pt": `O usuário está no site {0}, redirecionando para o site em {1}`,
-			},
-			"the_user_is_in_the_correct_website_for_their_language": {
-				"en": "The user is in the correct website for their language",
-				"pt": "O usuário está no site correto para seu idioma",
-			},
-			"{0}_script_was_loaded": {
-				"en": '"{0}.js" script was loaded.',
-				"pt": 'O script "{0}.js" foi carregado.',
+			"javascript_{0}_script_was_loaded": {
+				"en": 'JavaScript: "{0}.js" script was loaded.',
+				"pt": 'JavaScript: O script "{0}.js" foi carregado.',
 			},
 		}
 
@@ -101,16 +84,18 @@ export class Language_Class {
 }
 
 // JavaScript String format function
-export function format(text) {
-  var args = arguments
+function format(text) {
+	var args = arguments
 
 	return text.replace(/{([0-9]+)}/g, function(match, index) {
-		return args[Number(index) + 1];
-	});
-};
+		return args[Number(index) + 1]
+	})
+}
 
-export function print(text) {
+function print(text) {
 	console.log(text)
 }
 
-export const Language = new Language_Class()
+const Language = new Language_Class()
+
+print(format(Language.language_texts["javascript_{0}_script_was_loaded"], Language.language_texts["language_script_name"]))

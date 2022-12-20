@@ -1,3 +1,5 @@
+// Functions.js
+
 // Functions that are used on various websites
 
 // Remove zoom class after page has been loaded
@@ -11,6 +13,13 @@ function Remove_Zoom() {
 			}
 		}
 	)
+
+	var text = {
+		"en": 'The "w3-animate-zoom" class was removed from the buttons (removed zoom animation of buttons)',
+		"pt": 'A classe "w3-animate-zoom" foi removida dos botões (removida animação de zoom dos botões)',
+	}
+
+	print("Functions.Remove_Zoom(): " + Language.Item(text) + ".")
 }
 
 // Click on input button part
@@ -83,3 +92,26 @@ array.forEach(
 		}
 	}
 )
+
+// Open tab by URL
+parameters = Object.fromEntries(  
+	new URLSearchParams(window.location.search)
+)
+
+// Check tab in URL and open if tab is present in URL
+if (Object.keys(parameters).includes("tab") == true) {
+	setTimeout(
+		function() {
+			tab = Array.from(document.getElementsByClassName("tab"))[parameters["tab"] - 1]
+			Open_Tab(tab.id)
+		},
+		3000,
+	)
+}
+
+var script_name = {
+	"en": "Functions",
+	"pt": "Funções",
+}
+
+print(format(Language.language_texts["javascript_{0}_script_was_loaded"], Language.Item(script_name)))
