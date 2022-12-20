@@ -1,4 +1,7 @@
 var root_website_link = "https://thestake2.netlify.app/";
+var websites_list_text_files = root_website_link + "Texts/Websites%20List/";
+var english_website_names_url = websites_list_text_files + "English%20Websites%20Array.txt";
+var portuguese_website_names_url = websites_list_text_files + "Portuguese%20Websites%20Keyed.txt";
 
 var user_language = navigator.website_language || navigator.userLanguage || navigator.language;
 var website_language = user_language;
