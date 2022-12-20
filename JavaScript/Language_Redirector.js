@@ -107,7 +107,17 @@ function Check_Language() {
 			website["link"] += "/"
 		}
 
-		website["link"] = website["link"] + languages["user"] + "/" + website["addon"]
+		if (website["link"].includes("?") == true) {
+			website["link"] = website["link"].split("?")[0]
+		}
+
+		if (website["link"].includes(languages["user"] + "/") == false) {
+			website["link"] += languages["user"] + "/"
+		}
+
+		if (website["link"].includes("?") == false) {
+			website["link"] += website["addon"]
+		}
 
 		text += "\n" + Language_Redirector.language_texts["new_link"] + ": " + website["link"]
 	}
