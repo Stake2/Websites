@@ -35,7 +35,7 @@
 	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Icons/2022.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 20/12/2022." />
+	<meta name="revised" content="Stake2's Enterprise TM, 22/12/2022." />
 	<meta name="author" content="Stake2" />
 
 	<!-- Viewport and charset -->
@@ -97,7 +97,7 @@
 		</h4>
 	</button>
 
-	<h2 class="text_size text_dark_yellow" style="font-weight: bold;">Menu de abas: </h2>
+	<h2 class="text_size text_black" style="font-weight: bold;">Menu de abas: </h2>
 
 	<br />
 
@@ -128,8 +128,17 @@
 		</button>
 	</span>
 
-	<!-- "Anos" button -->
+	<!-- "Tarefas" button -->
 	<span id="button_4" class="tab_button">
+		<button class="w3-btn background_yellow_sand text_dark_yellow border_4px border_color_dark_yellow box_shadow_yellow_sand background_hover_white"  onclick="Open_Tab('tasks');" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Tarefas: <i class="fa-solid fa-check"></i>
+			</h2>
+		</button>
+	</span>
+
+	<!-- "Anos" button -->
+	<span id="button_5" class="tab_button">
 		<button class="w3-btn background_yellow_sand text_dark_yellow border_4px border_color_dark_yellow box_shadow_yellow_sand background_hover_white"  onclick="Open_Tab('years');" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Anos: <i class="fa-solid fa-calendar-days"></i>
@@ -138,7 +147,7 @@
 	</span>
 
 	<!-- "Sites" button -->
-	<span id="button_5" class="tab_button">
+	<span id="button_6" class="tab_button">
 		<button class="w3-btn background_yellow_sand text_dark_yellow border_4px border_color_dark_yellow box_shadow_yellow_sand background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Sites: <i class="fas fa-globe"></i>
@@ -150,7 +159,7 @@
 <!-- Website header -->
 <div id="header" class="w3-container w3-animate-zoom header_size background_yellow text_dark_yellow border_4px border_color_yellow_sand border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
 	<!-- Website title -->
-	<h2 class="text_size text_dark_yellow">
+	<h2 class="text_size text_black">
 		<p><br /><b>Meu 2022 <i class="fa-solid fa-calendar-days"></i></b><br /><br /><p>
 	</h2>
 
@@ -167,7 +176,7 @@
 
 	<!-- Website description -->
 	<h3 class="text_size">
-Site para mostrar como <span class="text_dark_yellow">Meu 2022</span> foi, e o que eu fiz nele.<br />Feito por <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span>.	</h3>
+Site para mostrar como <span class="text_black">Meu 2022</span> foi, e o que eu fiz nele.<br />Feito por <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span>.	</h3>
 	<br />
 </div>
 
@@ -177,7 +186,7 @@ Site para mostrar como <span class="text_dark_yellow">Meu 2022</span> foi, e o q
 <a id="summary_anchor" name="Resumo"></a>
 <div id="summary" class="w3-container tab header_size background_yellow text_dark_yellow border_4px border_color_yellow_sand border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
-	<h2 class="text_size text_dark_yellow">
+	<h2 class="text_size text_black">
 		<p><br /><b id="summary_title">Resumo: <i class="far fa-clipboard"></i></b><br /><br /><p>
 	</h2>
 
@@ -191,7 +200,7 @@ Site para mostrar como <span class="text_dark_yellow">Meu 2022</span> foi, e o q
 <a id="this_year_i_anchor" name="Este Ano Eu"></a>
 <div id="this_year_i" class="w3-container tab header_size background_yellow text_dark_yellow border_4px border_color_yellow_sand border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
-	<h2 class="text_size text_dark_yellow">
+	<h2 class="text_size text_black">
 		<p><br /><b id="this_year_i_title">Este Ano Eu: <i class="fa-solid fa-calendar-days"></i></b><br /><br /><p>
 	</h2>
 
@@ -205,357 +214,613 @@ Site para mostrar como <span class="text_dark_yellow">Meu 2022</span> foi, e o q
 <a id="watched_things_anchor" name="Coisas assistidas"></a>
 <div id="watched_things" class="w3-container tab header_size background_yellow text_dark_yellow border_4px border_color_yellow_sand border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
-	<h2 class="text_size text_dark_yellow">
-		<p><br /><b id="watched_things_title">Coisas assistidas: <i class="fas fa-eye"></i> <span class="text_dark_yellow">82</span></b><br /><br /><p>
+	<h2 class="text_size text_black">
+		<p><br /><b id="watched_things_title">Coisas assistidas: <i class="fas fa-eye"></i> <span class="text_black">83</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_yellow_sand margin_sides_5_cent" />
 	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
 		<!-- Media type headers -->
-		<a href="#Animes"><b>Animes: <span class="text_dark_yellow">29</span></b></a><br />
-		<a href="#Desenhos"><b>Desenhos: <span class="text_dark_yellow">6</span></b></a><br />
-		<a href="#Séries"><b>Séries: <span class="text_dark_yellow">19</span></b></a><br />
-		<a href="#Filmes"><b>Filmes: <span class="text_dark_yellow">2</span></b></a><br />
-		<a href="#Vídeos"><b>Vídeos: <span class="text_dark_yellow">26</span></b></a><br />
+		<a href="#Coisas assistidas: Animes"><b>Animes: <span class="text_black">30</span></b></a><br />
+		<a href="#Coisas assistidas: Desenhos"><b>Desenhos: <span class="text_black">6</span></b></a><br />
+		<a href="#Coisas assistidas: Séries"><b>Séries: <span class="text_black">19</span></b></a><br />
+		<a href="#Coisas assistidas: Filmes"><b>Filmes: <span class="text_black">2</span></b></a><br />
+		<a href="#Coisas assistidas: Vídeos"><b>Vídeos: <span class="text_black">26</span></b></a><br />
 		
 		<br />
 
 		<!-- "Animes" media type header -->
-		<a name="Animes"><b>Animes: <span class="text_dark_yellow">29</span></b></a><br />
+		<a name="Coisas assistidas: Animes"><b>Animes: <span class="text_black">30</span></b></a><br />
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">1</span> - Kamisama Ni Natta Hi EP07 "O Dia da Gravação do Filme" <span class="text_dark_yellow">(23:30 05/01/2022)</span>
+			<span class="text_black">1</span> - Kamisama Ni Natta Hi EP07 "O Dia da Gravação do Filme" <span class="text_black">(23:30 05/01/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">2</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP01(39) "Aposta Direta" <span class="text_dark_yellow">(18:43 06/01/2022)</span>
+			<span class="text_black">2</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP01(39) "Aposta Direta" <span class="text_black">(18:43 06/01/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">3</span> - Kamisama Ni Natta Hi EP08 "O Dia da Viagem à Praia" <span class="text_dark_yellow">(19:20 08/01/2022)</span>
+			<span class="text_black">3</span> - Kamisama Ni Natta Hi EP08 "O Dia da Viagem à Praia" <span class="text_black">(19:20 08/01/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">4</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP02(40) "Otto Suwen / Um Motivo para Acreditar" <span class="text_dark_yellow">(22:18 12/01/2022)</span>
+			<span class="text_black">4</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP02(40) "Otto Suwen / Um Motivo para Acreditar" <span class="text_black">(22:18 12/01/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">5</span> - Kamisama Ni Natta Hi EP09 "O Dia de matar um Deus" <span class="text_dark_yellow">(22:21 13/01/2022)</span>
+			<span class="text_black">5</span> - Kamisama Ni Natta Hi EP09 "O Dia de matar um Deus" <span class="text_black">(22:21 13/01/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">6</span> - Kamisama Ni Natta Hi EP10 "Dias que passam" <span class="text_dark_yellow">(20:50 14/01/2022)</span>
+			<span class="text_black">6</span> - Kamisama Ni Natta Hi EP10 "Dias que passam" <span class="text_black">(20:50 14/01/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">7</span> - Kamisama Ni Natta Hi EP11 "Dias de Jogo" <span class="text_dark_yellow">(14:11 17/01/2022)</span>
+			<span class="text_black">7</span> - Kamisama Ni Natta Hi EP11 "Dias de Jogo" <span class="text_black">(14:11 17/01/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">8</span> - Shingeki no Kyojin: A Temporada Final E15(74) "A Única Salvação" <span class="text_dark_yellow">(13:27 26/02/2022)</span>
+			<span class="text_black">8</span> - Shingeki no Kyojin: A Temporada Final E15(74) "A Única Salvação" <span class="text_black">(13:27 26/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">9</span> - Maoujou De Oyasumi EP05 "Quinta Noite: A Princesa e as Guerreiras" <span class="text_dark_yellow">(16:07 26/02/2022)</span>
+			<span class="text_black">9</span> - Maoujou De Oyasumi EP05 "Quinta Noite: A Princesa e as Guerreiras" <span class="text_black">(16:07 26/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">10</span> - Maoujou De Oyasumi EP06 "A escolha inabalável da princesa" <span class="text_dark_yellow">(20:43 12/03/2022)</span>
+			<span class="text_black">10</span> - Maoujou De Oyasumi EP06 "A escolha inabalável da princesa" <span class="text_black">(20:43 12/03/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">11</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP03(41) "Ninguém Pode Levantar Uma Pedra Quain Sozinho" <span class="text_dark_yellow">(22:32 26/03/2022)</span>
+			<span class="text_black">11</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP03(41) "Ninguém Pode Levantar Uma Pedra Quain Sozinho" <span class="text_black">(22:32 26/03/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">12</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP04(42) "Uma Jornada Pelas Memórias" <span class="text_dark_yellow">(00:41 22/04/2022)</span>
+			<span class="text_black">12</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP04(42) "Uma Jornada Pelas Memórias" <span class="text_black">(00:41 22/04/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">13</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP05(43) "O Dia Em Que Betelgeuse Riu" <span class="text_dark_yellow">(00:00 02/05/2022)</span>
+			<span class="text_black">13</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP05(43) "O Dia Em Que Betelgeuse Riu" <span class="text_black">(00:00 02/05/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">14</span> - Shingeki no Kyojin: A Temporada Final E16(75) "No Céu e na Terra" <span class="text_dark_yellow">(22:30 07/05/2022)</span>
+			<span class="text_black">14</span> - Shingeki no Kyojin: A Temporada Final E16(75) "No Céu e na Terra" <span class="text_black">(22:30 07/05/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">15</span> - Yuru Camp△ Dublado EP01 "Monte Fuji e lámen de curry" (Re-Assistido 1x) <span class="text_dark_yellow">(04:06 13/05/2022)</span>
+			<span class="text_black">15</span> - Yuru Camp△ Dublado EP01 "Monte Fuji e lámen de curry" (Re-Assistido 1x) <span class="text_black">(04:06 13/05/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">16</span> - Yuru Camp△ Dublado EP02 "Bem-vindas ao clube de atividades ao ar livre" (Re-Assistido 1x) <span class="text_dark_yellow">(21:12 14/05/2022)</span>
+			<span class="text_black">16</span> - Yuru Camp△ Dublado EP02 "Bem-vindas ao clube de atividades ao ar livre" (Re-Assistido 1x) <span class="text_black">(21:12 14/05/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">17</span> - Yuru Camp△ Dublado EP03 "Monte Fuji e ensopado relaxado" (Re-Assistido 1x) <span class="text_dark_yellow">(02:13 19/05/2022)</span>
+			<span class="text_black">17</span> - Yuru Camp△ Dublado EP03 "Monte Fuji e ensopado relaxado" (Re-Assistido 1x) <span class="text_black">(02:13 19/05/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">18</span> - Yuru Camp△ Dublado EP04 "Clube de atividades ao ar livre e a menina que acampa sozinha" (Re-Assistido 1x) <span class="text_dark_yellow">(02:14 21/05/2022)</span>
+			<span class="text_black">18</span> - Yuru Camp△ Dublado EP04 "Clube de atividades ao ar livre e a menina que acampa sozinha" (Re-Assistido 1x) <span class="text_black">(02:14 21/05/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">19</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP06(44) "O Permafrost da Floresta Elior" <span class="text_dark_yellow">(22:50 22/05/2022)</span>
+			<span class="text_black">19</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP06(44) "O Permafrost da Floresta Elior" <span class="text_black">(22:50 22/05/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">20</span> - Yuru Camp△ Dublado EP05 "Dois acampamentos e duas paisagens" (Re-Assistido 1x) <span class="text_dark_yellow">(04:26 06/06/2022)</span>
+			<span class="text_black">20</span> - Yuru Camp△ Dublado EP05 "Dois acampamentos e duas paisagens" (Re-Assistido 1x) <span class="text_black">(04:26 06/06/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">21</span> - Yuru Camp△ Dublado EP06 "Carne, cores de outono e o lago misterioso" (Re-Assistido 1x) <span class="text_dark_yellow">(20:08 17/06/2022)</span>
+			<span class="text_black">21</span> - Yuru Camp△ Dublado EP06 "Carne, cores de outono e o lago misterioso" (Re-Assistido 1x) <span class="text_black">(20:08 17/06/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">22</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP07(45) "O Começo do Santuário e o Começo do Fim" <span class="text_dark_yellow">(02:27 03/07/2022)</span>
+			<span class="text_black">22</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP07(45) "O Começo do Santuário e o Começo do Fim" <span class="text_black">(02:27 03/07/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">23</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP08(46) "A Reunião dos Rugidos" <span class="text_dark_yellow">(23:01 05/08/2022)</span>
+			<span class="text_black">23</span> - Re:Zero kara Hajimeru Isekai Seikatsu Segunda Temporada Parte 2 EP08(46) "A Reunião dos Rugidos" <span class="text_black">(23:01 05/08/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">24</span> - Sansha Sanyou EP01 "Estas são crostas de pão" (Re-Assistido 1x) <span class="text_dark_yellow">(19:21 06/08/2022)</span>
+			<span class="text_black">24</span> - Sansha Sanyou EP01 "Estas são crostas de pão" (Re-Assistido 1x) <span class="text_black">(19:21 06/08/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">25</span> - Sansha Sanyou EP02 "Nada de bom para você é saboroso" (Re-Assistido 1x) <span class="text_dark_yellow">(20:46 06/08/2022)</span>
+			<span class="text_black">25</span> - Sansha Sanyou EP02 "Nada de bom para você é saboroso" (Re-Assistido 1x) <span class="text_black">(20:46 06/08/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">26</span> - Sansha Sanyou EP03 "Um gosto de empregada" <span class="text_dark_yellow">(21:49 08/08/2022)</span>
+			<span class="text_black">26</span> - Sansha Sanyou EP03 "Um gosto de empregada" <span class="text_black">(21:49 08/08/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">27</span> - Sansha Sanyou EP04 "Na verdade, é para isso que eu vivo" <span class="text_dark_yellow">(05:10 10/08/2022)</span>
+			<span class="text_black">27</span> - Sansha Sanyou EP04 "Na verdade, é para isso que eu vivo" <span class="text_black">(05:10 10/08/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">28</span> - Sansha Sanyou EP05 "Suas marcas de nascença desapareceram" <span class="text_dark_yellow">(22:56 03/09/2022)</span>
+			<span class="text_black">28</span> - Sansha Sanyou EP05 "Suas marcas de nascença desapareceram" <span class="text_black">(22:56 03/09/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">29</span> - Sansha Sanyou EP06 "Legumes, Carne, Carne, Carne, Carne, Carne, Carne e Peixe" <span class="text_dark_yellow">(03:42 13/11/2022)</span>
+			<span class="text_black">29</span> - Sansha Sanyou EP06 "Legumes, Carne, Carne, Carne, Carne, Carne, Carne e Peixe" <span class="text_black">(03:42 13/11/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">30</span> - Sansha Sanyou EP07 "Só Dez Ienes" <span class="text_black">(05:01 21/12/2022)</span>
 		</span>		<br /><br />
 
 		<!-- "Desenhos" media type header -->
-		<a name="Desenhos"><b>Desenhos: <span class="text_dark_yellow">6</span></b></a><br />
+		<a name="Coisas assistidas: Desenhos"><b>Desenhos: <span class="text_black">6</span></b></a><br />
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">1</span> - Star vs. As Forças do Mal T01EP01-02 "Star Vem para a Terra - Festa com um Pônei" (Re-Assistido 1x) <span class="text_dark_yellow">(20:16 03/08/2022)</span>
+			<span class="text_black">1</span> - Star vs. As Forças do Mal T01EP01-02 "Star Vem para a Terra - Festa com um Pônei" (Re-Assistido 1x) <span class="text_black">(20:16 03/08/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">2</span> - Star vs. As Forças do Mal T01EP03-04 "Casamenteira - Espírito Escolar" (Re-Assistido 1x) <span class="text_dark_yellow">(06:48 06/08/2022)</span>
+			<span class="text_black">2</span> - Star vs. As Forças do Mal T01EP03-04 "Casamenteira - Espírito Escolar" (Re-Assistido 1x) <span class="text_black">(06:48 06/08/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">3</span> - Star vs. As Forças do Mal T01EP05-06 "O Braço Monstro - O Outro Aluno de Intercâmbio" (Re-Assistido 1x) <span class="text_dark_yellow">(07:43 06/08/2022)</span>
+			<span class="text_black">3</span> - Star vs. As Forças do Mal T01EP05-06 "O Braço Monstro - O Outro Aluno de Intercâmbio" (Re-Assistido 1x) <span class="text_black">(07:43 06/08/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">4</span> - Star vs. As Forças do Mal T01EP07-08 "Star Precisa Se Animar - Star e Marco Vão às Compras" (Re-Assistido 1x) <span class="text_dark_yellow">(04:46 07/08/2022)</span>
+			<span class="text_black">4</span> - Star vs. As Forças do Mal T01EP07-08 "Star Precisa Se Animar - Star e Marco Vão às Compras" (Re-Assistido 1x) <span class="text_black">(04:46 07/08/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">5</span> - Star vs. As Forças do Mal T01EP09-10 "As Férias da Família Diaz - Festa da Brittney" (Re-Assistido 1x) <span class="text_dark_yellow">(04:37 09/08/2022)</span>
+			<span class="text_black">5</span> - Star vs. As Forças do Mal T01EP09-10 "As Férias da Família Diaz - Festa da Brittney" (Re-Assistido 1x) <span class="text_black">(04:37 09/08/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">6</span> - Star vs. As Forças do Mal T01EP11-12 "Mewberdade - Elfotopia" (Re-Assistido 1x) <span class="text_dark_yellow">(22:26 20/08/2022)</span>
+			<span class="text_black">6</span> - Star vs. As Forças do Mal T01EP11-12 "Mewberdade - Elfotopia" (Re-Assistido 1x) <span class="text_black">(22:26 20/08/2022)</span>
 		</span>		<br /><br />
 
 		<!-- "Séries" media type header -->
-		<a name="Séries"><b>Séries: <span class="text_dark_yellow">19</span></b></a><br />
+		<a name="Coisas assistidas: Séries"><b>Séries: <span class="text_black">19</span></b></a><br />
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">1</span> - Round 6 (Squid Game) T01EP01(01) "Luz vermelha, luz verde" <span class="text_dark_yellow">(13:14 22/01/2022)</span>
+			<span class="text_black">1</span> - Round 6 (Squid Game) T01EP01(01) "Luz vermelha, luz verde" <span class="text_black">(13:14 22/01/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">2</span> - Round 6 (Squid Game) T01EP02(02) "Inferno" <span class="text_dark_yellow">(22:38 23/01/2022)</span>
+			<span class="text_black">2</span> - Round 6 (Squid Game) T01EP02(02) "Inferno" <span class="text_black">(22:38 23/01/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">3</span> - Round 6 (Squid Game) T01EP03(03) "O Homem com guarda-chuva" <span class="text_dark_yellow">(19:02 25/01/2022)</span>
+			<span class="text_black">3</span> - Round 6 (Squid Game) T01EP03(03) "O Homem com guarda-chuva" <span class="text_black">(19:02 25/01/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">4</span> - Round 6 (Squid Game) T01EP04(04) "Fique com a equipe" <span class="text_dark_yellow">(21:12 02/02/2022)</span>
+			<span class="text_black">4</span> - Round 6 (Squid Game) T01EP04(04) "Fique com a equipe" <span class="text_black">(21:12 02/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">5</span> - Round 6 (Squid Game) T01EP05(05) "Um Mundo Justo" <span class="text_dark_yellow">(21:29 05/02/2022)</span>
+			<span class="text_black">5</span> - Round 6 (Squid Game) T01EP05(05) "Um Mundo Justo" <span class="text_black">(21:29 05/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">6</span> - The Walking Dead T11E09(162) "Não Há Outro Jeito" <span class="text_dark_yellow">(20:25 27/02/2022)</span>
+			<span class="text_black">6</span> - The Walking Dead T11E09(162) "Não Há Outro Jeito" <span class="text_black">(20:25 27/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">7</span> - Round 6 (Squid Game) T01EP06(06) "Ganbu" <span class="text_dark_yellow">(21:06 02/03/2022)</span>
+			<span class="text_black">7</span> - Round 6 (Squid Game) T01EP06(06) "Ganbu" <span class="text_black">(21:06 02/03/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">8</span> - The Walking Dead T11E10(163) "Novos Caminhos" <span class="text_dark_yellow">(19:50 25/03/2022)</span>
+			<span class="text_black">8</span> - The Walking Dead T11E10(163) "Novos Caminhos" <span class="text_black">(19:50 25/03/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">9</span> - The Walking Dead T11E11(164) "Elemento Trapaceiro" <span class="text_dark_yellow">(20:06 24/04/2022)</span>
+			<span class="text_black">9</span> - The Walking Dead T11E11(164) "Elemento Trapaceiro" <span class="text_black">(20:06 24/04/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">10</span> - The Walking Dead T11E12(165) "Tudo ou Nada" <span class="text_dark_yellow">(21:39 29/04/2022)</span>
+			<span class="text_black">10</span> - The Walking Dead T11E12(165) "Tudo ou Nada" <span class="text_black">(21:39 29/04/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">11</span> - The Walking Dead T11E13(166) "Senhores da Guerra" <span class="text_dark_yellow">(00:49 22/05/2022)</span>
+			<span class="text_black">11</span> - The Walking Dead T11E13(166) "Senhores da Guerra" <span class="text_black">(00:49 22/05/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">12</span> - The Walking Dead T11E14(167) "O Apodrecido" <span class="text_dark_yellow">(04:42 28/05/2022)</span>
+			<span class="text_black">12</span> - The Walking Dead T11E14(167) "O Apodrecido" <span class="text_black">(04:42 28/05/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">13</span> - Round 6 (Squid Game) T01EP07(07) "VIPS" <span class="text_dark_yellow">(02:28 29/05/2022)</span>
+			<span class="text_black">13</span> - Round 6 (Squid Game) T01EP07(07) "VIPS" <span class="text_black">(02:28 29/05/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">14</span> - The Walking Dead T11E15(168) "Confiança" <span class="text_dark_yellow">(02:22 26/06/2022)</span>
+			<span class="text_black">14</span> - The Walking Dead T11E15(168) "Confiança" <span class="text_black">(02:22 26/06/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">15</span> - The Walking Dead T11E16(169) "Atos de Deus" <span class="text_dark_yellow">(22:54 17/07/2022)</span>
+			<span class="text_black">15</span> - The Walking Dead T11E16(169) "Atos de Deus" <span class="text_black">(22:54 17/07/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">16</span> - The Walking Dead T11E17(170) "Confinamento" <span class="text_dark_yellow">(01:33 07/10/2022)</span>
+			<span class="text_black">16</span> - The Walking Dead T11E17(170) "Confinamento" <span class="text_black">(01:33 07/10/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">17</span> - The Walking Dead T11E18(171) "Um Novo Acordo" <span class="text_dark_yellow">(02:42 15/10/2022)</span>
+			<span class="text_black">17</span> - The Walking Dead T11E18(171) "Um Novo Acordo" <span class="text_black">(02:42 15/10/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">18</span> - The Walking Dead T11E19(172) "Variante" <span class="text_dark_yellow">(22:04 06/11/2022)</span>
+			<span class="text_black">18</span> - The Walking Dead T11E19(172) "Variante" <span class="text_black">(22:04 06/11/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">19</span> - The Walking Dead T11E20(173) "O Que Foi Perdido" <span class="text_dark_yellow">(02:23 08/12/2022)</span>
+			<span class="text_black">19</span> - The Walking Dead T11E20(173) "O Que Foi Perdido" <span class="text_black">(02:23 08/12/2022)</span>
 		</span>		<br /><br />
 
 		<!-- "Filmes" media type header -->
-		<a name="Filmes"><b>Filmes: <span class="text_dark_yellow">2</span></b></a><br />
+		<a name="Coisas assistidas: Filmes"><b>Filmes: <span class="text_black">2</span></b></a><br />
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">1</span> - Madagascar (2005, DreamWorks Animation, Eric Darnell) (Re-Assistido 1x) <span class="text_dark_yellow">(23:19 14/01/2022)</span>
+			<span class="text_black">1</span> - Madagascar (2005, DreamWorks Animation, Eric Darnell) (Re-Assistido 1x) <span class="text_black">(23:19 14/01/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">2</span> - Madagascar 2 Escape 2 Africa - A Grande Escapada (2008, DreamWorks Animation) (Re-Assistido 1x) <span class="text_dark_yellow">(04:15 03/04/2022)</span>
+			<span class="text_black">2</span> - Madagascar 2 Escape 2 Africa - A Grande Escapada (2008, DreamWorks Animation) (Re-Assistido 1x) <span class="text_black">(04:15 03/04/2022)</span>
 		</span>		<br /><br />
 
 		<!-- "Vídeos" media type header -->
-		<a name="Vídeos"><b>Vídeos: <span class="text_dark_yellow">26</span></b></a><br />
+		<a name="Coisas assistidas: Vídeos"><b>Vídeos: <span class="text_black">26</span></b></a><br />
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">1</span> - Lives do alanzoka: alanzoka jogando Deathloop - Parte #6 <span class="text_dark_yellow">(04:49 12/02/2022)</span>
+			<span class="text_black">1</span> - Lives do alanzoka: alanzoka jogando Deathloop - Parte #6 <span class="text_black">(04:49 12/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">2</span> - Lives do alanzoka: alanzoka jogando Deathloop - Parte #7 <span class="text_dark_yellow">(23:54 12/02/2022)</span>
+			<span class="text_black">2</span> - Lives do alanzoka: alanzoka jogando Deathloop - Parte #7 <span class="text_black">(23:54 12/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">3</span> - Lives do alanzoka: alanzoka jogando Crab Game com os amigos <span class="text_dark_yellow">(07:07 14/02/2022)</span>
+			<span class="text_black">3</span> - Lives do alanzoka: alanzoka jogando Crab Game com os amigos <span class="text_black">(07:07 14/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">4</span> - Lives do alanzoka: alanzoka jogando Crab Game com os amigos - #2 <span class="text_dark_yellow">(17:24 14/02/2022)</span>
+			<span class="text_black">4</span> - Lives do alanzoka: alanzoka jogando Crab Game com os amigos - #2 <span class="text_black">(17:24 14/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">5</span> - Lives do alanzoka: alanzoka jogando Deathloop - Parte #8 <span class="text_dark_yellow">(01:01 17/02/2022)</span>
+			<span class="text_black">5</span> - Lives do alanzoka: alanzoka jogando Deathloop - Parte #8 <span class="text_black">(01:01 17/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">6</span> - Lives do alanzoka: alanzoka jogando Deathloop - Parte #9 <span class="text_dark_yellow">(20:17 19/02/2022)</span>
+			<span class="text_black">6</span> - Lives do alanzoka: alanzoka jogando Deathloop - Parte #9 <span class="text_black">(20:17 19/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">7</span> - SINXPLAYSBR: Sunset Overdrive Parte 1 - Inicio do Fim!! <span class="text_dark_yellow">(15:32 20/02/2022)</span>
+			<span class="text_black">7</span> - SINXPLAYSBR: Sunset Overdrive Parte 1 - Inicio do Fim!! <span class="text_black">(15:32 20/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">8</span> - Lives do alanzoka: alanzoka jogando Deathloop - Parte #10 / FINAL <span class="text_dark_yellow">(23:26 20/02/2022)</span>
+			<span class="text_black">8</span> - Lives do alanzoka: alanzoka jogando Deathloop - Parte #10 / FINAL <span class="text_black">(23:26 20/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">9</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #1 <span class="text_dark_yellow">(23:36 26/02/2022)</span>
+			<span class="text_black">9</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #1 <span class="text_black">(23:36 26/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">10</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #2 <span class="text_dark_yellow">(16:37 27/02/2022)</span>
+			<span class="text_black">10</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #2 <span class="text_black">(16:37 27/02/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">11</span> - Lives do alanzoka: alanzoka jogando Little Inferno - Parte #1 <span class="text_dark_yellow">(22:26 01/03/2022)</span>
+			<span class="text_black">11</span> - Lives do alanzoka: alanzoka jogando Little Inferno - Parte #1 <span class="text_black">(22:26 01/03/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">12</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #3 <span class="text_dark_yellow">(23:57 05/03/2022)</span>
+			<span class="text_black">12</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #3 <span class="text_black">(23:57 05/03/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">13</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #4 <span class="text_dark_yellow">(01:37 20/03/2022)</span>
+			<span class="text_black">13</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #4 <span class="text_black">(01:37 20/03/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">14</span> - Lives do alanzoka: alanzoka jogando Little Inferno - Parte #2 / FINAL <span class="text_dark_yellow">(21:27 12/04/2022)</span>
+			<span class="text_black">14</span> - Lives do alanzoka: alanzoka jogando Little Inferno - Parte #2 / FINAL <span class="text_black">(21:27 12/04/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">15</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #5 <span class="text_dark_yellow">(20:43 14/04/2022)</span>
+			<span class="text_black">15</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #5 <span class="text_black">(20:43 14/04/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">16</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #6 <span class="text_dark_yellow">(00:50 17/04/2022)</span>
+			<span class="text_black">16</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #6 <span class="text_black">(00:50 17/04/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">17</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #7 <span class="text_dark_yellow">(18:33 15/05/2022)</span>
+			<span class="text_black">17</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #7 <span class="text_black">(18:33 15/05/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">18</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #8 <span class="text_dark_yellow">(02:35 26/05/2022)</span>
+			<span class="text_black">18</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #8 <span class="text_black">(02:35 26/05/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">19</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #9 <span class="text_dark_yellow">(20:09 04/06/2022)</span>
+			<span class="text_black">19</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #9 <span class="text_black">(20:09 04/06/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">20</span> - SINXPLAYSBR: Sly Cooper: Viajantes do Tempo Parte 1 - Paris <span class="text_dark_yellow">(05:53 05/06/2022)</span>
+			<span class="text_black">20</span> - SINXPLAYSBR: Sly Cooper: Viajantes do Tempo Parte 1 - Paris <span class="text_black">(05:53 05/06/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">21</span> - SINXPLAYSBR: Sly Cooper: Viajantes do Tempo Parte 2 <span class="text_dark_yellow">(02:27 07/06/2022)</span>
+			<span class="text_black">21</span> - SINXPLAYSBR: Sly Cooper: Viajantes do Tempo Parte 2 <span class="text_black">(02:27 07/06/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">22</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #10 <span class="text_dark_yellow">(04:45 19/06/2022)</span>
+			<span class="text_black">22</span> - Lives do alanzoka: alanzoka jogando Dying Light - Parte #10 <span class="text_black">(04:45 19/06/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">23</span> - Lives do alanzoka: alanzoka joga Watch Dogs: Legion - Parte 1 <span class="text_dark_yellow">(00:06 02/07/2022)</span>
+			<span class="text_black">23</span> - Lives do alanzoka: alanzoka joga Watch Dogs: Legion - Parte 1 <span class="text_black">(00:06 02/07/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">24</span> - Lives do alanzoka: alanzoka joga Watch Dogs: Legion - Parte 2 <span class="text_dark_yellow">(02:55 13/07/2022)</span>
+			<span class="text_black">24</span> - Lives do alanzoka: alanzoka joga Watch Dogs: Legion - Parte 2 <span class="text_black">(02:55 13/07/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">25</span> - Lives do alanzoka: alanzoka joga Watch Dogs: Legion - Parte 3 <span class="text_dark_yellow">(21:45 27/08/2022)</span>
+			<span class="text_black">25</span> - Lives do alanzoka: alanzoka joga Watch Dogs: Legion - Parte 3 <span class="text_black">(21:45 27/08/2022)</span>
 		</span><br />
 
 		<span class="text_hover_white" style="margin-left: 3%;">
-			<span class="text_dark_yellow">26</span> - Lives do alanzoka: alanzoka joga Watch Dogs: Legion - Parte 4 <span class="text_dark_yellow">(20:34 12/11/2022)</span>
+			<span class="text_black">26</span> - Lives do alanzoka: alanzoka joga Watch Dogs: Legion - Parte 4 <span class="text_black">(20:34 12/11/2022)</span>
+		</span><br /><br />
+	</h2>
+</div>
+
+<!-- "Tarefas" tab -->
+<a id="tasks_anchor" name="Tarefas"></a>
+<div id="tasks" class="w3-container tab header_size background_yellow text_dark_yellow border_4px border_color_yellow_sand border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_black">
+		<p><br /><b id="tasks_title">Tarefas: <i class="fa-solid fa-check"></i> <span class="text_black">110</span></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_yellow_sand margin_sides_5_cent" />
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<a href="#Tarefas: Histórias"><b>Histórias: <span class="text_black">6</span></b></a><br />
+		<a href="#Tarefas: Desenhos"><b>Desenhos: <span class="text_black">0</span></b></a><br />
+		<a href="#Tarefas: Vídeos"><b>Vídeos: <span class="text_black">3</span></b></a><br />
+		<a href="#Tarefas: Python"><b>Python: <span class="text_black">27</span></b></a><br />
+		<a href="#Tarefas: PHP"><b>PHP: <span class="text_black">19</span></b></a><br />
+		
+		<br />
+
+		<!-- "Histórias" task type header -->
+		<a name="Tarefas: Histórias"><b>Histórias: <span class="text_black">6</span></b></a><br />
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">1</span> - Eu escrevi o capítulo 18 de "SpaceLiving" <span class="text_black">(22:43 10/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">2</span> - Eu traduzi o capítulo 18 de "SpaceLiving" to Portuguese <span class="text_black">(14:10 28/02/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">3</span> - Eu escrevi o capítulo 4 de "New World" <span class="text_black">(16:18 29/03/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">4</span> - Eu escrevi o capítulo 5 de "New World" <span class="text_black">(23:25 03/04/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">5</span> - Eu publiquei o capítulo dezoito de "SpaceLiving" no Wattpad e Site Stake2 <span class="text_black">(12:45 16/04/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">6</span> - Eu escrevi o capítulo 6 de "New World" <span class="text_black">(20:15 22/07/2022)</span>
+		</span>		<br /><br />
+
+		<!-- "Desenhos" task type header -->
+		<a name="Tarefas: Desenhos"><b>Desenhos: <span class="text_black">0</span></b></a><br />
+		<br />
+
+		<!-- "Vídeos" task type header -->
+		<a name="Tarefas: Vídeos"><b>Vídeos: <span class="text_black">3</span></b></a><br />
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">1</span> - Eu editei um vídeo um pouco no Sony Vegas <span class="text_black">(16:49 06/03/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">2</span> - Eu editei um vídeo um pouco no Sony Vegas <span class="text_black">(17:00 25/07/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">3</span> - Eu editei um vídeo um pouco no Sony Vegas <span class="text_black">(19:42 26/07/2022)</span>
+		</span>		<br /><br />
+
+		<!-- "Python" task type header -->
+		<a name="Tarefas: Python"><b>Python: <span class="text_black">27</span></b></a><br />
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">1</span> - Eu programei em Python um pouco, programando o meu módulo "Year_Summary_Manager" <span class="text_black">(10:48 01/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">2</span> - Eu programei em Python um pouco, programando o meu módulo "Unified_Remote_Manager" <span class="text_black">(14:26 07/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">3</span> - Eu programei em Python um pouco, programando o meu módulo "Story_Manager" <span class="text_black">(22:18 08/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">4</span> - Eu programei em Python um pouco, programando os meus módulos Tasks, Story_Manager, GamePlayer <span class="text_black">(12:35 09/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">5</span> - Eu programei em Python um pouco, programando o meu módulo "Food_Time" <span class="text_black">(15:19 18/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">6</span> - Eu programei em Python um pouco, programando o meu módulo "Friends_Manager" <span class="text_black">(15:34 21/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">7</span> - Eu programei em Python um pouco, programando o meu módulo "Watch_History" <span class="text_black">(17:49 25/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">8</span> - Eu programei em Python um pouco, programando o meu módulo "Project_Zomboid_Manager" <span class="text_black">(14:12 28/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">9</span> - Eu programei em Python um pouco, programando o meu módulo "Code" <span class="text_black">(01:02 08/02/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">10</span> - Eu programei em Python um pouco, programando os meus módulos Diary.Manage_Diary_Slim.Write_On_Diary_Slim, Code.Help_With_Coding, Python_Module_Manager <span class="text_black">(14:59 08/02/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">11</span> - Eu programei em Python um pouco, programando o meu módulo "Diary" <span class="text_black">(14:53 11/02/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">12</span> - Eu programei em Python um pouco, programando os meus módulos Block_Websites, Watch_History, GamePlayer, Story_Manager <span class="text_black">(21:32 12/02/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">13</span> - Eu programei em Python um pouco, programando os meus módulos Code e Diary <span class="text_black">(14:31 22/02/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">14</span> - Eu programei em Python um pouco, programando o meu módulo "Watch_History" <span class="text_black">(22:40 25/02/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">15</span> - Eu programei em Python um pouco, programando os meus módulos Folder_Variables, Text_Generator <span class="text_black">(17:18 01/03/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">16</span> - Eu programei em Python um pouco, programando o meu módulo "Music_Library" <span class="text_black">(16:56 01/04/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">17</span> - Eu programei em Python um pouco, programando o meu módulo "Watch_History" <span class="text_black">(02:06 03/05/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">18</span> - Eu programei em Python um pouco, programando o meu módulo "Diary" <span class="text_black">(13:44 15/07/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">19</span> - Eu programei em Python um pouco, programando os meus módulos Code e Diary <span class="text_black">(14:08 17/07/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">20</span> - Eu programei em Python um pouco, programando os meus módulos Language_Variables, Story_Manager, Code, e Diary_Slim <span class="text_black">(03:10 04/08/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">21</span> - Eu programei em Python um pouco, programando os meus módulos Watch_History e Story_Manager <span class="text_black">(20:41 20/08/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">22</span> - Eu programei em Python um pouco, programando os meus módulos Friends_Manager, Python_Module_Manager, Script_Helper, Social_Networks, Block_Websites, e Christmas <span class="text_black">(16:51 05/09/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">23</span> - Eu programei em Python um pouco, programando os meus módulos Friends_Manager, Social_Networks, Christmas, Watch_History, e Years <span class="text_black">(21:05 19/09/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">24</span> - Eu programei em Python um pouco, programando os meus módulos Folder, File, Language, Input, Date, Text, e Watch_History <span class="text_black">(13:35 05/10/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">25</span> - Eu programei em Python um pouco, programando os meus módulos Years, Date, Folder, Python_Module_Manager, e Block_Websites <span class="text_black">(17:00 17/10/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">26</span> - Eu programei em Python um pouco, programando os meus módulos Code, Diary, Diary_Slim, Food_Time, Friends, GamePlayer, Project_Zomboid, Social_Networks, SproutGigs, e Stories <span class="text_black">(20:50 13/11/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">27</span> - Eu programei em Python um pouco, programando os meus módulos Diary_Slim, Tasks, Watch_History, GamePlayer, Stories, e Module_Selector <span class="text_black">(07:27 16/12/2022)</span>
+		</span>		<br /><br />
+
+		<!-- "PHP" task type header -->
+		<a name="Tarefas: PHP"><b>PHP: <span class="text_black">19</span></b></a><br />
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">1</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(13:03 05/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">2</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(13:25 12/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">3</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(13:21 19/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">4</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(19:33 22/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">5</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(14:48 23/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">6</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(17:06 26/01/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">7</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(14:58 07/02/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">8</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(02:45 18/02/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">9</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(23:16 18/02/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">10</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(17:57 01/03/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">11</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(02:54 05/04/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">12</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(08:07 07/07/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">13</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(20:12 07/07/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">14</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(08:26 09/07/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">15</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(16:13 11/07/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">16</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(20:46 11/07/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">17</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(05:26 01/08/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">18</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(19:49 06/10/2022)</span>
+		</span><br />
+
+		<span class="text_hover_white" style="margin-left: 3%;">
+			<span class="text_black">19</span> - Eu programei meus sites em PHP um pouco <span class="text_black">(11:30 20/12/2022)</span>
 		</span><br /><br />
 	</h2>
 </div>
@@ -564,15 +829,15 @@ Site para mostrar como <span class="text_dark_yellow">Meu 2022</span> foi, e o q
 <a id="years_anchor" name="Anos"></a>
 <div id="years" class="w3-container tab header_size background_yellow text_dark_yellow border_4px border_color_yellow_sand border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
-	<h2 class="text_size text_dark_yellow">
-		<p><br /><b id="years_title">Anos: <i class="fa-solid fa-calendar-days"></i> <span class="text_dark_yellow">5</span></b><br /><br /><p>
+	<h2 class="text_size text_black">
+		<p><br /><b id="years_title">Anos: <i class="fa-solid fa-calendar-days"></i> <span class="text_black">5</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_yellow_sand margin_sides_5_cent" />
 	<h2 class="text_size margin_sides_5_cent" style="">
 		
 		<!-- "2018" link button -->
-		<button class="w3-btn background_blue text_dark_blue border_4px border_color_dark_blue box_shadow_blue background_hover_white"  onclick="window.open('https://thestake2.netlify.app/2018/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_blue text_super_dark_blue border_4px border_color_super_dark_blue box_shadow_dark_blue background_hover_white"  onclick="window.open('https://thestake2.netlify.app/2018/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Meu 2018 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
@@ -613,8 +878,8 @@ Site para mostrar como <span class="text_dark_yellow">Meu 2022</span> foi, e o q
 <a id="websites_tab_anchor" name="Sites"></a>
 <div id="websites_tab" class="w3-container tab header_size background_yellow text_dark_yellow border_4px border_color_yellow_sand border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
-	<h2 class="text_size text_dark_yellow">
-		<p><br /><b id="websites_tab_title">Sites: <i class="fas fa-globe"></i> <span class="text_dark_yellow">25</span></b><br /><br /><p>
+	<h2 class="text_size text_black">
+		<p><br /><b id="websites_tab_title">Sites: <i class="fas fa-globe"></i> <span class="text_black">25</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_yellow_sand margin_sides_5_cent" />
@@ -761,7 +1026,7 @@ Site para mostrar como <span class="text_dark_yellow">Meu 2022</span> foi, e o q
 		</button>
 
 		<!-- "2018" link button -->
-		<button class="w3-btn background_blue text_dark_blue border_4px border_color_dark_blue box_shadow_blue background_hover_white"  onclick="window.open('https://thestake2.netlify.app/2018/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_blue text_super_dark_blue border_4px border_color_super_dark_blue box_shadow_dark_blue background_hover_white"  onclick="window.open('https://thestake2.netlify.app/2018/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Meu 2018 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
