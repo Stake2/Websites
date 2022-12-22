@@ -35,7 +35,7 @@
 	<meta name="twitter:image" type="image/gif" content="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 20/12/2022." />
+	<meta name="revised" content="Stake2's Enterprise TM, 22/12/2022." />
 	<meta name="author" content="Stake2" />
 
 	<!-- Viewport and charset -->
@@ -50,7 +50,7 @@
 	<!-- Define website box shadow -->
 	<style>
 	body {
-		--shadow-color: #dc96e860;
+		--shadow-color: #2196F360;
 		--spread-container: 10px;
 		--spread-btn: 0.5px;
 	}
@@ -60,6 +60,20 @@
 		0 8px 20px var(--spread-btn) var(--shadow-color),
 		0 6px 20px var(--spread-btn) var(--shadow-color),
 		0 -6px 20px var(--spread-btn) var(--shadow-color);
+	}
+	
+	.video-container {
+		position: relative;
+		width: 50vw;
+		height: calc(50vw/1.77);
+	}
+
+	.video-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50vw;
+		height: calc(50vw/1.77);
 	}
 	</style>
 
@@ -180,7 +194,7 @@
 
 <!-- "Ler história" tab -->
 <a id="read_story_anchor" name="Ler história"></a>
-<div id="read_story" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="read_story" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_green_water">
 		<p><br /><b id="read_story_title">Capítulos em Português: 🇧🇷 <span class="text_green_water">18</span></b><br /><br /><p>
@@ -319,7 +333,7 @@
 
 <!-- "Leitores" tab -->
 <a id="readers_anchor" name="Leitores"></a>
-<div id="readers" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="readers" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_green_water">
 		<p><br /><b id="readers_title">Leitores: <i class="fas fa-book-reader"></i> <span class="text_green_water">4</span></b><br /><br /><p>
@@ -337,7 +351,7 @@
 
 <!-- "Outras histórias" tab -->
 <a id="other_stories_anchor" name="Outras histórias"></a>
-<div id="other_stories" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="other_stories" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_green_water">
 		<p><br /><b id="other_stories_title">Outras histórias: <i class="fas fa-book"></i> <span class="text_green_water">8</span></b><br /><br /><p>
@@ -347,7 +361,7 @@
 	<h2 class="text_size margin_sides_5_cent" style="">
 		
 		<!-- "Ilha Deserta" story card -->
-		<a class="w3-btn background_yellow_sand border_4px border_color_dark_green_water box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Desert Island/pt/" target="_new" style="width: 50%;">
+		<a class="w3-btn background_yellow_sand border_4px border_color_dark_green_water box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Desert Island/pt/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_dark_green_water">
 				<b>Ilha Deserta</b>
 			</h2>
@@ -361,7 +375,7 @@
 		<br />
 
 		<!-- "New World" story card -->
-		<a class="w3-btn background_light_cyan border_4px border_color_dark_cyan box_shadow_light_cyan animation_shake_side background_hover_white" href="https://thestake2.netlify.app/New World/pt/" target="_new" style="width: 50%;">
+		<a class="w3-btn background_light_cyan border_4px border_color_dark_cyan box_shadow_light_cyan animation_shake_side background_hover_white" href="https://thestake2.netlify.app/New World/pt/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_dark_cyan">
 				<b>New World</b>
 			</h2>
@@ -375,7 +389,7 @@
 		<br />
 
 		<!-- "Ascensão à Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_new" style="width: 50%;">
+		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_second_purple">
 				<b>Ascensão à Equestria</b>
 			</h2>
@@ -387,7 +401,7 @@
 		<br />
 
 		<!-- "SpaceLiving" story card -->
-		<a class="w3-btn background_cyan border_4px border_color_dark_blue box_shadow_green_water animation_shake_side background_hover_white" href="" target="_new" style="width: 50%;">
+		<a class="w3-btn background_cyan border_4px border_color_dark_blue box_shadow_green_water animation_shake_side background_hover_white"  target="_blank" style="width: 100%;">
 			<h2 class="text_size text_dark_blue">
 				<b>SpaceLiving</b>
 			</h2>
@@ -401,7 +415,7 @@
 		<br />
 
 		<!-- "A Vida de Izaque em Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_new" style="width: 50%;">
+		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_second_purple">
 				<b>A Vida de Izaque em Equestria</b>
 			</h2>
@@ -413,7 +427,7 @@
 		<br />
 
 		<!-- "A Vida de Pequenata" story card -->
-		<a class="w3-btn background_light_salmon border_4px border_color_darker_purple box_shadow_light_salmon animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_new" style="width: 50%;">
+		<a class="w3-btn background_light_salmon border_4px border_color_darker_purple box_shadow_light_salmon animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_darker_purple">
 				<b>A Vida de Pequenata</b>
 			</h2>
@@ -427,7 +441,7 @@
 		<br />
 
 		<!-- "O Segredo dos Cristais" story card -->
-		<a class="w3-btn background_blue border_4px border_color_dark_blue box_shadow_blue animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Secret of the Crystals/pt/" target="_new" style="width: 50%;">
+		<a class="w3-btn background_blue border_4px border_color_dark_blue box_shadow_blue animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Secret of the Crystals/pt/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_dark_blue">
 				<b>O Segredo dos Cristais</b>
 			</h2>
@@ -441,7 +455,7 @@
 		<br />
 
 		<!-- "A História dos Irmãos Bulkan" story card -->
-		<a class="w3-btn background_light_brown border_4px border_color_dark_brown box_shadow_light_brown animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_new" style="width: 50%;">
+		<a class="w3-btn background_light_brown border_4px border_color_dark_brown box_shadow_light_brown animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_dark_brown">
 				<b>A História dos Irmãos Bulkan</b>
 			</h2>
@@ -456,7 +470,7 @@
 
 <!-- "Sites" tab -->
 <a id="websites_tab_anchor" name="Sites"></a>
-<div id="websites_tab" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="websites_tab" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_green_water">
 		<p><br /><b id="websites_tab_title">Sites: <i class="fas fa-globe"></i> <span class="text_green_water">25</span></b><br /><br /><p>
@@ -606,7 +620,7 @@
 		</button>
 
 		<!-- "2018" link button -->
-		<button class="w3-btn background_blue text_dark_blue border_4px border_color_dark_blue box_shadow_blue background_hover_white"  onclick="window.open('https://thestake2.netlify.app/2018/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_blue text_black border_4px border_color_black box_shadow_dark_blue background_hover_white"  onclick="window.open('https://thestake2.netlify.app/2018/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Meu 2018 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
@@ -645,7 +659,7 @@
 
 <!-- Chapter tab for "1 - As EspaçoNaves" chapter -->
 <a id="chapter_1_anchor" name="1 - As EspaçoNaves"></a>
-<div id="chapter_1" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_1" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">1 - As EspaçoNaves</span></b><br /><br /><p>
@@ -675,16 +689,16 @@
 		Olá, eu sou Izaque, Stake2, e Funkysnipa Cat.<br />
 		Essa é SpaceLiving, uma história minha, eu criei ela em 19/01/2019 com uma amiga minha, Júlia.<br />
 		Ela é ou era um espírito que existia em minha casa, eu conversava com ela por psicografia, um jeito de ouvir as vozes dos espíritos em sua mente.<br />
-		E ela me deu a idéia para a história, ela falou sobre Lisa, ela vivendo dentro de algum lugar no espaço, em seu quarto.<br />
-		E eu aperfeiçoei a história, fiz ela melhor, e criei a idéia da espaçonave, outras pessoas vivendo dentro de espaçonaves.<br />
+		E ela me deu a ideia para a história, ela falou sobre Lisa, ela vivendo dentro de algum lugar no espaço, em seu quarto.<br />
+		E eu aperfeiçoei a história, fiz ela melhor, e criei a ideia da espaçonave, outras pessoas vivendo dentro de espaçonaves.<br />
 		E também sobre a rede de espaçonaves, os sistemas da espaçonave, assim como eu faço com minha teoria, New World.<br />
 		Eu também crio sistemas e tecnologias para a teoria do New World, que é a teoria sobre um mundo melhor do que este.<br />
 		SpaceLiving também se inspira no vídeo Shelter feito por Porter Robinson, Madeon, A-1 Pictures, e Crunchyroll.<br />
-		$porter_robinson_madeon_shelter_official_video;<br />
+		<a href="https://www.youtube.com/fzQ6gRAEoy0" target="_blank">"Porter Robinson & Madeon - Shelter (Vídeo Oficial) (Filme curto com A-1 Pictures & Crunchyroll)"</a><br />
 		Tirado e traduzido do vídeo:<br />
 		"Shelter conta a história de Rin, uma garota de 17 anos de idade que vive sua vida dentro de uma simulação futurística completamente sozinha em infinita e linda solidão.<br />
 		A cada dia, Rin acorda na realidade virtual e usa um tablet que controla a simulação para criar um mundo novo, diferente, e lindo para ela.<br />
-		Até que um dia, tudo muda, e Rin vem aprender as verdadeiras origens de sua vida dentro de uma simulação."<br />
+		Até que um dia, tudo muda, e Rin vem aprender as verdadeiras origens de sua vida dentro de uma simulação.".<br />
 		Lisa é um pouco assim, uma garota presa dentro de uma espaçonave, onde ela não pode sair e tem tudo que ela precisa, comida, entretenimento, e outras coisas.<br />
 		Essa coisa sobre ela não poder sair da espaçonave mudou um pouco depois de alguns capítulos.<br />
 		Ela também pode modificar seus arredores, a espaçonave é modular, e pode criar coisas que Lisa quer.<br />
@@ -697,7 +711,7 @@
 		Aquelas espaçonaves tinham um computador super rápido e poderoso em cada uma delas, era branco, um console de jogos PlayStation 4, uma cama, e um guarda-roupas.<br />
 		Elas tinham paredes por dentro e por fora, os computadores tinham uma versão modificada do Windows 10 instalada neles.<br />
 		Se chamava Windows 10 (Edição SpaceLiving).<br />
-		$spaceliving_lonelyship_pixel_art_story_cover;<br />
+		<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover.png" style="max-width: 50%;" /><br /><br />
 		A cama tinha um cobertor azul, a cama era feita de algum plástico resistente que era cinza claro, e o guarda-roupas era cinza também.<br />
 		As espaçonaves também tinham uma Torre de Laser fora delas, ela podia atirar um raio laser para acertar asteroides que se aproximavam.<br />
 		A Torre de Laser tinha dois modos, o modo de Alcance Expandido, e o modo Blindado.<br />
@@ -726,7 +740,7 @@
 		A espaçonave também tinha quatro letreiros pequenos em suas paredes, dois mostrando "SpaceLiving", e outros dois mostrando "LonelyShip" na direita do letreiro da SpaceLiving.<br />
 		Os letreiros da SpaceLiving e LonelyShip eram iguais em cada lado da LonelyShip, um da SpaceLiving em cada lado, e um da LonelyShip em cada lado.<br />
 		Os letreiros na esquerda estavam à esquerda da janela, e os da direita estavam à direita da janela.<br />
-		$spaceliving_lonelyship_pixel_art_front_signboards;<br />
+		<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover Front Signboards.png" style="max-width: 50%;" /><br /><br />
 		E também, a LonelyShip tinha dois grandes letreiros na frente dela, um com "SpaceLiving" escrito nele, e outro com "LonelyShip".<br />
 		O letreiro da SpaceLiving está acima do da LonelyShip.<br />
 		<br />
@@ -750,7 +764,7 @@
 		<br />
 		Uma dessas pessoas é Lisa, uma garota de dezesseis anos de idade, ela é uma garota Brasileira, ela tem cabelo médio grisalho e olhos verdes.<br />
 		Ela jogava jogos em seu computador, usava a geladeira TPF para comer, ela também gostava de escrever histórias em seu computador, Lisa postava elas no site Wattpad para o mundo ver.<br />
-		(Wattpad é um site para as pessoas escreverem e lerem histórias, para autores postarem suas histórias e ganharem leitores.)<br />
+		(Wattpad é um site para as pessoas escreverem e lerem histórias, para autores postarem suas histórias e ganharem leitores.).<br />
 		A garota vivia sua vida lá, fazendo as coisas que ela amava fazer, as coisas que faziam ela feliz, e as coisas que tinham significado para ela.<br />
 		Lisa tinha uma LonelyShip linda com paredes azuis, ela tinha um computador super rápido com duas telas, um console de vídeo game PlayStation 4, e uma geladeira chamada Thought-Powered Fridge, ou TPF.<br />
 		A espaçonave também tinha um banheiro com uma privada a laser que derretia as coisas dentro dela, uma cama de casal, um guarda-roupas, e um vídeo game portátil chamado Nintendo 3DS.<br />
@@ -764,30 +778,30 @@
 		Ela gostava de usar seu computador porque ele era super rápido e tinha muito espaço de disco rígido para ela baixar e guardar suas séries, anime, desenhos, e filmes.<br />
 		Lisa amava viver lá, escrever histórias, jogar jogos, e ouvir Dubstep e músicas Japonesas em seu computador.<br />
 		Hoje ela não tinha nada importante para fazer, mas ela queria jogar alguns jogos na plataforma de jogos Steam.<br />
-		(Steam é um programa onde você pode baixar jogos grátis e pagos para jogar em seu computador.)<br />
+		(Steam é um programa onde você pode baixar jogos grátis e pagos para jogar em seu computador.).<br />
 		Lisa ligou seu computador e sentou-se na cadeira, clicou na plataforma Steam, e esperou ela abrir.<br />
 		A cadeira que ela tinha era muito confortável, era como se fosse uma cadeira gamer, ela tinha coisas ajustáveis e uma alavanca de encosto para inclinar para trás e relaxar.<br />
 		Ela abriu um jogo chamado Titanfall 2 para jogar um pouco, ela amava aquele jogo, ele tinha várias coisas futuristas e mechas, robôs, e armas laser.<br />
 		Lisa entrou em uma partida multiplayer e fez uma pontuação 10/3, 10 são as baixas e 3 são as mortes.<br />
 		Ela gostou daquela partida, então ela fechou o Steam e abriu os programas Mozilla Firefox e Spotify.<br />
-		(Mozilla Firefox é um navegador da web, Spotify é um tocador de música onde você pode ouvir música online sem baixar ela.)<br />
+		(Mozilla Firefox é um navegador da web, Spotify é um tocador de música onde você pode ouvir música online sem baixar ela.).<br />
 		Lisa selecionou uma música de Dubstep no Firefox para tocar em seus alto-falantes e começou a balançar a cabeça no ritmo da música.<br />
 		Ela gostava do fato de que ela poderia ouvir música em volume máximo e ninguém iria ouvir e ficar chateado.<br />
-		(Porque no espaço, ninguém pode ouvir você gritar, brincadeirinha, hehe. ^^)<br />
+		(Porque no espaço, ninguém pode ouvir você gritar, brincadeirinha, hehe. ^^).<br />
 		<br />
 		Então ela abriu o site de rede social chamado Facebook para conversar com seus amigos e começou a conversar com uma amiga dela chamada Anny.<br />
-		(Facebook é uma rede social onde você pode criar uma conta e fazer um perfil com informações sobre você, ele pode ser usado para conversar e fazer amigos online.)<br />
+		(Facebook é uma rede social onde você pode criar uma conta e fazer um perfil com informações sobre você, ele pode ser usado para conversar e fazer amigos online.).<br />
 		"E aí?" perguntou Lisa.<br />
 		"Tô bem, e ti?" perguntou Anny.<br />
 		"Eu também, o que faz agora?" perguntou Lisa.<br />
 		"Só jogando um pouco de God of War no meu PS4, e você, Lisa?" perguntou Anny com um emoji de sorriso.<br />
 		"Oh, isso é legal, tô só ouvindo Dubstep", respondeu Lisa.<br />
 		"Isso parece bom, que música você tá ouvindo?" perguntou Anny.<br />
-		"A música se chama 'Still Got Something' do God's Warrior $gods_warrior_still_got_something;," respondeu Lisa.<br />
+		"A música se chama <a href="https://www.youtube.com/8WYMQbWUxGM" target="_blank">"'Still Got Something' do God's Warrior"</a>," respondeu Lisa.<br />
 		"Eu vou ouvir ele depois de eu terminar de jogar, pode mandar pra mim?" perguntou Anny.<br />
 		Então Lisa olhou para a aba do Firefox que ela tinha a música tocando no site do YouTube.<br />
 		Ela clicou na caixa de texto em sua conversa com Anny e digitou:<br />
-		"Sim, vou mandar o link pra ti Anny."<br />
+		"Sim, vou mandar o link pra ti Anny.".<br />
 		"Ok, obrigada ^^", disse Anny.<br />
 		Lisa enviou o link do YouTube da música de Dubstep para Anny.<br />
 		"Eu vou fazer outra coisa agora, bom jogo pra ti, tchau ^^", disse a garota de cabelos grisalhos.<br />
@@ -810,13 +824,13 @@
 		Ela se levantou e abriu sua geladeira TPF, era uma geladeira automática que criava qualquer comida que pessoa pensava, ela tinha a máquina espectral Food Generator dentro dela.<br />
 		Você poderia pensar em uma pizza e uma pizza iria aparecer instantaneamente dentro da geladeira.<br />
 		Então Lisa pegou o copo de leite achocolatado e o hambúrguer que estavam dentro da geladeira, ela sentou-se em sua mesa e começou a comer o hambúrguer e beber o leite.<br />
-		Depois de comer, ela registrou o tempo que ela comeu com um script de Python chamado "Set Food Time.py" (Definir Hora da Comida.py), ela continuou a jogar o jogo.<br />
+		Depois de comer, ela registrou o tempo que ela comeu com um script de Python chamado "Set Food Time.py" (Definir Horário da Refeição.py), ela continuou a jogar o jogo.<br />
 		Ela jogou por alguns minutos, Lisa disse aos seus amigos que ela iria fazer outra coisa.<br />
 		A garota fechou o jogo Grand Theft Auto V e desligou seu PS4.<br />
 		Ela colocou uma live stream de músicas do gênero Future Bass no site da Twitch e descansou um pouco enquanto estava deitada em sua cama.<br />
 		A garota tinha um fone de ouvido sem fio sobre-orelha, eles eram bons para isolamento de som, tinham um bom palco sonoro e uma boa acústica.<br />
 		Lisa não precisava do recurso de isolamento de som ou cancelamento de ruído, pois não havia sons em sua LonelyShip, apenas dela.<br />
-		(Twitch é um site onde você pode assistir live streams, a maioria delas são de jogos, mas tem conversa também, instrumentos, live streams de músicas, viagens, reacts.)<br />
+		(Twitch é um site onde você pode assistir live streams, a maioria delas são de jogos, mas tem conversa também, instrumentos, live streams de músicas, viagens, reacts.).<br />
 		<br />
 		Lisa também gostava de assistir filmes, séries, anime, desenhos, e vídeos do YouTube.<br />
 		Ela gostava de baixar eles com um programa chamado Utorrent e outro chamado MegaSync.<br />
@@ -828,7 +842,7 @@
 		A garota de cabelos grisalhos assistiu ao filme enquanto comia, fazendo algumas pausas para ir para o banheiro.<br />
 		Lisa comentou em algumas partes do filme, ela digitou o tempo do filme, tipo 01:15:35, e digitou o que ela pensou, ou como ela se sentiu.<br />
 		Ela até abriu o programa Discord em seu computador para conversar sobre o filme com seus amigos.<br />
-		(Discord é uma plataforma de rede social para gamers, mas os não-gamers também usam ela.)<br />
+		(Discord é uma plataforma de rede social para gamers, mas os não-gamers também usam ela.).<br />
 		A garota amou o filme, toda a ação, os heróis, os efeitos especiais, ela estava triste por causa do Homem-Aranha.<br />
 		Lisa criou um arquivo de texto em seu computador para escrever tudo que ela pensou sobre o filme, seus sentimentos, e suas opiniões.<br />
 		Então ela salvou o arquivo e fechou ele, depois disso, ela abriu um episódio da série The Walking Dead para assistir.<br />
@@ -837,7 +851,7 @@
 		Isso a lembra de alguém especial, do tempo que ela assistia aquela série com seu irmão mais velho quando Lisa vivia na Terra.<br />
 		Ela não se lembrava claramente como ele era, como ele se parecia, ou qual era seu nome.<br />
 		Já faz algum tempo desde que ela o viu, desde que ela tinha notas ruins e pensava que sua vida era ruim.<br />
-		Foi naquele momento em que Lisa foi teletransportada para sua LonelyShip<br />
+		Foi naquele momento em que Lisa foi teletransportada para sua LonelyShip.<br />
 		Depois que ela começou a viver em sua LonelyShip, ela começou a esquecer sobre sua família, seu irmão.<br />
 		<br />
 		Então ela abriu outra live stream do gênero musical Future Bass no YouTube.<br />
@@ -857,13 +871,13 @@
 		Ela queria viver sozinha dentro de sua espaçonave, dentro de sua LonlelyShip, ela queria fazer muitas coisas divertidas, comer comidas deliciosas e beber bebidas deliciosas.<br />
 		E essa é a história da vida dela, também é a história da Rede de EspaçoNaves SpaceLiving, a rede de EspaçoNaves que te faz feliz, SpaceLiving significa viver no espaço, (Space = Espaço, Living = Vivendo).<br />
 		Aquelas EspaçoNaves são chamadas de LonelyShips (NavesSolitárias) pela TOTB porque elas são solitárias, só há você dentro dela, você e as coisas que você gosta.<br />
-		Te vejo no próximo capítulo, obrigado por ler! :3<br />
+		Te vejo no próximo capítulo, obrigado por ler! :3.<br />
 		Eu sou Izaque, o escritor e autor desta história.<br />
 		Obrigado por ler, de novo, hehe, eu gosto de falar com você, meu leitor, diretamente.<br />
 		Eu escrevi esse capítulo em 09/11/2019.<br />
 		Eu terminei de revisar ele pela terceira ou quarta vez em 24/04/2021.<br />
 		E terminei de traduzir ele em 10/05/2021, depois de ter revisado do capítulo 1 ao 10 de SpaceLiving (essa linha só existe na versão traduzida).
-<br /><br />Palavras: 4,135<br /><br />		</h4>
+<br /><br />Palavras: 4,211<br /><br />		</h4>
 		
 
 		<!-- Chapter button for next chapter -->
@@ -889,6 +903,8 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">1 - As EspaçoNaves</span></b><br /><br /><p>
@@ -897,19 +913,20 @@
 	<!-- Chapter reads for chapter "1 - As EspaçoNaves" -->
 	<h3 class="text_size text_dark_blue margin_sides_5_cent margin_top_bottom_3_cent">
 		<b class="margin_top_bottom_2_cent">Leitura: </b>
-	</h3>
+	</h3><br class="mobile_inline_block" />
 
 	<!-- Chapter read number 1 -->
 	<div class="w3-container background_cyan border_4px border_color_dark_blue border_radius_50px" style="width: 33%;">
 		<h4 class="text_size text_dark_blue margin_sides_10_cent margin_top_bottom_3_cent" style="text-align: left;">
-			<b>Lívia (Wattpad, 19/06/2021)</b><br /><b>Em</b>: 00:19 19/06/2021
+			<br class="mobile_inline_block" /><b>Lívia (Wattpad, 19/06/2021)</b><br /><b>Em</b>: 00:19 19/06/2021<br class="mobile_inline_block" /><br class="mobile_inline_block" />
 		</h4>
 	</div>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "2 - A história de Fred" chapter -->
 <a id="chapter_2_anchor" name="2 - A história de Fred"></a>
-<div id="chapter_2" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_2" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">2 - A história de Fred</span></b><br /><br /><p>
@@ -943,12 +960,12 @@
 
 		<!-- Chapter text -->
 		<h4 class="text_size unselectable text_green_water" style="text-align: left;">
-		(O Fred neste capítulo é a versão SpaceLiving do Fred de minha história chamada A História dos Irmãos Bulkan $website_the_story_of_the_bulkan_siblings_linked;, mas ele vive em um universo onde a Rede de EspaçoNaves SpaceLiving existe.)<br />
+		(O Fred neste capítulo é a versão SpaceLiving do Fred de minha história chamada <a class="text_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank">"A História dos Irmãos Bulkan"</a>, mas ele vive em um universo onde a Rede de EspaçoNaves SpaceLiving existe.)<br />
 		Ainda no ano de 2019, havia uma história de uma espaçonave super inovadora onde você tinha muitas coisas para fazer.<br />
 		As EspaçoNaves se chamavam LonelyShips (NavesSolitárias) porque você estava solitário lá, só havia você lá.<br />
 		Havia muitas pessoas que vivam nas LonelyShips, elas criaram uma comunidade.<br />
 		Os residentes daquelas EspaçoNaves criaram muitos servidores no Discord para se comunicar e conversar sobre ser um LonelyShipper.<br />
-		(Discord é uma plataforma de rede social para gamers, mas os não-gamers também usam ela.)<br />
+		(Discord é uma plataforma de rede social para gamers, mas os não-gamers também usam ela.).<br />
 		Um servidor no Discord é tipo um grupo onde você pode passar o tempo, você pode criar canais para diferentes categorias ou tópicos de mensagens e posts.<br />
 		Uma empresa de jogos poderia criar um servidor para postar anúncios de atualizações do jogo, e também para os jogadores reportarem erros no jogo.<br />
 		Ser um LonelyShipper é ser um residente de uma das LonelyShips da Rede de EspaçoNaves SpaceLiving.<br />
@@ -978,7 +995,7 @@
 		Então Fred saiu de sua cama e ligou o computador, ele abriu a Steam para jogar alguns jogos.<br />
 		Fred tinha um amigo chamado Mark, Fred sentia que eles eram amigos em um universo alternativo.<br />
 		Fred abriu o jogo Apex Legends para jogar, era um novo jogo que a EA lançou e era um jogo Battle Royale, Fred só queria testá-lo.<br />
-		(Um jogo Battle Royale é um jogo onde tem um número definido de pessoas em um mapa, tipo cem, e eles tem que lutar para ver quem dura, o último vivo vence a partida.)<br />
+		(Um jogo Battle Royale é um jogo onde tem um número definido de pessoas em um mapa, tipo cem, e eles tem que lutar para ver quem dura, o último vivo vence a partida.).<br />
 		Ele jogou por alguns minutos e gostou, Fred era muito bom no jogo e fez muitas baixas.<br />
 		Então ele fechou o jogo e chamou seu amigo Mark no Discord para jogar um pouco de Overwatch.<br />
 		Eles jogaram um pouco enquanto conversavam usando o recurso de chamada de voz do Discord, Mark também vivia em uma LonelyShip.<br />
@@ -999,7 +1016,7 @@
 		"Oh, ok mano, te vejo depois, tchau", respondeu Mark.<br />
 		Fred gostava de ler algumas histórias na Internet em um site chamado Wattpad, ele queria escrever algo também.<br />
 		Mas ele não era muito bom nisso, ele gostava de ler as histórias de uma garota chamada Lisa no Wattpad, ela era uma LonelyShipper também.<br />
-		(Wattpad é um site para as pessoas escreverem e lerem histórias, para autores postarem suas histórias e ganharem leitores.)<br />
+		(Wattpad é um site para as pessoas escreverem e lerem histórias, para autores postarem suas histórias e ganharem leitores.).<br />
 		Fred se perguntava como Lisa poderia fazer ele sentir as emoções que ele sentiu, como ela poderia fazer ele amar os personagens.<br />
 		Lisa publicou muitas histórias no Wattpad e outros sites de escrita, ela amava escrever histórias.<br />
 		Fred estava tentando aprender mais sobre escrita e histórias, ele havia escrito alguns rascunhos em seu computador.<br />
@@ -1009,7 +1026,7 @@
 		Mas ele queria conversar com ela, fazer perguntas sobre escrita e como escrever melhor.<br />
 		Fred enviou uma mensagem para ela no Discord, "Olá, como você está, Lisa?" perguntou ele, com um emoji de sorriso.<br />
 		"Eu sou Fred do Wattpad, eu amo suas histórias, hehe.<br />
-		Você escreveu seu nome e discriminador do Discord na descrição do seu perfil, né?<br />
+		Você escreveu seu nome e discriminador do Discord na descrição do seu perfil, né?.<br />
 		Você disse que as pessoas poderiam pedir ajuda na escrita ou conversar sobre suas histórias.<br />
 		Desculpe por fazer tantas perguntas, é que eu comecei a escrever a alguns meses atrás, e estava tentando ficar melhor na escrita", explicou ele.<br />
 		<br />
@@ -1017,7 +1034,7 @@
 		"Ei, Fred, eu conheço você do Wattpad ^^, você sempre comenta e dá likes nas minhas histórias, obrigada por amar elas, hehe ^^.<br />
 		O nome do meu pai também é Fred, que coincidência, hehe.<br />
 		Obrigada por comentar e gostar de minhas histórias.<br />
-		Sim, eu fiz isso, você pode pedir ajuda ou conversar comigo sobre minhas histórias. :3<br />
+		Sim, eu fiz isso, você pode pedir ajuda ou conversar comigo sobre minhas histórias. :3.<br />
 		Tá tudo bem perguntar, eu comecei há alguns meses atrás também, posso ver um pouco do seu trabalho? Tipo... A história que você tem mais orgulho?" perguntou ela.<br />
 		"Sim, eu vou mandar para você o arquivo de texto dela, ok?" perguntou Fred, pensando sobre seu rascunho que se chamava "O Retorno da Besta".<br />
 		"Essa é uma coincidência interessante, hehe", disse Fred sobre o pai de Lisa ter o mesmo nome que ele.<br />
@@ -1036,7 +1053,7 @@
 		"Ok, vou tentar isso, obrigado por me ajudar Lisa, eu estava com medo e animado para falar com você", disse Fred.<br />
 		"Por que?" perguntou Lisa.<br />
 		"Porque eu amo seu trabalho, e pensei que você fosse uma pessoa inacessível ou ocupada", respondeu Fred.<br />
-		"Se eu fosse inacessível por que colocaria meu nome no Discord na minha bio? kkkkk xD<br />
+		"Se eu fosse inacessível por que colocaria meu nome no Discord na minha bio? kkkkk xD.<br />
 		E também, eu vivo em uma LonelyShip, então sou muito acessível, eu não tenho nada para fazer a não ser jogar, escrever histórias, assistir coisas, e comer, haha", disse Lisa.<br />
 		"Oh, isso é legal Lisa, eu vivo em uma também, hehe, é muito bom conhecer outro LonelyShipper, posso perguntar sua idade?" perguntou Fred.<br />
 		"Sim, eu tenho 16 anos, e você Fred?" perguntou Lisa.<br />
@@ -1054,7 +1071,7 @@
 		Ele queria ficar melhor na escrita para mostrar suas histórias para Lisa e estava muito animado para fazer isso.<br />
 		Ele aprendeu bastante estava tentando escrever alguns rascunhos em seu computador, tentando melhorar a cada dia.<br />
 		Fred usava o programa Notepad++ em seu computador para escrever seus rascunhos.<br />
-		(Notepad++ é um programa parecido com o Bloco De Notas que vem com o Windows, mas melhor.)<br />
+		(Notepad++ é um programa parecido com o Bloco De Notas que vem com o Windows, mas melhor.).<br />
 		Depois de algum tempo escrevendo, ele escreveu algo que ele gostou, Fred estava cansado, ele relaxou na cadeira.<br />
 		Fred tinha o aplicativo da Rede SpaceLiving instalado em seu computador, ele poderia receber atualizações e informações dos novos recursos que TOTB adicionava nas LonelyShips.<br />
 		Ele havia se inscrito para o formulário Ajudante SpaceLiving, era um cargo que ajudava no servidor SpaceLiving da TOTB no Discord.<br />
@@ -1069,14 +1086,14 @@
 		(Eu escrevi este capítulo em 17/11/2019 e re-revisei ele em 25/04/2021.<br />
 		Terminei de traduzir ele em 15/05/2021.<br />
 		<br />
-		Eu gostei de botar o Fred da minha história A História dos Irmãos Bulkan $the_story_of_the_bulkan_siblings_linked; no Universo SpaceLiving.<br />
+		Eu gostei de botar o Fred da minha história <a class="text_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank">"A História dos Irmãos Bulkan"</a> no Universo SpaceLiving.<br />
 		Eu amo fazer crossovers entre minhas histórias, Bulkan (AHDIB), A Vida de Pequenata (AVDP), e SpaceLiving (SL).<br />
 		Mesmo que a Terra não existisse no Universo SpaceLiving, eu acho que eles ficariam bem, eles não precisam do Planeta Terra.<br />
-		Eles tem EspaçoNaves auto sustentáveis onde a energia, comida, água, e eletricidade nunca acaba, então por que eles precisariam da Terra?<br />
+		Eles tem EspaçoNaves auto sustentáveis onde a energia, comida, água, e eletricidade nunca acaba, então por que eles precisariam da Terra?.<br />
 		Me diga o que você acha da história e esse pequeno pedaço aqui usando o botão "Comentário de Capítulo".<br />
 		Obrigado por ler, se você é meu amigo no Discord, Wattpad, Messenger, Twitter, Hangouts, por favor me mande uma mensagem falando que sou fofo, oops, não.<br />
-		Uma mensagem dizendo que você leu essa parte, obrigadoooo ^^ :3)
-<br /><br />Palavras: 2,668<br /><br />		</h4>
+		Uma mensagem dizendo que você leu essa parte, obrigadoooo ^^ :3).
+<br /><br />Palavras: 2,693<br /><br />		</h4>
 		
 
 		<!-- Chapter button for previous chapter -->
@@ -1109,6 +1126,8 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">2 - A história de Fred</span></b><br /><br /><p>
@@ -1117,30 +1136,31 @@
 	<!-- Chapter comments for chapter "2 - A história de Fred" -->
 <div style="position: relative; width: 37%; float: left; margin-left: 10%;">	<h3 class="text_size text_dark_blue margin_sides_5_cent margin_top_bottom_3_cent">
 		<b class="margin_top_bottom_2_cent">Comentário: </b>
-	</h3>
+	</h3><br class="mobile_inline_block" />
 
 	<!-- Chapter read number 1 -->
 	<div class="w3-container background_cyan border_4px border_color_dark_blue border_radius_50px" style="width: 100%;">
 		<h4 class="text_size text_dark_blue margin_sides_10_cent margin_top_bottom_3_cent" style="text-align: left;">
-			<b>Lívia (Wattpad, 19/06/2021)</b><br /><b>Em</b>: 02:51 07/07/2021<hr class="border_1px border_color_cyan margin_sides_5_cent" />Continuaaaa
+			<br class="mobile_inline_block" /><b>Lívia (Wattpad, 19/06/2021)</b><br /><b>Em</b>: 02:51 07/07/2021<hr class="border_1px border_color_cyan margin_sides_5_cent" />Continuaaaa<br class="mobile_inline_block" /><br class="mobile_inline_block" />
 		</h4>
 	</div></div>
 	<!-- Chapter reads for chapter "2 - A história de Fred" -->
 <div style="position: relative; width: 37%; float: right; margin-right: 10%;">	<h3 class="text_size text_dark_blue margin_sides_5_cent margin_top_bottom_3_cent">
 		<b class="margin_top_bottom_2_cent">Leitura: </b>
-	</h3>
+	</h3><br class="mobile_inline_block" />
 
 	<!-- Chapter read number 1 -->
 	<div class="w3-container background_cyan border_4px border_color_dark_blue border_radius_50px" style="width: 100%;">
 		<h4 class="text_size text_dark_blue margin_sides_10_cent margin_top_bottom_3_cent" style="text-align: left;">
-			<b>Lívia (Wattpad, 19/06/2021)</b><br /><b>Em</b>: 04:03 06/07/2021
+			<br class="mobile_inline_block" /><b>Lívia (Wattpad, 19/06/2021)</b><br /><b>Em</b>: 04:03 06/07/2021<br class="mobile_inline_block" /><br class="mobile_inline_block" />
 		</h4>
 	</div></div>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "3 - As histórias e o reencontro" chapter -->
 <a id="chapter_3_anchor" name="3 - As histórias e o reencontro"></a>
-<div id="chapter_3" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_3" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">3 - As histórias e o reencontro</span></b><br /><br /><p>
@@ -1176,13 +1196,13 @@
 		<h4 class="text_size unselectable text_green_water" style="text-align: left;">
 		Lisa estava em sua LonelyShip, escrevendo sua história chamada "As Estranhezas da Natureza", ela terminou o capítulo atual que era o capítulo número nove, ela salvou o arquivo de texto.<br />
 		Depois disso, ela revisou e publicou aquele capítulo de sua história no Wattpad, depois de alguns minutos, o capítulo tinha cinco visualizações e dois comentários.<br />
-		(Wattpad é um site para as pessoas escreverem e lerem histórias, para autores postarem suas histórias e ganharem leitores.)<br />
+		(Wattpad é um site para as pessoas escreverem e lerem histórias, para autores postarem suas histórias e ganharem leitores.).<br />
 		Lisa estava feliz sobre aquilo, ela gostava de ter pessoas que gostavam de ler o que ela escrevia e pessoas que comentam em suas histórias.<br />
 		Então Lisa abriu o site Netflix para assistir algumas séries, ela gostava de assistir a série "The Walking Dead".<br />
-		(Netflix é um site e aplicativo de celular onde você pode assistir séries, filmes, desenhos, e animes online, usando um plano pago.)<br />
+		(Netflix é um site e aplicativo de celular onde você pode assistir séries, filmes, desenhos, e animes online, usando um plano pago.).<br />
 		Lisa estava no segundo episódio da sétima temporada, a garota gostava da história e os personagens, mas às vezes ela ficava com um pouco de medo de assistir.<br />
 		O programa Discord estava aberto no computador dela quando ela começou a assistir o episódio "The Walking Dead S07E03(86) 'A Cela'".<br />
-		(Discord é uma plataforma de rede social para gamers, mas os não-gamers também a usam.)<br />
+		(Discord é uma plataforma de rede social para gamers, mas os não-gamers também a usam.).<br />
 		Os detalhes do que ela estava assistindo apareceram no perfil do Discord dela, como um status do programa Discord, mostrando o título e o número do episódio.<br />
 		Ela pausou o vídeo e pegou uma pipoca e uma lata de Coca-cola de dentro da sua geladeira TPF, ela gostava de comer pipoca enquanto assistia coisas.<br />
 		Então ela sentou na cadeira e colocou o vídeo para tocar, Lisa comeu enquanto assistia o episódio, ela abriu o aplicativo da Rede SpaceLiving em seu computador.<br />
@@ -1221,7 +1241,7 @@
 		Ela estava olhando para suas Mensagens Diretas no Discord e olhou para a conversa dela com Anny, Anny também tinha Discord.<br />
 		Lisa conversou com ela, ela queria jogar alguns jogos com Anny.<br />
 		Elas são amigas virtuais, Lisa conheceu ela em um jogo que ela jogava quando ela estava na Terra.<br />
-		Ela enviou uma mensagem para Anny, "Ei Anny, quer jogar algo?"<br />
+		Ela enviou uma mensagem para Anny, "Ei Anny, quer jogar algo?".<br />
 		"Sim, o que você quer jogar?" perguntou Anny.<br />
 		"Não sei, talvez GTA 5, ou Terraria se você quiser", respondeu Lisa.<br />
 		Anny disse, "Eu gostaria de jogar os dois, hehe, ^^".<br />
@@ -1233,28 +1253,28 @@
 		"Eu vou fazer outra coisa Anny, até logo ^^", disse Lisa.<br />
 		"Ok, hehe, até logo Lisa ^^", respondeu Anny.<br />
 		Lisa abriu o navegador Mozilla Firefox e abriu o site Wattpad, ela começou a procurar por algumas histórias para ler.<br />
-		(Mozilla Firefox é um navegador da web.)<br />
-		Ela recebeu uma notificação dizendo a ela que a história A Vida de Pequenata $website_the_life_of_littletato_linked; recebeu um novo capítulo, capítulo número dezoito.<br />
+		(Mozilla Firefox é um navegador da web.).<br />
+		Ela recebeu uma notificação dizendo a ela que a história <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a> recebeu um novo capítulo, capítulo número dezoito.<br />
 		A história foi escrita por um usuário chamado "Stake2", ele era um garoto, ele amava escrever história, ele tinha muito amor por suas histórias.<br />
 		Lisa gostava daquela história, ela gostava de ver Pequenata e Júlia vivendo suas vidas, ela achava que elas eram tão fofas juntas e eram um casal fofo.<br />
 		A garota amou ler o capítulo, foi muito divertido, ela deu um voto e comentou nele dizendo o que ela achou dele.<br />
-		"Ei Stake2 ^^, eu amei a parte onde ela abriu o Vegecord para conversar com seus amigos :3<br />
-		Vegecord é Discord, né?<br />
-		Eu amo quando você muda o nome das coisas para colocar 'vegetais' no meio. xD<br />
-		Eu também gostei do fato de Pequenata escrever histórias também, isso é muito divertido, eu amo escrever também. ^^<br />
-		E estou feliz por Júlia porque ela conseguiu um emprego, agora ela vai poder comprar as coisas dela. :3<br />
+		"Ei Stake2 ^^, eu amei a parte onde ela abriu o Vegecord para conversar com seus amigos :3.<br />
+		Vegecord é Discord, né?.<br />
+		Eu amo quando você muda o nome das coisas para colocar 'vegetais' no meio. xD.<br />
+		Eu também gostei do fato de Pequenata escrever histórias também, isso é muito divertido, eu amo escrever também. ^^.<br />
+		E estou feliz por Júlia porque ela conseguiu um emprego, agora ela vai poder comprar as coisas dela. :3.<br />
 		Eu gostei da conversa entre Yam e Júlia, e Júlia convidando ele para o churrasco.<br />
-		'Vegiantart'. kkkkkk xD<br />
-		Eu amei esse capítulo ^^", comentou Lisa no capítulo número dezoito de A Vida de Pequenata.<br />
+		'Vegiantart' kkkkkk xD.<br />
+		Eu amei esse capítulo ^^", comentou Lisa no capítulo número dezoito de <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>.<br />
 		<br />
 		Depois de alguns minutos, o autor respondeu o comentário dela.<br />
 		"Olá Lisa ^^, obrigado por votar na minha história, e obrigado por gostar e comentar nela, eu tô muito feliz de receber seu feedback e seus comentários, hehe ^^.<br />
-		Sim, Vegecord é igual a Discord. xD<br />
-		Eu amo fazer isso xD, algumas vezes eu invento alguns nomes muito engraçados, é muito legal. xD<br />
+		Sim, Vegecord é igual a Discord. xD.<br />
+		Eu amo fazer isso xD, algumas vezes eu invento alguns nomes muito engraçados, é muito legal. xD.<br />
 		Algumas vezes eu me "auto-insiro" nela, tipo, eu escrevo Pequenata como eu seria, ou como eu agiria, e algumas vezes meus interesses.<br />
-		É por isso que ela gosta de ler e escrever histórias, é porque eu gosto. ^^<br />
+		É por isso que ela gosta de ler e escrever histórias, é porque eu gosto. ^^.<br />
 		Eu gostei de escrever sobre Júlia conseguindo um emprego, e sobre a conversa dela com Yam.<br />
-		Foi muito divertido escrever sobre Júlia tentando achar um emprego, e encontrando, hehe, vai ser melhor quando ela começar a trabalhar. ^^<br />
+		Foi muito divertido escrever sobre Júlia tentando achar um emprego, e encontrando, hehe, vai ser melhor quando ela começar a trabalhar. ^^.<br />
 		uwu xD.<br />
 		Eu estou feliz que você amou ^^, obrigadinho por comentar :3", comentou Stake2, respondendo ao comentário de Lisa.<br />
 		<br />
@@ -1272,10 +1292,10 @@
 		E a Google fechou o Google+ porque ela sentiu vergonha das violações de privacidade, Google+ foi a casa de muitos fãs de coisas e novas fandoms.<br />
 		Tipo a Fandom de Five Night's at Freddy's em 2014, My Little Pony, anime, muitos Brasileiros gostavam de usar o Google+, havia um movimento chamado Funky Cats no Google+.<br />
 		Funkysnipa Cat estava nesse movimento, a Google decidiu continuar trabalhando no Google+ mas só para empresas, e ficou consertando os erros de privacidade dele.<br />
-		Ela deixou um curto período de tempo para que os usuários pudessem baixar seus dados antes dela apagar o Google+ para o público.)<br />
+		Ela deixou um curto período de tempo para que os usuários pudessem baixar seus dados antes dela apagar o Google+ para o público.).<br />
 		Funkysnipa Cat foi o primeiro a começar a conversa no Discord quando ele e Lisa se encontraram novamente.<br />
 		Lisa abriu o aplicativo Hangouts do Google para pedir à Funkysnipa Cat seu nome e discriminador do Discord.<br />
-		(Hangouts é um app que estava ligado ao Google+, e você poderia usar sua conta do Google+ para conversar nele.)<br />
+		(Hangouts é um aplicativo que estava ligado ao Google+, e você poderia usar sua conta do Google+ para conversar nele.).<br />
 		Ele e Lisa eram Brasileiros e falantes nativos do idioma Português Brasileiro.<br />
 		"Olá, você é aquela amiga que eu tinha no Google+, né?" Funkysnipa Cat perguntou em Português Brasileiro.<br />
 		"Ei, sim, eu sou aquela amiga ^^, eu tô feliz que pedi pelo seu nome e discriminador do Discord", respondeu Lisa.<br />
@@ -1284,12 +1304,12 @@
 		O nome real de Funky era Izaque, Lisa gostava de ser amiga dele, ela estava feliz de ter um amigo gentil, carinhoso, e interessante como ele.<br />
 		Izaque estava feliz em ter conhecido Lisa naquela comunidade sobre anime do Google+.<br />
 		Enquanto conversava com Lisa no Discord, Izaque se lembrou da sua primeira conversa no Hangouts.<br />
-		Eles estavam conversando sobre My Little Pony e anime, Lisa disse que ela gostava do anime Eromanga Sensei, Izaque disse que seu primeiro anime foi Sword Art Online.<br />
+		Eles estavam conversando sobre My Little Pony e anime, Lisa disse que ela gostava do anime Eromanga-sensei, Izaque disse que seu primeiro anime foi Sword Art Online.<br />
 		Depois de algum tempo se conhecendo mais, Izaque descobriu que Lisa morava dentro de um LonelyShip.<br />
 		Izaque vivia no Planeta Terra normal, ele pensou que aquilo era um fato interessante sobre Lisa, o fato dela viver dentro de uma espaçonave.<br />
 		<br />
 		No começo da conversa, Izaque enviou a Lisa o link para seu perfil no Wattpad, Lisa e Izaque conversaram sobre histórias por um tempo.<br />
-		Lisa olhou o perfil de Izaque no Wattpad, ela notou que ele era Stake2, o escritor que criou A Vida de Pequenata $website_the_life_of_littletato_linked;.<br />
+		Lisa olhou o perfil de Izaque no Wattpad, ela notou que ele era Stake2, o escritor que criou <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>.<br />
 		Depois disso, ela voltou ao Discord para digitar uma mensagem para Izaque.<br />
 		"Izaque... Você é o Stake2?!" perguntou Lisa, surpresa.<br />
 		"Sim... Desculpe não ter te falado", respondeu Izaque.<br />
@@ -1301,8 +1321,8 @@
 		O autor dessa história é Izaque ou Funkysnipa Cat, mas aquela é a versão do Universo SpaceLiving do Izaque.<br />
 		Sim, é isso, eu sou Izaque e eu tô escrevendo sobre Lisa, minha querida amiga, isso é uma coisa estranha de se fazer, né? Bom, talvez não, eu pedi permissão à ela.<br />
 		Porque muitas histórias não conversam diretamente com o leitor, eles contam uma história ao leitor.<br />
-		Mas agora tô falando diretamente contigo, e eu incluo eu mesmo em minha própria história, é comum os autores fazerem isso?<br />
-		Por favor responda se você souber. xD<br />
+		Mas agora tô falando diretamente contigo, e eu incluo eu mesmo em minha própria história, é comum os autores fazerem isso?.<br />
+		Por favor responda se você souber. xD.<br />
 		Eu acho que você provavelmente tá fazendo uma cara assim agora: "O_O", agora, de volta para o estilo de narrador.<br />
 		Lisa disse à Izaque o que ela fazia nos dias que ela passava em sua LonelyShip, ela contou a ele sobre a Rede SpaceLiving e as LonelyShips.<br />
 		Ele queria escrever uma história sobre Lisa vivendo na Rede SpaceLiving, Lisa explicou as coisas para ele.<br />
@@ -1319,7 +1339,7 @@
 		"Ei Izaque, eu amei o primeiro capítulo de SpaceLiving, hehe, foi tão bem escrito.<br />
 		Você descreveu os sistemas e tecnologias das LonelyShips muito bem, e sobre o desejo da TOTB de fazer os adolescentes felizes.<br />
 		Obrigado por escrever ela, hehe, eu vou esperar ansiosamente pelo próximo capítulo, me diga se você precisar de mais conteúdo, hehe ^^", disse Lisa em sua mensagem.<br />
-		"Hehe, obrigado, eu estou feliz que você amou, Lisa, hehe ^^, eu gosto de escrever sobre tecnologias, eu amo elas. xD<br />
+		"Hehe, obrigado, eu estou feliz que você amou, Lisa, hehe ^^, eu gosto de escrever sobre tecnologias, eu amo elas. xD.<br />
 		Eu quero escrever sobre esse seu amigo, Fred, como você me disse.<br />
 		Você pode perguntar a ele se ele tá disposto a compartilhar a história SpaceLiving dele?" perguntou Izaque.<br />
 		"Oh, ok, vou perguntar para ele ^^", respondeu Lisa.<br />
@@ -1334,11 +1354,11 @@
 		<br />
 		Eu revisei ele enquanto escutava algumas músicas de Dubstep.<br />
 		E eu cheguei em uma música que eu amava, eu deixei ela repetindo.<br />
-		A música se chama Skybreak & Mizu - Aurora $skybreak_mizu_aurora_link;.<br />
-		Eu amo muito aquela música, é incrível! Tão calma e boa para ouvir enquanto escrevo SpaceLiving, hehe. xD<br />
+		A música se chama <a href="https://www.youtube.com/J2P1_v9aFV8" target="_blank">"Skybreak & Mizu - Aurora"</a>.<br />
+		Eu amo muito aquela música, é incrível! Tão calma e boa para ouvir enquanto escrevo SpaceLiving, hehe. xD.<br />
 		Eu amo cantar ela e sentir ela enquanto escrevo SpaceLiving ou qualquer coisa.<br />
-		Essa música me faz sentir tão feliz, eu sugiro que você ouça ela, hehe. :3)
-<br /><br />Palavras: 3,290<br /><br />		</h4>
+		Essa música me faz sentir tão feliz, eu sugiro que você ouça ela, hehe. :3).
+<br /><br />Palavras: 3,340<br /><br />		</h4>
 		
 
 		<!-- Chapter button for previous chapter -->
@@ -1371,15 +1391,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">3 - As histórias e o reencontro</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "4 - Ted e Monika" chapter -->
 <a id="chapter_4_anchor" name="4 - Ted e Monika"></a>
-<div id="chapter_4" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_4" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">4 - Ted e Monika</span></b><br /><br /><p>
@@ -1591,15 +1614,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">4 - Ted e Monika</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "5 - Ted e Monika, Parte 2" chapter -->
 <a id="chapter_5_anchor" name="5 - Ted e Monika, Parte 2"></a>
-<div id="chapter_5" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_5" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">5 - Ted e Monika, Parte 2</span></b><br /><br /><p>
@@ -1797,15 +1823,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">5 - Ted e Monika, Parte 2</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "6 - A atualização das EspaçoNaves e a reunião dos irmãos" chapter -->
 <a id="chapter_6_anchor" name="6 - A atualização das EspaçoNaves e a reunião dos irmãos"></a>
-<div id="chapter_6" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_6" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">6 - A atualização das EspaçoNaves e a reunião dos irmãos</span></b><br /><br /><p>
@@ -1840,8 +1869,8 @@
 		<!-- Chapter text -->
 		<h4 class="text_size unselectable text_green_water" style="text-align: left;">
 		SpaceLiving, Capítulo Seis, A Atualização da EspaçoNave e a reunião dos irmãos.<br />
-		*Uma mensagem aparece na tela onde você está lendo essa história...*<br />
-		*A mensagem é da empresa Think Outside The Box que criou as LonelyShips e a Rede SpaceLiving.*<br />
+		*Uma mensagem aparece na tela onde você está lendo essa história...*.<br />
+		*A mensagem é da empresa Think Outside The Box que criou as LonelyShips e a Rede SpaceLiving.*.<br />
 		Ela diz:<br />
 		"Rede de EspaçoNaves SpaceLiving, atualização número 1.3.709.<br />
 		Uma nova atualização para as LonelyShips (EspaçoNavesSolitárias) foi feita, ela trás mudanças de cor de parede.<br />
@@ -1857,7 +1886,7 @@
 		O Aplicativo SpaceLiving vem instalado em seu computador por padrão, junto com uma instalação de uma versão modificada do Windows 10.<br />
 		Essa versão se chama Windows 10 (Edição SpaceLiving).<br />
 		Alguns usuários estão recebendo um novo dispositivo que nós criamos chamado de "LonelyShip Teleporter", Teletransportador da LonelyShip, ou LST, você pode usá-lo para voltar para a Terra se você quiser.<br />
-		(Esse teletransportador não existia em versões antigas da LonelyShip, EspaçoNaveSolitária, mas agora todo residente da SpaceLiving tem um em sua espaçonave.)<br />
+		(Esse teletransportador não existia em versões antigas da LonelyShip, EspaçoNaveSolitária, mas agora todo residente da SpaceLiving tem um em sua espaçonave.).<br />
 		Para se teletransportar para a Terra usando o teleportador LST, um residente da espaçonave precisaria enviar um pedido de sincronização LST para uma casa de confiança.<br />
 		Tipo a dos seus pais, você pode enviar um pedido de sincronização LST para eles e eles irão receber uma mensagem de holograma para aceitar o pedido.<br />
 		Então, se eles aceitarem, um pequeno robô com rodas irá cair de um satélite construído pela TOTB, ele iria cair perto da casa de confiança.<br />
@@ -1872,19 +1901,19 @@
 		A Inteligência Artificial da LonelyShip vai mudar o nome da espaçonave dependendo do relacionamento entre você e seu parceiro de espaçonave.<br />
 		Se seu parceiro e você estão em um relacionamento romântico, então a espaçonave vai se chamar LovelyShip (EspaçonaveAmorosa).<br />
 		Se você e seu parceiro são amigos, vai se chamar FriendShip (Espaçonave de Amizade).<br />
-		Você também pode juntar-se ao servidor do Discord da SpaceLiving, junte-se ao servidor em $spaceliving_discord_join_link.<br />
+		Você também pode juntar-se ao servidor do Discord da SpaceLiving, junte-se ao servidor em <a href="https://discord.com/invite/NYN4CCu" target="_blank">"Servidor do Discord da Rede SpaceLiving"</a>.<br />
 		Esse é o fim do log de mudanças para as LonelyShip, isso foi escrito pela Think Outside The Box, defenda-se dos asteróides, fique seguro, cuide-se, e seja solitário! :D".<br />
-		*A mensagem desaparece...*<br />
+		*A mensagem desaparece...*.<br />
 		<br />
 		Um LonelyShip estava vendo esta mensagem, ele estava em sua LonelyShip, as paredes de sua LonelyShip tinham a cor laranja.<br />
 		O nome daquele LonelyShipper era Izaque.<br />
 		Ele amava sua LonelyShip, Izaque amava escutar Dubstep em sua LonelyShip, tocando alto nos alto-falantes.<br />
 		Izaque também fazia live streams na Twitch, mostrando o que ele fazia para seus inscritos.<br />
-		(Twitch é um site onde você pode assistir live streams, a maioria delas são de jogos, mas tem conversa também, instrumentos, live streams de músicas, viagens, reacts.)<br />
+		(Twitch é um site onde você pode assistir live streams, a maioria delas são de jogos, mas tem conversa também, instrumentos, live streams de músicas, viagens, reacts.).<br />
 		Ele gostava de baixar músicas do site SoundCloud, jogar jogos na Steam.<br />
-		(Steam é um programa onde você pode baixar jogos grátis e pagos para jogar em seu computador.)<br />
+		(Steam é um programa onde você pode baixar jogos grátis e pagos para jogar em seu computador.).<br />
 		Escrever histórias e postar elas no Wattpad, Fanfiction, e nos sites que ele próprio fazia, fazendo eles nas linguagens de programação PHP e HTML.<br />
-		(Wattpad é um site para as pessoas escreverem e lerem histórias, para autores postarem suas histórias e ganharem leitores.)<br />
+		(Wattpad é um site para as pessoas escreverem e lerem histórias, para autores postarem suas histórias e ganharem leitores.).<br />
 		Um dia, Izaque estava lendo uma história muito boa e atmosférica no site FimFiction.<br />
 		Era sobre o desenho My Little Pony e o jogo Don't Starve juntos, era um crossover.<br />
 		Ele gostava muito dessas duas coisas, o jogo, e o desenho, e essas coisas juntas eram melhores do que elas separadas.<br />
@@ -1896,16 +1925,16 @@
 		Ele gostava de ter muita música guardada em seu SSD, e ele se autodenominou um Music Hoarder (colecionador de música).<br />
 		Izaque estava em um SubReddit sobre Colecionar Música, a descrição do SubReddit era:<br />
 		"Casa dos colecionadores de música e audiófilos que procuram expandir, arquivar ou organizar sua biblioteca de música.<br />
-		Também compartilhamos métodos de armazenamento de dados/áudio, pirataria, acesso a trackers privados, torrents e muito mais."<br />
+		Também compartilhamos métodos de armazenamento de dados/áudio, pirataria, acesso a trackers privados, torrents e muito mais.".<br />
 		Izaque também era amigo de um dos fundadores da Think Outside The Box, ele gostou da nova atualização que eles fizeram nas LonelyShips.<br />
 		A possibilidade de EspaçoNave Dupla, mudança de cor de parede, convite de LonelyShip, e a mudança de equipamento, ele gostou de todas as novas mudanças e novos recursos.<br />
 		Izaque com certeza amava ser um LonelyShipper e viver em uma LonelyShip, viver na Rede de EspaçoNaves SpaceLiving.<br />
 		Ele até criou um servidor no Discord sobre ela e conversou com muitos amigos no Discord sobre como se tornar um LonelyShipper.<br />
 		O garoto queria que as pessoas sentissem a felicidade que ele sentia em sua LonelyShip.<br />
 		<br />
-		Um dia, Izaque tinha um asteróide vindo na direção de sua LonelyShip, então o sistema de segurança ativou e uma grande torre laser apareceu em cima de sua LonelyShip.<br />
-		Ela atirou seu raio laser em direção ao asteróide, destruindo o asteróide completamente.<br />
-		Izaque não estava com medo do asteróide, porque ele sabia que a LonelyShip iria protegê-lo do asteróide.<br />
+		Um dia, Izaque tinha um asteroide vindo na direção de sua LonelyShip, então o sistema de segurança ativou e uma grande torre laser apareceu em cima de sua LonelyShip.<br />
+		Ela atirou seu raio laser em direção ao asteroide, destruindo o asteroide completamente.<br />
+		Izaque não estava com medo do asteroide, porque ele sabia que a LonelyShip iria protegê-lo do asteroide.<br />
 		Ele amava estudar e aprender sobre as LonelyShips, SpaceLiving, e a empresa Think Outside The Box.<br />
 		Com a nova atualização número 1.3.709, Izaque e os outros LonelyShippers poderiam visitar suas famílias, eles estavam felizes de ver eles novamente.<br />
 		Lisa não queria ver sua família, ela pensava que eles iriam ficar tristes por ela, e sentir falta dela.<br />
@@ -1936,7 +1965,7 @@
 		<br />
 		Ela voltou para sua LonelyShip, ela saiu do teletransportador LST e andou para seu computador, ligando ele.<br />
 		Lisa esperou o computador inicializar, então ela abriu o programa Discord, ela também abriu o Aplicativo SpaceLiving no computador dela.<br />
-		(Discord é uma plataforma de rede social para gamers mas os não-gamers também usam ela.)<br />
+		(Discord é uma plataforma de rede social para gamers mas os não-gamers também usam ela.).<br />
 		A garota olhou no Aplicativo SpaceLiving, procurando pelo link de convite para o servidor do Discord oficial da Rede SpaceLiving.<br />
 		Ela entrou no servidor do Discord e disse olá no bate-papo principal, então ela clicou no canal de cargos.<br />
 		Lisa pegou alguns cargos como cargos de cor de parede, coisas adicionais, cores de móveis, o código de sua LonelyShip, que era #324.<br />
@@ -1966,7 +1995,7 @@
 		"O nome do meu pai é John, e o nome da minha mãe é Ana, eles disseram que o nome do meu irmão era Ted", disse Lisa.<br />
 		"Oh, isso é verdade? Hmm... Posso ver uma foto sua? Eu lembro que minha irmã tinha cabelos grisalhos..." perguntou Ted.<br />
 		"Ok, aqui está", disse Lisa, que enviou para Ted uma foto dela.<br />
-		$lisa_image;<br />
+		<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Lisa.jpg"" style="max-width: 50%;" /><br /><br />
 		"Eu não consigo acreditar... Essa é você? Lisa? Hmm... Posso visitar sua LonelyShip?" perguntou Ted.<br />
 		"Ok..." disse Lisa, que enviou o código da LonelyShip dela para Ted.<br />
 		<br />
@@ -1994,7 +2023,7 @@
 		"Posso conhecê-la?" perguntou Lisa.<br />
 		"Claro, hehe, que tal amanhã?" perguntou Ted.<br />
 		"Amanhã parece bom, hehe", disse Lisa.<br />
-		"Ok, hehe, eu vou voltar pra minha LonelyShip ok maninha?<br />
+		"Ok, hehe, eu vou voltar pra minha LonelyShip ok maninha?.<br />
 		Monika saiu da LonelyShip pra visitar os pais dela em Los Angeles e pra transferir a casa dela pra irmã dela.<br />
 		Eu vou ir pra Terra pra visitar a mãe e o pai, hoje é o dia de visitar seus pais, hehe, por causa da nova atualização das LonelyShips" disse Ted.<br />
 		"Ok mano, diga a mãe e o pai que a gente se encontrou novamente e que nós queremos encontrar nossas duas irmãs", disse Lisa.<br />
@@ -2017,7 +2046,7 @@
 		Era a voz da LSAI que Izaque tinha, ele mudou o gênero e nome da LSAI padrão.<br />
 		A LonelyShip de Izaque já tinha um equipamento muito bom, uma boa tela com uma taxa de atualização de 144hz, um PS4.<br />
 		Izaque estava feliz sobre sua LonelyShip, ele gostava de comer comidas deliciosas de sua geladeira TPF, assistir animes, filmes, desenhos, séries, vídeos, e jogar jogos em seu computador.<br />
-		Ele queria conversar mais com Lisa, Bunny, e outros amigos do Discord que ele tinha.<br />
+		Ele queria conversar mais com Lisa, e outros amigos do Discord que ele tinha.<br />
 		O garoto queria viver mais dentro de sua LonelyShip, ele tinha uma boa vida, não precisava trabalhar, tinha comida grátis e um computador grátis.<br />
 		Izaque estava um pouco cansado, ele ouviu um pouco de música de Dubstep em seu computador.<br />
 		Então assistiu um episódio do anime Eromanga Sensei enquanto comia cookies de chocolate.<br />
@@ -2037,7 +2066,7 @@
 		Ele adicionou o episódio de Eromanga Sensei para sua lista de assistidos usando seu script de Python chamado Watch.py (Assistir.py).<br />
 		Então Izaque desligou seu computador, ele deitou-se em sua cama para dormir.<br />
 		A LSAI desligou as luzes da LonelyShip, Izaque começou a dormir.
-<br /><br />Palavras: 3,807<br /><br />		</h4>
+<br /><br />Palavras: 3,841<br /><br />		</h4>
 		
 
 		<!-- Chapter button for previous chapter -->
@@ -2070,15 +2099,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">6 - A atualização das EspaçoNaves e a reunião dos irmãos</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "7 - O teleporte de iniciação" chapter -->
 <a id="chapter_7_anchor" name="7 - O teleporte de iniciação"></a>
-<div id="chapter_7" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_7" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">7 - O teleporte de iniciação</span></b><br /><br /><p>
@@ -2294,15 +2326,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">7 - O teleporte de iniciação</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "8 - O Primeiro Aniversário SpaceLiving" chapter -->
 <a id="chapter_8_anchor" name="8 - O Primeiro Aniversário SpaceLiving"></a>
-<div id="chapter_8" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_8" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">8 - O Primeiro Aniversário SpaceLiving</span></b><br /><br /><p>
@@ -2539,15 +2574,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">8 - O Primeiro Aniversário SpaceLiving</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "9 - O sonho do Bulkan e My Little Pony" chapter -->
 <a id="chapter_9_anchor" name="9 - O sonho do Bulkan e My Little Pony"></a>
-<div id="chapter_9" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_9" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">9 - O sonho do Bulkan e My Little Pony</span></b><br /><br /><p>
@@ -2598,20 +2636,20 @@
 		O universo de um anime específico existia em uma bolha de universo que contia todos os universos daquele anime.<br />
 		Tem universos canônicos, os universos que seguem o enredo que a transmissão do anime tinha.<br />
 		E universos não canônicos, onde coisas diferentes aconteciam, coisas que não aconteciam na versão de transmissão do anime.<br />
-		Izaque amava visitar e conversar com todos os seus personagens favoritos, de MLP, Sword Art Online, Fairy Tail, To Love Ru, Shingeki No Kyojin, Yuru Camp, Plastic Memories, e Eromanga Sensei.<br />
+		Izaque amava visitar e conversar com todos os seus personagens favoritos, de MLP, Sword Art Online, Fairy Tail, To LOVE-Ru, Shingeki No Kyojin, Yuru Camp, Plastic Memories, e Eromanga-sensei.<br />
 		Ele gostava de usar a tecnologia New World na Terra, e também gostava de viver em sua LonelyShip, ele pensou que a LonelyShip era movida a tecnologia New World, mas TOTB disse que isso não era verdade.<br />
 		Izaque estava um pouco cansado, ele disse para alguns amigos no Discord que ele iria tirar um cochilo, ele olhou para o relógio do computador e notou que eram cinco da tarde.<br />
 		Ele disse boa tarde para Igor, Carol, Paulo, Luíza, então ele desligou o computador e deitou-se em sua cama.<br />
 		<br />
 		O Izaque de SpaceLiving estava sonhando, ele era uma criança naquele sonho, uma criança chamada Izaque Bulkan.<br />
 		Ele estava jantando com Ana Bulkan, sua irmã; Rosa Winston Bulkan, sua mãe; e Fred Bulkan, seu pai.<br />
-		Esse Izaque é o Izaque Bulkan de minha história chamada A História dos Irmãos Bulkan $website_the_story_of_the_bulkan_siblings_linked;.<br />
+		Esse Izaque é o Izaque Bulkan de minha história chamada <a class="text_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank">"A História dos Irmãos Bulkan"</a>.<br />
 		Eu vou chamá-lo de Izaque Bulkan, porque seu sobrenome é Bulkan, e ele é da história Bulkan (apelido da história).<br />
 		Ele amava sua família, Izaque Bulkan amava ir em aventuras com Ana Bulkan e Fred Bulkan.<br />
-		Em uma aventura específica, o garoto conseguiu uma Manopla do Infinito dourada com jóias nela, ele soube que o último usuário dessa manopla era Thanos (Vingadores: Guerra Infinita).<br />
+		Em uma aventura específica, o garoto conseguiu uma Manopla do Infinito dourada com joias nela, ele soube que o último usuário dessa manopla era Thanos (Vingadores: Guerra Infinita).<br />
 		Izaque Bulkan amava usar sua manopla, para proteger sua família, a manopla tinha o poder de criar portais, viajar para outra dimensão, e atirar elementos.<br />
 		Uma noite, todo mundo exceto Izaque Bulkan estavam dormindo, ele pegou sua manopla e saiu da casa.<br />
-		O garoto usou a jóia da mente para ganhar conhecimento, ele soube sobre o desenho "My Little Pony: A Amizade É Mágica", e que o desenho existia em outro universo.<br />
+		O garoto usou a joia da mente para ganhar conhecimento, ele soube sobre o desenho "My Little Pony: A Amizade É Mágica", e que o desenho existia em outro universo.<br />
 		Ele andou para uma montanha alta, a lua estava grande atrás dele, igual em um filme, ele olhou para a casa de seus pais e pensou em Ana.<br />
 		O garoto olhou para sua Manopla do Infinito, pensando sobre o universo de "MLP: AAEM", ele teve uma visão sobre aquele universo e soube que outra versão dele amava aquele lugar.<br />
 		Alguém como ele mas de outro universo, ele sentiu que as memórias de outro Izaque estavam vazando para sua mente.<br />
@@ -2660,7 +2698,7 @@
 		"Bom, mesmo eu não entendo ela perfeitamente, mas claro, eu poderia voltar aqui algum dia.<br />
 		E eu gosto de sentir o amor que o outro Izaque tem por você, o Izaque New World, e o Izaque Normal da Terra, é bom", disse Izaque Bulkan, sorrindo.<br />
 		"Hehe, é, eu sei que ele me ama, e eu amo ele também, eu me sinto feliz quando estou com ele, hehe", disse Twilight, sorrindo também.<br />
-		(O Izaque New World é a versão New World de mim, o Izaque Old World da Terra sou eu, que está escrevendo agora.)<br />
+		(O Izaque New World é a versão New World de mim, o Izaque Old World da Terra sou eu, que está escrevendo agora.).<br />
 		<br />
 		"Isso é bom, hehe, então... Eu tenho que ir Twilight, desculpe, eu vou deixar essa joia marrom aqui, para que você possa se lembrar que eu vou voltar", disse Izaque Bulkan.<br />
 		"Oh, ok..." disse Twilight.<br />
@@ -2709,7 +2747,7 @@
 		A LonelyShip também tinha lasers embaixo da mesa para limpar suas mãos após comer.<br />
 		E também luvas que grudavam as migalhas de comidas nelas e você poderia remover as luvas facilmente, colocando as mãos em um quadrado holográfico azul embaixo da mesa.<br />
 		Ele limpou o leite achocolatado derramado e colocou o limpador a laser em cima da geladeira TPF.<br />
-		Izaque ouviu uma música calma enquanto bebia seu leite achocolatado e olhava suas redes sociais, o nome da música era Panda Eyes - Take My Hand Ft. Azuria Sky (Z∆NE Remix) $panda_eyes_take_my_hand_ft_azuria_sky_zane_remix;.<br />
+		Izaque ouviu uma música calma enquanto bebia seu leite achocolatado e olhava suas redes sociais, o nome da música era <a href="https://www.youtube.com/OCIEd71mViM" target="_blank">"Panda Eyes - Take My Hand Ft. Azuria Sky (Z∆NE Remix)"</a>.<br />
 		Algumas pessoas deram gostei e comentaram em suas histórias no Wattpad, e ele respondeu a todas elas, agradecendo seus leitores, então respondeu suas mensagens no Facebook e Discord.<br />
 		Ele gostou de saber que seus amigos queridos enviaram mensagens para ele, ele estava tão feliz de ver eles todos os dias, mesmo que não fisicamente.<br />
 		Para ele, era incrível ver seus rostos, ou fotos de perfil todos os dias.<br />
@@ -2720,8 +2758,8 @@
 		Sophia era igual Izaque, batendo cabeça (headbangando) para rock igual ele batia cabeça para Dubstep.<br />
 		Lily e James ainda estavam dormindo, eles estavam sonhando sobre muitas coisas, James sonhava em visitar alguns artistas de KPOP.<br />
 		Então sobre jogar um jogo em seu celular, Free Fire, ele gostava de jogar aquele jogo.<br />
-		Lily sonhava em viver com Brendon Urie da banda Panic! at the Disco, ela amava ele.<br />
-		Monika estava sonhando em viver no mundo No Man's Sky.<br />
+		Lily sonhava em viver com Brendon Urie da banda "Panic! at the Disco", ela amava ele.<br />
+		Monika estava sonhando em viver no mundo do jogo "No Man's Sky".<br />
 		Esses LonelyShippers com certeza sonho, né? xD.<br />
 		<br />
 		(Eu escrevi esse capítulo em 07/10/2019.<br />
@@ -2729,14 +2767,15 @@
 		E terminei de traduzir ele em 07/06/2021, bem longe né? É porque eu tive que traduzir todos os oito capítulos anteriores, e também meu computador deu uns problemas recentemente.<br />
 		O texto acima só existe na versão em Português.<br />
 		Eu amei escrever sobre o Izaque SpaceLiving sonhando sobre Izaque Bulkan.<br />
-		E eu amei escrever sobre Izaque Bulkan, o Izaque de minha história chamada A História dos Irmãos Bulkan $website_the_story_of_the_bulkan_siblings_linked;.<br />
+		E eu amei escrever sobre Izaque Bulkan, o Izaque de minha história chamada <a class="text_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank">"A História dos Irmãos Bulkan"</a>.<br />
 		Eu tenho certeza que ele vai visitar mais universos das minhas histórias em breve xD.<br />
 		Eu gostei de escrever sobre o Izaque Bulkan visitando o universo de "My Little Pony: A Amizade É Mágica" e conversando com Pinkie Pie e Twilight Sparkle.<br />
 		Eu também gostei de falar sobre o Izaque New World, e o Izaque Normal da Terra (eu).<br />
 		Hehe, eu gostei de falar sobre a rotina diária do Izaque SpaceLiving, levantando, pegando um pouco de leite achocolatado e pão com queijo e presunto.<br />
 		Ouvindo músicas e tal, checando suas redes sociais, respondendo comentários no Wattpad.<br />
-		E eu revisei esse capítulo ouvindo a trilha sonora do filme Tom e Jerry de 2021 $tom_and_jerrys_2021_soundtrack_playlist;.)
-<br /><br />Palavras: 3,539<br /><br />		</h4>
+		E eu revisei esse capítulo ouvindo a trilha sonora do filme "Tom e Jerry" de 2021<br />
+		<div class="video-container" style="margin-top: 1%; margin-bottom: -6%;"><iframe type="text/html" width="560" height="315" frameborder="0" class="border_radius_5_cent border_4px border_color_cyan" src="https://www.youtube.com/embed/videoseries?autoplay=0&fs=1&iv_load_policy=1&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&list=PLDisKgcnAC4TkSDGxuPm1DeohG8FMEMNa" title="YouTube video player"></iframe></div><br />)
+<br /><br />Palavras: 3,612<br /><br />		</h4>
 		
 
 		<!-- Chapter button for previous chapter -->
@@ -2769,15 +2808,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">9 - O sonho do Bulkan e My Little Pony</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "10 - SpaceNata?" chapter -->
 <a id="chapter_10_anchor" name="10 - SpaceNata?"></a>
-<div id="chapter_10" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_10" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">10 - SpaceNata?</span></b><br /><br /><p>
@@ -2811,13 +2853,14 @@
 
 		<!-- Chapter text -->
 		<h4 class="text_size unselectable text_green_water" style="text-align: left;">
-		Esse é um capítulo crossover entre SpaceLiving $website_spaceliving_linked;.<br />
-		E A Vida de Pequenata $website_the_life_of_littletato_linked;.<br />
-		"SpaceLiving" e "A Vida de Pequenata" são duas histórias minhas.<br />
-		Você precisa ler o capítulo número vinte e seis $the_life_of_littletato_chapter_26;.<br />
-		De A Vida de Pequenata $website_the_life_of_littletato_linked; para entender a história.<br />
-		Esse capítulo é a continuação para aquele capítulo, capítulo número vinte e seis de A Vida de Pequenata $website_the_life_of_littletato_linked;.<br />
-		$spaceliving_the_life_of_littletato_chapter_crossover_link;<br />
+		Esse é um capítulo crossover entre <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a> e <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>.<br />
+		<a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a> e <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a> são duas histórias minhas.<br />
+		Você precisa ler o capítulo <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/?chapter=26#" target="_blank">vinte e seis</a> de <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a> para entender a história.<br />
+		Esse capítulo é a continuação para aquele capítulo, o capítulo vinte e seis de <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>.<br />
+		<div style="padding-top: 1%;"><a class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white animation_shake_side" href="https://thestake2.netlify.app/The Life of Littletato/pt/?chapter=26#" target="_blank" style="max-width: 50%; font-weight: bold;">
+			A Vida de Pequenata - Capítulo: 26 - PequeLiving?
+			</a></div>
+		<br />
 		<br />
 		Então elas romperam o abraço, Lisa e Pequenata olharam uma para a outra.<br />
 		"Estou feliz de te ver de novo, irmã", disse Pequenata.<br />
@@ -2941,7 +2984,7 @@
 		"E minhas crianças que desapareceram..." disse Ana, triste, olhando para Lisa e Ted, ela abraçou eles também, apertado.<br />
 		Lisa e Ted explicaram o que aconteceu com eles, como eles desapareceram, o que era a Rede SpaceLiving, e as LonelyShips.<br />
 		Ouça isso enquanto você lê essa parte:<br />
-		$tom_and_jerry_2021_married_in_the_park;.<br />
+		<a href="https://www.youtube.com/cAlTw8szj6Q" target="_blank">"Tom & Jerry - Married In The Park"</a><br />
 		Todos eles sentaram na mesa para tomar café da manhã  juntos.<br />
 		"A família tá reunida de novo..." disse Pequenata, olhando para todos.<br />
 		Todo mundo sorrindo, conversando, Lisa conversando com seus pais, Ted também, Pequenata e Carol colocando o papo em dia.<br />
@@ -2950,11 +2993,11 @@
 		Ela gostava de ter aquela família, ela estava sorrindo, vendo todo mundo.<br />
 		<br />
 		(E é nesse clima que eu termino esse capítulo, ouvindo essa música aqui, eu recomendo que você ouça também, para ficar no mesmo clima que eu.<br />
-		$tom_and_jerry_2021_the_weddings_off;<br />
+		<a href="https://www.youtube.com/SCxnA10GOMA" target="_blank">"Tom & Jerry - The Wedding's Off"</a><br />
 		Tem sido uma boa jornada revisar todos os capítulos de SpaceLiving, de um para dez.<br />
-		E revisar todos os capítulos de A Vida de Pequenata $website_the_life_of_littletato_linked;, do um até vinte e seis.<br />
+		E revisar todos os capítulos de <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>, do um até vinte e seis.<br />
 		Parece que essa jornada tá acabando, com aquela música, mas não tá.<br />
-		Ainda há cinco capítulos de SpaceLiving pra mim revisar, e três capítulos de A Vida de Pequenata $website_the_life_of_littletato_linked;.<br />
+		Ainda há cinco capítulos de SpaceLiving pra mim revisar, e três capítulos de <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>.<br />
 		E eu também posso escrever mais capítulos para elas, e outras histórias minhas, para você ler.<br />
 		Obrigado por ler até aqui, e ler minhas histórias.<br />
 		Hoje é 04/05/2021, uma Terça-feira, do ano de 2021 (revisão).<br />
@@ -2962,8 +3005,8 @@
 		Eu amo escrever histórias, criar arte, criar coisas, dar vida para as coisas que eu amo.<br />
 		Eu amo revisar minhas histórias e escrever elas, eu fico feliz que eu tenho esse talento ou habilidade.<br />
 		Eu sou Izaque, Stake2, e Funkysnipa Cat, obrigado pela sua atenção.<br />
-		Te vejo depois, felicidades :3.)
-<br /><br />Palavras: 2,632<br /><br />		</h4>
+		Te vejo depois, felicidades :3.).
+<br /><br />Palavras: 2,822<br /><br />		</h4>
 		
 
 		<!-- Chapter button for previous chapter -->
@@ -2996,15 +3039,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">10 - SpaceNata?</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "11 - A chegada do novo LonelyShipper" chapter -->
 <a id="chapter_11_anchor" name="11 - A chegada do novo LonelyShipper"></a>
-<div id="chapter_11" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_11" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">11 - A chegada do novo LonelyShipper</span></b><br /><br /><p>
@@ -3053,7 +3099,7 @@
 		<br />
 		Izaque recebeu uma notificação de um bot do servidor do Discord da Rede SpaceLiving dizendo que uma nova LonelyShipper havia chegado.<br />
 		Ele tinha dezoito anos naquela época, em 2020.<br />
-		"Olá @Funkysnipa Cat#XXXX, uma nova LonelyShipper chegou!<br />
+		"Olá @Funkysnipa Cat#XXXX, uma nova LonelyShipper chegou!.<br />
 		Seria bom se você pudesse cumprimentá-la e explicar para ela sobre a Rede SpaceLiving e as LonelyShips.<br />
 		Obrigado pela sua ajuda! Do Bot de Notificação de Ajudantes Voluntários SpaceLiving :3", disse o Bot de Notificação de Ajudantes Voluntários SpaceLiving no Discord de Izaque.<br />
 		Izaque então abriu uma Mensagem Direta com a nova LonelyShipper no Discord, ela se chamava Luíza.<br />
@@ -3114,12 +3160,12 @@
 		"Oh, vou procurar por isso no servidor do Discord então, hehe, eu adoraria ler sua história algum dia", disse Luíza.<br />
 		"Eu amaria mandar ela pra ti, hehe, já tem alguns capítulo publicados no site, você quer o link?" perguntou Izaque.<br />
 		"Sim, por favor", respondeu Luíza.<br />
-		"Aqui tá ele $website_spaceliving_linked;", disse Izaque.<br />
+		"Aqui tá ele <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a>", disse Izaque.<br />
 		<br />
 		"Obrigada", respondeu Luíza.<br />
 		"Sem problema, hehe, obrigado por querer ler.<br />
 		Eu acho que no capítulo cinco tem um convite para o servidor do Discord da SpaceLiving, mas isso é meio inútil já que você já tá nele", disse Izaque.<br />
-		"Então, quem lê até o capítulo cinco, e está na Terra, pode ir pra Rede SpaceLiving?<br />
+		"Então, quem lê até o capítulo cinco, e está na Terra, pode ir pra Rede SpaceLiving?.<br />
 		Se eu soubesse disso, eu teria lido sua história antes, hehe", disse Luíza.<br />
 		"Hehe, bem, não, eu só mando essa história pra alguém que já tá em uma LonelyShip.<br />
 		Mas eu acho que tem alguns tutoriais da Internet em como ser 'convidado' a morar em uma LonelyShip", disse Izaque.<br />
@@ -3144,8 +3190,8 @@
 		"Obrigada, maninha, hehe, eu tô trabalhando agora, vou voltar a programar um aplicativo, ok? Até mais maninha ^^", disse Pequenata.<br />
 		"Oh, ok, hehe, até mais, mana ^^", disse Lisa.<br />
 		<br />
-		(Eu não sei quando esse capítulo foi escrito, mas eu sei que eu revisei ele em 16/06/2021, e traduzi em 03/07/2021.)
-<br /><br />Palavras: 1,971<br /><br />		</h4>
+		(Eu não sei quando esse capítulo foi escrito, mas eu sei que eu revisei ele em 16/06/2021, e traduzi em 03/07/2021.).
+<br /><br />Palavras: 1,986<br /><br />		</h4>
 		
 
 		<!-- Chapter button for previous chapter -->
@@ -3178,15 +3224,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">11 - A chegada do novo LonelyShipper</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "12 - Os sonhos estranhos de Izaque" chapter -->
 <a id="chapter_12_anchor" name="12 - Os sonhos estranhos de Izaque"></a>
-<div id="chapter_12" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_12" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">12 - Os sonhos estranhos de Izaque</span></b><br /><br /><p>
@@ -3220,16 +3269,16 @@
 
 		<!-- Chapter text -->
 		<h4 class="text_size unselectable text_green_water" style="text-align: left;">
-		(Este capítulo menciona personagens do desenho My Little Pony: A Amizade é Mágica.<br />
+		(Este capítulo menciona personagens do desenho <a href="https://pt.wikipedia.org/wiki/My_Little_Pony:_A_Amizade_%C3%89_M%C3%A1gica" target="_blank">"My Little Pony: A Amizade É Mágica"</a>.<br />
 		Se você não conhece os personagens ou não conhece o desenho, recomendo que leia sobre o desenho e os personagens para entender mais o capítulo.<br />
-		$my_little_pony_fim_wikipedia_link;)<br />
+		<a href="https://pt.wikipedia.org/wiki/My_Little_Pony:_A_Amizade_%C3%89_M%C3%A1gica" target="_blank">"My Little Pony: A Amizade É Mágica" na Wikipédia</a>)<br />
 		<br />
 		Izaque estava em sua LonelyShip, ele estava usando seu computador, ouvindo uma música chamada "The Brig - Mind Changer".<br />
 		Ele estava pensando em Lisa, sua amiga que também vive em uma LonelyShip, ele queria falar com ela novamente.<br />
 		E talvez visitar ela em sua LonelyShip, mesmo que ele não conhecesse ela muito bem.<br />
 		Izaque estava pensando em chamar Lisa para visitar sua LonelyShip novamente, ele se lembrou de quando ele visitou a LonelyShip dela pela primeira vez.<br />
 		O garoto abriu o Discord para conversar com Lisa.<br />
-		"Ei, Lisa, o que você acha de visitar minha LonelyShip algum dia?<br />
+		"Ei, Lisa, o que você acha de visitar minha LonelyShip algum dia?.<br />
 		Eu visitei a sua depois do Terceiro Aniversário SpaceLiving", perguntou Izaque em uma mensagem.<br />
 		"Sim, eu acho que seria bom, eu quero visitar sua LonelyShip pra ver como ela é", respondeu Lisa.<br />
 		"Você não ficaria desconfortável de estar comigo aqui, né?" perguntou Izaque.<br />
@@ -3246,7 +3295,7 @@
 		E então começou a assistir um episódio de My Little Pony: A Amizade é Mágica enquanto comia uma fatia de bolo de chocolate e bebia um copo de Coca-cola.<br />
 		Depois de algum tempo, ele terminou de assistir aquele episódio de My Little Pony.<br />
 		Então ele deitou em sua cama e fechou seus olhos, dormindo enquanto pensava em Lisa.<br />
-		Izaque sonhou sobre ser um humano em Equestria, ele era Izaque da Terra, um humano que tinha asas douradas feitas de fluído de lava, e um gancho fixante de mão amarelo feito de fluído de lava<br />
+		Izaque sonhou sobre ser um humano em Equestria, ele era Izaque da Terra, um humano que tinha asas douradas feitas de fluído de lava, e um gancho fixante de mão amarelo feito de fluído de lava.<br />
 		Ele também era metade humano metade dragão, ou um humano híbrido de um dragão, ele respirava fogo e tinha lava em vez do ácido gástrico humano normal no estômago.<br />
 		O garoto estava em seu quarto, seu computador estava lá.<br />
 		Ele abriu um portal roxo para Equestria, o portal apareceu dentro do Castelo de Cristal de Twilight Sparkle, uma pônei princesa de pelagem roxa.<br />
@@ -3262,7 +3311,7 @@
 		Eu escrevi essa história em 2017, se chamava Pequenata também, foi tão incrível.<br />
 		Eu me senti muito feliz escrevendo ela, eu me senti muito incrível, e ainda é incrível escrever aquela história", disse Izaque.<br />
 		"Oh, é muito bom ouvir isso Izaque! Eu fico feliz que você tá se divertindo tanto escrevendo ela.<br />
-		Dois mil e dezessete foi um bom tempo atrás na Terra, né?<br />
+		Dois mil e dezessete foi um bom tempo atrás na Terra, né?.<br />
 		Você tá me inspirando a escrever uma história Izaque! Hehe, isso me faz tão feliz.<br />
 		Eu fiquei inspirada vendo que você ainda escreve sua história até hoje e é tão dedicado por ela", disse Twilight Sparkle.<br />
 		"Sim, foi um bom tempo atrás.<br />
@@ -3280,8 +3329,8 @@
 		Tô grato de ter conhecido ela, e eu tô feliz que eu criei a história dela, ela é minha filha.<br />
 		Ela me chama de papai, e eu tô feliz por causa disso..." explicou Izaque.<br />
 		"Oh, essa é uma forma muito boa de conhecer alguém, conhecer a pessoa porque você escreveu uma história sobre ela", disse Twilight, gargalhando de leve.<br />
-		"Eu não sei o que o Discord é, é uma rede que o Discórdia criou ou algo assim?<br />
-		Como vocês dois podem se conectar dessa forma?<br />
+		"Eu não sei o que o Discord é, é uma rede que o Discórdia criou ou algo assim?.<br />
+		Como vocês dois podem se conectar dessa forma?.<br />
 		Algumas vezes eu não consigo entender o Discórdia..." disse Twilight.<br />
 		"Bom, Twilight, não é o Discórdia de Equestria, sabe.<br />
 		Discord é só o nome de uma rede social que existe na Terra.<br />
@@ -3313,7 +3362,7 @@
 		Izaque SpaceLiving liga seu computador e abre o Mozilla Firefox.<br />
 		Então ele abre o site Piskel app, que é o site que ele usa para fazer pixel art e desenhos, mesmo que ele não desenhe tão frequentemente.<br />
 		Ele desenha uma pixel art de uma LonelyShip padrão, depois de algumas horas desenhando, ele termina o desenho.<br />
-		$spaceliving_lonelyship_pixel_art_story_cover;<br />
+		<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover.png" style="max-width: 50%;" /><br /><br />
 		<br />
 		Izaque fica muito orgulhoso daquele desenho, ele até compartilha com alguns amigos dele no Discord, Lisa gosta muito do desenho.<br />
 		O garoto pensa sobre a história que ele sonhou, A Vida de Pequenata, ele sabe que ele nunca escreveu ela, ele só escreveu Kezzakam e SpaceLiving.<br />
@@ -3331,7 +3380,7 @@
 		Ela conversa com Júlia sobre isso, discutindo algumas coisas sobre a casa, o que ela deveria ter, e quantos quartos ela deveria ter.<br />
 		Júlia diz que ela quer uma casa com no mínimo sete quartos, para que elas possam trazer mais amigos e talvez suas famílias para passar algum tempo lá.<br />
 		Pequenata diz que isso é uma boa ideia, ela diz que ela vai começar a procurar por uma casa na Internet amanhã de manhã.
-<br /><br />Palavras: 2,105<br /><br />		</h4>
+<br /><br />Palavras: 2,174<br /><br />		</h4>
 		
 
 		<!-- Chapter button for previous chapter -->
@@ -3364,15 +3413,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">12 - Os sonhos estranhos de Izaque</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "13 - A rotina de Lisa e a Mansão de Pequenata" chapter -->
 <a id="chapter_13_anchor" name="13 - A rotina de Lisa e a Mansão de Pequenata"></a>
-<div id="chapter_13" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_13" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">13 - A rotina de Lisa e a Mansão de Pequenata</span></b><br /><br /><p>
@@ -3655,15 +3707,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">13 - A rotina de Lisa e a Mansão de Pequenata</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "14 - Capítulo Especial de Natal 🎄 🎁" chapter -->
 <a id="chapter_14_anchor" name="14 - Capítulo Especial de Natal 🎄 🎁"></a>
-<div id="chapter_14" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_14" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">14 - Capítulo Especial de Natal 🎄 🎁</span></b><br /><br /><p>
@@ -3826,15 +3881,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">14 - Capítulo Especial de Natal 🎄 🎁</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "15 - O Segundo Aniversário SpaceLiving" chapter -->
 <a id="chapter_15_anchor" name="15 - O Segundo Aniversário SpaceLiving"></a>
-<div id="chapter_15" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_15" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">15 - O Segundo Aniversário SpaceLiving</span></b><br /><br /><p>
@@ -4061,15 +4119,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">15 - O Segundo Aniversário SpaceLiving</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "16 - O vídeo de Onomatopeia Visual e as memórias" chapter -->
 <a id="chapter_16_anchor" name="16 - O vídeo de Onomatopeia Visual e as memórias"></a>
-<div id="chapter_16" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_16" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">16 - O vídeo de Onomatopeia Visual e as memórias</span></b><br /><br /><p>
@@ -4111,7 +4172,7 @@
 		Lisa estava desenhando uma garota de anime que ela pensou sobre, ela estava desenhando a line art dela, o esboço.<br />
 		Ela estava feliz de poder desenhar coisas que aparecem em sua mente, ela gosta de ser criativa.<br />
 		Eram oito da manhã, Lisa já havia feito suas necessidades matinais, ela comeu uma Canjica quente, Lisa achou que estava delicioso.<br />
-		(Canjica, ou Mungunzá no nordeste do país, é uma sobremesa Brasileira feita de milho branco, leite, açúcar, e temperos, ela é muito popular em festas juninas.)<br />
+		(Canjica, ou Mungunzá no nordeste do país, é uma sobremesa Brasileira feita de milho branco, leite, açúcar, e temperos, ela é muito popular em festas juninas.).<br />
 		Depois de uma hora desenhando, ela parou de desenhar, registrando o tempo que ela passou desenhando em seu arquivo de texto que era seu diário.<br />
 		Então ela abriu o navegador Mozilla Firefox e abriu o aplicativo Discord em seu computador.<br />
 		A garota colocou para tocar um mix de músicas Future Bass em baixo volume no YouTube, ela trocou para a janela do Discord.<br />
@@ -4128,12 +4189,12 @@
 		Ela estava feliz de receber votos e comentários, ela abriu alguns comentários em novas abas para responder eles.<br />
 		Depois de responder alguns comentários, ela fechou as abas, Lisa voltou para a janela do Discord, Anny havia lhe mandado uma mensagem.<br />
 		"Isso é legal, hehe, vai me mandar quando terminar?" perguntou Anny.<br />
-		"Sim, hehe, vou te mandar, me manda o seu também!<br />
+		"Sim, hehe, vou te mandar, me manda o seu também!.<br />
 		Ei Anny, quer jogar um pouco de SAMP comigo?" perguntou Lisa em sua mensagem (SAMP = San Andreas MultiPlayer, versão Multiplayer do jogo GTA San Andreas).<br />
 		"Vou te mandar ele também, hehe, e sim eu quero", respondeu Anny.<br />
 		Então ambas entraram no servidor do Discord que Lisa havia criado para ela e Anny passarem um tempo juntas.<br />
 		O nome do servidor era "Lisanny", que parecia um nome de shipp, Lisa estava um pouco tímida sobre aquele nome quando ela criou o servidor (nome de shipp = um nome para descrever o nome de casal de duas pessoas que você quer que fiquem juntas).<br />
-		(Shippar = Um verbo usando para descrever a ação de desejar que duas pessoas entrem em um relacionamento (seja romântico ou ocasionalmente platônico) em livros, filmes, séries de tv, ou a vida real.)<br />
+		(Shippar = Um verbo usando para descrever a ação de desejar que duas pessoas entrem em um relacionamento (seja romântico ou ocasionalmente platônico) em livros, filmes, séries de TV, ou a vida real.).<br />
 		Lisa e Anny entraram no canal de voz para jogos, Anny chamou um bot para tocar um pouco de música no canal de voz.<br />
 		Depois disso, Lisa fechou a aba do Mozilla Firefox onde o mix de músicas Future Bass estava tocando.<br />
 		Elas começaram a jogar um pouco de San Andreas MultiPlayer juntos, elas estavam felizes jogando, elas estava jogando em um servidor de RPG.<br />
@@ -4144,7 +4205,7 @@
 		A música era uma música de piada feita por Sharks em primeiro de Abril de 2020, era uma piada com o gênero de música Riddim.<br />
 		No começo da edição, ele fez uma captura de tela de uma parte da forma de onda da música jogada no programa de edição de áudio Audacity.<br />
 		Izaque fez uma captura de tela da forma de onda azul e vermelha, editando ela e removendo o fundo.<br />
-		$audacity_blue_bass_waveform;<br />
+		<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Audacity Blue Bass Waveform.png" style="max-width: 50%;" /><br /><br />
 		Depois disso, ele inseriu as duas fotos da forma de onda no projeto da Onomatopeia Visual no programa de edição de vídeo Sony Vegas.<br />
 		Ele nomeou os dois arquivos de forma de onda "Baixo Azul" e "Baixo Vermelho", o azul era para baixos e sintetizadores emocionais na música.<br />
 		E o vermelho era para baixos e sintetizadores dark, fortes, ou "fodões".<br />
@@ -4152,7 +4213,7 @@
 		Ele deformou e modificou o tamanho das fotos dos baixos em sincronia com os sons de baixo digitais na música.<br />
 		O garoto havia feito uma Onomatopeia Visual do Among Us usando os personagens do Among Us alguns dias atrás.<br />
 		A música que ele expressou visualmente foi "Tema musical original drip do Among Us (Remix de Trap do Among Us / Música de Meme do Amogus)" feita por Leonz.<br />
-		$among_us_trap_remix_by_leonz;<br />
+		<a href="https://www.youtube.com/fzQ6gRAEoy0" target="_blank">"Tema musical original drip do Among Us (Remix de Trap do Among Us / Música de Meme do Amogus) por Leonz"</a><br />
 		Ele usou o personagem preto para o bumbo, o cinza para o chimbal, e o branco para a tarola.<br />
 		Izaque também usou o personagem vermelho para simbolizar o violino agudo e o personagem marrom para simbolizar o violino grave (possivelmente um violoncelo).<br />
 		O garoto teve a ideia de usar os três personagens de bateria no vídeo de Onomatopeia Visual da música FROG PARTY (Festa dos Sapos).<br />
@@ -4161,22 +4222,22 @@
 		Ele também inseriu uma animação de chuva transparente no fundo do vídeo no começo, por que os sons tinham um som de chuva.<br />
 		Izaque colocou a capa da música nas partes da música onde uma mulher falava "FROG PARTY".<br />
 		O garoto editou a capa da música para adicionar mais personagens nela, haviam sapos na capa da música original.<br />
-		$orignal_sharks_frog_party_song_cover;<br />
+		<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Orignal Sharks - FROG PARTY Song Cover.jpg" style="max-width: 50%;" /><br /><br />
 		Ele adicionou sua logo Stake2, o corpo inteiro de seu personagem Funkysnipa Cat, Fluttershy de My Little Pony: A Amizade é Mágica, os Among Uses vermelho e marrom, e as fotos do baixo azul e vermelho.<br />
-		(Stake2 é um nome que Izaque usa na Internet desde 2008, em todas as contas que ele criou ao longo do tempo.)<br />
+		(Stake2 é um nome que Izaque usa na Internet desde 2008, em todas as contas que ele criou ao longo do tempo.).<br />
 		(Funkysnipa Cat é uma conta da rede social Google+ que Izaque criou em 2013.<br />
 		Ele criou ela porque era parte de um movimento para homenagear o YouTuber chamado Funky Black Cat, o nome do movimento se chamava "Os Funky Cats".<br />
 		Outras pessoas criaram contas com outros temas de Funky Cat, substituindo o "Black" do nome do YouTuber.<br />
 		Eles também editavam a foto de perfil original do Funky Black Cat, adicionando coisas que condiziam com o tema Funky Cat que eles escolheram.<br />
-		Tipo Funky Ninja Cat, Funky Corredor Cat, Funky Pato Cat, Funky Cosmos Cat, Funky Macaco Cat.)<br />
-		$funky_black_cat_original_picture;<br />
+		Tipo Funky Ninja Cat, Funky Corredor Cat, Funky Pato Cat, Funky Cosmos Cat, Funky Macaco Cat.).<br />
+		<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Funky Black Cat Original Profile Picture.png" style="max-width: 50%;" /><br /><br />
 		(Izaque descobriu muitas coisas novas no Google+, ele descobriu My Little Pony, Five Nights at Freddy's, Undertale, começou a gostar mais de Dubstep.<br />
 		Ele também conheceu muitas pessoas boas, ele ainda fala com algumas delas até hoje, por exemplo, Lulu, uma amiga que ele conhece desde 2015, já fazem seis anos.<br />
 		Google+ faleceu no segundo dia de Abril de 2019, a Google decidiu fechar ele porque ele tinha violações de privacidade e problemas de segurança que a Google havia escondido alguns meses atrás e as pessoas descobriram elas.<br />
-		Então a Google continuou trabalhando no Google+, mas só para empresas.)<br />
+		Então a Google continuou trabalhando no Google+, mas só para empresas.).<br />
 		<br />
 		O garoto também adicionou o desenho em pixel art da espaçonave LonelyShip de sua história chamada SpaceLiving na versão editada da capa da música Frog Party.<br />
-		$edited_sharks_frog_party_song_cover;<br />
+		<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Edited Sharks - FROG PARTY Song Cover.jpg" style="max-width: 50%;" /><br /><br />
 		Izaque colocou a capa da música original nas partes onde a mulher falava "Frog" (Sapo), e a capa da música editada nas partes onde a mulher falava "Party" (Festa).<br />
 		Colocando a capa da música editada com mais pessoas nas partes de "Party" (Festa), Izaque pensou que isso dava um sentimento de "Party" (Festa) para aquilo, com mais pessoas.<br />
 		Ele também colocou uma animação de um interruptor de liga desliga nas partes que uma voz falava "Switch" (Troque), ligando o interruptor.<br />
@@ -4188,7 +4249,7 @@
 		Ele checou as notificações do servidor Super Server, o servidor do Discord dos criadores do site Super Animes, um site de animes, e o site Super Mangás, um site de mangás.<br />
 		Izaque leu a notificação, ela falava que o site Super Animes recebeu um DMCA da Disney e outras empresas.<br />
 		(A DMCA é quando o conteúdo é removido de um site a pedido do proprietário do conteúdo ou do proprietário dos direitos autorais do conteúdo.<br />
-		É um padrão de Internet bem estabelecido e aceito, seguido por proprietários de sites e provedores de serviços de Internet.)<br />
+		É um padrão de Internet bem estabelecido e aceito, seguido por proprietários de sites e provedores de serviços de Internet.).<br />
 		Ele estava triste de ver aquilo, onde ele iria assistir animes agora? SA era o melhor site para assistir animes para ele.<br />
 		O garoto também fez um total de oitocentos e setenta e seis comentários no site.<br />
 		Ele conheceu vários amigos lá, e baixou e assistiu muitos episódios de anime.<br />
@@ -4213,7 +4274,7 @@
 		Os personagens podem ser resgatados após terem um pouso forçado no mapa do jogador, eles podem vagar por aí, ou podem ser capturados depois de uma invasão.<br />
 		Assim, os referidos colonos também podem conter características negativas tipo serem piromaníacos ou psicopatas.<br />
 		O jogo pode terminar quando pelo menos um personagem escapou do planeta em uma espaçonave, ou eles estarem todos mortos.<br />
-		Com a DLC Royalty (Realeza), o jogo também pode acabar hospedando o Grande Stellarch, líder de uma das facções que habitam o Rim (a Borda), e deixando a colônia com eles.)<br />
+		Com a DLC Royalty (Realeza), o jogo também pode acabar hospedando o Grande Stellarch, líder de uma das facções que habitam o Rim (a Borda), e deixando a colônia com eles.).<br />
 		Ele amou o jogo, ele ajudou ele a ver partes da sociedade e humanidade que ele não viu antes, ou não viu nessa perspectiva.<br />
 		O fato de que nós matamos animais para pegar comida, usamos plantas como comida, e pegamos madeira das árvores, pegando energia do sol ou do vento.<br />
 		Izaque poderia dar uma ordem para caçar um animal e ver os colonos caçando ele, trazendo ele para casa, abatendo ele, e colocando a carne na geladeira que era só um quarto com um refrigerador que esfriava o lugar.<br />
@@ -4256,7 +4317,7 @@
 		Esse laser não removia sua pele ou machucava ele, era somente para limpeza, ele removia bactérias e sujeira, ele usou aquilo depois de acariciar seus cães.<br />
 		Depois disso, ele andou até seu computador, sentando-se na cadeira, o filme que ele colocou para baixar havia terminado de baixar.<br />
 		Ele passou seu dia no computador, parando algumas vezes para comer, beber água, e se exercitar.
-<br /><br />Palavras: 3,638<br /><br />		</h4>
+<br /><br />Palavras: 3,779<br /><br />		</h4>
 		
 
 		<!-- Chapter button for previous chapter -->
@@ -4289,15 +4350,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">16 - O vídeo de Onomatopeia Visual e as memórias</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "17 - A visita e a manhã de jogo" chapter -->
 <a id="chapter_17_anchor" name="17 - A visita e a manhã de jogo"></a>
-<div id="chapter_17" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_17" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">17 - A visita e a manhã de jogo</span></b><br /><br /><p>
@@ -4465,15 +4529,18 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">17 - A visita e a manhã de jogo</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter tab for "18 - O Novo Ano na SpaceLiving" chapter -->
 <a id="chapter_18_anchor" name="18 - O Novo Ano na SpaceLiving"></a>
-<div id="chapter_18" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 1%; margin-bottom: 2%; display: none;">
+<div id="chapter_18" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">18 - O Novo Ano na SpaceLiving</span></b><br /><br /><p>
@@ -4626,10 +4693,13 @@
 
 	</div>
 
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
 		<p><br /><b>Você acabou de ler: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water">18 - O Novo Ano na SpaceLiving</span></b><br /><br /><p>
 	</h3>
+	<br /><br />
 </div>
 
 <!-- Chapter comment modal for all chapters -->
@@ -4660,16 +4730,16 @@
 			<h2 class="text_size margin_top_bottom_2_cent text_green_water" style="font-weight: bold;">
 				Meu nome:<br />
 			</h2>
-			<input type="text" name="name" class="w3-input text_size background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="font-weight: bold; width: 50%; border-radius: 50px;">
+			<input type="text" name="name" class="w3-input text_size background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="width: 100%; font-weight: bold; border-radius: 50px;">
 
 			<!-- Hidden chapter title input -->
-			<input id="chapter_comment_value" type="hidden" name="chapter" value="" class="w3-input background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="display: none; font-weight: bold; border-radius: 50px; text-align: center;">
+			<input id="chapter_comment_value" type="hidden" name="chapter" value="" class="w3-input background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="width: 100%; display: none; font-weight: bold; border-radius: 50px; text-align: center;">
 
 			<!-- Comment input -->
 			<h2 class="text_size text_green_water margin_sides_10_cent margin_top_bottom_3_cent" style="font-weight: bold;">
 				Comentário: 
 			</h2>
-			<input class="w3-input text_size background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" type="text" name="comment" style="font-weight: bold; width: 50%; border-radius: 50px;" />
+			<input class="w3-input text_size background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" type="text" name="comment" style="width: 100%; font-weight: bold; border-radius: 50px;" />
 			<br />
 
 			<!-- Submit form button -->
@@ -4679,7 +4749,7 @@
 				</h2>
 			</button>
 
-			<br class="mobile" />
+			<br class="mobile_inline_block" /><br class="mobile_inline_block" />
 		</form>
 	</div>
 </div>
@@ -4712,10 +4782,10 @@
 			<h2 class="text_size margin_top_bottom_2_cent text_green_water" style="font-weight: bold;">
 				Meu nome:<br />
 			</h2>
-			<input type="text" name="name" class="w3-input text_size background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="font-weight: bold; width: 50%; border-radius: 50px;">
+			<input type="text" name="name" class="w3-input text_size background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="width: 100%; font-weight: bold; border-radius: 50px;">
 
 			<!-- Hidden chapter title input -->
-			<input id="chapter_read_value" type="hidden" name="chapter" value="" class="w3-input background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="display: none; font-weight: bold; border-radius: 50px; text-align: center;">
+			<input id="chapter_read_value" type="hidden" name="chapter" value="" class="w3-input background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" style="width: 100%; display: none; font-weight: bold; border-radius: 50px; text-align: center;">
 
 			<br />
 
@@ -4726,7 +4796,7 @@
 				</h2>
 			</button>
 
-			<br class="mobile" />
+			<br class="mobile_inline_block" /><br class="mobile_inline_block" />
 		</form>
 	</div>
 </div>
