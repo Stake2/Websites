@@ -1,119 +1,98 @@
 <!DOCTYPE html>
 <head>
+	<!-- Website title -->
 	<title>The Secret of the Crystals</title>
-	<link rel="canonical" href="https://thestake2-testing.netlify.app/The Secret of the Crystals/" />
-	<link rel="icon" type="image/png" href="https://thestake2-testing.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.jpg" />
-	<link rel="image_src" type="image/png" href="https://thestake2-testing.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.jpg" />
+
+	<!-- Website links -->
+	<link rel="canonical" href="https://thestake2.netlify.app/The Secret of the Crystals/general/" />
+	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.png" />
+	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.png" />
+
+	<!-- Website meta tags -->
+	<meta name="title" content="The Secret of the Crystals" />
+	<meta name="description" content="Website about my story, The Secret of the Crystals, made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
+	<meta name="meta_language" content="General" />
+	<meta name="theme-color" content="#00bcd4" />
+
+	<!-- Website og meta tags -->
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="The Secret of the Crystals" />
 	<meta property="og:site_name" content="The Secret of the Crystals" />
-	<meta property="og:url" content="https://thestake2-testing.netlify.app/The Secret of the Crystals/" />
-	<meta property="og:image" content="https://thestake2-testing.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.jpg" />
-	<meta property="og:description" content="Website about my story, The Secret of the Crystals, made by Stake2, Funkysnipa Cat, Izaque." />
+	<meta property="og:url" content="https://thestake2.netlify.app/The Secret of the Crystals/general/" />
+	<meta property="og:image" type="image/png" content="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.png" />
+	<meta property="og:description" content="Website about my story, The Secret of the Crystals, made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 	<meta property="og:locale" content="en_US" />
-	<meta property="og:locale:alternate" content="pt_BR" />
-	<meta property="og:locale:alternate" content="pt_PT" />
-	<meta name="language_title" content="The Secret of the Crystals" />
-	<meta name="description" content="Website about my story, The Secret of the Crystals, made by Stake2, Funkysnipa Cat, Izaque." />
-	<meta name="theme-color" content="#00bcd4" />
-	<meta name="twitter:card" content="summary" />
+
+	<!-- Twitter meta tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="The Secret of the Crystals" />
+	<meta name="twitter:description" content="Website about my story, The Secret of the Crystals, made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 	<meta name="twitter:website" value="@Stake2_" />
 	<meta name="twitter:site" value="@Stake2_" />
 	<meta name="twitter:creator" content="@Stake2_" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:url" content="https://thestake2-testing.netlify.app/The Secret of the Crystals/" />
-	<meta name="revised" content="Stake2's Enterprise TM, 10/08/2022." />
+	<meta name="twitter:url" content="https://thestake2.netlify.app/The Secret of the Crystals/general/" />
+	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.png" />
+
+	<!-- Author related meta tags -->
+	<meta name="revised" content="Stake2's Enterprise TM, 12/23/2022." />
 	<meta name="author" content="Stake2" />
+
+	<!-- Viewport and charset -->
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 	<meta charset="UTF-8" />
 
 	<!-- CSS files -->
-	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/lib/w3.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2-testing.netlify.app/CSS/Styler CSS/W3.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2-testing.netlify.app/CSS/Styler CSS/Main_CSS.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2-testing.netlify.app/CSS/Styler CSS/Colors.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2-testing.netlify.app/CSS/Website CSS/The Secret of the Crystals.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2-testing.netlify.app/CSS/Styler CSS/Notifications.css" />
+	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/W3.css" />
+	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Colors.css" />
+	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Main.css" />
+
+	<!-- Define website box shadow -->
+	<style>
+	body {
+		--shadow-color: #00bcd460;
+		--spread-container: 10px;
+		--spread-btn: 0.5px;
+	}
+
+	.w3-btn, .w3-container, .modal, .modal-content, .w3-input {
+		box-shadow: 0 -8px 20px var(--spread-btn) var(--shadow-color),
+		0 8px 20px var(--spread-btn) var(--shadow-color),
+		0 6px 20px var(--spread-btn) var(--shadow-color),
+		0 -6px 20px var(--spread-btn) var(--shadow-color);
+	}
+	
+	.video-container {
+		position: relative;
+		width: 50vw;
+		height: calc(50vw/1.77);
+	}
+
+	.video-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50vw;
+		height: calc(50vw/1.77);
+	}
+	</style>
 
 	<!-- JavaScript files -->
-	<script src="https://thestake2-testing.netlify.app/JavaScript/Function/Language Redirector.js"></script>
+	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Language.js"></script>
+	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Functions.js"></script>
+	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Language_Redirector.js"></script>
+	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Tabs.js"></script>
+	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Tab_By_Key.js"></script>
+	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Story.js"></script>
+	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+
+	<script>
+		Check_Language()
+	</script>
 </head>
-<body>
-<center>
 
 
-<!-- Website header -->
-<div class="background_black border_color_cyan border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<!-- Website computer title -->
-<h2 class="w3-center text_blue w3-animate-zoom mobileHide">
-<p><br /><b>The Secret of the Crystals: <i class="fas fa-book"></i></b><br /><br /><p>
-</h2>
-</div>
 
-<!-- Website mobile title -->
-<div class="w3-animate-zoom"><h4 class="w3-center text_blue w3-animate-zoom mobileShow">
-<p><br /><b>The Secret of the Crystals: <i class="fas fa-book"></i></b><br /><br /><p>
-</h4>
-</div>
-<hr class="border_color_cyan border_1px" style="margin-left:3%;margin-right:3%;" />
-<!-- Website Images -->
-<div class="w3-center">
-
-<!-- Computer website image -->
-<center>
-<img src="https://thestake2-testing.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.jpg" width="55%" class="w3-center border_3px border_color_cyan mobileHide w3-center" style="border-radius: 50px;" />
 </center>
-
-<!-- Computer website image link button -->
-<div class="mobileHide w3-center">
-<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="window.open('https://thestake2-testing.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.jpg')">
-<h4>Open image in new tab: <i class="fas fa-images"></i></h4>
-</button>
-</div>
-
-<!-- Mobile website image -->
-<center>
-<img src="https://thestake2-testing.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.jpg" width="99%" class="border_3px border_color_cyan mobileShow w3-center" style="border-radius: 50px;" />
-</center>
-
-<!-- Mobile website image link button -->
-<div class="mobileShow w3-center">
-<button class="w3-btn text_black background_blue border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="window.open('https://thestake2-testing.netlify.app/Images/Story Covers/The Secret of the Crystals/English/Cover.jpg')">
-<h4>Open image in new tab: <i class="fas fa-images"></i></h4>
-</button>
-</div>
-
-</div>
-
-<hr class="border_color_cyan border_1px" style="margin-left:3%;margin-right:3%;" /><!-- Story synopsis -->
-<h4 class="text_blue" style="margin-left:11%;margin-right:11%;">
-Synopsis: <i class="fas fa-scroll"></i> "This is the story of Ana, a fairy that lives on the planet Earth, a crystal version, where several different species live.<br />
-She lives on the Crystal Lands, where the fairies live, where many crystals come out of the ground.<br />
-Other species live on this planet too, besides fairies.<br />
-Ana and the fairies do not know the origin of the crystals, where they came from, or how they formed.<br />
-She is an adventurous and brave girl, she loves exploring her planet, flying, and discovering new islands.<br />
-Ana will go in search of the secret of the crystals to try to unravel this mystery that has been around for decades.<br />
-She also does not know where the fairies and other creatures came from, or what was the past of the world.<br />
-The girl does not know what is beyond the sky, the stars, she wants to discover that.<br />
-And this is the story of her journey, what will be waiting for Ana in this journey? New Friends? New places?<br />
-We will have to read to know, here begins The Secret of the Crystals."<br />
-<!-- Story website info, author(s), chapters, readers, creation date, status -->
-Author of the story: <span class="w3-text-orange" >Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span><br />
-Chapters: <span class="text_cyan">15 <i class="fas fa-book-open"></i></span><br />Story creation date: <span class="text_cyan">02/04/2020</span><br />
-Status: <span class="text_cyan">[Writing]</span></h4>
-<br /></div>
-<!-- End of header -->
-
-<br /><br />
-
-
-<script>
-function getElementByXpath(path) {
-  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-}
-</script><div style="display:none;" id="click_button_background">background_cyan</div>
-<div style="display:none;" id="button_background">background_blue</div>
-<div style="display:none;" id="button_number">2</div>
 </body>
 </html>
