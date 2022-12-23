@@ -103,18 +103,31 @@ function Check_Language() {
 	}
 
 	if (website["correct_language"] == false) {
+		// Add slash if it is not present
 		if (website["link"].slice(-1) != "/") {
 			website["link"] += "/"
 		}
 
+		// Split parameters to remove addon
 		if (website["link"].includes("?") == true) {
 			website["link"] = website["link"].split("?")[0]
 		}
 
+		// Remove other languages that are not the user language from the website link
+		Array.from(languages["small"]).forEach(
+			function(language) {
+				if (language != languages["user"] && website["link"].includes(language + "/")) {
+					website["link"] = website["link"].replace(language + "/", "")
+				}
+			}
+		)
+
+		// Add user language
 		if (website["link"].includes(languages["user"] + "/") == false) {
 			website["link"] += languages["user"] + "/"
 		}
 
+		// Add addon
 		if (website["link"].includes("?") == false) {
 			website["link"] += website["addon"]
 		}
