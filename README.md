@@ -20,7 +20,7 @@ Read [Code of Conduct](https://github.com/Stake2/Websites/blob/main/CODE_OF_COND
 
 ## Websites
 
-[Stake2](https://thestake2.netlify.app/Stake2/)
+[Izaque, Stake2, Funkysnipa Cat](https://thestake2.netlify.app/Stake2/)
 
 [Diary](https://thestake2.netlify.app/Diary/)
 

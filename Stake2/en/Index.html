@@ -1,634 +1,591 @@
 <!DOCTYPE html>
 <head>
-	<title>Stake2, Funkysnipa Cat</title>
+	<!-- Website title -->
+	<title>Izaque, Stake2, Funkysnipa Cat</title>
+
+	<!-- Website links -->
 	<link rel="canonical" href="https://thestake2.netlify.app/Stake2/en/" />
-	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Website Icons/Stake2.png" />
-	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Website Icons/Stake2.png" />
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Stake2, Funkysnipa Cat" />
-	<meta property="og:site_name" content="Stake2, Funkysnipa Cat" />
-	<meta property="og:url" content="https://thestake2.netlify.app/Stake2/en/" />
-	<meta property="og:image" content="https://thestake2.netlify.app/Images/Website Icons/Stake2.png" />
-	<meta property="og:description" content="Website to show who I am in the Internet, created by me, Izaque.
-I am my two Digital Identities, Stake2, and Funkysnipa Cat.
-Names: Izaque, Stake2, Funkysnipa Cat, The Cold Lake Appears." />
-	<meta property="og:locale" content="en_US" />
-	<meta property="og:locale:alternate" content="pt_BR" />
-	<meta property="og:locale:alternate" content="pt_PT" />
-	<meta name="language_title" content="Stake2, Funkysnipa Cat English" />
-	<meta name="description" content="Website to show who I am in the Internet, created by me, Izaque.
-I am my two Digital Identities, Stake2, and Funkysnipa Cat.
-Names: Izaque, Stake2, Funkysnipa Cat, The Cold Lake Appears." />
+	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Icons/Stake2.png" />
+	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Icons/Stake2.png" />
+
+	<!-- Website meta tags -->
+	<meta name="title" content="Izaque, Stake2, Funkysnipa Cat" />
+	<meta name="description" content="Website to show who I am in the Internet, created by me, Izaque.<br />I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
+	<meta name="meta_language" content="English" />
 	<meta name="theme-color" content="#ffa500" />
-	<meta name="twitter:card" content="summary" />
+
+	<!-- Website og meta tags -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Izaque, Stake2, Funkysnipa Cat" />
+	<meta property="og:site_name" content="Izaque, Stake2, Funkysnipa Cat" />
+	<meta property="og:url" content="https://thestake2.netlify.app/Stake2/en/" />
+	<meta property="og:image" type="image/png" content="https://thestake2.netlify.app/Images/Icons/Stake2.png" />
+	<meta property="og:description" content="Website to show who I am in the Internet, created by me, Izaque.<br />I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
+	<meta property="og:locale" content="en_US" />
+
+	<!-- Twitter meta tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Izaque, Stake2, Funkysnipa Cat" />
+	<meta name="twitter:description" content="Website to show who I am in the Internet, created by me, Izaque.<br />I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
 	<meta name="twitter:website" value="@Stake2_" />
 	<meta name="twitter:site" value="@Stake2_" />
 	<meta name="twitter:creator" content="@Stake2_" />
-	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content="https://thestake2.netlify.app/Stake2/en/" />
-	<meta name="revised" content="Stake2's Enterprise TM, 08/01/2022." />
+	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Icons/Stake2.png" />
+
+	<!-- Author related meta tags -->
+	<meta name="revised" content="Stake2's Enterprise TM, 12/26/2022." />
 	<meta name="author" content="Stake2" />
+
+	<!-- Viewport and charset -->
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 	<meta charset="UTF-8" />
 
 	<!-- CSS files -->
-	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/lib/w3.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/W3.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Main_CSS.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Styler CSS/Colors.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Website CSS/POCB.css" />
+	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/W3.css" />
+	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Colors.css" />
+	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Main.css" />
+
+	<!-- Define website box shadow -->
+	<style>
+	body {
+		--shadow-color: #ffa50060;
+		--spread-container: 10px;
+		--spread-btn: 0.5px;
+	}
+
+	.w3-btn, .w3-container, .modal, .modal-content, .w3-input {
+		box-shadow: 0 -8px 20px var(--spread-btn) var(--shadow-color),
+		0 8px 20px var(--spread-btn) var(--shadow-color),
+		0 6px 20px var(--spread-btn) var(--shadow-color),
+		0 -6px 20px var(--spread-btn) var(--shadow-color);
+	}
+	
+	.video-container {
+		position: relative;
+		width: 50vw;
+		height: calc(50vw/1.77);
+	}
+
+	.video-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50vw;
+		height: calc(50vw/1.77);
+	}
+	</style>
 
 	<!-- JavaScript files -->
-	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>
-	<script src="https://thestake2.netlify.app/JavaScript/Function/Tabs.js"></script>
-	<script src="https://thestake2.netlify.app/JavaScript/Function/Language Redirector.js"></script>
-	<script src="https://thestake2.netlify.app/JavaScript/Function/Show Hide.js"></script>
-	<script src="https://thestake2.netlify.app/JavaScript/Function/Mobile Side Menu.js"></script>
-	<script src="https://thestake2.netlify.app/JavaScript/Function/Set Revised Date.js"></script>
-	<script src="https://thestake2.netlify.app/JavaScript/Function/Change Button Color.js"></script>
+	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Language.js"></script>
+	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Functions.js"></script>
+	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Language_Redirector.js"></script>
+	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Tabs.js"></script>
+	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Tab_By_Key.js"></script>
+	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+
+	<script>
+		Check_Language()
+	</script>
 </head>
-<body onLoad="Define_Colors_And_Styles();">
+
+<body class="background_dark_orange" onLoad="Remove_Zoom();">
 <center>
-	<!--- Computer Button bar on the top -->
-<div id="computer_buttons_bar" class="w3-center w3-bar mobileHide w3-animate-top" style="position:fixed;float:right;">
-<span title="Izaque" alt="Izaque">
-<a href="#Stake2_Izaque_Computer"><button id="computer_button_1" class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Stake2_Izaque_Computer');Define_Button('computer_button_1');Change_Button_Color();" title="Izaque" alt="Izaque"><h2>Izaque: <i class="fas fa-user-circle"></i></h2></button></a>
-</span>
 
-<span title="Stake2" alt="Stake2">
-<a href="#Stake2_Stake2_Computer"><button id="computer_button_2" class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Stake2_Stake2_Computer');Define_Button('computer_button_2');Change_Button_Color();" title="Stake2" alt="Stake2"><h2>Stake2: <i class="fas fa-user-circle"></i></h2></button></a>
-</span>
-
-<span title="Funkysnipa Cat" alt="Funkysnipa Cat">
-<a href="#Stake2_Funkysnipa Cat_Computer"><button id="computer_button_3" class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Stake2_Funkysnipa Cat_Computer');Define_Button('computer_button_3');Change_Button_Color();" title="Funkysnipa Cat" alt="Funkysnipa Cat"><h2>Funkysnipa Cat: <i class="fas fa-user-circle"></i></h2></button></a>
-</span>
-
-<span title="Social Media" alt="Social Media">
-<a href="#Stake2_Social Media_Computer"><button id="computer_button_4" class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Stake2_Social Media_Computer');Define_Button('computer_button_4');Change_Button_Color();" title="Social Media" alt="Social Media"><h2>Social Media: <i class="fas fa-globe"></i></h2></button></a>
-</span>
-
-<span class="mobileHide" >
-<a class="" href="#Websites tab">
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" id="websites_tab_button" style="border-radius: 50px;" alt="Websites tab" title="Websites tab" onclick="Hide_Computer_Buttons();openCity('Websites tab');Define_Button('websites_tab_button');Change_Button_Color();"><h2 class="" >
-Websites: <i class="fas fa-globe-americas"></i></h2></button></a>
-</span><br />
-<center><button id="hide_computer_buttons" class="w3-center w3-btn text_black background_orange border_color_black border_3px background_hover_white mobileHide" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-up"></i></h2></button></center>
-
-</div>
-
-<!-- "Show Computer Buttons" button bar -->
-<div id="show_computer_button_bar" class="w3-bar" style="position:fixed;float:right;">
-<button id="show_computer_buttons" class="w3-center w3-btn text_black background_orange border_color_black border_3px background_hover_white mobileHide" style="display:none;float:right;border-radius: 50px;" onclick="Show_Computer_Buttons();"><h2><i class="fas fa-arrow-circle-down"></i></h2></button>
-
-</div>
-
-
-
-<!--- Mobile Button bar at the left -->
-<div id="mobile_button_sidebar" class="w3-center mobile_button_sidebar_css mobileShow ">
-
-<a href="javascript:void(0)" class="close_mobile_sidebar_button" onclick="Hide_Mobile_Buttons();" style="font-size:35px;">
-<i class="fas fa-times-circle"></i>
-</a>
-
-<span style="font-size:30px;" class="mobileShow text_orange">Mobile button menu: </span>
-
-<a href="#Stake2_Izaque_Mobile" onclick="Hide_Mobile_Buttons();" title="Izaque" alt="Izaque">
-<button id="mobile_button_1" class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Stake2_Izaque_Mobile');Define_Button('computer_button_1');Change_Button_Color();">
-<h4>Izaque: <i class="fas fa-user-circle"></i></h4>
+<!-- Open hamburger menu button -->
+<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
+	<h2 class="text_size">
+		<i class="fas fa-bars"></i>
+	</h2>
 </button>
-</a>
-<a href="#Stake2_Stake2_Mobile" onclick="Hide_Mobile_Buttons();" title="Stake2" alt="Stake2">
-<button id="mobile_button_2" class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Stake2_Stake2_Mobile');Define_Button('computer_button_2');Change_Button_Color();">
-<h4>Stake2: <i class="fas fa-user-circle"></i></h4>
-</button>
-</a>
-<a href="#Stake2_Funkysnipa Cat_Mobile" onclick="Hide_Mobile_Buttons();" title="Funkysnipa Cat" alt="Funkysnipa Cat">
-<button id="mobile_button_3" class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Stake2_Funkysnipa Cat_Mobile');Define_Button('computer_button_3');Change_Button_Color();">
-<h4>Funkysnipa Cat: <i class="fas fa-user-circle"></i></h4>
-</button>
-</a>
-<a href="#Stake2_Social Media_Mobile" onclick="Hide_Mobile_Buttons();" title="Social Media" alt="Social Media">
-<button id="mobile_button_4" class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="Hide_Computer_Buttons();openCity('Stake2_Social Media_Mobile');Define_Button('computer_button_4');Change_Button_Color();">
-<h4>Social Media: <i class="fas fa-globe"></i></h4>
-</button>
-</a>
-<span class="mobileShow" >
-<a class="" href="#Websites tab">
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" id="websites_tab_button" style="border-radius: 50px;" alt="Websites tab" title="Websites tab" onclick="Hide_Mobile_Buttons();openCity('Websites tab');Define_Button('websites_tab_button');Change_Button_Color();"><h4 class="" >
-Websites: <i class="fas fa-globe-americas"></i></h4></button></a>
-</span>
+
+<!--- Hamburger menu -->
+<div id="hamburger_menu" class="w3-container w3-animate-left background_orange border_4px border_color_light_orange border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
+
+	<!-- Hide hamburger menu button -->
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 15px !important;">
+		<h4 class="text_size" style="font-weight: bold;">
+		X
+		</h4>
+	</button>
+
+	<h2 class="text_size text_dark_orange" style="font-weight: bold;">Tab menu: </h2>
+
+	<br />
+
+	<!-- "Izaque" button -->
+	<span id="button_1" class="tab_button">
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Izaque');" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Izaque: <i class="fas fa-user-circle"></i>
+			</h2>
+		</button>
+	</span>
+
+	<!-- "Stake2" button -->
+	<span id="button_2" class="tab_button">
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Stake2');" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Stake2: <i class="fas fa-user-circle"></i>
+			</h2>
+		</button>
+	</span>
+
+	<!-- "Funkysnipa Cat" button -->
+	<span id="button_3" class="tab_button">
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Funkysnipa_Cat');" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Funkysnipa Cat: <i class="fas fa-user-circle"></i>
+			</h2>
+		</button>
+	</span>
+
+	<!-- "Social Networks" button -->
+	<span id="button_4" class="tab_button">
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Social_Networks');" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Social Networks: <i class="fas fa-globe"></i>
+			</h2>
+		</button>
+	</span>
+
+	<!-- "Websites" button -->
+	<span id="button_5" class="tab_button">
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Websites: <i class="fas fa-globe"></i>
+			</h2>
+		</button>
+	</span>
 </div>
-
-<div class="mobileShow"><button id="show_mobile_buttons" class="w3-center w3-btn text_black background_orange border_color_black border_3px background_hover_white mobileShow" style="float:left;position:fixed;border-radius: 50px;" onclick="Show_Mobile_Buttons();"><h2><i class="fas fa-bars"></i></h2></button>
-</div>
-<div id="computer_buttons_bar_space" class="mobileHide">
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-</div>
-
-
-<script>
-var old_website_title, current_website_title;
-
-function Get_Title() {
-	old_website_title = document.title;
-	current_website_title = document.title;
-}
-
-function Change_Title() {
-	document.title = "(1) " + document.title;
-	current_website_title = document.title;
-}
-
-function Reset_Title(mode, source = null) {
-	if (mode == "chapter") {
-		document.title = current_website_title;
-
-		if (source == "notification") {
-			document.title = document.title.replace("(1) ", "");
-		}
-	}
-
-	if (mode == "notification") {
-		document.title = document.title.replace("(1) ", "");
-		current_website_title = document.title;
-	}
-}
-
-function Add_To_Website_Title(text_to_add, source = null) {
-	Reset_Title("chapter", source);
-	document.title = document.title + " " + text_to_add;
-}
-</script>
 
 <!-- Website header -->
-<div class="background_black border_color_orange border_4px" style="margin-left:5%;margin-right:5%;border-radius: 50px;">
-<div class="w3-animate-zoom">
-<!-- Website computer title -->
-<h2 class="w3-center text_orange w3-animate-zoom mobileHide">
-<p><br /><b>Stake2, Funkysnipa Cat: <i class="fas fa-user-circle"></i></b><br /><br /><p>
-</h2>
+<div id="header" class="w3-animate-zoom header_size background_orange text_dark_orange border_4px border_color_light_orange box_shadow_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_light_orange header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
+	<!-- Website title -->
+	<h2 class="text_size text_dark_orange">
+		<p><br /><b>Izaque, Stake2, Funkysnipa Cat <i class="fas fa-user-circle"></i></b><br /><br /><p>
+	</h2>
+
+	<!-- Website image -->
+	<img class="box_shadow_light_orange border_4px border_color_light_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Icons/Stake2.png" style="max-width: 40%; height: auto;" /><br />
+
+	<!-- Website image button -->
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/Icons/Stake2.png')" style="z-index: 2;">
+		<h4 class="text_size text_dark_orange">
+			Open image in new tab: <i class="fas fa-images"></i>
+		</h4>
+	</button>
+	<br />
+
+	<!-- Website description -->
+	<h3 class="text_size">
+		Website to show who I am in the Internet, created by me, <b class="text_light_orange">Izaque</b>.<br />
+		I am my two Digital Identities, <b class="text_light_orange">Stake2</b>, and <b class="text_light_orange">Funkysnipa Cat</b>.
+	</h3>
+	<br />
 </div>
 
-<!-- Website mobile title -->
-<div class="w3-animate-zoom"><h4 class="w3-center text_orange w3-animate-zoom mobileShow">
-<p><br /><b>Stake2, Funkysnipa Cat: <i class="fas fa-user-circle"></i></b><br /><br /><p>
-</h4>
-</div>
-<hr class="border_color_orange border_1px" style="margin-left:3%;margin-right:3%;" />
-<!-- Website Images -->
-<div class="w3-center">
+<br /><br /><br /><br /><br />
 
-<!-- Computer website image -->
-<center>
-<img src="https://thestake2.netlify.app/Images/Website Icons/Stake2.png" width="33%" class="w3-center  mobileHide w3-center" style="" />
-</center>
+<!-- "Izaque" tab -->
+<a id="Izaque_anchor" name="Izaque"></a>
+<div id="Izaque" class="w3-container tab header_size background_orange text_dark_orange border_4px border_color_light_orange box_shadow_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_dark_orange">
+		<p><br /><b id="Izaque_title">Person: Izaque <i class="fas fa-user-circle"></i></b><br /><br /><p>
+	</h2>
 
-<!-- Computer website image link button -->
-<div class="mobileHide w3-center">
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Images/Website Icons/Stake2.png')">
-<h4>Open image in new tab: <i class="fas fa-images"></i></h4>
-</button>
-</div>
-
-<!-- Mobile website image -->
-<center>
-<img src="https://thestake2.netlify.app/Images/Website Icons/Stake2.png" width="55%" class=" mobileShow w3-center" style="" />
-</center>
-
-<!-- Mobile website image link button -->
-<div class="mobileShow w3-center">
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Images/Website Icons/Stake2.png')">
-<h4>Open image in new tab: <i class="fas fa-images"></i></h4>
-</button>
-</div>
-
-</div>
-
-<hr class="border_color_orange border_1px" style="margin-left:3%;margin-right:3%;" /><!-- Computer website header description -->
-<h2 class="w3-center text_orange mobileHide">
-Website to show who I am in the Internet, created by me, <span class="text_orange" >Izaque</span>.<br />I am my two Digital Identities, <span class="text_orange" >Stake2</span>, and <span class="text_orange" >Funkysnipa Cat</span><br />Names: Izaque, Stake2, Funkysnipa Cat, The Cold Lake Appears.
-</h2>
-
-<!-- Mobile website header description -->
-<h4 class="w3-center text_orange mobileShow">
-Website to show who I am in the Internet, created by me, <span class="text_orange" >Izaque</span>.<br />I am my two Digital Identities, <span class="text_orange" >Stake2</span>, and <span class="text_orange" >Funkysnipa Cat</span><br />Names: Izaque, Stake2, Funkysnipa Cat, The Cold Lake Appears.
-</h4>
-<br /></div>
-<!-- End of header -->
-
-<br /><br />
-<!-- Start of website tabs -->
-<a id="computer_tab_1" name="Stake2_Izaque_Computer"></a>
-<div id="Stake2_Izaque_Computer" class="city mobileHide" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_orange border_color_orange border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_1">
-<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Person: Izaque <i class="fas fa-user-circle"></i></b><br /><br /><p></p></h2></div><hr class="border_color_orange border_1px" />
-<div class="w3-animate-zoom">
-<div style="text-align:left;">
-Hi, I'm Stake2, Funkysnipa Cat, and Izaque, a person who loves writing, reading, programming in Python, making websites in HTML and PHP, drawing, editing videos.<br />
+	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		Hello, I am <b class="text_light_orange">Izaque</b>, <b class="text_light_orange">Stake2</b>, and <b class="text_light_orange">Funkysnipa Cat</b>, a person who loves writing, reading, programming in Python, making websites in HTML and PHP, drawing, editing videos.<br />
 I like to watch anime, cartoons, series, movies, videos, play games, listen to music, especially Dubstep.<br />
-I'm very proud of the things I do, my skills, and my talents.<br />
-I love writing stories, I've been writing since 2016, it helps me to be creative and have a good imagination.<br />
-I've also been programming since 2016, and that helps a lot in my logical thinking and makes me think better.<br />
+I am very proud of the things I do, my skills, and my talents.<br />
+I love writing stories, I have been writing since 2016, it helps me to be creative and have a good imagination.<br />
+I have also been programming since 2016, and that helps a lot in my logical thinking and makes me think better.<br />
 I like to create programs to help me do what I do and be more organized.<br />
-I'm a native of Brazil, the English I've known since I was a child make me more knowledgeable and easier to learn, it helps me to seek knowledge that doesn't come from my mother tongue.<br />
+I am a native of Brazil, the English I have known since I was a child make me more knowledgeable and easier to learn, it helps me to seek knowledge that does not come from my mother tongue.<br />
 It also helped me discover and learn several things on the Internet.<br />
-I'm organized and a little perfectionist.<br />
+I am organized and a little perfectionist.<br />
 I like to talk about my personal interests and know about the interests of other people.<br />
-I also love My Little Pony, I watch it since 2011, I discovered that cartoon on the social network Google+.<br /></div>
+I also love My Little Pony, I watch it since 2011, I discovered that cartoon on the social network Google+.
+	</h2>
 </div>
 
-</div>
-</div></h2>
+<!-- "Stake2" tab -->
+<a id="Stake2_anchor" name="Stake2"></a>
+<div id="Stake2" class="w3-container tab header_size background_orange text_dark_orange border_4px border_color_light_orange box_shadow_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_dark_orange">
+		<p><br /><b id="Stake2_title">Digital Identity: Stake2 <i class="fas fa-user-circle"></i></b><br /><br /><p>
+	</h2>
 
-</div>
-
-
-<a id="mobile_tab_1" name="Stake2_Izaque_Mobile"></a>
-<div id="Stake2_Izaque_Mobile" class="city mobileShow" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_orange border_color_orange border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_1">
-<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Person: Izaque <i class="fas fa-user-circle"></i></b><br /><br /><p></p></h2></div><hr class="border_color_orange border_1px" />
-<div class="w3-animate-zoom">
-<div style="text-align:left;">
-Hi, I'm Stake2, Funkysnipa Cat, and Izaque, a person who loves writing, reading, programming in Python, making websites in HTML and PHP, drawing, editing videos.<br />
-I like to watch anime, cartoons, series, movies, videos, play games, listen to music, especially Dubstep.<br />
-I'm very proud of the things I do, my skills, and my talents.<br />
-I love writing stories, I've been writing since 2016, it helps me to be creative and have a good imagination.<br />
-I've also been programming since 2016, and that helps a lot in my logical thinking and makes me think better.<br />
-I like to create programs to help me do what I do and be more organized.<br />
-I'm a native of Brazil, the English I've known since I was a child make me more knowledgeable and easier to learn, it helps me to seek knowledge that doesn't come from my mother tongue.<br />
-It also helped me discover and learn several things on the Internet.<br />
-I'm organized and a little perfectionist.<br />
-I like to talk about my personal interests and know about the interests of other people.<br />
-I also love My Little Pony, I watch it since 2011, I discovered that cartoon on the social network Google+.<br /></div>
-</div>
-
-</div>
-</div></h4>
-
-</div>
-
-
-<a id="computer_tab_2" name="Stake2_Stake2_Computer"></a>
-<div id="Stake2_Stake2_Computer" class="city mobileHide" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_orange border_color_orange border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_2">
-<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Digital Identity: Stake2 <i class="fas fa-user-circle"></i></b><br /><br /><p></p></h2></div><hr class="border_color_orange border_1px" />
-<div class="w3-animate-zoom">
-<img src="https://thestake2.netlify.app/Images/Website Icons/Stake2.png" width="30%" style="" /><hr class="border_color_orange" style="border-width:1px;border-style:solid;" /><div style="text-align:left;">
-Stake2 is a Digital Identity and Digital Name that I created for myself in 2008, when I wanted to be a YouTuber and do vlogs and videos for YouTube.<br />
+	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<center><img class="box_shadow_light_orange image_size border_4px border_color_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Stake2.png" style="width: 25%; height: auto;" /></center><hr class="border_1px border_color_light_orange" />
+<b class="text_light_orange">Stake2</b> is a Digital Identity and Digital Name that I created for myself in 2008, when I wanted to be a YouTuber and make vlogs and videos for YouTube.<br />
 Now I use this name in the majority of the websites of the Internet.<br />
-#Stake2 #FunkysnipaCat<br /></div>
+<br />
+#<b class="text_light_orange">Stake2</b> #<b class="text_light_orange">Funkysnipa Cat</b>
+	</h2>
 </div>
 
-</div>
-</div></h2>
+<!-- "Funkysnipa Cat" tab -->
+<a id="Funkysnipa_Cat_anchor" name="Funkysnipa Cat"></a>
+<div id="Funkysnipa_Cat" class="w3-container tab header_size background_orange text_dark_orange border_4px border_color_light_orange box_shadow_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_dark_orange">
+		<p><br /><b id="Funkysnipa_Cat_title">Digital Identity: Funkysnipa Cat <i class="fas fa-user-circle"></i></b><br /><br /><p>
+	</h2>
 
-</div>
-
-
-<a id="mobile_tab_2" name="Stake2_Stake2_Mobile"></a>
-<div id="Stake2_Stake2_Mobile" class="city mobileShow" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_orange border_color_orange border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_2">
-<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Digital Identity: Stake2 <i class="fas fa-user-circle"></i></b><br /><br /><p></p></h2></div><hr class="border_color_orange border_1px" />
-<div class="w3-animate-zoom">
-<img src="https://thestake2.netlify.app/Images/Website Icons/Stake2.png" width="30%" style="" /><hr class="border_color_orange" style="border-width:1px;border-style:solid;" /><div style="text-align:left;">
-Stake2 is a Digital Identity and Digital Name that I created for myself in 2008, when I wanted to be a YouTuber and do vlogs and videos for YouTube.<br />
-Now I use this name in the majority of the websites of the Internet.<br />
-#Stake2 #FunkysnipaCat<br /></div>
-</div>
-
-</div>
-</div></h4>
-
-</div>
-
-
-<a id="computer_tab_3" name="Stake2_Funkysnipa Cat_Computer"></a>
-<div id="Stake2_Funkysnipa Cat_Computer" class="city mobileHide" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_orange border_color_orange border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_3">
-<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Digital Identity: Funkysnipa Cat <i class="fas fa-user-circle"></i></b><br /><br /><p></p></h2></div><hr class="border_color_orange border_1px" />
-<div class="w3-animate-zoom">
-<p></p>
-<b class="" >Profile image evolution: </b><br />
-&lt;&lt;&lt; Oldest - Newest &gt;&gt;&gt;<br />
-<p></p>
-<img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/1.png" width="20%" style="text-align: left;" /><img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/2.png" width="20%" style="text-align: left;" /><img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/3.png" width="20%" style="text-align: left;" /><img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/4.png" width="20%" style="text-align: left;" /><img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/5.png" width="20%" style="text-align: left;" /><hr class="border_color_orange" style="border-width:1px;border-style:solid;" /><div style="text-align:left;">
-Funkysnipa Cat is an identity and account that I created in the social network Google+ around 2013.<br />
+	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<img class="box_shadow_light_orange image_size border_4px border_color_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/1.jpg" style="width: 25%; height: auto;border-radius: 50px;" /><img class="box_shadow_light_orange image_size border_4px border_color_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/2.jpg" style="width: 25%; height: auto;border-radius: 50px;" /><img class="box_shadow_light_orange image_size border_4px border_color_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/3.jpg" style="width: 25%; height: auto;border-radius: 50px;" /><img class="box_shadow_light_orange image_size border_4px border_color_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/4.jpg" style="width: 25%; height: auto;border-radius: 50px;" /><img class="box_shadow_light_orange image_size border_4px border_color_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/5.jpg" style="width: 25%; height: auto;border-radius: 50px;" /><img class="box_shadow_light_orange image_size border_4px border_color_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/6.jpg" style="width: 25%; height: auto;border-radius: 50px;" /><img class="box_shadow_light_orange image_size border_4px border_color_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/Christmas - Natal.jpg" style="width: 25%; height: auto;border-radius: 50px;" /><img class="box_shadow_light_orange image_size border_4px border_color_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/Halloween.jpg" style="width: 25%; height: auto;border-radius: 50px;" /><hr class="border_1px border_color_light_orange" />
+<b class="text_light_orange">Funkysnipa Cat</b> is an identity and account that I created in the social network Google+ around 2013.<br />
 Google+ is a social network created by Google in 2011, every account of YouTube at the time were Google+ accounts.<br />
-I created the Funkysnipa Cat account because of the Brazilian movement called "Funky Cats Movement".<br />
+I created the <b class="text_light_orange">Funkysnipa Cat</b> account because of the Brazilian movement called "Funky Cats Movement".<br />
 The movement of the Funky Cats was a movement that happened on Google+ between 2013 and 2019, 2019 was when Google+ was closed by Google.<br />
 It consisted in honoring the Brazilian YouTuber Funky Black Cat, creating themes of other Funky Cats.<br />
 And replacing the "Black" of the name by the chosen theme by the person, editing the original picture of Funky Black Cat to match the theme.<br />
 Like Funky Pastry Cook Cat, Funky Ninja Cat, Funky Gamer Cat, Funky Musician Cat, Funky Jedi Cat.<br />
-My Funky Cat was the Funkysnipa Cat, because I wanted to be different and not have three words in the name.<br />
+My Funky Cat was the <b class="text_light_orange">Funkysnipa Cat</b>, because I wanted to be different and not have three words in the name.<br />
 The "Snipa" was because when Funky Black Cat was going to say "Sniper" he said "Snipa", and I also like the gun a lot.<br />
 I got to know a lot of things that I know to this day on Google+, with My Little Pony, Five Nights at Freddy's, Undertale, I started to like Dubstep more.<br />
 And also made a lot of friends, Google+ was closed in April 2, 2019 by Google because it had security and privacy issues that Google hid and people discovered.<br />
 People became sad because Google+ was closed, and migrated to MeWe, Google+ Rewritten, and other social networks.<br />
 But for me, I can not find a social network that surpasses or replaces Google+, better to keep the good times only in memory.<br />
-#Stake2 #FunkysnipaCat<br /></div>
-<hr class="border_color_orange" style="border-width:1px;border-style:solid;" /><p></p>
-<b class="" >Festive pictures: </b><br />
-<p></p>
-<img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/6.png" width="20%" style="text-align: left;" /><img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/7.png" width="20%" style="text-align: left;" /></div>
-
-</div>
-</div></h2>
-
-</div>
-
-
-<a id="mobile_tab_3" name="Stake2_Funkysnipa Cat_Mobile"></a>
-<div id="Stake2_Funkysnipa Cat_Mobile" class="city mobileShow" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_orange border_color_orange border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_3">
-<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Digital Identity: Funkysnipa Cat <i class="fas fa-user-circle"></i></b><br /><br /><p></p></h2></div><hr class="border_color_orange border_1px" />
-<div class="w3-animate-zoom">
-<p></p>
-<b class="" >Profile image evolution: </b><br />
-&lt;&lt;&lt; Oldest - Newest &gt;&gt;&gt;<br />
-<p></p>
-<img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/1.png" width="20%" style="text-align: left;" /><img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/2.png" width="20%" style="text-align: left;" /><img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/3.png" width="20%" style="text-align: left;" /><img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/4.png" width="20%" style="text-align: left;" /><img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/5.png" width="20%" style="text-align: left;" /><hr class="border_color_orange" style="border-width:1px;border-style:solid;" /><div style="text-align:left;">
-Funkysnipa Cat is an identity and account that I created in the social network Google+ around 2013.<br />
-Google+ is a social network created by Google in 2011, every account of YouTube at the time were Google+ accounts.<br />
-I created the Funkysnipa Cat account because of the Brazilian movement called "Funky Cats Movement".<br />
-The movement of the Funky Cats was a movement that happened on Google+ between 2013 and 2019, 2019 was when Google+ was closed by Google.<br />
-It consisted in honoring the Brazilian YouTuber Funky Black Cat, creating themes of other Funky Cats.<br />
-And replacing the "Black" of the name by the chosen theme by the person, editing the original picture of Funky Black Cat to match the theme.<br />
-Like Funky Pastry Cook Cat, Funky Ninja Cat, Funky Gamer Cat, Funky Musician Cat, Funky Jedi Cat.<br />
-My Funky Cat was the Funkysnipa Cat, because I wanted to be different and not have three words in the name.<br />
-The "Snipa" was because when Funky Black Cat was going to say "Sniper" he said "Snipa", and I also like the gun a lot.<br />
-I got to know a lot of things that I know to this day on Google+, with My Little Pony, Five Nights at Freddy's, Undertale, I started to like Dubstep more.<br />
-And also made a lot of friends, Google+ was closed in April 2, 2019 by Google because it had security and privacy issues that Google hid and people discovered.<br />
-People became sad because Google+ was closed, and migrated to MeWe, Google+ Rewritten, and other social networks.<br />
-But for me, I can not find a social network that surpasses or replaces Google+, better to keep the good times only in memory.<br />
-#Stake2 #FunkysnipaCat<br /></div>
-<hr class="border_color_orange" style="border-width:1px;border-style:solid;" /><p></p>
-<b class="" >Festive pictures: </b><br />
-<p></p>
-<img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/6.png" width="20%" style="text-align: left;" /><img src="https://thestake2.netlify.app/Images/Website Images/Stake2/Funkysnipa Cat/7.png" width="20%" style="text-align: left;" /></div>
-
-</div>
-</div></h4>
-
-</div>
-
-
-<a id="computer_tab_4" name="Stake2_Social Media_Computer"></a>
-<div id="Stake2_Social Media_Computer" class="city mobileHide" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h2 class="mobileHide background_black text_orange border_color_orange border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="computer_tab_content_4">
-<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Social Media:  <i class="fas fa-globe"></i></b><br /><br /><p></p></h2></div><hr class="border_color_orange border_1px" />
-<div class="w3-animate-zoom">
-
-<div class="border_color_orange" style="margin-left:10%;margin-right:10%;">
-<div class="border_color_orange" style="border-width:3px;border-style:solid;border-radius: 25px;"><p></p>
-<b class="" >Art: </b><br /><p></p>
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Wattpad" style="border-radius: 50px;" onclick="window.open('https://www.wattpad.com/user/stake2/');"><h2>Wattpad</h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="DeviantArt" style="border-radius: 50px;" onclick="window.open('https://www.deviantart.com/stake2');"><h2>DeviantArt <i class="fab fa-deviantart"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="YouTube" style="border-radius: 50px;" onclick="window.open('https://www.youtube.com/channel/UCwCC0_ax9am34MtX8EFrRGA?sub_confirmation=1');"><h2>YouTube <i class="fab fa-youtube"></i></h2></button> <br />
-<p></p>
-</div>
-</div>
 <br />
-
-<div class="border_color_orange" style="margin-left:10%;margin-right:10%;">
-<div class="border_color_orange" style="border-width:3px;border-style:solid;border-radius: 25px;"><p></p>
-<b class="" >Social Networks: </b><br /><p></p>
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Github" style="border-radius: 50px;" onclick="window.open('https://github.com/Stake2');"><h2>Github <i class="fab fa-github"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Discord" style="border-radius: 50px;" onclick="window.open('https://discord.gg/baUBHce2');"><h2>Discord <i class="fab fa-discord"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Instagram" style="border-radius: 50px;" onclick="window.open('https://www.instagram.com/Stake2_/');"><h2>Instagram <i class="fab fa-instagram"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Facebook" style="border-radius: 50px;" onclick="window.open('https://www.facebook.com/');"><h2>Facebook <i class="fab fa-facebook"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="WhatsApp" style="border-radius: 50px;" onclick="window.open('https://api.whatsapp.com/send/?phone=55');"><h2>WhatsApp</h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Twitter" style="border-radius: 50px;" onclick="window.open('https://twitter.com/Stake2_');"><h2>Twitter <i class="fab fa-twitter"></i></h2></button> <br />
-<p></p>
-</div>
-</div>
-<br />
-
-<div class="border_color_orange" style="margin-left:10%;margin-right:10%;">
-<div class="border_color_orange" style="border-width:3px;border-style:solid;border-radius: 25px;"><p></p>
-<b class="" >Music: </b><br /><p></p>
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="SoundCloud" style="border-radius: 50px;" onclick="window.open('https://soundcloud.com/stake2');"><h2>SoundCloud <i class="fab fa-soundcloud"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Bandcamp" style="border-radius: 50px;" onclick="window.open('https://bandcamp.com/stake2');"><h2>Bandcamp <i class="fab fa-bandcamp"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Spotify" style="border-radius: 50px;" onclick="window.open('https://open.spotify.com/user/12166339356');"><h2>Spotify <i class="fab fa-spotify"></i></h2></button> <br />
-<p></p>
-</div>
-</div>
-<br />
-
-<div class="border_color_orange" style="margin-left:10%;margin-right:10%;">
-<div class="border_color_orange" style="border-width:3px;border-style:solid;border-radius: 25px;"><p></p>
-<b class="" >Games: </b><br /><p></p>
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Steam" style="border-radius: 50px;" onclick="window.open('https://steamcommunity.com/id/FunkysnipaCat');"><h2>Steam <i class="fab fa-steam"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Osu!" style="border-radius: 50px;" onclick="window.open('https://osu.ppy.sh/users/stake2');"><h2>Osu!</h2></button> <br />
-<p></p>
-</div>
-</div>
-<br />
-
-<div class="border_color_orange" style="margin-left:10%;margin-right:10%;">
-<div class="border_color_orange" style="border-width:3px;border-style:solid;border-radius: 25px;"><p></p>
-<b class="" >Anime: </b><br /><p></p>
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="MyAnimeList" style="border-radius: 50px;" onclick="window.open('https://myanimelist.net/animelist/TheColdLake');"><h2>MyAnimeList</h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Kitsu Io" style="border-radius: 50px;" onclick="window.open('https://kitsu.io/users/443665');"><h2>Kitsu Io</h2></button> <br />
-<p></p>
-</div>
-</div>
-<br />
+#<b class="text_light_orange">Stake2</b> #<b class="text_light_orange">Funkysnipa Cat</b>
+	</h2>
 </div>
 
-</div>
-</div></h2>
+<!-- "Social Networks" tab -->
+<a id="Social_Networks_anchor" name="Social Networks"></a>
+<div id="Social_Networks" class="w3-container tab header_size background_orange text_dark_orange border_4px border_color_light_orange box_shadow_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_dark_orange">
+		<p><br /><b id="Social_Networks_title">Social Networks: <i class="fas fa-globe"></i></b><br /><br /><p>
+	</h2>
 
+	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+	<h2 class="text_size margin_sides_5_cent" style="">
+			<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
+		<h2 class="text_size text_light_orange margin_top_bottom_2_cent" style="font-weight: bold;">
+			Art: 
+		</h2>
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.wattpad.com/user/stake2/');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		Wattpad
+		</h3>
+	</button>		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://github.com/Stake2');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		Github <i class="fab fa-github"></i>
+		</h3>
+	</button>		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.deviantart.com/stake2');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		DeviantArt <i class="fab fa-deviantart"></i>
+		</h3>
+	</button>		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.youtube.com/@TheStake2?sub_confirmation=1');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		YouTube <i class="fab fa-youtube"></i>
+		</h3>
+	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
+		<h2 class="text_size text_light_orange margin_top_bottom_2_cent" style="font-weight: bold;">
+			Social Networks: 
+		</h2>
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://discord.com/channels/@me');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		Discord <i class="fab fa-discord"></i>
+		</h3>
+	</button>		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.instagram.com/Stake2_/');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		Instagram <i class="fab fa-instagram"></i>
+		</h3>
+	</button>		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.facebook.com/me/');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		Facebook <i class="fab fa-facebook"></i>
+		</h3>
+	</button>		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://api.whatsapp.com/send/?phone=55');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		WhatsApp
+		</h3>
+	</button>		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://twitter.com/Stake2_');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		Twitter <i class="fab fa-twitter"></i>
+		</h3>
+	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
+		<h2 class="text_size text_light_orange margin_top_bottom_2_cent" style="font-weight: bold;">
+			Music: 
+		</h2>
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://music.youtube.com/channel/UCwCC0_ax9am34MtX8EFrRGA');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		YouTube Music <i class="fab fa-youtube"></i>
+		</h3>
+	</button>		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://soundcloud.com/stake2');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		SoundCloud <i class="fab fa-soundcloud"></i>
+		</h3>
+	</button>		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://bandcamp.com/stake2');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		Bandcamp <i class="fab fa-bandcamp"></i>
+		</h3>
+	</button>		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://open.spotify.com/user/12166339356');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		Spotify <i class="fab fa-spotify"></i>
+		</h3>
+	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
+		<h2 class="text_size text_light_orange margin_top_bottom_2_cent" style="font-weight: bold;">
+			Games: 
+		</h2>
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://steamcommunity.com/id/Stake2');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		Steam <i class="fab fa-steam"></i>
+		</h3>
+	</button>		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://osu.ppy.sh/users/stake2');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		Osu!
+		</h3>
+	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
+		<h2 class="text_size text_light_orange margin_top_bottom_2_cent" style="font-weight: bold;">
+			Anime: 
+		</h2>
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://myanimelist.net/profile/Stake2');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		MyAnimeList
+		</h3>
+	</button>		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://kitsu.io/users/443665');">
+		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+		Kitsu Io
+		</h3>
+	</button>	</div>
+	</h2>
+</div>
+
+<!-- "Websites" tab -->
+<a id="websites_tab_anchor" name="Websites"></a>
+<div id="websites_tab" class="w3-container tab header_size background_orange text_dark_orange border_4px border_color_light_orange box_shadow_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_dark_orange">
+		<p><br /><b id="websites_tab_title">Websites: <i class="fas fa-globe"></i> <span class="text_dark_orange">25</span></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+	<h2 class="text_size margin_sides_5_cent" style="">
+		
+		<!-- "Stake2" link button -->
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Izaque, Stake2, Funkysnipa Cat <i class="fas fa-user-circle"></i> (You are here)
+			</h2>
+		</button>
+
+		<!-- "Prints of Computer Blocks" link button -->
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Prints of Computer Blocks/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Prints of Computer Blocks
+			</h2>
+		</button>
+
+		<!-- "Diary" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Diary/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Diary
+			</h2>
+		</button>
+
+		<!-- "Diary Slim" link button -->
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Diary Slim/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Diary Slim
+			</h2>
+		</button>
+
+		<!-- "My Little Pony: Friendship Is Magic" link button -->
+		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony: Friendship Is Magic/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My Little Pony: Friendship Is Magic
+			</h2>
+		</button>
+
+		<!-- "Watch History" link button -->
+		<button class="w3-btn background_blue text_dark_blue border_4px border_color_dark_blue box_shadow_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Watch History/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Watch History
+			</h2>
+		</button>
+
+		<!-- "Music" link button -->
+		<button class="w3-btn background_blue text_dark_blue border_4px border_color_dark_blue box_shadow_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Music/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Music
+			</h2>
+		</button>
+
+		<!-- "Games" link button -->
+		<button class="w3-btn background_green text_dark_green_water border_4px border_color_dark_green_water box_shadow_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/Games/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Games
+			</h2>
+		</button>
+
+		<!-- "Foobar Albums" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Foobar Albums/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Foobar Albums
+			</h2>
+		</button>
+
+		<!-- "Tasks" link button -->
+		<button class="w3-btn background_white text_grey border_4px border_color_grey box_shadow_white background_hover_white" onclick="window.open('https://thestake2.netlify.app/Tasks/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Tasks
+			</h2>
+		</button>
+
+		<!-- "Stories" link button -->
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stories/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Stories <i class="fas fa-book"></i>
+			</h2>
+		</button>
+
+		<!-- "Desert Island" link button -->
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="window.open('https://thestake2.netlify.app/Desert Island/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Desert Island <i class="fas fa-book"></i> <i class="fa-solid fa-rotate"></i>
+			</h2>
+		</button>
+
+		<!-- "New World" link button -->
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/New World/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				New World <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "Rise to Equestria" link button -->
+		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Rise to Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-check"></i>
+			</h2>
+		</button>
+
+		<!-- "SpaceLiving" link button -->
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/New World/SpaceLiving/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				SpaceLiving <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "The Life of Izaque in Equestria" link button -->
+		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				The Life of Izaque in Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-pause"></i>
+			</h2>
+		</button>
+
+		<!-- "The Life of Littletato" link button -->
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				The Life of Littletato <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "The Secret of the Crystals" link button -->
+		<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Secret of the Crystals/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				The Secret of the Crystals <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "The Story of the Bulkan Siblings" link button -->
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				The Story of the Bulkan Siblings <i class="fas fa-book"></i> <i class="fa-solid fa-cloud-arrow-up"></i>
+			</h2>
+		</button>
+
+		<!-- "Years" link button -->
+		<button class="w3-btn background_white text_grey border_4px border_color_grey box_shadow_white background_hover_white" onclick="window.open('https://thestake2.netlify.app/Years/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Years <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2018" link button -->
+		<button class="w3-btn background_dark_blue text_black border_4px border_color_black box_shadow_dark_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/2018/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My 2018 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2019" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/2019/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My 2019 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2020" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/2020/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My 2020 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2021" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/2021/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My 2021 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2022" link button -->
+		<button class="w3-btn background_yellow_sand text_dark_yellow border_4px border_color_dark_yellow box_shadow_yellow_sand background_hover_white" onclick="window.open('https://thestake2.netlify.app/2022/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My 2022 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+	</h2>
 </div>
 
 
-<a id="mobile_tab_4" name="Stake2_Social Media_Mobile"></a>
-<div id="Stake2_Social Media_Mobile" class="city mobileShow" style="display:none;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<h4 class="mobileShow background_black text_orange border_color_orange border_4px" style="margin:10%;border-radius: 50px;"><div class="" style="margin:3%;"><div id="mobile_tab_content_4">
-<div class="w3-animate-zoom"><h2 class="w3-center"><p></p><br /><b>Social Media:  <i class="fas fa-globe"></i></b><br /><br /><p></p></h2></div><hr class="border_color_orange border_1px" />
-<div class="w3-animate-zoom">
 
-<div class="border_color_orange" style="margin-left:10%;margin-right:10%;">
-<div class="border_color_orange" style="border-width:3px;border-style:solid;border-radius: 25px;"><p></p>
-<b class="" >Art: </b><br /><p></p>
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Wattpad" style="border-radius: 50px;" onclick="window.open('https://www.wattpad.com/user/stake2/');"><h2>Wattpad</h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="DeviantArt" style="border-radius: 50px;" onclick="window.open('https://www.deviantart.com/stake2');"><h2>DeviantArt <i class="fab fa-deviantart"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="YouTube" style="border-radius: 50px;" onclick="window.open('https://www.youtube.com/channel/UCwCC0_ax9am34MtX8EFrRGA?sub_confirmation=1');"><h2>YouTube <i class="fab fa-youtube"></i></h2></button> <br />
-<p></p>
-</div>
-</div>
-<br />
-
-<div class="border_color_orange" style="margin-left:10%;margin-right:10%;">
-<div class="border_color_orange" style="border-width:3px;border-style:solid;border-radius: 25px;"><p></p>
-<b class="" >Social Networks: </b><br /><p></p>
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Github" style="border-radius: 50px;" onclick="window.open('https://github.com/Stake2');"><h2>Github <i class="fab fa-github"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Discord" style="border-radius: 50px;" onclick="window.open('https://discord.gg/baUBHce2');"><h2>Discord <i class="fab fa-discord"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Instagram" style="border-radius: 50px;" onclick="window.open('https://www.instagram.com/Stake2_/');"><h2>Instagram <i class="fab fa-instagram"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Facebook" style="border-radius: 50px;" onclick="window.open('https://www.facebook.com/');"><h2>Facebook <i class="fab fa-facebook"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="WhatsApp" style="border-radius: 50px;" onclick="window.open('https://api.whatsapp.com/send/?phone=55');"><h2>WhatsApp</h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Twitter" style="border-radius: 50px;" onclick="window.open('https://twitter.com/Stake2_');"><h2>Twitter <i class="fab fa-twitter"></i></h2></button> <br />
-<p></p>
-</div>
-</div>
-<br />
-
-<div class="border_color_orange" style="margin-left:10%;margin-right:10%;">
-<div class="border_color_orange" style="border-width:3px;border-style:solid;border-radius: 25px;"><p></p>
-<b class="" >Music: </b><br /><p></p>
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="SoundCloud" style="border-radius: 50px;" onclick="window.open('https://soundcloud.com/stake2');"><h2>SoundCloud <i class="fab fa-soundcloud"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Bandcamp" style="border-radius: 50px;" onclick="window.open('https://bandcamp.com/stake2');"><h2>Bandcamp <i class="fab fa-bandcamp"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Spotify" style="border-radius: 50px;" onclick="window.open('https://open.spotify.com/user/12166339356');"><h2>Spotify <i class="fab fa-spotify"></i></h2></button> <br />
-<p></p>
-</div>
-</div>
-<br />
-
-<div class="border_color_orange" style="margin-left:10%;margin-right:10%;">
-<div class="border_color_orange" style="border-width:3px;border-style:solid;border-radius: 25px;"><p></p>
-<b class="" >Games: </b><br /><p></p>
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Steam" style="border-radius: 50px;" onclick="window.open('https://steamcommunity.com/id/FunkysnipaCat');"><h2>Steam <i class="fab fa-steam"></i></h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Osu!" style="border-radius: 50px;" onclick="window.open('https://osu.ppy.sh/users/stake2');"><h2>Osu!</h2></button> <br />
-<p></p>
-</div>
-</div>
-<br />
-
-<div class="border_color_orange" style="margin-left:10%;margin-right:10%;">
-<div class="border_color_orange" style="border-width:3px;border-style:solid;border-radius: 25px;"><p></p>
-<b class="" >Anime: </b><br /><p></p>
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="MyAnimeList" style="border-radius: 50px;" onclick="window.open('https://myanimelist.net/animelist/TheColdLake');"><h2>MyAnimeList</h2></button> <br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Kitsu Io" style="border-radius: 50px;" onclick="window.open('https://kitsu.io/users/443665');"><h2>Kitsu Io</h2></button> <br />
-<p></p>
-</div>
-</div>
-<br />
-</div>
-
-</div>
-</div></h4>
-
-</div>
-
-
-<a name="Websites tab"></a>
-<div id="Websites tab" class="city" style="display:none;border-radius: 50px;">
-<div class="mobileHide"><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<div class="mobileHide" style="border-radius: 50px;">
-<h4 class="border_color_orange w3-black border_3px border_color_orange" style="margin:10%;border-radius: 50px;"><div style="margin:3%;">
-<center>
-<div class="w3-animate-zoom">
-<h2 class="mobileHide text_orange" style="border-radius: 50px;"><p></p><br /><b>Websites: <span class="w3-text-orange text_hover_white">25</span> <i class="fas fa-globe-americas"></i></b><br /><br /><p></p></h2>
-</div>
-<hr class="mobileHide border_color_orange border_1px" />
-<div class="w3-animate-zoom">
-<h4 class="w3-black" style="border-radius: 50px;">
-<button class="w3-btn text_black background_yellow border_color_black border_3px background_hover_white" title="Stake2" style="border-radius: 50px;" onclick="function() {return false;}"><h2>Stake2</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Prints of Computer Blocks" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Prints of Computer Blocks/');"><h2>Prints of Computer Blocks</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Diary 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Diary/');"><h2>Diary <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Diary Slim 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Diary Slim/');"><h2>Diary Slim <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="My Little Pony: Friendship Is Magic" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/My Little Pony Friendship Is Magic/');"><h2>My Little Pony: Friendship Is Magic</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Watch History" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Watch History/');"><h2>Watch History</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Music" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Music/');"><h2>Music</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Games" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Games/');"><h2>Games</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Foobar Albums" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Foobar Albums/');"><h2>Foobar Albums</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Tasks" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Tasks/');"><h2>Tasks</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Things I Do" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Things I Do/');"><h2>Things I Do</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Website Status" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Website Status/');"><h2>Website Status</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Flash Games List" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Flash Games List/');"><h2>Flash Games List</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Stories 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Stories/');"><h2>Stories <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Izaque Multiverse 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Izaque Multiverse/');"><h2>Izaque Multiverse <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="The Life of Littletato 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/');"><h2>The Life of Littletato <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="The Secret of the Crystals 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Secret of the Crystals/');"><h2>The Secret of the Crystals <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="New World 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/New World/');"><h2>New World <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="SpaceLiving 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/New_World/SpaceLiving/');"><h2>SpaceLiving <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="The Story of the Bulkan Siblings 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/');"><h2>The Story of the Bulkan Siblings <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Desert Island 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Desert Island/');"><h2>Desert Island <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Years" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/');"><h2>Years</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="2018" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2018/');"><h2>2018</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="2019" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2019/');"><h2>2019</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="2020" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2020/');"><h2>2020</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="2021" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2021/');"><h2>2021</h2></button><br />
-</h4>
-</div>
 </center>
-</div>
-</h4>
-</div>
-
-<div class="mobileShow">
-<h4 class="border_color_orange w3-black border_3px border_color_orange" style="margin:10%;border-radius: 50px;"><div class="mobileShow">
-<div style="margin:3%;"></div>
-<center>
-<div class="w3-animate-zoom">
-<h2 class="mobileShow text_orange" style="border-radius: 50px;"><p></p><br /><b>Websites: <span class="w3-text-orange text_hover_white">25</span> <i class="fas fa-globe-americas"></i></b><br /><br /><p></p></h2>
-</div>
-<hr class="mobileShow border_color_orange border_1px" />
-<div class="w3-animate-zoom">
-<h4 class="w3-black" style="border-radius: 50px;">
-<button class="w3-btn text_black background_yellow border_color_black border_3px background_hover_white" title="Stake2" style="border-radius: 50px;" onclick="function() {return false;}"><h2>Stake2</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Prints of Computer Blocks" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Prints of Computer Blocks/');"><h2>Prints of Computer Blocks</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Diary 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Diary/');"><h2>Diary <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Diary Slim 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Diary Slim/');"><h2>Diary Slim <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="My Little Pony: Friendship Is Magic" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/My Little Pony Friendship Is Magic/');"><h2>My Little Pony: Friendship Is Magic</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Watch History" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Watch History/');"><h2>Watch History</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Music" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Music/');"><h2>Music</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Games" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Games/');"><h2>Games</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Foobar Albums" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Foobar Albums/');"><h2>Foobar Albums</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Tasks" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Tasks/');"><h2>Tasks</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Things I Do" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Things I Do/');"><h2>Things I Do</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Website Status" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Website Status/');"><h2>Website Status</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Flash Games List" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Flash Games List/');"><h2>Flash Games List</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Stories 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Stories/');"><h2>Stories <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Izaque Multiverse 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Izaque Multiverse/');"><h2>Izaque Multiverse <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="The Life of Littletato 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/');"><h2>The Life of Littletato <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="The Secret of the Crystals 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Secret of the Crystals/');"><h2>The Secret of the Crystals <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="New World 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/New World/');"><h2>New World <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="SpaceLiving 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/New_World/SpaceLiving/');"><h2>SpaceLiving <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="The Story of the Bulkan Siblings 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/');"><h2>The Story of the Bulkan Siblings <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Desert Island 📗" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Desert Island/');"><h2>Desert Island <i class="fas fa-book"></i></h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="Years" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/');"><h2>Years</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="2018" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2018/');"><h2>2018</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="2019" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2019/');"><h2>2019</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="2020" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2020/');"><h2>2020</h2></button><br />
-<button class="w3-btn text_black background_orange border_color_black border_3px background_hover_white" title="2021" style="border-radius: 50px;" onclick="window.open('https://thestake2.netlify.app/Years/2021/');"><h2>2021</h2></button><br />
-</h4>
-</div>
-</center>
-</div>
-</h4>
-</div>
-</div>
-<!-- End of website tabs -->
-
-<style>
-
-</style>
-
-
-
-<script>
-function getElementByXpath(path) {
-  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-}
-</script><div style="display:none;" id="click_website_button_color">background_yellow</div>
-<div style="display:none;" id="old_website_button_color">background_orange</div>
-<div style="display:none;" id="button_number">3</div>
-<script>
-Hide_Mobile_Buttons();
-</script>
-<script>
-Define_Colors_And_Styles();
-</script>
-
 </body>
 </html>
