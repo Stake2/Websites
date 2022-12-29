@@ -39,7 +39,7 @@ const Story = new Story_Class()
 Story.language_texts = Language.Item(Story.texts)
 
 // Define chapter number, website title and set backup
-var chapter_number = null
+var chapter_number = 0
 website["backup"] = String(document.title)
 
 // Function to define chapter number and title
@@ -48,10 +48,14 @@ function Define_Chapter(number, title) {
 	chapter_number = Number(number)
 
 	// Add chapter title to website title
-	document.title = website["backup"] + " - " + Story.language_texts["chapter, title()"] + ": " + number
+	document.title = website["backup"] + " - " + Story.language_texts["chapter, title()"] + ":"
+
+	if (title == undefined) {
+		document.title = document.title + " " + number
+	}
 
 	if (title != undefined) {
-		document.title = document.title + " - " + title
+		document.title = document.title + " " + title
 	}
 
 	if (title == undefined) {
@@ -63,18 +67,17 @@ function Define_Chapter(number, title) {
 
 // Function to define chapter number and title, show "opening chapter" text, and open chapter tab
 function Open_Chapter(number, title) {
+	// Define chapter tab id
+	var chapter_tab_id = "chapter_" + number
+
 	// Define chapter and change website title
 	Define_Chapter(number, title)
-
-	if (title == undefined) {
-		title = Story.language_texts["undefined"]
-	}
 
 	// Show information
 	print(Story.language_texts["script_name"] + ".Open_Chapter(): " + format(Story.language_texts["opening_chapter_with_number_{0}_and_title_{1}"] + " ", number, title))
 
 	// Open chapter tab
-	Open_Tab("chapter_" + number)
+	Open_Tab(chapter_tab_id)
 }
 
 // Open chapter tab by URL
@@ -83,15 +86,26 @@ parameters = Object.fromEntries(
 )
 
 // Check chapter in URL and open if chapter is present in URL
-if (Object.keys(parameters).includes("chapter") == true) {
-	setTimeout(
-		function() {
-			Open_Chapter(parameters["chapter"])
-		},
-		3000,
-	)
-}
+var chapter_keys = [
+	"chapter",
+	"capítulo",
+	"capitulo",
+]
 
+chapter_keys.forEach(
+	function(key) {
+		if (Object.keys(parameters).includes(key) == true) {
+			setTimeout(
+				function() {
+					Open_Chapter(parameters[key])
+				},
+				3000,
+			)
+		}
+	}
+)
+
+// Function to open comment or read modal and show that opened the modal on the console
 function Open_Modal(id, chapter_title) {
 	id = "chapter_" + id
 
@@ -128,6 +142,7 @@ function Open_Modal(id, chapter_title) {
 	modal_tab.focus()
 }
 
+// Hide the modal
 function Hide_Modal(id) {
 	id = "chapter_" + id
 
@@ -136,67 +151,6 @@ function Hide_Modal(id) {
 	// Hide modal tab
 	modal.style.display = "none"
 }
-
-document.addEventListener("keyup", function(event) {
-	var left_arrow = 37, right_arrow = 39
-
-	// Add click event listener to hide modal when user pressed the ESC key
-	if (event.key == "Escape") {
-		event.preventDefault()
-
-		if (String(event.target.id).includes("chapter_comment") || String(event.target.id).includes("chapter_read")) {
-			print(Story.language_texts["script_name"] + ".Hide_Modal_By_Key(): " + format(Story.language_texts["hiding_this_modal_{0}"], String(event.target.id)) + ".")
-
-			event.target.style.display = "none"
-			document.activeElement.blur()
-		}
-	}
-
-	// If left or right arrow is pressed
-	if (chapter_number != null && event.keyCode === left_arrow || chapter_number != null && event.keyCode === right_arrow) {
-		// Prevent default event
-		event.preventDefault()
-
-		// Define supported modifier keys
-		var supported_modifier_keys = [!!event.ctrlKey, !!event.shiftKey]
-
-		// Check if modifiey key is pressed
-		var i = 0
-		while (i <= supported_modifier_keys.length) {
-			var modifier_key = supported_modifier_keys[i]
-
-			if (modifier_key == true) {
-				modifier_key_pressed = true
-			}
-
-			i++
-		}
-
-		// If one of them is pressed, then check chapter number
-		if (modifier_key_pressed == true) {
-			open = false
-
-			// If left arrow is pressed and chapter number is not the first chapter, define the chapter number as one number less
-			if (event.keyCode === left_arrow && chapter_number != 1) {
-				chapter_number = Number(chapter_number) - 1
-
-				open = true
-			}
-
-			// If right arrow is pressed and chapter number is not the last chapter, define the chapter number as plus one number
-			if (event.keyCode === right_arrow && chapter_number != last_chapter) {
-				chapter_number = Number(chapter_number) + 1
-
-				open = true
-			}
-
-			// If either key is pressed, define chapter number and title, show "opening chapter" text, and open chapter tab
-			if (open == true) {
-				Open_Chapter(chapter_number)
-			}
-		}
-	}
-})
 
 // Add click event listener to hide modal when user clicks outside modal-content
 document.addEventListener("click", function(event) {

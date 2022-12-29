@@ -93,22 +93,6 @@ array.forEach(
 	}
 )
 
-// Open tab by URL
-parameters = Object.fromEntries(  
-	new URLSearchParams(window.location.search)
-)
-
-// Check tab in URL and open if tab is present in URL
-if (Object.keys(parameters).includes("tab") == true) {
-	setTimeout(
-		function() {
-			tab = Array.from(document.getElementsByClassName("tab"))[parameters["tab"] - 1]
-			Open_Tab(tab.id)
-		},
-		3000,
-	)
-}
-
 var script_name = {
 	"en": "Functions",
 	"pt": "Funções",
