@@ -108,7 +108,7 @@ function Check_Language() {
 			website["link"] += "/"
 		}
 
-		// Split parameters to remove addon
+		// Split the website link to remove parameters to remove addon
 		if (website["link"].includes("?") == true) {
 			website["link"] = website["link"].split("?")[0]
 		}

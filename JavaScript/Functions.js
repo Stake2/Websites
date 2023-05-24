@@ -93,6 +93,29 @@ array.forEach(
 	}
 )
 
+// Add leading zeroes to number
+function Add_Leading_Zeroes(number) {
+	if (number <= 9) {
+		return "0" + String(number)
+	}
+
+	if (number > 9) {
+		return number
+	}
+}
+
+// Add text gotten from file to element
+function Add_Text_To_Element(url, element) {
+	var request = new XMLHttpRequest()
+	request.open("GET", url, true)
+	request.send()
+	request.onreadystatechange = process
+
+	function process(event) {
+		element.innerHTML = event.target.response
+	}
+}
+
 var script_name = {
 	"en": "Functions",
 	"pt": "Funções",

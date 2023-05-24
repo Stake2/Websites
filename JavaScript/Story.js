@@ -5,32 +5,40 @@ class Story_Class {
 		"script_name": "Story",
 		"language_script_name": {
 			"en": "Story",
-			"pt": "História",
+			"pt": "História"
 		},
 		"chapter, title()": {
 			"en": "Chapter",
-			"pt": "Capítulo",
+			"pt": "Capítulo"
+		},
+		"chapters, title()": {
+			"en": "Chapters",
+			"pt": "Capítulos"
 		},
 		"opening_chapter_with_number_{0}_and_title_{1}": {
 			"en": 'Opening chapter with number "{0}" and title "{1}".',
-			"pt": 'Abrindo capítulo com número "{0}" e título "{1}".',
+			"pt": 'Abrindo capítulo com número "{0}" e título "{1}".'
 		},
 		"defined_chapter_with_number_{0}_and_title_{1}": {
 			"en": 'Defined chapter with number "{0}" and title "{1}".',
-			"pt": 'Definido capítulo com número "{0}" e título "{1}".',
+			"pt": 'Definido capítulo com número "{0}" e título "{1}".'
 		},
 		"opened_the_modal_tab_with_id_{0}": {
 			"en": 'Opened the modal tab with id "{0}"',
-			"pt": 'Aberto a aba modal com id "{0}"',
+			"pt": 'Aberto a aba modal com id "{0}"'
 		},
 		"hiding_this_modal_{0}": {
 			"en": 'Hiding this modal "{0}"',
-			"pt": 'Escondendo este modal "{0}"',
+			"pt": 'Escondendo este modal "{0}"'
+		},
+		"reading_this_chapter_file_to_get_the_chapter_text_{0}": {
+			"en": 'Reading this chapter file to get the chapter text:\n{0}',
+			"pt": 'Lendo este arquivo de capítulo para pegar o texto do capítulo\n{0}'
 		},
 		"undefined": {
 			"en": "Undefined",
-			"pt": "Indefinido",
-		},
+			"pt": "Indefinido"
+		}
 	}
 }
 
@@ -78,6 +86,9 @@ function Open_Chapter(number, title) {
 
 	// Open chapter tab
 	Open_Tab(chapter_tab_id)
+
+	// Load chapter text from file
+	//Load_Chapter(chapter_tab_id, number)
 }
 
 // Open chapter tab by URL
@@ -163,5 +174,26 @@ document.addEventListener("click", function(event) {
 		document.activeElement.blur()
 	}
 })
+
+// Add chapter text to chapter text element
+function Load_Chapter(chapter_tab_id, chapter_number) {
+	var chapter_text_element = document.getElementById(chapter_tab_id + "_text")
+
+	var link = website["link"]
+
+	// Split link to remove parameters
+	if (link.includes("?") == true) {
+		link = link.split("?")[0]
+	}
+
+	// Get chapter file on website folder
+	var chapter_file = link + "Chapters/" + Add_Leading_Zeroes(chapter_number) + ".txt"
+
+	// Show information about chapter file
+	print(Story.language_texts["script_name"] + ".Load_Chapter(): " + format(Story.language_texts["reading_this_chapter_file_to_get_the_chapter_text_{0}"], chapter_file))
+
+	// Add chapter text to chapter text element
+	Add_Text_To_Element(chapter_file, chapter_text_element)
+}
 
 print(format(Language.language_texts["javascript_{0}_script_was_loaded"], Story.language_texts["language_script_name"]))
