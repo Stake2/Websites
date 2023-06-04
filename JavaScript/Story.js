@@ -100,7 +100,7 @@ parameters = Object.fromEntries(
 var chapter_keys = [
 	"chapter",
 	"capítulo",
-	"capitulo",
+	"capitulo"
 ]
 
 chapter_keys.forEach(
@@ -110,7 +110,7 @@ chapter_keys.forEach(
 				function() {
 					Open_Chapter(parameters[key])
 				},
-				3000,
+				3000
 			)
 		}
 	}

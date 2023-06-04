@@ -5,15 +5,15 @@ class Tabs_Class {
 		"script_name": "Tabs",
 		"language_script_name": {
 			"en": "Tabs",
-			"pt": "Abas",
+			"pt": "Abas"
 		},
 		"opened_the_tab_with_id_{0}_title_{1}_and_number_{2}": {
 			"en": 'Opened the tab with id "{0}", title "{1}", and number "{2}"',
-			"pt": 'Aberto a aba com id "{0}", título "{1}", e número "{2}"',
+			"pt": 'Aberto a aba com id "{0}", título "{1}", e número "{2}"'
 		},
 		"undefined": {
 			"en": "Undefined",
-			"pt": "Indefinido",
+			"pt": "Indefinido"
 		},
 	}
 }
@@ -137,7 +137,7 @@ parameters = Object.fromEntries(
 // Check tab in URL and open if tab is present in URL
 var tab_keys = [
 	"tab",
-	"aba",
+	"aba"
 ]
 
 tab_keys.forEach(
@@ -148,7 +148,7 @@ tab_keys.forEach(
 					tab = Array.from(document.getElementsByClassName("tab"))[parameters[key] - 1]
 					Open_Tab(tab.id)
 				},
-				3000,
+				3000
 			)
 		}
 	}
@@ -230,6 +230,6 @@ var tab_by_key = function(event) {
 }
 
 // Add event listener
-document.addEventListener("keyup", tab_by_key);
+document.addEventListener("keyup", tab_by_key)
 
 print(format(Language.language_texts["javascript_{0}_script_was_loaded"], Tabs.language_texts["language_script_name"]))

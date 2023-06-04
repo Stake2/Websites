@@ -71,12 +71,12 @@ class Language_Class {
 			"script_name": "Language",
 			"language_script_name": {
 				"en": "Language",
-				"pt": "Idioma",
+				"pt": "Idioma"
 			},
 			"javascript_{0}_script_was_loaded": {
 				"en": 'JavaScript: "{0}.js" script was loaded.',
-				"pt": 'JavaScript: O script "{0}.js" foi carregado.',
-			},
+				"pt": 'JavaScript: O script "{0}.js" foi carregado.'
+			}
 		}
 
 		this.language_texts = this.Item(this.texts)

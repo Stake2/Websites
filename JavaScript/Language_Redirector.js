@@ -5,43 +5,43 @@ class Language_Redirector_Class {
 		"script_name": "Language_Redirector",
 		"language_script_name": {
 			"en": "Language_Redirector",
-			"pt": "Redirecionador_de_Idioma",
+			"pt": "Redirecionador_de_Idioma"
 		},
 		"check, title()": {
 			"en": "Check",
-			"pt": "Checagem",
+			"pt": "Checagem"
 		},
 		"website_title": {
 			"en": "Website title",
-			"pt": "Título do site",
+			"pt": "Título do site"
 		},
 		"website_link": {
 			"en": "Website link",
-			"pt": "Link do site",
+			"pt": "Link do site"
 		},
 		"website_language": {
 			"en": "Website language",
-			"pt": "Idioma do site",
+			"pt": "Idioma do site"
 		},
 		"user_language": {
 			"en": "User language",
-			"pt": "Idioma do usuário",
+			"pt": "Idioma do usuário"
 		},
 		"link, title()": {
 			"en": "Link",
-			"pt": "Link",
+			"pt": "Link"
 		},
 		"new_link": {
 			"en": "New link",
-			"pt": "Novo link",
+			"pt": "Novo link"
 		},
 		"the_user_is_in_the_{0}_redirecting_to_{1}_website": {
 			"en": `The user is in the {0} website, redirecting to {1} website`,
-			"pt": `O usuário está no site {0}, redirecionando para o site em {1}`,
+			"pt": `O usuário está no site {0}, redirecionando para o site em {1}`
 		},
 		"the_user_is_in_the_correct_website_for_their_language": {
 			"en": "The user is in the correct website for their language",
-			"pt": "O usuário está no site correto para seu idioma",
+			"pt": "O usuário está no site correto para seu idioma"
 		},
 	}
 }
@@ -54,7 +54,7 @@ Language_Redirector.language_texts = Language.Item(Language_Redirector.texts)
 var website = {
 	"title": String(document.title),
 	"link": String(window.location),
-	"addon": "",
+	"addon": ""
 }
 
 var languages = Language.languages
