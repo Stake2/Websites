@@ -29,9 +29,9 @@ Read [Code of Conduct](https://github.com/Stake2/Websites/blob/main/CODE_OF_COND
 [My Little Pony: Friendship Is Magic](https://thestake2.netlify.app/My%20Little%20Pony%2FFriendship%20Is%20Magic/)
 
 [Watch History](https://thestake2.netlify.app/Watch%20History/)<br>
-The content of the "Watched things" and "Past registries" tabs on the "Watch History" website is inside JSON files.<br>
+The content of the ["Watched things"](https://thestake2.netlify.app/Watch%20History/?tab=1) and ["Past registries"](https://thestake2.netlify.app/Watch%20History/?tab=3) tabs on the "Watch History" website is inside JSON files.<br>
 The JSON database files are created and filled by the ["Watch_History.py"](https://github.com/Stake2/Python/tree/main/Modules/Watch_History) Python module.<br>
-The JSON database files are read by the ["Watched.php"](https://github.com/Stake2/PHP/blob/main/Websites/Watch%20History/Generators/Watched.php) HTML tab generator written in PHP, and the tab are created.<br>
+The JSON database files are read by the ["Watched.php"](https://github.com/Stake2/PHP/blob/main/Websites/Watch%20History/Generators/Watched.php) HTML tab generator written in PHP, and the tabs are created.<br>
 
 ## Story websites
 [Desert Island](https://thestake2.netlify.app/Desert%20Island/)
