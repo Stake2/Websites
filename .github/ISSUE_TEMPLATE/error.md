@@ -15,4 +15,7 @@ Type of error (graphical, functional, or other):
 Website with error (can be more than one):
 
 
+Screenshot of error (optional):
+
+
 Comments:
