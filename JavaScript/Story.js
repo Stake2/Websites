@@ -165,7 +165,10 @@ function Hide_Modal(id) {
 
 // Add click event listener to hide modal when user clicks outside modal-content
 document.addEventListener("click", function(event) {
-	if (String(event.target.id).includes("chapter_comment") || String(event.target.id).includes("chapter_read")) {
+	if (
+		String(event.target.id).includes("chapter_comment") ||
+		String(event.target.id).includes("chapter_read")
+	) {
 		event.preventDefault()
 
 		print(Story.language_texts["script_name"] + ".Hide_Modal_By_Click(): " + format(Story.language_texts["hiding_this_modal_{0}"], String(event.target.id)) + ".")
@@ -174,6 +177,27 @@ document.addEventListener("click", function(event) {
 		document.activeElement.blur()
 	}
 })
+
+// Add keyup event listener to hide modal when user presses the "Escape" key
+var hide_modal_by_esc = function(event) {
+	// If the user pressed "Escape"
+	if (event.key == "Escape") {
+		if (
+			String(event.target.id).includes("chapter_read") ||
+			String(event.target.id).includes("chapter_comment")
+		) {
+			event.preventDefault()
+
+			print(Story.language_texts["script_name"] + ".Hide_Modal_By_Click(): " + format(Story.language_texts["hiding_this_modal_{0}"], String(event.target.id)) + ".")
+
+			event.target.style.display = "none"
+			document.activeElement.blur()
+		}
+	}
+}
+
+// Add the event listener
+document.addEventListener("keyup", hide_modal_by_esc)
 
 // Add chapter text to chapter text element
 function Load_Chapter(chapter_tab_id, chapter_number) {
