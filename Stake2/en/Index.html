@@ -37,7 +37,7 @@ I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
 	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Icons/Stake2.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 12/26/2022." />
+	<meta name="revised" content="Stake2's Enterprise TM, 22/10/2023." />
 	<meta name="author" content="Stake2" />
 
 	<!-- Viewport and charset -->
@@ -45,9 +45,9 @@ I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
 	<meta charset="UTF-8" />
 
 	<!-- CSS files -->
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/W3.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Colors.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Main.css" />
+	<link rel="stylesheet" type="text/css" href="./CSS/W3.css" />
+	<link rel="stylesheet" type="text/css" href="./CSS/Colors.css" />
+	<link rel="stylesheet" type="text/css" href="./CSS/Main.css" />
 
 	<!-- Define website box shadow -->
 	<style>
@@ -81,11 +81,11 @@ I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
 
 	<!-- JavaScript files -->
 	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
-	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Language.js"></script>
-	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Functions.js"></script>
-	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Language_Redirector.js"></script>
-	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="https://thestake2.netlify.app/JavaScript/Tab_By_Key.js"></script>
+	<script type="text/javascript" src="/JavaScript/Language.js"></script>
+	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
+	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
+	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
 
 	<script>
@@ -93,7 +93,7 @@ I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
 	</script>
 </head>
 
-<body class="background_dark_orange" onLoad="Remove_Zoom();">
+<body class="background_dark_red" onLoad="Remove_Zoom();">
 <center>
 
 <!-- Open hamburger menu button -->
@@ -113,60 +113,80 @@ I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
 		</h4>
 	</button>
 
-	<h2 class="text_size text_dark_orange" style="font-weight: bold;">Tab menu: </h2>
+	<h2 class="text_size text_black" style="font-weight: bold;">Tab menu: </h2>
 
 	<br />
 
 	<!-- "Izaque" button -->
 	<span id="button_1" class="tab_button">
-		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Izaque');" style="border-radius: 50px;">
-			<h2 class="text_size">
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Izaque');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
 				Izaque: <i class="fas fa-user-circle"></i>
-			</h2>
-		</button>
+			
+		</h2>
+	</button>
 	</span>
 
 	<!-- "Stake2" button -->
 	<span id="button_2" class="tab_button">
-		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Stake2');" style="border-radius: 50px;">
-			<h2 class="text_size">
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Stake2');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
 				Stake2: <i class="fas fa-user-circle"></i>
-			</h2>
-		</button>
+			
+		</h2>
+	</button>
 	</span>
 
 	<!-- "Funkysnipa Cat" button -->
 	<span id="button_3" class="tab_button">
-		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Funkysnipa_Cat');" style="border-radius: 50px;">
-			<h2 class="text_size">
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Funkysnipa_Cat');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
 				Funkysnipa Cat: <i class="fas fa-user-circle"></i>
-			</h2>
-		</button>
+			
+		</h2>
+	</button>
 	</span>
 
 	<!-- "Social Networks" button -->
 	<span id="button_4" class="tab_button">
-		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Social_Networks');" style="border-radius: 50px;">
-			<h2 class="text_size">
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Social_Networks');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
 				Social Networks: <i class="fas fa-globe"></i>
-			</h2>
-		</button>
+			
+		</h2>
+	</button>
 	</span>
 
 	<!-- "Websites" button -->
 	<span id="button_5" class="tab_button">
-		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-			<h2 class="text_size">
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
 				Websites: <i class="fas fa-globe"></i>
-			</h2>
-		</button>
+			
+		</h2>
+	</button>
 	</span>
 </div>
 
 <!-- Website header -->
 <div id="header" class="w3-animate-zoom header_size background_orange text_dark_orange border_4px border_color_light_orange box_shadow_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_light_orange header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
 	<!-- Website title -->
-	<h2 class="text_size text_dark_orange">
+	<h2 class="text_size text_black">
 		<p><br /><b>Izaque, Stake2, Funkysnipa Cat <i class="fas fa-user-circle"></i></b><br /><br /><p>
 	</h2>
 
@@ -176,101 +196,184 @@ I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
 	<!-- Website image button -->
 	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/Icons/Stake2.png')" style="z-index: 2;">
 		<h4 class="text_size text_dark_orange">
-			Open image in new tab: <i class="fas fa-images"></i>
+			Open image in a new tab: <i class="fas fa-images"></i>
 		</h4>
 	</button>
 	<br />
 
 	<!-- Website description -->
 	<h3 class="text_size">
-		Website to show who I am in the Internet, created by me, <b class="text_light_orange">Izaque</b>.<br />
-		I am my two Digital Identities, <b class="text_light_orange">Stake2</b>, and <b class="text_light_orange">Funkysnipa Cat</b>.
+		Website to show who I am in the Internet, created by me, <b class="text_black">Izaque</b>.<br />
+		I am my two Digital Identities, <b class="text_black">Stake2</b>, and <b class="text_black">Funkysnipa Cat</b>.
 	</h3>
 	<br />
 </div>
 
 <br /><br /><br /><br /><br />
 
-<!-- "Izaque" tab -->
+<center><!-- "Izaque" tab -->
 <a id="Izaque_anchor" name="Izaque"></a>
 <div id="Izaque" class="w3-container tab header_size background_orange text_dark_orange border_4px border_color_light_orange box_shadow_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
-	<h2 class="text_size text_dark_orange">
+	<h2 class="text_size text_black">
 		<p><br /><b id="Izaque_title">Person: Izaque <i class="fas fa-user-circle"></i></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: right;"><!-- "Stake2" button -->
+	<span id="button_2" class="tab_button">
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Stake2');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
+				Stake2: <i class="fas fa-user-circle"></i>
+			
+		</h2>
+	</button>
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
-		Hello, I am <b class="text_light_orange">Izaque</b>, <b class="text_light_orange">Stake2</b>, and <b class="text_light_orange">Funkysnipa Cat</b>, a person who loves writing, reading, programming in Python, making websites in HTML and PHP, drawing, editing videos.<br />
+		Hello, I'm <b class="text_black">Stake2</b>, <b class="text_black">Funkysnipa Cat</b>, and <b class="text_black">Izaque</b>, a person who loves writing, reading, programming in Python, making websites in HTML and PHP, drawing, editing videos.<br />
 I like to watch anime, cartoons, series, movies, videos, play games, listen to music, especially Dubstep.<br />
-I am very proud of the things I do, my skills, and my talents.<br />
-I love writing stories, I have been writing since 2016, it helps me to be creative and have a good imagination.<br />
-I have also been programming since 2016, and that helps a lot in my logical thinking and makes me think better.<br />
+I'm very proud of the things I do, my skills, and my talents.<br />
+I love writing stories, I've been writing since 2016, it helps me to be creative and have a good imagination.<br />
+I've also been programming since 2016, and that helps a lot in my logical thinking and makes me think better.<br />
 I like to create programs to help me do what I do and be more organized.<br />
-I am a native of Brazil, the English I have known since I was a child make me more knowledgeable and easier to learn, it helps me to seek knowledge that does not come from my mother tongue.<br />
+I'm a native of Brazil, the English I've known since I was a child make me more knowledgeable and easier to learn, it helps me to seek knowledge that doesn't come from my mother tongue.<br />
 It also helped me discover and learn several things on the Internet.<br />
-I am organized and a little perfectionist.<br />
+I'm organized and a little perfectionist.<br />
 I like to talk about my personal interests and know about the interests of other people.<br />
 I also love My Little Pony, I watch it since 2011, I discovered that cartoon on the social network Google+.
 	</h2>
-</div>
+</div></center>
 
-<!-- "Stake2" tab -->
+<center><!-- "Stake2" tab -->
 <a id="Stake2_anchor" name="Stake2"></a>
 <div id="Stake2" class="w3-container tab header_size background_orange text_dark_orange border_4px border_color_light_orange box_shadow_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
-	<h2 class="text_size text_dark_orange">
+	<h2 class="text_size text_black">
 		<p><br /><b id="Stake2_title">Digital Identity: Stake2 <i class="fas fa-user-circle"></i></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
-	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
-		<center><img class="box_shadow_light_orange image_size border_4px border_color_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Stake2.png" style="width: 25%; height: auto;" /></center><hr class="border_1px border_color_light_orange" />
-<b class="text_light_orange">Stake2</b> is a Digital Identity and Digital Name that I created for myself in 2008, when I wanted to be a YouTuber and make vlogs and videos for YouTube.<br />
-Now I use this name in the majority of the websites of the Internet.<br />
-<br />
-#<b class="text_light_orange">Stake2</b> #<b class="text_light_orange">Funkysnipa Cat</b>
-	</h2>
-</div>
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "Izaque" button -->
+	<span id="button_1" class="tab_button">
+		
 
-<!-- "Funkysnipa Cat" tab -->
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Izaque');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
+				Izaque: <i class="fas fa-user-circle"></i>
+			
+		</h2>
+	</button>
+	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Funkysnipa Cat" button -->
+	<span id="button_3" class="tab_button">
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Funkysnipa_Cat');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
+				Funkysnipa Cat: <i class="fas fa-user-circle"></i>
+			
+		</h2>
+	</button>
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<center><img class="box_shadow_light_orange image_size border_4px border_color_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Stake2.png" style="width: 25%; height: auto;" /></center><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Stake2/1.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Stake2/2.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Stake2/3.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Stake2/4.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Stake2/5.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Stake2/6.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Stake2/7.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><hr class="border_1px border_color_light_orange" />
+"<b class="text_black">Stake2</b>" is a Digital Identity and Digital Name that I created for myself in 2008, when I wanted to be a YouTuber and make vlogs and videos for YouTube.<br />
+Now I use this name in the majority of the websites of the Internet.<br />
+It started as "TheSnakes90", the "The" presents it, the "Snakes" has the impact on the "Snake", and the "90" is to make it more unique.<br />
+Then I changed it to "<b class="text_black">Stake2</b>", the "Stake" has impact, and the "2" is to make it more unique.<br />
+<br />
+#<b class="text_black">Stake2</b> #<b class="text_black">Funkysnipa Cat</b>
+	</h2>
+</div></center>
+
+<center><!-- "Funkysnipa Cat" tab -->
 <a id="Funkysnipa_Cat_anchor" name="Funkysnipa Cat"></a>
 <div id="Funkysnipa_Cat" class="w3-container tab header_size background_orange text_dark_orange border_4px border_color_light_orange box_shadow_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
-	<h2 class="text_size text_dark_orange">
+	<h2 class="text_size text_black">
 		<p><br /><b id="Funkysnipa_Cat_title">Digital Identity: Funkysnipa Cat <i class="fas fa-user-circle"></i></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "Stake2" button -->
+	<span id="button_2" class="tab_button">
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Stake2');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
+				Stake2: <i class="fas fa-user-circle"></i>
+			
+		</h2>
+	</button>
+	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Social Networks" button -->
+	<span id="button_4" class="tab_button">
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Social_Networks');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
+				Social Networks: <i class="fas fa-globe"></i>
+			
+		</h2>
+	</button>
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
-		<img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/1.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/2.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/3.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/4.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/5.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/6.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/Christmas - Natal.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/Halloween.jpg" style="width: 25%; height: auto;border-radius: 1px;" /><hr class="border_1px border_color_light_orange" />
-<b class="text_light_orange">Funkysnipa Cat</b> is an identity and account that I created in the social network Google+ around 2013.<br />
+		<img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/1.png" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/2.png" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/3.png" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/4.png" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/5.png" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/6.png" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/7.png" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/Christmas - Natal.png" style="width: 25%; height: auto;border-radius: 1px;" /><img class="box_shadow_dark_orange image_size border_4px border_color_dark_orange border_radius_100_cent" src="https://thestake2.netlify.app/Images/Images/Stake2/Funkysnipa Cat/Halloween.png" style="width: 25%; height: auto;border-radius: 1px;" /><hr class="border_1px border_color_light_orange" />
+"<b class="text_black">Funkysnipa Cat</b>" is an identity and account that I created in the social network Google+ around 2013.<br />
 Google+ is a social network created by Google in 2011, every account of YouTube at the time were Google+ accounts.<br />
-I created the <b class="text_light_orange">Funkysnipa Cat</b> account because of the Brazilian movement called "Funky Cats Movement".<br />
+I created the <b class="text_black">Funkysnipa Cat</b> account because of the Brazilian movement called "Funky Cats Movement".<br />
 The movement of the Funky Cats was a movement that happened on Google+ between 2013 and 2019, 2019 was when Google+ was closed by Google.<br />
 It consisted in honoring the Brazilian YouTuber Funky Black Cat, creating themes of other Funky Cats.<br />
 And replacing the "Black" of the name by the chosen theme by the person, editing the original picture of Funky Black Cat to match the theme.<br />
 Like Funky Pastry Cook Cat, Funky Ninja Cat, Funky Gamer Cat, Funky Musician Cat, Funky Jedi Cat.<br />
-My Funky Cat was the <b class="text_light_orange">Funkysnipa Cat</b>, because I wanted to be different and not have three words in the name.<br />
+My Funky Cat was the <b class="text_black">Funkysnipa Cat</b>, because I wanted to be different and not have three words in the name.<br />
 The "Snipa" was because when Funky Black Cat was going to say "Sniper" he said "Snipa", and I also like the gun a lot.<br />
 I got to know a lot of things that I know to this day on Google+, with My Little Pony, Five Nights at Freddy's, Undertale, I started to like Dubstep more.<br />
 And also made a lot of friends, Google+ was closed in April 2, 2019 by Google because it had security and privacy issues that Google hid and people discovered.<br />
 People became sad because Google+ was closed, and migrated to MeWe, Google+ Rewritten, and other social networks.<br />
 But for me, I can not find a social network that surpasses or replaces Google+, better to keep the good times only in memory.<br />
 <br />
-#<b class="text_light_orange">Stake2</b> #<b class="text_light_orange">Funkysnipa Cat</b>
+#<b class="text_black">Stake2</b> #<b class="text_black">Funkysnipa Cat</b>
 	</h2>
-</div>
+</div></center>
 
-<!-- "Social Networks" tab -->
+<center><!-- "Social Networks" tab -->
 <a id="Social_Networks_anchor" name="Social Networks"></a>
 <div id="Social_Networks" class="w3-container tab header_size background_orange text_dark_orange border_4px border_color_light_orange box_shadow_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
-	<h2 class="text_size text_dark_orange">
+	<h2 class="text_size text_black">
 		<p><br /><b id="Social_Networks_title">Social Networks: <i class="fas fa-globe"></i></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "Funkysnipa Cat" button -->
+	<span id="button_3" class="tab_button">
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Funkysnipa_Cat');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
+				Funkysnipa Cat: <i class="fas fa-user-circle"></i>
+			
+		</h2>
+	</button>
+	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Websites" button -->
+	<span id="button_5" class="tab_button">
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
+				Websites: <i class="fas fa-globe"></i>
+			
+		</h2>
+	</button>
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
 			<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
 		<h2 class="text_size text_light_orange margin_top_bottom_2_cent" style="font-weight: bold;">
@@ -396,23 +499,35 @@ But for me, I can not find a social network that surpasses or replaces Google+, 
 		</h3>
 	</button>	</div>
 	</h2>
-</div>
+</div></center>
 
-<!-- "Websites" tab -->
+<center><!-- "Websites" tab -->
 <a id="websites_tab_anchor" name="Websites"></a>
 <div id="websites_tab" class="w3-container tab header_size background_orange text_dark_orange border_4px border_color_light_orange box_shadow_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
-	<h2 class="text_size text_dark_orange">
-		<p><br /><b id="websites_tab_title">Websites: <i class="fas fa-globe"></i> <span class="text_dark_orange">25</span></b><br /><br /><p>
+	<h2 class="text_size text_black">
+		<p><br /><b id="websites_tab_title">Websites: <i class="fas fa-globe"></i> <span class="text_black">27</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "Social Networks" button -->
+	<span id="button_4" class="tab_button">
+		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('Social_Networks');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_orange">
+		
+				Social Networks: <i class="fas fa-globe"></i>
+			
+		</h2>
+	</button>
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
 		
 		<!-- "Stake2" link button -->
-		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="" style="border-radius: 50px;">
-			<h2 class="text_size">
-				Izaque, Stake2, Funkysnipa Cat <i class="fas fa-user-circle"></i> (You are here)
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="" style="border-radius: 50px;" title="https://thestake2.netlify.app/Stake2/en/">
+			<h2 class="text_size" title="https://thestake2.netlify.app/Stake2/en/">
+				Izaque, Stake2, Funkysnipa Cat <i class="fas fa-user-circle" title="https://thestake2.netlify.app/Stake2/en/"></i> (You are here)
 			</h2>
 		</button>
 
@@ -424,28 +539,35 @@ But for me, I can not find a social network that surpasses or replaces Google+, 
 		</button>
 
 		<!-- "Diary" link button -->
-		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Diary/en/')" style="border-radius: 50px;">
+		<button class="w3-btn background_grey text_dark_grey border_4px border_color_dark_grey box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Diary/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
-				Diary
+				Diary <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
 		</button>
 
 		<!-- "Diary Slim" link button -->
 		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Diary Slim/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
-				Diary Slim
+				Diary Slim <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
 		</button>
 
-		<!-- "My Little Pony: Friendship Is Magic" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony: Friendship Is Magic/en/')" style="border-radius: 50px;">
+		<!-- "My Little Pony" link button -->
+		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My Little Pony
+			</h2>
+		</button>
+
+		<!-- "Friendship Is Magic" link button -->
+		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				My Little Pony: Friendship Is Magic
 			</h2>
 		</button>
 
 		<!-- "Watch History" link button -->
-		<button class="w3-btn background_blue text_dark_blue border_4px border_color_dark_blue box_shadow_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Watch History/en/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Watch History/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Watch History
 			</h2>
@@ -501,21 +623,21 @@ But for me, I can not find a social network that surpasses or replaces Google+, 
 		</button>
 
 		<!-- "Rise to Equestria" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/en/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/Rise to Equestria/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Rise to Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-check"></i>
 			</h2>
 		</button>
 
 		<!-- "SpaceLiving" link button -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/New World/SpaceLiving/en/')" style="border-radius: 50px;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/SpaceLiving/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				SpaceLiving <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
 		</button>
 
 		<!-- "The Life of Izaque in Equestria" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/en/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Izaque in Equestria/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				The Life of Izaque in Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-pause"></i>
 			</h2>
@@ -584,8 +706,15 @@ But for me, I can not find a social network that surpasses or replaces Google+, 
 			</h2>
 		</button>
 
+		<!-- "2023" link button -->
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/2023/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My 2023 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
 	</h2>
-</div>
+</div></center>
 
 
 
