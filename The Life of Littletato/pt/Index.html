@@ -35,8 +35,8 @@
 	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 22/10/2023." />
-	<meta name="author" content="Stake2" />
+	<meta name="revised" content="Stake2's Enterprise TM, 26/10/2023." />
+	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
@@ -78,13 +78,13 @@
 	</style>
 
 	<!-- JavaScript files -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
 	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
 	<script type="text/javascript" src="/JavaScript/Story.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
 
 	<script>
@@ -92,7 +92,7 @@
 	</script>
 </head>
 
-<body class="background_dark_salmon" onLoad="Remove_Zoom();">
+<body class="background_dark_salmon" onLoad="Remove_Zoom();" test>
 <center>
 
 <!-- Open hamburger menu button -->
@@ -106,7 +106,7 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_second_purple border_4px border_color_light_purple border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Hide hamburger menu button -->
-	<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 15px !important;">
+	<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 17px 3px 17px !important; margin-right: 6%;">
 		<h4 class="text_size" style="font-weight: bold;">
 		X
 		</h4>
@@ -116,6 +116,7 @@
 
 	<br />
 
+<div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
 	<!-- "Ler história" button -->
 	<span id="button_1" class="tab_button">
 		
@@ -168,6 +169,7 @@
 	</button>
 	</span>
 </div>
+</div>
 
 <!-- Website header -->
 <div id="header" class="w3-animate-zoom header_size background_second_purple text_darker_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_light_purple header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
@@ -177,7 +179,7 @@
 	</h2>
 
 	<!-- Website image -->
-	<img class="box_shadow_light_purple image_size border_4px border_color_light_purple border_radius_8_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.png" style="height: auto;" /><br />
+	<img class="border_4px border_color_light_purple border_radius_6_cent box_shadow_light_purple border_4px border_color_light_purple border_radius_6_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.png" style="max-width: 50vw; height: auto;" /><br />
 
 	<!-- Website image button -->
 	<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.png')" style="z-index: 2;">
@@ -195,7 +197,7 @@
 		E parou em uma cidade para ver, era São Francisco, ela conheceu outra batata lá.<br />
 		Elas começaram a conversar, se conhecer melhor, e a vida de Pequenata começou a mudar.<br />
 		---<br />
-		Autor da história: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span>, <span class="text_green_water">Júlia</span><br />
+		Autor da história: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span><br />
 		Capítulos: <i class="fas fa-book"></i> <span class="text_light_salmon">33</span><br />
 		Leitores: <i class="fas fa-book-reader"></i> <span class="text_light_salmon">2</span><br />
 		Data de criação da história: <i class="fa-solid fa-calendar-days"></i> <span class="text_light_salmon">05/08/2017</span><br />
@@ -228,7 +230,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_light_salmon">
 			<!-- Chapter button for "1 - O Começo, Parte Um" chapter -->
 		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('1', 'O Começo, Parte Um');" style="border-radius: 50px;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
@@ -458,7 +460,7 @@
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				33 - A Segunda-Feira Ocupada
 			</h3>
-		</button>
+		</button></span>
 	</h2>
 </div></center>
 
@@ -495,9 +497,9 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		<span class="text_light_salmon">1 - </span><span class="text_hover_white">Thaíssa (Discord - Servidor My Little Pony BR) 😊</span><br />
+		<span class="text_light_salmon"><span class="text_light_salmon">1 - </span><span class="text_hover_white">Thaíssa (Discord - Servidor My Little Pony BR) 😊</span><br />
 <span class="text_light_salmon">2 - </span><span class="text_hover_white">Mariana (Habitica, 10/07/2021) 😊</span><br />
-
+</span>
 	</h2>
 </div></center>
 
@@ -534,7 +536,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_light_salmon">
 		<!-- "Ilha Deserta" story card -->
 		<a class="w3-btn background_yellow_sand border_4px border_color_dark_green_water box_shadow_dark_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Desert Island/pt/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_dark_green_water">
@@ -542,7 +544,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_green_water border_radius_5_cent border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -556,7 +558,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -564,8 +566,8 @@
 		<br />
 
 		<!-- "Ascensão à Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_second_purple">
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>Ascensão à Equestria</b>
 			</h2>
 
@@ -582,7 +584,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -590,8 +592,8 @@
 		<br />
 
 		<!-- "A Vida de Izaque em Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_second_purple">
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>A Vida de Izaque em Equestria</b>
 			</h2>
 
@@ -608,7 +610,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_darker_purple border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.png" style="height: auto;" /><br />
+			<img class="border_4px border_color_darker_purple border_radius_6_cent border_4px border_color_darker_purple border_radius_6_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.png" style="max-width: 50vw; height: auto;" /><br />
 
 			<br />
 		</a>
@@ -622,7 +624,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/Português/Cover.png" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -636,7 +638,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_brown border_radius_5_cent border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -650,7 +652,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_grey border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diary.png" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_grey border_radius_5_cent border_4px border_color_dark_grey border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -664,10 +666,10 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_orange border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diary Slim.png" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_orange border_radius_5_cent border_4px border_color_dark_orange border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário Slim.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
 
 			<br />
-		</a>
+		</a></span>
 	</h2>
 </div></center>
 
@@ -693,7 +695,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_light_salmon">
 		<!-- "Stake2" link button -->
 		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stake2/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
@@ -723,14 +725,14 @@
 		</button>
 
 		<!-- "My Little Pony" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				My Little Pony
 			</h2>
 		</button>
 
 		<!-- "Friendship Is Magic" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				My Little Pony: A Amizade É Mágica
 			</h2>
@@ -739,7 +741,7 @@
 		<!-- "Watch History" link button -->
 		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Watch History/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
-				Watch History
+				Watch History <i class="fas fa-eye"></i>
 			</h2>
 		</button>
 
@@ -793,7 +795,7 @@
 		</button>
 
 		<!-- "Rise to Equestria" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Ascensão à Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-check"></i>
 			</h2>
@@ -807,7 +809,7 @@
 		</button>
 
 		<!-- "The Life of Izaque in Equestria" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				A Vida de Izaque em Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-pause"></i>
 			</h2>
@@ -882,7 +884,7 @@
 				Meu 2023 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
-
+</span>
 	</h2>
 </div></center>
 
@@ -899,7 +901,7 @@
 		<hr class="border_1px border_color_light_purple" />		
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('2', 'O Começo, Parte Um');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('2', 'O Começo, Parte Dois');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -909,7 +911,7 @@
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/01.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/01.png" />
 		</center>
 		<br />
 
@@ -1045,7 +1047,7 @@ Elas dormiram suavemente na noite, esperando pelo amanhã, por um novo dia que e
 		
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('2', 'O Começo, Parte Um');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('2', 'O Começo, Parte Dois');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1152,15 +1154,8 @@ Elas dormiram suavemente na noite, esperando pelo amanhã, por um novo dia que e
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('1', 'O Começo, Parte Dois');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('3', 'O Começo, Parte Dois');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('3', 'O Trabalho');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1170,7 +1165,7 @@ Elas dormiram suavemente na noite, esperando pelo amanhã, por um novo dia que e
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/02.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/02.png" />
 		</center>
 		<br />
 
@@ -1298,15 +1293,8 @@ Ela beijou os lábios de Júlia e abraçou ela forte, dormindo com ela, sonhando
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('1', 'O Começo, Parte Dois');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('3', 'O Começo, Parte Dois');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('3', 'O Trabalho');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1393,15 +1381,8 @@ Ela beijou os lábios de Júlia e abraçou ela forte, dormindo com ela, sonhando
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('2', 'O Trabalho');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Trabalho');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'A Visita de Vitória, o Anime Relaxante');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1411,7 +1392,7 @@ Ela beijou os lábios de Júlia e abraçou ela forte, dormindo com ela, sonhando
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/03.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/03.png" />
 		</center>
 		<br />
 
@@ -1500,15 +1481,8 @@ Vitória se sentou no sofá e sorriu para Pequenata, elas começaram a conversar
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('2', 'O Trabalho');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Trabalho');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'A Visita de Vitória, o Anime Relaxante');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1585,15 +1559,8 @@ Vitória se sentou no sofá e sorriu para Pequenata, elas começaram a conversar
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('3', 'A Visita de Vitória, o Anime Relaxante');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('5', 'A Visita de Vitória, o Anime Relaxante');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('5', 'O Sonho do Viajante Espacial');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1603,7 +1570,7 @@ Vitória se sentou no sofá e sorriu para Pequenata, elas começaram a conversar
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/04.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/04.png" />
 		</center>
 		<br />
 
@@ -1728,15 +1695,8 @@ Deixe uma sugestão nos comentários (Botão de comentário) de o que você quer
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('3', 'A Visita de Vitória, o Anime Relaxante');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('5', 'A Visita de Vitória, o Anime Relaxante');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('5', 'O Sonho do Viajante Espacial');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1779,15 +1739,8 @@ Deixe uma sugestão nos comentários (Botão de comentário) de o que você quer
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Sonho do Viajante Espacial');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('6', 'O Sonho do Viajante Espacial');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('6', 'O Sábado e o Parque');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1797,7 +1750,7 @@ Deixe uma sugestão nos comentários (Botão de comentário) de o que você quer
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/05.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/05.png" />
 		</center>
 		<br />
 
@@ -1902,15 +1855,8 @@ Então o sonho se tornou outro sonho, Pequenata e Júlia estavam dormindo felize
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Sonho do Viajante Espacial');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('6', 'O Sonho do Viajante Espacial');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('6', 'O Sábado e o Parque');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1953,15 +1899,8 @@ Então o sonho se tornou outro sonho, Pequenata e Júlia estavam dormindo felize
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('5', 'O Sábado e o Parque');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('7', 'O Sábado e o Parque');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('7', 'Sessão de Domingo de Videogame');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1971,7 +1910,7 @@ Então o sonho se tornou outro sonho, Pequenata e Júlia estavam dormindo felize
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/06.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/06.png" />
 		</center>
 		<br />
 
@@ -2063,15 +2002,8 @@ As duas dormiram juntas na noite silenciosa.
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('5', 'O Sábado e o Parque');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('7', 'O Sábado e o Parque');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('7', 'Sessão de Domingo de Videogame');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2114,15 +2046,8 @@ As duas dormiram juntas na noite silenciosa.
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('6', 'Sessão de Domingo de Videogame');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('8', 'Sessão de Domingo de Videogame');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('8', 'A Programação de Pequenata, o Emocionante Filme');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2132,7 +2057,7 @@ As duas dormiram juntas na noite silenciosa.
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_7" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/07.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_7" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/07.png" />
 		</center>
 		<br />
 
@@ -2193,15 +2118,8 @@ Elas fecham os olhos e dormem na noite silenciosa, está chovendo suavemente.
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('6', 'Sessão de Domingo de Videogame');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('8', 'Sessão de Domingo de Videogame');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('8', 'A Programação de Pequenata, o Emocionante Filme');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2244,15 +2162,8 @@ Elas fecham os olhos e dormem na noite silenciosa, está chovendo suavemente.
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('7', 'A Programação de Pequenata, o Emocionante Filme');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('9', 'A Programação de Pequenata, o Emocionante Filme');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('9', 'O Sonho e a Livestream');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2262,7 +2173,7 @@ Elas fecham os olhos e dormem na noite silenciosa, está chovendo suavemente.
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_8" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/08.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_8" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/08.png" />
 		</center>
 		<br />
 
@@ -2365,15 +2276,8 @@ Elas se abraçam forte e se cobrem com o cobertor, dormindo logo após.
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('7', 'A Programação de Pequenata, o Emocionante Filme');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('9', 'A Programação de Pequenata, o Emocionante Filme');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('9', 'O Sonho e a Livestream');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2416,15 +2320,8 @@ Elas se abraçam forte e se cobrem com o cobertor, dormindo logo após.
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('8', 'O Sonho e a Livestream');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('10', 'O Sonho e a Livestream');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('10', 'O Sonho Alegórico');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2434,7 +2331,7 @@ Elas se abraçam forte e se cobrem com o cobertor, dormindo logo após.
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_9" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/09.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_9" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/09.png" />
 		</center>
 		<br />
 
@@ -2554,15 +2451,8 @@ Então elas dormem, esperando pelo próximo dia.
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('8', 'O Sonho e a Livestream');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('10', 'O Sonho e a Livestream');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('10', 'O Sonho Alegórico');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2605,15 +2495,8 @@ Então elas dormem, esperando pelo próximo dia.
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('9', 'O Sonho Alegórico');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('11', 'O Sonho Alegórico');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('11', 'O Sonho da Viagem e o Piquenique');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2623,7 +2506,7 @@ Então elas dormem, esperando pelo próximo dia.
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_10" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/10.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_10" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/1 - 10/10.png" />
 		</center>
 		<br />
 
@@ -2739,15 +2622,8 @@ Ela teve bons sonhos enquanto dormia à tarde.
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('9', 'O Sonho Alegórico');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('11', 'O Sonho Alegórico');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('11', 'O Sonho da Viagem e o Piquenique');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2790,15 +2666,8 @@ Ela teve bons sonhos enquanto dormia à tarde.
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('10', 'O Sonho da Viagem e o Piquenique');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('12', 'O Sonho da Viagem e o Piquenique');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('12', 'Os Sonhos dos Cookies, Cyberpunk, e o Castelo De Vidro');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2808,7 +2677,7 @@ Ela teve bons sonhos enquanto dormia à tarde.
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_11" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/11.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_11" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/11.png" />
 		</center>
 		<br />
 
@@ -2924,15 +2793,8 @@ Ela fechou seus olhos e dormiu na tarde quente, esperando Pequenata chegar do tr
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('10', 'O Sonho da Viagem e o Piquenique');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('12', 'O Sonho da Viagem e o Piquenique');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('12', 'Os Sonhos dos Cookies, Cyberpunk, e o Castelo De Vidro');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2975,15 +2837,8 @@ Ela fechou seus olhos e dormiu na tarde quente, esperando Pequenata chegar do tr
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('11', 'Os Sonhos dos Cookies, Cyberpunk, e o Castelo De Vidro');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('13', 'Os Sonhos dos Cookies, Cyberpunk, e o Castelo De Vidro');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('13', 'O Sonho do Cupcake e o Filme de Superherói');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2993,7 +2848,7 @@ Ela fechou seus olhos e dormiu na tarde quente, esperando Pequenata chegar do tr
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_12" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/12.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_12" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/12.png" />
 		</center>
 		<br />
 
@@ -3136,15 +2991,8 @@ Depois disso, Pequenata fechou a geladeira e olhou para a pia da cozinha, tinha 
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('11', 'Os Sonhos dos Cookies, Cyberpunk, e o Castelo De Vidro');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('13', 'Os Sonhos dos Cookies, Cyberpunk, e o Castelo De Vidro');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('13', 'O Sonho do Cupcake e o Filme de Superherói');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3187,15 +3035,8 @@ Depois disso, Pequenata fechou a geladeira e olhou para a pia da cozinha, tinha 
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('12', 'O Sonho do Cupcake e o Filme de Superherói');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('14', 'O Sonho do Cupcake e o Filme de Superherói');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('14', 'Um Feliz Ano Novo em 2019');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3205,7 +3046,7 @@ Depois disso, Pequenata fechou a geladeira e olhou para a pia da cozinha, tinha 
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_13" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/13.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_13" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/13.png" />
 		</center>
 		<br />
 
@@ -3337,15 +3178,8 @@ Marque o capítulo como lido e deixei um comentário, por favor! Obrigado. ^^)
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('12', 'O Sonho do Cupcake e o Filme de Superherói');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('14', 'O Sonho do Cupcake e o Filme de Superherói');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('14', 'Um Feliz Ano Novo em 2019');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3388,15 +3222,8 @@ Marque o capítulo como lido e deixei um comentário, por favor! Obrigado. ^^)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('13', 'Um Feliz Ano Novo em 2019');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('15', 'Um Feliz Ano Novo em 2019');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('15', 'Memórias, a Procura de Um Emprego, e o Jogo');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3406,7 +3233,7 @@ Marque o capítulo como lido e deixei um comentário, por favor! Obrigado. ^^)
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_14" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/14.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_14" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/14.png" />
 		</center>
 		<br />
 
@@ -3533,15 +3360,8 @@ Obrigado por ler meu querido leitor &colon;3 😊.)
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('13', 'Um Feliz Ano Novo em 2019');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('15', 'Um Feliz Ano Novo em 2019');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('15', 'Memórias, a Procura de Um Emprego, e o Jogo');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3584,15 +3404,8 @@ Obrigado por ler meu querido leitor &colon;3 😊.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('14', 'Memórias, a Procura de Um Emprego, e o Jogo');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('16', 'Memórias, a Procura de Um Emprego, e o Jogo');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('16', 'O Sonho da Cidade, Mensagem de Emprego, e o Jogo de Battle Royale');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3602,7 +3415,7 @@ Obrigado por ler meu querido leitor &colon;3 😊.)
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_15" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/15.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_15" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/15.png" />
 		</center>
 		<br />
 
@@ -3732,15 +3545,8 @@ Eu recomendo que você o assista, é muito bom e relaxante, eu amo assistir ele 
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('14', 'Memórias, a Procura de Um Emprego, e o Jogo');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('16', 'Memórias, a Procura de Um Emprego, e o Jogo');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('16', 'O Sonho da Cidade, Mensagem de Emprego, e o Jogo de Battle Royale');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3783,15 +3589,8 @@ Eu recomendo que você o assista, é muito bom e relaxante, eu amo assistir ele 
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('15', 'O Sonho da Cidade, Mensagem de Emprego, e o Jogo de Battle Royale');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('17', 'O Sonho da Cidade, Mensagem de Emprego, e o Jogo de Battle Royale');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('17', 'A Entrevista de Emprego e as Histórias');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3801,7 +3600,7 @@ Eu recomendo que você o assista, é muito bom e relaxante, eu amo assistir ele 
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_16" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/16.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_16" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/16.png" />
 		</center>
 		<br />
 
@@ -3934,15 +3733,8 @@ Obrigado por ler este capítulo, meu querido leitor, deixe um comentário no bot
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('15', 'O Sonho da Cidade, Mensagem de Emprego, e o Jogo de Battle Royale');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('17', 'O Sonho da Cidade, Mensagem de Emprego, e o Jogo de Battle Royale');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('17', 'A Entrevista de Emprego e as Histórias');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3985,15 +3777,8 @@ Obrigado por ler este capítulo, meu querido leitor, deixe um comentário no bot
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('16', 'A Entrevista de Emprego e as Histórias');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('18', 'A Entrevista de Emprego e as Histórias');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('18', 'A Aceitação no Emprego, a Conversa, e a Pizza');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4003,7 +3788,7 @@ Obrigado por ler este capítulo, meu querido leitor, deixe um comentário no bot
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_17" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/17.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_17" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/17.png" />
 		</center>
 		<br />
 
@@ -4130,15 +3915,8 @@ Obrigado, tchau. :3)
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('16', 'A Entrevista de Emprego e as Histórias');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('18', 'A Entrevista de Emprego e as Histórias');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('18', 'A Aceitação no Emprego, a Conversa, e a Pizza');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4181,15 +3959,8 @@ Obrigado, tchau. :3)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('17', 'A Aceitação no Emprego, a Conversa, e a Pizza');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('19', 'A Aceitação no Emprego, a Conversa, e a Pizza');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('19', 'O Primeiro Dia de Trabalho de Júlia');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4199,7 +3970,7 @@ Obrigado, tchau. :3)
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_18" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/18.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_18" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/18.png" />
 		</center>
 		<br />
 
@@ -4327,15 +4098,8 @@ Eu revisei este capítulo enquanto escutava a incrível e relaxante trilha sonor
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('17', 'A Aceitação no Emprego, a Conversa, e a Pizza');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('19', 'A Aceitação no Emprego, a Conversa, e a Pizza');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('19', 'O Primeiro Dia de Trabalho de Júlia');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4378,15 +4142,8 @@ Eu revisei este capítulo enquanto escutava a incrível e relaxante trilha sonor
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('18', 'O Primeiro Dia de Trabalho de Júlia');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('20', 'O Primeiro Dia de Trabalho de Júlia');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('20', 'O Café, o Carro, e Dirigir Com Música');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4396,7 +4153,7 @@ Eu revisei este capítulo enquanto escutava a incrível e relaxante trilha sonor
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_19" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/19.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_19" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/19.png" />
 		</center>
 		<br />
 
@@ -4519,15 +4276,8 @@ Obrigado por ler ^^.)
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('18', 'O Primeiro Dia de Trabalho de Júlia');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('20', 'O Primeiro Dia de Trabalho de Júlia');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('20', 'O Café, o Carro, e Dirigir Com Música');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4570,15 +4320,8 @@ Obrigado por ler ^^.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('19', 'O Café, o Carro, e Dirigir Com Música');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('21', 'O Café, o Carro, e Dirigir Com Música');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('21', 'O Churrasco, o Parque, e o Passeio');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4588,7 +4331,7 @@ Obrigado por ler ^^.)
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_20" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/20.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_20" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/11 - 20/20.png" />
 		</center>
 		<br />
 
@@ -4754,15 +4497,8 @@ Muito obrigado por ler esse capítulo :3.)
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('19', 'O Café, o Carro, e Dirigir Com Música');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('21', 'O Café, o Carro, e Dirigir Com Música');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('21', 'O Churrasco, o Parque, e o Passeio');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4805,15 +4541,8 @@ Muito obrigado por ler esse capítulo :3.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('20', 'O Churrasco, o Parque, e o Passeio');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('22', 'O Churrasco, o Parque, e o Passeio');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('22', 'A Infância e a Viagem Para o Texas');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4823,7 +4552,7 @@ Muito obrigado por ler esse capítulo :3.)
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_21" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/21.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_21" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/21.png" />
 		</center>
 		<br />
 
@@ -5006,15 +4735,8 @@ De qualquer forma, muito obrigado por ler esse capítulo, volte logo, hehe ^^.)
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('20', 'O Churrasco, o Parque, e o Passeio');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('22', 'O Churrasco, o Parque, e o Passeio');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('22', 'A Infância e a Viagem Para o Texas');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -5057,15 +4779,8 @@ De qualquer forma, muito obrigado por ler esse capítulo, volte logo, hehe ^^.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('21', 'A Infância e a Viagem Para o Texas');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('23', 'A Infância e a Viagem Para o Texas');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('23', 'Viagem ao Texas, Parte Dois');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -5075,7 +4790,7 @@ De qualquer forma, muito obrigado por ler esse capítulo, volte logo, hehe ^^.)
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_22" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/22.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_22" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/22.png" />
 		</center>
 		<br />
 
@@ -5229,15 +4944,8 @@ Obrigado por ler! Hehe ^^.)
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('21', 'A Infância e a Viagem Para o Texas');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('23', 'A Infância e a Viagem Para o Texas');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('23', 'Viagem ao Texas, Parte Dois');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -5280,15 +4988,8 @@ Obrigado por ler! Hehe ^^.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('22', 'Viagem ao Texas, Parte Dois');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('24', 'Viagem ao Texas, Parte Dois');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('24', 'O Sonho Estranho e a História de Sasha');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -5298,7 +4999,7 @@ Obrigado por ler! Hehe ^^.)
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_23" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/23.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_23" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/23.png" />
 		</center>
 		<br />
 
@@ -5501,15 +5202,8 @@ Foi bom escrever sobre Pequenata e Júlia conhecendo Layla e adicionando ela em 
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('22', 'Viagem ao Texas, Parte Dois');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('24', 'Viagem ao Texas, Parte Dois');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('24', 'O Sonho Estranho e a História de Sasha');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -5552,15 +5246,8 @@ Foi bom escrever sobre Pequenata e Júlia conhecendo Layla e adicionando ela em 
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('23', 'O Sonho Estranho e a História de Sasha');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('25', 'O Sonho Estranho e a História de Sasha');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('25', 'O Novo Cachorro');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -5570,7 +5257,7 @@ Foi bom escrever sobre Pequenata e Júlia conhecendo Layla e adicionando ela em 
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_24" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/24.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_24" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/24.png" />
 		</center>
 		<br />
 
@@ -5754,15 +5441,8 @@ Seu nome começa com L, obrigado. :3)
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('23', 'O Sonho Estranho e a História de Sasha');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('25', 'O Sonho Estranho e a História de Sasha');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('25', 'O Novo Cachorro');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -5805,15 +5485,8 @@ Seu nome começa com L, obrigado. :3)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('24', 'O Novo Cachorro');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('26', 'O Novo Cachorro');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('26', 'Um Teletransporte Estranho (PequeLiving)');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -5823,7 +5496,7 @@ Seu nome começa com L, obrigado. :3)
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_25" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/25.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_25" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/25.png" />
 		</center>
 		<br />
 
@@ -5989,22 +5662,15 @@ Eu coloquei um título em vez de fazer só "capítulo 1" e 2 e 3.<br />
 Desse jeito eu posso me lembrar facilmente do que aconteceu no capítulo em vez de só falar "o capítulo da terra dos sonhos" ou "o capítulo da viagem para o Texas".<br />
 Eu escrevi esta peça ouvindo o perfil da SubCarbon Records no Soundcloud, e... Eu só queria falar isso para vocês. :3<br />
 Também, é assim que eu imagino a Pequenata (ignore os cães), uma garota realmente tímida. xD)<br />
-<br /><img class="image_size border_4px border_color_light_salmon border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/The Life of Littletato/Not Littletato.jpg" style="max-width: 50%;" /><br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/The Life of Littletato/Not Littletato.jpg" style="max-width: 50%;" /><br />
 		<br /><br />
 		Capítulo escrito em: 02/07/2019<br />
 		Palavras: 3,063<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('24', 'O Novo Cachorro');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('26', 'O Novo Cachorro');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('26', 'Um Teletransporte Estranho (PequeLiving)');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -6047,15 +5713,8 @@ Também, é assim que eu imagino a Pequenata (ignore os cães), uma garota realm
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('25', 'Um Teletransporte Estranho (PequeLiving)');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('27', 'Um Teletransporte Estranho (PequeLiving)');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('27', 'O Retorno e a Descoberta');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -6065,26 +5724,14 @@ Também, é assim que eu imagino a Pequenata (ignore os cães), uma garota realm
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_26" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/26.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_26" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/26.png" />
 		</center>
 		<br />
 
 		<!-- Chapter text -->
 		<h4 id="chapter_26_text" class="text_size unselectable" style="text-align: left;">
-		Esse é um crossover entre <br />
-<b>Notice</b>:  Undefined index: the_life_of_littletato in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
- e <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a>.<br />
-<br />
-<b>Notice</b>:  Undefined index: the_life_of_littletato in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
- e <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a> são duas histórias minhas.<br />
+		Esse é um crossover entre <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a> e <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a>.<br />
+<a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a> e <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a> são duas histórias minhas.<br />
 Eu recomendo que você leia <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a> primeiro, antes de ler esse capítulo.<br />
 Leia ela até o capítulo <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/?chapter=9#" target="_blank">nove</a> para entender sua história e o universo.<br />
 E então leia o capítulo vinte e seis de Pequenata, que é este aqui, depois disso, você lê o capítulo número dez de <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a>.<br />
@@ -6095,7 +5742,7 @@ Ela estava tendo um sonho estranho, um sonho sobre ela ser teleportada para uma 
 Ela tinha um computador super rápido e poderoso, era branco, um console de jogos PlayVegestation 4, uma cama, e um guarda-roupas.<br />
 A espaçonave tinha paredes brancas por dentro e por fora, o computador da espaçonave tinha uma versão modificada do Windows 10 instalada nele.<br />
 Era chamada de Windows 10 (Edição SpaceLiving).<br />
-<br /><img class="image_size border_4px border_color_light_salmon border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover.png" style="max-width: 50%;" /><br /><br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover.png" style="max-width: 50%;" /><br /><br />
 A cama tinha um cobertor azul, a cama era feita de algum plástico resistente que era cinza claro, e o guarda-roupas era cinza também.<br />
 As espaçonaves também tinham uma Torre de Laser fora delas, ela podia atirar um raio laser para acertar asteroides que se aproximavam.<br />
 A Torre de Laser tinha dois modos, o modo de Alcance Expandido, e o modo Blindado.<br />
@@ -6124,7 +5771,7 @@ A IA se chamava LonelyShip Artificial Intelligence, Inteligência Artificial da 
 A espaçonave também tinha quatro letreiros pequenos em suas paredes, dois mostrando "SpaceLiving", e outros dois mostrando "LonelyShip" na direita do letreiro da SpaceLiving.<br />
 Os letreiros da SpaceLiving e LonelyShip eram iguais em cada lado da LonelyShip, um da SpaceLiving em cada lado, e um da LonelyShip em cada lado.<br />
 Os letreiros na esquerda estavam à esquerda da janela, e os da direita estavam à direita da janela.<br />
-<br /><img class="image_size border_4px border_color_light_salmon border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover Front Signboards.png" style="max-width: 50%;" /><br /><br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover Front Signboards.png" style="max-width: 50%;" /><br /><br />
 E também, a LonelyShip tinha dois grandes letreiros na frente dela, um com "SpaceLiving" escrito nele, e outro com "LonelyShip".<br />
 O letreiro da SpaceLiving está acima do da LonelyShip.<br />
 <br />
@@ -6230,10 +5877,10 @@ Ele disse que eles desapareceram ainda jovens<br />
 Pode me mandar uma foto sua, por favor?" perguntou Pequenata, um pouco chocada.<br />
 "Hmm... Eu tenho cabelos grisalhos... Eu acho que eu sou essa sua irmã então, você sabe o nome do seu irmão?<br />
 Aqui está eu", disse Lisa.<br />
-<br /><img class="image_size border_4px border_color_light_salmon border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Lisa.jpg"" style="max-width: 50%;" /><br /><br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Lisa.jpg"" style="max-width: 50%;" /><br /><br />
 "Eu acho que começava com T, Tad, ou algo assim... Não consigo me lembrar direito.<br />
 E também, você parece com minha irmã... Ou o que eu me lembro dela... Aqui está eu", respondeu Pequenata.<br />
-<br /><img class="image_size border_4px border_color_light_salmon border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/The Life of Littletato/Littletato.jpg" style="max-width: 50%;" /><br /><br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/The Life of Littletato/Littletato.jpg" style="max-width: 50%;" /><br /><br />
 "Oh, ok, é Ted, e ele tem cabelos marrons, você quer conhecer a gente?<br />
 Tipo, teleportar para minha LonelyShip, e então a gente se teleporta para a do Ted?" perguntou Lisa.<br />
 "E também, eu acho que eu me lembro da minha irmã também, e ela era um pouco como você... Com cabelos marrons", disse Lisa.<br />
@@ -6264,13 +5911,7 @@ Então elas romperam o abraço, Lisa e Pequenata olharam uma para a outra.<br />
 "Eu também, mana, desculpe se eu desapareci do nada quando você e eu éramos pequenas", disse Lisa, um pouco triste.<br />
 "Oh, tá tudo bem irmã, falando nisso, por que você desapareceu? O que aconteceu?" perguntou Pequenata, curiosa.<br />
 <br />
-A resposta para essa pergunta é respondida no capítulo crossover de <br />
-<b>Notice</b>:  Undefined index: the_life_of_littletato in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
- e <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a>.<br />
+A resposta para essa pergunta é respondida no capítulo crossover de <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a> e <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a>.<br />
 Ela é respondida no capítulo dez de minha história SpaceLiving (capítulo 10).<br />
 Por favor clique no link abaixo para lê-lo:<br />
 <div style="padding-top: 1%;">
@@ -6281,19 +5922,12 @@ Por favor clique no link abaixo para lê-lo:<br />
 
 		<br /><br />
 		Capítulo escrito em: 03/07/2019<br />
-		Palavras: 4,008<br /><br />
+		Palavras: 3,807<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('25', 'Um Teletransporte Estranho (PequeLiving)');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('27', 'Um Teletransporte Estranho (PequeLiving)');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('27', 'O Retorno e a Descoberta');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -6336,15 +5970,8 @@ Por favor clique no link abaixo para lê-lo:<br />
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('26', 'O Retorno e a Descoberta');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('28', 'O Retorno e a Descoberta');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('28', 'A Linda Vida de Pequenata ❤️');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -6354,7 +5981,7 @@ Por favor clique no link abaixo para lê-lo:<br />
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_27" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/27.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_27" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/27.png" />
 		</center>
 		<br />
 
@@ -6559,15 +6186,8 @@ Adeus, ou eu deveria dizer, até mais :D.)
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('26', 'O Retorno e a Descoberta');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('28', 'O Retorno e a Descoberta');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('28', 'A Linda Vida de Pequenata ❤️');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -6610,15 +6230,8 @@ Adeus, ou eu deveria dizer, até mais :D.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('27', 'A Linda Vida de Pequenata ❤️');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('29', 'A Linda Vida de Pequenata ❤️');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('29', 'A Mansão de Pequenata e Amigos');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -6628,7 +6241,7 @@ Adeus, ou eu deveria dizer, até mais :D.)
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_28" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/28.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_28" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/28.png" />
 		</center>
 		<br />
 
@@ -6757,15 +6370,8 @@ A linda Vida de Pequenata, Episódio 28, com muito amor, Izaque ❤️.)
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('27', 'A Linda Vida de Pequenata ❤️');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('29', 'A Linda Vida de Pequenata ❤️');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('29', 'A Mansão de Pequenata e Amigos');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -6808,15 +6414,8 @@ A linda Vida de Pequenata, Episódio 28, com muito amor, Izaque ❤️.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('28', 'A Mansão de Pequenata e Amigos');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('30', 'A Mansão de Pequenata e Amigos');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('30', 'O Dia de Folga do Trabalho em 2021');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -6826,7 +6425,7 @@ A linda Vida de Pequenata, Episódio 28, com muito amor, Izaque ❤️.)
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_29" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/29.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_29" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/29.png" />
 		</center>
 		<br />
 
@@ -6880,7 +6479,7 @@ A garota planejou uma transferência bancária entre ela e o dono da casa para t
 Ela pagou as taxas de associação, despesas de fechamento, e chegou à mesa de fechamento, ela assinou a papelada para transferir a casa para seu nome.<br />
 Então ela transferiu o dinheiro para a conta do banco do antigo dono da casa.<br />
 O dono deu as chaves da casa para Pequenata, ela e Júlia estavam lá na casa, elas estavam tão felizes.<br />
-<br /><img class="image_size border_4px border_color_light_salmon border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/The Life of Littletato/Mansion of Littletato and Friends.png" style="max-width: 50%;" /><br /><br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/The Life of Littletato/Mansion of Littletato and Friends.png" style="max-width: 50%;" /><br /><br />
 Pequenata e Júlia olharam para a casa, era tão linda, tão grande, elas entraram na casa.<br />
 "Ei amor, a gente vai ficar com um milhão e quatrocentos mil dólares de dinheiro sobrando.<br />
 E eu calculei que a gente vai pagar sete mil e seiscentos e quarenta de impostos de propriedade anuais", explicou Pequenata.<br />
@@ -7077,15 +6676,8 @@ Muito obrigado por ler, hehe ^^.)
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('28', 'A Mansão de Pequenata e Amigos');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('30', 'A Mansão de Pequenata e Amigos');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('30', 'O Dia de Folga do Trabalho em 2021');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -7128,15 +6720,8 @@ Muito obrigado por ler, hehe ^^.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('29', 'O Dia de Folga do Trabalho em 2021');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('31', 'O Dia de Folga do Trabalho em 2021');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('31', 'A Realização e a Vídeo Chamada');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -7146,7 +6731,7 @@ Muito obrigado por ler, hehe ^^.)
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_30" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/30.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_30" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/21 - 30/30.png" />
 		</center>
 		<br />
 
@@ -7305,15 +6890,8 @@ E também, "Lisa, a humana" kkkkkkk.)
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('29', 'O Dia de Folga do Trabalho em 2021');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('31', 'O Dia de Folga do Trabalho em 2021');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('31', 'A Realização e a Vídeo Chamada');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -7356,15 +6934,8 @@ E também, "Lisa, a humana" kkkkkkk.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('30', 'A Realização e a Vídeo Chamada');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('32', 'A Realização e a Vídeo Chamada');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('32', 'O Jogo da Fábrica de Doces');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -7374,7 +6945,7 @@ E também, "Lisa, a humana" kkkkkkk.)
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_31" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/31 - 40/31.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_31" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/31 - 40/31.png" />
 		</center>
 		<br />
 
@@ -7533,15 +7104,8 @@ Ele jogou vários jogos, e também checou algumas notícias no YouTube e Twitter
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('30', 'A Realização e a Vídeo Chamada');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('32', 'A Realização e a Vídeo Chamada');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('32', 'O Jogo da Fábrica de Doces');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -7584,15 +7148,8 @@ Ele jogou vários jogos, e também checou algumas notícias no YouTube e Twitter
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('31', 'O Jogo da Fábrica de Doces');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('33', 'O Jogo da Fábrica de Doces');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('33', 'A Segunda-Feira Ocupada');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -7602,7 +7159,7 @@ Ele jogou vários jogos, e também checou algumas notícias no YouTube e Twitter
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_32" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/31 - 40/32.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_32" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/31 - 40/32.png" />
 		</center>
 		<br />
 
@@ -7753,15 +7310,8 @@ O casal estava feliz de comer muitos doces juntos, elas estavam comendo os doces
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('31', 'O Jogo da Fábrica de Doces');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('33', 'O Jogo da Fábrica de Doces');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('33', 'A Segunda-Feira Ocupada');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -7805,7 +7355,7 @@ O casal estava feliz de comer muitos doces juntos, elas estavam comendo os doces
 		<hr class="border_1px border_color_light_purple" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('32', 'A Segunda-Feira Ocupada');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('32', 'O Jogo da Fábrica de Doces');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
@@ -7815,7 +7365,7 @@ O casal estava feliz de comer muitos doces juntos, elas estavam comendo os doces
 
 		<br /><!-- Chapter cover image -->
 		<center>
-			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_8_cent" id="chapter_cover_33" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/31 - 40/33.png" />
+			<img class="box_shadow_darker_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_33" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/31 - 40/33.png" />
 		</center>
 		<br />
 
@@ -7928,7 +7478,7 @@ Ela estava jogando o jogo da Fábrica de Doces em seu celular novamente, mas des
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('32', 'A Segunda-Feira Ocupada');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('32', 'O Jogo da Fábrica de Doces');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_darker_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>

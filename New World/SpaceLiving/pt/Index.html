@@ -35,8 +35,8 @@
 	<meta name="twitter:image" type="image/gif" content="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 22/10/2023." />
-	<meta name="author" content="Stake2" />
+	<meta name="revised" content="Stake2's Enterprise TM, 26/10/2023." />
+	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
@@ -78,13 +78,13 @@
 	</style>
 
 	<!-- JavaScript files -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
 	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
 	<script type="text/javascript" src="/JavaScript/Story.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
 
 	<script>
@@ -92,7 +92,7 @@
 	</script>
 </head>
 
-<body class="background_dark_blue" onLoad="Remove_Zoom();">
+<body class="background_dark_blue" onLoad="Remove_Zoom();" test>
 <center>
 
 <!-- Open hamburger menu button -->
@@ -106,7 +106,7 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_blue border_4px border_color_cyan border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Hide hamburger menu button -->
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 15px !important;">
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 17px 3px 17px !important; margin-right: 6%;">
 		<h4 class="text_size" style="font-weight: bold;">
 		X
 		</h4>
@@ -116,6 +116,7 @@
 
 	<br />
 
+<div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
 	<!-- "Ler história" button -->
 	<span id="button_1" class="tab_button">
 		
@@ -168,6 +169,7 @@
 	</button>
 	</span>
 </div>
+</div>
 
 <!-- Website header -->
 <div id="header" class="w3-animate-zoom header_size background_blue text_dark_blue border_4px border_color_cyan box_shadow_cyan border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_cyan header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
@@ -177,7 +179,7 @@
 	</h2>
 
 	<!-- Website image -->
-	<img class="box_shadow_cyan image_size border_4px border_color_cyan border_radius_8_cent" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="height: auto;" /><br />
+	<img class="border_4px border_color_cyan border_radius_8_cent box_shadow_cyan border_4px border_color_cyan border_radius_8_cent" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="max-width: 50vw; height: auto;" /><br />
 
 	<!-- Website image button -->
 	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif')" style="z-index: 2;">
@@ -196,7 +198,7 @@
 		Lisa é uma das moradoras da Rede <span class="text_green_water">SpaceLiving</span>.<br />
 		Ela foi teleportada para uma das espaçonaves, chamadas de LonelyShips, para viver lá, ela tem uma geladeira que produz comida e um computador super-poderoso.<br />
 		---<br />
-		Autores da história: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span>, <span class="text_green_water">Júlia</span><br />
+		Autores da história: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span> e <span class="text_green_water">Júlia</span><br />
 		Capítulos: <i class="fas fa-book"></i> <span class="text_green_water">18</span><br />
 		Data de criação da história: <i class="fa-solid fa-calendar-days"></i> <span class="text_green_water">19/01/2019</span><br />
 		Status: <i class="fa-solid fa-pen"></i> <span class="text_green_water">Escrevendo</span>
@@ -228,7 +230,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_cyan margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_green_water">
 			<!-- Chapter button for "1 - As EspaçoNaves" chapter -->
 		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('1', 'As EspaçoNaves');" style="border-radius: 50px;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
@@ -353,7 +355,7 @@
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				18 - O Novo Ano na SpaceLiving
 			</h3>
-		</button>
+		</button></span>
 	</h2>
 </div></center>
 
@@ -390,8 +392,8 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_cyan margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		<span class="text_green_water">1 - </span><span class="text_hover_white">No Readers - Sem Leitores</span><br />
-
+		<span class="text_green_water"><span class="text_green_water">1 - </span><span class="text_hover_white">No Readers - Sem Leitores</span><br />
+</span>
 	</h2>
 </div></center>
 
@@ -428,7 +430,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_cyan margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_green_water">
 		<!-- "Ilha Deserta" story card -->
 		<a class="w3-btn background_yellow_sand border_4px border_color_dark_green_water box_shadow_dark_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Desert Island/pt/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_dark_green_water">
@@ -436,7 +438,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_green_water border_radius_5_cent border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -450,7 +452,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -458,8 +460,8 @@
 		<br />
 
 		<!-- "Ascensão à Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_second_purple">
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>Ascensão à Equestria</b>
 			</h2>
 
@@ -476,7 +478,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="height: auto;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="max-width: 50vw; height: auto;" /><br />
 
 			<br />
 		</a>
@@ -484,8 +486,8 @@
 		<br />
 
 		<!-- "A Vida de Izaque em Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_second_purple">
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>A Vida de Izaque em Equestria</b>
 			</h2>
 
@@ -502,7 +504,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_darker_purple border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.png" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_darker_purple border_radius_6_cent border_4px border_color_darker_purple border_radius_6_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -516,7 +518,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/Português/Cover.png" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -530,7 +532,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_brown border_radius_5_cent border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -544,7 +546,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_grey border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diary.png" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_grey border_radius_5_cent border_4px border_color_dark_grey border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -558,10 +560,10 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="image_size border_4px border_color_dark_orange border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diary Slim.png" style="height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_orange border_radius_5_cent border_4px border_color_dark_orange border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário Slim.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
 
 			<br />
-		</a>
+		</a></span>
 	</h2>
 </div></center>
 
@@ -587,7 +589,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_cyan margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_green_water">
 		<!-- "Stake2" link button -->
 		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stake2/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
@@ -617,14 +619,14 @@
 		</button>
 
 		<!-- "My Little Pony" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				My Little Pony
 			</h2>
 		</button>
 
 		<!-- "Friendship Is Magic" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				My Little Pony: A Amizade É Mágica
 			</h2>
@@ -633,7 +635,7 @@
 		<!-- "Watch History" link button -->
 		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Watch History/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
-				Watch History
+				Watch History <i class="fas fa-eye"></i>
 			</h2>
 		</button>
 
@@ -687,7 +689,7 @@
 		</button>
 
 		<!-- "Rise to Equestria" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Ascensão à Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-check"></i>
 			</h2>
@@ -701,7 +703,7 @@
 		</button>
 
 		<!-- "The Life of Izaque in Equestria" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				A Vida de Izaque em Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-pause"></i>
 			</h2>
@@ -776,7 +778,7 @@
 				Meu 2023 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
-
+</span>
 	</h2>
 </div></center>
 
@@ -793,7 +795,7 @@
 		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('2', 'As EspaçoNaves');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('2', 'A história de Fred');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1057,7 +1059,7 @@ Revisei o capítulo novamente às 22:29 do dia 06/06/2023.
 		
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('2', 'As EspaçoNaves');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('2', 'A história de Fred');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1113,15 +1115,8 @@ Revisei o capítulo novamente às 22:29 do dia 06/06/2023.
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('1', 'A história de Fred');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('3', 'A história de Fred');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('3', 'As histórias e o reencontro');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1137,13 +1132,7 @@ Revisei o capítulo novamente às 22:29 do dia 06/06/2023.
 
 		<!-- Chapter text -->
 		<h4 id="chapter_2_text" class="text_size unselectable text_green_water" style="text-align: left;">
-		(O Fred neste capítulo é a versão SpaceLiving do Fred da minha história chamada <br />
-<b>Notice</b>:  Undefined index: the_story_of_the_bulkan_siblings in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-.<br />
+		(O Fred neste capítulo é a versão SpaceLiving do Fred da minha história chamada <a class="text_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank">"A História dos Irmãos Bulkan"</a>.<br />
 Mas ele vive em um universo onde a "Rede de EspaçoNaves SpaceLiving" existe e é mais jovem.<br />
 <a href="https://thestake2.netlify.app/The%20Story%20of%20the%20Bulkan%20Siblings/pt/" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/The%20Story%20of%20the%20Bulkan%20Siblings/pt/</a>)<br />
 <br />
@@ -1277,13 +1266,7 @@ Fred queria que um novo dia chegasse, onde ele poderia escrever mais e mais, ouv
 Ele teve um sonho bom, um sonho muito bom sobre uma certa espaçonave e uma pessoa especial para ele.<br />
 <br />
 (Eu escrevi este capítulo em 17/11/2019 e re-revisei ele em 25/04/2021.<br />
-Eu gostei de botar o Fred da minha história <br />
-<b>Notice</b>:  Undefined index: the_story_of_the_bulkan_siblings in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
- no Universo SpaceLiving.<br />
+Eu gostei de botar o Fred da minha história <a class="text_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank">"A História dos Irmãos Bulkan"</a> no Universo SpaceLiving.<br />
 <br />
 Eu gostei de botar o Fred da minha história A História dos Irmãos Bulkan no Universo SpaceLiving.<br />
 <a href="https://thestake2.netlify.app/The%20Story%20of%20the%20Bulkan%20Siblings/pt/" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/The%20Story%20of%20the%20Bulkan%20Siblings/pt/</a><br />
@@ -1293,19 +1276,13 @@ Eles tem EspaçoNaves auto sustentáveis onde a energia, comida, água, e eletri
 Me diga o que você acha da história e esse pequeno pedaço aqui usando o botão "Comentário de Capítulo".<br />
 Obrigado por ler, se você é meu amigo no Discord, Wattpad, Messenger, Twitter, ou Hangouts, por favor me mande uma mensagem falando que sou fofo, oops, não.<br />
 Uma mensagem dizendo que você leu essa parte, obrigadoooo ^^ :3)
-		Palavras: 3,038<br /><br />
+<br /><br />
+		Palavras: 2,910<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('1', 'A história de Fred');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('3', 'A história de Fred');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('3', 'As histórias e o reencontro');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1372,15 +1349,8 @@ Uma mensagem dizendo que você leu essa parte, obrigadoooo ^^ :3)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('2', 'As histórias e o reencontro');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('4', 'As histórias e o reencontro');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('4', 'Ted e Monika');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1456,13 +1426,7 @@ Depois de um tempo jogando, Lisa se esticou um pouco.<br />
 "Ok, hehe, até logo Lisa ^^", respondeu Anny.<br />
 Lisa abriu o navegador Mozilla Firefox e abriu o site Wattpad, ela começou a procurar por algumas histórias para ler.<br />
 (Mozilla Firefox é um navegador da web.)<br />
-Ela recebeu uma notificação dizendo a ela que a história <br />
-<b>Notice</b>:  Undefined index: the_life_of_littletato in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
- recebeu um novo capítulo, capítulo número dezoito.<br />
+Ela recebeu uma notificação dizendo a ela que a história <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a> recebeu um novo capítulo, capítulo número dezoito.<br />
 A história foi escrita por um usuário chamado "Stake2", ele era um garoto, ele amava escrever história, ele tinha muito amor por suas histórias.<br />
 Lisa gostava daquela história, ela gostava de ver Pequenata e Júlia vivendo suas vidas, ela achava que elas eram tão fofas juntas e eram um casal fofo.<br />
 A garota amou ler o capítulo, foi muito divertido, ela deu um voto e comentou nele dizendo o que ela achou dele.<br />
@@ -1473,13 +1437,7 @@ Eu também gostei do fato de Pequenata escrever histórias também, isso é muit
 E estou feliz por Júlia porque ela conseguiu um emprego, agora ela vai poder comprar as coisas dela :3.<br />
 Eu gostei da conversa entre Yam e Júlia, e Júlia convidando ele para o churrasco.<br />
 'VegiantArt' kkkkkk xD.<br />
-Eu amei esse capítulo ^^", comentou Lisa no capítulo número dezoito de <br />
-<b>Notice</b>:  Undefined index: the_life_of_littletato in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-.<br />
+Eu amei esse capítulo ^^", comentou Lisa no capítulo número dezoito de <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>.<br />
 <br />
 Depois de alguns minutos, o autor respondeu o comentário dela.<br />
 "Olá Lisa ^^, obrigado por votar na minha história, e obrigado por gostar e comentar nela, eu tô muito feliz de receber seu feedback e seus comentários, hehe ^^.<br />
@@ -1524,13 +1482,7 @@ Depois de algum tempo se conhecendo mais, Izaque descobriu que Lisa morava dentr
 Izaque vivia no Planeta Terra normal, ele pensou que aquilo era um fato interessante sobre Lisa, o fato dela viver dentro de uma espaçonave.<br />
 <br />
 No começo da conversa, Izaque enviou a Lisa o link para seu perfil no Wattpad, Lisa e Izaque conversaram sobre histórias por um tempo.<br />
-Lisa olhou o perfil de Izaque no Wattpad, ela notou que ele era Stake2, o escritor que criou <br />
-<b>Notice</b>:  Undefined index: the_life_of_littletato in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-.<br />
+Lisa olhou o perfil de Izaque no Wattpad, ela notou que ele era Stake2, o escritor que criou <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>.<br />
 Depois disso, ela voltou ao Discord para digitar uma mensagem para Izaque.<br />
 "Izaque... Você é o Stake2?!" perguntou Lisa, surpresa.<br />
 "Sim... Desculpe não ter te falado", respondeu Izaque.<br />
@@ -1579,19 +1531,13 @@ A música se chama <a href="https://www.youtube.com/watch?v=J2P1_v9aFV8" target=
 Eu amo muito aquela música, é incrível! Tão calma e boa para ouvir enquanto escrevo SpaceLiving, hehe xD.<br />
 Eu amo cantar ela e sentir ela enquanto escrevo SpaceLiving ou qualquer coisa.<br />
 Essa música me faz sentir tão feliz, eu sugiro que você ouça ela, hehe :3.)
-		Palavras: 3,557<br /><br />
+<br /><br />
+		Palavras: 3,356<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('2', 'As histórias e o reencontro');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('4', 'As histórias e o reencontro');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('4', 'Ted e Monika');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1634,15 +1580,8 @@ Essa música me faz sentir tão feliz, eu sugiro que você ouça ela, hehe :3.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('3', 'Ted e Monika');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('5', 'Ted e Monika');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('5', 'Ted e Monika, Parte 2');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1803,19 +1742,13 @@ Eu gostei de escrever sobre Ted, escrever sobre seus pais, e sua fama por ser um
 E eu gostei de escrever que Ted tem uma irmã que é um certo alguém... Eu não sei, hehe.<br />
 Alguém que também é filho dos pais chamados John e Ana...<br />
 Obrigado por ler esse capítulo de SpaceLiving, hehe ^^.)
+<br /><br />
 		Palavras: 2,757<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('3', 'Ted e Monika');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('5', 'Ted e Monika');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('5', 'Ted e Monika, Parte 2');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1858,15 +1791,8 @@ Obrigado por ler esse capítulo de SpaceLiving, hehe ^^.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('4', 'Ted e Monika, Parte 2');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('6', 'Ted e Monika, Parte 2');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('6', 'A atualização das EspaçoNaves e a reunião dos irmãos');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2013,19 +1939,13 @@ Eu não lembro quando eu escrevi esse capítulo, mas eu sei que foi em 2019.<br 
 Eu terminei de re-revisar ele em 28/04/2021, foi tão bom, hehe.<br />
 E eu terminei de traduzir ele em 20/05/2021.<br />
 Obrigado por ler esse capítulo ^^.)
+<br /><br />
 		Palavras: 2,560<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('4', 'Ted e Monika, Parte 2');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('6', 'Ted e Monika, Parte 2');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('6', 'A atualização das EspaçoNaves e a reunião dos irmãos');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2068,15 +1988,8 @@ Obrigado por ler esse capítulo ^^.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('5', 'A atualização das EspaçoNaves e a reunião dos irmãos');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('7', 'A atualização das EspaçoNaves e a reunião dos irmãos');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('7', 'O teleporte de iniciação');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2290,19 +2203,13 @@ Eu ainda quero escrever uma história contigo, hehe", disse Izaque.<br />
 Ele adicionou o episódio de Eromanga-sensei para sua lista de assistidos usando seu script de Python chamado Watch.py (Assistir.py).<br />
 Então Izaque desligou seu computador, ele deitou-se em sua cama para dormir.<br />
 A LSAI desligou as luzes da LonelyShip, Izaque começou a dormir.
+<br /><br />
 		Palavras: 3,837<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('5', 'A atualização das EspaçoNaves e a reunião dos irmãos');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('7', 'A atualização das EspaçoNaves e a reunião dos irmãos');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('7', 'O teleporte de iniciação');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2345,15 +2252,8 @@ A LSAI desligou as luzes da LonelyShip, Izaque começou a dormir.
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('6', 'O teleporte de iniciação');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('8', 'O teleporte de iniciação');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('8', 'O Primeiro Aniversário SpaceLiving');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2518,19 +2418,13 @@ Ela andou para perto de Izaque e sentou-se à sua esquerda, Izaque notou que o c
 "Meu nome é Izaque", respondeu Izaque.<br />
 "Eu acho que a Lisa me disse que o nome da mãe dela era Ana e que ela tinha cabelos loiros", pensou Izaque consigo mesmo.<br />
 Então o sonho de Izaque mudou, ele continuou sonhando e dormindo confortavelmente em sua cama.
+<br /><br />
 		Palavras: 3,242<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('6', 'O teleporte de iniciação');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('8', 'O teleporte de iniciação');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('8', 'O Primeiro Aniversário SpaceLiving');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2573,15 +2467,8 @@ Então o sonho de Izaque mudou, ele continuou sonhando e dormindo confortavelmen
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('7', 'O Primeiro Aniversário SpaceLiving');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('9', 'O Primeiro Aniversário SpaceLiving');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('9', 'O sonho do Bulkan e My Little Pony');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2781,19 +2668,13 @@ Eles estavam falando e pensando coisas sobre mim pelas minhas costas.<br />
 Aquilo me machucou muito sabe... Me fez muito triste, saber que só existem pessoas falsas naquele servidor e na live stream do Cellbit.<br />
 Eu não odeio o Cellbit, mas eu odeio cada pessoa que está dentro daquele servidor, e eu odeio os momentos que passei lá...<br />
 Obrigado por ler ^^, desculpe pelo meu grande e longo desabafo...)
+<br /><br />
 		Palavras: 3,474<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('7', 'O Primeiro Aniversário SpaceLiving');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('9', 'O Primeiro Aniversário SpaceLiving');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('9', 'O sonho do Bulkan e My Little Pony');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2836,15 +2717,8 @@ Obrigado por ler ^^, desculpe pelo meu grande e longo desabafo...)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('8', 'O sonho do Bulkan e My Little Pony');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('10', 'O sonho do Bulkan e My Little Pony');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('10', 'SpaceNata?');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2884,13 +2758,7 @@ Ele disse boa tarde para seus queridos amigos no Discord, então ele desligou o 
 <br />
 O Izaque de SpaceLiving estava sonhando, ele era uma criança naquele sonho, uma criança chamada Izaque Bulkan.<br />
 Ele estava jantando com Ana Bulkan, sua irmã; Rosa Winston Bulkan, sua mãe; e Fred Bulkan, seu pai.<br />
-Esse Izaque é o Izaque Bulkan de minha história chamada <br />
-<b>Notice</b>:  Undefined index: the_story_of_the_bulkan_siblings in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-.<br />
+Esse Izaque é o Izaque Bulkan de minha história chamada <a class="text_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank">"A História dos Irmãos Bulkan"</a>.<br />
 <a href="https://thestake2.netlify.app/The%20Story%20of%20the%20Bulkan%20Siblings/pt/" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/The%20Story%20of%20the%20Bulkan%20Siblings/pt/</a><br />
 Eu vou chamá-lo de Izaque Bulkan, porque seu sobrenome é Bulkan, e ele é da história Bulkan (apelido da história).<br />
 Ele amava sua família, Izaque Bulkan amava ir em aventuras com Ana Bulkan e Fred Bulkan.<br />
@@ -3016,13 +2884,7 @@ E terminei de revisar ele 22:13 03/05/2021.<br />
 E terminei de traduzir ele em 07/06/2021, bem longe né? É porque eu tive que traduzir todos os oito capítulos anteriores, e também meu computador deu uns problemas recentemente.<br />
 O texto acima só existe na versão em Português.<br />
 Eu amei escrever sobre o Izaque SpaceLiving sonhando sobre Izaque Bulkan.<br />
-E eu amei escrever sobre Izaque Bulkan, o Izaque de minha história chamada <br />
-<b>Notice</b>:  Undefined index: the_story_of_the_bulkan_siblings in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-.<br />
+E eu amei escrever sobre Izaque Bulkan, o Izaque de minha história chamada <a class="text_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank">"A História dos Irmãos Bulkan"</a>.<br />
 Eu tenho certeza que ele vai visitar mais universos das minhas histórias em breve xD.<br />
 Eu gostei de escrever sobre o Izaque Bulkan visitando o universo de "My Little Pony: A Amizade É Mágica" e conversando com Pinkie Pie e Twilight Sparkle.<br />
 Eu também gostei de falar sobre o Izaque New World, e o Izaque Normal da Terra (eu).<br />
@@ -3031,19 +2893,13 @@ Ouvindo músicas e tal, checando suas redes sociais, respondendo comentários no
 E eu revisei esse capítulo ouvindo a trilha sonora do filme "Tom e Jerry" de 2021:<br />
 <a href="https://www.youtube.com/playlist?list=PLDisKgcnAC4TkSDGxuPm1DeohG8FMEMNa" target="_blank" class="text_green_water text_hover_green_water">https://www.youtube.com/playlist?list=PLDisKgcnAC4TkSDGxuPm1DeohG8FMEMNa</a>)<br />
 <div class="video-container" style="margin-top: 1%; margin-bottom: -6%;"><iframe type="text/html" width="560" height="315" frameborder="0" class="border_radius_5_cent border_4px border_color_cyan" src="https://www.youtube.com/embed/videoseries?autoplay=0&fs=1&iv_load_policy=1&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&list=PLDisKgcnAC4TkSDGxuPm1DeohG8FMEMNa" title="YouTube video player"></iframe></div><br /><br /><br />)
-		Palavras: 3,844<br /><br />
+<br /><br />
+		Palavras: 3,716<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('8', 'O sonho do Bulkan e My Little Pony');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('10', 'O sonho do Bulkan e My Little Pony');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('10', 'SpaceNata?');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3086,15 +2942,8 @@ E eu revisei esse capítulo ouvindo a trilha sonora do filme "Tom e Jerry" de 20
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('9', 'SpaceNata?');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('11', 'SpaceNata?');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('11', 'A chegada do novo LonelyShipper');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3110,34 +2959,10 @@ E eu revisei esse capítulo ouvindo a trilha sonora do filme "Tom e Jerry" de 20
 
 		<!-- Chapter text -->
 		<h4 id="chapter_10_text" class="text_size unselectable text_green_water" style="text-align: left;">
-		Esse é um capítulo crossover entre <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a> e <br />
-<b>Notice</b>:  Undefined index: the_life_of_littletato in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-.<br />
-<a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a> e <br />
-<b>Notice</b>:  Undefined index: the_life_of_littletato in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
- são duas histórias minhas.<br />
-Você precisa ler o capítulo <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/?chapter=26#" target="_blank">vinte e seis</a> de <br />
-<b>Notice</b>:  Undefined index: the_life_of_littletato in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
- para entender a história.<br />
-Esse capítulo é a continuação para aquele capítulo, o capítulo vinte e seis de <br />
-<b>Notice</b>:  Undefined index: the_life_of_littletato in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-.<br />
+		Esse é um capítulo crossover entre <a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a> e <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>.<br />
+<a class="text_dark_blue" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a> e <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a> são duas histórias minhas.<br />
+Você precisa ler o capítulo <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/?chapter=26#" target="_blank">vinte e seis</a> de <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a> para entender a história.<br />
+Esse capítulo é a continuação para aquele capítulo, o capítulo vinte e seis de <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>.<br />
 <div style="padding-top: 1%;">
 <a class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white animation_shake_side" href="https://thestake2.netlify.app/The Life of Littletato/pt/?chapter=26#" target="_blank" style="max-width: 50%; font-weight: bold;">
 	A Vida de Pequenata - Capítulo: 26 - Um Teletransporte Estranho (PequeLiving)
@@ -3281,21 +3106,9 @@ Ela gostava de ter aquela família, ela estava sorrindo, vendo todo mundo.<br />
 <a href="https://www.youtube.com/watch?v=SCxnA10GOMA" target="_blank">"Tom & Jerry - The Wedding's Off"</a><br />
 <a href="https://www.youtube.com/watch?v=SCxnA10GOMA" target="_blank" class="text_green_water text_hover_green_water">https://www.youtube.com/watch?v=SCxnA10GOMA</a><br />
 Tem sido uma boa jornada revisar todos os capítulos de "SpaceLiving", de um para dez.<br />
-E revisar todos os capítulos de <br />
-<b>Notice</b>:  Undefined index: the_life_of_littletato in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-, do um até vinte e seis.<br />
+E revisar todos os capítulos de <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>, do um até vinte e seis.<br />
 Parece que essa jornada tá acabando, com aquela música, mas não tá.<br />
-Ainda há cinco capítulos de SpaceLiving pra mim revisar, e três capítulos de <br />
-<b>Notice</b>:  Undefined index: the_life_of_littletato in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-<br />
-<b>Notice</b>:  Trying to access array offset on value of type null in <b>C:\Mega\PHP\Classes\Text.php(53) : eval()'d code</b> on line <b>1</b><br />
-.<br />
+Ainda há cinco capítulos de SpaceLiving pra mim revisar, e três capítulos de <a class="text_darker_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>.<br />
 E eu também posso escrever mais capítulos para elas, e outras histórias minhas, para você ler.<br />
 Obrigado por ler até aqui, e ler minhas histórias.<br />
 Hoje é 04/05/2021, uma Terça-feira, do ano de 2021 (revisão).<br />
@@ -3304,19 +3117,13 @@ Eu amo escrever histórias, criar arte, criar coisas, dar vida para as coisas qu
 Eu amo revisar minhas histórias e escrever elas, eu fico feliz que eu tenho esse talento ou habilidade.<br />
 Eu sou Izaque, Stake2, e Funkysnipa Cat, obrigado pela sua atenção.<br />
 Te vejo depois, felicidades :3.)
-		Palavras: 3,334<br /><br />
+<br /><br />
+		Palavras: 2,932<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('9', 'SpaceNata?');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('11', 'SpaceNata?');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('11', 'A chegada do novo LonelyShipper');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3359,15 +3166,8 @@ Te vejo depois, felicidades :3.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('10', 'A chegada do novo LonelyShipper');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('12', 'A chegada do novo LonelyShipper');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('12', 'Os sonhos estranhos de Izaque');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3490,19 +3290,13 @@ E a Júlia tá trabalhando também, guardando um pouco de dinheiro na conta do b
 "Oh, ok, hehe, até mais, mana ^^", disse Lisa.<br />
 <br />
 (Eu não sei quando esse capítulo foi escrito, mas eu sei que eu revisei ele em 16/06/2021, e traduzi em 03/07/2021.)
+<br /><br />
 		Palavras: 2,020<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('10', 'A chegada do novo LonelyShipper');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('12', 'A chegada do novo LonelyShipper');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('12', 'Os sonhos estranhos de Izaque');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3545,15 +3339,8 @@ E a Júlia tá trabalhando também, guardando um pouco de dinheiro na conta do b
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('11', 'Os sonhos estranhos de Izaque');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('13', 'Os sonhos estranhos de Izaque');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('13', 'A rotina de Lisa e a Mansão de Pequenata');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3680,19 +3467,13 @@ Na Terra, Pequenata pensa sobre comprar uma casa para viver com seus amigos, ela
 Ela conversa com Júlia sobre isso, discutindo algumas coisas sobre a casa, o que ela deveria ter, e quantos quartos ela deveria ter.<br />
 Júlia diz que ela quer uma casa com no mínimo sete quartos, para que elas possam trazer mais amigos e talvez suas famílias para passar algum tempo lá.<br />
 Pequenata diz que isso é uma boa ideia, ela diz que ela vai começar a procurar por uma casa na Internet amanhã de manhã.
+<br /><br />
 		Palavras: 2,174<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('11', 'Os sonhos estranhos de Izaque');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('13', 'Os sonhos estranhos de Izaque');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('13', 'A rotina de Lisa e a Mansão de Pequenata');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3735,15 +3516,8 @@ Pequenata diz que isso é uma boa ideia, ela diz que ela vai começar a procurar
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('12', 'A rotina de Lisa e a Mansão de Pequenata');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('14', 'A rotina de Lisa e a Mansão de Pequenata');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('14', 'Capítulo Especial de Natal 🎄 🎁');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -3975,19 +3749,13 @@ Eu escrevi isso enquanto ouvia chuva calma no YouTube, está um pouco frio aqui 
 Mas nesse capítulo, estava quente com o sol, como se estivesse no verão. < Escrevendo.<br />
 Nesse capítulo, estava meio frio, eu tinha dormido mal e não tava com muita vontade de fazer as coisas. < Traduzindo.<br />
 E traduzi esse capítulo enquanto ouvia chuva calma + um mix de música do gênero Future Bass no YouTube.)
+<br /><br />
 		Palavras: 4,205<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('12', 'A rotina de Lisa e a Mansão de Pequenata');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('14', 'A rotina de Lisa e a Mansão de Pequenata');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('14', 'Capítulo Especial de Natal 🎄 🎁');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4030,15 +3798,8 @@ E traduzi esse capítulo enquanto ouvia chuva calma + um mix de música do gêne
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('13', 'Capítulo Especial de Natal 🎄 🎁');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('15', 'Capítulo Especial de Natal 🎄 🎁');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('15', 'O Segundo Aniversário SpaceLiving');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4150,19 +3911,13 @@ Izaque também olhou para a multi-ferramenta de Henigax que ele estava vendendo,
 Mas Izaque estava com pouco dinheiro (unidades), ele disse tchau para Henigax, então explicou tudo para Lisa.<br />
 Lisa e ele voltaram para a espaçonave, eles entraram dentro dela e Izaque dirigiu até o depósito de ouro.<br />
 Então o sonho de Izaque mudou para outra coisa, ele continuou dormindo profundamente e em paz.
+<br /><br />
 		Palavras: 2,210<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('13', 'Capítulo Especial de Natal 🎄 🎁');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('15', 'Capítulo Especial de Natal 🎄 🎁');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('15', 'O Segundo Aniversário SpaceLiving');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4205,15 +3960,8 @@ Então o sonho de Izaque mudou para outra coisa, ele continuou dormindo profunda
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('14', 'O Segundo Aniversário SpaceLiving');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('16', 'O Segundo Aniversário SpaceLiving');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('16', 'O vídeo de Onomatopeia Visual e as memórias');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4389,19 +4137,13 @@ Foi bom escrever as "mudanças de visão" na parte do aniversário.<br />
 Tipo, Izaque olhando para Lisa, e então a história falando sobre Lisa.<br />
 Como se Izaque fosse o narrador-personagem da história.<br />
 Obrigado por ler esse capítulo, hehe, até mais :3.)
+<br /><br />
 		Palavras: 2,964<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('14', 'O Segundo Aniversário SpaceLiving');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('16', 'O Segundo Aniversário SpaceLiving');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('16', 'O vídeo de Onomatopeia Visual e as memórias');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4444,15 +4186,8 @@ Obrigado por ler esse capítulo, hehe, até mais :3.)
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('15', 'O vídeo de Onomatopeia Visual e as memórias');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('17', 'O vídeo de Onomatopeia Visual e as memórias');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('17', 'A visita e a manhã de jogo');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4621,19 +4356,13 @@ Ele andou até o banheiro e colocou suas mãos em um quadrado de laser, suas mã
 Esse laser não removia sua pele ou machucava ele, era somente para limpeza, ele removia bactérias e sujeira, ele usou aquilo depois de acariciar seus cães.<br />
 Depois disso, ele andou até seu computador, sentando-se na cadeira, o filme que ele colocou para baixar havia terminado de baixar.<br />
 Ele passou seu dia no computador, parando algumas vezes para comer, beber água, e se exercitar.
+<br /><br />
 		Palavras: 3,781<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('15', 'O vídeo de Onomatopeia Visual e as memórias');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('17', 'O vídeo de Onomatopeia Visual e as memórias');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('17', 'A visita e a manhã de jogo');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4676,15 +4405,8 @@ Ele passou seu dia no computador, parando algumas vezes para comer, beber água,
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('16', 'A visita e a manhã de jogo');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('18', 'A visita e a manhã de jogo');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('18', 'O Novo Ano na SpaceLiving');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4801,19 +4523,13 @@ Lisa estava feliz de programar e desenhar um pouco, ela estava feliz de ter aque
 Pequenata e Yam estavam trabalhando, Vitória estava trabalhando também, no quarto.<br />
 Izaque estava feliz de sair de sua espaçonave um pouco, ele gostava de passar algum tempo na Terra, ver sua irmã Aline, e visitar seu amigo Jeandre.<br />
 O dia irá continuar, Izaque e Lisa irão continuar fazendo coisas, como eles sempre fazem.
+<br /><br />
 		Palavras: 2,336<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('16', 'A visita e a manhã de jogo');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('18', 'A visita e a manhã de jogo');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('18', 'O Novo Ano na SpaceLiving');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -4857,7 +4573,7 @@ O dia irá continuar, Izaque e Lisa irão continuar fazendo coisas, como eles se
 		<hr class="border_1px border_color_cyan" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('17', 'O Novo Ano na SpaceLiving');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('17', 'A visita e a manhã de jogo');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
@@ -4973,12 +4689,13 @@ Depois de comer um pouco, jogar, conversar, ouvir música, e assistir algumas co
 A casa de Yam tinha sete quartos, Pequenata e Júlia dormiram juntas, Ted e Monika também, Vitória, Yam, Carol, e Lisa dormiram sozinhos em seus quartos.<br />
 O grupo de amigos dormiu em uma noite fria com cobertores, na noite de uma Sexta-feira em Janeiro de 2022.<br />
 Eles queriam acordar amanhã, Sábado, e festejar mais, passar mais tempo juntos, talvez fazer um churrasco, viajar, ir em uma pista de corrida com seus carros.
+<br /><br />
 		Palavras: 2,499<br /><br />
 		</h4>
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('17', 'O Novo Ano na SpaceLiving');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="Open_Chapter('17', 'A visita e a manhã de jogo');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
