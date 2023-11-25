@@ -10,13 +10,22 @@
 <link rel="stylesheet" type="text/css" href="cdn\css\imghover.css">
 <meta name="revised" content="Stake's Enterprisetm, 10/01/2019" />
 <meta name="author" content="Stake Ferreira" />
+<meta name="meta_language" content="Português" />
 <meta name="description" content="Arquivo do meu site, Pequenata(stake2)">
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
 </head>
-<body>
+<body style="background: black;">
+<link rel="stylesheet" type="text/css" href="/CSS/W3.css" />
+<link rel="stylesheet" type="text/css" href="/CSS/Colors.css" />
+<link rel="stylesheet" type="text/css" href="/CSS/Main.css" />
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
 <script src="cdn\js\myFunction.js"></script>
 <script src="cdn\js\tabs.js"></script>
-<button class="w3-btn w3-yellow" style="float:left;" onclick="openCity('sites')">Sites</button>
+<script src="..\..\JavaScript\language.js"></script>
+<script src="..\..\JavaScript\tabs.js"></script>
+<button class="w3-btn w3-yellow" style="float:left;" onclick="Open_Tab('sites')">Sites</button>
 <center>
 <br /><br /><br /><br /><br /><br />
 <img src="cdn\img\pequenata.jpg" width="12%" />
@@ -29,35 +38,35 @@
 <h4 class="w3-text-white">
 História feita por Izaque Sanvezzo(stake2)<br />
 Esta história tem 21 Capítulos.<br /></h4><br />
-<button class="w3-btn w3-white" onclick="openCity('caps')">Ler aqui<span class="w3-text-red"> Novo Capítulo 21!</span></button><br />
-<button class="w3-btn w3-white" onclick="openCity('rd')">Leitores :3</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('caps')">Ler aqui<span class="w3-text-red"> Novo Capítulo 21!</span></button><br />
+<button class="w3-btn w3-white" onclick="Open_Tab('rd')">Leitores :3</button>
 <br /><br />
-<button class="w3-btn w3-white" onclick="openCity('fanpt')">Ler no Fanfiction.net (PT-BR)</button>
-<button class="w3-btn w3-white" onclick="openCity('fanen')">Ler no Fanfiction.net (EN-US)</button>
-<button class="w3-btn w3-white" onclick="openCity('wtp')">Ler no WattPad.com (EN-US)</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('fanpt')">Ler no Fanfiction.net (PT-BR)</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('fanen')">Ler no Fanfiction.net (EN-US)</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('wtp')">Ler no WattPad.com (EN-US)</button>
 <div id="caps" class="city" style="display:none;">
 <br /><br />
-<button class="w3-btn w3-white" onclick="openCity('cap1')">Capítulo 1</button>
-<button class="w3-btn w3-white" onclick="openCity('cap2')">Capítulo 2</button>
-<button class="w3-btn w3-white" onclick="openCity('cap3')">Capítulo 3</button>
-<button class="w3-btn w3-white" onclick="openCity('cap4')">Capítulo 4</button>
-<button class="w3-btn w3-white" onclick="openCity('cap5')">Capítulo 5</button>
-<button class="w3-btn w3-white" onclick="openCity('cap6')">Capítulo 6</button>
-<button class="w3-btn w3-white" onclick="openCity('cap7')">Capítulo 7</button>
-<button class="w3-btn w3-white" onclick="openCity('cap8')">Capítulo 8</button>
-<button class="w3-btn w3-white" onclick="openCity('cap9')">Capítulo 9</button>
-<button class="w3-btn w3-white" onclick="openCity('cap10')">Capítulo 10</button>
-<button class="w3-btn w3-white" onclick="openCity('cap11')">Capítulo 11</button>
-<button class="w3-btn w3-white" onclick="openCity('cap12')">Capítulo 12</button>
-<button class="w3-btn w3-white" onclick="openCity('cap13')">Capítulo 13</button>
-<button class="w3-btn w3-white" onclick="openCity('cap14')">Capítulo 14</button>
-<button class="w3-btn w3-white" onclick="openCity('cap15')">Capítulo 15</button>
-<button class="w3-btn w3-white" onclick="openCity('cap16')">Capítulo 16</button>
-<button class="w3-btn w3-white" onclick="openCity('cap17')">Capítulo 17</button>
-<button class="w3-btn w3-white" onclick="openCity('cap18')">Capítulo 18</button>
-<button class="w3-btn w3-white" onclick="openCity('cap19')">Capítulo 19</button>
-<button class="w3-btn w3-white" onclick="openCity('cap20')">Capítulo 20</button>
-<button class="w3-btn w3-white" onclick="openCity('cap21')">Capítulo 21 <span class="w3-text-red"> Novo!</span></button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap1')">Capítulo 1</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap2')">Capítulo 2</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap3')">Capítulo 3</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap4')">Capítulo 4</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap5')">Capítulo 5</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap6')">Capítulo 6</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap7')">Capítulo 7</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap8')">Capítulo 8</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap9')">Capítulo 9</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap10')">Capítulo 10</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap11')">Capítulo 11</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap12')">Capítulo 12</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap13')">Capítulo 13</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap14')">Capítulo 14</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap15')">Capítulo 15</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap16')">Capítulo 16</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap17')">Capítulo 17</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap18')">Capítulo 18</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap19')">Capítulo 19</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap20')">Capítulo 20</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap21')">Capítulo 21 <span class="w3-text-red"> Novo!</span></button>
 </div>
 <div id="rd" class="city" style="display:none;">
 <br />
@@ -190,7 +199,7 @@ Yam disse que em Las vegas eles vendiam carne e vegetais mesmo que havia vacas l
 então Pequenata terminou a conversa e voltou a andar até em casa..."<br /><br />
 <br />
 Feito em: 05/08/2017.
-<button class="w3-btn w3-white" onclick="openCity('cap2')">Capítulo 2</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap2')">Capítulo 2</button>
 <hr>
 </h5>
 </div>
@@ -223,7 +232,7 @@ e então Pequenata voltou pra cama pra dormir um pouco mais, ela olhou no relogi
 e então Pequenata abraçou Julia por trás e eles dormiram juntos..."<br /><br />
 <br />
 Feito em: 06/08/2017.
-<button class="w3-btn w3-white" onclick="openCity('cap3')">Capítulo 3</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap3')">Capítulo 3</button>
 <hr>
 </h5>
 </div>
@@ -252,7 +261,7 @@ e então finalmente chegou em casa, e Patricia estava la, Pequenata falou ola pa
 Julia apresentou Pequenata para Patricia, Patricia para Littletato..."<br /><br />
 <br />
 Feito em: 28/08/2017.
-<button class="w3-btn w3-white" onclick="openCity('cap4')">Capítulo 4</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap4')">Capítulo 4</button>
 <hr>
 </h5>
 </div>
@@ -276,7 +285,7 @@ ela disse tchau para Julia e Julia falou tchau de volta...<br />
 ((( Nota do autor: eu escrevi isso enquanto ouvia esse mix: <a href="https://www.youtube.com/watch?v=hKYyN1aDfCQ">https://www.youtube.com/watch?v=hKYyN1aDfCQ</a> )))"<br /><br />
 <br />
 Feito em: 15/09/2017.
-<button class="w3-btn w3-white" onclick="openCity('cap5')">Capítulo 5</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap5')">Capítulo 5</button>
 <hr>
 </h5>
 </div>
@@ -297,7 +306,7 @@ Julia disse que gostava tambem, então eles limparam a mesa, e Pequenata ajudou 
 Pequenata antes de dormir pensou que ela estava feliz, muito feliz..."<br /><br />
 <br />
 Feito em: 02/11/2017.
-<button class="w3-btn w3-white" onclick="openCity('cap6')">Capítulo 6</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap6')">Capítulo 6</button>
 <hr>
 </h5>
 </div>
@@ -318,7 +327,7 @@ era seis da noite, Pequenata fez a janta e chamou Julia, elas comeram e Pequenat
 elas tinham Vegeflix na tv, elas assistiram enquanto bebiam o resto da coca-cola, e então dormiram..."<br /><br />
 <br />
 Feito em: 21/11/2017.
-<button class="w3-btn w3-white" onclick="openCity('cap7')">Capítulo 7</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap7')">Capítulo 7</button>
 <hr>
 </h5>
 </div>
@@ -341,7 +350,7 @@ Julia veio a cozinha e fez o jantar com a ajuda de Pequenata, elas comeram o jan
 e então dormiram, antes de dormir Pequenata falou para Julia que ela se divertiu hoje, e que ela queria mais dias assim..."<br /><br />
 <br />
 Feito em: 02/01/2018.
-<button class="w3-btn w3-white" onclick="openCity('cap8')">Capítulo 8</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap8')">Capítulo 8</button>
 <hr>
 </h5>
 </div>
@@ -362,7 +371,7 @@ elas comeram enquanto conversavam sobre muitas coisas, elas terminaram de comer 
 elas prepararam o jantar, elas comeram e dormiram cedo, elas dormiram juntas, esperando por mais momentos como esse..."<br /><br />
 <br />
 Feito em: 04/02/2018.
-<button class="w3-btn w3-white" onclick="openCity('cap9')">Capítulo 9</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap9')">Capítulo 9</button>
 <hr>
 </h5>
 </div>
@@ -386,7 +395,7 @@ elas jogaram algums jogos no vegebox, algum tempo passou e elas olharam para o r
 e então comeram, e então elas assistiram alguns filmes no vegeflix, e então elas foram para o quarto delas e dormiram abraçadas juntas, esperando por mais nasceres do sol..."<br /><br />
 <br />
 Feito em: 27/05/2018.
-<button class="w3-btn w3-white" onclick="openCity('cap10')">Capítulo 10</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap10')">Capítulo 10</button>
 <hr>
 </h5>
 </div>
@@ -416,7 +425,7 @@ trabalhando em um emprego bom, vivendo em São Francisco, a cidade fria que pare
 ela gostava daquela cidade, e Júlia também, ela queria viver lá pra sempre..."<br /><br />
 <br />
 Feito em: 08/07/2018.
-<button class="w3-btn w3-white" onclick="openCity('cap11')">Capítulo 11</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap11')">Capítulo 11</button>
 <hr>
 </h5>
 </div>
@@ -440,7 +449,7 @@ então Pequenata se preparou para o trabalho dela, ela então foi para a porta e
 ela então começou a andar para o trabalho dela..."<br /><br />
 <br />
 Feito em: 22/07/2018.
-<button class="w3-btn w3-white" onclick="openCity('cap12')">Capítulo 12</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap12')">Capítulo 12</button>
 <hr>
 </h5>
 </div>
@@ -469,7 +478,7 @@ Júlia deu um beijo na bochecha de Pequenata também, e abraçou ela, Pequenata 
 vivendo aquela vida, sendo feliz com Júlia, ela queria mais daqueles momentos, aqueles momentos felizes..."<br /><br />
 <br />
 Feito em: 23/08/2018.
-<button class="w3-btn w3-white" onclick="openCity('cap13')">Capítulo 13</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap13')">Capítulo 13</button>
 <hr>
 </h5>
 </div>
@@ -503,7 +512,7 @@ Carol respondeu que ela estava jogando um Countable Vegetrike 1.6 no computador 
 Pequenata disse que isso era incrível, e disse que ela esqueceu que Carol fazia transmissões, Pequenata disse tchau para Carol, Carol disse tchau de volta..."<br /><br />
 <br />
 Feito em: 24/09/2018.
-<button class="w3-btn w3-white" onclick="openCity('cap14')">Capítulo 14</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap14')">Capítulo 14</button>
 <hr>
 </h5>
 </div>
@@ -533,7 +542,7 @@ então elas voltaram pra casa, elas estavam cansadas, elas tomaram um banho, Peq
 Júlia desejou um feliz ano novo para Patricia também, elas comeram um pouco e então dormiram, esperando por um novo dia, e desejando coisas e experiencias boas em 2019..."<br /><br />
 <br />
 Feito em: 01/01/2019.
-<button class="w3-btn w3-white" onclick="openCity('cap15')">Capítulo 15</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap15')">Capítulo 15</button>
 <hr>
 </h5>
 </div>
@@ -566,7 +575,7 @@ e a lua estava brilhando muito forte, elas pegaram um cobertor quente e foram pr
 Pequenata queria mais daqueles momentos, quentinha em um cobertor com Júlia, assistindo um filme, Pequenata realmente amava frio...<br /><br />
 <br />
 Feito em: 13/01/2019.
-<button class="w3-btn w3-white" onclick="openCity('cap16')">Capítulo 16</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap16')">Capítulo 16</button>
 <hr>
 </h5>
 </div>
@@ -601,7 +610,7 @@ Nota do autor: "Eu estava um pouco cansado hoje, então talvez isso vai refletir
 <br />
 Feito em: 29/01/2019.
 <br /><br />
-<button class="w3-btn w3-white" onclick="openCity('cap17')">Capitulo 17</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap17')">Capitulo 17</button>
 <hr>
 </h5>
 </div>
@@ -636,7 +645,7 @@ ela então leu a história inteira, ela amou, então Pequenata fechou seu notebo
 <br />
 Feito em: 02/02/2019.
 <br /><br />
-<button class="w3-btn w3-white" onclick="openCity('cap18')">Capitulo 18</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap18')">Capitulo 18</button>
 <hr>
 </h5>
 </div>
@@ -664,7 +673,7 @@ isso foi legal, eu escrevi enquanto ouvia musicas de Dubstep no Vegecloud, foi b
 <br />
 Feito em: 07/02/2019.
 <br /><br />
-<button class="w3-btn w3-white" onclick="openCity('cap19')">Capitulo 19</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap19')">Capitulo 19</button>
 <hr>
 </h5>
 </div>
@@ -693,7 +702,7 @@ ela pegou o notebook dela e o colocou na mesa, e o ligou, ela abriu Vegeteam e V
 <br />
 Feito em: 26/02/2019.
 <br /><br />
-<button class="w3-btn w3-white" onclick="openCity('cap20')">Capitulo 20</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap20')">Capitulo 20</button>
 <hr>
 </h5>
 </div>
@@ -724,7 +733,7 @@ para ver como era, ela planejou com Júlia de ir lá no próximo sábado...<br /
 <br />
 Feito em: 31/03/2019.
 <br /><br />
-<button class="w3-btn w3-white" onclick="openCity('cap21')">Capitulo 21</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap21')">Capitulo 21</button>
 <hr>
 </h5>
 </div>
@@ -772,7 +781,7 @@ ela parou de pensar um pouco, e apenas aproveitou o momento, elas se acalmaram u
 <br />
 Feito em: 14/04/2019.
 <br /><br />
-<button class="w3-btn w3-white" onclick="openCity('cap22')">Capitulo 22</button>
+<button class="w3-btn w3-white" onclick="Open_Tab('cap22')">Capitulo 22</button>
 <hr>
 </h5>
 </div>
