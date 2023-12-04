@@ -25,7 +25,7 @@
 	<meta property="og:locale:alternative" content="pt_PT" />
 
 	<!-- Twitter meta tags -->
-	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="A História dos Irmãos Bulkan" />
 	<meta name="twitter:description" content="Site sobre a minha história, A História dos Irmãos Bulkan, feito por Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 	<meta name="twitter:website" value="@Stake2_" />
@@ -35,17 +35,17 @@
 	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 05/06/2023." />
-	<meta name="author" content="Stake2" />
+	<meta name="revised" content="Stake2's Enterprise TM, 04/12/2023." />
+	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 	<meta charset="UTF-8" />
 
 	<!-- CSS files -->
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/W3.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Colors.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Main.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/W3.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/Colors.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/Main.css" />
 
 	<!-- Define website box shadow -->
 	<style>
@@ -78,6 +78,7 @@
 	</style>
 
 	<!-- JavaScript files -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
@@ -105,7 +106,7 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_brown border_4px border_color_light_brown border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Hide hamburger menu button -->
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 15px !important;">
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
 		<h4 class="text_size" style="font-weight: bold;">
 		X
 		</h4>
@@ -115,6 +116,7 @@
 
 	<br />
 
+<div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
 	<!-- "Ler história" button -->
 	<span id="button_1" class="tab_button">
 		
@@ -167,6 +169,7 @@
 	</button>
 	</span>
 </div>
+</div>
 
 <!-- Website header -->
 <div id="header" class="w3-animate-zoom header_size background_brown text_dark_brown border_4px border_color_light_brown box_shadow_light_brown border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_light_brown header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
@@ -176,12 +179,12 @@
 	</h2>
 
 	<!-- Website image -->
-	<img class="box_shadow_light_brown image_size border_4px border_color_light_brown border_radius_8_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" style="height: auto;" /><br />
+	<img class="border_4px border_color_light_brown border_radius_8_cent box_shadow_light_brown border_4px border_color_light_brown border_radius_8_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" style="max-width: 50vw; height: auto;" /><br />
 
 	<!-- Website image button -->
 	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png')" style="z-index: 2;">
 		<h4 class="text_size text_dark_brown">
-			Abrir imagem em uma nova aba: <i class="fas fa-images"></i>
+			Abrir imagem em uma nova guia: <i class="fas fa-images"></i>
 		</h4>
 	</button>
 	<br />
@@ -196,8 +199,7 @@
 		Autores da história: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span> e <span class="text_yellow">Ana</span><br />
 		Capítulos: <i class="fas fa-book"></i> <span class="text_dark_brown">8</span><br />
 		Data de criação da história: <i class="fa-solid fa-calendar-days"></i> <span class="text_dark_brown">11/01/2019</span><br />
-		Status: <i class="fa-solid fa-cloud-arrow-up"></i> <span class="text_dark_brown">Publicada</span><br />
-		Wattpad: <a class="text_dark_brown" href="https://wattpad.com/myworks/295252284" target="_new">https://wattpad.com/myworks/295252284</a>
+		Status: <i class="fa-solid fa-cloud-arrow-up"></i> <span class="text_dark_brown">Publicada</span>
 	</h3>
 	<br />
 </div>
@@ -226,7 +228,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_brown margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_dark_brown">
 			<!-- Chapter button for "1 - O começo, a masmorra" chapter -->
 		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('1', 'O começo, a masmorra');" style="border-radius: 50px;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
@@ -281,7 +283,7 @@
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				8 - O recomeço e a viagem
 			</h3>
-		</button>
+		</button></span>
 	</h2>
 </div></center>
 
@@ -318,8 +320,8 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_brown margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		<span class="text_dark_brown">1 - </span><span class="text_hover_white">No Readers - Sem Leitores</span><br />
-
+		<span class="text_dark_brown"><span class="text_dark_brown">1 - </span><span class="text_hover_white">No Readers - Sem Leitores</span><br />
+</span>
 	</h2>
 </div></center>
 
@@ -356,7 +358,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_brown margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_dark_brown">
 		<!-- "Ilha Deserta" story card -->
 		<a class="w3-btn background_yellow_sand border_4px border_color_dark_green_water box_shadow_dark_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Desert Island/pt/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_dark_green_water">
@@ -364,7 +366,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_green_water border_radius_5_cent border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -378,7 +380,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -386,8 +388,8 @@
 		<br />
 
 		<!-- "Ascensão à Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_second_purple">
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>Ascensão à Equestria</b>
 			</h2>
 
@@ -404,7 +406,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -412,8 +414,8 @@
 		<br />
 
 		<!-- "A Vida de Izaque em Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_second_purple">
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>A Vida de Izaque em Equestria</b>
 			</h2>
 
@@ -424,13 +426,13 @@
 		<br />
 
 		<!-- "A Vida de Pequenata" story card -->
-		<a class="w3-btn background_light_salmon border_4px border_color_darker_purple box_shadow_light_salmon animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_darker_purple">
+		<a class="w3-btn background_light_salmon border_4px border_color_dark_purple box_shadow_light_salmon animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>A Vida de Pequenata</b>
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_darker_purple border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.jpg" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_purple border_radius_6_cent border_4px border_color_dark_purple border_radius_6_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -444,7 +446,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/Português/Cover.png" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -458,7 +460,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" style="height: auto;" /><br />
+			<img class="border_4px border_color_dark_brown border_radius_5_cent border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" style="max-width: 50vw; height: auto;" /><br />
 
 			<br />
 		</a>
@@ -472,7 +474,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_grey border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário.png" style="max-width: 40%; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_grey border_radius_5_cent border_4px border_color_dark_grey border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -486,10 +488,10 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_orange border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário Slim.png" style="max-width: 40%; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_orange border_radius_5_cent border_4px border_color_dark_orange border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário Slim.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
 
 			<br />
-		</a>
+		</a></span>
 	</h2>
 </div></center>
 
@@ -498,7 +500,7 @@
 <div id="websites_tab" class="w3-container tab header_size background_brown text_dark_brown border_4px border_color_light_brown box_shadow_light_brown border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_dark_brown">
-		<p><br /><b id="websites_tab_title">Sites: <i class="fas fa-globe"></i> <span class="text_dark_brown">26</span></b><br /><br /><p>
+		<p><br /><b id="websites_tab_title">Sites: <i class="fas fa-globe"></i> <span class="text_dark_brown">27</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_brown margin_sides_5_cent" />
@@ -515,7 +517,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_brown margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_dark_brown">
 		<!-- "Stake2" link button -->
 		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stake2/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
@@ -544,8 +546,15 @@
 			</h2>
 		</button>
 
-		<!-- "My Little Pony: Friendship Is Magic" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
+		<!-- "My Little Pony" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My Little Pony
+			</h2>
+		</button>
+
+		<!-- "Friendship Is Magic" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				My Little Pony: A Amizade É Mágica
 			</h2>
@@ -554,7 +563,7 @@
 		<!-- "Watch History" link button -->
 		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Watch History/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
-				Watch History
+				Watch History <i class="fas fa-eye"></i>
 			</h2>
 		</button>
 
@@ -608,7 +617,7 @@
 		</button>
 
 		<!-- "Rise to Equestria" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Ascensão à Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-check"></i>
 			</h2>
@@ -622,14 +631,14 @@
 		</button>
 
 		<!-- "The Life of Izaque in Equestria" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				A Vida de Izaque em Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-pause"></i>
 			</h2>
 		</button>
 
 		<!-- "The Life of Littletato" link button -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				A Vida de Pequenata <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
@@ -643,14 +652,14 @@
 		</button>
 
 		<!-- "The Story of the Bulkan Siblings" link button -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="" style="border-radius: 50px;">
-			<h2 class="text_size">
-				A História dos Irmãos Bulkan <i class="fas fa-book"></i> <i class="fa-solid fa-cloud-arrow-up"></i> (Você está aqui)
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="" style="border-radius: 50px;" title="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/">
+			<h2 class="text_size" title="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/">
+				A História dos Irmãos Bulkan <i class="fas fa-book" title="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/"></i> <i class="fa-solid fa-cloud-arrow-up" title="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/"></i> (Você está aqui)
 			</h2>
 		</button>
 
 		<!-- "Years" link button -->
-		<button class="w3-btn background_white text_grey border_4px border_color_grey box_shadow_white background_hover_white" onclick="window.open('https://thestake2.netlify.app/Years/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Years/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Anos <i class="fa-solid fa-calendar-days"></i>
 			</h2>
@@ -697,7 +706,7 @@
 				Meu 2023 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
-
+</span>
 	</h2>
 </div></center>
 
@@ -714,7 +723,7 @@
 		<hr class="border_1px border_color_light_brown" />		
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('2', 'O começo, a masmorra');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('2', 'O quarto e a primeira arma');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -827,7 +836,7 @@ Fonte: <a href="https://www.significados.com.br/stalker" target="_blank" class="
 		
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('2', 'O começo, a masmorra');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('2', 'O quarto e a primeira arma');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -882,15 +891,8 @@ Fonte: <a href="https://www.significados.com.br/stalker" target="_blank" class="
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('1', 'O quarto e a primeira arma');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('3', 'O quarto e a primeira arma');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('3', 'Retorno e preocupação');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -968,15 +970,8 @@ Os dois irmãos começam a voltar para casa a pé, Izaque guarda a espada na bai
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('1', 'O quarto e a primeira arma');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('3', 'O quarto e a primeira arma');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('3', 'Retorno e preocupação');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1019,15 +1014,8 @@ Os dois irmãos começam a voltar para casa a pé, Izaque guarda a espada na bai
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('2', 'Retorno e preocupação');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('4', 'Retorno e preocupação');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('4', 'Uma nova arma e uma transformação estranha');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1161,15 +1149,8 @@ Fonte: <a href="https://www.significados.com.br/stalker" target="_blank" class="
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('2', 'Retorno e preocupação');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('4', 'Retorno e preocupação');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('4', 'Uma nova arma e uma transformação estranha');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1212,15 +1193,8 @@ Fonte: <a href="https://www.significados.com.br/stalker" target="_blank" class="
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('3', 'Uma nova arma e uma transformação estranha');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('5', 'Uma nova arma e uma transformação estranha');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('5', 'Um item mágico e o novo amigo');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1450,15 +1424,8 @@ E eu gosto bastante de dragões, é por isso que eu amei virar um dragão, hehe,
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('3', 'Uma nova arma e uma transformação estranha');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('5', 'Uma nova arma e uma transformação estranha');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('5', 'Um item mágico e o novo amigo');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1501,15 +1468,8 @@ E eu gosto bastante de dragões, é por isso que eu amei virar um dragão, hehe,
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('4', 'Um item mágico e o novo amigo');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('6', 'Um item mágico e o novo amigo');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('6', 'A segunda visita');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1637,15 +1597,8 @@ Os dois decidem ir novamente para o buraco estranho que eles viram no outro dia.
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('4', 'Um item mágico e o novo amigo');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('6', 'Um item mágico e o novo amigo');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('6', 'A segunda visita');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1688,15 +1641,8 @@ Os dois decidem ir novamente para o buraco estranho que eles viram no outro dia.
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('5', 'A segunda visita');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('7', 'A segunda visita');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('7', 'A descoberta, a reconciliação e o fim');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1785,15 +1731,8 @@ Então os dois irmãos começam a andar para casa.
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('5', 'A segunda visita');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('7', 'A segunda visita');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('7', 'A descoberta, a reconciliação e o fim');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1836,15 +1775,8 @@ Então os dois irmãos começam a andar para casa.
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('6', 'A descoberta, a reconciliação e o fim');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('8', 'A descoberta, a reconciliação e o fim');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('8', 'O recomeço e a viagem');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1863,159 +1795,154 @@ Então os dois irmãos começam a andar para casa.
 		Os dois irmãos chegam em sua casa para o almoço.<br />
 Eles batem na porta e Rosa abre e diz, "Venham meus docinhos, o almoço tá pronto".<br />
 Os irmãos sentam-se à mesa e começam a comer.<br />
-"Ei, mãe... Onde você acha que o papai foi?" pergunta Ana.<br />
-A mãe responde enquanto olha para a janela que mostrava o lindo céu da tarde, "Eu não sei minha querida, já faz um tempo..."<br />
-"Você acha que ele ainda pode tá vivo hoje?..." pergunta Ana.<br />
+"Ei mãe... Onde você acha que o papai foi?" pergunta Ana.<br />
+A mãe responde enquanto olha para a janela que mostrava o lindo céu da tarde, "Ah... Eu não sei minha querida, já faz um tempo..."<br />
+"Você acha que ele ainda pode tá vivo hoje?..." pergunta Ana, curiosa.<br />
 "Sim... Acho que sim", responde Rosa.<br />
 <br />
 Ana olha para Izaque com uma cara preocupada.<br />
 "Mas por que você quer saber, filha?" pergunta a mãe olhando para Ana.<br />
 "Só curiosidade mãe..." diz Ana enquanto brinca com sua comida, preocupada e com um olhar triste.<br />
 "A comida tá maravilhosa mãe, mas eu não acho que tô com fome..." diz Ana, que se levanta e vai até o quarto.<br />
-Então Rosa pergunta, "O que aconteceu com ela?"<br />
+Então Rosa pergunta, olhando para Izaque, "O que aconteceu com ela?"<br />
 "Eu não sei mãe..." diz Izaque preocupado.<br />
 "Você deveria ir ver o que ela tem", diz Rosa.<br />
-"Ok", diz Izaque, que termina de comer e vai até o quarto.<br />
+"Ok mãe..." diz Izaque, que termina de comer e vai até o quarto.<br />
 <br />
-Izaque chega lá e vê que Ana está passando suas mãos na lâmina do machado, vendo seu reflexo.<br />
+Izaque chega lá e vê que Ana está passando suas mãos na lâmina de seu machado, vendo seu reflexo.<br />
 Então o garoto pergunta, "O que foi, maninha?"<br />
-"Eu só tô um pouco pensativa mano..." responde Ana.<br />
-"Hmm, você acha que ele é nosso pai maninha?" pergunta Izaque.<br />
+"Eu só tô um pouco pensativa mano..." responde Ana, que olha para ele.<br />
+"Hm... Você acha que ele é nosso pai maninha?" pergunta Izaque.<br />
 "Seria um palpite muito precipitado, mano?" pergunta Ana, que olha para seu irmão.<br />
-Ele pensa um pouco e então responde.<br />
-"Talvez maninha, ele não ligou da gente estar lá."<br />
-"Ele pode confiar na gente o bastante pra não se importar maninha..." diz Ana, que volta a olhar para a lâmina de seu machado.<br />
-Izaque fica pensativo, ele se senta na cama.<br />
-A irmã volta a olhar para ele e pergunta.<br />
-"O que você acha mano?"<br />
+Ele pensa um pouco e então responde, "Talvez maninha, ele não ligou da gente estar lá."<br />
+"Ele pode confiar na gente o bastante pra não se importar mano..." diz Ana, que volta a olhar para a lâmina de seu machado.<br />
+Izaque fica pensativo, ele se senta na cama, a irmã volta a olhar para ele e pergunta, "O que você acha mano?"<br />
 <br />
 "Eu não sei maninha, talvez seja ele... Mas se a gente tentar chamar ele de volta pra casa talvez ele não aceite", responde Izaque.<br />
-"E o que explica ele correr atrás da gente, maninha?" pergunta Izaque em dúvida.<br />
+"E o que explica ele correr atrás da gente, maninha?" pergunta Izaque, em dúvida.<br />
 Então Ana responde, "Ele pode explicar isso pra gente, mano".<br />
-"Hmm, não tenho certeza, se você quiser ir, eu vou contigo pra te proteger, maninha..." diz Izaque.<br />
-"Obrigada, mano, você é incrível", diz Ana, que se levanta e anda até Izaque, abraçando ele.<br />
-Izaque então diz sorrindo, "E também, é tedioso ficar aqui em casa sem fazer nada, preferia estar contigo maninha".<br />
-"Hehe, eu também mano, então, vamo lá?" pergunta Ana, sorrindo.<br />
-"É maninha", responde Izaque.<br />
-"A gente vai ir em uma aventura mãe", diz Izaque do quarto, Rosa diz a ele para cuidar de sua irmã.<br />
-Ana então voa pela janela e Izaque voa atrás dela.<br />
-Eles chegam no buraco onde Fred vivia.<br />
+"Hm... Não tenho certeza, se você quiser ir, eu vou contigo pra te proteger maninha..." diz Izaque.<br />
+"Obrigada, mano, você é incrível!" diz Ana, que se levanta e anda até Izaque, abraçando ele forte.<br />
+Izaque então diz sorrindo, "E bom... É tedioso ficar aqui em casa sem fazer nada, hehe, prefiro estar em uma aventura contigo maninha".<br />
+"Hehe, eu também mano, então... Vamo lá?" pergunta Ana, sorrindo.<br />
+"Ok maninha", responde Izaque, os dois andam até a cozinha, olhando para sua mãe que estava lavando as louças.<br />
+"A gente vai ir em uma aventura mãe", diz Izaque, Rosa diz a ele para cuidar de sua irmã.<br />
+Ana então voa pela janela e Izaque voa atrás dela, eles chegam no buraco onde Fred vivia.<br />
 <br />
-A dupla então entra dentro do buraco.<br />
-"Essa masmorra é grande, talvez ele encontre a gente primeiro mano", diz Ana.<br />
-"É, acho que sim, a gente tem que ser cuidadoso maninha", diz Izaque.<br />
-Eles continuam andando mais adentro da masmorra.<br />
-Os irmãos andam um pouco mais e encontram Fred fazendo suas coisas.<br />
-"Ei cara", diz Izaque para Fred.<br />
-"Ah, vocês dois voltaram", diz Fred.<br />
-"A gente pode conversar?" pergunta Ana sorrindo.<br />
+A dupla então entra no buraco, começando a andar pela masmorra.<br />
+"Essa masmorra é grande, talvez ele encontre a gente primeiro mano, ele conhece o lugar melhor do que a gente", diz Ana.<br />
+"É, acho que sim, a gente tem que tomar cuidado maninha", diz Izaque.<br />
+Eles continuam andando mais adentro da masmorra, procurando por Fred.<br />
+Os irmãos andam um pouco mais e encontram Fred fazendo suas coisas, mexendo em alguns papéis.<br />
+"Ei cara..." diz Izaque para Fred.<br />
+"Ah, vocês dois voltaram," diz Fred, olhando para a dupla.<br />
+"A gente pode conversar?" pergunta Ana, sorrindo.<br />
 "Sim", responde Fred.<br />
 "Tem algum lugar específico pra gente ficar?" pergunta Ana.<br />
 "Não tenho certeza, eu tenho algumas cadeiras aqui..." responde Fred.<br />
-Ana olha para Izaque e diz, "Funcionou melhor do que eu pensei".<br />
+Ana olha para Izaque e diz, "Funcionou melhor do que eu pensei", então os dois se sentam.<br />
 <br />
-Fred olha para ambos, perguntando.<br />
-"Mas sobre o que vocês querem conversar?"<br />
+Fred olha para ambos, perguntando, curioso, "Mas sobre o que vocês querem conversar?"<br />
 Então Ana pergunta, "Você conhece nossa mãe?"<br />
 "Eu não sei se conheço ou não...<br />
 É difícil saber dessa nova geração da sua família", responde Fred.<br />
-"Mas você perguntou dela..." diz Ana em dúvida.<br />
+"Mas você perguntou dela..." diz Ana, em dúvida.<br />
 "É, mas eu não conheço ela..." responde Fred.<br />
 Ana olha para Izaque e diz, "Você acha que ele tá falando a verdade mano?..."<br />
-"Acho que sim, maninha", responde Izaque.<br />
-"Hmm... Talvez eu conheça ela", diz Fred, pensativo.<br />
-"Me deixa ver aqui, mãe de Izaque e Ana..." diz Fred enquanto olha para seus papeis.<br />
+"Acho que sim maninha", responde Izaque.<br />
+"Hm... Talvez eu conheça ela", diz Fred, pensativo.<br />
+"Me deixa ver aqui... Mãe de Izaque e Ana..." diz Fred enquanto olha para seus papeis, procurando por algo.<br />
 "Encontrei! O nome dela é Rosa", diz Fred, levantando o papel.<br />
 <br />
 "É, é Rosa", diz Izaque.<br />
 "É melhor vocês terem armas, força, e coragem.<br />
-Para poderem proteger sua mãe porque eu não pude.<br />
+Para poderem proteger sua mãe... Porque eu não pude...<br />
 Q-Quero dizer... Eu não pude proteger outra pessoa", diz Fred, gaguejando, com medo de revelar algo importante.<br />
 "Hmm?" pergunta Ana, querendo ouvir o que Fred disse novamente.<br />
 "Eu não pude proteger uma pessoa importante, então eu fugi", responde Fred olhando para baixo.<br />
 Izaque olha para Ana e então olha para Fred novamente, ele pergunta, "Quem era essa pessoa?"<br />
 "Minha esposa..." diz Fred.<br />
-Ana olha para Izaque e então pergunta, "Você acha que a gente precisa de mais provas, mano?"<br />
-"Acho que não, maninha", diz Izaque.<br />
+Ana olha para Izaque e então pergunta, "Você acha que a gente precisa de mais provas mano?"<br />
+"Acho que não maninha", diz Izaque.<br />
 "Eu sou seu pai!" diz Fred (Darth Vader).<br />
-"Eu sabia, sua sobremesa é minha maninha", diz Izaque.<br />
-"Como assim mano?" pergunta Ana.<br />
+"Eu sabia! Sua sobremesa é minha maninha", diz Izaque.<br />
+"Como assim mano?" pergunta Ana, curiosa.<br />
 "Eu fiz uma aposta com você, eu tava certo e agora sua sobremesa é minha", diz Izaque.<br />
-"Aww, não é justo mano, eu não vou dormir contigo então", diz Ana, que fez uma cara triste, mas então sorriu maliciosamente.<br />
-"Só tô brincando maninha", diz Izaque, que abraça Ana.<br />
-Fred ri um pouco depois de ouvir isso.<br />
+"Aww, não é justo mano, eu não tava sabendo dessa aposta, eu não vou dormir contigo então..." diz Ana, que fez uma cara emburrada.<br />
+"Só tô brincando maninha, hehe", diz Izaque sorrindo, que abraça Ana.<br />
+Fred ri um pouco depois de ouvir isso, então sorri, vendo os dois irmãos juntos, e pensando no passado.<br />
 <br />
-Então Ana olha para Fred.<br />
-"E por que você ainda tá aqui?" pergunta Ana.<br />
-Então Fred diz, "Eu não sei, eu acho que não desisti ainda".<br />
-"Vem pra casa com a gente..." diz Ana com uma voz triste, olhando para o homem.<br />
+Então Ana olha para Fred, "E por que você ainda tá aqui?" pergunta Ana.<br />
+Então Fred diz, "Eu não sei, acho que ainda não desisti".<br />
+"Vem pra casa com a gente..." diz Ana com uma voz triste, olhando para ele.<br />
 "Eu não sei se Rosa iria me aceitar de volta depois do que eu fiz..." responde Fred.<br />
 Então Ana pergunta, "E o que você fez?"<br />
-"Eu não pude proteger ela, e então eu saí..." responde Fred.<br />
+"Eu não pude proteger ela, e então eu fui embora...<br />
+Eu deixei ela quando vocês dois eram pequenos, quando sua mãe tinha vinte e dois..." responde Fred.<br />
 "Ela nos perdoou tantas vezes, aposto que ela vai te perdoar também", diz Ana.<br />
 "É, não há o que temer..." adiciona Izaque. (Não há o que temer, o Vira-Lata vai aparecer)<br />
 <br />
 Então Fred responde, "Eu não sei... Tô sem coragem..."<br />
 "A gente vai te ajudar", diz Ana.<br />
 "Ok... Tudo bem crianças..." diz Fred.<br />
-Ana diz com uma voz animada, "Vamos te levar pra casa!... Pai..."<br />
-"Eu vou tentar, obrigado, crianças..." Fred responde um pouco triste.<br />
-Ana segura o braço de Fred e diz, "Espero que não tenha medo de altura pai", então ela dá uma risada curta.<br />
+Ana diz com uma voz animada, "Vamos te levar pra casa papai!"<br />
+"Eu vou tentar, obrigado, crianças..." Fred responde um pouco triste, olhando para eles.<br />
+"Ei papai... Você se casou com a mamãe só pra estudar a família dela?" pergunta Ana, curiosa.<br />
+"Eu me casei com ela porque eu a amo, ela é a mulher da minha vida!" diz Fred, feliz, e sorrindo.<br />
+"Bom, ok então, hehe", diz Ana, que segura no braço de Fred.<br />
+"Espero que não tenha medo de altura papai", diz Ana, então ela dá uma risada curta.<br />
 "Vem aqui mano, me ajuda a pegar ele", diz Ana.<br />
 "Ok maninha", diz Izaque, que então pega o outro braço de Fred.<br />
 Eles levantam Fred no ar e ele se assusta, dizendo, "Wooaah!" enquanto balança suas pernas.<br />
 Os irmãos voam baixo na masmorra, eles saem dela e começam a voar para a casa de sua mãe, Rosa.<br />
 <br />
 Depois de algum tempo de voo, eles chegam lá e pousam no chão.<br />
-"Você tá pronto pai?" pergunta Ana.<br />
-Izaque sorri enquanto olha para os dois.<br />
-"Sim", responde Fred.<br />
-Ana bate na porta da casa.<br />
-Rosa que estava segurando uma cesta de frutas abre e diz, "Ah, vocês chega-", Rosa solta sua cesta e está perplexa por ver Fred.<br />
-"Eh... Surpresa mãe!" diz Ana.<br />
-"Desculpe Rosa, por ir embora..." diz Fred olhando para baixo, triste.<br />
+"Você tá pronto papai?" pergunta Ana, Izaque sorri enquanto olha para os dois.<br />
+"Sim, vamos lá", responde Fred, Ana bate na porta da casa.<br />
+Rosa que estava segurando uma cesta de frutas abre e diz, "Ah, vocês chega-", Rosa deixar cair a cesta no chão, perplexa ao ver Fred novamente.<br />
+"É... Surpresa mãe!" diz Ana.<br />
+"Desculpe Rosa, por te deixar..." diz Fred olhando para baixo, triste.<br />
 "P-Por onde você esteve?" pergunta Rosa, boquiaberta.<br />
-"Por aí, catalogando e registrando a história da nossa família... Por favor me perdoe, Rosa", diz Fred, se ajoelhando no chão.<br />
-"É claro que te perdoo, bobão! Levanta", diz Rosa que corre para abraçar Fred.<br />
+"Por aí, catalogando e registrando a história da nossa família... Por favor... Me perdoe Rosa..." diz Fred, se ajoelhando no chão.<br />
+"É claro que te perdôo, bobão! Levanta!" diz Rosa, que corre para abraçar Fred.<br />
 <br />
 Os dois começam a chorar de felicidade.<br />
-"Pelo menos, a gente tem certeza que ele não é um stalker louco, mano", diz Ana.<br />
-Então Izaque responde, "É, eu concordo contigo, maninha".<br />
-"Ah, venham cá seus danadinhos!" diz Fred sorrindo muito, que então puxa ambos no abraço e ri.<br />
-"Awww", diz Rosa achando Fred fofo abraçando seus filhos.<br />
-Rosa sai do abraço e se levanta, dizendo, "Venham pra dentro, o jantar tá pronto".<br />
+"Bom... Pelo menos, a egente tem certeza que ele não é um stalker (perseguidor) maluco, mano", diz Ana, olhando para Izaque.<br />
+"Concordo", responde Izaque.<br />
+"Ah, venham cá seus danadinhos!" diz Fred sorrindo muito, que então puxa os dois para abraço e ri.<br />
+"Awww", diz Rosa, achando Fred fofo abraçando seus filhos.<br />
+Rosa sai do abraço e se levanta, dizendo, "Entrem, o jantar tá pronto".<br />
 Izaque e Ana pegam as frutas e dão elas para sua mãe para colocar na cesta.<br />
-Eles todos comem juntos como uma família, e sempre tendo novas aventuras junto de seu pai, Ana e Izaque amaram ter seu pai de volta, eles estavam muito felizes.<br />
+Eles todos comem juntos como uma família novamente, os irmãos sempre vivendo novas aventuras junto de seu pai.<br />
+Ana e Izaque amaram ter seu pai de volta, eles estavam muito felizes.<br />
 Izaque iria amar visitar outros universos com a Manopla do Infinito, de outras histórias por vir, mas ele pensa que está muito cedo para isso.<br />
-Fred Bulkan continua indo para sua masmorra para catalogar e registrar as coisas de sua família, a família Bulkan, e a família Winston.<br />
+Fred Bulkan continua indo para sua masmorra para catalogar e registrar a história de sua família, a família Bulkan, e a família Winston.<br />
 Ele também começa a expandir sua casa com algumas tábuas e pregos que ele comprou na cidade de Folkloria.<br />
 O homem começa a ensinar Izaque como usar a espada e começa a ensinar ele como cultivar plantas e construir uma casa.<br />
-Izaque ama aprender com seu pai, ele também leva seus filhos para visitar a cidade e ver como ela é.<br />
+Izaque ama aprender com seu pai, o pai também levou seus filhos para visitar a cidade e ver como ela é.<br />
 Os dois irmãos amaram ver a cidade, todo mundo, ver o rei em pessoa, que estava fazendo um anúncio no centro da cidade.<br />
+O rei anunciou que o exército de soldados estava precisando de recrutas para o treinamento, e qualquer garoto corajoso o bastante poderia se candidatar para o cargo.<br />
 Era dois de Abril de 1571.<br />
+Izaque e Ana aprenderam a como controlar mais seus poderes de dragão.<br />
+Eles agora podem se transformar para sua forma humana, e também de volta para a sua forma dragão, sendo híbridos de humano-dragão.<br />
+Izaque também praticou usar sua Manopla do Infinito, aprendendo novos poderes, e criando novas coisas, como moedas de ouro para ajudar seus pais.<br />
+Mais armas para lutar contra inimigos e outros animais e criaturas mitológicas, ou talvez fazer amizade com eles.<br />
 <br />
-Então, por agora, esse é o fim dessa história, obrigado por ler, eu amei escrever esse capítulo com minha amiga Ana.<br />
+Então... Por agora, esse é o fim dessa história, obrigado por ler, eu amei escrever esse capítulo com minha amiga Ana.<br />
 A História dos Irmãos Bulkan, eu amo essa história, e eu amei revisar ela e ler ela novamente.<br />
 Obrigado por ler, se você é meu amigo no Discord, Twitter, ou Wattpad, por favor me mande uma mensagem nessas redes sociais dizendo que você terminou de ler, obrigado :3.<br />
 <br />
-A história começou em 11/01/2019 com minha amiga e tulpa Ana.<br />
-Terminada em 24/01/2019.<br />
-Revisada e consertada em 08/04/2019.<br />
-Mas a gente continuou editando e revisando algumas coisas recentemente, em 2021.
+A história começou em 11/01/2019 com minha amiga e Tulpa Ana.<br />
+A gente terminou ela em 24/01/2019.<br />
+Nós revisamos e consertamos em 08/04/2019.<br />
+Mas a gente continuou editando e revisando algumas coisas recentemente, em 2021, e agora em 2023.
 <br /><br />
-		Palavras: 1,807<br /><br />
+		Palavras: 2,087<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('6', 'A descoberta, a reconciliação e o fim');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('8', 'A descoberta, a reconciliação e o fim');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('8', 'O recomeço e a viagem');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -2059,7 +1986,7 @@ Mas a gente continuou editando e revisando algumas coisas recentemente, em 2021.
 		<hr class="border_1px border_color_light_brown" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('7', 'O recomeço e a viagem');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('7', 'A descoberta, a reconciliação e o fim');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
@@ -2223,7 +2150,7 @@ But we both kept editing and revising some things recently, in 2021.
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('7', 'O recomeço e a viagem');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="Open_Chapter('7', 'A descoberta, a reconciliação e o fim');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_dark_brown" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>

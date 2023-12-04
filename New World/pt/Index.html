@@ -25,7 +25,7 @@
 	<meta property="og:locale:alternative" content="pt_PT" />
 
 	<!-- Twitter meta tags -->
-	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="New World" />
 	<meta name="twitter:description" content="Site sobre a minha história, New World, feito por Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 	<meta name="twitter:website" value="@Stake2_" />
@@ -35,17 +35,17 @@
 	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 05/06/2023." />
-	<meta name="author" content="Stake2" />
+	<meta name="revised" content="Stake2's Enterprise TM, 04/12/2023." />
+	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 	<meta charset="UTF-8" />
 
 	<!-- CSS files -->
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/W3.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Colors.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Main.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/W3.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/Colors.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/Main.css" />
 
 	<!-- Define website box shadow -->
 	<style>
@@ -78,6 +78,7 @@
 	</style>
 
 	<!-- JavaScript files -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
@@ -105,7 +106,7 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_blue border_4px border_color_light_blue border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Hide hamburger menu button -->
-	<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 15px !important;">
+	<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
 		<h4 class="text_size" style="font-weight: bold;">
 		X
 		</h4>
@@ -115,6 +116,7 @@
 
 	<br />
 
+<div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
 	<!-- "Ler história" button -->
 	<span id="button_1" class="tab_button">
 		
@@ -167,6 +169,7 @@
 	</button>
 	</span>
 </div>
+</div>
 
 <!-- Website header -->
 <div id="header" class="w3-animate-zoom header_size background_blue text_dark_blue border_4px border_color_light_blue box_shadow_light_blue border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_light_blue header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
@@ -176,12 +179,12 @@
 	</h2>
 
 	<!-- Website image -->
-	<img class="box_shadow_light_blue image_size border_4px border_color_light_blue border_radius_8_cent" src="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" style="height: auto;" /><br />
+	<img class="border_4px border_color_light_blue border_radius_8_cent box_shadow_light_blue border_4px border_color_light_blue border_radius_8_cent" src="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" style="max-width: 50vw; height: auto;" /><br />
 
 	<!-- Website image button -->
 	<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png')" style="z-index: 2;">
 		<h4 class="text_size text_dark_blue">
-			Abrir imagem em uma nova aba: <i class="fas fa-images"></i>
+			Abrir imagem em uma nova guia: <i class="fas fa-images"></i>
 		</h4>
 	</button>
 	<br />
@@ -190,7 +193,8 @@
 	<h3 class="text_size">
 		<!-- Story website info, author(s), chapters, readers, creation date, status -->
 		Sinopse: <i class="fas fa-scroll"></i> <span class="text_dark_blue">New World</span> é uma história que eu recebi em minha mente em 16/11/2016, sobre um novo mundo para os humanos viverem, um mundo melhor.<br />
-		<span class="text_dark_blue">New World</span> começou em 05/06/2016, por uma pessoa, humano, chamado Izaque Sanvezzo, ou O Criador, ou Izaque Criador, ele tinha quatorze naquela época.<br />
+		<span class="text_dark_blue">New World</span> começou em 05/06/2016, por uma pessoa, um humano.<br />
+		Chamado Izaque Sanvezzo, ou O Criador, ou Izaque Criador, ele tinha quatorze naquela época.<br />
 		Ele vivia na cidade de Maringá, no estado do Paraná, no Brasil.<br />
 		Izaque nasceu na cidade de Paranavaí no mesmo estado e país.<br />
 		Mas uma amiga dele disse que seus pais iriam se mudar para a cidade de Maringá.<br />
@@ -198,13 +202,13 @@
 		E esse site (<span class="text_dark_blue">New World</span>) explica sobre a história, uma história verdadeira, e não uma teoria.<br />
 		A história me faz feliz quando eu penso nela, sabendo que algo como isso vai acontecer no futuro.<br />
 		Que eu vou me sentir feliz comigo mesmo e com meu corpo.<br />
-		Eu também penso nela quando eu fico triste sobre minha vida, tipo ter a necessidade de comer, beber, dormir, respirar, eu penso em um mundo onde essas coisas não existem.<br />
+		Eu também penso nela quando eu fico triste sobre minha vida, tipo ter a necessidade de comer, beber, dormir, respirar.<br />
+		Eu penso em um mundo onde essas coisas não existem.<br />
 		---<br />
 		Autor da história: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span><br />
 		Capítulos: <i class="fas fa-book"></i> <span class="text_dark_blue">6</span><br />
 		Data de criação da história: <i class="fa-solid fa-calendar-days"></i> <span class="text_dark_blue">16/11/2016</span><br />
-		Status: <i class="fa-solid fa-pen"></i> <span class="text_dark_blue">Escrevendo</span><br />
-		Wattpad: <a class="text_dark_blue" href="https://wattpad.com/myworks/id_pt" target="_new">https://wattpad.com/myworks/id_pt</a>
+		Status: <i class="fa-solid fa-pen"></i> <span class="text_dark_blue">Escrevendo</span>
 	</h3>
 	<br />
 </div>
@@ -233,7 +237,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_blue margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_dark_blue">
 			<!-- Chapter button for "1 - A criação do New World" chapter -->
 		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('1', 'A criação do New World');" style="border-radius: 50px;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
@@ -274,7 +278,7 @@
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				6 - A ausência programada
 			</h3>
-		</button>
+		</button></span>
 	</h2>
 </div></center>
 
@@ -311,8 +315,8 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_blue margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		<span class="text_dark_blue">1 - </span><span class="text_hover_white">No Readers - Sem Leitores</span><br />
-
+		<span class="text_dark_blue"><span class="text_dark_blue">1 - </span><span class="text_hover_white">No Readers - Sem Leitores</span><br />
+</span>
 	</h2>
 </div></center>
 
@@ -349,7 +353,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_blue margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_dark_blue">
 		<!-- "Ilha Deserta" story card -->
 		<a class="w3-btn background_yellow_sand border_4px border_color_dark_green_water box_shadow_dark_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Desert Island/pt/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_dark_green_water">
@@ -357,7 +361,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_green_water border_radius_5_cent border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -371,7 +375,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" style="height: auto;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" style="max-width: 50vw; height: auto;" /><br />
 
 			<br />
 		</a>
@@ -379,8 +383,8 @@
 		<br />
 
 		<!-- "Ascensão à Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_second_purple">
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>Ascensão à Equestria</b>
 			</h2>
 
@@ -397,7 +401,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -405,8 +409,8 @@
 		<br />
 
 		<!-- "A Vida de Izaque em Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_second_purple">
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>A Vida de Izaque em Equestria</b>
 			</h2>
 
@@ -417,13 +421,13 @@
 		<br />
 
 		<!-- "A Vida de Pequenata" story card -->
-		<a class="w3-btn background_light_salmon border_4px border_color_darker_purple box_shadow_light_salmon animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_darker_purple">
+		<a class="w3-btn background_light_salmon border_4px border_color_dark_purple box_shadow_light_salmon animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>A Vida de Pequenata</b>
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_darker_purple border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.jpg" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_purple border_radius_6_cent border_4px border_color_dark_purple border_radius_6_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -437,7 +441,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/Português/Cover.png" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -451,7 +455,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_brown border_radius_5_cent border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -465,7 +469,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_grey border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário.png" style="max-width: 40%; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_grey border_radius_5_cent border_4px border_color_dark_grey border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -479,10 +483,10 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_orange border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário Slim.png" style="max-width: 40%; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_orange border_radius_5_cent border_4px border_color_dark_orange border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário Slim.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
 
 			<br />
-		</a>
+		</a></span>
 	</h2>
 </div></center>
 
@@ -491,7 +495,7 @@
 <div id="websites_tab" class="w3-container tab header_size background_blue text_dark_blue border_4px border_color_light_blue box_shadow_light_blue border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_dark_blue">
-		<p><br /><b id="websites_tab_title">Sites: <i class="fas fa-globe"></i> <span class="text_dark_blue">26</span></b><br /><br /><p>
+		<p><br /><b id="websites_tab_title">Sites: <i class="fas fa-globe"></i> <span class="text_dark_blue">27</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_blue margin_sides_5_cent" />
@@ -508,7 +512,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_blue margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_dark_blue">
 		<!-- "Stake2" link button -->
 		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stake2/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
@@ -537,8 +541,15 @@
 			</h2>
 		</button>
 
-		<!-- "My Little Pony: Friendship Is Magic" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
+		<!-- "My Little Pony" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My Little Pony
+			</h2>
+		</button>
+
+		<!-- "Friendship Is Magic" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				My Little Pony: A Amizade É Mágica
 			</h2>
@@ -547,7 +558,7 @@
 		<!-- "Watch History" link button -->
 		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Watch History/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
-				Watch History
+				Watch History <i class="fas fa-eye"></i>
 			</h2>
 		</button>
 
@@ -594,14 +605,14 @@
 		</button>
 
 		<!-- "New World" link button -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="" style="border-radius: 50px;">
-			<h2 class="text_size">
-				New World <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i> (Você está aqui)
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="" style="border-radius: 50px;" title="https://thestake2.netlify.app/New World/pt/">
+			<h2 class="text_size" title="https://thestake2.netlify.app/New World/pt/">
+				New World <i class="fas fa-book" title="https://thestake2.netlify.app/New World/pt/"></i> <i class="fa-solid fa-pen" title="https://thestake2.netlify.app/New World/pt/"></i> (Você está aqui)
 			</h2>
 		</button>
 
 		<!-- "Rise to Equestria" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Ascensão à Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-check"></i>
 			</h2>
@@ -615,14 +626,14 @@
 		</button>
 
 		<!-- "The Life of Izaque in Equestria" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				A Vida de Izaque em Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-pause"></i>
 			</h2>
 		</button>
 
 		<!-- "The Life of Littletato" link button -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				A Vida de Pequenata <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
@@ -643,7 +654,7 @@
 		</button>
 
 		<!-- "Years" link button -->
-		<button class="w3-btn background_white text_grey border_4px border_color_grey box_shadow_white background_hover_white" onclick="window.open('https://thestake2.netlify.app/Years/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Years/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Anos <i class="fa-solid fa-calendar-days"></i>
 			</h2>
@@ -690,7 +701,7 @@
 				Meu 2023 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
-
+</span>
 	</h2>
 </div></center>
 
@@ -702,12 +713,12 @@
 		<p><br /><b>Você está lendo: <span class="text_dark_blue">New World</span><br />Capítulo: <span class="text_dark_blue" id="chapter_1_title">1 - A criação do New World</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button and text -->
+	<!-- Chapter button, image, and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('2', 'A criação do New World');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('2', 'A continuação');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -715,7 +726,13 @@
 
 		<br /><br /><br />
 
-		<br /><br />		<!-- Chapter text -->
+		<br /><!-- Chapter cover image -->
+		<center>
+			<img class="box_shadow_dark_blue image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/Story Covers/New World/Português/1 - 10/01." />
+		</center>
+		<br />
+
+		<!-- Chapter text -->
 		<h4 id="chapter_1_text" class="text_size unselectable" style="text-align: left;">
 		História ainda não traduzida.
 <br /><br />
@@ -724,7 +741,7 @@
 		
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('2', 'A criação do New World');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('2', 'A continuação');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -763,19 +780,12 @@
 		<p><br /><b>Você está lendo: <span class="text_dark_blue">New World</span><br />Capítulo: <span class="text_dark_blue" id="chapter_2_title">2 - A continuação</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons and text -->
+	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('1', 'A continuação');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('3', 'A continuação');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('3', 'Expansão do New World');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -783,7 +793,13 @@
 
 		<br /><br /><br />
 
-		<br /><br />		<!-- Chapter text -->
+		<br /><!-- Chapter cover image -->
+		<center>
+			<img class="box_shadow_dark_blue image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/Story Covers/New World/Português/1 - 10/02." />
+		</center>
+		<br />
+
+		<!-- Chapter text -->
 		<h4 id="chapter_2_text" class="text_size unselectable" style="text-align: left;">
 		História ainda não traduzida.
 <br /><br />
@@ -791,15 +807,8 @@
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('1', 'A continuação');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('3', 'A continuação');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('3', 'Expansão do New World');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -838,19 +847,12 @@
 		<p><br /><b>Você está lendo: <span class="text_dark_blue">New World</span><br />Capítulo: <span class="text_dark_blue" id="chapter_3_title">3 - Expansão do New World</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons and text -->
+	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('2', 'Expansão do New World');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('4', 'Expansão do New World');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('4', 'Visitação de universos midiáticos');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -858,7 +860,13 @@
 
 		<br /><br /><br />
 
-		<br /><br />		<!-- Chapter text -->
+		<br /><!-- Chapter cover image -->
+		<center>
+			<img class="box_shadow_dark_blue image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/Story Covers/New World/Português/1 - 10/03." />
+		</center>
+		<br />
+
+		<!-- Chapter text -->
 		<h4 id="chapter_3_text" class="text_size unselectable" style="text-align: left;">
 		História ainda não traduzida.
 <br /><br />
@@ -866,15 +874,8 @@
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('2', 'Expansão do New World');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('4', 'Expansão do New World');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('4', 'Visitação de universos midiáticos');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -913,19 +914,12 @@
 		<p><br /><b>Você está lendo: <span class="text_dark_blue">New World</span><br />Capítulo: <span class="text_dark_blue" id="chapter_4_title">4 - Visitação de universos midiáticos</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons and text -->
+	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('3', 'Visitação de universos midiáticos');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('5', 'Visitação de universos midiáticos');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('5', 'Rede SpaceLiving e Eventos Aleatórios');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -933,23 +927,24 @@
 
 		<br /><br /><br />
 
-		<br /><br />		<!-- Chapter text -->
+		<br /><!-- Chapter cover image -->
+		<center>
+			<img class="box_shadow_dark_blue image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/Story Covers/New World/Português/1 - 10/04." />
+		</center>
+		<br />
+
+		<!-- Chapter text -->
 		<h4 id="chapter_4_text" class="text_size unselectable" style="text-align: left;">
-		História ainda não traduzida.
+		História ainda não traduzida.<br />
+<br /><img class="image_size border_4px border_color_light_blue border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover.png" style="max-width: 50%;" /><br /><br />
+<br /><img class="image_size border_4px border_color_light_blue border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover Front Signboards.png" style="max-width: 50%;" /><br />
 <br /><br />
-		Palavras: 6<br /><br />
+		Palavras: 74<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('3', 'Visitação de universos midiáticos');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('5', 'Visitação de universos midiáticos');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('5', 'Rede SpaceLiving e Eventos Aleatórios');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -988,19 +983,12 @@
 		<p><br /><b>Você está lendo: <span class="text_dark_blue">New World</span><br />Capítulo: <span class="text_dark_blue" id="chapter_5_title">5 - Rede SpaceLiving e Eventos Aleatórios</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons and text -->
+	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('4', 'Rede SpaceLiving e Eventos Aleatórios');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('6', 'Rede SpaceLiving e Eventos Aleatórios');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('6', 'A ausência programada');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1008,7 +996,13 @@
 
 		<br /><br /><br />
 
-		<br /><br />		<!-- Chapter text -->
+		<br /><!-- Chapter cover image -->
+		<center>
+			<img class="box_shadow_dark_blue image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/Story Covers/New World/Português/1 - 10/05." />
+		</center>
+		<br />
+
+		<!-- Chapter text -->
 		<h4 id="chapter_5_text" class="text_size unselectable" style="text-align: left;">
 		História ainda não traduzida.
 <br /><br />
@@ -1016,15 +1010,8 @@
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('4', 'Rede SpaceLiving e Eventos Aleatórios');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('6', 'Rede SpaceLiving e Eventos Aleatórios');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('6', 'A ausência programada');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1063,12 +1050,12 @@
 		<p><br /><b>Você está lendo: <span class="text_dark_blue">New World</span><br />Capítulo: <span class="text_dark_blue" id="chapter_6_title">6 - A ausência programada</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button and text -->
+	<!-- Chapter button, image, and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('5', 'A ausência programada');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('5', 'Rede SpaceLiving e Eventos Aleatórios');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
@@ -1076,7 +1063,13 @@
 
 		<br /><br /><br />
 
-		<br /><br />		<!-- Chapter text -->
+		<br /><!-- Chapter cover image -->
+		<center>
+			<img class="box_shadow_dark_blue image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/Story Covers/New World/Português/1 - 10/06." />
+		</center>
+		<br />
+
+		<!-- Chapter text -->
 		<h4 id="chapter_6_text" class="text_size unselectable" style="text-align: left;">
 		História ainda não traduzida.
 <br /><br />
@@ -1085,7 +1078,7 @@
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('5', 'A ausência programada');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="Open_Chapter('5', 'Rede SpaceLiving e Eventos Aleatórios');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_dark_blue" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>

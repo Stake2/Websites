@@ -25,7 +25,7 @@
 	<meta property="og:locale:alternative" content="pt_PT" />
 
 	<!-- Twitter meta tags -->
-	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="Ilha Deserta" />
 	<meta name="twitter:description" content="Site sobre a minha história, Ilha Deserta, feito por Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 	<meta name="twitter:website" value="@Stake2_" />
@@ -35,17 +35,17 @@
 	<meta name="twitter:image" type="image/jpg" content="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 05/06/2023." />
-	<meta name="author" content="Stake2" />
+	<meta name="revised" content="Stake2's Enterprise TM, 04/12/2023." />
+	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
 	<meta charset="UTF-8" />
 
 	<!-- CSS files -->
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/W3.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Colors.css" />
-	<link rel="stylesheet" type="text/css" href="https://thestake2.netlify.app/CSS/Main.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/W3.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/Colors.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/Main.css" />
 
 	<!-- Define website box shadow -->
 	<style>
@@ -78,6 +78,7 @@
 	</style>
 
 	<!-- JavaScript files -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
@@ -105,7 +106,7 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_light_green_water border_4px border_color_green_water border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Hide hamburger menu button -->
-	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 15px !important;">
+	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
 		<h4 class="text_size" style="font-weight: bold;">
 		X
 		</h4>
@@ -115,6 +116,7 @@
 
 	<br />
 
+<div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
 	<!-- "Ler história" button -->
 	<span id="button_1" class="tab_button">
 		
@@ -167,6 +169,7 @@
 	</button>
 	</span>
 </div>
+</div>
 
 <!-- Website header -->
 <div id="header" class="w3-animate-zoom header_size background_light_green_water text_dark_green_water border_4px border_color_green_water box_shadow_green_water border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_green_water header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
@@ -176,12 +179,12 @@
 	</h2>
 
 	<!-- Website image -->
-	<img class="box_shadow_green_water image_size border_4px border_color_green_water border_radius_8_cent" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" style="height: auto;" /><br />
+	<img class="border_4px border_color_green_water border_radius_8_cent box_shadow_green_water border_4px border_color_green_water border_radius_8_cent" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" style="max-width: 50vw; height: auto;" /><br />
 
 	<!-- Website image button -->
 	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg')" style="z-index: 2;">
 		<h4 class="text_size text_dark_green_water">
-			Abrir imagem em uma nova aba: <i class="fas fa-images"></i>
+			Abrir imagem em uma nova guia: <i class="fas fa-images"></i>
 		</h4>
 	</button>
 	<br />
@@ -198,7 +201,7 @@
 		Autor da história: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span><br />
 		Capítulos: <i class="fas fa-book"></i> <span class="text_dark_green_water">6</span><br />
 		Data de criação da história: <i class="fa-solid fa-calendar-days"></i> <span class="text_dark_green_water">23/10/2016</span><br />
-		Status: <i class="fa-solid fa-rotate"></i> <span class="text_dark_green_water">Re-Escrevendo</span>
+		Status: <i class="fa-solid fa-rotate"></i> <span class="text_dark_green_water">Re-escrevendo</span>
 	</h3>
 	<br />
 </div>
@@ -227,7 +230,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_green_water margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_dark_green_water">
 			<!-- Chapter button for "1 - O naufrágio, a machadinha" chapter -->
 		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('1', 'O naufrágio, a machadinha');" style="border-radius: 50px;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
@@ -268,7 +271,7 @@
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				6 - A viagem e a ilha
 			</h3>
-		</button>
+		</button></span>
 	</h2>
 </div></center>
 
@@ -305,8 +308,8 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_green_water margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		<span class="text_dark_green_water">1 - </span><span class="text_hover_white">No Readers - Sem Leitores</span><br />
-
+		<span class="text_dark_green_water"><span class="text_dark_green_water">1 - </span><span class="text_hover_white">No Readers - Sem Leitores</span><br />
+</span>
 	</h2>
 </div></center>
 
@@ -343,7 +346,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_green_water margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_dark_green_water">
 		<!-- "Ilha Deserta" story card -->
 		<a class="w3-btn background_yellow_sand border_4px border_color_dark_green_water box_shadow_dark_green_water animation_shake_side background_hover_white"  target="_blank" style="width: 100%;">
 			<h2 class="text_size text_dark_green_water">
@@ -351,7 +354,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" style="height: auto;" /><br />
+			<img class="border_4px border_color_dark_green_water border_radius_5_cent border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/Cover.jpg" style="max-width: 50vw; height: auto;" /><br />
 
 			<br />
 		</a>
@@ -365,7 +368,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/New World/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -373,8 +376,8 @@
 		<br />
 
 		<!-- "Ascensão à Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_second_purple">
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>Ascensão à Equestria</b>
 			</h2>
 
@@ -391,7 +394,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/SpaceLiving/Cover.gif" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -399,8 +402,8 @@
 		<br />
 
 		<!-- "A Vida de Izaque em Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_second_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_second_purple">
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>A Vida de Izaque em Equestria</b>
 			</h2>
 
@@ -411,13 +414,13 @@
 		<br />
 
 		<!-- "A Vida de Pequenata" story card -->
-		<a class="w3-btn background_light_salmon border_4px border_color_darker_purple box_shadow_light_salmon animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_darker_purple">
+		<a class="w3-btn background_light_salmon border_4px border_color_dark_purple box_shadow_light_salmon animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
 				<b>A Vida de Pequenata</b>
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_darker_purple border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.jpg" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_purple border_radius_6_cent border_4px border_color_dark_purple border_radius_6_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Life of Littletato/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -431,7 +434,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/Português/Cover.png" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Secret of the Crystals/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -445,7 +448,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" style="width: 100%;" /><br />
+			<img class="border_4px border_color_dark_brown border_radius_5_cent border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story Covers/The Story of the Bulkan Siblings/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -459,7 +462,7 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_grey border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário.png" style="max-width: 40%; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_grey border_radius_5_cent border_4px border_color_dark_grey border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
 
 			<br />
 		</a>
@@ -473,10 +476,10 @@
 			</h2>
 
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_orange border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário Slim.png" style="max-width: 40%; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_orange border_radius_5_cent border_4px border_color_dark_orange border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário Slim.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
 
 			<br />
-		</a>
+		</a></span>
 	</h2>
 </div></center>
 
@@ -485,7 +488,7 @@
 <div id="websites_tab" class="w3-container tab header_size background_light_green_water text_dark_green_water border_4px border_color_green_water box_shadow_green_water border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_dark_green_water">
-		<p><br /><b id="websites_tab_title">Sites: <i class="fas fa-globe"></i> <span class="text_dark_green_water">26</span></b><br /><br /><p>
+		<p><br /><b id="websites_tab_title">Sites: <i class="fas fa-globe"></i> <span class="text_dark_green_water">27</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_green_water margin_sides_5_cent" />
@@ -502,7 +505,7 @@
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_green_water margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		
+		<span class="text_dark_green_water">
 		<!-- "Stake2" link button -->
 		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stake2/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
@@ -531,8 +534,15 @@
 			</h2>
 		</button>
 
-		<!-- "My Little Pony: Friendship Is Magic" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
+		<!-- "My Little Pony" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My Little Pony
+			</h2>
+		</button>
+
+		<!-- "Friendship Is Magic" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				My Little Pony: A Amizade É Mágica
 			</h2>
@@ -541,7 +551,7 @@
 		<!-- "Watch History" link button -->
 		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Watch History/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
-				Watch History
+				Watch History <i class="fas fa-eye"></i>
 			</h2>
 		</button>
 
@@ -581,9 +591,9 @@
 		</button>
 
 		<!-- "Desert Island" link button -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="" style="border-radius: 50px;">
-			<h2 class="text_size">
-				Ilha Deserta <i class="fas fa-book"></i> <i class="fa-solid fa-rotate"></i> (Você está aqui)
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="" style="border-radius: 50px;" title="https://thestake2.netlify.app/Desert Island/pt/">
+			<h2 class="text_size" title="https://thestake2.netlify.app/Desert Island/pt/">
+				Ilha Deserta <i class="fas fa-book" title="https://thestake2.netlify.app/Desert Island/pt/"></i> <i class="fa-solid fa-rotate" title="https://thestake2.netlify.app/Desert Island/pt/"></i> (Você está aqui)
 			</h2>
 		</button>
 
@@ -595,7 +605,7 @@
 		</button>
 
 		<!-- "Rise to Equestria" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Ascensão à Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-check"></i>
 			</h2>
@@ -609,14 +619,14 @@
 		</button>
 
 		<!-- "The Life of Izaque in Equestria" link button -->
-		<button class="w3-btn background_light_purple text_second_purple border_4px border_color_second_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				A Vida de Izaque em Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-pause"></i>
 			</h2>
 		</button>
 
 		<!-- "The Life of Littletato" link button -->
-		<button class="w3-btn background_light_purple text_darker_purple border_4px border_color_darker_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				A Vida de Pequenata <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
@@ -637,7 +647,7 @@
 		</button>
 
 		<!-- "Years" link button -->
-		<button class="w3-btn background_white text_grey border_4px border_color_grey box_shadow_white background_hover_white" onclick="window.open('https://thestake2.netlify.app/Years/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Years/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Anos <i class="fa-solid fa-calendar-days"></i>
 			</h2>
@@ -684,7 +694,7 @@
 				Meu 2023 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
-
+</span>
 	</h2>
 </div></center>
 
@@ -696,12 +706,12 @@
 		<p><br /><b>Você está lendo: <span class="text_dark_green_water">Ilha Deserta</span><br />Capítulo: <span class="text_dark_green_water" id="chapter_1_title">1 - O naufrágio, a machadinha</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button and text -->
+	<!-- Chapter button, image, and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_green_water" />		
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('2', 'O naufrágio, a machadinha');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('2', 'A cesta, o fogo, comida e água');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -709,7 +719,13 @@
 
 		<br /><br /><br />
 
-		<br /><br />		<!-- Chapter text -->
+		<br /><!-- Chapter cover image -->
+		<center>
+			<img class="box_shadow_dark_green_water image_size border_4px border_color_green_water border_radius_8_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/1 - 10/01." />
+		</center>
+		<br />
+
+		<!-- Chapter text -->
 		<h4 id="chapter_1_text" class="text_size unselectable" style="text-align: left;">
 		Eu era um garoto que sempre amava assistir vídeos de sobrevivencialismo, bushcraft, coisas sobre a natureza, e sobrevivência.<br />
 Vivia com meus pais e costumava ir para a escola, eu vivia uma vida normal, eu tinha quinze naquela época.<br />
@@ -778,13 +794,14 @@ Talvez tenha pessoas lá, sobrevivendo igual eu, esperando alguém aparecer, esp
 "O que essas ilhas tem pra mim? O que eu vou descobrir lá? Talvez só animais e natureza... Talvez mais.<br />
 Talvez algo mais especial, raro, e emocionante, eu não sei, mas eu preciso ir e dar uma olhada algum dia.<br />
 Eu tenho a curiosidade de ir lá e olhar, porque eu gosto de aprender novas coisas e descobrir segredos, explorar", eu penso para mim mesmo.
-<br /><br />
+		<br /><br />
+		Capítulo escrito em: 23/03/2020<br />
 		Palavras: 1,392<br /><br />
 		</h4>
 		
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('2', 'O naufrágio, a machadinha');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('2', 'A cesta, o fogo, comida e água');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -823,19 +840,12 @@ Eu tenho a curiosidade de ir lá e olhar, porque eu gosto de aprender novas cois
 		<p><br /><b>Você está lendo: <span class="text_dark_green_water">Ilha Deserta</span><br />Capítulo: <span class="text_dark_green_water" id="chapter_2_title">2 - A cesta, o fogo, comida e água</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons and text -->
+	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_green_water" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('1', 'A cesta, o fogo, comida e água');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('3', 'A cesta, o fogo, comida e água');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('3', 'A nova casa');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -843,7 +853,13 @@ Eu tenho a curiosidade de ir lá e olhar, porque eu gosto de aprender novas cois
 
 		<br /><br /><br />
 
-		<br /><br />		<!-- Chapter text -->
+		<br /><!-- Chapter cover image -->
+		<center>
+			<img class="box_shadow_dark_green_water image_size border_4px border_color_green_water border_radius_8_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/1 - 10/02." />
+		</center>
+		<br />
+
+		<!-- Chapter text -->
 		<h4 id="chapter_2_text" class="text_size unselectable" style="text-align: left;">
 		Deixando meu machado na praia, eu pego minha faca de pedra afiada.<br />
 Eu penso sobre fazer uma cesta para poder guardar coisas.<br />
@@ -917,20 +933,14 @@ Depois disso, eu durmo calmamente, sonhando sobre coisas boas, sentindo a nature
 A brisa fresca, ouvindo alguns pássaros na distância, ouvindo as folhas de palmeira balançando ao vento, o oceano se movendo.<br />
 É muito bom dormir aqui nessa ilha, isso me deixa calmo e relaxado, o clima é bom, não tão quente, não tão frio.<br />
 Isso é o que eu queria, dormir na natureza, dormir perto de árvores, areia, terra, sentindo as folhas, ouvindo e sentindo a natureza, os pássaros, e outros animais.
-<br /><br />
+		<br /><br />
+		Capítulo escrito em: 27/03/2020<br />
 		Palavras: 1,465<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('1', 'A cesta, o fogo, comida e água');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('3', 'A cesta, o fogo, comida e água');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('3', 'A nova casa');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -969,19 +979,12 @@ Isso é o que eu queria, dormir na natureza, dormir perto de árvores, areia, te
 		<p><br /><b>Você está lendo: <span class="text_dark_green_water">Ilha Deserta</span><br />Capítulo: <span class="text_dark_green_water" id="chapter_3_title">3 - A nova casa</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons and text -->
+	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_green_water" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('2', 'A nova casa');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('4', 'A nova casa');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('4', 'A lança e a visão');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -989,7 +992,13 @@ Isso é o que eu queria, dormir na natureza, dormir perto de árvores, areia, te
 
 		<br /><br /><br />
 
-		<br /><br />		<!-- Chapter text -->
+		<br /><!-- Chapter cover image -->
+		<center>
+			<img class="box_shadow_dark_green_water image_size border_4px border_color_green_water border_radius_8_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/1 - 10/03." />
+		</center>
+		<br />
+
+		<!-- Chapter text -->
 		<h4 id="chapter_3_text" class="text_size unselectable" style="text-align: left;">
 		Acordo no meio da manhã, olhando o sol no horizonte, me sinto calmo e relaxado.<br />
 Olhando para a esquerda, vejo meu machado e minha faca, todos feitos de pedra, sorrio.<br />
@@ -1053,20 +1062,14 @@ Meu estômago ronca, abro a cesta de frutas e como duas bananas, depois deito na
 Sinto orgulho de mim mesmo, esses vídeos me ensinaram muito sobre a natureza e as artes da mata, sinto orgulho da casa, cesta, machado e faca.<br />
 Gostaria de saber se encontrarei algum animal ou pessoa nesta ilha ou em outras ilhas.<br />
 Deitado na cama com a porta fechada, o fogo subterrâneo está aceso, a cama está quente, começo a dormir de novo, sentindo orgulho de mim mesmo.
-<br /><br />
+		<br /><br />
+		Capítulo escrito em: 02/04/2020<br />
 		Palavras: 1,231<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('2', 'A nova casa');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('4', 'A nova casa');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('4', 'A lança e a visão');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1105,19 +1108,12 @@ Deitado na cama com a porta fechada, o fogo subterrâneo está aceso, a cama est
 		<p><br /><b>Você está lendo: <span class="text_dark_green_water">Ilha Deserta</span><br />Capítulo: <span class="text_dark_green_water" id="chapter_4_title">4 - A lança e a visão</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons and text -->
+	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_green_water" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('3', 'A lança e a visão');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('5', 'A lança e a visão');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('5', 'A jangada e a lua');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1125,7 +1121,13 @@ Deitado na cama com a porta fechada, o fogo subterrâneo está aceso, a cama est
 
 		<br /><br /><br />
 
-		<br /><br />		<!-- Chapter text -->
+		<br /><!-- Chapter cover image -->
+		<center>
+			<img class="box_shadow_dark_green_water image_size border_4px border_color_green_water border_radius_8_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/1 - 10/04." />
+		</center>
+		<br />
+
+		<!-- Chapter text -->
 		<h4 id="chapter_4_text" class="text_size unselectable" style="text-align: left;">
 		Eu acordo e me levanto, é de manhã, bebo um pouco da água que está no copo, fechando ele novamente.<br />
 Minha barrica ronca, eu abro a cesta e como duas bananas de dentro dela, me sentindo melhor.<br />
@@ -1188,20 +1190,14 @@ Eu disse para ele que eu não era do governo Japonês e que eu não queria captu
 E eu disse que eu havia naufragado em uma ilha perto da dele, e eu estava sobrevivendo lá, até agora, e eu queria explorar algumas ilhas com meu barco.<br />
 Ele entendeu, e se acalmou, ele perguntou se eu precisava de ajuda em algo, eu disse não, e agradeci a ele.<br />
 Enquanto sonhava, eu me perguntei se ele realmente estava em uma ilha perto da minha, eu queria conhecer ele, ele parece legal e gentil.
-<br /><br />
+		<br /><br />
+		Capítulo escrito em: 07/04/2020<br />
 		Palavras: 1,202<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('3', 'A lança e a visão');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('5', 'A lança e a visão');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('5', 'A jangada e a lua');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1240,19 +1236,12 @@ Enquanto sonhava, eu me perguntei se ele realmente estava em uma ilha perto da m
 		<p><br /><b>Você está lendo: <span class="text_dark_green_water">Ilha Deserta</span><br />Capítulo: <span class="text_dark_green_water" id="chapter_5_title">5 - A jangada e a lua</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons and text -->
+	<!-- Chapter buttons, image, and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_green_water" />		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('4', 'A jangada e a lua');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('6', 'A jangada e a lua');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('6', 'A viagem e a ilha');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1260,7 +1249,13 @@ Enquanto sonhava, eu me perguntei se ele realmente estava em uma ilha perto da m
 
 		<br /><br /><br />
 
-		<br /><br />		<!-- Chapter text -->
+		<br /><!-- Chapter cover image -->
+		<center>
+			<img class="box_shadow_dark_green_water image_size border_4px border_color_green_water border_radius_8_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/1 - 10/05." />
+		</center>
+		<br />
+
+		<!-- Chapter text -->
 		<h4 id="chapter_5_text" class="text_size unselectable" style="text-align: left;">
 		Eu me levanto, é manhã, eu bebo um pouco de água e olho para o sol, depois disso, eu como uma banana.<br />
 Então eu pego minha lança, eu vou até o oceano e tento pegar um peixe, olhando para os peixes lá.<br />
@@ -1327,20 +1322,14 @@ Eu me levanto e acendo o fogo da cabana, esquentando a cama, eu fecho a porta e 
 Orgulhoso de mim mesmo por ter feito uma jangada, eu penso em onde quero ir com ela, e o que eu quero trazer, comida, água, minhas ferramentas, e talvez outra coisa.<br />
 Depois disso, eu durmo calmamente, ouvindo as ondas do oceano, ouvindo alguns pássaros nas árvores.<br />
 Eu sobrevivi por cinco dias já.
-<br /><br />
+		<br /><br />
+		Capítulo escrito em: 04/10/2021<br />
 		Palavras: 1,444<br /><br />
 		</h4>
 		
 
-		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('4', 'A jangada e a lua');" style="border-radius: 50px; float: left;">
-			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
-				<i class="fas fa-arrow-circle-left"></i>
-			</h3>
-		</button>
-
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('6', 'A jangada e a lua');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('6', 'A viagem e a ilha');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1379,12 +1368,12 @@ Eu sobrevivi por cinco dias já.
 		<p><br /><b>Você está lendo: <span class="text_dark_green_water">Ilha Deserta</span><br />Capítulo: <span class="text_dark_green_water" id="chapter_6_title">6 - A viagem e a ilha</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button and text -->
+	<!-- Chapter button, image, and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_green_water" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('5', 'A viagem e a ilha');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('5', 'A jangada e a lua');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
@@ -1392,7 +1381,13 @@ Eu sobrevivi por cinco dias já.
 
 		<br /><br /><br />
 
-		<br /><br />		<!-- Chapter text -->
+		<br /><!-- Chapter cover image -->
+		<center>
+			<img class="box_shadow_dark_green_water image_size border_4px border_color_green_water border_radius_8_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/Story Covers/Desert Island/Português/1 - 10/06." />
+		</center>
+		<br />
+
+		<!-- Chapter text -->
 		<h4 id="chapter_6_text" class="text_size unselectable" style="text-align: left;">
 		Eu acordo, é manhã, eu abro a porta e olho para a jangada no oceano, movendo-se um pouco, já fazem quatro dias desde que eu naufraguei nesta ilha.<br />
 Depois disso, eu me levanto e abro a cesta de frutas, comendo uma banana, eu tomo alguns goles de meu copo de água, saindo da cabana com ele e enchendo-o na água corrente.<br />
@@ -1487,13 +1482,14 @@ Ele tem um bom sistema de ventilação e aquecimento em sua casa e me ajudou a f
 O sistema esquenta a cama e joga a fumaça para fora da parte de trás da casa, com uma pequena chaminé.<br />
 Dormimos, olhando para o oceano e a lua, dormindo calmamente e descansando bem, ouvindo as ondas do oceano.<br />
 Eu já sobrevivi por seis dias.
-<br /><br />
+		<br /><br />
+		Capítulo escrito em: 25/10/2021<br />
 		Palavras: 2,066<br /><br />
 		</h4>
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('5', 'A viagem e a ilha');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="Open_Chapter('5', 'A jangada e a lua');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
