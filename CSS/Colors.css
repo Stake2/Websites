@@ -35,6 +35,7 @@ body {
 	--yellow-color: #ffef00;
 	--dark-yellow-color: #c19d15;
 	--light-yellow-color: #ffc65e;
+	--yellow-sand-color: #ffffb3;
 	--green-color: #4CAF50;
 	--dark-green-color: #1C4F1F;
 	--light-green-color: #73FF78;
@@ -192,6 +193,11 @@ body {
 	0 8px 20px var(--spread-btn) #ffc65e60,
 	0 6px 20px var(--spread-btn) #ffc65e60,
 	0 -6px 20px var(--spread-btn) #ffc65e60!important;
+
+	--box-shadow-yellow-sand: 0 -8px 20px var(--spread-btn) #ffffb360,
+	0 8px 20px var(--spread-btn) #ffffb360,
+	0 6px 20px var(--spread-btn) #ffffb360,
+	0 -6px 20px var(--spread-btn) #ffffb360!important;
 
 	--box-shadow-green: 0 -8px 20px var(--spread-btn) #4CAF5060,
 	0 8px 20px var(--spread-btn) #4CAF5060,
@@ -393,6 +399,10 @@ One (1) pixel border colors
 	border: 1px solid var(--light-yellow-color);
 }
 
+.border_1px_solid_yellow_sand {
+	border: 1px solid var(--yellow-sand-color);
+}
+
 .border_1px_solid_green {
 	border: 1px solid var(--green-color);
 }
@@ -565,6 +575,10 @@ Three (3) pixel border colors
 
 .border_3px_solid_light_yellow {
 	border: 3px solid var(--light-yellow-color);
+}
+
+.border_3px_solid_yellow_sand {
+	border: 3px solid var(--yellow-sand-color);
 }
 
 .border_3px_solid_green {
@@ -741,6 +755,10 @@ Four (4) pixel border colors
 	border: 4px solid var(--light-yellow-color);
 }
 
+.border_4px_solid_yellow_sand {
+	border: 4px solid var(--yellow-sand-color);
+}
+
 .border_4px_solid_green {
 	border: 4px solid var(--green-color);
 }
@@ -913,6 +931,10 @@ Border colors
 
 .border_color_light_yellow {
 	border-color: var(--light-yellow-color);
+}
+
+.border_color_yellow_sand {
+	border-color: var(--yellow-sand-color);
 }
 
 .border_color_green {
@@ -1089,6 +1111,10 @@ Background colors
 	background-color: var(--light-yellow-color);
 }
 
+.background_yellow_sand {
+	background-color: var(--yellow-sand-color);
+}
+
 .background_green {
 	background-color: var(--green-color);
 }
@@ -1261,6 +1287,10 @@ Background hover colors
 
 .background_hover_light_yellow:hover {
 	background-color: var(--light-yellow-color);
+}
+
+.background_hover_yellow_sand:hover {
+	background-color: var(--yellow-sand-color);
 }
 
 .background_hover_green:hover {
@@ -1437,6 +1467,10 @@ Text colors
 	color: var(--light-yellow-color);
 }
 
+.text_yellow_sand {
+	color: var(--yellow-sand-color);
+}
+
 .text_green {
 	color: var(--green-color);
 }
@@ -1611,6 +1645,10 @@ Text hover colors
 	color: var(--light-yellow-color);
 }
 
+.text_hover_yellow_sand:hover {
+	color: var(--yellow-sand-color);
+}
+
 .text_hover_green:hover {
 	color: var(--green-color);
 }
@@ -1783,6 +1821,10 @@ Box shadows
 
 .box_shadow_light_yellow {
 	box-shadow: var(--box-shadow-light-yellow) !important;
+}
+
+.box_shadow_yellow_sand {
+	box-shadow: var(--box-shadow-yellow-sand) !important;
 }
 
 .box_shadow_green {
