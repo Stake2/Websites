@@ -34,9 +34,9 @@ The JSON database files are created and filled by the ["Watch_History.py"](https
 The JSON database files are read by the ["Watched.php"](https://github.com/Stake2/PHP/blob/main/Websites/Watch%20History/Generators/Watched.php) HTML tab generator written in PHP, and the tabs are created.<br>
 
 [Play History](https://thestake2.netlify.app/Play%20History/)<br>
-The content of the ["Game sessions"](https://thestake2.netlify.app/Play%20History/?tab=game_sessions) and ["Past registries"](https://thestake2.netlify.app/Play%20History/?tab=past_registries) tabs on the "Play History" website are inside JSON files.<br>
+The content of the ["Game sessions played"](https://thestake2.netlify.app/Play%20History/?tab=game_sessions_played) and ["Past registries"](https://thestake2.netlify.app/Play%20History/?tab=past_registries) tabs on the "Play History" website are inside JSON files.<br>
 The JSON database files are created and filled by the ["GamePlayer.py"](https://github.com/Stake2/Python/tree/main/Modules/GamePlayer) Python module.<br>
-The JSON database files are read by the ["Game sessions.php"](https://github.com/Stake2/PHP/blob/main/Websites/Play%20History/Generators/Game%20sessions.php) HTML tab generator written in PHP, and the tabs are created.<br>
+The JSON database files are read by the ["Played.php"](https://github.com/Stake2/PHP/blob/main/Websites/Play%20History/Generators/Played.php) HTML tab generator written in PHP, and the tabs are created.<br>
 
 [Tasks](https://thestake2.netlify.app/Tasks/)<br>
 The content of the ["Completed tasks"](https://thestake2.netlify.app/Tasks/?tab=completed_tasks) and ["Past registries"](https://thestake2.netlify.app/Tasks/?tab=past_registries) tabs on the "Tasks" website are inside JSON files.<br>
@@ -79,10 +79,10 @@ The content of the "Watched things" tab of the "Watch History" website and all y
 The JSON database files are created and filled by the ["Watch_History.py"](https://github.com/Stake2/Python/tree/main/Modules/Watch_History) Python module.<br>
 The JSON database files are read by the ["Watched.php"](https://github.com/Stake2/PHP/blob/main/Websites/Watch%20History/Generators/Watched.php) HTML tab generator written in PHP, and the tabs are created.<br>
 
-## "Game sessions" tabs on all year websites
-The content of the "Game sessions" tab of the "Play History" website and all year websites are inside JSON files.<br>
+## "Game sessions played" tabs on all year websites
+The content of the "Game sessions played" tab of the "Play History" website and all year websites are inside JSON files.<br>
 The JSON database files are created and filled by the ["GamePlayer.py"](https://github.com/Stake2/Python/tree/main/Modules/GamePlayer) Python module.<br>
-The JSON database files are read by the ["Game sessions.php"](https://github.com/Stake2/PHP/blob/main/Websites/Play%20History/Generators/Game%20sessions.php) HTML tab generator written in PHP, and the tabs are created.<br>
+The JSON database files are read by the ["Played.php"](https://github.com/Stake2/PHP/blob/main/Websites/Play%20History/Generators/Played.php) HTML tab generator written in PHP, and the tabs are created.<br>
 
 ## "Completed tasks" tabs on all year websites
 The content of the "Completed tasks" tab of all year websites are inside JSON files.<br>

@@ -42,15 +42,18 @@ body {
 	--green-water-color: #86ffe6;
 	--dark-green-water-color: #153e43;
 	--light-green-water-color: #b5fff0;
+	--saturated-green-color: #01B708;
+	--dark-saturated-green-color: #016408;
+	--light-saturated-green-color: #37FF3E;
 	--cyan-color: #00bcd4;
-	--dark-cyan-color: #257c7f;
+	--dark-cyan-color: #005457;
 	--light-cyan-color: #5cc6ca;
 	--light-cyan-darker-color: #35a6aa;
 	--blue-color: #2196F3;
 	--dark-blue-color: #07518D;
 	--darker-blue-color: #043964;
 	--even-darker-blue-color: #011526;
-	--light-blue-color: #98D1FF;
+	--light-blue-color: #8FDAFF;
 }
 
 /*
@@ -229,15 +232,30 @@ body {
 	0 6px 20px var(--spread-btn) #b5fff060,
 	0 -6px 20px var(--spread-btn) #b5fff060!important;
 
+	--box-shadow-saturated-green: 0 -8px 20px var(--spread-btn) #01B70860,
+	0 8px 20px var(--spread-btn) #01B70860,
+	0 6px 20px var(--spread-btn) #01B70860,
+	0 -6px 20px var(--spread-btn) #01B70860!important;
+
+	--box-shadow-dark-saturated-green: 0 -8px 20px var(--spread-btn) #01640860,
+	0 8px 20px var(--spread-btn) #01640860,
+	0 6px 20px var(--spread-btn) #01640860,
+	0 -6px 20px var(--spread-btn) #01640860!important;
+
+	--box-shadow-light-saturated-green: 0 -8px 20px var(--spread-btn) #37FF3E60,
+	0 8px 20px var(--spread-btn) #37FF3E60,
+	0 6px 20px var(--spread-btn) #37FF3E60,
+	0 -6px 20px var(--spread-btn) #37FF3E60!important;
+
 	--box-shadow-cyan: 0 -8px 20px var(--spread-btn) #00bcd460,
 	0 8px 20px var(--spread-btn) #00bcd460,
 	0 6px 20px var(--spread-btn) #00bcd460,
 	0 -6px 20px var(--spread-btn) #00bcd460!important;
 
-	--box-shadow-dark-cyan: 0 -8px 20px var(--spread-btn) #257c7f60,
-	0 8px 20px var(--spread-btn) #257c7f60,
-	0 6px 20px var(--spread-btn) #257c7f60,
-	0 -6px 20px var(--spread-btn) #257c7f60!important;
+	--box-shadow-dark-cyan: 0 -8px 20px var(--spread-btn) #00545760,
+	0 8px 20px var(--spread-btn) #00545760,
+	0 6px 20px var(--spread-btn) #00545760,
+	0 -6px 20px var(--spread-btn) #00545760!important;
 
 	--box-shadow-light-cyan: 0 -8px 20px var(--spread-btn) #5cc6ca60,
 	0 8px 20px var(--spread-btn) #5cc6ca60,
@@ -269,10 +287,10 @@ body {
 	0 6px 20px var(--spread-btn) #01152660,
 	0 -6px 20px var(--spread-btn) #01152660!important;
 
-	--box-shadow-light-blue: 0 -8px 20px var(--spread-btn) #98D1FF60,
-	0 8px 20px var(--spread-btn) #98D1FF60,
-	0 6px 20px var(--spread-btn) #98D1FF60,
-	0 -6px 20px var(--spread-btn) #98D1FF60!important;
+	--box-shadow-light-blue: 0 -8px 20px var(--spread-btn) #8FDAFF60,
+	0 8px 20px var(--spread-btn) #8FDAFF60,
+	0 6px 20px var(--spread-btn) #8FDAFF60,
+	0 -6px 20px var(--spread-btn) #8FDAFF60!important;
 }
 
 /*
@@ -425,6 +443,18 @@ One (1) pixel border colors
 
 .border_1px_solid_light_green_water {
 	border: 1px solid var(--light-green-water-color);
+}
+
+.border_1px_solid_saturated_green {
+	border: 1px solid var(--saturated-green-color);
+}
+
+.border_1px_solid_dark_saturated_green {
+	border: 1px solid var(--dark-saturated-green-color);
+}
+
+.border_1px_solid_light_saturated_green {
+	border: 1px solid var(--light-saturated-green-color);
 }
 
 .border_1px_solid_cyan {
@@ -605,6 +635,18 @@ Three (3) pixel border colors
 	border: 3px solid var(--light-green-water-color);
 }
 
+.border_3px_solid_saturated_green {
+	border: 3px solid var(--saturated-green-color);
+}
+
+.border_3px_solid_dark_saturated_green {
+	border: 3px solid var(--dark-saturated-green-color);
+}
+
+.border_3px_solid_light_saturated_green {
+	border: 3px solid var(--light-saturated-green-color);
+}
+
 .border_3px_solid_cyan {
 	border: 3px solid var(--cyan-color);
 }
@@ -781,6 +823,18 @@ Four (4) pixel border colors
 
 .border_4px_solid_light_green_water {
 	border: 4px solid var(--light-green-water-color);
+}
+
+.border_4px_solid_saturated_green {
+	border: 4px solid var(--saturated-green-color);
+}
+
+.border_4px_solid_dark_saturated_green {
+	border: 4px solid var(--dark-saturated-green-color);
+}
+
+.border_4px_solid_light_saturated_green {
+	border: 4px solid var(--light-saturated-green-color);
 }
 
 .border_4px_solid_cyan {
@@ -961,6 +1015,18 @@ Border colors
 	border-color: var(--light-green-water-color);
 }
 
+.border_color_saturated_green {
+	border-color: var(--saturated-green-color);
+}
+
+.border_color_dark_saturated_green {
+	border-color: var(--dark-saturated-green-color);
+}
+
+.border_color_light_saturated_green {
+	border-color: var(--light-saturated-green-color);
+}
+
 .border_color_cyan {
 	border-color: var(--cyan-color);
 }
@@ -1137,6 +1203,18 @@ Background colors
 
 .background_light_green_water {
 	background-color: var(--light-green-water-color);
+}
+
+.background_saturated_green {
+	background-color: var(--saturated-green-color);
+}
+
+.background_dark_saturated_green {
+	background-color: var(--dark-saturated-green-color);
+}
+
+.background_light_saturated_green {
+	background-color: var(--light-saturated-green-color);
 }
 
 .background_cyan {
@@ -1317,6 +1395,18 @@ Background hover colors
 	background-color: var(--light-green-water-color);
 }
 
+.background_hover_saturated_green:hover {
+	background-color: var(--saturated-green-color);
+}
+
+.background_hover_dark_saturated_green:hover {
+	background-color: var(--dark-saturated-green-color);
+}
+
+.background_hover_light_saturated_green:hover {
+	background-color: var(--light-saturated-green-color);
+}
+
 .background_hover_cyan:hover {
 	background-color: var(--cyan-color);
 }
@@ -1493,6 +1583,18 @@ Text colors
 
 .text_light_green_water {
 	color: var(--light-green-water-color);
+}
+
+.text_saturated_green {
+	color: var(--saturated-green-color);
+}
+
+.text_dark_saturated_green {
+	color: var(--dark-saturated-green-color);
+}
+
+.text_light_saturated_green {
+	color: var(--light-saturated-green-color);
 }
 
 .text_cyan {
@@ -1673,6 +1775,18 @@ Text hover colors
 	color: var(--light-green-water-color);
 }
 
+.text_hover_saturated_green:hover {
+	color: var(--saturated-green-color);
+}
+
+.text_hover_dark_saturated_green:hover {
+	color: var(--dark-saturated-green-color);
+}
+
+.text_hover_light_saturated_green:hover {
+	color: var(--light-saturated-green-color);
+}
+
 .text_hover_cyan:hover {
 	color: var(--cyan-color);
 }
@@ -1849,6 +1963,18 @@ Box shadows
 
 .box_shadow_light_green_water {
 	box-shadow: var(--box-shadow-light-green-water) !important;
+}
+
+.box_shadow_saturated_green {
+	box-shadow: var(--box-shadow-saturated-green) !important;
+}
+
+.box_shadow_dark_saturated_green {
+	box-shadow: var(--box-shadow-dark-saturated-green) !important;
+}
+
+.box_shadow_light_saturated_green {
+	box-shadow: var(--box-shadow-light-saturated-green) !important;
 }
 
 .box_shadow_cyan {
