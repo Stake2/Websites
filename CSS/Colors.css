@@ -11,7 +11,8 @@ Color variables
 body {
 	--white-color: #FFFFFF;
 	--grey-color: #808080;
-	--dark-grey-color: #5e5e5e;
+	--dark-grey-color: #2d2d2d;
+	--light-grey-color: #DDDDDD;
 	--black-color: #000000;
 	--purple-color: #9425a7;
 	--dark-purple-color: #4a1254;
@@ -77,10 +78,15 @@ body {
 	0 6px 20px var(--spread-btn) #80808060,
 	0 -6px 20px var(--spread-btn) #80808060!important;
 
-	--box-shadow-dark-grey: 0 -8px 20px var(--spread-btn) #5e5e5e60,
-	0 8px 20px var(--spread-btn) #5e5e5e60,
-	0 6px 20px var(--spread-btn) #5e5e5e60,
-	0 -6px 20px var(--spread-btn) #5e5e5e60!important;
+	--box-shadow-dark-grey: 0 -8px 20px var(--spread-btn) #2d2d2d60,
+	0 8px 20px var(--spread-btn) #2d2d2d60,
+	0 6px 20px var(--spread-btn) #2d2d2d60,
+	0 -6px 20px var(--spread-btn) #2d2d2d60!important;
+
+	--box-shadow-light-grey: 0 -8px 20px var(--spread-btn) #DDDDDD60,
+	0 8px 20px var(--spread-btn) #DDDDDD60,
+	0 6px 20px var(--spread-btn) #DDDDDD60,
+	0 -6px 20px var(--spread-btn) #DDDDDD60!important;
 
 	--box-shadow-black: 0 -8px 20px var(--spread-btn) #00000060,
 	0 8px 20px var(--spread-btn) #00000060,
@@ -325,6 +331,10 @@ One (1) pixel border colors
 	border: 1px solid var(--dark-grey-color);
 }
 
+.border_1px_solid_light_grey {
+	border: 1px solid var(--light-grey-color);
+}
+
 .border_1px_solid_black {
 	border: 1px solid var(--black-color);
 }
@@ -513,6 +523,10 @@ Three (3) pixel border colors
 
 .border_3px_solid_dark_grey {
 	border: 3px solid var(--dark-grey-color);
+}
+
+.border_3px_solid_light_grey {
+	border: 3px solid var(--light-grey-color);
 }
 
 .border_3px_solid_black {
@@ -705,6 +719,10 @@ Four (4) pixel border colors
 	border: 4px solid var(--dark-grey-color);
 }
 
+.border_4px_solid_light_grey {
+	border: 4px solid var(--light-grey-color);
+}
+
 .border_4px_solid_black {
 	border: 4px solid var(--black-color);
 }
@@ -893,6 +911,10 @@ Border colors
 
 .border_color_dark_grey {
 	border-color: var(--dark-grey-color);
+}
+
+.border_color_light_grey {
+	border-color: var(--light-grey-color);
 }
 
 .border_color_black {
@@ -1085,6 +1107,10 @@ Background colors
 	background-color: var(--dark-grey-color);
 }
 
+.background_light_grey {
+	background-color: var(--light-grey-color);
+}
+
 .background_black {
 	background-color: var(--black-color);
 }
@@ -1273,6 +1299,10 @@ Background hover colors
 
 .background_hover_dark_grey:hover {
 	background-color: var(--dark-grey-color);
+}
+
+.background_hover_light_grey:hover {
+	background-color: var(--light-grey-color);
 }
 
 .background_hover_black:hover {
@@ -1465,6 +1495,10 @@ Text colors
 	color: var(--dark-grey-color);
 }
 
+.text_light_grey {
+	color: var(--light-grey-color);
+}
+
 .text_black {
 	color: var(--black-color);
 }
@@ -1655,6 +1689,10 @@ Text hover colors
 	color: var(--dark-grey-color);
 }
 
+.text_hover_light_grey:hover {
+	color: var(--light-grey-color);
+}
+
 .text_hover_black:hover {
 	color: var(--black-color);
 }
@@ -1843,6 +1881,10 @@ Box shadows
 
 .box_shadow_dark_grey {
 	box-shadow: var(--box-shadow-dark-grey) !important;
+}
+
+.box_shadow_light_grey {
+	box-shadow: var(--box-shadow-light-grey) !important;
 }
 
 .box_shadow_black {
