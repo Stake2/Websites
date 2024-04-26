@@ -5,8 +5,8 @@
 
 	<!-- Website links -->
 	<link rel="canonical" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/en/" />
-	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/Cover.png" />
-	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/Cover.png" />
+	<link rel="icon" type="image/png" href="/Images/The Story of the Bulkan Siblings/English.png" />
+	<link rel="image_src" type="image/png" href="/Images/The Story of the Bulkan Siblings/English.png" />
 
 	<!-- Website meta tags -->
 	<meta name="title" content="The Story of the Bulkan Siblings" />
@@ -19,7 +19,7 @@
 	<meta property="og:title" content="The Story of the Bulkan Siblings" />
 	<meta property="og:site_name" content="The Story of the Bulkan Siblings" />
 	<meta property="og:url" content="https://thestake2.netlify.app/The Story of the Bulkan Siblings/en/" />
-	<meta property="og:image" type="image/png" content="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/Cover.png" />
+	<meta property="og:image" type="image/png" content="/Images/The Story of the Bulkan Siblings/English.png" />
 	<meta property="og:description" content="Website about my story, The Story of the Bulkan Siblings, made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 	<meta property="og:locale" content="en_US" />
 
@@ -31,10 +31,10 @@
 	<meta name="twitter:site" value="@Stake2_" />
 	<meta name="twitter:creator" content="@Stake2_" />
 	<meta name="twitter:url" content="https://thestake2.netlify.app/The Story of the Bulkan Siblings/en/" />
-	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/Cover.png" />
+	<meta name="twitter:image" type="image/png" content="/Images/The Story of the Bulkan Siblings/English.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 19/01/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -95,27 +95,38 @@
 <center>
 
 <!-- Open hamburger menu button -->
-<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
+
+
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
+		<h3 class="text_size text_dark_brown" style="font-weight: bold;">
+		
 	<h2 class="text_size">
 		<i class="fas fa-bars"></i>
 	</h2>
-</button>
+
+		</h3>
+	</button>
+
 
 <!--- Hamburger menu -->
 <div id="hamburger_menu" class="w3-container w3-animate-left background_brown border_4px border_color_light_brown border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
-	<!-- Hide hamburger menu button -->
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
+	<!-- Close hamburger menu button -->
+	
+
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
+		<h3 class="text_size text_dark_brown" style="font-weight: bold;">
+		
 		<h4 class="text_size" style="font-weight: bold;">
 		X
 		</h4>
+	
+		</h3>
 	</button>
 
 	<h2 class="text_size text_dark_brown" style="font-weight: bold;">Tab menu: </h2>
 
-	<br />
-
-<div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
+	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
 	<!-- "Read story" button -->
 	<span id="button_1" class="tab_button">
 		
@@ -129,21 +140,8 @@
 	</button>
 	</span>
 
-	<!-- "Readers" button -->
-	<span id="button_2" class="tab_button">
-		
-
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_brown">
-		
-				Readers: <i class="fas fa-book-reader"></i>
-			
-		</h2>
-	</button>
-	</span>
-
 	<!-- "Other stories" button -->
-	<span id="button_3" class="tab_button">
+	<span id="button_2" class="tab_button">
 		
 
 	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
@@ -156,7 +154,7 @@
 	</span>
 
 	<!-- "Websites" button -->
-	<span id="button_4" class="tab_button">
+	<span id="button_3" class="tab_button">
 		
 
 	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
@@ -178,10 +176,10 @@
 	</h2>
 
 	<!-- Website image -->
-	<img class="border_4px border_color_light_brown border_radius_8_cent box_shadow_light_brown border_4px border_color_light_brown border_radius_8_cent" src="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/Cover.png" style="max-width: 50vw; height: auto;" /><br />
+	<img class="border_4px border_color_light_brown border_radius_8_cent box_shadow_light_brown border_4px border_color_light_brown border_radius_8_cent" src="/Images/The Story of the Bulkan Siblings/English.png" style="max-width: 50vw; height: auto;" /><br />
 
 	<!-- Website image button -->
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/Cover.png')" style="z-index: 2;">
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="window.open('/Images/The Story of the Bulkan Siblings/English.png')" style="z-index: 2;">
 		<h4 class="text_size text_dark_brown">
 			Open image in a new tab: <i class="fas fa-images"></i>
 		</h4>
@@ -195,7 +193,7 @@
 		They always go on adventures together around the medieval fantasy world, sometimes finding dungeons, treasures, and exotic creatures.<br />
 		The siblings are called Ana Bulkan and Izaque Bulkan, and this is the beginning of their story.<br />
 		---<br />
-		Story authors: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span> and <span class="text_yellow">Ana</span><br />
+		Story authors: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span> and <span class="text_green_water">Ana</span><br />
 		Chapters: <i class="fas fa-book"></i> <span class="text_dark_brown">8</span><br />
 		Story creation date: <i class="fa-solid fa-calendar-days"></i> <span class="text_dark_brown">11/01/2019</span><br />
 		Status: <i class="fa-solid fa-cloud-arrow-up"></i> <span class="text_dark_brown">Published</span>
@@ -216,14 +214,14 @@
 	</h2>
 
 	<hr class="border_1px border_color_light_brown margin_sides_5_cent" />
-			<span class="margin_sides_5_cent" style="float: right;"><!-- "Readers" button -->
+			<span class="margin_sides_5_cent" style="float: right;"><!-- "Other stories" button -->
 	<span id="button_2" class="tab_button">
 		
 
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
 		<h2 class="text_size text_dark_brown">
 		
-				Readers: <i class="fas fa-book-reader"></i>
+				Other stories: <i class="fas fa-book"></i>
 			
 		</h2>
 	</button>
@@ -292,12 +290,12 @@
 
 <center>
 
-<!-- "Readers" tab -->
-<a id="readers_anchor" name="Readers"></a>
-<div id="readers" class="w3-container tab header_size background_brown text_dark_brown border_4px border_color_light_brown box_shadow_light_brown border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+<!-- "Other stories" tab -->
+<a id="other_stories_anchor" name="Other stories"></a>
+<div id="other_stories" class="w3-container tab header_size background_brown text_dark_brown border_4px border_color_light_brown box_shadow_light_brown border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_dark_brown">
-		<p><br /><b id="readers_title">Readers: <i class="fas fa-book-reader"></i> <span class="text_dark_brown">1</span></b><br /><br /><p>
+		<p><br /><b id="other_stories_title">Other stories: <i class="fas fa-book"></i> <span class="text_dark_brown">8</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_brown margin_sides_5_cent" />
@@ -312,50 +310,8 @@
 			
 		</h2>
 	</button>
-	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Other stories" button -->
-	<span id="button_3" class="tab_button">
-		
-
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_brown">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
-		</h2>
-	</button>
-	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_brown margin_sides_5_cent" />	
-	<h2 class="text_size margin_sides_5_cent" style="">
-		<span class="text_dark_brown"><span class="text_dark_brown">1 - </span><span class="text_hover_white">No Readers - Sem Leitores</span><br />
-</span>
-	</h2>
-</div>
-
-</center>
-
-<center>
-
-<!-- "Other stories" tab -->
-<a id="other_stories_anchor" name="Other stories"></a>
-<div id="other_stories" class="w3-container tab header_size background_brown text_dark_brown border_4px border_color_light_brown box_shadow_light_brown border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
-	<!-- Tab title -->
-	<h2 class="text_size text_dark_brown">
-		<p><br /><b id="other_stories_title">Other stories: <i class="fas fa-book"></i> <span class="text_dark_brown">8</span></b><br /><br /><p>
-	</h2>
-
-	<hr class="border_1px border_color_light_brown margin_sides_5_cent" />
-			<span class="margin_sides_5_cent" style="float: left;"><!-- "Readers" button -->
-	<span id="button_2" class="tab_button">
-		
-
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_brown">
-		
-				Readers: <i class="fas fa-book-reader"></i>
-			
-		</h2>
-	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Websites" button -->
-	<span id="button_4" class="tab_button">
+	<span id="button_3" class="tab_button">
 		
 
 	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
@@ -374,9 +330,7 @@
 				<b>Desert Island</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_green_water border_radius_5_cent border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story covers/Desert Island/English/Cover.jpg" style="max-width: 50vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -388,9 +342,7 @@
 				<b>New World</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_cyan border_radius_5_cent border_4px border_color_dark_cyan border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story covers/New World/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -409,14 +361,12 @@
 		<br />
 
 		<!-- "SpaceLiving" story card -->
-		<a class="w3-btn background_cyan border_4px border_color_dark_blue box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/New World/SpaceLiving/en/" target="_blank" style="width: 100%;">
+		<a class="w3-btn background_cyan border_4px border_color_dark_blue box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/SpaceLiving/en/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_dark_blue">
 				<b>SpaceLiving</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story covers/SpaceLiving/Cover.gif" style="max-width: 50vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -440,9 +390,7 @@
 				<b>The Life of Littletato</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_purple border_radius_6_cent border_4px border_color_dark_purple border_radius_6_cent" src="https://thestake2.netlify.app/Images/Story covers/The Life of Littletato/English/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -454,9 +402,7 @@
 				<b>The Secret of the Crystals</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story covers/The Secret of the Crystals/English/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -468,9 +414,7 @@
 				<b>The Story of the Bulkan Siblings</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_brown border_radius_5_cent border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/Cover.png" style="max-width: 50vw; height: auto;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -482,9 +426,7 @@
 				<b>Diary</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_black border_radius_5_cent border_4px border_color_black border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diary.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -496,9 +438,7 @@
 				<b>Diary Slim</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_orange border_radius_5_cent border_4px border_color_dark_orange border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diary Slim.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a></span>
 	</h2>
@@ -518,7 +458,7 @@
 
 	<hr class="border_1px border_color_light_brown margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Other stories" button -->
-	<span id="button_3" class="tab_button">
+	<span id="button_2" class="tab_button">
 		
 
 	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
@@ -587,6 +527,13 @@
 			</h2>
 		</button>
 
+		<!-- "Tasks" link button -->
+		<button class="w3-btn background_light_grey text_dark_grey border_4px border_color_dark_grey box_shadow_light_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Tasks/en/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Tasks <i class="fas fa-tasks"></i>
+			</h2>
+		</button>
+
 		<!-- "Music" link button -->
 		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Music/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
@@ -594,15 +541,8 @@
 			</h2>
 		</button>
 
-		<!-- "Tasks" link button -->
-		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Tasks/en/')" style="border-radius: 50px;">
-			<h2 class="text_size">
-				Tasks <i class="fas fa-tasks"></i>
-			</h2>
-		</button>
-
 		<!-- "Stories" link button -->
-		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stories/en/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stories/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Stories <i class="fas fa-book"></i>
 			</h2>
@@ -630,7 +570,7 @@
 		</button>
 
 		<!-- "SpaceLiving" link button -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/New World/SpaceLiving/en/')" style="border-radius: 50px;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/SpaceLiving/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				SpaceLiving <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
@@ -733,7 +673,7 @@
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_1_title">1 - The beginning, the dungeon</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -746,14 +686,8 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/1 - 10/01.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_1_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_1_text" class="text_size unselectable " style="text-align: left;">
 		This is a story made by me and my friend and tulpa Ana.<br />
 It started on 11/01/2019, when I wanted to do a story with her, we decided what the story would tell and how it would be.<br />
 It was finished on 24/01/2019, the writing of the chapters, not translation or revision.<br />
@@ -769,7 +703,7 @@ Tulpa is a concept in mysticism and the paranormal of a being or object which is
 It was adapted by 20th-century theosophists from Tibetan sprul-pa (Tibetan: སྤྲུལ་པ་, Wylie: sprulpa) which means "emanation body".<br />
 Modern practitioners use the term to refer to a type of willed imagined being that practitioners consider to be sentient and relatively independent.<br />
 <br />
-<a href="https://en.wikipedia.org/wiki/Tulpa" target="_blank">Read more on Wikipedia (Click here)</a><br />
+<a href="https://en.wikipedia.org/wiki/Tulpa" target="_blank" class="text_dark_brown text_hover_dark_brown">https://en.wikipedia.org/wiki/Tulpa</a><br />
 <br />
 ---<br />
 <br />
@@ -827,7 +761,7 @@ The girl grabs a stone and throws it on the opposite side where they are to call
 "Where are you, I know you're there, show up!" says the man enraged while he searches for the two in the place where the stone is.<br />
 Ana signals to the boy, telling him to go that way, so they can escape the man.<br />
 This song starts to play here and plays until the end:<br />
-<div class="video-container" style="margin-top: 1%; margin-bottom: -6%;"><iframe type="text/html" width="560" height="315" frameborder="0" class="border_radius_5_cent border_4px border_color_light_brown" src="https://www.youtube.com/embed/9o3cEYOxAjs?autoplay=0&fs=1&iv_load_policy=1&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&" title="YouTube video player"></iframe></div><br /><br /><br /><br />
+<a href="https://www.youtube.com/watch?v=9o3cEYOxAjs" target="_blank" class="text_dark_brown text_hover_dark_brown">https://www.youtube.com/watch?v=9o3cEYOxAjs</a><br />
 They walk slowly out of the sight of the man, losing him.<br />
 <br />
 They see that they are already far from the man and continue to walk.<br />
@@ -838,7 +772,7 @@ They walk a little more, they find another hall and follow it.<br />
 <br />
 <br />
 References:<br />
-[1]. <a name="Chapter_1_Reference_1"></a><br />
+[1].<br />
 "Stalker is an English word that means "chaser" or "pursuer".<br />
 It is applied to someone that importunes insistently and obsessively another person that, in a lot of cases, is a celebrity. The persistent chase can lead to attacks and aggression. [...]"<br />
 <br />
@@ -846,7 +780,7 @@ The practice of spying and pursuing someone is called "stalking" (lurk). The ter
 <br />
 Source: <a href="https://www.merriam-webster.com/dictionary/stalker" target="_blank" class="text_dark_brown text_hover_dark_brown">https://www.merriam-webster.com/dictionary/stalker</a>
 <br /><br />
-		Words: 1,496<br /><br />
+		Words: 1,475<br /><br />
 		</h4>
 		
 
@@ -902,7 +836,7 @@ Source: <a href="https://www.merriam-webster.com/dictionary/stalker" target="_bl
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_2_title">2 - The room and the first weapon</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -922,14 +856,8 @@ Source: <a href="https://www.merriam-webster.com/dictionary/stalker" target="_bl
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/1 - 10/02.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_2_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_2_text" class="text_size unselectable " style="text-align: left;">
 		They arrive at a dead end, there is a paper on the ground.<br />
 Izaque who is the wisest grabs the paper and reads, "In this room, there's something I like a lot, but I get rid of it if I need to, serves as fuel".<br />
 Then the boy looks for something that serves as fuel, he finds a dark wooden trunk lying on the ground, when he picks it up he hears a sound of a mechanism activating (Minecraft piston).<br />
@@ -1038,7 +966,7 @@ The two siblings start to go back home on foot, Izaque stores the sword on the s
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_3_title">3 - Return and concern</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -1058,14 +986,8 @@ The two siblings start to go back home on foot, Izaque stores the sword on the s
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/1 - 10/03.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_3_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_3_text" class="text_size unselectable " style="text-align: left;">
 		After a long time, they arrive at their home and knock on the door.<br />
 "Hey, you arrive-" says the scared mother, that interrupts her speech, "Oh my God," says the mother, surprised with the sword on the hands of the boy.<br />
 "What did you two find?" asks the mother, who is called Rosa Winston Bulkan, "Grandpa's sword," replies Izaque.<br />
@@ -1172,7 +1094,7 @@ Then they sleep on a silent night, hugged.<br />
 <br />
 <br />
 References:<br />
-[1]. <a name="Chapter_3_Reference_1"></a><br />
+[1].<br />
 "Stalker is an English word that means "chaser" or "pursuer".<br />
 It is applied to someone that importunes insistently and obsessively another person that, in a lot of cases, is a celebrity. The persistent chase can lead to attacks and aggression. [...]"<br />
 <br />
@@ -1180,7 +1102,7 @@ The practice of spying and pursuing someone is called "stalking" (lurk). The ter
 <br />
 Source: <a href="https://www.merriam-webster.com/dictionary/stalker" target="_blank" class="text_dark_brown text_hover_dark_brown">https://www.merriam-webster.com/dictionary/stalker</a>
 <br /><br />
-		Words: 1,618<br /><br />
+		Words: 1,613<br /><br />
 		</h4>
 		
 
@@ -1231,7 +1153,7 @@ Source: <a href="https://www.merriam-webster.com/dictionary/stalker" target="_bl
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_4_title">4 - A new weapon and a strange transformation</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -1251,14 +1173,8 @@ Source: <a href="https://www.merriam-webster.com/dictionary/stalker" target="_bl
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/1 - 10/04.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_4_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_4_text" class="text_size unselectable " style="text-align: left;">
 		The siblings wake up and see the sun shining through the window.<br />
 It is a little cold, they love cold mornings with the sun to warm them up.<br />
 The duo goes out to feel the morning sun.<br />
@@ -1434,7 +1350,7 @@ They walk a little and Ana asks while she looks at her brother, "Do you feel tha
 The dragon has red scales and the rest of his body is orange, he occupies half of the room with his body.<br />
 They take a slight leap back when they get scared.<br />
 "Oh, that smell..." says Izaque in shock but trying to not wake up the dragon.<br />
-<div class="video-container" style="margin-top: 1%; margin-bottom: -6%;"><iframe type="text/html" width="560" height="315" frameborder="0" class="border_radius_5_cent border_4px border_color_light_brown" src="https://www.youtube.com/embed/9o3cEYOxAjs?autoplay=0&fs=1&iv_load_policy=1&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&" title="YouTube video player"></iframe></div><br /><br /><br /><br />
+<a href="https://www.youtube.com/watch?v=9o3cEYOxAjs" target="_blank" class="text_dark_brown text_hover_dark_brown">https://www.youtube.com/watch?v=9o3cEYOxAjs</a><br />
 "This is what must be keeping the treasure big bro.<br />
 I think we should come here later, he must be tired," says Ana.<br />
 "Hmm, I agree big sis, but I think we should try to talk to him, to try to...<br />
@@ -1469,7 +1385,7 @@ And I like dragons a lot, that's why I loved to become a dragon, hehe, it was co
 "Oh, hehe, you have a lot of knowledge big bro," says Ana, smiling.<br />
 "Thanks, little sis," says Izaque smiling too.
 <br /><br />
-		Words: 3,269<br /><br />
+		Words: 3,245<br /><br />
 		</h4>
 		
 
@@ -1520,7 +1436,7 @@ And I like dragons a lot, that's why I loved to become a dragon, hehe, it was co
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_5_title">5 - A magic item and the new friend</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -1540,14 +1456,8 @@ And I like dragons a lot, that's why I loved to become a dragon, hehe, it was co
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/1 - 10/05.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_5_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_5_text" class="text_size unselectable " style="text-align: left;">
 		They start coming back home with the golden chest, blue sword, and bag of gold coins.<br />
 Arriving there, they knock on the door, the mother opens and says, "Ah, you're her- Wait, who are you?"<br />
 "It's us mom, Ana, and Izaque, can't you notice Ana's cuteness even as a dragon?" asks Izaque smiling.<br />
@@ -1707,7 +1617,7 @@ The two decide to go again into the weird hole they saw the other day.
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_6_title">6 - The second visit</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -1727,14 +1637,8 @@ The two decide to go again into the weird hole they saw the other day.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/1 - 10/06.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_6_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_6_text" class="text_size unselectable " style="text-align: left;">
 		After some time, the two siblings arrive there flying with their dragon wings.<br />
 "Do you think he's still here big bro?" asks Ana.<br />
 "I think so, little sis," says Izaque.<br />
@@ -1855,7 +1759,7 @@ Then two siblings start to walk to their house.
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_7_title">7 - The discovery, the reconciliation, and the ending</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -1875,14 +1779,8 @@ Then two siblings start to walk to their house.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_7" src="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/1 - 10/07.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_7_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_7_text" class="text_size unselectable " style="text-align: left;">
 		The two siblings arrive at their house for lunch.<br />
 They knock on the door and Rosa opens and says, "Come in my sweeties, lunch is ready".<br />
 The siblings sit at the table and start to eat.<br />
@@ -2079,7 +1977,7 @@ But we kept editing and revising some things recently, in 2021, and now in 2023.
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_8_title">8 - The restart and the travel</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -2092,14 +1990,8 @@ But we kept editing and revising some things recently, in 2021, and now in 2023.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_8" src="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/English/1 - 10/08.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_8_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_8_text" class="text_size unselectable " style="text-align: left;">
 		The two siblings arrive at their house for lunch.<br />
 They knock on the door and Rosa opens and says, "Come in my sweeties, lunch is ready".<br />
 The siblings sit at the table and start to eat.<br />

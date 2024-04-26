@@ -109,7 +109,7 @@ const Language = new Language_Class()
 
 // Class_Method text displayer
 function Class_Method(class_title) {
-	var Show_Class_Method = function(method, text) {
+	var Show_Class_Method = function(method, text, additional_text = null) {
 		var local_class_title = class_title
 
 		if (local_class_title.constructor == Object) {
@@ -122,6 +122,10 @@ function Class_Method(class_title) {
 
 		if (text.constructor == Object) {
 			text = Language.Item(text)
+		}
+
+		if (additional_text != null) {
+			text += additional_text
 		}
 
 		print(format(local_class_title + ".{0}():\n\n{1}", method, text))

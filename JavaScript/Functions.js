@@ -40,7 +40,7 @@ function Remove_Zoom() {
 		}
 	)
 
-	Class_Method(method_title, text)
+	Functions.Class_Method(method_title, text)
 }
 
 // Click on input button part
@@ -65,7 +65,7 @@ function Click_Input(array)	{
 					"pt": "Clicando no elemento Input em uma Div"
 				}
 
-				Class_Method(method_title, text)
+				Functions.Class_Method(method_title, text)
 			}
 		}
 	)
@@ -151,12 +151,13 @@ function Add_Leading_Zeroes(number) {
 		number = "0" + String(number)
 	}
 
-	Class_Method(method_title, format(text, number))
+	Functions.Class_Method(method_title, format(text, number))
 }
 
 // Add text gotten from file to element
 function Add_Text_To_Element(url, element) {
 	var request = new XMLHttpRequest()
+
 	request.open("GET", url, true)
 	request.send()
 	request.onreadystatechange = process
@@ -171,44 +172,79 @@ function Add_Text_To_Element(url, element) {
 var hamburger_menu_button = document.getElementById("hamburger_menu_button")
 var last_scroll = window.scrollY
 
-function Check_Page_Scrolling() {
-	// Define the method title
-	var method_title = {
-		"en": arguments.callee.name,
-		"pt": "Verificar_Rolagem_Da_Página"
-	}
-
+// Define the "Check_Scroll_Position" function
+function Check_Scroll_Position(id) {
+	// Define the window Y position
 	var window_Y = window.scrollY
 
 	// Scrolling up
 	if (window_Y < last_scroll) {
-		var text = {
-			"en": "The user scrolled the page up, showing the hamburger menu button",
-			"pt": "O usuário rolou a página para cima, mostrando o botão do menu hambúrguer"
+		// Define the text and show the button
+		text = {
+			"en": "The user scrolled the page up, showing the hamburger menu button\n\n:Element:",
+			"pt": "O usuário rolou a página para cima, mostrando o botão do menu hambúrguer\n\n:Elemento:"
 		}
 
-		w3.show("#hamburger_menu_button")
-		w3.addClass("#hamburger_menu_button", "w3-animate-zoom")
+		w3.show("#" + id)
+		w3.addClass("#" + id, "w3-animate-zoom")
 	}
 
 	// Scrolling down
 	if (window_Y > last_scroll) {
-		var text = {
+		// Define the text and hide the button
+		text = {
 			"en": "The user scrolled the page down, hiding the hamburger menu button",
 			"pt": "O usuário rolou a página para baixo, escondendo o botão do menu hambúrguer"
 		}
 
-		w3.hide("#hamburger_menu_button")
-		w3.removeClass("#hamburger_menu_button", "w3-animate-zoom")
+		w3.hide("#" + id)
+		w3.removeClass("#" + id, "w3-animate-zoom")
 	}
 
+	// Update the "last_scroll" variable
 	last_scroll = window.scrollY
+}
 
-	Class_Method(method_title, text)
+// Define the "Check_Page_Scrolling" function
+function Check_Page_Scrolling(event, ids = null) {
+	// Define the method title
+	var method_title = {
+		"en": "Check_Page_Scrolling",
+		"pt": "Verificar_Rolagem_Da_Página"
+	}
+
+	// Define the ids list
+	if (ids == null) {
+		ids = [
+			"hamburger_menu_button"
+		]
+	}
+
+	// Define the default text variable
+	var text = null
+
+	// If there is only one ID on the list of ids
+	if (ids.length == 1) {
+		// Check the scroll position and hide/show the element as needed
+		Check_Scroll_Position(ids[0])
+	}
+
+	// If there are more IDs
+	else {
+		// Iterate through the list of ids
+		Array.from(ids).forEach(function(id) {
+			// Check the scroll position and hide/show the element as needed
+			Check_Scroll_Position(id)
+		})
+	}
 }
 
 // Add the event listener
-window.addEventListener("scroll", Check_Page_Scrolling)
+scroll_function = function() {
+	Check_Page_Scrolling()
+}
+
+window.addEventListener("scroll", scroll_function)
 
 // Show the "Loaded_Class" text
 Loaded_Class(Functions.texts["class_title"])

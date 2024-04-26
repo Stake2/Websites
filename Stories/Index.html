@@ -1,138 +1,100 @@
 <!DOCTYPE html>
 <head>
-<title>Stories - Histórias (stake2)</title>
-<meta charset="UTF-8" />
-<meta property="og:title" content="Stories - Histórias (stake2)" />
-<meta property="og:site_name" content="Stories - Histórias (stake2)" />
-<link rel="canonical" href="https://diario.netlify.com/stories_historias/" />
-<meta property="og:url" content="https://diario.netlify.com/stories_historias/" />
-<link rel="icon" href="https://diario.netlify.com/cdn/img/stories.png" />
-<link rel="image_src" href="https://diario.netlify.com/cdn/img/stories.png" />
-<meta property="og:image" content="https://diario.netlify.com/cdn/img/stories.png" />
-<meta name="description" content="Site para mostrar minhas histórias, Website to show my stories (stake2)" />
-<meta property="og:description" content="Site para mostrar minhas histórias, Website to show my stories (stake2)" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" value="@The_Snakes90" />
-<meta name="twitter:creator" content="@The_Snakes90" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.com/cdn/css/pocb.css" />
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.com/cdn/css/w3.css" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.com/cdn/css/stories.css" />
-<link rel="stylesheet" type="text/css" href="https://diario.netlify.com/cdn/css/imghover.css" />
-<meta name="revised" content="Stake's EnterpriseTM, 08/12/2019" />
-<meta name="author" content="Stake Ferreira" />
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+	<!-- Website title -->
+	<title>Stories</title>
+
+	<!-- Website links -->
+	<link rel="canonical" href="https://thestake2.netlify.app/Stories/" />
+	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Stories/Icons/English.png" />
+	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Stories/Icons/English.png" />
+
+	<!-- Website meta tags -->
+	<meta name="title" content="Stories" />
+	<meta name="description" content="A website to show all of my stories, which I wrote since 2016.
+Made with much love by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
+	<meta name="meta_language" content="General" />
+	<meta name="theme-color" content="#f1858d" />
+
+	<!-- Website og meta tags -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Stories" />
+	<meta property="og:site_name" content="Stories" />
+	<meta property="og:url" content="https://thestake2.netlify.app/Stories/" />
+	<meta property="og:image" type="image/png" content="https://thestake2.netlify.app/Images/Stories/Icons/English.png" />
+	<meta property="og:description" content="A website to show all of my stories, which I wrote since 2016.
+Made with much love by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
+	<meta property="og:locale" content="en_US" />
+
+	<!-- Twitter meta tags -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Stories" />
+	<meta name="twitter:description" content="A website to show all of my stories, which I wrote since 2016.
+Made with much love by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
+	<meta name="twitter:website" value="@Stake2_" />
+	<meta name="twitter:site" value="@Stake2_" />
+	<meta name="twitter:creator" content="@Stake2_" />
+	<meta name="twitter:url" content="https://thestake2.netlify.app/Stories/" />
+	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Stories/Icons/English.png" />
+
+	<!-- Author related meta tags -->
+	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
+
+	<!-- Viewport and charset -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
+	<meta charset="UTF-8" />
+
+	<!-- CSS files -->
+	<link rel="stylesheet" type="text/css" href="/CSS/W3.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/Colors.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/Main.css" />
+
+	<!-- Define website box shadow -->
+	<style>
+	body {
+		--shadow-color: #f1858d60;
+		--spread-container: 10px;
+		--spread-btn: 0.5px;
+	}
+
+	.w3-btn, .w3-container, .modal, .modal-content, .w3-input {
+		box-shadow: 0 -8px 20px var(--spread-btn) var(--shadow-color),
+		0 8px 20px var(--spread-btn) var(--shadow-color),
+		0 6px 20px var(--spread-btn) var(--shadow-color),
+		0 -6px 20px var(--spread-btn) var(--shadow-color);
+	}
+	
+	.video-container {
+		position: relative;
+		width: 50vw;
+		height: calc(50vw/1.77);
+	}
+
+	.video-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50vw;
+		height: calc(50vw/1.77);
+	}
+	</style>
+
+	<!-- JavaScript files -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Language.js"></script>
+	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
+	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
+	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
+	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+
+	<script>
+		Check_Language()
+	</script>
 </head>
-<body>
-<script src="https://diario.netlify.com/cdn/js/myFunction.js"></script>
-<script src="https://diario.netlify.com/cdn/js/tabs.js"></script>
-<center>
 
-<a href="#pqnt" class="blackbg"><button class="w3-btn mobileHide darkpqnt" onclick="openCity('pqnt')"><h3 class="pqnttext"><b>Pequenata - Littletato</b></h3><img src="https://diario.netlify.com/cdn/img/human pequenata.jpg" width="250" /></button></a> <a href="#sl"><button class="w3-btn mobileHide sl" onclick="openCity('sl')"><h3 class="w3-text-blue"><b>SpaceLiving</b></h3><img src="https://diario.netlify.com/cdn/img/spacelivinglogo.jpg" width="430" /></button></a> <a href="#naz"><button class="w3-btn mobileHide darkpqnt" onclick="openCity('naz')"><h3 class="pqnttext"><b>A História dos Irmãos Nazzevo</b></h3><img src="https://diario.netlify.com/cdn/img/rpg.jpg" width="450" /></button></a>
 
-<a href="#pqnt" class="blackbg"><button class="w3-btn mobileShow darkpqnt" onclick="openCity('pqnt')"><h3 class="pqnttext"><b>Pequenata - Littletato</b></h3><img src="https://diario.netlify.com/cdn/img/human pequenata.jpg" width="200" /></button></a> <a href="#sl"><button class="w3-btn mobileShow sl" onclick="openCity('sl')"><h3 class="w3-text-blue"><b>SpaceLiving</b></h3><img src="https://diario.netlify.com/cdn/img/spacelivinglogo.jpg" width="250" /></button></a> <a href="#naz"><button class="w3-btn mobileShow darkpqnt" onclick="openCity('naz')"><h3 class="pqnttext"><b>A História dos Irmãos Nazzevo</b></h3><img src="https://diario.netlify.com/cdn/img/rpg.jpg" width="250" /></button></a>
-<br /><br />
 
-<div class="w3-black">
-<h1 class="w3-text-green"><hr />Stories - Histórias (stake2)<hr /></h1>
-<h3 class="w3-text-white">
-Izaque Sanvezzo(stake2): <br />
-<i class="fas fa-scroll"></i>: "Website created to show my stories and their websites, I like them, I hope you like too :3" <i class="fas fa-scroll"></i><br />
-<i class="fas fa-scroll"></i>: "Site criado para mostrar minhas histórias e seus sites, adoro elas, espero que adorem também :3" <i class="fas fa-scroll"></i><br /></h3>
-<br />
-<h3 class="w3-text-gray">
-<i class="fas fa-question"></i>: To read or enter the site of the stories click on the button up there called: "Botões(Buttons)", after clicking it scroll the page down. <i class="fas fa-question"></i><br />
-<i class="fas fa-question"></i>: Para ler as histórias ou entrar no site delas clique no botão ali em cima com o nome de: "Botões(Buttons)", após clicar nele role a pagina pra baixo. <i class="fas fa-question"></i><br /></h3><hr />
-</div>
-<br /><br />
-
-<a name="pqnt"></a>
-<div id="pqnt" class="city darkpqnt" style="display:none;margin:2%;">
-<hr />
-<hr class="pqnthr" /><h2 class="pqnttext">Pequenata - Littletato</h2><hr class="pqnthr" />
-
-<a href="https://twitter.com/BonnieFaunzy5/status/1191732218508587008"><img src="https://diario.netlify.com/cdn/img/EIniIjmXsAETBu0 Pequenata por AnaTwitterFofa ;3.jpg" class="pqnttext mobileHide" style="border-width:3px;border-color:#b88e50;border-style:solid;" /></a><br /><h4 class="pqnttext mobileHide">Desenho feito por <a href="https://twitter.com/BonnieFaunzy5" class="w3-text-blue mobileHide">@BonnieFaunzy5 <i class="fab fa-twitter"></i></a> da <span class="w3-text-orange">Pequenata - Littletato</span>, muito obrigado ❤️ ❤️ ❤️ 😊</h4>
-<a href="https://twitter.com/BonnieFaunzy5/status/1191732218508587008"><img src="https://diario.netlify.com/cdn/img/EIniIjmXsAETBu0 Pequenata por AnaTwitterFofa ;3.jpg" width="66%" class="pqnttext mobileShow" style="border-width:3px;border-color:#b88e50;border-style:solid;" /></a><br /><h4 class="pqnttext mobileShow">Desenho feito por <a href="https://twitter.com/BonnieFaunzy5" class="w3-text-blue mobileShow">@BonnieFaunzy5 <i class="fab fa-twitter"></i></a> da <span class="w3-text-orange">Pequenata - Littletato</span>, muito obrigado ❤️ ❤️ ❤️ 😊</h4>
-<br />
-<hr class="pqnthr" /><h5 class="pqnttext">
-<i class="fas fa-scroll"></i> "Pequenata era uma batata que vivia sozinha, ela estava sempre viajando e andando pelas cidades, e amava viver e ver novas coisas, um dia ela encontrou outra batata, e eles conversaram um monte..." <i class="fas fa-scroll"></i><br />
-<i class="fas fa-scroll"></i> "Littletato was a potato that lived alone, she was always tripping and walking through cities, and loved to live and to see new things, one day she found another potato, and then they talked alot..." <i class="fas fa-scroll"></i><br />-</h5>
-<h4 class="pqnttext">
-Autor(Author): <span class="w3-text-orange">Izaque Sanvezzo(stake2)</span><br />
-Capítulos, Chapters: <span class="w3-text-orange">28</span><br />
-Date(Data): <span class="w3-text-orange">05/08/2017</span><br />
-Leitores, Readers: <span class="w3-text-orange">24</span><br />
-Status: <span class="w3-text-orange">[Escrevendo Writing]</span></h4><hr class="pqnthr" />
-<button class="w3-btn bg" onclick="window.open('https://diario.netlify.com/pequenata/');"><h2 class="darkpqnttext"><b>Link: <i class="fas fa-link"></i></b></h2></button>
-<hr />
-</div>
-
-<a name="sl"></a>
-<div id="sl" class="city sl" style="display:none;margin:2%;">
-<hr class="slhr" /><h2 class="w3-text-blue">SpaceLiving</h2><hr class="slhr" />
-<img src="https://diario.netlify.com/cdn/img/spacelivinglogo.jpg" width="45%" class="mobileHide" style="border-width:3px;border-color:#2196F3;border-style:solid;" />
-<img src="https://diario.netlify.com/cdn/img/spacelivinglogo.jpg" width="80%" class="mobileShow" style="border-width:3px;border-color:#2196F3;border-style:solid;" />
-<br /><br />
-
-<h5 class="w3-text-blue"><hr class="slhr" />
-<i class="fas fa-scroll"></i> Description: "Lisa was a girl that likes to write stories, play on her computer and PS4, eat things, watch movies, and listen to music." <i class="fas fa-scroll"></i><br />
-<i class="fas fa-scroll"></i> Descrição: "Lisa era uma menina que gostava de escrever histórias, jogar no computador e PS4, comer coisas, assistir filmes e ouvir musicas." <i class="fas fa-scroll"></i><br />-</h5>
-<h4 class="w3-text-blue">Story made(História feita por) by <span class="w3-text-orange">Izaque Sanvezzo(stake2)</span> and(e) <span class="w3-text-white">Julia</span> in(em) 19/01/2019.<br />
-Chapters, Capítulos: <span class="w3-text-gray">12</span><br />
-Readers, Leitores: <span class="w3-text-gray">13</span><br />
-Status: <span class="w3-text-gray">[Writing Escrevendo]</span></h4><hr class="slhr" /><br />
-<button class="w3-btn sl1" onclick="window.open('https://diario.netlify.com/new_world/spaceliving/');"><h2 class="sl1"><b>Link: <i class="fas fa-link"></i></b></h2></button>
-<hr>
-</div>
-
-<a name="naz"></a>
-<div id="naz" class="city w3-black" style="display:none;margin:2%;">
-<hr /><h2 class="pqnttext">A História dos irmãos Nazzevo</h2><hr />
-
-<img src="https://diario.netlify.com/cdn/img/nazzevo.jpg" width="45%" class="mobileHide" style="border-width:3px;border-color:#b88e50;border-style:solid;" />
-<img src="https://diario.netlify.com/cdn/img/nazzevo.jpg" width="100%" class="mobileShow" style="border-width:3px;border-color:#b88e50;border-style:solid;" />
-
-<hr /><h5 class="w3-text-white">
-<i class="fas fa-scroll"></i> "Dois guerreiros estavam andando na floresta como sempre fazem, até verem um buraco estranho no chão." <i class="fas fa-scroll"></i><br />
-<i class="fas fa-scroll"></i> "Two warriors were walking in the woods as they always do until they saw a strange hole in the ground." <i class="fas fa-scroll"></i><br /><br /></h5>
-<h5 class="w3-text-white">
-Autores(Authors): <span class="w3-text-orange">Izaque Sanvezzo(stake2) e Lulu(Mrs. Black)</span><br />
-Capítulos, Chapters: <span class="w3-text-orange">5</span><br />
-Data(Date): <span class="w3-text-orange">11/01/2019</span><br />
-Leitores, Readers: <span class="w3-text-orange">2</span><br />
-Terminado em(Finished in): <span class="w3-text-orange">24/01/2019</span><br />
-Status: <span class="w3-text-orange">[Terminada Finished]</span></h5><hr /><br />
-<button class="w3-btn bg" onclick="window.open('https://diario.netlify.com/nazzevo/');"><h2 class="darkpqnttext"><b>Link: <i class="fas fa-link"></i></b></h2></button>
-<hr>
-</div>
-
-<a name="sites"></a>
-<div id="sites" class="city" style="display:none;">
-<br /><br />
-<center>
-<h4><span class="w3-orange">
-<button class="w3-btn w3-text-black" onclick="window.open('https://printsofcomputer.netlify.com');">Prints Of Computer Blocks</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/');">Diario</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/my_little_pony/');">My Little Pony</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/watch/');">Watch History</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/foobar_albums/');">Foobar_Albums</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/games/');">Games</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/terraria_talk/');">Terraria_Talk</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/music/');">Music</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/pages/tasks/');">Tasks - Tarefas</button><br />
-<button class="w3-btn w3-text-black w3-blue" onclick="window.open('https://diario.netlify.com/stories_historias/');">Stories - Historias</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/new_world/');">New World</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/pequenata/');">Pequenata - Littletato</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/new_world/spaceliving/');">SpaceLiving</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/pages/historias/medieval');">A História dos irmãos Nazzevo</button><br />
-<button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/stake2/pt-br/');">Eu</button><button class="w3-btn w3-text-black" onclick="window.open('https://diario.netlify.com/stake2/en-us');">Me</button><br />
-</span></h4>
-</center>
-</div>
-
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-<a href="#sites"><button class="w3-btn w3-yellow" onclick="openCity('sites')"><h2><i class="fas fa-globe-americas"></i></h2></button></a>
 </center>
 </body>
 </html>

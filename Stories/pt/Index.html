@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<head>
+	<!-- Website title -->
+	<title>Histórias</title>
+
+	<!-- Website links -->
+	<link rel="canonical" href="https://thestake2.netlify.app/Stories/pt/" />
+	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Stories/Icons/Português.png" />
+	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Stories/Icons/Português.png" />
+
+	<!-- Website meta tags -->
+	<meta name="title" content="Histórias" />
+	<meta name="description" content="Um site para mostrar todas as minhas histórias, que eu escrevi desde 2016.
+Feito com muito amor por Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
+	<meta name="meta_language" content="Português" />
+	<meta name="theme-color" content="#f1858d" />
+
+	<!-- Website og meta tags -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Histórias" />
+	<meta property="og:site_name" content="Histórias" />
+	<meta property="og:url" content="https://thestake2.netlify.app/Stories/pt/" />
+	<meta property="og:image" type="image/png" content="https://thestake2.netlify.app/Images/Stories/Icons/Português.png" />
+	<meta property="og:description" content="Um site para mostrar todas as minhas histórias, que eu escrevi desde 2016.
+Feito com muito amor por Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:locale:alternative" content="pt_PT" />
+
+	<!-- Twitter meta tags -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Histórias" />
+	<meta name="twitter:description" content="Um site para mostrar todas as minhas histórias, que eu escrevi desde 2016.
+Feito com muito amor por Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
+	<meta name="twitter:website" value="@Stake2_" />
+	<meta name="twitter:site" value="@Stake2_" />
+	<meta name="twitter:creator" content="@Stake2_" />
+	<meta name="twitter:url" content="https://thestake2.netlify.app/Stories/pt/" />
+	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Stories/Icons/Português.png" />
+
+	<!-- Author related meta tags -->
+	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
+
+	<!-- Viewport and charset -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
+	<meta charset="UTF-8" />
+
+	<!-- CSS files -->
+	<link rel="stylesheet" type="text/css" href="/CSS/W3.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/Colors.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/Main.css" />
+
+	<!-- Define website box shadow -->
+	<style>
+	body {
+		--shadow-color: #f1858d60;
+		--spread-container: 10px;
+		--spread-btn: 0.5px;
+	}
+
+	.w3-btn, .w3-container, .modal, .modal-content, .w3-input {
+		box-shadow: 0 -8px 20px var(--spread-btn) var(--shadow-color),
+		0 8px 20px var(--spread-btn) var(--shadow-color),
+		0 6px 20px var(--spread-btn) var(--shadow-color),
+		0 -6px 20px var(--spread-btn) var(--shadow-color);
+	}
+	
+	.video-container {
+		position: relative;
+		width: 50vw;
+		height: calc(50vw/1.77);
+	}
+
+	.video-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50vw;
+		height: calc(50vw/1.77);
+	}
+	</style>
+
+	<!-- JavaScript files -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Language.js"></script>
+	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
+	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
+	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
+	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+
+	<script>
+		Check_Language()
+	</script>
+</head>
+
+<body class="background_dark_salmon" onLoad="Remove_Zoom();">
+<center>
+
+<!-- Open hamburger menu button -->
+
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
+		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+		
+	<h2 class="text_size">
+		<i class="fas fa-bars"></i>
+	</h2>
+
+		</h3>
+	</button>
+
+
+<!--- Hamburger menu -->
+<div id="hamburger_menu" class="w3-container w3-animate-left background_light_purple_darker border_4px border_color_light_purple border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
+
+	<!-- Close hamburger menu button -->
+	
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
+		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+		
+		<h4 class="text_size" style="font-weight: bold;">
+		X
+		</h4>
+	
+		</h3>
+	</button>
+
+	<h2 class="text_size text_light_salmon" style="font-weight: bold;">Menu de abas: </h2>
+
+	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
+	<!-- "Histórias" button -->
+	<span id="button_1" class="tab_button">
+		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('stories');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_purple">
+		
+				Histórias: <i class="fas fa-book"></i>
+			
+		</h2>
+	</button>
+	</span>
+
+	<!-- "Sites" button -->
+	<span id="button_2" class="tab_button">
+		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_purple">
+		
+				Sites: <i class="fas fa-globe"></i>
+			
+		</h2>
+	</button>
+	</span>
+</div>
+</div>
+
+<!-- Website header -->
+<div id="header" class="w3-animate-zoom header_size background_light_purple_darker text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_light_purple header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
+	<!-- Website title -->
+	<h2 class="text_size text_light_salmon">
+		<p><br /><b>Histórias <i class="fas fa-book"></i></b><br /><br /><p>
+	</h2>
+
+	<!-- Website image -->
+	<img class="border_4px border_color_light_purple border_radius_8_cent box_shadow_light_purple border_4px border_color_light_purple border_radius_8_cent" src="https://thestake2.netlify.app/Images/Stories/Icons/Português.png" style="max-width: 30vw; height: auto;" /><br />
+
+	<!-- Website image button -->
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/Stories/Icons/Português.png')" style="z-index: 2;">
+		<h4 class="text_size text_dark_purple">
+			Abrir imagem em uma nova guia: <i class="fas fa-images"></i>
+		</h4>
+	</button>
+	<br />
+
+	<!-- Website description -->
+	<h3 class="text_size">
+Um site para mostrar todas as minhas histórias, que eu escrevi desde 2016.<br />
+Feito com muito amor por <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span>.	</h3>
+	<br />
+</div>
+
+<br /><br /><br /><br /><br />
+
+<center>
+
+<!-- "Histórias" tab -->
+<a id="stories_anchor" name="Histórias"></a>
+<div id="stories" class="w3-container tab header_size background_light_purple_darker text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: block;">
+	<!-- Tab title -->
+	<h2 class="text_size text_light_salmon">
+		<p><br /><b id="stories_title">Histórias: <i class="fas fa-book"></i> <span class="text_dark_purple">8</span></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: right;"><!-- "Sites" button -->
+	<span id="button_2" class="tab_button">
+		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_purple">
+		
+				Sites: <i class="fas fa-globe"></i>
+			
+		</h2>
+	</button>
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="">
+		<span class="text_light_salmon">
+		<!-- "Ilha Deserta" story card -->
+		<a class="w3-btn background_yellow_sand border_4px border_color_dark_green_water box_shadow_dark_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Desert Island/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_green_water">
+				<b>Ilha Deserta</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "New World" story card -->
+		<a class="w3-btn background_light_blue border_4px border_color_dark_cyan box_shadow_light_blue animation_shake_side background_hover_white" href="https://thestake2.netlify.app/New World/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_cyan">
+				<b>New World</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "Ascensão à Equestria" story card -->
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
+				<b>Ascensão à Equestria</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "SpaceLiving" story card -->
+		<a class="w3-btn background_cyan border_4px border_color_dark_blue box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/SpaceLiving/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_blue">
+				<b>SpaceLiving</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "A Vida de Izaque em Equestria" story card -->
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
+				<b>A Vida de Izaque em Equestria</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "A Vida de Pequenata" story card -->
+		<a class="w3-btn background_light_salmon border_4px border_color_dark_purple box_shadow_light_salmon animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
+				<b>A Vida de Pequenata</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "O Segredo dos Cristais" story card -->
+		<a class="w3-btn background_light_cyan border_4px border_color_dark_blue box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Secret of the Crystals/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_blue">
+				<b>O Segredo dos Cristais</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "A História dos Irmãos Bulkan" story card -->
+		<a class="w3-btn background_light_brown border_4px border_color_dark_brown box_shadow_dark_brown animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_brown">
+				<b>A História dos Irmãos Bulkan</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "Diário" story card -->
+		<a class="w3-btn background_grey border_4px border_color_black box_shadow_grey animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Diary/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_black">
+				<b>Diário</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "Diário Slim" story card -->
+		<a class="w3-btn background_light_orange border_4px border_color_dark_orange box_shadow_light_orange animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Diary Slim/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_orange">
+				<b>Diário Slim</b>
+			</h2>
+
+			
+			<br />
+		</a></span>
+	</h2>
+</div>
+
+</center>
+
+<center>
+
+<!-- "Sites" tab -->
+<a id="websites_tab_anchor" name="Sites"></a>
+<div id="websites_tab" class="w3-container tab header_size background_light_purple_darker text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_light_salmon">
+		<p><br /><b id="websites_tab_title">Sites: <i class="fas fa-globe"></i> <span class="text_dark_purple">27</span></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "Histórias" button -->
+	<span id="button_1" class="tab_button">
+		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('stories');" style="border-radius: 50px;">
+		<h2 class="text_size text_dark_purple">
+		
+				Histórias: <i class="fas fa-book"></i>
+			
+		</h2>
+	</button>
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="">
+		<span class="text_light_salmon">
+		<!-- "Stake2" link button -->
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stake2/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Izaque, Stake2, Funkysnipa Cat <i class="fas fa-user-circle"></i>
+			</h2>
+		</button>
+
+		<!-- "Prints of Computer Blocks" link button -->
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Prints of Computer Blocks/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Prints of Computer Blocks <i class="fas fa-images"></i>
+			</h2>
+		</button>
+
+		<!-- "Diary" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Diary/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Diário <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "Diary Slim" link button -->
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Diary Slim/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Diário Slim <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "My Little Pony" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My Little Pony <i class="fas fa-heart"></i>
+			</h2>
+		</button>
+
+		<!-- "Friendship Is Magic" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My Little Pony: A Amizade É Mágica <i class="fas fa-heart"></i>
+			</h2>
+		</button>
+
+		<!-- "Watch History" link button -->
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Watch History/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Watch History <i class="fas fa-eye"></i>
+			</h2>
+		</button>
+
+		<!-- "Play History" link button -->
+		<button class="w3-btn background_light_saturated_green text_dark_saturated_green border_4px border_color_dark_saturated_green box_shadow_light_saturated_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/Play History/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Play History <i class="fa-solid fa-gamepad"></i>
+			</h2>
+		</button>
+
+		<!-- "Tasks" link button -->
+		<button class="w3-btn background_light_grey text_dark_grey border_4px border_color_dark_grey box_shadow_light_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Tasks/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Tarefas <i class="fas fa-tasks"></i>
+			</h2>
+		</button>
+
+		<!-- "Music" link button -->
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Music/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Música <i class="fa-solid fa-music"></i>
+			</h2>
+		</button>
+
+		<!-- "Stories" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="" style="border-radius: 50px;" title="https://thestake2.netlify.app/Stories/pt/">
+			<h2 class="text_size" title="https://thestake2.netlify.app/Stories/pt/">
+				Histórias <i class="fas fa-book" title="https://thestake2.netlify.app/Stories/pt/"></i> (Você está aqui)
+			</h2>
+		</button>
+
+		<!-- "Desert Island" link button -->
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="window.open('https://thestake2.netlify.app/Desert Island/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Ilha Deserta <i class="fas fa-book"></i> <i class="fa-solid fa-rotate"></i>
+			</h2>
+		</button>
+
+		<!-- "New World" link button -->
+		<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/New World/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				New World <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "Rise to Equestria" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Ascensão à Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-check"></i>
+			</h2>
+		</button>
+
+		<!-- "SpaceLiving" link button -->
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/SpaceLiving/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				SpaceLiving <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "The Life of Izaque in Equestria" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				A Vida de Izaque em Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-pause"></i>
+			</h2>
+		</button>
+
+		<!-- "The Life of Littletato" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				A Vida de Pequenata <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "The Secret of the Crystals" link button -->
+		<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Secret of the Crystals/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				O Segredo dos Cristais <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "The Story of the Bulkan Siblings" link button -->
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				A História dos Irmãos Bulkan <i class="fas fa-book"></i> <i class="fa-solid fa-cloud-arrow-up"></i>
+			</h2>
+		</button>
+
+		<!-- "Years" link button -->
+		<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/Years/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Anos <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2018" link button -->
+		<button class="w3-btn background_dark_blue text_even_darker_blue border_4px border_color_even_darker_blue box_shadow_dark_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/2018/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2018 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2019" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/2019/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2019 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2020" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/2020/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2020 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2021" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/2021/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2021 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2022" link button -->
+		<button class="w3-btn background_yellow_sand text_dark_yellow border_4px border_color_dark_yellow box_shadow_yellow_sand background_hover_white" onclick="window.open('https://thestake2.netlify.app/2022/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2022 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2023" link button -->
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/2023/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2023 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2024" link button -->
+		<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/2024/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2024 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+</span>
+	</h2>
+</div>
+
+</center>
+
+
+
+</center>
+</body>
+</html>

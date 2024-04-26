@@ -5,8 +5,8 @@
 
 	<!-- Website links -->
 	<link rel="canonical" href="https://thestake2.netlify.app/2021/en/" />
-	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/2021/Icons/English.png" />
-	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/2021/Icons/English.png" />
+	<link rel="icon" type="image/png" href="/Images/2021/Icons/English.png" />
+	<link rel="image_src" type="image/png" href="/Images/2021/Icons/English.png" />
 
 	<!-- Website meta tags -->
 	<meta name="title" content="My 2021" />
@@ -20,7 +20,7 @@ Made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	<meta property="og:title" content="My 2021" />
 	<meta property="og:site_name" content="My 2021" />
 	<meta property="og:url" content="https://thestake2.netlify.app/2021/en/" />
-	<meta property="og:image" type="image/png" content="https://thestake2.netlify.app/Images/2021/Icons/English.png" />
+	<meta property="og:image" type="image/png" content="/Images/2021/Icons/English.png" />
 	<meta property="og:description" content="Website to show how My 2021 was, and what I did in it.
 Made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	<meta property="og:locale" content="en_US" />
@@ -34,10 +34,10 @@ Made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	<meta name="twitter:site" value="@Stake2_" />
 	<meta name="twitter:creator" content="@Stake2_" />
 	<meta name="twitter:url" content="https://thestake2.netlify.app/2021/en/" />
-	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/2021/Icons/English.png" />
+	<meta name="twitter:image" type="image/png" content="/Images/2021/Icons/English.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 20/01/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -97,27 +97,38 @@ Made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 <center>
 
 <!-- Open hamburger menu button -->
-<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
+
+
+	<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_whitew3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
+		<h3 class="text_size text_black" style="font-weight: bold;">
+		
 	<h2 class="text_size">
 		<i class="fas fa-bars"></i>
 	</h2>
-</button>
+
+		</h3>
+	</button>
+
 
 <!--- Hamburger menu -->
 <div id="hamburger_menu" class="w3-container w3-animate-left background_white border_4px border_color_grey border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
-	<!-- Hide hamburger menu button -->
-	<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
+	<!-- Close hamburger menu button -->
+	
+
+	<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_whitew3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
+		<h3 class="text_size text_black" style="font-weight: bold;">
+		
 		<h4 class="text_size" style="font-weight: bold;">
 		X
 		</h4>
+	
+		</h3>
 	</button>
 
 	<h2 class="text_size text_grey" style="font-weight: bold;">Tab menu: </h2>
 
-	<br />
-
-<div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
+	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
 	<!-- "Summary" button -->
 	<span id="button_1" class="tab_button">
 		
@@ -219,10 +230,10 @@ Made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	</h2>
 
 	<!-- Website image -->
-	<img class="border_4px border_color_grey border_radius_8_cent box_shadow_grey border_4px border_color_grey border_radius_8_cent" src="https://thestake2.netlify.app/Images/2021/Icons/English.png" style="max-width: 30vw; height: auto;" /><br />
+	<img class="border_4px border_color_grey border_radius_8_cent box_shadow_grey border_4px border_color_grey border_radius_8_cent" src="/Images/2021/Icons/English.png" style="max-width: 30vw; height: auto;" /><br />
 
 	<!-- Website image button -->
-	<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/2021/Icons/English.png')" style="z-index: 2;">
+	<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('/Images/2021/Icons/English.png')" style="z-index: 2;">
 		<h4 class="text_size text_black">
 			Open image in a new tab: <i class="fas fa-images"></i>
 		</h4>
@@ -370,7 +381,7 @@ Created a class version of Food_Time.py Python script
 00:40 22/09/2021<br />
 <p></p>
 <a name="memories_image_1">
-<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/01.png"style="max-width: 80%;" alt="01.png" title="01.png" /><br />
+<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/01.png"style="max-width: 80%;" alt="01" title="01" /><br />
 <a href="#memories_image_2" style="float: right; text-decoration: none; margin-top: 30px; margin-right: 30px;"><button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white">
 		<h4 class="text_size text_black">
 			Next image <i class="fas fa-arrow-circle-right"></i>
@@ -407,7 +418,7 @@ Created a class version of Food_Time.py Python script
 14:57 24/12/2021<br />
 <p></p>
 <a name="memories_image_2">
-<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/02.png"style="max-width: 80%;" alt="02.png" title="02.png" /><br />
+<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/02.png"style="max-width: 80%;" alt="02" title="02" /><br />
 <a href="#memories_image_1" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white">
 		<h4 class="text_size text_black">
 			<i class="fas fa-arrow-circle-left"></i> Previous image
@@ -448,7 +459,7 @@ Created a class version of Food_Time.py Python script
 00:01 25/12/2021<br />
 <p></p>
 <a name="memories_image_3">
-<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/03.png"style="max-width: 80%;" alt="03.png" title="03.png" /><br />
+<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/03.png"style="max-width: 80%;" alt="03" title="03" /><br />
 <a href="#memories_image_2" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white">
 		<h4 class="text_size text_black">
 			<i class="fas fa-arrow-circle-left"></i> Previous image
@@ -489,7 +500,7 @@ Created a class version of Food_Time.py Python script
 00:02 25/12/2021<br />
 <p></p>
 <a name="memories_image_4">
-<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/04.png"style="max-width: 80%;" alt="04.png" title="04.png" /><br />
+<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/04.png"style="max-width: 80%;" alt="04" title="04" /><br />
 <a href="#memories_image_3" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white">
 		<h4 class="text_size text_black">
 			<i class="fas fa-arrow-circle-left"></i> Previous image
@@ -530,7 +541,7 @@ Created a class version of Food_Time.py Python script
 00:57 25/12/2021<br />
 <p></p>
 <a name="memories_image_5">
-<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/05.jpg"style="max-width: 80%;" alt="05.jpg" title="05.jpg" /><br />
+<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/05.jpg"style="max-width: 80%;" alt="05" title="05" /><br />
 <a href="#memories_image_4" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white">
 		<h4 class="text_size text_black">
 			<i class="fas fa-arrow-circle-left"></i> Previous image
@@ -571,7 +582,7 @@ Created a class version of Food_Time.py Python script
 01:05 25/12/2021<br />
 <p></p>
 <a name="memories_image_6">
-<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/06.jpg"style="max-width: 80%;" alt="06.jpg" title="06.jpg" /><br />
+<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/06.jpg"style="max-width: 80%;" alt="06" title="06" /><br />
 <a href="#memories_image_5" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white">
 		<h4 class="text_size text_black">
 			<i class="fas fa-arrow-circle-left"></i> Previous image
@@ -608,7 +619,7 @@ Created a class version of Food_Time.py Python script
 05:33 25/12/2021<br />
 <p></p>
 <a name="memories_image_7">
-<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/07.png"style="max-width: 80%;" alt="07.png" title="07.png" /><br />
+<img class="image_size border_4px border_color_grey border_radius_1_cent" src="https://thestake2.netlify.app/Images/2021/Memories/07.png"style="max-width: 80%;" alt="07" title="07" /><br />
 <a href="#memories_image_6" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white">
 		<h4 class="text_size text_black">
 			<i class="fas fa-arrow-circle-left"></i> Previous image
@@ -671,7 +682,7 @@ Created a class version of Food_Time.py Python script
 				Watch History <i class="fas fa-eye"></i>
 			</h2>
 		</button>
-<img class="border_4px border_color_dark_blue border_radius_8_cent box_shadow_dark_blue border_4px border_color_dark_blue border_radius_8_cent" src="https://thestake2.netlify.app/Images/Watch History/Icons/Foto.png" style="max-width: 30vw; height: auto;" /><br />
+<img class="border_4px border_color_dark_blue border_radius_8_cent box_shadow_dark_blue border_4px border_color_dark_blue border_radius_8_cent" src="/Images/Watch History/Icons/Foto.png" style="max-width: 30vw; height: auto;" /><br />
 
 </center>
 <br />
@@ -1049,7 +1060,7 @@ Created a class version of Food_Time.py Python script
 				Play History <i class="fa-solid fa-gamepad"></i>
 			</h2>
 		</button>
-<img class="border_4px border_color_dark_saturated_green border_radius_8_cent box_shadow_dark_saturated_green border_4px border_color_dark_saturated_green border_radius_8_cent" src="https://thestake2.netlify.app/Images/Play History/Icons/Foto.png" style="max-width: 30vw; height: auto;" /><br />
+<img class="border_4px border_color_dark_saturated_green border_radius_8_cent box_shadow_dark_saturated_green border_4px border_color_dark_saturated_green border_radius_8_cent" src="/Images/Play History/Icons/Foto.png" style="max-width: 30vw; height: auto;" /><br />
 
 </center>
 <br />
@@ -1300,14 +1311,14 @@ Created a class version of Food_Time.py Python script
 <span class="text_hover_grey" style="margin-left: 3%;">83 - <span class="text_black text_hover_grey">"Project Zomboid", Session duration: 1 hour and 23 minutes </span> (23:27 16/04/2021)</span><br />
 <span class="text_hover_grey" style="margin-left: 3%;">84 - <span class="text_black text_hover_grey">"Project Zomboid", Session duration: 1 hour and 28 minutes </span> (22:21 18/04/2021)</span><br />
 <span class="text_hover_grey" style="margin-left: 3%;">85 - <span class="text_black text_hover_grey">"Project Zomboid", Session duration: 1 hour and 7 minutes </span> (22:07 23/04/2021)</span><br />
-<span class="text_hover_grey" style="margin-left: 3%;">87 - <span class="text_black text_hover_grey">"Don't Starve Hamlet", Session duration: 2 hours and 59 minutes </span> (07:16 28/04/2021)</span><br />
-<span class="text_hover_grey" style="margin-left: 3%;">88 - <span class="text_black text_hover_grey">"Don't Starve Hamlet", Session duration: 1 hour and 34 minutes </span> (07:35 30/04/2021)</span><br />
-<span class="text_hover_grey" style="margin-left: 3%;">89 - <span class="text_black text_hover_grey">"Don't Starve Hamlet", Session duration: 2 hours and 56 minutes </span> (11:14 30/04/2021)</span><br />
+<span class="text_hover_grey" style="margin-left: 3%;">87 - <span class="text_black text_hover_grey">"Don't Starve: Hamlet", Session duration: 2 hours and 59 minutes </span> (07:16 28/04/2021)</span><br />
+<span class="text_hover_grey" style="margin-left: 3%;">88 - <span class="text_black text_hover_grey">"Don't Starve: Hamlet", Session duration: 1 hour and 34 minutes </span> (07:35 30/04/2021)</span><br />
+<span class="text_hover_grey" style="margin-left: 3%;">89 - <span class="text_black text_hover_grey">"Don't Starve: Hamlet", Session duration: 2 hours and 56 minutes </span> (11:14 30/04/2021)</span><br />
 <span class="text_hover_grey" style="margin-left: 3%;">91 - <span class="text_black text_hover_grey">"Project Zomboid", Session duration: 12 minutes</span> (00:53 01/05/2021)</span><br />
-<span class="text_hover_grey" style="margin-left: 3%;">94 - <span class="text_black text_hover_grey">"Don't Starve Hamlet", Session duration: 3 hours and 39 minutes </span> (07:27 03/05/2021)</span><br />
-<span class="text_hover_grey" style="margin-left: 3%;">95 - <span class="text_black text_hover_grey">"Don't Starve Hamlet", Session duration: 2 hours and 13 minutes </span> (01:43 07/05/2021)</span><br />
+<span class="text_hover_grey" style="margin-left: 3%;">94 - <span class="text_black text_hover_grey">"Don't Starve: Hamlet", Session duration: 3 hours and 39 minutes </span> (07:27 03/05/2021)</span><br />
+<span class="text_hover_grey" style="margin-left: 3%;">95 - <span class="text_black text_hover_grey">"Don't Starve: Hamlet", Session duration: 2 hours and 13 minutes </span> (01:43 07/05/2021)</span><br />
 <span class="text_hover_grey" style="margin-left: 3%;">96 - <span class="text_black text_hover_grey">"Project Zomboid", Session duration: 1 hour and 7 minutes </span> (20:33 07/05/2021)</span><br />
-<span class="text_hover_grey" style="margin-left: 3%;">105 - <span class="text_black text_hover_grey">"Don't Starve Hamlet", Session duration: 39 minutes</span> (17:30 12/05/2021)</span><br />
+<span class="text_hover_grey" style="margin-left: 3%;">105 - <span class="text_black text_hover_grey">"Don't Starve: Hamlet", Session duration: 39 minutes</span> (17:30 12/05/2021)</span><br />
 <span class="text_hover_grey" style="margin-left: 3%;">106 - <span class="text_black text_hover_grey">"Minecraft", Session duration: 3 hours and 14 minutes </span> (20:49 12/05/2021)</span><br />
 <span class="text_hover_grey" style="margin-left: 3%;">107 - <span class="text_black text_hover_grey">"Project Zomboid", Session duration: 1 hour and 34 minutes </span> (04:27 15/05/2021)</span><br />
 <span class="text_hover_grey" style="margin-left: 3%;">110 - <span class="text_black text_hover_grey">"Minecraft", Session duration: 1 hour and 1 minute </span> (18:14 16/05/2021)</span><br />
@@ -1317,7 +1328,7 @@ Created a class version of Food_Time.py Python script
 <span class="text_hover_grey" style="margin-left: 3%;">119 - <span class="text_black text_hover_grey">"Project Zomboid", Session duration: 1 hour and 29 minutes </span> (18:11 11/06/2021)</span><br />
 <span class="text_hover_grey" style="margin-left: 3%;">120 - <span class="text_black text_hover_grey">"Project Zomboid", Session duration: 1 hour and 26 minutes </span> (20:57 18/06/2021)</span><br />
 <span class="text_hover_grey" style="margin-left: 3%;">121 - <span class="text_black text_hover_grey">"Project Zomboid", Session duration: 11 minutes</span> (23:58 25/06/2021)</span><br />
-<span class="text_hover_grey" style="margin-left: 3%;">122 - <span class="text_black text_hover_grey">"Don't Starve Hamlet", Session duration: 42 minutes</span> (20:00 04/07/2021)</span><br />
+<span class="text_hover_grey" style="margin-left: 3%;">122 - <span class="text_black text_hover_grey">"Don't Starve: Hamlet", Session duration: 42 minutes</span> (20:00 04/07/2021)</span><br />
 <span class="text_hover_grey" style="margin-left: 3%;">124 - <span class="text_black text_hover_grey">"Project Zomboid", Session duration: 38 minutes</span> (05:28 10/07/2021)</span><br />
 <span class="text_hover_grey" style="margin-left: 3%;">125 - <span class="text_black text_hover_grey">"Project Zomboid", Session duration: 37 minutes</span> (18:19 10/07/2021)</span><br />
 <span class="text_hover_grey" style="margin-left: 3%;">159 - <span class="text_black text_hover_grey">"Project Zomboid", Session duration: 2 hours and 38 minutes </span> (05:38 28/08/2021)</span><br />
@@ -1410,7 +1421,7 @@ Created a class version of Food_Time.py Python script
 				Tasks <i class="fas fa-tasks"></i>
 			</h2>
 		</button>
-<img class="border_4px border_color_dark_grey border_radius_8_cent box_shadow_dark_grey border_4px border_color_dark_grey border_radius_8_cent" src="https://thestake2.netlify.app/Images/Tasks/Icons/English.png" style="max-width: 30vw; height: auto;" /><br />
+<img class="border_4px border_color_dark_grey border_radius_8_cent box_shadow_dark_grey border_4px border_color_dark_grey border_radius_8_cent" src="/Images/Tasks/Icons/English.png" style="max-width: 30vw; height: auto;" /><br />
 
 </center>
 <br />
@@ -1664,7 +1675,7 @@ Created a class version of Food_Time.py Python script
 		</button>
 
 		<!-- "Stories" link button -->
-		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stories/en/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stories/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Stories <i class="fas fa-book"></i>
 			</h2>
@@ -1692,7 +1703,7 @@ Created a class version of Food_Time.py Python script
 		</button>
 
 		<!-- "SpaceLiving" link button -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/New World/SpaceLiving/en/')" style="border-radius: 50px;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/SpaceLiving/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				SpaceLiving <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>

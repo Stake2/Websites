@@ -5,8 +5,8 @@
 
 	<!-- Website links -->
 	<link rel="canonical" href="https://thestake2.netlify.app/New World/pt/" />
-	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Story covers/New World/Cover.png" />
-	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Story covers/New World/Cover.png" />
+	<link rel="icon" type="image/png" href="/Images/New World/Cover.png" />
+	<link rel="image_src" type="image/png" href="/Images/New World/Cover.png" />
 
 	<!-- Website meta tags -->
 	<meta name="title" content="New World" />
@@ -19,7 +19,7 @@
 	<meta property="og:title" content="New World" />
 	<meta property="og:site_name" content="New World" />
 	<meta property="og:url" content="https://thestake2.netlify.app/New World/pt/" />
-	<meta property="og:image" type="image/png" content="https://thestake2.netlify.app/Images/Story covers/New World/Cover.png" />
+	<meta property="og:image" type="image/png" content="/Images/New World/Cover.png" />
 	<meta property="og:description" content="Site sobre a minha história, New World, feito por Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 	<meta property="og:locale" content="pt_BR" />
 	<meta property="og:locale:alternative" content="pt_PT" />
@@ -32,10 +32,10 @@
 	<meta name="twitter:site" value="@Stake2_" />
 	<meta name="twitter:creator" content="@Stake2_" />
 	<meta name="twitter:url" content="https://thestake2.netlify.app/New World/pt/" />
-	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Story covers/New World/Cover.png" />
+	<meta name="twitter:image" type="image/png" content="/Images/New World/Cover.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 19/01/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -96,27 +96,38 @@
 <center>
 
 <!-- Open hamburger menu button -->
-<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
+
+
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
+		<h3 class="text_size text_dark_cyan" style="font-weight: bold;">
+		
 	<h2 class="text_size">
 		<i class="fas fa-bars"></i>
 	</h2>
-</button>
+
+		</h3>
+	</button>
+
 
 <!--- Hamburger menu -->
 <div id="hamburger_menu" class="w3-container w3-animate-left background_cyan border_4px border_color_light_blue border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
-	<!-- Hide hamburger menu button -->
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
+	<!-- Close hamburger menu button -->
+	
+
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
+		<h3 class="text_size text_dark_cyan" style="font-weight: bold;">
+		
 		<h4 class="text_size" style="font-weight: bold;">
 		X
 		</h4>
+	
+		</h3>
 	</button>
 
 	<h2 class="text_size text_light_blue" style="font-weight: bold;">Menu de abas: </h2>
 
-	<br />
-
-<div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
+	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
 	<!-- "Ler história" button -->
 	<span id="button_1" class="tab_button">
 		
@@ -130,21 +141,8 @@
 	</button>
 	</span>
 
-	<!-- "Leitores" button -->
-	<span id="button_2" class="tab_button">
-		
-
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_cyan">
-		
-				Leitores: <i class="fas fa-book-reader"></i>
-			
-		</h2>
-	</button>
-	</span>
-
 	<!-- "Outras histórias" button -->
-	<span id="button_3" class="tab_button">
+	<span id="button_2" class="tab_button">
 		
 
 	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
@@ -157,7 +155,7 @@
 	</span>
 
 	<!-- "Sites" button -->
-	<span id="button_4" class="tab_button">
+	<span id="button_3" class="tab_button">
 		
 
 	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
@@ -179,10 +177,10 @@
 	</h2>
 
 	<!-- Website image -->
-	<img class="border_4px border_color_light_blue border_radius_8_cent box_shadow_light_blue border_4px border_color_light_blue border_radius_8_cent" src="https://thestake2.netlify.app/Images/Story covers/New World/Cover.png" style="max-width: 50vw; height: auto;" /><br />
+	<img class="border_4px border_color_light_blue border_radius_8_cent box_shadow_light_blue border_4px border_color_light_blue border_radius_8_cent" src="/Images/New World/Cover.png" style="max-width: 50vw; height: auto;" /><br />
 
 	<!-- Website image button -->
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/Story covers/New World/Cover.png')" style="z-index: 2;">
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white" onclick="window.open('/Images/New World/Cover.png')" style="z-index: 2;">
 		<h4 class="text_size text_dark_cyan">
 			Abrir imagem em uma nova guia: <i class="fas fa-images"></i>
 		</h4>
@@ -226,14 +224,14 @@
 	</h2>
 
 	<hr class="border_1px border_color_light_blue margin_sides_5_cent" />
-			<span class="margin_sides_5_cent" style="float: right;"><!-- "Leitores" button -->
+			<span class="margin_sides_5_cent" style="float: right;"><!-- "Outras histórias" button -->
 	<span id="button_2" class="tab_button">
 		
 
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
 		<h2 class="text_size text_dark_cyan">
 		
-				Leitores: <i class="fas fa-book-reader"></i>
+				Outras histórias: <i class="fas fa-book"></i>
 			
 		</h2>
 	</button>
@@ -288,12 +286,12 @@
 
 <center>
 
-<!-- "Leitores" tab -->
-<a id="readers_anchor" name="Leitores"></a>
-<div id="readers" class="w3-container tab header_size background_cyan text_dark_cyan border_4px border_color_light_blue box_shadow_light_blue border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+<!-- "Outras histórias" tab -->
+<a id="other_stories_anchor" name="Outras histórias"></a>
+<div id="other_stories" class="w3-container tab header_size background_cyan text_dark_cyan border_4px border_color_light_blue box_shadow_light_blue border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_light_blue">
-		<p><br /><b id="readers_title">Leitores: <i class="fas fa-book-reader"></i> <span class="text_dark_cyan">1</span></b><br /><br /><p>
+		<p><br /><b id="other_stories_title">Outras histórias: <i class="fas fa-book"></i> <span class="text_dark_cyan">8</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_blue margin_sides_5_cent" />
@@ -308,50 +306,8 @@
 			
 		</h2>
 	</button>
-	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Outras histórias" button -->
-	<span id="button_3" class="tab_button">
-		
-
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_cyan">
-		
-				Outras histórias: <i class="fas fa-book"></i>
-			
-		</h2>
-	</button>
-	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_blue margin_sides_5_cent" />	
-	<h2 class="text_size margin_sides_5_cent" style="">
-		<span class="text_light_blue"><span class="text_light_blue">1 - </span><span class="text_hover_white">No Readers - Sem Leitores</span><br />
-</span>
-	</h2>
-</div>
-
-</center>
-
-<center>
-
-<!-- "Outras histórias" tab -->
-<a id="other_stories_anchor" name="Outras histórias"></a>
-<div id="other_stories" class="w3-container tab header_size background_cyan text_dark_cyan border_4px border_color_light_blue box_shadow_light_blue border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
-	<!-- Tab title -->
-	<h2 class="text_size text_light_blue">
-		<p><br /><b id="other_stories_title">Outras histórias: <i class="fas fa-book"></i> <span class="text_dark_cyan">8</span></b><br /><br /><p>
-	</h2>
-
-	<hr class="border_1px border_color_light_blue margin_sides_5_cent" />
-			<span class="margin_sides_5_cent" style="float: left;"><!-- "Leitores" button -->
-	<span id="button_2" class="tab_button">
-		
-
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_cyan">
-		
-				Leitores: <i class="fas fa-book-reader"></i>
-			
-		</h2>
-	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Sites" button -->
-	<span id="button_4" class="tab_button">
+	<span id="button_3" class="tab_button">
 		
 
 	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
@@ -370,9 +326,7 @@
 				<b>Ilha Deserta</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_green_water border_radius_5_cent border_4px border_color_dark_green_water border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story covers/Desert Island/Português/Cover.jpg" style="max-width: 50vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -384,9 +338,7 @@
 				<b>New World</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_cyan border_radius_5_cent border_4px border_color_dark_cyan border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story covers/New World/Cover.png" style="max-width: 50vw; height: auto;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -405,14 +357,12 @@
 		<br />
 
 		<!-- "SpaceLiving" story card -->
-		<a class="w3-btn background_cyan border_4px border_color_dark_blue box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/New World/SpaceLiving/pt/" target="_blank" style="width: 100%;">
+		<a class="w3-btn background_cyan border_4px border_color_dark_blue box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/SpaceLiving/pt/" target="_blank" style="width: 100%;">
 			<h2 class="text_size text_dark_blue">
 				<b>SpaceLiving</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story covers/SpaceLiving/Cover.gif" style="max-width: 50vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -436,9 +386,7 @@
 				<b>A Vida de Pequenata</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_purple border_radius_6_cent border_4px border_color_dark_purple border_radius_6_cent" src="https://thestake2.netlify.app/Images/Story covers/The Life of Littletato/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -450,9 +398,7 @@
 				<b>O Segredo dos Cristais</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story covers/The Secret of the Crystals/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -464,9 +410,7 @@
 				<b>A História dos Irmãos Bulkan</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_brown border_radius_5_cent border_4px border_color_dark_brown border_radius_5_cent" src="https://thestake2.netlify.app/Images/Story covers/The Story of the Bulkan Siblings/Português/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -478,9 +422,7 @@
 				<b>Diário</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_black border_radius_5_cent border_4px border_color_black border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a>
 
@@ -492,9 +434,7 @@
 				<b>Diário Slim</b>
 			</h2>
 
-			<!-- Story card image -->
-			<img class="border_4px border_color_dark_orange border_radius_5_cent border_4px border_color_dark_orange border_radius_5_cent" src="https://thestake2.netlify.app/Images/Icons/Diário Slim.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
-
+			
 			<br />
 		</a></span>
 	</h2>
@@ -514,7 +454,7 @@
 
 	<hr class="border_1px border_color_light_blue margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Outras histórias" button -->
-	<span id="button_3" class="tab_button">
+	<span id="button_2" class="tab_button">
 		
 
 	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
@@ -583,6 +523,13 @@
 			</h2>
 		</button>
 
+		<!-- "Tasks" link button -->
+		<button class="w3-btn background_light_grey text_dark_grey border_4px border_color_dark_grey box_shadow_light_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Tasks/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Tarefas <i class="fas fa-tasks"></i>
+			</h2>
+		</button>
+
 		<!-- "Music" link button -->
 		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Music/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
@@ -590,15 +537,8 @@
 			</h2>
 		</button>
 
-		<!-- "Tasks" link button -->
-		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Tasks/pt/')" style="border-radius: 50px;">
-			<h2 class="text_size">
-				Tarefas <i class="fas fa-tasks"></i>
-			</h2>
-		</button>
-
 		<!-- "Stories" link button -->
-		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stories/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stories/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Histórias <i class="fas fa-book"></i>
 			</h2>
@@ -626,7 +566,7 @@
 		</button>
 
 		<!-- "SpaceLiving" link button -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/New World/SpaceLiving/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/SpaceLiving/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				SpaceLiving <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
@@ -729,7 +669,7 @@
 		<p><br /><b>Você está lendo: <span class="text_light_blue">New World</span><br />Capítulo: <span class="text_light_blue" id="chapter_1_title">1 - A criação do New World</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
@@ -742,14 +682,8 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_cyan image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/Story covers/New World/Português/1 - 10/01." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_1_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_1_text" class="text_size unselectable " style="text-align: left;">
 		História ainda não traduzida.
 <br /><br />
 		Palavras: 6<br /><br />
@@ -796,7 +730,7 @@
 		<p><br /><b>Você está lendo: <span class="text_light_blue">New World</span><br />Capítulo: <span class="text_light_blue" id="chapter_2_title">2 - A continuação</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
@@ -816,14 +750,8 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_cyan image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/Story covers/New World/Português/1 - 10/02." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_2_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_2_text" class="text_size unselectable " style="text-align: left;">
 		História ainda não traduzida.
 <br /><br />
 		Palavras: 6<br /><br />
@@ -877,7 +805,7 @@
 		<p><br /><b>Você está lendo: <span class="text_light_blue">New World</span><br />Capítulo: <span class="text_light_blue" id="chapter_3_title">3 - Expansão do New World</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
@@ -897,14 +825,8 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_cyan image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/Story covers/New World/Português/1 - 10/03." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_3_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_3_text" class="text_size unselectable " style="text-align: left;">
 		História ainda não traduzida.
 <br /><br />
 		Palavras: 6<br /><br />
@@ -958,7 +880,7 @@
 		<p><br /><b>Você está lendo: <span class="text_light_blue">New World</span><br />Capítulo: <span class="text_light_blue" id="chapter_4_title">4 - Visitação de universos midiáticos</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
@@ -978,14 +900,8 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_cyan image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/Story covers/New World/Português/1 - 10/04." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_4_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_4_text" class="text_size unselectable " style="text-align: left;">
 		História ainda não traduzida.<br />
 <br /><img class="image_size border_4px border_color_light_blue border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover.png" style="max-width: 50%;" /><br /><br />
 <br /><img class="image_size border_4px border_color_light_blue border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover Front Signboards.png" style="max-width: 50%;" /><br />
@@ -1041,7 +957,7 @@
 		<p><br /><b>Você está lendo: <span class="text_light_blue">New World</span><br />Capítulo: <span class="text_light_blue" id="chapter_5_title">5 - Rede SpaceLiving e Eventos Aleatórios</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
@@ -1061,14 +977,8 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_cyan image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/Story covers/New World/Português/1 - 10/05." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_5_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_5_text" class="text_size unselectable " style="text-align: left;">
 		História ainda não traduzida.
 <br /><br />
 		Palavras: 6<br /><br />
@@ -1122,7 +1032,7 @@
 		<p><br /><b>Você está lendo: <span class="text_light_blue">New World</span><br />Capítulo: <span class="text_light_blue" id="chapter_6_title">6 - A ausência programada</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
@@ -1135,14 +1045,8 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_cyan image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/Story covers/New World/Português/1 - 10/06." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
-		<h4 id="chapter_6_text" class="text_size unselectable" style="text-align: left;">
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_6_text" class="text_size unselectable " style="text-align: left;">
 		História ainda não traduzida.
 <br /><br />
 		Palavras: 6<br /><br />

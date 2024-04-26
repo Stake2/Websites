@@ -39,8 +39,8 @@ class Story_Class {
 			"pt": 'Lendo este arquivo de capítulo para pegar o texto do capítulo\n{0}'
 		},
 		"scrolled_to_the_write_chapter_element_to_write": {
-			"en": 'Scrolled to the "write chapter" element to write',
-			"pt": 'Descido até o elemento "escrever capítulo" para escrever'
+			"en": 'Scrolled to the "Write chapter" element to write',
+			"pt": 'Descido até o elemento "Escrever capítulo" para escrever'
 		}
 	}
 }
