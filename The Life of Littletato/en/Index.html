@@ -34,7 +34,7 @@
 	<meta name="twitter:image" type="image/png" content="/Images/The Life of Littletato/English.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -77,14 +77,14 @@
 	</style>
 
 	<!-- JavaScript files -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
 	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="/JavaScript/Story.js"></script>
-	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="/JavaScript/Story.js"></script>	
 
 	<script>
 		Check_Language()
@@ -96,14 +96,11 @@
 
 <!-- Open hamburger menu button -->
 
-
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
-		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
-		
-	<h2 class="text_size">
-		<i class="fas fa-bars"></i>
-	</h2>
-
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
 		</h3>
 	</button>
 
@@ -112,69 +109,58 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_light_purple_darker border_4px border_color_light_purple border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
-	
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
-		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
-		
-		<h4 class="text_size" style="font-weight: bold;">
-		X
-		</h4>
-	
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
 		</h3>
 	</button>
 
 	<h2 class="text_size text_light_salmon" style="font-weight: bold;">Tab menu: </h2>
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
-	<!-- "Read story" button -->
-	<span id="button_1" class="tab_button">
-		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Read story: <i class="fas fa-book-open"></i>
-			
+	<!-- "Read story" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Read story: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Readers" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Readers: <i class="fas fa-book-reader"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Readers: <i class="fas fa-book-reader"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Other stories" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span>
 
-	<!-- "Websites" button -->
-	<span id="button_4" class="tab_button">
-		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<!-- "Websites" button -->
+	<span id="button_4" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
@@ -206,12 +192,16 @@
 		She lived traveling between cities after she reached nineteen.<br />
 		She stopped in a city to look around and see how it was, it was San Francisco, and she met another girl there.<br />
 		They started to talk, know each other a little more, and the life of Littletato started to change.<br />
-		---<br />
+		-----<br />
 		Story author: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span><br />
 		Chapters: <i class="fas fa-book"></i> <span class="text_light_salmon">33</span><br />
 		Readers: <i class="fas fa-book-reader"></i> <span class="text_light_salmon">2</span><br />
 		Story creation date: <i class="fa-solid fa-calendar-days"></i> <span class="text_light_salmon">05/08/2017</span><br />
-		Status: <i class="fa-solid fa-pen"></i> <span class="text_light_salmon">Writing</span>
+		Status: <i class="fa-solid fa-pen"></i> <span class="text_light_salmon">Writing</span><br />
+-----
+<br />
+		Wattpad: <br /><a class="text_light_salmon" href="https://wattpad.com/story/118496571-the-life-of-littletato" target="_blank">https://wattpad.com/story/118496571-the-life-of-littletato</a><br />
+		Spirit Fanfics: <br /><a class="text_light_salmon" href="https://www.spiritfanfiction.com/historia/25569784" target="_blank">https://www.spiritfanfiction.com/historia/25569784</a>
 	</h3>
 	<br />
 </div>
@@ -230,14 +220,11 @@
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Readers" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Readers: <i class="fas fa-book-reader"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Readers: <i class="fas fa-book-reader"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
@@ -264,10 +251,10 @@
 			</h3>
 		</button>
 
-			<!-- Chapter button for "4 - The Relaxing Anime" chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'The Relaxing Anime');" style="border-radius: 50px;">
+			<!-- Chapter button for "4 - The New Year and the Relaxing Anime" chapter -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'The New Year and the Relaxing Anime');" style="border-radius: 50px;">
 			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
-				4 - The Relaxing Anime
+				4 - The New Year and the Relaxing Anime
 			</h3>
 		</button>
 
@@ -490,25 +477,19 @@
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Read story" button -->
-	<span id="button_1" class="tab_button">
-		
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Read story: <i class="fas fa-book-open"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Read story: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Other stories" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
@@ -533,25 +514,19 @@
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Readers" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Readers: <i class="fas fa-book-reader"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Readers: <i class="fas fa-book-reader"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Websites" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
@@ -691,14 +666,11 @@
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Other stories" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
@@ -906,7 +878,7 @@
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_1_title">1 - The Beginning, Part One</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -919,24 +891,18 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/01/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_1_text" class="text_size unselectable " style="text-align: left;">
 		Hello, I am Izaque Sanvezzo, Stake2, and Funkysnipa Cat.<br />
 <br />
-This is "The Life of Littletato", a story of mine, I created on August 5, 2017 (05/08/2017).<br />
+This is "The Life of Littletato", a story of mine, I created it on August 5, 2017 (05/08/2017).<br />
 I created it on the story website called "Wattpad", it was one of my first stories.<br />
 It came after my first story, "Desert Island", created on October 23, 2016 (23/10/2016).<br />
 I created an account on Wattpad and wanted to test the website, and how it would be to write on it, creating a story called "Littletato".<br />
 Which was a mix of "Little" and "Potato", then, I began to write it.<br />
 I wrote an entire chapter in one line, with grammatical and typographical errors, with few interesting things.<br />
 I still have files of the old chapters to read and see how my writing and storytelling skills have improved.<br />
-So, in 2021, I started to revise all of the chapters, to make them better.<br />
+So, in 2021, I started to revise all the chapters to improve them, I also translated it to Brazilian Portuguese.<br />
 And write them in the style of my story "SpaceLiving", with topics and transitions separated by paragraphs.<br />
 My story "SpaceLiving" was created on January 19, 2019 (19/01/2019).<br />
 I got inspired to start writing stories because of a Brazilian story in the green text format, a writing style that originated on the website 4chan.<br />
@@ -957,7 +923,7 @@ So, thanks for giving my story a try, and I hope you enjoy reading it as much as
 <br />
 This story is inspired by:<br />
 Slice of life anime, that shows the everyday life of a person.<br />
-The anime "Yuru Camp", shows the lives of girls who like to camp as a pastime and their daily lives.<br />
+The anime "Yuru Camp", that shows the lives of girls who like to camp as a pastime and their daily lives.<br />
 It is a very relaxing anime about camping, and it has a very relaxing soundtrack too, which I always listen to while writing Littletato.<br />
 I would say that the soundtrack of Littletato is the soundtrack of Yuru Camp, and also songs from the folk genre.<br />
 Littletato would also like to go camping just like the girls of the anime.<br />
@@ -968,6 +934,11 @@ For example, in various media, anime, cartoons, series, movies, and videos that 
 With this story, I have the wish to show the daily life of Littletato, what her life is like, and how incredible it is.<br />
 I love this story so much, and I'm happy to write it and to have created it.<br />
 <br />
+Dates of the chapter:<br />
+This chapter was originally written on August 5, 2017, at 23:44.<br />
+It was last revised on February 20, 2024, at 01:27.<br />
+And it was translated into English on February 24, 2024, at 19:35.<br />
+<br />
 Littletato was a girl that lived alone, she was always traveling through cities, looking for a good city to live in.<br />
 She loved to travel, experience new things, places, and nature, smell new smells, and hear new sounds.<br />
 Littletato was nineteen years old in 2019, and was born on February 4, 2000.<br />
@@ -976,6 +947,8 @@ She was born and lived most of her life in Los Angeles, in the state of Californ
 Littletato is bisexual, she discovered herself when she was little, and realized that she also liked girls.<br />
 Her parents were Brazilian, they came from Brazil to the United States in search of job opportunities, before having children.<br />
 They lived in the city of Maringá, in the state of Paraná, and saved money to travel.<br />
+Littletato speaks Brazilian Portuguese and English fluently, but is more used to English.<br />
+Her parents taught her Brazilian Portuguese at home since she was little.<br />
 While she was traveling, the girl stopped by a city called "San Francisco", in California, in the United States, and started analyzing, the weather, traffic, and people.<br />
 She found another girl while walking in San Francisco, it was afternoon, after mid-day, and a little cold.<br />
 Her name was Júlia and she was eighteen years old, she was born on Jun 25, 2000.<br />
@@ -1112,9 +1085,22 @@ Littletato hugged Júlia tightly from behind and kissed her neck, Júlia shivere
 "I love you, Tato," said Júlia, smiling, and kissed Littletato's hand.<br />
 "I love you too, Ju," said Littletato, who sniffed Júlia's hair and closed her eyes.<br />
 They slept soundly into the night, waiting for tomorrow, for a new day they would spend together.
-		<br /><br />
-		Chapter written in: 05/08/2017<br />
-		Words: 2,977<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+23:44 05/08/2017<br /><br />
+		
+Chapter revised in:
+<br />
+01:27 20/02/2024<br /><br />
+		
+Chapter translated to English in:
+<br />
+19:35 24/02/2024<br /><br />
+		Words:
+<br />
+3.066 words<br /><br />
 		</h4>
 		
 
@@ -1222,7 +1208,7 @@ They slept soundly into the night, waiting for tomorrow, for a new day they woul
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_2_title">2 - The Beginning, Part Two</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -1242,16 +1228,15 @@ They slept soundly into the night, waiting for tomorrow, for a new day they woul
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/02/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_2_text" class="text_size unselectable " style="text-align: left;">
-		It was six o'clock in the afternoon, a Thursday, and Littletato was walking home.<br />
-The girl had finished her day of work and was carrying some shopping bags she had packed at the neighborhood supermarket.<br />
+		Dates of the chapter:<br />
+This chapter was originally written on August 6, 2017, at 00:17.<br />
+It was last revised on March 14, 2024, at 04:12.<br />
+And it was translated into English on March 21, 2024, at 00:48.<br />
+<br />
+It was six o'clock in the afternoon, a Thursday, and Littletato was walking home.<br />
+The girl had finished her day of work and was carrying some shopping bags she had packed at the neighborhood supermarket called "Safeway".<br />
 In the bags, there were vegetables, fruits, milk, eggs, and two packages of chocolate-stuffed crackers.<br />
 Littletato met with a friend that she and Júlia had made during the months they lived together in San Francisco.<br />
 They met when Littletato was having a picnic with Júlia in a park on a Sunday.<br />
@@ -1285,11 +1270,11 @@ Júlia also occasionally chatted with Iam on WhatsApp.<br />
 Then Littletato left the shopping bags on the kitchen table.<br />
 She and Júlia stored their purchases in the kitchen cupboards and the fridge.<br />
 Then the two girls started preparing dinner.<br />
-Littletato made rice seasoned with salt, garlic, onion, and chopped carrots.<br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/02/Images/Dinner.png" style="max-width: 50%;" /><br /><br />
 She also cooked beans well seasoned with salt, garlic, onion, black pepper, and bay leaf.<br />
 The smell of the rice and beans was wonderful.<br />
 Júlia made two scrambled eggs fried with salt, parsley, oregano, and chopped mozzarella cheese.<br />
-The girl also cooked potatoes and carrots with salt, onion, and parsley, and orange juice with ice cubes.<br />
+The girl also made cooked potatoes and carrots with salt, onion, and parsley, and orange juice with ice cubes.<br />
 <a href="https://thestake2.netlify.app/Images/The%20Life%20of%20Littletato/Chapters/02/Images/Dinner.png" target="_blank" class="text_light_salmon text_hover_light_salmon">https://thestake2.netlify.app/Images/The%20Life%20of%20Littletato/Chapters/02/Images/Dinner.png</a><br />
 Then they prepared the table to eat, placing all the pans with food, plates, cutlery, and glasses.<br />
 Littletato and Júlia began to eat the delicious dinner they had prepared together, while talking.<br />
@@ -1448,7 +1433,7 @@ A "Battle royale" game mode is an online multiplayer game mode.<br />
 This mode combines last-man-standing gameplay with the survival, exploration, and resource-gathering elements of a survival game.<br />
 Battle royale games involve dozens to hundreds of players, who start with minimal equipment.<br />
 And then must eliminate all other opponents, collecting resources and weaponry on the battlefield.<br />
-While avoiding being trapped outside a shrinking "safe area", with the winner being the last player or team alive. <br />
+While avoiding being trapped outside a shrinking "safe area", with the winner being the last player or team alive.<br />
 <br />
 After playing a few matches of the game, it was eight and a half in the morning.<br />
 Littletato closed the game and turned her computer off, getting up.<br />
@@ -1522,9 +1507,22 @@ Littletato kissed Júlia on the lips, smiling.<br />
 "Good night my love, sleep well, I love you honey," said Littletato.<br />
 Júlia returned the kiss and smiled back, "Good night love, sleep well too, I love you too honey," replied her.<br />
 Then the girls slept together in the cold night, waiting for another day.
-		<br /><br />
-		Chapter written in: 06/08/2017<br />
-		Words: 3,855<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+00:17 06/08/2017<br /><br />
+		
+Chapter revised in:
+<br />
+04:12 14/03/2024<br /><br />
+		
+Chapter translated to English in:
+<br />
+00:48 21/03/2024<br /><br />
+		Words:
+<br />
+3.936 words<br /><br />
 		</h4>
 		
 
@@ -1619,7 +1617,7 @@ Then the girls slept together in the cold night, waiting for another day.
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_3_title">3 - The Picnic and the Visit</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -1631,7 +1629,7 @@ Then the girls slept together in the cold night, waiting for another day.
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'The Relaxing Anime');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'The New Year and the Relaxing Anime');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1639,15 +1637,14 @@ Then the girls slept together in the cold night, waiting for another day.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/03/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_3_text" class="text_size unselectable " style="text-align: left;">
-		It was seven thirty minutes in the morning, a Saturday, and Littletato did not have to work today.<br />
+		Dates of the chapter:<br />
+This chapter was originally written on August 28, 2017, at 05:00.<br />
+It was last revised on April 8, 2024, at 00:16.<br />
+And it was translated into English on April 20, 2024, at 19:51.<br />
+<br />
+It was seven thirty minutes in the morning, a Saturday, and Littletato did not have to work today.<br />
 Littletato woke up and looked at the sun shining through the window.<br />
 She woke up Júlia with a kiss on her lips, "Good morning my love," said her.<br />
 "Good morning honey," replied Júlia, returning the kiss, and hugging her.<br />
@@ -1690,7 +1687,7 @@ Then the girls divided the list into two, to make it easier to prepare everythin
 Littletato would buy snacks, and make a delicious vegetable pie.<br />
 Júlia would buy some sweets and make a chocolate cake.<br />
 After listing everything they would need, they both left the house with their bicycles, locking the door.<br />
-They went to the Safeway supermarket together and bought everything on their shopping list.<br />
+They went to the "Safeway" supermarket together, and bought everything on their shopping list.<br />
 <br />
 After that, they both returned home and put away their shopping.<br />
 Littletato had bought a picnic basket with a cooler bag.<br />
@@ -1895,10 +1892,23 @@ Then they had dinner, and after that, they rested their bellies while watching t
 After that, they went to the bedroom and lay down on the bed, covering themselves.<br />
 The girls said "I love you" to each other, wishing them a good night, and kissing each other.<br />
 They were tired after a long day, with the picnic, and the visit from Júlia's sister, Vitória.<br />
-And they were also happy for this so special day, then they slept in the stary night.
-		<br /><br />
-		Chapter written in: 28/08/2017<br />
-		Words: 3,485<br /><br />
+And they were also happy for this so special day, then they slept in the starry night.
+<br /><br />
+		
+Chapter written in:
+<br />
+05:00 28/08/2017<br /><br />
+		
+Chapter revised in:
+<br />
+00:16 08/04/2024<br /><br />
+		
+Chapter translated to English in:
+<br />
+19:51 20/04/2024<br /><br />
+		Words:
+<br />
+3.540 words<br /><br />
 		</h4>
 		
 
@@ -1910,7 +1920,7 @@ And they were also happy for this so special day, then they slept in the stary n
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'The Relaxing Anime');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'The New Year and the Relaxing Anime');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1975,15 +1985,15 @@ And they were also happy for this so special day, then they slept in the stary n
 	<br /><br />
 </div>
 
-<!-- Chapter tab for "4 - The Relaxing Anime" chapter -->
-<a id="chapter_4_anchor" name="4 - The Relaxing Anime"></a>
+<!-- Chapter tab for "4 - The New Year and the Relaxing Anime" chapter -->
+<a id="chapter_4_anchor" name="4 - The New Year and the Relaxing Anime"></a>
 <div id="chapter_4" class="tab header_size background_light_purple_darker text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2px; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
-		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_4_title">4 - The Relaxing Anime</span></b><br /><br /><p>
+		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_4_title">4 - The New Year and the Relaxing Anime</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -2003,15 +2013,17 @@ And they were also happy for this so special day, then they slept in the stary n
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/04/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_4_text" class="text_size unselectable " style="text-align: left;">
-		Vitória said that there were great jobs in the city that she lived.<br />
+		Dates of the chapter:<br />
+This chapter was originally written on September 15, 2017, at 19:23.<br />
+It was last revised on May 3, 2024, at 20:42.<br />
+And it was translated into English on ?, at ?.<br />
+<br />
+The revised chapter has not yet been translated.<br />
+Here is the old version of the chapter:<br />
+<br />
+Vitória said that there were great jobs in the city that she lived.<br />
 Littletato said that she already had a great job in San Francisco, working for a technology company.<br />
 "Oh, that's great Littletato," said Vitória.<br />
 "Thanks," replied Littletato.<br />
@@ -2066,7 +2078,7 @@ Because of you, so... thanks, honey," said Júlia, looking at Littletato.<br />
 <br />
 "Hehe, no problem, honey, I'm glad that I could help you boost your confidence, honey, I was scared at first too.<br />
 But seeing you, living here with no problem, listening to you say what you think about the city and why you love it...<br />
-It made me love San Francisco here, and it made me love you too, it made me want to live with you here.<br />
+<div class="video-container" style="margin-top: 1%; margin-bottom: -6%;"><iframe type="text/html" width="560" height="315" frameborder="0" class="border_radius_5_cent border_4px border_color_light_salmon" src="https://www.youtube.com/embed/cs4qzCzJTKk?autoplay=0&fs=1&iv_load_policy=1&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&" title="YouTube video player"></iframe></div><br /><br /><br /><br />
 I was loving you so much at that time when I started working in San Francisco.<br />
 And I still love you very much, honey," said Littletato, who gave a kiss on Júlia's lips.<br />
 Júlia smiled and kissed Littletato back, continuing to eat.<br />
@@ -2076,8 +2088,8 @@ Covering themselves with the blanket, hugging tight, and sleeping together, havi
 Some hours have passed, Littletato woke up and looked at the hours, it was six in the morning.<br />
 She got up and walked to the bathroom to do her morning needs.<br />
 After that, Littletato walked to the kitchen and picked up her phone.<br />
-She put to play a song of an anime called "<a href="https://www.youtube.com/watch?v=xZIqgCHrhRM" target="_blank">Yuru Camp</a>", it was a very calm song with violins, banjos, and flutes.<br />
-<a href="https://www.youtube.com/watch?v=xZIqgCHrhRM" target="_blank" class="text_light_salmon text_hover_light_salmon">https://www.youtube.com/watch?v=xZIqgCHrhRM</a><br />
+She put to play a song of an anime called "Yuru Camp", it was a very calm song with violins, banjos, and flutes.<br />
+<a href="https://www.youtube.com/watch?v=cs4qzCzJTKk" target="_blank" class="text_light_salmon text_hover_light_salmon">https://www.youtube.com/watch?v=cs4qzCzJTKk</a><br />
 The anime was about girls camping, Littletato loved that anime, it was so calming and relaxing.<br />
 She was very happy listening to the songs of the anime and was also happy when she watched the anime for the first time.<br />
 Yuru Camp reminded her of her childhood memories and when she rode her bicycle, the mornings she had.<br />
@@ -2110,23 +2122,31 @@ Camping looked to be so much fun to Littletato, she wanted to try it sometime.<b
 Yuru Camp showed her how awesome, relaxing, and fun camping is.<br />
 Júlia wanted to try it too, she asked Littletato if she wanted to camp with her, Littletato said yes.<br />
 Júlia was very happy, she looked at Rin, camping, it seemed so relaxing and fun, Rin looked so happy.<br />
-<br />
 Then, after watching the episode for some time, it ended.<br />
 Júlia and Littletato drank some water, then they used the bathroom and walked to the bedroom.<br />
 The couple laid on the bed and covered themselves with the blanket.<br />
 Littletato hugged Júlia tight and closed her eyes, sleeping with her.<br />
 <br />
-(I wrote this chapter on 15/09/2017 and reviewed it on 28/08/2020.<br />
-It was so much fun to write and review it, I reviewed it while listening to this mix on Vegetube here:<br />
-<a href="https://www.youtube.com/watch?v=xZIqgCHrhRM" target="_blank" class="text_light_salmon text_hover_light_salmon">https://www.youtube.com/watch?v=xZIqgCHrhRM</a><br />
+(It was so much fun to write and review it, I reviewed it while listening to this mix on Vegetube here:<br />
+<a href="https://www.youtube.com/watch?v=cs4qzCzJTKk" target="_blank" class="text_light_salmon text_hover_light_salmon">https://www.youtube.com/watch?v=cs4qzCzJTKk</a><br />
 I love the anime Yuru Camp, it is so fun and relaxing, calming, I love to watch it.<br />
 That's why I put it on the chapter, because I love it, and I reviewed this chapter while listening to the soundtrack of it.<br />
 Thank you for watching- I mean, for reading, hehe. ^^<br />
 Watch Yuru Camp, it is a very good anime, it will have a second season, I will watch it. :3<br />
-Leave a suggestion in the comments (Comment button) of what you like to appear or happen in The Life of Littletato, bye. ^^)
-		<br /><br />
-		Chapter written in: 15/09/2017<br />
-		Words: 1,664<br /><br />
+Leave a suggestion in the comments (Comment button) of what you like to appear or happen in The Life of Littletato, bye. ^^)<br />
+<a href="https://www.youtube.com/watch?v=cs4qzCzJTKk" target="_blank">Yuru Camp OST #04 - Solo Camp Recommendation</a>
+<br /><br />
+		
+Chapter written in:
+<br />
+19:23 15/09/2017<br /><br />
+		
+Chapter revised in:
+<br />
+20:40 03/06/2024<br /><br />
+		Words:
+<br />
+1.761 words<br /><br />
 		</h4>
 		
 
@@ -2144,13 +2164,13 @@ Leave a suggestion in the comments (Comment button) of what you like to appear o
 			</h3>
 		</button>
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Modal('comment', '4 - The Relaxing Anime')" style="float: right; margin-right: 1%;">
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Modal('comment', '4 - The New Year and the Relaxing Anime')" style="float: right; margin-right: 1%;">
 		<h3 class="text_size text_dark_purple"  style="font-weight: bold;">
 		Comment: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Modal('read', '4 - The Relaxing Anime')" style="float: right; margin-right: 1%;">
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Modal('read', '4 - The New Year and the Relaxing Anime')" style="float: right; margin-right: 1%;">
 		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
 		I read: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
@@ -2164,7 +2184,7 @@ Leave a suggestion in the comments (Comment button) of what you like to appear o
 
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
-		<p><br /><b>You just read: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_4_title">4 - The Relaxing Anime</span></b><br /><br /><p>
+		<p><br /><b>You just read: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_4_title">4 - The New Year and the Relaxing Anime</span></b><br /><br /><p>
 	</h3>
 	<br /><br />
 </div>
@@ -2177,12 +2197,12 @@ Leave a suggestion in the comments (Comment button) of what you like to appear o
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_5_title">5 - The Space Traveler Dream</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'The Relaxing Anime');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'The New Year and the Relaxing Anime');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
@@ -2197,13 +2217,7 @@ Leave a suggestion in the comments (Comment button) of what you like to appear o
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/05/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_5_text" class="text_size unselectable " style="text-align: left;">
 		Littletato was drawing something on her computer using a program called Paint Tool SAI.<br />
 It was a program where you could draw digitally, using pencils, brushes, and make line art.<br />
@@ -2298,14 +2312,19 @@ Then Júlia grabbed the animal and began to follow Littletato.<br />
 Littletato grabbed some materials that were closed to the crashed spaceship and walked to her spaceship.<br />
 Júlia and she entered the spaceship, Littletato turned the spaceship on, taking off and driving to the deposit.<br />
 Then the dream changed to another dream, Littletato and Júlia were sleeping happy, together, in love with each other.
-		<br /><br />
-		Chapter written in: 02/11/2017<br />
-		Words: 1,728<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+02:34 02/11/2017<br /><br />
+		Words:
+<br />
+1.736 words<br /><br />
 		</h4>
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'The Relaxing Anime');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'The New Year and the Relaxing Anime');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
@@ -2351,7 +2370,7 @@ Then the dream changed to another dream, Littletato and Júlia were sleeping hap
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_6_title">6 - The Saturday and the Park</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -2371,13 +2390,7 @@ Then the dream changed to another dream, Littletato and Júlia were sleeping hap
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/06/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_6_text" class="text_size unselectable " style="text-align: left;">
 		Littletato then woke up, she looked at the clock and saw that was six in the morning, she then looked at the calendar and realized that it was Saturday, then she hugged Júlia tight and slept again while caressing the hair of Júlia.<br />
 <br />
@@ -2459,9 +2472,14 @@ Littletato covered herself and Júlia with the blanket.<br />
 "Good night honey," said Littletato with a gentle voice.<br />
 "Good... night my dear," said Júlia, slowly falling asleep again, smiling and humming with happiness.<br />
 They both slept together in the silent night.
-		<br /><br />
-		Chapter written in: 21/11/2017<br />
-		Words: 1,087<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+02:54 21/11/2017<br /><br />
+		Words:
+<br />
+1.095 words<br /><br />
 		</h4>
 		
 
@@ -2512,7 +2530,7 @@ They both slept together in the silent night.
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_7_title">7 - Sunday Video Game Session</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -2532,13 +2550,7 @@ They both slept together in the silent night.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_7" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/07/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_7_text" class="text_size unselectable " style="text-align: left;">
 		It was a Sunday, Littletato just wanted to sleep the whole day, because that is what people do on Sunday, she was awake.<br />
 <br />
@@ -2589,9 +2601,14 @@ I had a lot of fun today my dear, thanks," replies Littletato, who starts caress
 "I also had fun honey, thanks for that, hehe, I love it when you pet me," says Júlia while smiling.<br />
 "And I love to pet you, Júlia," replies her.<br />
 They both close their eyes and sleep in the silent night, it is raining softly.
-		<br /><br />
-		Chapter written in: 02/01/2018<br />
-		Words: 749<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+22:12 02/01/2018<br /><br />
+		Words:
+<br />
+757 words<br /><br />
 		</h4>
 		
 
@@ -2642,7 +2659,7 @@ They both close their eyes and sleep in the silent night, it is raining softly.
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_8_title">8 - Littletato's Programming, the Exciting Film</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -2662,13 +2679,7 @@ They both close their eyes and sleep in the silent night, it is raining softly.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_8" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/08/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_8_text" class="text_size unselectable " style="text-align: left;">
 		It was a Monday, Littletato woke up and yawned, she had to get ready for work.<br />
 She looked at the clock and it was six in the morning, Júlia was still sleeping.<br />
@@ -2761,9 +2772,14 @@ Littletato kisses Júlia in her lips and smiles while caressing her hair.<br />
 "Thanks, my dear, I love when you pet me like this, it makes me feel so special," replies Júlia.<br />
 "Hehe, I love you my little sweet potato," says Littletato.<br />
 They hug tight and cover themselves with the blanket, sleeping right after.
-		<br /><br />
-		Chapter written in: 04/02/2018<br />
-		Words: 1,205<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+03:33 04/02/2018<br /><br />
+		Words:
+<br />
+1.213 words<br /><br />
 		</h4>
 		
 
@@ -2814,7 +2830,7 @@ They hug tight and cover themselves with the blanket, sleeping right after.
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_9_title">9 - The Dream and the Livestream</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -2834,13 +2850,7 @@ They hug tight and cover themselves with the blanket, sleeping right after.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_9" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/09/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_9_text" class="text_size unselectable " style="text-align: left;">
 		It was a Tuesday, Littletato was dreaming of a field, a big and tall wheat field with a sunrise, she looked close to the sun and smiled.<br />
 A heavy wind hit her and she tried not to fall, she felt great there, and calm, feeling the wind and nature, she loved to see nature in all of its forms.<br />
@@ -2950,9 +2960,14 @@ Littletato gives a kiss on the neck of Júlia, she giggles a little.<br />
 "Good night, hon, I love you," says Littletato to Júlia.<br />
 "Good night, honey, I love you too, my little potato," replies her.<br />
 Then they sleep, waiting for the next day.
-		<br /><br />
-		Chapter written in: 27/05/2018<br />
-		Words: 1,830<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+04:04 27/05/2018<br /><br />
+		Words:
+<br />
+1.838 words<br /><br />
 		</h4>
 		
 
@@ -3003,7 +3018,7 @@ Then they sleep, waiting for the next day.
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_10_title">10 - The Allegoric Dream</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -3023,13 +3038,7 @@ Then they sleep, waiting for the next day.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_10" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/10/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_10_text" class="text_size unselectable " style="text-align: left;">
 		It was a Wednesday, Littletato was sleeping and dreaming.<br />
 She was dreaming of a dream where she was lying on a cloud while looking at the sun, Júlia was at her side.<br />
@@ -3135,9 +3144,14 @@ A fridge that creates anything you think of? I can't believe that..."<br />
 She lowered the volume of the television and closed her eyes to sleep.<br />
 Júlia was thinking about Littletato, she was sleeping while smiling.<br />
 She had good dreams while sleeping in the afternoon.
-		<br /><br />
-		Chapter written in: 08/07/2018<br />
-		Words: 1,525<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+19:30 08/07/2018<br /><br />
+		Words:
+<br />
+1.533 words<br /><br />
 		</h4>
 		
 
@@ -3188,7 +3202,7 @@ She had good dreams while sleeping in the afternoon.
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_11_title">11 - The Dream of the Trip and the Picnic</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -3208,13 +3222,7 @@ She had good dreams while sleeping in the afternoon.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_11" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/11/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_11_text" class="text_size unselectable " style="text-align: left;">
 		It was a Thursday, Littletato was dreaming of pizzas, a lot of pizzas flying in the sky while she was sat on the surface of a desert.<br />
 The sun was not too hot, it was a little chill there, the breeze was a little cold, she liked the weather.<br />
@@ -3319,9 +3327,14 @@ Then she locked the front door and left the bicycle's key on the key holder of t
 She walked to the kitchen, drank a whole bottle of water, and ate an apple, she was a little tired.<br />
 Júlia walked to the living room and laid on the couch, turning on the television.<br />
 She closed her eyes and slept on the warm noon, waiting for Littletato to come from work.
-		<br /><br />
-		Chapter written in: 22/07/2018<br />
-		Words: 1,757<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+18:21 22/07/2018<br /><br />
+		Words:
+<br />
+1.765 words<br /><br />
 		</h4>
 		
 
@@ -3372,7 +3385,7 @@ She closed her eyes and slept on the warm noon, waiting for Littletato to come f
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_12_title">12 - The Cookie, Cyberpunk, and the Castle of Glass Dreams</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -3392,13 +3405,7 @@ She closed her eyes and slept on the warm noon, waiting for Littletato to come f
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_12" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/12/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_12_text" class="text_size unselectable " style="text-align: left;">
 		It was a Friday, Littletato was dreaming of cookies, she ate a lot of them.<br />
 She asked herself why she always had food dreams, maybe it is because she loved eating stuff.<br />
@@ -3530,9 +3537,14 @@ He said that the Food Generator was just a Thing Generator but configured to gen
 "No problem Littletato, hehe," said Twilight Sparkle.<br />
 Then Littletato started walking to the kitchen, she opened the fridge and grabbed a pack of milk.<br />
 After that, Littletato closed the fridge and looked at the kitchen sink, there was a black cube there, maybe that was the Food Generator that Twilight talked about.)
-		<br /><br />
-		Chapter written in: 23/08/2018<br />
-		Words: 2,442<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+20:51 23/08/2018<br /><br />
+		Words:
+<br />
+2.450 words<br /><br />
 		</h4>
 		
 
@@ -3583,7 +3595,7 @@ After that, Littletato closed the fridge and looked at the kitchen sink, there w
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_13_title">13 - The Cupcake Dream and the Superhero Movie</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -3603,13 +3615,7 @@ After that, Littletato closed the fridge and looked at the kitchen sink, there w
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_13" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/13/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_13_text" class="text_size unselectable " style="text-align: left;">
 		It was a Friday, before midnight, Littletato was dreaming, she was very calm inside her current dream, she felt happy and relaxed.<br />
 She was seeing a beautiful castle of glass, it was transparent and you could see the things inside it, it was really beautiful.<br />
@@ -3727,9 +3733,14 @@ I'm really happy, I listened to my Future Bass Playlist on YouTube while writing
 <br />
 Thank you so much for reading.<br />
 Mark the chapter as read and leave a comment, please! Thanks. ^^)
-		<br /><br />
-		Chapter written in: 24/09/2018<br />
-		Words: 2,209<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+01:33 24/09/2018<br /><br />
+		Words:
+<br />
+2.217 words<br /><br />
 		</h4>
 		
 
@@ -3780,7 +3791,7 @@ Mark the chapter as read and leave a comment, please! Thanks. ^^)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_14_title">14 - A Happy New Year in 2019</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -3800,13 +3811,7 @@ Mark the chapter as read and leave a comment, please! Thanks. ^^)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_14" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/14/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_14_text" class="text_size unselectable " style="text-align: left;">
 		It was a Sunday, in the year 2018, Littletato was working on her job on New Year's Eve, she could leave work early this day because of the New Year's Eve.<br />
 Littletato then grabbed her things and said happy new year to her coworker Mia.<br />
@@ -3922,9 +3927,14 @@ Thank you so much for reading! And thank you for reading Littletato for all the 
 And also for reading the story during 2020.<br />
 I hope to revise even more chapters in 2021, the chapters made in 2019.<br />
 Thank you for reading my dear reader &colon;3 😊.)
-		<br /><br />
-		Chapter written in: 01/01/2019<br />
-		Words: 2,157<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+04:55 01/01/2019<br /><br />
+		Words:
+<br />
+2.165 words<br /><br />
 		</h4>
 		
 
@@ -3975,7 +3985,7 @@ Thank you for reading my dear reader &colon;3 😊.)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_15_title">15 - Memories, the Search For a Job, and the Game</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -3995,13 +4005,7 @@ Thank you for reading my dear reader &colon;3 😊.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_15" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/15/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_15_text" class="text_size unselectable " style="text-align: left;">
 		It was Monday, it was a little cold, Littletato woke up, she got to work today.<br />
 Littletato thought about last night, it was Sunday, day 31 of December 2018, she was happy, watching that superhero movie with Júlia while eating Doritos and drinking Coca-cola.<br />
@@ -4119,9 +4123,14 @@ I revised this chapter while listening to the soundtrack of the Yuru Camp anime,
 I love to write Littletato so much, I love this story. &colon;3<br />
 Thank you for reading this story and this chapter, today I watched an episode of the Yuru Camp anime.<br />
 I recommend that you watch it, it is very good and relaxing, I love to watch it just as much as I love writing Littletato.)
-		<br /><br />
-		Chapter written in: 13/01/2019<br />
-		Words: 2,377<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+21:22 13/01/2019<br /><br />
+		Words:
+<br />
+2.385 words<br /><br />
 		</h4>
 		
 
@@ -4172,7 +4181,7 @@ I recommend that you watch it, it is very good and relaxing, I love to watch it 
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_16_title">16 - The City Dream, Job Message, and the Battle Royale Game</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -4192,13 +4201,7 @@ I recommend that you watch it, it is very good and relaxing, I love to watch it 
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_16" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/16/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_16_text" class="text_size unselectable " style="text-align: left;">
 		It was a Tuesday, Littletato was dreaming about traveling the world by bicycle, she had money and supplies in bags that were tied to her bicycle.<br />
 That was a very good way to live life, traveling and stuff, seeing a lot of new places and new faces.<br />
@@ -4320,9 +4323,14 @@ I think Littletato and Rin are a little bit alike, and the Littletato website to
 Of a place where you can spend time and relax, a warm house of wood in the winter, that's how I feel about this website, Yuru Camp, and The Life of Littletato.<br />
 I feel like this is a quiet, calm, and warm place to spend some time and relax, relaxing while reading a story about a potato. xD<br />
 Thanks for reading this chapter, my dear reader, leave a comment on the Comment button and register your read on the I Read It button. :3)
-		<br /><br />
-		Chapter written in: 29/01/2019<br />
-		Words: 2,528<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+23:06 29/01/2019<br /><br />
+		Words:
+<br />
+2.536 words<br /><br />
 		</h4>
 		
 
@@ -4373,7 +4381,7 @@ Thanks for reading this chapter, my dear reader, leave a comment on the Comment 
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_17_title">17 - The Job Interview and the Stories</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -4393,13 +4401,7 @@ Thanks for reading this chapter, my dear reader, leave a comment on the Comment 
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_17" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/17/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_17_text" class="text_size unselectable " style="text-align: left;">
 		It was a Wednesday, Júlia woke up first, she was dreaming about the rain, hearing the sounds of the raindrops and the thunders.<br />
 She got out of bed, she had to go to her job interview at the Safeway supermarket franchise that existed in San Francisco.<br />
@@ -4513,9 +4515,14 @@ I want to continue writing more Littletato and also write the "spin-off" version
 I think a spin-off is something that is not shown in the original story and is shown in a side story.<br />
 Anyway, thank you for reading chapter 17 of The Life of Littletato, send me a message on my social media saying what you thought about the chapter, please.<br />
 Thanks, bye. :3)
-		<br /><br />
-		Chapter written in: 02/02/2019<br />
-		Words: 2,162<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+23:14 02/02/2019<br /><br />
+		Words:
+<br />
+2.170 words<br /><br />
 		</h4>
 		
 
@@ -4566,7 +4573,7 @@ Thanks, bye. :3)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_18_title">18 - The Job Acceptance, the Conversation, and the Pizza</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -4586,13 +4593,7 @@ Thanks, bye. :3)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_18" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/18/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_18_text" class="text_size unselectable " style="text-align: left;">
 		It was a Thursday, Littletato was awake, she got up and prepared herself for her job.<br />
 She made breakfast and woke up Júlia, then she ate with her.<br />
@@ -4709,10 +4710,15 @@ I also liked to write about Júlia and Iam's conversation.<br />
 I loved to write about Júlia and Littletato eating a pizza, I was also eating a pizza when I wrote that.<br />
 And I liked to write that Littletato also likes to write stories just like me :3.<br />
 I revised this chapter while listening to the awesome and relaxing soundtrack of the "Yuru Camp" anime.<br />
-"Yuru Camp" soundtrack: <a href="https://www.youtube.com/watch?v=xZIqgCHrhRM." target="_blank" class="text_light_salmon text_hover_light_salmon">https://www.youtube.com/watch?v=xZIqgCHrhRM.</a>)
-		<br /><br />
-		Chapter written in: 07/02/2019<br />
-		Words: 2,290<br /><br />
+"<a href="https://www.youtube.com/watch?v=cs4qzCzJTKk" target="_blank">Yuru Camp soundtrack</a>".)
+<br /><br />
+		
+Chapter written in:
+<br />
+23:48 07/02/2019<br /><br />
+		Words:
+<br />
+2.284 words<br /><br />
 		</h4>
 		
 
@@ -4763,7 +4769,7 @@ I revised this chapter while listening to the awesome and relaxing soundtrack of
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_19_title">19 - Júlia's First Day of Work</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -4783,13 +4789,7 @@ I revised this chapter while listening to the awesome and relaxing soundtrack of
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_19" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/19/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_19_text" class="text_size unselectable " style="text-align: left;">
 		It was a Friday, Júlia had to work today, but only at ten AM, Júlia woke up first, did her morning needs and walked to the kitchen.<br />
 The girl prepared breakfast, she was happy because she was going to work on a new job today, she thought that it was going to be hard to learn, but she was eager to learn.<br />
@@ -4897,13 +4897,18 @@ And finished revising it on 19/02/2021.<br />
 I finished revising chapter number 19 on day 19 :).<br />
 <br />
 It was very good revising this chapter, I was very happy about it, searching for how salary is paid in the United States, and writing about the anime references in the last part.<br />
-I revised this chapter while listening to the "<a href="https://www.youtube.com/watch?v=xZIqgCHrhRM" target="_blank">Yuru Camp soundtrack</a>".<br />
+I revised this chapter while listening to the "<a href="https://www.youtube.com/watch?v=cs4qzCzJTKk" target="_blank">Yuru Camp soundtrack</a>".<br />
 <a href="https://www.youtube.com/watch?v=xZIqgCHrhRM" target="_blank" class="text_light_salmon text_hover_light_salmon">https://www.youtube.com/watch?v=xZIqgCHrhRM</a><br />
 I also listened to a mix of anime openings, they are very good, I like the Bunny Girl Senpai one.<br />
 Thank you for reading ^^.)
-		<br /><br />
-		Chapter written in: 26/02/2019<br />
-		Words: 2,438<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+12:20 26/02/2019<br /><br />
+		Words:
+<br />
+2.447 words<br /><br />
 		</h4>
 		
 
@@ -4954,7 +4959,7 @@ Thank you for reading ^^.)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_20_title">20 - The Coffee, the Car, and Driving with Music</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -4974,13 +4979,7 @@ Thank you for reading ^^.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_20" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/20/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_20_text" class="text_size unselectable " style="text-align: left;">
 		It was a Saturday, Littletato was sat on the couch, she yawned a little, looking at her phone, it was eight AM, she had nothing to do today.<br />
 Júlia was sat by her side, they were both fiddling with their phones.<br />
@@ -5136,9 +5135,14 @@ I searched a lot of pictures of Lamborghini Aventador to see and feel that part 
 It was so much fun, Littletato making noise with the car, and the kid talking about it, Littletato arriving at her neighborhood with her car, in style.<br />
 The preparation for tomorrow's barbecue was also fun to write it.<br />
 Thank you so much for reading this chapter :3.)
-		<br /><br />
-		Chapter written in: 31/03/2019<br />
-		Words: 3,038<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+20:08 31/03/2019<br /><br />
+		Words:
+<br />
+3.046 words<br /><br />
 		</h4>
 		
 
@@ -5189,7 +5193,7 @@ Thank you so much for reading this chapter :3.)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_21_title">21 - The Barbecue, the Park, and the Ride</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -5209,13 +5213,7 @@ Thank you so much for reading this chapter :3.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_21" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/21/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_21_text" class="text_size unselectable " style="text-align: left;">
 		It was a Sunday, Littletato woke up at six and a half AM, she got out of bed and did her morning necessities.<br />
 She walked to the kitchen and removed the artificial meat and sausages out of the freezer.<br />
@@ -5389,9 +5387,14 @@ I liked to write about Iam and Vitória playing together and their talk.<br />
 About them making the afternoon breakfast, it reminds me of when I got to the house of my relatives, like my aunts and my grandma, and they serve afternoon breakfast for us.<br />
 I loved to write about Littletato wanting to go to Texas, and her ride with Júlia<br />
 Anyway, thank you so much for reading this chapter, come again soon, hehe ^^.)
-		<br /><br />
-		Chapter written in: 14/04/2019<br />
-		Words: 3,266<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+17:31 14/04/2019<br /><br />
+		Words:
+<br />
+3.274 words<br /><br />
 		</h4>
 		
 
@@ -5442,7 +5445,7 @@ Anyway, thank you so much for reading this chapter, come again soon, hehe ^^.)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_22_title">22 - The Childhood and the Trip to Texas</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -5462,13 +5465,7 @@ Anyway, thank you so much for reading this chapter, come again soon, hehe ^^.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_22" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/22/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_22_text" class="text_size unselectable " style="text-align: left;">
 		It was a Thursday, Littletato was alone in her room, she had twelve years old and was playing some Vegecraft on her computer.<br />
 She lived in the house of her parents, her father was called John, her mother was called Ana, they were very caring parents.<br />
@@ -5611,9 +5608,14 @@ I searched on the Internet for famous chocolate, biscuits, and chip brands of th
 I opened Google Maps to look for the route from San Francisco to Texas, it is a one-day trip by car, and it takes five hours and twenty-five minutes by plane.<br />
 And I also liked listening to the Yuru Camp soundtrack while revising this chapter.<br />
 Thank you for reading! Hehe ^^.)
-		<br /><br />
-		Chapter written in: 05/05/2019<br />
-		Words: 2,597<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+22:00 05/05/2019<br /><br />
+		Words:
+<br />
+2.605 words<br /><br />
 		</h4>
 		
 
@@ -5664,7 +5666,7 @@ Thank you for reading! Hehe ^^.)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_23_title">23 - Trip to Texas, Part Two</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -5684,13 +5686,7 @@ Thank you for reading! Hehe ^^.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_23" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/23/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_23_text" class="text_size unselectable " style="text-align: left;">
 		The adventures of Littletato's trip to Texas continue, thank you for tuning in again in our channel.<br />
 Littletato was still driving to Texas, Júlia and she were listening to Yuru Camp's soundtrack on the car's radio.<br />
@@ -5882,9 +5878,14 @@ It was good to write about Littletato and Júlia buying clothes and electronics.
 And about them eating in the restaurant, I searched on the Internet for how a waiter speaks in restaurants.<br />
 I also searched for American restaurant menus to see what they serve, it was good to write that Littletato and Júlia ate all of those delicious artificial meats.<br />
 It was good to write about Littletato and Júlia meeting Layla and adding her to their Vegebooks.)
-		<br /><br />
-		Chapter written in: 26/05/2019<br />
-		Words: 3,131<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+23:06 26/05/2019<br /><br />
+		Words:
+<br />
+3.139 words<br /><br />
 		</h4>
 		
 
@@ -5935,7 +5936,7 @@ It was good to write about Littletato and Júlia meeting Layla and adding her to
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_24_title">24 - The Weird Dream and the Story of Sasha</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -5955,13 +5956,7 @@ It was good to write about Littletato and Júlia meeting Layla and adding her to
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_24" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/24/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_24_text" class="text_size unselectable " style="text-align: left;">
 		It was the day twenty-four of June of 2019, a Friday, Littletato lived in San Francisco, she was lying in bed.<br />
 Júlia was lying beside her, Littletato was thinking about adopting a dog.<br />
@@ -6135,9 +6130,14 @@ She has been reading Littletato very fast, hehe, like, three chapters per day.<b
 And I love to receive the read notification of her on a social network.<br />
 I get so happy when she reads Littletato and comments about the chapter, hehe. :3<br />
 Her name starts with L, thank you. :3)
-		<br /><br />
-		Chapter written in: 24/06/2019<br />
-		Words: 2,995<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+21:59 24/06/2019<br /><br />
+		Words:
+<br />
+3.003 words<br /><br />
 		</h4>
 		
 
@@ -6188,7 +6188,7 @@ Her name starts with L, thank you. :3)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_25_title">25 - The New Dog</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -6208,13 +6208,7 @@ Her name starts with L, thank you. :3)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_25" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/25/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_25_text" class="text_size unselectable " style="text-align: left;">
 		Littletato was working, it was the day two of July of the year 2019, a Tuesday, she was at work fixing some errors in an app.<br />
 Then, it was time to go home, she got out of the building and entered inside her car, driving back home.<br />
@@ -6376,10 +6370,15 @@ I inserted a title instead of doing just "chapter 1" and 2 and 3.<br />
 This way I can remember easily what happened in the chapter instead of saying just "the dreamland chapter" or "the Texas trip chapter".<br />
 I wrote this piece listening to SubCarbon Records Soundcloud profile, and... I just wanted to say that to you guys. :3<br />
 Also, this is how I imagine Littletato (ignore the dogs), a really shy girl. xD)<br />
-<a href="https://thestake2.netlify.app/Images/Images/The%20Life%20of%20Littletato/Not%20Littletato.jpg" target="_blank" class="text_light_salmon text_hover_light_salmon">https://thestake2.netlify.app/Images/Images/The%20Life%20of%20Littletato/Not%20Littletato.jpg</a>
-		<br /><br />
-		Chapter written in: 02/07/2019<br />
-		Words: 2,837<br /><br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/25/Images/Not Littletato.jpg" style="max-width: 50%;" /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+14:29 02/07/2019<br /><br />
+		Words:
+<br />
+2.841 words<br /><br />
 		</h4>
 		
 
@@ -6430,7 +6429,7 @@ Also, this is how I imagine Littletato (ignore the dogs), a really shy girl. xD)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_26_title">26 - A Weird Teleport (LittleLiving)</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -6450,13 +6449,7 @@ Also, this is how I imagine Littletato (ignore the dogs), a really shy girl. xD)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_26" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/26/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_26_text" class="text_size unselectable " style="text-align: left;">
 		This is a crossover chapter between <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/en/" target="_blank">"The Life of Littletato"</a> and <a class="text_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/en/" target="_blank">"SpaceLiving"</a>.<br />
 <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/en/" target="_blank">"The Life of Littletato"</a> and <a class="text_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/en/" target="_blank">"SpaceLiving"</a> are two stories of mine.<br />
@@ -6470,7 +6463,7 @@ She was having a weird dream, a dream about her getting teleported to a spaceshi
 It had a super fast and powerful computer, it was white, a PlayVegestation 4 gaming console, a bed, and a wardrobe.<br />
 The spaceship had white walls inside and out, the computer of the spaceship had a modified version of Windows 10 installed on it.<br />
 It was called Windows 10 (SpaceLiving Edition).<br />
-<a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover.png" target="_blank" class="text_light_salmon text_hover_light_salmon">https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover.png</a><br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover.png" style="max-width: 50%;" /><br /><br />
 The bed had a blue blanket, the bed was made of some resistant plastic that was light gray, and the wardrobe was gray too.<br />
 It also had a Laser Turret outside of it, it could shoot a laser beam to hit approaching asteroids.<br />
 The Laser Turret had two modes, the Expanded Range mode, and the Shielded mode.<br />
@@ -6499,7 +6492,7 @@ The AI was called LonelyShip Artificial Intelligence, or LSAI for short.<br />
 The LonelyShip also had four small signboards on its walls, two displaying "SpaceLiving", and another two displaying "LonelyShip" on the right of the SpaceLiving one.<br />
 The SpaceLiving and LonelyShip signboards were equal on each side of the LonelyShip, one SpaceLiving one on each side, and one LonelyShip one on each side.<br />
 The signboards on the left side were on the left of the window, and the right ones were on the right of the window.<br />
-<a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover%20Front%20Signboards.png" target="_blank" class="text_light_salmon text_hover_light_salmon">https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover%20Front%20Signboards.png</a><br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover Front Signboards.png" style="max-width: 50%;" /><br /><br />
 Also, the LonelyShip has two big signboards on the front side of it, one with "SpaceLiving" written on it, and another one with "LonelyShip".<br />
 The SpaceLiving signboard is above the LonelyShip one.<br />
 <br />
@@ -6605,10 +6598,10 @@ He said that they disappeared at a young age.<br />
 Can you send me a picture of you, please?" asked Littletato, a little shocked.<br />
 "Hmm... I have gray hair... I think I'm that sister of yours then, do you know the name of your brother?<br />
 Here is me," said Lisa.<br />
-<a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/Lisa.jpg" target="_blank" class="text_light_salmon text_hover_light_salmon">https://thestake2.netlify.app/Images/Images/SpaceLiving/Lisa.jpg</a><br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Lisa.jpg"" style="max-width: 50%;" /><br /><br />
 "I think it started with T, Tad, or something... I can't quite remember.<br />
 And also, you look like my sister... Or what I remember of her... Here is me," replied Littletato.<br />
-<a href="https://thestake2.netlify.app/Images/Images/The%20Life%20of%20Littletato/Littletato.jpg" target="_blank" class="text_light_salmon text_hover_light_salmon">https://thestake2.netlify.app/Images/Images/The%20Life%20of%20Littletato/Littletato.jpg</a><br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/26/Images/Littletato.jpg" style="max-width: 50%;" /><br /><br />
 "Oh, okay, it is Ted, and he has brown hair, do you want to meet us?<br />
 Like, teleport to my LonelyShip, and then we teleport to Ted's?" asked Lisa.<br />
 "And also, I think I remember my sister too, and she was a little like you... With brown hair," said Lisa.<br />
@@ -6642,10 +6635,20 @@ Then they broke from the hug, Lisa and Littletato looked at each other.<br />
 The answer to that question is answered in the crossover chapter of <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/en/" target="_blank">"The Life of Littletato"</a> and <a class="text_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/en/" target="_blank">"SpaceLiving"</a>.<br />
 It is answered in chapter ten of my SpaceLiving story (chapter 10).<br />
 Please click on the link below to read it:<br />
-<a href="https://thestake2.netlify.app/New%20World/SpaceLiving/en/?chapter=10#" target="_blank" class="text_light_salmon text_hover_light_salmon">https://thestake2.netlify.app/New%20World/SpaceLiving/en/?chapter=10#</a>
-		<br /><br />
-		Chapter written in: 03/07/2019<br />
-		Words: 3,566<br /><br />
+<div style="padding-top: 1%;">
+<a class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white animation_shake_side" href="https://thestake2.netlify.app/SpaceLiving/en/?chapter=10#" target="_blank" style="max-width: 50%; font-weight: bold;">
+	SpaceLiving - Chapter: 10 - The Continuation (SpaceTato)
+	</a>
+</div>
+
+<br /><br />
+		
+Chapter written in:
+<br />
+23:38 03/07/2019<br /><br />
+		Words:
+<br />
+3.581 words<br /><br />
 		</h4>
 		
 
@@ -6696,7 +6699,7 @@ Please click on the link below to read it:<br />
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_27_title">27 - The Return and the Discovery</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -6716,13 +6719,7 @@ Please click on the link below to read it:<br />
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_27" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/27/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_27_text" class="text_size unselectable " style="text-align: left;">
 		This is the sequel of chapter ten of <a class="text_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/en/" target="_blank">"SpaceLiving"</a>.<br />
 And said chapter is the sequel to chapter twenty-six of The Life of Littletato, the previous one on this website.<br />
@@ -6915,9 +6912,14 @@ I've been getting up early, and having more happiness, having more disposition t
 Anyway, right now in Brazil is mid-day, I have gotta eat lunch.<br />
 Thank you for reading this chapter, thank you, hehe.<br />
 Goodbye, or should I say, laters :D.)
-		<br /><br />
-		Chapter written in: 24/08/2019<br />
-		Words: 3,021<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+16:57 24/08/2019<br /><br />
+		Words:
+<br />
+3.029 words<br /><br />
 		</h4>
 		
 
@@ -6968,7 +6970,7 @@ Goodbye, or should I say, laters :D.)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_28_title">28 - The Beautiful Life Of Littletato ❤️</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -6988,17 +6990,11 @@ Goodbye, or should I say, laters :D.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_28" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/28/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_28_text" class="text_size unselectable " style="text-align: left;">
 		(This chapter mentions characters of the <a href="https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic" target="_blank">"My Little Pony: Friendship Is Magic"</a> cartoon.<br />
 If you do not know the characters or do not know the cartoon, I recommend that you read about the cartoon and the characters to understand the chapter more.<br />
-<a href="https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic" target="_blank" class="text_light_salmon text_hover_light_salmon">https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic</a>)<br />
+<a href="https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic" target="_blank">"My Little Pony: Friendship Is Magic" on Wikipedia</a>)<br />
 <br />
 (The beautiful Life of Littletato, with much love, Izaque.)<br />
 Littletato was dreaming about being a unicorn in the land of Equestria.<br />
@@ -7113,9 +7109,14 @@ I already created twenty-nine chapters of Littletato, why I would not be able to
 Tell me if you think "The Life of Littletato" should end here in this chapter.<br />
 Thank you for reading, I'm Izaque, living in 2021 while I write this, good night, good dreams, love you, peace! ❤️.<br />
 The beautiful Life of Littletato, Episode 28, with much love, Izaque ❤️.)
-		<br /><br />
-		Chapter written in: 05/10/2019<br />
-		Words: 2,061<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+03:22 05/10/2019<br /><br />
+		Words:
+<br />
+2.058 words<br /><br />
 		</h4>
 		
 
@@ -7166,7 +7167,7 @@ The beautiful Life of Littletato, Episode 28, with much love, Izaque ❤️.)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_29_title">29 - The Mansion of Littletato and Friends</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -7186,13 +7187,7 @@ The beautiful Life of Littletato, Episode 28, with much love, Izaque ❤️.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_29" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/29/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_29_text" class="text_size unselectable " style="text-align: left;">
 		It was a Sunday in the year 2020, Littletato woke up at six AM, she did her morning necessities.<br />
 Then Júlia woke up, she also did her morning necessities.<br />
@@ -7242,7 +7237,7 @@ The girl planned a wire transfer between her and the owner of the house to trans
 She paid the association fees, closing costs, and got to the closing table, she signed the paperwork to transfer the house to her name.<br />
 Then she transferred the money to the bank account of the old owner of the house.<br />
 The owner gave the house keys to Littletato, she and Júlia were there at the house, they were so happy.<br />
-<a href="https://thestake2.netlify.app/Images/Images/The%20Life%20of%20Littletato/Mansion%20of%20Littletato%20and%20Friends.png" target="_blank" class="text_light_salmon text_hover_light_salmon">https://thestake2.netlify.app/Images/Images/The%20Life%20of%20Littletato/Mansion%20of%20Littletato%20and%20Friends.png</a><br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/29/Images/Mansion of Littletato and Friends.png" style="max-width: 50%;" /><br /><br />
 Littletato and Júlia looked at the house, it was so beautiful, so big, they entered the house.<br />
 "Hey honey, we gonna be left with one million forty thousand dollars of money left.<br />
 And I calculated that we gonna pay seven thousand six hundred eighty of annual property taxes," explained Littletato.<br />
@@ -7430,9 +7425,14 @@ I wrote it while listening to the soundtrack of Yuru Camp as always.<br />
 Right now is mid-day of 15/06/2021, a Tuesday.<br />
 I think I already spent four hours in total on this chapter, writing it, and I loved it.<br />
 Thank you so much for reading, hehe ^^.)
-		<br /><br />
-		Chapter written in: 14/02/2020<br />
-		Words: 4,227<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+20:54 14/02/2020<br /><br />
+		Words:
+<br />
+4.228 words<br /><br />
 		</h4>
 		
 
@@ -7483,7 +7483,7 @@ Thank you so much for reading, hehe ^^.)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_30_title">30 - The Day Off Work in 2021</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -7503,13 +7503,7 @@ Thank you so much for reading, hehe ^^.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_30" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/30/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_30_text" class="text_size unselectable " style="text-align: left;">
 		It was a Monday, the first day of January of 2021, it was New Year's Day, Littletato had a great year, and she was ready to start another one.<br />
 Littletato was in her bedroom in her mansion, she woke up at eight AM, brushed her teeth, combed her hair, and also washed her face in the bathroom inside her bedroom.<br />
@@ -7658,9 +7652,14 @@ I loved to write about Littletato, Júlia, and Iam having lunch together.<br />
 It's sad that when you have a TPF fridge and everyone can eat at any time, people do not always eat together.<br />
 But I am happy that they ate together in this chapter.<br />
 And also, "Lisa, the human" xD.)
-		<br /><br />
-		Chapter written in: 11:09 09/07/2021<br />
-		Words: 2,659<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+11:09 09/07/2021<br /><br />
+		Words:
+<br />
+2.667 words<br /><br />
 		</h4>
 		
 
@@ -7711,7 +7710,7 @@ And also, "Lisa, the human" xD.)
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_31_title">31 - The Realization and the Video Call</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -7731,13 +7730,7 @@ And also, "Lisa, the human" xD.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_31" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/31/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_31_text" class="text_size unselectable " style="text-align: left;">
 		It was a Monday in July of 2021, Littletato woke up, got out of bed, and did her morning needs in the bathroom of the bedroom.<br />
 Littletato walked to the kitchen, it was six AM, Littletato grabbed two cheeseburgers and two cups of chocolate milk.<br />
@@ -7886,9 +7879,14 @@ After that, Littletato sent the contact of Izaque to Iam through Whatsapp, she t
 They began to play a game together, it was six and forty PM.<br />
 The couple spent their day playing, eating, and drinking water when they need, Iam spent his day in his room.<br />
 He played a lot of games, and also checked some news on YouTube and Twitter.
-		<br /><br />
-		Chapter written in: 17:09 28/07/2021<br />
-		Words: 2,830<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+17:09 28/07/2021<br /><br />
+		Words:
+<br />
+2.838 words<br /><br />
 		</h4>
 		
 
@@ -7939,7 +7937,7 @@ He played a lot of games, and also checked some news on YouTube and Twitter.
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_32_title">32 - The Candy Factory Game</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -7959,13 +7957,7 @@ He played a lot of games, and also checked some news on YouTube and Twitter.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_32" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/32/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_32_text" class="text_size unselectable " style="text-align: left;">
 		It was a Saturday, morning, in August of 2021, Littletato woke up, it was six AM.<br />
 Júlia woke up too, both did their morning necessities together in the bathroom, they also took a bath together.<br />
@@ -8106,9 +8098,14 @@ They could eat the candy and it would be good for them, it would have nutrients.
 Littletato helped Júlia manage the Candy Factory and Candy Land, they made some decisions together.<br />
 Júlia and Littletato decided to make train lines to bring ores, gems, liquid white cream, and liquid chocolate to the warehouse to make candies.<br />
 The couple was happy to eat a lot of candies together, they were eating the candies in the living room of Júlia's house, watching a series on the TV.
-		<br /><br />
-		Chapter written in: 18:00 14/08/2021<br />
-		Words: 3,041<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+18:00 14/08/2021<br /><br />
+		Words:
+<br />
+3.049 words<br /><br />
 		</h4>
 		
 
@@ -8159,7 +8156,7 @@ The couple was happy to eat a lot of candies together, they were eating the cand
 		<p><br /><b>You are reading: <span class="text_light_salmon">The Life of Littletato</span><br />Chapter: <span class="text_light_salmon" id="chapter_33_title">33 - The Busy Monday</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -8172,13 +8169,7 @@ The couple was happy to eat a lot of candies together, they were eating the cand
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_33" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/33/English.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_33_text" class="text_size unselectable " style="text-align: left;">
 		It was a Monday, in September of 2021, Littletato had to work today, she got up at five and a half AM.<br />
 Júlia got up too, they did their morning necessities in the bathroom of the bedroom and also took a bath.<br />
@@ -8280,9 +8271,14 @@ After that, the quintet walked to the living room to play a little together on t
 Lisa visited the LonelyShip of Izaque, to spend some time with him, and to play games and watch things with him.<br />
 Littletato and the others were playing the Overcooked game, Júlia was not playing because she would play after the quartet played five levels.<br />
 She was playing the Candy Factory game on her phone again, but this time, she was not teleported to the inside of the game.
-		<br /><br />
-		Chapter written in: 14:38 12/09/2021<br />
-		Words: 1,793<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+14:38 12/09/2021<br /><br />
+		Words:
+<br />
+1.801 words<br /><br />
 		</h4>
 		
 

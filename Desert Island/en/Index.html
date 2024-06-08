@@ -34,7 +34,7 @@
 	<meta name="twitter:image" type="image/jpg" content="/Images/Desert Island/English.jpg" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -77,14 +77,14 @@
 	</style>
 
 	<!-- JavaScript files -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
 	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="/JavaScript/Story.js"></script>
-	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="/JavaScript/Story.js"></script>	
 
 	<script>
 		Check_Language()
@@ -96,14 +96,11 @@
 
 <!-- Open hamburger menu button -->
 
-
-	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
-		<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
-		
-	<h2 class="text_size">
-		<i class="fas fa-bars"></i>
-	</h2>
-
+	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
 		</h3>
 	</button>
 
@@ -112,56 +109,47 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_light_green_water border_4px border_color_green_water border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
-	
 
-	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
-		<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
-		
-		<h4 class="text_size" style="font-weight: bold;">
-		X
-		</h4>
-	
+	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_green_water" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
 		</h3>
 	</button>
 
 	<h2 class="text_size text_dark_green_water" style="font-weight: bold;">Tab menu: </h2>
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
-	<!-- "Read story" button -->
-	<span id="button_1" class="tab_button">
-		
 
-	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green_water">
-		
-				Read story: <i class="fas fa-book-open"></i>
-			
+	<!-- "Read story" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green_water">
+			Read story: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green_water">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green_water">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span>
 
-	<!-- "Websites" button -->
-	<span id="button_3" class="tab_button">
-		
 
-	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green_water">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<!-- "Websites" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green_water">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
@@ -194,11 +182,14 @@
 		He needs to remember what he learned to be able to survive on that dangerous island, so he can get back to civilization.<br />
 		And maybe meet other people, travel to other islands.<br />
 		Maybe he will discover secrets buried inside that island.<br />
-		---<br />
+		-----<br />
 		Story author: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span><br />
 		Chapters: <i class="fas fa-book"></i> <span class="text_dark_green_water">6</span><br />
 		Story creation date: <i class="fa-solid fa-calendar-days"></i> <span class="text_dark_green_water">23/10/2016</span><br />
-		Status: <i class="fa-solid fa-rotate"></i> <span class="text_dark_green_water">Re-writing</span>
+		Status: <i class="fa-solid fa-rotate"></i> <span class="text_dark_green_water">Re-writing</span><br />
+-----
+<br />
+
 	</h3>
 	<br />
 </div>
@@ -217,14 +208,11 @@
 
 	<hr class="border_1px border_color_green_water margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green_water">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green_water">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_green_water margin_sides_5_cent" />	
@@ -288,25 +276,19 @@
 
 	<hr class="border_1px border_color_green_water margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Read story" button -->
-	<span id="button_1" class="tab_button">
-		
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green_water">
-		
-				Read story: <i class="fas fa-book-open"></i>
-			
+	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green_water">
+			Read story: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Websites" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green_water">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green_water">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_green_water margin_sides_5_cent" />	
@@ -446,14 +428,11 @@
 
 	<hr class="border_1px border_color_green_water margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green_water">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_whitew3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green_water">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_green_water margin_sides_5_cent" />	
@@ -661,7 +640,7 @@
 		<p><br /><b>You are reading: <span class="text_dark_green_water">Desert Island</span><br />Chapter: <span class="text_dark_green_water" id="chapter_1_title">1 - The shipwreck, the hatchet</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_green_water" />		
 
@@ -674,13 +653,7 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_green_water image_size border_4px border_color_green_water border_radius_8_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/Desert Island/Chapters/01/English." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_1_text" class="text_size unselectable " style="text-align: left;">
 		I was a boy that always loved to watch videos of survivalism, bushcraft, things about nature, and survival.<br />
 Lived with my parents and used to go to school, I lived a normal life, I was fifteen at the time.<br />
@@ -749,9 +722,14 @@ Maybe there are other people there, surviving like me, waiting for someone to co
 "What do these islands hold for me? What will I discover there? Maybe just animals and nature... Maybe more.<br />
 Maybe something more special, rare, and exciting, I don't know, but I need to go and take a look someday.<br />
 I have the curiosity to go there and look, because I like to learn new things and to discover secrets, to explore," I think to myself.
-		<br /><br />
-		Chapter written in: 23/03/2020<br />
-		Words: 1,350<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+23/03/2020<br /><br />
+		Words:
+<br />
+1.358 words<br /><br />
 		</h4>
 		
 
@@ -795,7 +773,7 @@ I have the curiosity to go there and look, because I like to learn new things an
 		<p><br /><b>You are reading: <span class="text_dark_green_water">Desert Island</span><br />Chapter: <span class="text_dark_green_water" id="chapter_2_title">2 - The basket, the fire, food and water</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_green_water" />		
 
@@ -815,13 +793,7 @@ I have the curiosity to go there and look, because I like to learn new things an
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_green_water image_size border_4px border_color_green_water border_radius_8_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/Desert Island/Chapters/02/English." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_2_text" class="text_size unselectable " style="text-align: left;">
 		Leaving my ax on the beach, I pick up my sharp stone knife.<br />
 I think about making a basket to be able to store things.<br />
@@ -895,9 +867,14 @@ After that, I sleep calmly, dreaming about good things, feeling nature.<br />
 The chill breeze, hearing some birds in the distance, hearing the palm leaves swaying in the wind, the ocean moving.<br />
 It is really good to sleep here on this island, it makes me calm and relaxed, the weather is good, not too hot, not too cold.<br />
 This is what I wanted, to sleep in nature, to sleep close to trees, sand, dirt, feeling the leaves move, hearing and feeling nature, the birds, and other animals.
-		<br /><br />
-		Chapter written in: 27/03/2020<br />
-		Words: 1,456<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+27/03/2020<br /><br />
+		Words:
+<br />
+1.464 words<br /><br />
 		</h4>
 		
 
@@ -948,7 +925,7 @@ This is what I wanted, to sleep in nature, to sleep close to trees, sand, dirt, 
 		<p><br /><b>You are reading: <span class="text_dark_green_water">Desert Island</span><br />Chapter: <span class="text_dark_green_water" id="chapter_3_title">3 - The new house</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_green_water" />		
 
@@ -968,13 +945,7 @@ This is what I wanted, to sleep in nature, to sleep close to trees, sand, dirt, 
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_green_water image_size border_4px border_color_green_water border_radius_8_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/Desert Island/Chapters/03/English." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_3_text" class="text_size unselectable " style="text-align: left;">
 		I wake up in the middle of the morning, looking at the sun on the horizon, I feel calm and relaxed.<br />
 Looking at my left, I see my ax and my knife, all made of stone, I smile.<br />
@@ -1038,9 +1009,14 @@ My stomach growls, I open the basket of fruits and eat two bananas, then I lay o
 I feel proud of myself, those videos taught me a lot about nature and the arts of the forest, I feel proud of the house, basket, ax, and knife.<br />
 I wonder if I will find any animals or people on this island or other islands.<br />
 Lying on the bed with the door closed, the underground fire is on, the bed is warm, I start sleeping again, feeling proud of myself.
-		<br /><br />
-		Chapter written in: 02/04/2020<br />
-		Words: 1,302<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+02/04/2020<br /><br />
+		Words:
+<br />
+1.310 words<br /><br />
 		</h4>
 		
 
@@ -1091,7 +1067,7 @@ Lying on the bed with the door closed, the underground fire is on, the bed is wa
 		<p><br /><b>You are reading: <span class="text_dark_green_water">Desert Island</span><br />Chapter: <span class="text_dark_green_water" id="chapter_4_title">4 - The spear and the vision</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_green_water" />		
 
@@ -1111,13 +1087,7 @@ Lying on the bed with the door closed, the underground fire is on, the bed is wa
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_green_water image_size border_4px border_color_green_water border_radius_8_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/Desert Island/Chapters/04/English." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_4_text" class="text_size unselectable " style="text-align: left;">
 		I wake up and stand up, it is morning, drink a little of the water that is on the cup, closing it again.<br />
 My belly growls, I open the basket and eat two bananas out of it, feeling better.<br />
@@ -1180,9 +1150,14 @@ I told him that I was not from the Japanese government and that I did not want t
 And I said that I had shipwrecked on an island near his, and I was surviving there, until now, and I wanted to explore some islands with my boat.<br />
 He understood, and got calmer, he asked if I needed help with anything, I said no, and thanked him.<br />
 While dreaming, I asked myself if he was really on some island close to mine, I wanted to meet him, he looks to be cool and gentle.
-		<br /><br />
-		Chapter written in: 07/04/2020<br />
-		Words: 1,223<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+07/04/2020<br /><br />
+		Words:
+<br />
+1.231 words<br /><br />
 		</h4>
 		
 
@@ -1233,7 +1208,7 @@ While dreaming, I asked myself if he was really on some island close to mine, I 
 		<p><br /><b>You are reading: <span class="text_dark_green_water">Desert Island</span><br />Chapter: <span class="text_dark_green_water" id="chapter_5_title">5 - The raft and the moon</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_green_water" />		
 
@@ -1253,13 +1228,7 @@ While dreaming, I asked myself if he was really on some island close to mine, I 
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_green_water image_size border_4px border_color_green_water border_radius_8_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/Desert Island/Chapters/05/English." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_5_text" class="text_size unselectable " style="text-align: left;">
 		I get up, it is morning, I drink some water and look at the sun, after that, I eat one banana.<br />
 Then I grab my spear, I go to the ocean and try to catch a fish, looking at the fish there.<br />
@@ -1327,9 +1296,14 @@ I get up and light the fire of the hut, warming the bed, I close the door and la
 Proud of myself for making a raft, I think of where I want to go with it, and what I want to bring, food, water, my tools, and maybe something else.<br />
 After that, I sleep calmly, hearing the ocean waves, hearing some birds on trees.<br />
 I survived for five days already.
-		<br /><br />
-		Chapter written in: 04/10/2021<br />
-		Words: 1,430<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+04/10/2021<br /><br />
+		Words:
+<br />
+1.438 words<br /><br />
 		</h4>
 		
 
@@ -1380,7 +1354,7 @@ I survived for five days already.
 		<p><br /><b>You are reading: <span class="text_dark_green_water">Desert Island</span><br />Chapter: <span class="text_dark_green_water" id="chapter_6_title">6 - The trip and the island</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_green_water" />		
 
@@ -1393,13 +1367,7 @@ I survived for five days already.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_green_water image_size border_4px border_color_green_water border_radius_8_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/Desert Island/Chapters/06/English." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_6_text" class="text_size unselectable " style="text-align: left;">
 		I wake up, it is morning, I open the door and look at the raft on the ocean, moving a little, it has been four days since I shipwrecked on this island.<br />
 After that, I get up and open the basket of fruits, eating one banana, I drink some sips of my cup of water, getting out of the hut with it and filling it on the running water.<br />
@@ -1494,9 +1462,14 @@ He has a good ventilation and heating system in his house and helped me make one
 It heats the bed and throws the smoke out of the back of the house, with a little chimney.<br />
 We sleep, looking at the ocean and the moon, sleeping calmly and resting well, hearing the ocean waves.<br />
 I survived for six days already.
-		<br /><br />
-		Chapter written in: 25/10/2021<br />
-		Words: 2,005<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+25/10/2021<br /><br />
+		Words:
+<br />
+2.013 words<br /><br />
 		</h4>
 		
 

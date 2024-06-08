@@ -5,8 +5,8 @@
 
 	<!-- Website links -->
 	<link rel="canonical" href="https://thestake2.netlify.app/Stories/en/" />
-	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Stories/Icons/English.png" />
-	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Stories/Icons/English.png" />
+	<link rel="icon" type="image/png" href="/Images/Stories/Icons/English.png" />
+	<link rel="image_src" type="image/png" href="/Images/Stories/Icons/English.png" />
 
 	<!-- Website meta tags -->
 	<meta name="title" content="Stories" />
@@ -20,7 +20,7 @@ Made with much love by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	<meta property="og:title" content="Stories" />
 	<meta property="og:site_name" content="Stories" />
 	<meta property="og:url" content="https://thestake2.netlify.app/Stories/en/" />
-	<meta property="og:image" type="image/png" content="https://thestake2.netlify.app/Images/Stories/Icons/English.png" />
+	<meta property="og:image" type="image/png" content="/Images/Stories/Icons/English.png" />
 	<meta property="og:description" content="A website to show all of my stories, which I wrote since 2016.
 Made with much love by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	<meta property="og:locale" content="en_US" />
@@ -34,10 +34,10 @@ Made with much love by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	<meta name="twitter:site" value="@Stake2_" />
 	<meta name="twitter:creator" content="@Stake2_" />
 	<meta name="twitter:url" content="https://thestake2.netlify.app/Stories/en/" />
-	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Stories/Icons/English.png" />
+	<meta name="twitter:image" type="image/png" content="/Images/Stories/Icons/English.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -80,13 +80,13 @@ Made with much love by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	</style>
 
 	<!-- JavaScript files -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
-	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>	
 
 	<script>
 		Check_Language()
@@ -98,14 +98,11 @@ Made with much love by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 
 <!-- Open hamburger menu button -->
 
-
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
-		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
-		
-	<h2 class="text_size">
-		<i class="fas fa-bars"></i>
-	</h2>
-
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
 		</h3>
 	</button>
 
@@ -114,43 +111,36 @@ Made with much love by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 <div id="hamburger_menu" class="w3-container w3-animate-left background_light_purple_darker border_4px border_color_light_purple border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
-	
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
-		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
-		
-		<h4 class="text_size" style="font-weight: bold;">
-		X
-		</h4>
-	
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
 		</h3>
 	</button>
 
 	<h2 class="text_size text_light_salmon" style="font-weight: bold;">Tab menu: </h2>
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
-	<!-- "Stories" button -->
-	<span id="button_1" class="tab_button">
-		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Stories: <i class="fas fa-book"></i>
-			
+	<!-- "Stories" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span>
 
-	<!-- "Websites" button -->
-	<span id="button_2" class="tab_button">
-		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<!-- "Websites" button -->
+	<span id="button_2" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
@@ -165,10 +155,10 @@ Made with much love by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	</h2>
 
 	<!-- Website image -->
-	<img class="border_4px border_color_light_purple border_radius_8_cent box_shadow_light_purple border_4px border_color_light_purple border_radius_8_cent" src="https://thestake2.netlify.app/Images/Stories/Icons/English.png" style="max-width: 30vw; height: auto;" /><br />
+	<img class="border_4px border_color_light_purple border_radius_8_cent box_shadow_light_purple border_4px border_color_light_purple border_radius_8_cent" src="/Images/Stories/Icons/English.png" style="max-width: 30vw; height: auto;" /><br />
 
 	<!-- Website image button -->
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/Stories/Icons/English.png')" style="z-index: 2;">
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('/Images/Stories/Icons/English.png')" style="z-index: 2;">
 		<h4 class="text_size text_dark_purple">
 			Open image in a new tab: <i class="fas fa-images"></i>
 		</h4>
@@ -196,14 +186,11 @@ Made with much love by <span class="text_orange">Izaque Sanvezzo (Stake2, Funkys
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Websites" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
@@ -343,14 +330,11 @@ Made with much love by <span class="text_orange">Izaque Sanvezzo (Stake2, Funkys
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Stories" button -->
-	<span id="button_1" class="tab_button">
-		
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	

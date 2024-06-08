@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<head>
+	<!-- Website title -->
+	<title>Ascensão à Equestria</title>
+
+	<!-- Website links -->
+	<link rel="canonical" href="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" />
+	<link rel="icon" type="image/png" href="/Images/Rise to Equestria/png.png" />
+	<link rel="image_src" type="image/png" href="/Images/Rise to Equestria/png.png" />
+
+	<!-- Website meta tags -->
+	<meta name="title" content="Ascensão à Equestria" />
+	<meta name="description" content="Site sobre a minha história, Ascensão à Equestria, feito por Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
+	<meta name="meta_language" content="Português" />
+	<meta name="theme-color" content="#9425a79425a7" />
+
+	<!-- Website og meta tags -->
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Ascensão à Equestria" />
+	<meta property="og:site_name" content="Ascensão à Equestria" />
+	<meta property="og:url" content="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" />
+	<meta property="og:image" type="image/png" content="/Images/Rise to Equestria/png.png" />
+	<meta property="og:description" content="Site sobre a minha história, Ascensão à Equestria, feito por Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:locale:alternative" content="pt_PT" />
+
+	<!-- Twitter meta tags -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Ascensão à Equestria" />
+	<meta name="twitter:description" content="Site sobre a minha história, Ascensão à Equestria, feito por Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
+	<meta name="twitter:website" value="@Stake2_" />
+	<meta name="twitter:site" value="@Stake2_" />
+	<meta name="twitter:creator" content="@Stake2_" />
+	<meta name="twitter:url" content="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" />
+	<meta name="twitter:image" type="image/png" content="/Images/Rise to Equestria/png.png" />
+
+	<!-- Author related meta tags -->
+	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
+	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
+
+	<!-- Viewport and charset -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
+	<meta charset="UTF-8" />
+
+	<!-- CSS files -->
+	<link rel="stylesheet" type="text/css" href="/CSS/W3.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/Colors.css" />
+	<link rel="stylesheet" type="text/css" href="/CSS/Main.css" />
+
+	<!-- Define website box shadow -->
+	<style>
+	body {
+		--shadow-color: #9425a79425a760;
+		--spread-container: 10px;
+		--spread-btn: 0.5px;
+	}
+
+	.w3-btn, .w3-container, .modal, .modal-content, .w3-input {
+		box-shadow: 0 -8px 20px var(--spread-btn) var(--shadow-color),
+		0 8px 20px var(--spread-btn) var(--shadow-color),
+		0 6px 20px var(--spread-btn) var(--shadow-color),
+		0 -6px 20px var(--spread-btn) var(--shadow-color);
+	}
+	
+	.video-container {
+		position: relative;
+		width: 50vw;
+		height: calc(50vw/1.77);
+	}
+
+	.video-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50vw;
+		height: calc(50vw/1.77);
+	}
+	</style>
+
+	<!-- JavaScript files -->
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/JavaScript/Language.js"></script>
+	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
+	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
+	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
+	<script type="text/javascript" src="/JavaScript/Story.js"></script>	
+
+	<script>
+		Check_Language()
+	</script>
+</head>
+
+<body class="background_dark_purple" onLoad="Remove_Zoom();">
+<center>
+
+<!-- Open hamburger menu button -->
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
+		</h3>
+	</button>
+
+
+<!--- Hamburger menu -->
+<div id="hamburger_menu" class="w3-container w3-animate-left background_purple border_4px border_color_light_purple border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
+
+	<!-- Close hamburger menu button -->
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
+		</h3>
+	</button>
+
+	<h2 class="text_size text_light_purple" style="font-weight: bold;">Menu de abas: </h2>
+
+	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
+
+	<!-- "Ler história" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Ler história: <i class="fas fa-book-open"></i>			
+		</h2>
+	</button>
+	</span>
+
+
+	<!-- "Outras histórias" button -->
+	<span id="button_2" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Outras histórias: <i class="fas fa-book"></i>			
+		</h2>
+	</button>
+	</span>
+
+
+	<!-- "Sites" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Sites: <i class="fas fa-globe"></i>			
+		</h2>
+	</button>
+	</span>
+</div>
+</div>
+
+<!-- Website header -->
+<div id="header" class="w3-animate-zoom header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_light_purple header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
+	<!-- Website title -->
+	<h2 class="text_size text_light_purple">
+		<p><br /><b>Ascensão à Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-check"></i></b><br /><br /><p>
+	</h2>
+
+	<!-- Website image -->
+	<img class="border_4px border_color_light_purple border_radius_8_cent box_shadow_light_purple border_4px border_color_light_purple border_radius_8_cent" src="/Images/Rise to Equestria/png.png" style="max-width: 50vw; height: auto;" /><br />
+
+	<!-- Website image button -->
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('/Images/Rise to Equestria/png.png')" style="z-index: 2;">
+		<h4 class="text_size text_dark_purple">
+			Abrir imagem em uma nova guia: <i class="fas fa-images"></i>
+		</h4>
+	</button>
+	<br />
+
+	<!-- Website description -->
+	<h3 class="text_size">
+		<!-- Story website info, author(s), chapters, readers, creation date, status -->
+		Sinopse: <i class="fas fa-scroll"></i> Essa é a história de um garoto chamado Izaque, que viaja para Equestria sem querer, e vive sua vida lá.<br />
+		-----<br />
+		Autor da história: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span><br />
+		Capítulos: <i class="fas fa-book"></i> <span class="text_light_purple">1</span><br />
+		Data de criação da história: <i class="fa-solid fa-calendar-days"></i> <span class="text_light_purple">29/03/2020</span><br />
+		Status: <i class="fa-solid fa-check"></i> <span class="text_light_purple">Finalizada</span><br />
+-----
+<br />
+
+	</h3>
+	<br />
+</div>
+
+<br /><br /><br /><br /><br />
+
+<center>
+
+<!-- "Ler história" tab -->
+<a id="read_story_anchor" name="Ler história"></a>
+<div id="read_story" class="w3-container tab header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_light_purple">
+		<p><br /><b id="read_story_title">Capítulos em Português: 🇧🇷 <span class="text_dark_purple">1</span></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: right;"><!-- "Outras histórias" button -->
+	<span id="button_2" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Outras histórias: <i class="fas fa-book"></i>			
+		</h2>
+	</button>
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="">
+		<span class="text_light_purple">
+			<!-- Chapter button for "1 - Capítulo Único" chapter -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('1', 'Capítulo Único');" style="border-radius: 50px;">
+			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+				1 - Capítulo Único
+			</h3>
+		</button></span>
+	</h2>
+</div>
+
+</center>
+
+<center>
+
+<!-- "Outras histórias" tab -->
+<a id="other_stories_anchor" name="Outras histórias"></a>
+<div id="other_stories" class="w3-container tab header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_light_purple">
+		<p><br /><b id="other_stories_title">Outras histórias: <i class="fas fa-book"></i> <span class="text_dark_purple">8</span></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "Ler história" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Ler história: <i class="fas fa-book-open"></i>			
+		</h2>
+	</button>
+	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Sites" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Sites: <i class="fas fa-globe"></i>			
+		</h2>
+	</button>
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="">
+		<span class="text_light_purple">
+		<!-- "Ilha Deserta" story card -->
+		<a class="w3-btn background_yellow_sand border_4px border_color_dark_green_water box_shadow_dark_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Desert Island/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_green_water">
+				<b>Ilha Deserta</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "New World" story card -->
+		<a class="w3-btn background_light_blue border_4px border_color_dark_cyan box_shadow_light_blue animation_shake_side background_hover_white" href="https://thestake2.netlify.app/New World/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_cyan">
+				<b>New World</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "Ascensão à Equestria" story card -->
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white"  target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
+				<b>Ascensão à Equestria</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "SpaceLiving" story card -->
+		<a class="w3-btn background_cyan border_4px border_color_dark_blue box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/SpaceLiving/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_blue">
+				<b>SpaceLiving</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "A Vida de Izaque em Equestria" story card -->
+		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
+				<b>A Vida de Izaque em Equestria</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "A Vida de Pequenata" story card -->
+		<a class="w3-btn background_light_salmon border_4px border_color_dark_purple box_shadow_light_salmon animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_purple">
+				<b>A Vida de Pequenata</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "O Segredo dos Cristais" story card -->
+		<a class="w3-btn background_light_cyan border_4px border_color_dark_blue box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Secret of the Crystals/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_blue">
+				<b>O Segredo dos Cristais</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "A História dos Irmãos Bulkan" story card -->
+		<a class="w3-btn background_light_brown border_4px border_color_dark_brown box_shadow_dark_brown animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_brown">
+				<b>A História dos Irmãos Bulkan</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "Diário" story card -->
+		<a class="w3-btn background_grey border_4px border_color_black box_shadow_grey animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Diary/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_black">
+				<b>Diário</b>
+			</h2>
+
+			
+			<br />
+		</a>
+
+		<br />
+
+		<!-- "Diário Slim" story card -->
+		<a class="w3-btn background_light_orange border_4px border_color_dark_orange box_shadow_light_orange animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Diary Slim/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_dark_orange">
+				<b>Diário Slim</b>
+			</h2>
+
+			
+			<br />
+		</a></span>
+	</h2>
+</div>
+
+</center>
+
+<center>
+
+<!-- "Sites" tab -->
+<a id="websites_tab_anchor" name="Sites"></a>
+<div id="websites_tab" class="w3-container tab header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_light_purple">
+		<p><br /><b id="websites_tab_title">Sites: <i class="fas fa-globe"></i> <span class="text_dark_purple">27</span></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "Outras histórias" button -->
+	<span id="button_2" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Outras histórias: <i class="fas fa-book"></i>			
+		</h2>
+	</button>
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="">
+		<span class="text_light_purple">
+		<!-- "Stake2" link button -->
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stake2/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Izaque, Stake2, Funkysnipa Cat <i class="fas fa-user-circle"></i>
+			</h2>
+		</button>
+
+		<!-- "Prints of Computer Blocks" link button -->
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Prints of Computer Blocks/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Prints of Computer Blocks <i class="fas fa-images"></i>
+			</h2>
+		</button>
+
+		<!-- "Diary" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Diary/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Diário <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "Diary Slim" link button -->
+		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Diary Slim/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Diário Slim <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "My Little Pony" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My Little Pony <i class="fas fa-heart"></i>
+			</h2>
+		</button>
+
+		<!-- "Friendship Is Magic" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				My Little Pony: A Amizade É Mágica <i class="fas fa-heart"></i>
+			</h2>
+		</button>
+
+		<!-- "Watch History" link button -->
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Watch History/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Watch History <i class="fas fa-eye"></i>
+			</h2>
+		</button>
+
+		<!-- "Play History" link button -->
+		<button class="w3-btn background_light_saturated_green text_dark_saturated_green border_4px border_color_dark_saturated_green box_shadow_light_saturated_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/Play History/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Play History <i class="fa-solid fa-gamepad"></i>
+			</h2>
+		</button>
+
+		<!-- "Tasks" link button -->
+		<button class="w3-btn background_light_grey text_dark_grey border_4px border_color_dark_grey box_shadow_light_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Tasks/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Tarefas <i class="fas fa-tasks"></i>
+			</h2>
+		</button>
+
+		<!-- "Music" link button -->
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Music/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Música <i class="fa-solid fa-music"></i>
+			</h2>
+		</button>
+
+		<!-- "Stories" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stories/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Histórias <i class="fas fa-book"></i>
+			</h2>
+		</button>
+
+		<!-- "Desert Island" link button -->
+		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="window.open('https://thestake2.netlify.app/Desert Island/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Ilha Deserta <i class="fas fa-book"></i> <i class="fa-solid fa-rotate"></i>
+			</h2>
+		</button>
+
+		<!-- "New World" link button -->
+		<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/New World/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				New World <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "Rise to Equestria" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="" style="border-radius: 50px;" title="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/">
+			<h2 class="text_size" title="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/">
+				Ascensão à Equestria <i class="fas fa-book" title="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/"></i> <i class="fa-solid fa-check" title="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/"></i> (Você está aqui)
+			</h2>
+		</button>
+
+		<!-- "SpaceLiving" link button -->
+		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/SpaceLiving/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				SpaceLiving <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "The Life of Izaque in Equestria" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				A Vida de Izaque em Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-pause"></i>
+			</h2>
+		</button>
+
+		<!-- "The Life of Littletato" link button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				A Vida de Pequenata <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "The Secret of the Crystals" link button -->
+		<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Secret of the Crystals/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				O Segredo dos Cristais <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+
+		<!-- "The Story of the Bulkan Siblings" link button -->
+		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				A História dos Irmãos Bulkan <i class="fas fa-book"></i> <i class="fa-solid fa-cloud-arrow-up"></i>
+			</h2>
+		</button>
+
+		<!-- "Years" link button -->
+		<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/Years/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Anos <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2018" link button -->
+		<button class="w3-btn background_dark_blue text_even_darker_blue border_4px border_color_even_darker_blue box_shadow_dark_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/2018/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2018 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2019" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/2019/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2019 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2020" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/2020/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2020 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2021" link button -->
+		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/2021/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2021 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2022" link button -->
+		<button class="w3-btn background_yellow_sand text_dark_yellow border_4px border_color_dark_yellow box_shadow_yellow_sand background_hover_white" onclick="window.open('https://thestake2.netlify.app/2022/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2022 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2023" link button -->
+		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/2023/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2023 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+
+		<!-- "2024" link button -->
+		<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/2024/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2024 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+</span>
+	</h2>
+</div>
+
+</center>
+
+<!-- Chapter tab for "1 - Capítulo Único" chapter -->
+<a id="chapter_1_anchor" name="1 - Capítulo Único"></a>
+<div id="chapter_1" class="tab header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2px; margin-bottom: 2%; display: none;">
+	<!-- Chapter title top -->
+	<h2 class="text_size">
+		<p><br /><b>Você está lendo: <span class="text_light_purple">Ascensão à Equestria</span><br />Capítulo: <span class="text_light_purple" id="chapter_1_title">1 - Capítulo Único</span></b><br /><br /><p>
+	</h2>
+
+	<!-- Chapter button and text -->
+	<div class="margin_sides_5_cent">
+		<hr class="border_1px border_color_light_purple" />		
+
+		<!-- Chapter button for " - " chapter -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('', '');" style="border-radius: 50px;">
+			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+				 - 
+			</h3>
+		</button>
+
+		<br /><br /><br />
+
+		<br /><br />		<!-- Chapter text -->
+		<h4 id="chapter_1_text" class="text_size unselectable " style="text-align: left;">
+		Olá a todos, eu sou Stake2, Funkysnipa Cat, e Izaque, eu queria mostrar essa história que eu escrevi.<br />
+Ela foi feita em 2016, e na época eu não sabia escrever direito, então decidi reescrever ela no dia 30/03/2020 com meu novo estilo de escrita, e ela se tornou o que é agora.<br />
+É uma história de um capítulo só, e está terminada já, espero que gostem.<br />
+Acho que sou como o garoto da história, na parte em que ele acredita que o mundo de "My Little Pony: A Amizade é Mágica" existe.<br />
+Eu acredito nisso, eu quero visitar o mundo de My Little Pony também, e conhecer todos os pôneis que eu amo tanto.<br />
+Me sinto muito feliz com My Little Pony, toda vez que assisto ele fico feliz.<br />
+Adorei escrever esta história, espero que amem tanto quanto eu amei de escrevê-la :3, então, boa leitura ksks.<br />
+Se você for meu amigo no Discord, Twitter, ou Wattpad, então diga que está lendo.<br />
+E se possível, escreva "Estou lendo My Little Pony - Ascensão para Equestria" e envie para mim no Discord, Twitter, ou Wattpad.<br />
+<br />
+Título: Ascensão à Equestria<br />
+<br />
+Esta é a historia de um menino chamado Marcos que gostava muito de um desenho animado onde havia seis pôneis, o desenho animado se chamava My Little Pony: a Amizade é Mágica.<br />
+<br />
+As pôneis eram:<br />
+Twilight Sparkle, uma pônei unicórnio de pele roxa, com uma crina também roxa, que representava o elemento da magia.<br />
+Pinkie Pie, uma pônei terrestre com pele rosa, com uma crina rosa também, representava o elemento do bom humor.<br />
+Fluttershy, uma pônei pégaso de pele amarela, com a crina rosa claro, ela representava o elemento da bondade.<br />
+Rainbow Dash, uma pônei pégaso de pele azul, com uma crina de cor arco-íris, que representava o elemento da lealdade.<br />
+Rarity, uma pônei unicórnio de pele branca, com a crina roxo escuro, representava o elemento da generosidade.<br />
+Applejack, uma pônei terrestre de pele laranja, com a crina amarelo claro, ela representava o elemento da honestidade.<br />
+Equestria era o continente que elas moravam, Ponyville era a cidade que elas moravam.<br />
+<br />
+Ele gostava tanto delas e do desenho animado, e sentia como se pudesse visitá-las, ele sentia uma afinidade com elas. como se fosse muito parecido com elas, principalmente com a pônei roxa.<br />
+O garoto assistia o desenho animado todo dia, e tinha os episódios baixados no computador dele, ele gostava muito do desenho animado e das pôneis.<br />
+E a pônei roxa era tipo uma princesa, e mesmo sendo princesa, ela não se achava melhor que os outros.<br />
+Ele adorava esta coisa nela, porque ele também era melhor que algumas pessoas em algo, e mesmo assim não se achava melhor que os outros.<br />
+<br />
+Então um dia ele ouve uma voz chamando ele, e percebe que era a voz da pônei roxa, Twilight Sparkle, ele acha que isso é estranho, porque ele já tinha imaginado historias sobre o desenho animado, e nessas historias ele escutava as vozes das pôneis, mas não na vida real.<br />
+Essa voz fala pra ele que ela quer guiar ele na vida para no final da vida dele ele poder visitar elas em Equestria.<br />
+Ele fica muito feliz com o que ele escuta, olha no relógio do computador dele e vê que já quase hora de jantar.<br />
+A mãe dele fala para ele vir jantar, dizendo:<br />
+"A comida tá pronta filho."<br />
+<br />
+Após comer, ele agradece a mãe pela comida e diz á ela que vai ir dormir.<br />
+Ele toma um banho e vai até o quarto, se deitando na cama.<br />
+<br />
+Ainda acordado, ele escuta a voz de Twilight, ela diz:<br />
+"Você parece ser muito legal e gentil, Marcos, eu queria ver você pessoalmente, aqui em Equestria, fico muito feliz de você gostar tanto da gente assim, e fico feliz que eu trago uma felicidade tão grande a você, queria te dar um abraço agora mesmo, hihi."<br />
+<br />
+Marcos fica feliz ao ouvir isso dela, ele percebe que a voz de Twilight começa a soar um pouco triste, parecendo que está chorando.<br />
+<br />
+Ele pergunta: <br />
+"Ei Twilight... Você tá chorando?"<br />
+<br />
+Twilight responde: <br />
+"Sim... Mas é de felicidade, não se preocupe, hihi."<br />
+<br />
+Twilight enxuga suas lágrimas e continua: <br />
+"Estou só feliz por conhecer você, um garoto tão legal, e que adora eu e as minhas amigas... E quer me ver feliz... Isso deixa meu coração quente Marcos... Obrigada... Muito obrigada..."<br />
+<br />
+Ela diz sorrindo: <br />
+"Espero que você venha para Equestria logo logo menino, adoraria te ver :3."<br />
+<br />
+Então Marcos responde enquanto sorri bastante:<br />
+"Eu também Twilight, quero muito te conhecer e te ver pessoalmente, e te dar um abraço bem quente, hihi."<br />
+<br />
+A pônei roxa diz:<br />
+"Hehe, obrigada... Eu li um livro que existe aqui em Equestria, que dizia que um dia aqui é igual a um ano no seu mundo, ou seja, pra mim, não vai demorar muito pra você vir pra cá... Mas pra você, vai."<br />
+<br />
+Ele suspira de forma triste e Twilight percebe isso.<br />
+<br />
+Ela diz:<br />
+"Mas não fica preocupado, eu sei que vai ser bem legal a sua visita aqui, e não vai demorar muito não, hihi."<br />
+<br />
+Ele fica feliz ao ouvir aquilo, e ela diz sorrindo:<br />
+"Agora é hora de dormir, gracinha."<br />
+<br />
+Então ele fecha os olhos para dormir e tem um sonho onde está brincando com suas amigas pôneis na cidade de Ponyville.<br />
+<br />
+Depois de dormir um pouco, ele acorda de manhã um pouco cansado e vê o sol batendo no rosto dele, se espreguiça e boceja.<br />
+<br />
+Twilight diz:<br />
+"Hora de levantar dorminhoco, hihi."<br />
+<br />
+Marcos diz que tudo bem, levanta da cama e anda até o banheiro para escovar seus dentes.<br />
+Depois ele se arruma para ir para escola que é ás sete horas da manhã.<br />
+Ele olha no relógio de sua casa e vê que são seis horas da manhã.<br />
+Então ele vai para a cozinha preparar seu café da manhã, ele prepara uma torrada com manteiga e leite com achocolatado.<br />
+Após comer, ele coloca o leite dentro da geladeira.<br />
+A mãe dele chega no corredor com o cabelo bagunçado e pergunta o que ele está fazendo.<br />
+Marcos responde que está se preparando para ir para a escola.<br />
+<br />
+A mãe diz enquanto sorri:<br />
+"Ah, tudo bem, boa aula filho."<br />
+<br />
+Marcos então responde sorrindo:<br />
+"Obrigado mãe."<br />
+<br />
+"Nossa, você tá mesmo animado para ir pra escola né, hihi, fico muito orgulhosa de você Marcos, hihi", diz Twilight com uma voz feliz enquanto sorri.<br />
+<br />
+Ele sorri, pega sua bicicleta e vai para escola como sempre.<br />
+O garoto chega na escola e prende o pneu da bicicleta com uma corrente e um cadeado, então entra na escola.<br />
+Ele vai para as aulas e Twilight tenta ajudar ele nelas.<br />
+<br />
+Depois do intervalo da escola, ele pega o lanche que trouxe de casa.<br />
+Twilight lhe diz para compartilhar o lanche com os amigos, ela lhe diz para pensar na Rarity e na Fluttershy.<br />
+Ele responde:<br />
+"Eu sempre compartilho com eles, eu gosto deles."<br />
+<br />
+Twilight sorri muito e dá umas risadinhas.<br />
+<br />
+O recreio acaba, ele volta para a sala de aula e frequenta as restantes aulas.<br />
+Depois da escola terminar, ele pega a bicicleta e volta para casa.<br />
+Depois ele coloca a bicicleta na garagem e entra em casa, dizendo que chegou.<br />
+Sua mãe diz para ele se trocar e vir para comer.<br />
+<br />
+Ele troca de roupa e fica sentado na cama pensando no seu dia na escola e nas pôneis.<br />
+A mãe dele fala para ele vir comer, ele diz que já vai vir.<br />
+<br />
+Então Twilight diz enquanto sorri:<br />
+"Mal posso esperar para você vir aqui Marcos, hihi."<br />
+<br />
+Ele fica feliz e diz o mesmo.<br />
+<br />
+O garoto vai até a cozinha e se senta na mesa, começando a comer.<br />
+Ele termina de comer e diz obrigado para a mãe, ela fica feliz e sorri enquanto olha para ele.<br />
+Então o menino se retira e anda até seu quarto, ligando seu computador.<br />
+<br />
+Ele abre a pasta onde estão os episódios de My Little Pony e assiste alguns deles.<br />
+Twilight diz que pode sentir o que ele está fazendo e que está feliz que ele assiste o desenho animado em que ela aparece.<br />
+<br />
+Então ela diz:<br />
+"Ver isso me trás boas lembranças, é bom ter um diário tão vívido desse no mundo humano, queria ter um aqui em Ponyville, para poder me lembrar de todos os momentos felizes que passei com minhas amigas."<br />
+<br />
+Então esse garoto continua vivendo e assistindo o desenho animado, vivendo sua vida normalmente.<br />
+<br />
+...<br />
+<br />
+Algum tempo se passa, esse garoto está nos seus vinte anos e ainda mantém contato com a pônei roxa.<br />
+Sua mãe faleceu, ele ficou muito triste, e espera que ela esteja em um lugar melhor agora.<br />
+Agora ele também consegue conversar com as outras pôneis, Pinkie Pie, Fluttershy, Rainbow Dash, Rarity e Applejack.<br />
+O garoto trabalha e tem sua própria casa, vive uma vida feliz mesmo não estando no mundo dos pôneis, em Ponyville.<br />
+Ele tem uma esposa que ajuda bastante ele e faz ele feliz, ela se chama Maria.<br />
+A esposa dele também gosta do desenho animado, e sempre assiste com ele quando pode.<br />
+<br />
+Ela tem a mesma crença que ele, acreditando que o mundo de My Little Pony existe.<br />
+Eles fizeram uma promessa para os pôneis e para eles mesmos que se eles falecerem, irão visitar o mundo de My Little Pony.<br />
+Maria também pode conversar com as pôneis.<br />
+Twilight sempre fala que quer muito ver os dois e receber eles em Ponyville.<br />
+Pinkie Pie diz que vai fazer uma grande festa quando eles chegarem a Equestria.<br />
+<br />
+Twilight repete o que tinha dito a alguns anos atrás: <br />
+"Um dia no meu mundo é igual á um ano no seu mundo, então vão chegar logo não?"<br />
+<br />
+Os dois respondem positivamente.<br />
+<br />
+...<br />
+<br />
+E dois anos se passaram, o homem tem vinte e dois anos de idade e a esposa vinte um.<br />
+Eles pensam em visitar o mundo dos pôneis todos os dias, enquanto trabalham, enquanto comem o jantar.<br />
+Os dois voltam para a casa e jantam, depois deitam na cama para dormir.<br />
+Enquanto tentam dormir, ainda acordados, eles escutam Twilight dizer:<br />
+"Vocês melhoraram muito depois que os conhecemos, estou muito orgulhosa de vocês dois."<br />
+<br />
+...<br />
+<br />
+Depois de vinte anos, ele está com quarenta e dois anos de idade, e ela está com quarenta e um.<br />
+Eles tem um filho menino de dez anos, chamado João, ele gosta do desenho animado também, adora assistir com os pais.<br />
+Twilight diz que acha ele uma fofura e Fluttershy concorda timidamente.<br />
+<br />
+...<br />
+<br />
+Após vinte anos, o marido tem sessenta e dois anos de idade e a esposa sessenta e um.<br />
+O filho deles mora ao lado da casa deles e sempre vem na casa dos pais para assistir ao desenho animado junto com eles.<br />
+Ele conta para os pais que desde seus dez anos, as pôneis falam com ele em sua mente.<br />
+<br />
+...<br />
+<br />
+Dez anos depois, os pais dele partem desse mundo e ascendem para Equestria, para visitar as pôneis.<br />
+João deixa flores nos túmulos dos pais dele e volta para a casa, ligando seu computador.<br />
+Então o garoto coloca o desenho animado "My Little Pony: A Amizade é Mágica" para tocar e começa a assistir, chorando porque ele se lembra do tempo em que estava assistindo com seus pais.<br />
+<br />
+Twilight diz:<br />
+"Não fica triste João... Os seus pais estão bem aqui em Equestria, eles estão te esperando."<br />
+Ele fica mais feliz ao ouvir aquilo.<br />
+<br />
+...<br />
+<br />
+Após dez anos, ele tem quarenta anos e ainda assiste ao desenho animado, imagina-se a viver com os pôneis no Reino da Equestria.<br />
+<br />
+...<br />
+<br />
+Depois de alguns anos, ele deixa este mundo por causa da velhice.<br />
+Depois de morrer, o homem se encontra no vácuo.<br />
+Ele olha ao seu lado e não encontra ninguém, apenas nada.<br />
+Após alguns segundos, uma luz brilhante aparece à sua frente, de cor púrpura.<br />
+<br />
+É Twilight, sorrindo e dizendo:<br />
+"Você finalmente chegou João, hihi."<br />
+<br />
+Depois Twilight some e ele se encontra no mundo de My Little Pony, ele vê as seis pôneis na sua frente, junto com seus pais.<br />
+As seis pôneis, o homem, e os pais dele se abraçam, dando um abraço em grupo.<br />
+<br />
+O marido diz para sua esposa: <br />
+"Eu prometi que iríamos se encontrar aqui."<br />
+<br />
+João e Maria sorriem.<br />
+E juntos, esses nove amigos estão sempre se divertindo.<br />
+<br />
+João diz:<br />
+"Espero que mais humanos venham pra cá."<br />
+<br />
+Twilight responde:<br />
+"Eu também."<br />
+<br />
+O trio de humanos saem para passear pela cidade de Ponyville, para conhecer os seus personagens favoritos.<br />
+E assim eles vivem. conquistaram o maior sonho deles, o de viver em Equestria, com os pôneis que eles tanto amam, e eles estão felizes com sua vida.<br />
+<br />
+Obrigado por ler, por favor me deixe uma mensagem no Discord, Twitter, ou Wattpad se você é meu amigo lá.<br />
+Escrito em 2016, revisado e reescrito em 30/03/2020, feito por Izaque (Stake2).<br />
+Minimamente revisado novamente 16:11 17/10/2021.<br />
+Palavras: 2,117.
+<br /><br />
+		Palavras:
+<br />
+2.463 palavras<br /><br />
+		</h4>
+		
+
+		<!-- Chapter button for " - " chapter -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('', '');" style="border-radius: 50px;">
+			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+				 - 
+			</h3>
+		</button>
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Modal('comment', '1 - Capítulo Único')" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_purple"  style="font-weight: bold;">
+		Comentar: <i class="fas fa-comments"></i>
+		</h3>
+	</button>
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Modal('read', '1 - Capítulo Único')" style="float: right; margin-right: 1%;">
+		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+		Eu li: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
+		</h3>
+	</button>
+
+		<br /><br /><br />
+
+	</div>
+
+	<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+
+	<!-- Chapter title bottom -->
+	<h3 class="text_size">
+		<p><br /><b>Você acabou de ler: <span class="text_light_purple">Ascensão à Equestria</span><br />Capítulo: <span class="text_light_purple" id="chapter_1_title">1 - Capítulo Único</span></b><br /><br /><p>
+	</h3>
+	<br /><br />
+</div>
+
+<!-- Chapter comment modal for all chapters -->
+<a id="chapter_comment_anchor" name="chapter_comment"></a>
+<div id="chapter_comment" class="modal" style="display: none; border-radius: 50px;">
+	<div class="modal-content header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom text_light_purple margin_6_cent_auto" style="width: 50%; border-radius: 50px; padding-bottom: 7%;">
+		<!-- Hide modal button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Hide_Modal('comment');" style="float: right; padding: 2px 14px 3px 15px !important;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>
+		</button>
+		<br /><br /><br />
+
+		<!-- "Comentar no capítulo" text -->
+		<h2 class="text_size text_light_purple" style="font-weight: bold;">
+			Comentar no capítulo:<br />
+			<span id="chapter_comment_title">?</span> <i class="fas fa-comments"></i>
+		</h2>
+		<br />
+
+		<!-- Comment form -->
+		<form name="Story_Comment" method="POST" data-netlify="True">
+			<input type="hidden" name="form-name" value="Story_Comment">
+			<input type="hidden" name="website_title" value="Ascensão à Equestria">
+	
+			<!-- My name input -->
+			<h2 class="text_size margin_top_bottom_2_cent text_light_purple" style="font-weight: bold;">
+				Meu nome:<br />
+			</h2>
+			<input type="text" name="name" class="w3-input text_size background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" style="width: 100%; font-weight: bold; border-radius: 50px;">
+
+			<!-- Hidden chapter title input -->
+			<input id="chapter_comment_value" type="hidden" name="chapter" value="" class="w3-input background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" style="width: 100%; display: none; font-weight: bold; border-radius: 50px; text-align: center;">
+
+			<!-- Comment input -->
+			<h2 class="text_size text_light_purple margin_sides_10_cent margin_top_bottom_3_cent" style="font-weight: bold;">
+				Comentário: 
+			</h2>
+			<input class="w3-input text_size background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" type="text" name="comment" style="width: 100%; font-weight: bold; border-radius: 50px;" />
+			<br />
+
+			<!-- Submit form button -->
+			<button type="submit" class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" style="float: right; border-radius: 50px;">
+				<h2 class="text_size">
+					<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+				</h2>
+			</button>
+
+			<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+		</form>
+	</div>
+</div>
+
+<!-- Chapter read modal for all chapters -->
+<a id="chapter_read_anchor" name="chapter_read"></a>
+<div id="chapter_read" class="modal" style="display: none; border-radius: 50px;">
+	<div class="modal-content header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom text_light_purple" style="width: 50%; border-radius: 50px; padding-bottom: 7%;">
+		<!-- Hide modal button -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Hide_Modal('read');" style="float: right; padding: 2px 14px 3px 15px !important;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>
+		</button>
+		<br /><br /><br />
+
+		<!-- "Eu li o capítulo" text -->
+		<h2 class="text_size text_light_purple" style="font-weight: bold;">
+			Eu li o capítulo:<br />
+			<span id="chapter_read_title">?</span> <i class="fas fa-book-reader"></i>
+		</h2>
+		<br />
+
+		<!-- Read form -->
+		<form name="Story_Read" method="POST" data-netlify="True">
+			<input type="hidden" name="form-name" value="Story_Read">
+			<input type="hidden" name="website_title" value="Ascensão à Equestria">
+	
+			<!-- My name input -->
+			<h2 class="text_size margin_top_bottom_2_cent text_light_purple" style="font-weight: bold;">
+				Meu nome:<br />
+			</h2>
+			<input type="text" name="name" class="w3-input text_size background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" style="width: 100%; font-weight: bold; border-radius: 50px;">
+
+			<!-- Hidden chapter title input -->
+			<input id="chapter_read_value" type="hidden" name="chapter" value="" class="w3-input background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" style="width: 100%; display: none; font-weight: bold; border-radius: 50px; text-align: center;">
+
+			<br />
+
+			<!-- Submit form button -->
+			<button type="submit" class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" style="float: right; border-radius: 50px;">
+				<h2 class="text_size">
+					<b>Enviar: <i class="fas fa-paper-plane"></i></b>
+				</h2>
+			</button>
+
+			<br class="mobile_inline_block" /><br class="mobile_inline_block" />
+		</form>
+	</div>
+</div>
+
+<script>
+	var last_chapter = 1
+</script>
+
+</center>
+</body>
+</html>

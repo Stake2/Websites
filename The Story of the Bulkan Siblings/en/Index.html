@@ -34,7 +34,7 @@
 	<meta name="twitter:image" type="image/png" content="/Images/The Story of the Bulkan Siblings/English.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -77,14 +77,14 @@
 	</style>
 
 	<!-- JavaScript files -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
 	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="/JavaScript/Story.js"></script>
-	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="/JavaScript/Story.js"></script>	
 
 	<script>
 		Check_Language()
@@ -96,14 +96,11 @@
 
 <!-- Open hamburger menu button -->
 
-
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
-		<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-		
-	<h2 class="text_size">
-		<i class="fas fa-bars"></i>
-	</h2>
-
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_brown" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
 		</h3>
 	</button>
 
@@ -112,56 +109,47 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_brown border_4px border_color_light_brown border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
-	
 
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
-		<h3 class="text_size text_dark_brown" style="font-weight: bold;">
-		
-		<h4 class="text_size" style="font-weight: bold;">
-		X
-		</h4>
-	
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_brown" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
 		</h3>
 	</button>
 
 	<h2 class="text_size text_dark_brown" style="font-weight: bold;">Tab menu: </h2>
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
-	<!-- "Read story" button -->
-	<span id="button_1" class="tab_button">
-		
 
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_brown">
-		
-				Read story: <i class="fas fa-book-open"></i>
-			
+	<!-- "Read story" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_brown">
+			Read story: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_brown">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_brown">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span>
 
-	<!-- "Websites" button -->
-	<span id="button_3" class="tab_button">
-		
 
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_brown">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<!-- "Websites" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_brown">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
@@ -192,11 +180,14 @@
 		Synopsis: <i class="fas fa-scroll"></i> This is a story about two adventurer siblings, two kids.<br />
 		They always go on adventures together around the medieval fantasy world, sometimes finding dungeons, treasures, and exotic creatures.<br />
 		The siblings are called Ana Bulkan and Izaque Bulkan, and this is the beginning of their story.<br />
-		---<br />
+		-----<br />
 		Story authors: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span> and <span class="text_green_water">Ana</span><br />
 		Chapters: <i class="fas fa-book"></i> <span class="text_dark_brown">8</span><br />
 		Story creation date: <i class="fa-solid fa-calendar-days"></i> <span class="text_dark_brown">11/01/2019</span><br />
-		Status: <i class="fa-solid fa-cloud-arrow-up"></i> <span class="text_dark_brown">Published</span>
+		Status: <i class="fa-solid fa-cloud-arrow-up"></i> <span class="text_dark_brown">Published</span><br />
+-----
+<br />
+		Wattpad: <br /><a class="text_dark_brown" href="https://wattpad.com/story/295251911-the-story-of-the-bulkan-siblings" target="_blank">https://wattpad.com/story/295251911-the-story-of-the-bulkan-siblings</a>
 	</h3>
 	<br />
 </div>
@@ -215,14 +206,11 @@
 
 	<hr class="border_1px border_color_light_brown margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_brown">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_brown">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_brown margin_sides_5_cent" />	
@@ -300,25 +288,19 @@
 
 	<hr class="border_1px border_color_light_brown margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Read story" button -->
-	<span id="button_1" class="tab_button">
-		
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_brown">
-		
-				Read story: <i class="fas fa-book-open"></i>
-			
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_brown">
+			Read story: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Websites" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_brown">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_brown">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_brown margin_sides_5_cent" />	
@@ -458,14 +440,11 @@
 
 	<hr class="border_1px border_color_light_brown margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_brown">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_whitew3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_brown">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_brown margin_sides_5_cent" />	
@@ -673,7 +652,7 @@
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_1_title">1 - The beginning, the dungeon</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -686,13 +665,7 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/The Story of the Bulkan Siblings/Chapters/01/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_1_text" class="text_size unselectable " style="text-align: left;">
 		This is a story made by me and my friend and tulpa Ana.<br />
 It started on 11/01/2019, when I wanted to do a story with her, we decided what the story would tell and how it would be.<br />
@@ -709,7 +682,7 @@ Tulpa is a concept in mysticism and the paranormal of a being or object which is
 It was adapted by 20th-century theosophists from Tibetan sprul-pa (Tibetan: སྤྲུལ་པ་, Wylie: sprulpa) which means "emanation body".<br />
 Modern practitioners use the term to refer to a type of willed imagined being that practitioners consider to be sentient and relatively independent.<br />
 <br />
-<a href="https://en.wikipedia.org/wiki/Tulpa" target="_blank" class="text_dark_brown text_hover_dark_brown">https://en.wikipedia.org/wiki/Tulpa</a><br />
+<a href="https://en.wikipedia.org/wiki/Tulpa" target="_blank">Read more on Wikipedia (Click here)</a><br />
 <br />
 ---<br />
 <br />
@@ -767,7 +740,7 @@ The girl grabs a stone and throws it on the opposite side where they are to call
 "Where are you, I know you're there, show up!" says the man enraged while he searches for the two in the place where the stone is.<br />
 Ana signals to the boy, telling him to go that way, so they can escape the man.<br />
 This song starts to play here and plays until the end:<br />
-<a href="https://www.youtube.com/watch?v=9o3cEYOxAjs" target="_blank" class="text_dark_brown text_hover_dark_brown">https://www.youtube.com/watch?v=9o3cEYOxAjs</a><br />
+<div class="video-container" style="margin-top: 1%; margin-bottom: -6%;"><iframe type="text/html" width="560" height="315" frameborder="0" class="border_radius_5_cent border_4px border_color_light_brown" src="https://www.youtube.com/embed/9o3cEYOxAjs?autoplay=0&fs=1&iv_load_policy=1&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&" title="YouTube video player"></iframe></div><br /><br /><br /><br />
 They walk slowly out of the sight of the man, losing him.<br />
 <br />
 They see that they are already far from the man and continue to walk.<br />
@@ -778,7 +751,7 @@ They walk a little more, they find another hall and follow it.<br />
 <br />
 <br />
 References:<br />
-[1].<br />
+[1]. <a name="Chapter_1_Reference_1"></a><br />
 "Stalker is an English word that means "chaser" or "pursuer".<br />
 It is applied to someone that importunes insistently and obsessively another person that, in a lot of cases, is a celebrity. The persistent chase can lead to attacks and aggression. [...]"<br />
 <br />
@@ -786,7 +759,9 @@ The practice of spying and pursuing someone is called "stalking" (lurk). The ter
 <br />
 Source: <a href="https://www.merriam-webster.com/dictionary/stalker" target="_blank" class="text_dark_brown text_hover_dark_brown">https://www.merriam-webster.com/dictionary/stalker</a>
 <br /><br />
-		Words: 1,475<br /><br />
+		Words:
+<br />
+1.498 words<br /><br />
 		</h4>
 		
 
@@ -842,7 +817,7 @@ Source: <a href="https://www.merriam-webster.com/dictionary/stalker" target="_bl
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_2_title">2 - The room and the first weapon</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -862,13 +837,7 @@ Source: <a href="https://www.merriam-webster.com/dictionary/stalker" target="_bl
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/The Story of the Bulkan Siblings/Chapters/02/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_2_text" class="text_size unselectable " style="text-align: left;">
 		They arrive at a dead end, there is a paper on the ground.<br />
 Izaque who is the wisest grabs the paper and reads, "In this room, there's something I like a lot, but I get rid of it if I need to, serves as fuel".<br />
@@ -927,7 +896,9 @@ He feels a connection to his grandfather and the sword as if it were destined to
 "Okay, hehe," replies Izaque, smiling.<br />
 The two siblings start to go back home on foot, Izaque stores the sword on the scabbard that is on his waist.
 <br /><br />
-		Words: 982<br /><br />
+		Words:
+<br />
+984 words<br /><br />
 		</h4>
 		
 
@@ -978,7 +949,7 @@ The two siblings start to go back home on foot, Izaque stores the sword on the s
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_3_title">3 - Return and concern</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -998,13 +969,7 @@ The two siblings start to go back home on foot, Izaque stores the sword on the s
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/The Story of the Bulkan Siblings/Chapters/03/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_3_text" class="text_size unselectable " style="text-align: left;">
 		After a long time, they arrive at their home and knock on the door.<br />
 "Hey, you arrive-" says the scared mother, that interrupts her speech, "Oh my God," says the mother, surprised with the sword on the hands of the boy.<br />
@@ -1112,7 +1077,7 @@ Then they sleep on a silent night, hugged.<br />
 <br />
 <br />
 References:<br />
-[1].<br />
+[1]. <a name="Chapter_3_Reference_1"></a><br />
 "Stalker is an English word that means "chaser" or "pursuer".<br />
 It is applied to someone that importunes insistently and obsessively another person that, in a lot of cases, is a celebrity. The persistent chase can lead to attacks and aggression. [...]"<br />
 <br />
@@ -1120,7 +1085,9 @@ The practice of spying and pursuing someone is called "stalking" (lurk). The ter
 <br />
 Source: <a href="https://www.merriam-webster.com/dictionary/stalker" target="_blank" class="text_dark_brown text_hover_dark_brown">https://www.merriam-webster.com/dictionary/stalker</a>
 <br /><br />
-		Words: 1,613<br /><br />
+		Words:
+<br />
+1.620 words<br /><br />
 		</h4>
 		
 
@@ -1171,7 +1138,7 @@ Source: <a href="https://www.merriam-webster.com/dictionary/stalker" target="_bl
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_4_title">4 - A new weapon and a strange transformation</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -1191,13 +1158,7 @@ Source: <a href="https://www.merriam-webster.com/dictionary/stalker" target="_bl
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/The Story of the Bulkan Siblings/Chapters/04/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_4_text" class="text_size unselectable " style="text-align: left;">
 		The siblings wake up and see the sun shining through the window.<br />
 It is a little cold, they love cold mornings with the sun to warm them up.<br />
@@ -1374,7 +1335,7 @@ They walk a little and Ana asks while she looks at her brother, "Do you feel tha
 The dragon has red scales and the rest of his body is orange, he occupies half of the room with his body.<br />
 They take a slight leap back when they get scared.<br />
 "Oh, that smell..." says Izaque in shock but trying to not wake up the dragon.<br />
-<a href="https://www.youtube.com/watch?v=9o3cEYOxAjs" target="_blank" class="text_dark_brown text_hover_dark_brown">https://www.youtube.com/watch?v=9o3cEYOxAjs</a><br />
+<div class="video-container" style="margin-top: 1%; margin-bottom: -6%;"><iframe type="text/html" width="560" height="315" frameborder="0" class="border_radius_5_cent border_4px border_color_light_brown" src="https://www.youtube.com/embed/9o3cEYOxAjs?autoplay=0&fs=1&iv_load_policy=1&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&" title="YouTube video player"></iframe></div><br /><br /><br /><br />
 "This is what must be keeping the treasure big bro.<br />
 I think we should come here later, he must be tired," says Ana.<br />
 "Hmm, I agree big sis, but I think we should try to talk to him, to try to...<br />
@@ -1409,7 +1370,9 @@ And I like dragons a lot, that's why I loved to become a dragon, hehe, it was co
 "Oh, hehe, you have a lot of knowledge big bro," says Ana, smiling.<br />
 "Thanks, little sis," says Izaque smiling too.
 <br /><br />
-		Words: 3,245<br /><br />
+		Words:
+<br />
+3.271 words<br /><br />
 		</h4>
 		
 
@@ -1460,7 +1423,7 @@ And I like dragons a lot, that's why I loved to become a dragon, hehe, it was co
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_5_title">5 - A magic item and the new friend</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -1480,13 +1443,7 @@ And I like dragons a lot, that's why I loved to become a dragon, hehe, it was co
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/The Story of the Bulkan Siblings/Chapters/05/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_5_text" class="text_size unselectable " style="text-align: left;">
 		They start coming back home with the golden chest, blue sword, and bag of gold coins.<br />
 Arriving there, they knock on the door, the mother opens and says, "Ah, you're her- Wait, who are you?"<br />
@@ -1596,7 +1553,9 @@ Then the siblings get out of the temple, they start flying high in the sky.<br /
 "Yeah, he was very pacific and gentle big bro," replies Ana.<br />
 The two decide to go again into the weird hole they saw the other day.
 <br /><br />
-		Words: 1,457<br /><br />
+		Words:
+<br />
+1.459 words<br /><br />
 		</h4>
 		
 
@@ -1647,7 +1606,7 @@ The two decide to go again into the weird hole they saw the other day.
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_6_title">6 - The second visit</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -1667,13 +1626,7 @@ The two decide to go again into the weird hole they saw the other day.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/The Story of the Bulkan Siblings/Chapters/06/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_6_text" class="text_size unselectable " style="text-align: left;">
 		After some time, the two siblings arrive there flying with their dragon wings.<br />
 "Do you think he's still here big bro?" asks Ana.<br />
@@ -1744,7 +1697,9 @@ Then Izaque asks, "And what about it, little sis?"<br />
 "Hmm..." says Ana, thoughtful.<br />
 Then two siblings start to walk to their house.
 <br /><br />
-		Words: 887<br /><br />
+		Words:
+<br />
+889 words<br /><br />
 		</h4>
 		
 
@@ -1795,7 +1750,7 @@ Then two siblings start to walk to their house.
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_7_title">7 - The discovery, the reconciliation, and the ending</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -1815,13 +1770,7 @@ Then two siblings start to walk to their house.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_7" src="https://thestake2.netlify.app/Images/The Story of the Bulkan Siblings/Chapters/07/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_7_text" class="text_size unselectable " style="text-align: left;">
 		The two siblings arrive at their house for lunch.<br />
 They knock on the door and Rosa opens and says, "Come in my sweeties, lunch is ready".<br />
@@ -1968,7 +1917,9 @@ We finished it on 24/01/2019.<br />
 We reviewed and fixed it on 08/04/2019.<br />
 But we kept editing and revising some things recently, in 2021, and now in 2023.
 <br /><br />
-		Words: 1,960<br /><br />
+		Words:
+<br />
+1.962 words<br /><br />
 		</h4>
 		
 
@@ -2019,7 +1970,7 @@ But we kept editing and revising some things recently, in 2021, and now in 2023.
 		<p><br /><b>You are reading: <span class="text_dark_brown">The Story of the Bulkan Siblings</span><br />Chapter: <span class="text_dark_brown" id="chapter_8_title">8 - The restart and the travel</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_brown" />		
 
@@ -2032,13 +1983,7 @@ But we kept editing and revising some things recently, in 2021, and now in 2023.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_brown image_size border_4px border_color_light_brown border_radius_8_cent" id="chapter_cover_8" src="https://thestake2.netlify.app/Images/The Story of the Bulkan Siblings/Chapters/08/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_8_text" class="text_size unselectable " style="text-align: left;">
 		The two siblings arrive at their house for lunch.<br />
 They knock on the door and Rosa opens and says, "Come in my sweeties, lunch is ready".<br />
@@ -2183,7 +2128,9 @@ Finished on 24/01/2019.<br />
 Reviewed and fixed on 08/04/2019.<br />
 But we both kept editing and revising some things recently, in 2021.
 <br /><br />
-		Words: 1,723<br /><br />
+		Words:
+<br />
+1.725 words<br /><br />
 		</h4>
 		
 

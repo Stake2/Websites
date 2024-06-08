@@ -34,7 +34,7 @@
 	<meta name="twitter:image" type="image/png" content="/Images/The Secret of the Crystals/English.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -77,14 +77,14 @@
 	</style>
 
 	<!-- JavaScript files -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
 	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="/JavaScript/Story.js"></script>
-	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="/JavaScript/Story.js"></script>	
 
 	<script>
 		Check_Language()
@@ -96,14 +96,11 @@
 
 <!-- Open hamburger menu button -->
 
-
-	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
-		<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-		
-	<h2 class="text_size">
-		<i class="fas fa-bars"></i>
-	</h2>
-
+	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_blue" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
 		</h3>
 	</button>
 
@@ -112,56 +109,47 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_blue border_4px border_color_light_cyan border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
-	
 
-	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
-		<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-		
-		<h4 class="text_size" style="font-weight: bold;">
-		X
-		</h4>
-	
+	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_blue" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
 		</h3>
 	</button>
 
 	<h2 class="text_size text_green_water" style="font-weight: bold;">Tab menu: </h2>
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
-	<!-- "Read story" button -->
-	<span id="button_1" class="tab_button">
-		
 
-	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Read story: <i class="fas fa-book-open"></i>
-			
+	<!-- "Read story" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Read story: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span>
 
-	<!-- "Websites" button -->
-	<span id="button_3" class="tab_button">
-		
 
-	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<!-- "Websites" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
@@ -199,11 +187,14 @@
 		The girl does not know what is beyond the sky, the stars, she wants to discover that.<br />
 		And this is the story of her journey, what will be waiting for Ana in this journey? New Friends? New places?<br />
 		We will have to read to know, here begins <span class="text_green_water">"The Secret of the Crystals"</span>.<br />
-		---<br />
+		-----<br />
 		Story author: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span><br />
 		Chapters: <i class="fas fa-book"></i> <span class="text_green_water">15</span><br />
 		Story creation date: <i class="fa-solid fa-calendar-days"></i> <span class="text_green_water">02/04/2020</span><br />
-		Status: <i class="fa-solid fa-pen"></i> <span class="text_green_water">Writing</span>
+		Status: <i class="fa-solid fa-pen"></i> <span class="text_green_water">Writing</span><br />
+-----
+<br />
+		Wattpad: <br /><a class="text_green_water" href="https://wattpad.com/story/294955127-the-secret-of-the-crystals" target="_blank">https://wattpad.com/story/294955127-the-secret-of-the-crystals</a>
 	</h3>
 	<br />
 </div>
@@ -222,14 +213,11 @@
 
 	<hr class="border_1px border_color_light_cyan margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_cyan margin_sides_5_cent" />	
@@ -356,25 +344,19 @@
 
 	<hr class="border_1px border_color_light_cyan margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Read story" button -->
-	<span id="button_1" class="tab_button">
-		
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Read story: <i class="fas fa-book-open"></i>
-			
+	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Read story: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Websites" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_cyan margin_sides_5_cent" />	
@@ -514,14 +496,11 @@
 
 	<hr class="border_1px border_color_light_cyan margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_whitew3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_cyan margin_sides_5_cent" />	
@@ -729,7 +708,7 @@
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_1_title">1 - The start of the journey</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -742,13 +721,7 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/01/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_1_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		I started writing this story on 02/04/2020.<br />
 <br />
@@ -768,7 +741,7 @@ Then I got inspired to write something, so I started to write this story.<br />
 I changed the character name from Anna to Ana, and in the middle of writing it, I changed the character name to my current girlfriend's name at the time.<br />
 I always imagined Ana as Lapis Lazuli from the cartoon Steven Universe in her debut or first form, not the mean or nice one.<br />
 She is Lapis Lazuli, the left one from the story cover.<br />
-<a href="https://thestake2.netlify.app/Images/Images/The%20Secret%20of%20the%20Crystals/Lapis%20Lazuli.png" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/Images/Images/The%20Secret%20of%20the%20Crystals/Lapis%20Lazuli.png</a><br />
+<br /><img class="image_size border_4px border_color_light_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/The Secret of the Crystals/Lapis Lazuli.png" style="max-width: 50%;" /><br /><br />
 <br />
 Also, a character that appears in this story, is a little inspired by Maui from the Disney movie called Moana.<br />
 The fact that he can turn into a humanoid bird and a hawk-like bird.<br />
@@ -875,7 +848,9 @@ Ana knew a lot of islands and places to go, in this world, this planet that she 
 The fairy had a map of the world inside her mind, she knew the Clouds of Madness, Crystal Lands, Mountains of Aris, and the Volcanoes of Death.<br />
 She thinks Tod spoke a little about the Mountains of Aris, close to the Volcanoes of Death, she wanted to go there to visit him.
 <br /><br />
-		Words: 2,392<br /><br />
+		Words:
+<br />
+2.388 words<br /><br />
 		</h4>
 		
 
@@ -919,7 +894,7 @@ She thinks Tod spoke a little about the Mountains of Aris, close to the Volcanoe
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_2_title">2 - The secret and the surviving</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -939,13 +914,7 @@ She thinks Tod spoke a little about the Mountains of Aris, close to the Volcanoe
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/02/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_2_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Ana was still flying, she arrived close to the Mountains of Aris, it was an island with lots of crystals of various colors that came from inside the ground.<br />
 They were very beautiful, there were red, blue, cyan, pink, orange, yellow, white, black, and green crystals.<br />
@@ -1000,7 +969,7 @@ And you didn't run or try to hide when you saw me coming... Why?" asked Ana.<br 
 "Of course we're friends silly," said Tod, smiling at Ana, he walked close to her in his human form, hugging her.<br />
 Ana accepted the hug and smiled, "Thanks Tod, you're a great friend," said her.<br />
 (This is how the humanoid version of Tod looks like.)<br />
-<a href="https://thestake2.netlify.app/Images/Images/The%20Secret%20of%20the%20Crystals/Humanoid" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/Images/Images/The%20Secret%20of%20the%20Crystals/Humanoid</a> Kódek.jpg<br />
+<br /><img class="image_size border_4px border_color_light_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/The Secret of the Crystals/Humanoid Kódek.jpg" style="max-width: 50%;" /><br /><br />
 (The hawk at the right of the No Man's Sky Atlas Plumbob on the story cover is the bird version of Tod.)<br />
 <br />
 "So... What you're doing here on this island Tod?" asked Ana.<br />
@@ -1120,7 +1089,9 @@ She was happy to survive and build things together with Tod, it was very fun.<br
 Then Ana activated her wings and Tod turned into a hawk-like bird again.<br />
 Ana and Tod grabbed a banana from a tree, they started flying low on the island, looking at the campfire, the furnace, stones, axes, knife-like stones, the spear.
 <br /><br />
-		Words: 3,217<br /><br />
+		Words:
+<br />
+3.215 words<br /><br />
 		</h4>
 		
 
@@ -1171,7 +1142,7 @@ Ana and Tod grabbed a banana from a tree, they started flying low on the island,
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_3_title">3 - The discovery of the secret</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -1191,13 +1162,7 @@ Ana and Tod grabbed a banana from a tree, they started flying low on the island,
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/03/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_3_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		They started flying, Ana was following Tod because he knew the way to the Mountains of Aris, his home.<br />
 Ana was looking at the sunset, it was very beautiful, the ocean was moving a little because of the wind, some fish jumped off the water and came back inside it.<br />
@@ -1350,7 +1315,9 @@ Let's go to sleep?" asked Ana smiling.<br />
 They both started walking to the hut of their parents, Ana said goodnight to Lindsay, and Lindsay said goodnight back.<br />
 They walked to their bedrooms, laid on the bed, and slept.
 <br /><br />
-		Words: 2,851<br /><br />
+		Words:
+<br />
+2.853 words<br /><br />
 		</h4>
 		
 
@@ -1401,7 +1368,7 @@ They walked to their bedrooms, laid on the bed, and slept.
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_4_title">4 - Teaching survival skills to Lindsay</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -1421,13 +1388,7 @@ They walked to their bedrooms, laid on the bed, and slept.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/04/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_4_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		"Hehe, okay, sis, it will be very good to have your company, do you want me to teach you survival skills?" asked Ana.<br />
 "Yes, I want to learn it with the best!" said Lindsay, smiling while looking at Ana.<br />
@@ -1571,7 +1532,9 @@ They both started eating their fish, smiling at each other, the fish was delicio
 "Yes," replied Lindsay.<br />
 Then they both lied on the sand close to the fire and started to sleep, relaxing and resting.
 <br /><br />
-		Words: 2,363<br /><br />
+		Words:
+<br />
+2.365 words<br /><br />
 		</h4>
 		
 
@@ -1622,7 +1585,7 @@ Then they both lied on the sand close to the fire and started to sleep, relaxing
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_5_title">5 - The relaxation and the hut</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -1642,13 +1605,7 @@ Then they both lied on the sand close to the fire and started to sleep, relaxing
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/05/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_5_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		She waited for the fish to get ready and placed the cooked fish on top of a stone, cutting it in half and removing thorns and bones, Lindsay did that too.<br />
 They both started eating their fish, smiling at each other, the fish was delicious.<br />
@@ -1781,7 +1738,9 @@ It started raining a little, a calm and relaxing rain, it watered the roof of th
 The rain probably put out the fire that was close to the shore of the island.<br />
 They slept while listening to the calm rain, making the island colder, but still good to sleep in, the fire inside the hut could warm them if they needed it.
 <br /><br />
-		Words: 2,524<br /><br />
+		Words:
+<br />
+2.526 words<br /><br />
 		</h4>
 		
 
@@ -1832,7 +1791,7 @@ They slept while listening to the calm rain, making the island colder, but still
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_6_title">6 - The strange being and the mission</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -1852,13 +1811,7 @@ They slept while listening to the calm rain, making the island colder, but still
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/06/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_6_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		In the morning, Lindsay woke up and Ana did not, Lindsay grabbed the two cups and the jar.<br />
 She walked close to the furnace and ignited the fire, then she boiled some water for both of them to drink.<br />
@@ -2008,7 +1961,9 @@ I just gotta stop at this planet to get some Uranium to refuel the spaceship's d
 "Okay sis, can I drive when we go out of the planet?" asked Lindsay.<br />
 "Yes, you can sis," said Ana, pushing the accelerator of the spaceship.
 <br /><br />
-		Words: 2,744<br /><br />
+		Words:
+<br />
+2.746 words<br /><br />
 		</h4>
 		
 
@@ -2059,7 +2014,7 @@ I just gotta stop at this planet to get some Uranium to refuel the spaceship's d
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_7_title">7 - The planet and the battle</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -2079,13 +2034,7 @@ I just gotta stop at this planet to get some Uranium to refuel the spaceship's d
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_7" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/07/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_7_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		After some time flying, they arrived at the planet, Ana landed on the ground, they both got off the spaceship.<br />
 Ana scanned the planet, she could see a lot of resource icons with her visor.<br />
@@ -2218,7 +2167,9 @@ Then they say bye to Tetracovix and Zyoox, the two brothers walked back to the p
 Lindsay and Ana walk to their spaceship, Ana sat on the driver's seat, turning the spaceship on and taking flight.<br />
 Then Ana started flying back to her planet, happy that she helped someone, she wrote everything she learned and saw in a notebook.
 <br /><br />
-		Words: 2,480<br /><br />
+		Words:
+<br />
+2.482 words<br /><br />
 		</h4>
 		
 
@@ -2269,7 +2220,7 @@ Then Ana started flying back to her planet, happy that she helped someone, she w
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_8_title">8 - The announcement and survival in three</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -2289,13 +2240,7 @@ Then Ana started flying back to her planet, happy that she helped someone, she w
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_8" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/08/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_8_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		"You guys can keep the spaceship, the multi-tools, and the Exo suits, they are all yours, and they are a gift for helping us, you can visit us anytime," said Tetracovix.<br />
 "Thank you, Tetracovix, it was a pleasure to help you two and your people, and thank you for the gifts," said Lindsay smiling.<br />
@@ -2466,7 +2411,9 @@ There were white chocolate, black chocolate, normal chocolate, lakes of chocolat
 It was being a very good dream, Panda, Lindsay, and Ana looked at each other, they were happy while dreaming that dream.<br />
 They were so connected spiritually, as sisters, that they dreamt together.
 <br /><br />
-		Words: 3,335<br /><br />
+		Words:
+<br />
+3.337 words<br /><br />
 		</h4>
 		
 
@@ -2517,7 +2464,7 @@ They were so connected spiritually, as sisters, that they dreamt together.
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_9_title">9 - More survival and the visit</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -2537,13 +2484,7 @@ They were so connected spiritually, as sisters, that they dreamt together.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_9" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/09/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_9_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		After some hours of sleeping, Ana woke up, it was morning, the sun was slowly rising.<br />
 It was raining a little, the fire of the hut was still on.<br />
@@ -2671,7 +2612,9 @@ Ana entered inside the Transparent Hand QX1 spaceship, they both started driving
 They had to teach Panda how to drive the spaceship when they arrive there.<br />
 They also learned how to make Exo suits and give them to people, and had bought some multi-tools with their spare money.
 <br /><br />
-		Words: 2,136<br /><br />
+		Words:
+<br />
+2.138 words<br /><br />
 		</h4>
 		
 
@@ -2722,7 +2665,7 @@ They also learned how to make Exo suits and give them to people, and had bought 
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_10_title">10 - The driving lesson and the new spaceship</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -2742,13 +2685,7 @@ They also learned how to make Exo suits and give them to people, and had bought 
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_10" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/10/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_10_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Ana and Lindsay came back to Earth, landing their spaceships on the beach of the Crystal Lands.<br />
 Some fairies looked at them, surprised, "A new spaceship?" wondered a fairy, looking at the spaceship which was called "Transparent Hand QX1".<br />
@@ -2865,7 +2802,9 @@ Then the trio entered inside the spaceships, lifting them and parking them close
 After that, the sisters walked inside the hut to eat afternoon breakfast, they were happy about the adventure they had, to buy another spaceship.<br />
 They started to have afternoon breakfast together, it was delicious.
 <br /><br />
-		Words: 2,175<br /><br />
+		Words:
+<br />
+2.177 words<br /><br />
 		</h4>
 		
 
@@ -2916,7 +2855,7 @@ They started to have afternoon breakfast together, it was delicious.
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_11_title">11 - The visit and the ancient stairwell</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -2936,13 +2875,7 @@ They started to have afternoon breakfast together, it was delicious.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_11" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/11/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_11_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		It was morning, Ana did not know what day it was, but she knew that she was living in the year 2052, her Exo suit said that.<br />
 She woke up and got out of bed, doing her morning necessities, after that, she walked to the kitchen to eat breakfast with her family.<br />
@@ -3113,7 +3046,9 @@ Then, Ana walked to the beach, Tom followed her, she held her necklace and place
 "Okay then," replied the boy.<br />
 After that, Ana started flying, she grabbed the boy and started flying to the Crystal Lands, her home.
 <br /><br />
-		Words: 3,429<br /><br />
+		Words:
+<br />
+3.431 words<br /><br />
 		</h4>
 		
 
@@ -3164,7 +3099,7 @@ After that, Ana started flying, she grabbed the boy and started flying to the Cr
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_12_title">12 - The rescue and the history</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -3184,13 +3119,7 @@ After that, Ana started flying, she grabbed the boy and started flying to the Cr
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_12" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/12/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_12_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Ana was still flying with the boy that she rescued from the underground laboratory, Tom, she was flying to the Crystal Lands.<br />
 The boy was inside a glass tube filled with a green liquid called Greent, that liquid could preserve the body better than cryopreservation.<br />
@@ -3295,7 +3224,9 @@ The girl flew to that island and discovered the past of the Earth, the world.<br
 She was so happy to make a lot of discoveries and happy to think about everything she has done in these months, until now.<br />
 So much time has passed, and she met a lot of new people, made new friends, the girl closed her eyes, sleeping, waiting for a new day.
 <br /><br />
-		Words: 2,142<br /><br />
+		Words:
+<br />
+2.144 words<br /><br />
 		</h4>
 		
 
@@ -3346,7 +3277,7 @@ So much time has passed, and she met a lot of new people, made new friends, the 
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_13_title">13 - Ana's new spaceship and the visit to Tetracovix</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -3366,13 +3297,7 @@ So much time has passed, and she met a lot of new people, made new friends, the 
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_13" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/13/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_13_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		It was another day on Earth (Crystal Version), Ana woke up, got up, and walked to the bathroom, she did her morning necessities.<br />
 Then she walked to the kitchen, Ana started making breakfast, it was morning.<br />
@@ -3486,7 +3411,9 @@ The family ate dinner together, it was some roasted vegetables with some spices 
 It was delicious, after eating dinner, the family sat on the area chairs of the beach, relaxing, feeling the cold wind and looking at the big moon, lighting up the breathing ocean.<br />
 After relaxing for some minutes, they could already sleep because the food was a little processed, they walked back to the hut and walked to their bedrooms, laying on the bed and sleeping.
 <br /><br />
-		Words: 2,130<br /><br />
+		Words:
+<br />
+2.132 words<br /><br />
 		</h4>
 		
 
@@ -3537,7 +3464,7 @@ After relaxing for some minutes, they could already sleep because the food was a
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_14_title">14 - The whale and the ancient humans</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -3557,13 +3484,7 @@ After relaxing for some minutes, they could already sleep because the food was a
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_14" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/14/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_14_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Ana awoke on the bed of her bedroom, she did her morning needs and walked to the kitchen.<br />
 Lindsay had already made breakfast, Jena and Panda woke up, they also did their morning needs.<br />
@@ -3728,7 +3649,9 @@ After that, Ana set a waypoint at the island with her necklace, she called it "I
 Ana grabbed the yellow crystal again and made an invisible arrow at the shore of the island, pointing to the island where the ancient humans were.<br />
 Only Ana and Lindsay could see that arrow, the two fairies flew high in the sky and started flying back to the Crystal Lands, their home.
 <br /><br />
-		Words: 3,007<br /><br />
+		Words:
+<br />
+3.009 words<br /><br />
 		</h4>
 		
 
@@ -3779,7 +3702,7 @@ Only Ana and Lindsay could see that arrow, the two fairies flew high in the sky 
 		<p><br /><b>You are reading: <span class="text_green_water">The Secret of the Crystals</span><br />Chapter: <span class="text_green_water" id="chapter_15_title">15 - Going home and the visit</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_cyan" />		
 
@@ -3792,13 +3715,7 @@ Only Ana and Lindsay could see that arrow, the two fairies flew high in the sky 
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_light_cyan border_radius_8_cent" id="chapter_cover_15" src="https://thestake2.netlify.app/Images/The Secret of the Crystals/Chapters/15/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_15_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		After flying for a while, Ana and Lindsay arrived at the Crystal Lands, they landed on the beach.<br />
 It was almost night, Jena and Panda were there, they asked where they have gone.<br />
@@ -3919,7 +3836,9 @@ If you want to teach me I'll be happy to learn, but if not, then it's okay, hehe
 Then Tom got back to his hut, Ana too, they both laid on the beds of their bedrooms to sleep.<br />
 The two and Ana's sisters slept on a cool night.
 <br /><br />
-		Words: 2,020<br /><br />
+		Words:
+<br />
+2.022 words<br /><br />
 		</h4>
 		
 

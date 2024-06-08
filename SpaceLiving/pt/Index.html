@@ -35,7 +35,7 @@
 	<meta name="twitter:image" type="image/gif" content="/Images/SpaceLiving/Cover.gif" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -78,14 +78,14 @@
 	</style>
 
 	<!-- JavaScript files -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
 	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="/JavaScript/Story.js"></script>
-	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="/JavaScript/Story.js"></script>	
 
 	<script>
 		Check_Language()
@@ -97,14 +97,11 @@
 
 <!-- Open hamburger menu button -->
 
-
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
-		<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-		
-	<h2 class="text_size">
-		<i class="fas fa-bars"></i>
-	</h2>
-
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_blue" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
 		</h3>
 	</button>
 
@@ -113,56 +110,47 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_blue border_4px border_color_cyan border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
-	
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
-		<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-		
-		<h4 class="text_size" style="font-weight: bold;">
-		X
-		</h4>
-	
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_blue" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
 		</h3>
 	</button>
 
 	<h2 class="text_size text_green_water" style="font-weight: bold;">Menu de abas: </h2>
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
-	<!-- "Ler história" button -->
-	<span id="button_1" class="tab_button">
-		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Ler história: <i class="fas fa-book-open"></i>
-			
+	<!-- "Ler história" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Ler história: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Outras histórias" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Outras histórias: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Outras histórias: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span>
 
-	<!-- "Sites" button -->
-	<span id="button_3" class="tab_button">
-		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Sites: <i class="fas fa-globe"></i>
-			
+	<!-- "Sites" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Sites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
@@ -195,11 +183,14 @@
 		A empresa que é dona da Rede <span class="text_green_water">SpaceLiving</span> se chama Think Outside The Box.<br />
 		Lisa é uma das moradoras da Rede <span class="text_green_water">SpaceLiving</span>.<br />
 		Ela foi teleportada para uma das espaçonaves, chamadas de LonelyShips, para viver lá, ela tem uma geladeira que produz comida e um computador super-poderoso.<br />
-		---<br />
+		-----<br />
 		Autores da história: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span> e <span class="text_yellow">Júlia</span><br />
 		Capítulos: <i class="fas fa-book"></i> <span class="text_green_water">18</span><br />
 		Data de criação da história: <i class="fa-solid fa-calendar-days"></i> <span class="text_green_water">19/01/2019</span><br />
-		Status: <i class="fa-solid fa-pen"></i> <span class="text_green_water">Escrevendo</span>
+		Status: <i class="fa-solid fa-pen"></i> <span class="text_green_water">Escrevendo</span><br />
+-----
+<br />
+		Wattpad: <br /><a class="text_green_water" href="https://wattpad.com/story/274104479-spaceliving" target="_blank">https://wattpad.com/story/274104479-spaceliving</a>
 	</h3>
 	<br />
 </div>
@@ -218,14 +209,11 @@
 
 	<hr class="border_1px border_color_cyan margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Outras histórias" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Outras histórias: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Outras histórias: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_cyan margin_sides_5_cent" />	
@@ -373,25 +361,19 @@
 
 	<hr class="border_1px border_color_cyan margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Ler história" button -->
-	<span id="button_1" class="tab_button">
-		
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Ler história: <i class="fas fa-book-open"></i>
-			
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Ler história: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Sites" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Sites: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Sites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_cyan margin_sides_5_cent" />	
@@ -531,14 +513,11 @@
 
 	<hr class="border_1px border_color_cyan margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Outras histórias" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Outras histórias: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Outras histórias: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_cyan margin_sides_5_cent" />	
@@ -746,7 +725,7 @@
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_1_title">1 - O Conto das Espaçonaves</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -759,13 +738,7 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/01/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_1_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Olá, eu sou Izaque, Stake2, e Funkysnipa Cat.<br />
 Esta é SpaceLiving, uma história minha, eu criei ela em "19/01/2019" com uma amiga minha, Júlia.<br />
@@ -1008,9 +981,14 @@ Eu sou Izaque, o escritor e autor desta história.<br />
 Obrigado por ler, de novo, hehe, eu gosto de falar com você, meu leitor, diretamente.<br />
 Eu escrevi esse capítulo em 09/11/2019, e eu terminei de revisar ele pela terceira ou quarta vez em 24/04/2021. Terminei de traduzir ele em 10/05/2021, depois de ter revisado do capítulo um ao dez.<br />
 Revisei o capítulo novamente às 22:29 do dia 06/06/2023.
-		<br /><br />
-		Capítulo escrito em: 09/11/2019<br />
-		Palavras: 5,338<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+09/11/2019<br /><br />
+		Palavras:
+<br />
+5.347 palavras<br /><br />
 		</h4>
 		
 
@@ -1067,7 +1045,7 @@ Revisei o capítulo novamente às 22:29 do dia 06/06/2023.
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_2_title">2 - A História de Fred</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -1087,13 +1065,7 @@ Revisei o capítulo novamente às 22:29 do dia 06/06/2023.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/02/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_2_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		(O Fred neste capítulo é a versão SpaceLiving do Fred da minha história chamada <a class="text_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank">"A História dos Irmãos Bulkan"</a>.<br />
 Mas ele vive em um universo onde a "Rede de EspaçoNaves SpaceLiving" existe e é mais jovem.<br />
@@ -1239,9 +1211,14 @@ Eles tem EspaçoNaves auto sustentáveis onde a energia, comida, água, e eletri
 Me diga o que você acha da história e esse pequeno pedaço aqui usando o botão "Comentário de Capítulo".<br />
 Obrigado por ler, se você é meu amigo no Discord, Wattpad, Messenger, Twitter, ou Hangouts, por favor me mande uma mensagem falando que sou fofo, oops, não.<br />
 Uma mensagem dizendo que você leu essa parte, obrigadoooo ^^ :3)
-		<br /><br />
-		Capítulo escrito em: 17/11/2019<br />
-		Palavras: 2,910<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+17/11/2019<br /><br />
+		Palavras:
+<br />
+2.919 palavras<br /><br />
 		</h4>
 		
 
@@ -1316,7 +1293,7 @@ Uma mensagem dizendo que você leu essa parte, obrigadoooo ^^ :3)
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_3_title">3 - As Histórias e o Reencontro</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -1336,13 +1313,7 @@ Uma mensagem dizendo que você leu essa parte, obrigadoooo ^^ :3)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/03/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_3_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Lisa estava em sua LonelyShip, escrevendo sua história chamada "As Estranhezas da Natureza", ela terminou o capítulo atual que era o capítulo número nove, ela salvou o arquivo de texto.<br />
 Depois disso, ela revisou e publicou aquele capítulo de sua história no Wattpad, depois de alguns minutos, o capítulo tinha cinco visualizações e dois comentários.<br />
@@ -1509,9 +1480,14 @@ A música se chama <a href="https://www.youtube.com/watch?v=J2P1_v9aFV8" target=
 Eu amo muito aquela música, é incrível! Tão calma e boa para ouvir enquanto escrevo SpaceLiving, hehe xD.<br />
 Eu amo cantar ela e sentir ela enquanto escrevo SpaceLiving ou qualquer coisa.<br />
 Essa música me faz sentir tão feliz, eu sugiro que você ouça ela, hehe :3.)
-		<br /><br />
-		Capítulo escrito em: 19/11/2019<br />
-		Palavras: 3,356<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+19/11/2019<br /><br />
+		Palavras:
+<br />
+3.365 palavras<br /><br />
 		</h4>
 		
 
@@ -1562,7 +1538,7 @@ Essa música me faz sentir tão feliz, eu sugiro que você ouça ela, hehe :3.)
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_4_title">4 - Ted e Monika</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -1582,13 +1558,7 @@ Essa música me faz sentir tão feliz, eu sugiro que você ouça ela, hehe :3.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/04/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_4_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Havia um garoto que também vivia em uma espaçonave, seu nome era Ted e tinha cabelos marrons, ele tinha dezenove anos de idade e amava passar tempo em sua espaçonave, comendo coisas e assistindo Netflix.<br />
 (Netflix é um site e aplicativo de celular onde você pode assistir séries, filmes, desenhos, e animes online, usando um plano pago.)<br />
@@ -1735,9 +1705,14 @@ Eu gostei de escrever sobre Ted, escrever sobre seus pais, e sua fama por ser um
 E eu gostei de escrever que Ted tem uma irmã que é um certo alguém... Eu não sei, hehe.<br />
 Alguém que também é filho dos pais chamados John e Ana...<br />
 Obrigado por ler esse capítulo de SpaceLiving, hehe ^^.)
-		<br /><br />
-		Capítulo escrito em: 24/11/2019<br />
-		Palavras: 2,757<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+24/11/2019<br /><br />
+		Palavras:
+<br />
+2.766 palavras<br /><br />
 		</h4>
 		
 
@@ -1788,7 +1763,7 @@ Obrigado por ler esse capítulo de SpaceLiving, hehe ^^.)
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_5_title">5 - Ted e Monika, Parte Dois</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -1808,13 +1783,7 @@ Obrigado por ler esse capítulo de SpaceLiving, hehe ^^.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/05/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_5_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		No último capítulo, Ted viajou para a Terra para visitar seus pais, já fazia alguns meses desde que ele visitou a Terra.<br />
 Ele visitou sua amiga virtual Monika em pessoa pela primeira vez, ele estava muito feliz.<br />
@@ -1947,9 +1916,14 @@ Eu não lembro quando eu escrevi esse capítulo, mas eu sei que foi em 2019.<br 
 Eu terminei de re-revisar ele em 28/04/2021, foi tão bom, hehe.<br />
 E eu terminei de traduzir ele em 20/05/2021.<br />
 Obrigado por ler esse capítulo ^^.)
-		<br /><br />
-		Capítulo escrito em: 31/07/2019<br />
-		Palavras: 2,560<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+31/07/2019<br /><br />
+		Palavras:
+<br />
+2.569 palavras<br /><br />
 		</h4>
 		
 
@@ -2000,7 +1974,7 @@ Obrigado por ler esse capítulo ^^.)
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_6_title">6 - A Atualização das Espaçonaves e a Reunião dos Irmãos</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -2020,13 +1994,7 @@ Obrigado por ler esse capítulo ^^.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/06/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_6_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		SpaceLiving, Capítulo Seis, A Atualização da EspaçoNave e a reunião dos irmãos.<br />
 *Uma mensagem aparece na tela onde você está lendo essa história...*<br />
@@ -2226,9 +2194,14 @@ Eu ainda quero escrever uma história contigo, hehe", disse Izaque.<br />
 Ele adicionou o episódio de Eromanga-sensei para sua lista de assistidos usando seu script de Python chamado Watch.py (Assistir.py).<br />
 Então Izaque desligou seu computador, ele deitou-se em sua cama para dormir.<br />
 A LSAI desligou as luzes da LonelyShip, Izaque começou a dormir.
-		<br /><br />
-		Capítulo escrito em: 20/08/2019<br />
-		Palavras: 3,837<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+20/08/2019<br /><br />
+		Palavras:
+<br />
+3.846 palavras<br /><br />
 		</h4>
 		
 
@@ -2279,7 +2252,7 @@ A LSAI desligou as luzes da LonelyShip, Izaque começou a dormir.
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_7_title">7 - O Teletransporte de Iniciação</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -2299,13 +2272,7 @@ A LSAI desligou as luzes da LonelyShip, Izaque começou a dormir.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_7" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/07/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_7_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Era um lindo dia no mundo SpaceLiving, mesmo que não houvesse sol perto das LonelyShips.<br />
 Lisa, Izaque, Fred, Ted, e Monika estavam todos dentro de suas LonelyShips, vivendo alegremente, usando seus computadores, comendo, bebendo.<br />
@@ -2456,9 +2423,14 @@ Ela andou para perto de Izaque e sentou-se à sua esquerda, Izaque notou que o c
 "Meu nome é Izaque", respondeu Izaque.<br />
 "Eu acho que a Lisa me disse que o nome da mãe dela era Ana e que ela tinha cabelos loiros", pensou Izaque consigo mesmo.<br />
 Então o sonho de Izaque mudou, ele continuou sonhando e dormindo confortavelmente em sua cama.
-		<br /><br />
-		Capítulo escrito em: 25/09/2019<br />
-		Palavras: 3,242<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+25/09/2019<br /><br />
+		Palavras:
+<br />
+3.251 palavras<br /><br />
 		</h4>
 		
 
@@ -2509,7 +2481,7 @@ Então o sonho de Izaque mudou, ele continuou sonhando e dormindo confortavelmen
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_8_title">8 - O Primeiro Aniversário SpaceLiving</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -2529,13 +2501,7 @@ Então o sonho de Izaque mudou, ele continuou sonhando e dormindo confortavelmen
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_8" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/08/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_8_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Outro dia na Rede SpaceLiving, um rumor sobre uma LonelyShip de grupo estava circulando, quatro amigos que eram muito próximos e se conheciam muito bem.<br />
 Eles foram teletransportados para a LonelyShip juntos, esse rumor estava se espalhando rapidamente, e os residentes da Rede SpaceLiving estavam falando muito sobre ele.<br />
@@ -2721,9 +2687,14 @@ Eles estavam falando e pensando coisas sobre mim pelas minhas costas.<br />
 Aquilo me machucou muito sabe... Me fez muito triste, saber que só existem pessoas falsas naquele servidor e na live stream do Cellbit.<br />
 Eu não odeio o Cellbit, mas eu odeio cada pessoa que está dentro daquele servidor, e eu odeio os momentos que passei lá...<br />
 Obrigado por ler ^^, desculpe pelo meu grande e longo desabafo...)
-		<br /><br />
-		Capítulo escrito em: 07/10/2019<br />
-		Palavras: 3,474<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+07/10/2019<br /><br />
+		Palavras:
+<br />
+3.483 palavras<br /><br />
 		</h4>
 		
 
@@ -2774,7 +2745,7 @@ Obrigado por ler ^^, desculpe pelo meu grande e longo desabafo...)
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_9_title">9 - O Sonho de Bulkan e My Little Pony</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -2794,13 +2765,7 @@ Obrigado por ler ^^, desculpe pelo meu grande e longo desabafo...)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_9" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/09/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_9_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Era um lindo dia na Rede SpaceLiving.<br />
 Lisa, Izaque, Fred, Mark, Ted, Monika, Nathan, James, Lily, e Sophia estavam todos dentro de suas LonelyShips, vivendo felizes.<br />
@@ -2961,9 +2926,14 @@ Ouvindo músicas e tal, checando suas redes sociais, respondendo comentários no
 E eu revisei esse capítulo ouvindo a trilha sonora do filme "Tom e Jerry" de 2021:<br />
 <a href="https://www.youtube.com/playlist?list=PLDisKgcnAC4TkSDGxuPm1DeohG8FMEMNa" target="_blank" class="text_green_water text_hover_green_water">https://www.youtube.com/playlist?list=PLDisKgcnAC4TkSDGxuPm1DeohG8FMEMNa</a>)<br />
 <div class="video-container" style="margin-top: 1%; margin-bottom: -6%;"><iframe type="text/html" width="560" height="315" frameborder="0" class="border_radius_5_cent border_4px border_color_cyan" src="https://www.youtube.com/embed/videoseries?autoplay=0&fs=1&iv_load_policy=1&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&list=PLDisKgcnAC4TkSDGxuPm1DeohG8FMEMNa" title="YouTube video player"></iframe></div><br /><br /><br />)
-		<br /><br />
-		Capítulo escrito em: 16/10/2019<br />
-		Palavras: 3,716<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+16/10/2019<br /><br />
+		Palavras:
+<br />
+3.725 palavras<br /><br />
 		</h4>
 		
 
@@ -3014,7 +2984,7 @@ E eu revisei esse capítulo ouvindo a trilha sonora do filme "Tom e Jerry" de 20
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_10_title">10 - A Continuação (SpaceNata)</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -3034,13 +3004,7 @@ E eu revisei esse capítulo ouvindo a trilha sonora do filme "Tom e Jerry" de 20
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_10" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/10/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_10_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Esse é um capítulo crossover entre <a class="text_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a> e <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a>.<br />
 <a class="text_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a> e <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a> são duas histórias minhas.<br />
@@ -3200,9 +3164,14 @@ Eu amo escrever histórias, criar arte, criar coisas, dar vida para as coisas qu
 Eu amo revisar minhas histórias e escrever elas, eu fico feliz que eu tenho esse talento ou habilidade.<br />
 Eu sou Izaque, Stake2, e Funkysnipa Cat, obrigado pela sua atenção.<br />
 Te vejo depois, felicidades :3.)
-		<br /><br />
-		Capítulo escrito em: 26/10/2019<br />
-		Palavras: 2,967<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+26/10/2019<br /><br />
+		Palavras:
+<br />
+2.976 palavras<br /><br />
 		</h4>
 		
 
@@ -3253,7 +3222,7 @@ Te vejo depois, felicidades :3.)
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_11_title">11 - A Chegada do Novo LonelyShipper</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -3273,13 +3242,7 @@ Te vejo depois, felicidades :3.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_11" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/11/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_11_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Monika estava conversando com sua irmã no Discord, ela se chamava Sayori.<br />
 Ela se lembrou de quando ela transferiu sua casa para Sayori quando ela começou a namorar Ted.<br />
@@ -3388,9 +3351,14 @@ E a Júlia tá trabalhando também, guardando um pouco de dinheiro na conta do b
 "Oh, ok, hehe, até mais, mana ^^", disse Lisa.<br />
 <br />
 (Eu não sei quando esse capítulo foi escrito, mas eu sei que eu revisei ele em 16/06/2021, e traduzi em 03/07/2021.)
-		<br /><br />
-		Capítulo escrito em: 22/11/2019<br />
-		Palavras: 2,018<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+22/11/2019<br /><br />
+		Palavras:
+<br />
+2.027 palavras<br /><br />
 		</h4>
 		
 
@@ -3441,7 +3409,7 @@ E a Júlia tá trabalhando também, guardando um pouco de dinheiro na conta do b
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_12_title">12 - Os Sonhos Estranhos de Izaque</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -3461,13 +3429,7 @@ E a Júlia tá trabalhando também, guardando um pouco de dinheiro na conta do b
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_12" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/12/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_12_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		(Este capítulo menciona personagens do desenho <a href="https://pt.wikipedia.org/wiki/My_Little_Pony:_A_Amizade_%C3%89_M%C3%A1gica" target="_blank">"My Little Pony: A Amizade É Mágica"</a>.<br />
 Se você não conhece os personagens ou não conhece o desenho, recomendo que leia sobre o desenho e os personagens para entender mais o capítulo.<br />
@@ -3580,9 +3542,14 @@ Na Terra, Pequenata pensa sobre comprar uma casa para viver com seus amigos, ela
 Ela conversa com Júlia sobre isso, discutindo algumas coisas sobre a casa, o que ela deveria ter, e quantos quartos ela deveria ter.<br />
 Júlia diz que ela quer uma casa com no mínimo sete quartos, para que elas possam trazer mais amigos e talvez suas famílias para passar algum tempo lá.<br />
 Pequenata diz que isso é uma boa ideia, ela diz que ela vai começar a procurar por uma casa na Internet amanhã de manhã.
-		<br /><br />
-		Capítulo escrito em: 25/11/2019<br />
-		Palavras: 2,174<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+25/11/2019<br /><br />
+		Palavras:
+<br />
+2.183 palavras<br /><br />
 		</h4>
 		
 
@@ -3633,7 +3600,7 @@ Pequenata diz que isso é uma boa ideia, ela diz que ela vai começar a procurar
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_13_title">13 - A Rotina de Lisa e a Mansão de Pequenata</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -3653,13 +3620,7 @@ Pequenata diz que isso é uma boa ideia, ela diz que ela vai começar a procurar
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_13" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/13/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_13_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Era uma noite linda na Rede SpaceLiving, eram dez da noite nos relógios de todo mundo, no ano de 2020.<br />
 Lisa estava em sua LonelyShip, ela estava assistindo um anime, assistindo o anime "Dr. Stone" porque Izaque havia recomendado ele para ela.<br />
@@ -3877,9 +3838,14 @@ Eu escrevi isso enquanto ouvia chuva calma no YouTube, está um pouco frio aqui 
 Mas nesse capítulo, estava quente com o sol, como se estivesse no verão. < Escrevendo.<br />
 Nesse capítulo, estava meio frio, eu tinha dormido mal e não tava com muita vontade de fazer as coisas. < Traduzindo.<br />
 E traduzi esse capítulo enquanto ouvia chuva calma + um mix de música do gênero Future Bass no YouTube.)
-		<br /><br />
-		Capítulo escrito em: 19/06/2021<br />
-		Palavras: 4,205<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+19/06/2021<br /><br />
+		Palavras:
+<br />
+4.214 palavras<br /><br />
 		</h4>
 		
 
@@ -3930,7 +3896,7 @@ E traduzi esse capítulo enquanto ouvia chuva calma + um mix de música do gêne
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_14_title">14 - Capítulo Especial de Natal 🎄 🎁</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -3950,13 +3916,7 @@ E traduzi esse capítulo enquanto ouvia chuva calma + um mix de música do gêne
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_14" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/14/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_14_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Todo mundo estava dentro de suas LonelyShips, eles estavam fazendo suas coisas, vivendo na Rede SpaceLiving em 2020.<br />
 Uma notificação apareceu no computador de todo residente de espaçonave, dizendo que 25 de Dezembro estava perto, que era dia de Natal.<br />
@@ -4054,9 +4014,14 @@ Izaque também olhou para a multi-ferramenta de Henigax que ele estava vendendo,
 Mas Izaque estava com pouco dinheiro (unidades), ele disse tchau para Henigax, então explicou tudo para Lisa.<br />
 Lisa e ele voltaram para a espaçonave, eles entraram dentro dela e Izaque dirigiu até o depósito de ouro.<br />
 Então o sonho de Izaque mudou para outra coisa, ele continuou dormindo profundamente e em paz.
-		<br /><br />
-		Capítulo escrito em: 17/02/2020<br />
-		Palavras: 2,210<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+17/02/2020<br /><br />
+		Palavras:
+<br />
+2.219 palavras<br /><br />
 		</h4>
 		
 
@@ -4107,7 +4072,7 @@ Então o sonho de Izaque mudou para outra coisa, ele continuou dormindo profunda
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_15_title">15 - O Segundo Aniversário SpaceLiving</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -4127,13 +4092,7 @@ Então o sonho de Izaque mudou para outra coisa, ele continuou dormindo profunda
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_15" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/15/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_15_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Era um lindo dia na Rede SpaceLiving, era uma Segunda-feira, e todo mundo estava fazendo suas coisas, passando tempo em suas LonelyShips.<br />
 Era dia vinte e um de janeiro de 2021 (21/01/2021), eram seis da manhã no fuso horário do Brasil, que era o fuso horário padrão para todos os relógios.<br />
@@ -4295,9 +4254,14 @@ Foi bom escrever as "mudanças de visão" na parte do aniversário.<br />
 Tipo, Izaque olhando para Lisa, e então a história falando sobre Lisa.<br />
 Como se Izaque fosse o narrador-personagem da história.<br />
 Obrigado por ler esse capítulo, hehe, até mais :3.)
-		<br /><br />
-		Capítulo escrito em: 22/06/2020<br />
-		Palavras: 2,964<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+22/06/2020<br /><br />
+		Palavras:
+<br />
+2.973 palavras<br /><br />
 		</h4>
 		
 
@@ -4348,7 +4312,7 @@ Obrigado por ler esse capítulo, hehe, até mais :3.)
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_16_title">16 - O Vídeo de Onomatopeia Visual e as Memórias</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -4368,13 +4332,7 @@ Obrigado por ler esse capítulo, hehe, até mais :3.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_16" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/16/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_16_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Era um lindo Domingo no universo SpaceLiving, todo mundo estava fazendo suas coisas em suas espaçonaves.<br />
 Eles estavam vivendo em 2021, em Julho, Lisa estava dentro de sua LonelyShip, desenhando um pouco no programa chamado Paint Tool SAI.<br />
@@ -4529,9 +4487,14 @@ Ele andou até o banheiro e colocou suas mãos em um quadrado de laser, suas mã
 Esse laser não removia sua pele ou machucava ele, era somente para limpeza, ele removia bactérias e sujeira, ele usou aquilo depois de acariciar seus cães.<br />
 Depois disso, ele andou até seu computador, sentando-se na cadeira, o filme que ele colocou para baixar havia terminado de baixar.<br />
 Ele passou seu dia no computador, parando algumas vezes para comer, beber água, e se exercitar.
-		<br /><br />
-		Capítulo escrito em: 26/07/2021<br />
-		Palavras: 3,781<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+26/07/2021<br /><br />
+		Palavras:
+<br />
+3.790 palavras<br /><br />
 		</h4>
 		
 
@@ -4582,7 +4545,7 @@ Ele passou seu dia no computador, parando algumas vezes para comer, beber água,
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_17_title">17 - A Visita e a Manhã de Jogo</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -4602,13 +4565,7 @@ Ele passou seu dia no computador, parando algumas vezes para comer, beber água,
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_17" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/17/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_17_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Era um bom dia no mundo SpaceLiving, os residentes das espaçonaves estavam vivendo em 2021, em Agosto, era uma Sexta-feira.<br />
 Izaque estava em sua espaçonave, sua LonelyShip, era manhã, oito e meia da manhã, ele estava escrevendo uma história dele chamada "O Segredo dos Cristais".<br />
@@ -4711,9 +4668,14 @@ Lisa estava feliz de programar e desenhar um pouco, ela estava feliz de ter aque
 Pequenata e Iam estavam trabalhando, Vitória estava trabalhando também, no quarto.<br />
 Izaque estava feliz de sair de sua espaçonave um pouco, ele gostava de passar algum tempo na Terra, ver sua irmã Aline, e visitar seu amigo Jeandre.<br />
 O dia irá continuar, Izaque e Lisa irão continuar fazendo coisas, como eles sempre fazem.
-		<br /><br />
-		Capítulo escrito em: 05/09/2021<br />
-		Palavras: 2,336<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+05/09/2021<br /><br />
+		Palavras:
+<br />
+2.345 palavras<br /><br />
 		</h4>
 		
 
@@ -4764,7 +4726,7 @@ O dia irá continuar, Izaque e Lisa irão continuar fazendo coisas, como eles se
 		<p><br /><b>Você está lendo: <span class="text_green_water">SpaceLiving</span><br />Capítulo: <span class="text_green_water" id="chapter_18_title">18 - O Ano Novo na SpaceLiving</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -4777,13 +4739,7 @@ O dia irá continuar, Izaque e Lisa irão continuar fazendo coisas, como eles se
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_18" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/18/Português.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_18_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Era outro dia no mundo SpaceLiving, os residentes estavam vivendo em Janeiro de 2022.<br />
 Eles tiveram um bom Natal, Véspera de Ano Novo, e Ano Novo, seja celebrando na EspaçoNave de Festa, em suas LonelyShips, ou com suas famílias na Terra.<br />
@@ -4885,9 +4841,14 @@ Depois de comer um pouco, jogar, conversar, ouvir música, e assistir algumas co
 A casa de Iam tinha sete quartos, Pequenata e Júlia dormiram juntas, Ted e Monika também, Vitória, Iam, Carol, e Lisa dormiram sozinhos em seus quartos.<br />
 O grupo de amigos dormiu em uma noite fria com cobertores, na noite de uma Sexta-feira em Janeiro de 2022.<br />
 Eles queriam acordar amanhã, Sábado, e festejar mais, passar mais tempo juntos, talvez fazer um churrasco, viajar, ir em uma pista de corrida com seus carros.
-		<br /><br />
-		Capítulo escrito em: 07/01/2022<br />
-		Palavras: 2,499<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+07/01/2022<br /><br />
+		Palavras:
+<br />
+2.508 palavras<br /><br />
 		</h4>
 		
 

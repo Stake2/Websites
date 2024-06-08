@@ -5,8 +5,8 @@
 
 	<!-- Website links -->
 	<link rel="canonical" href="https://thestake2.netlify.app/Stories/pt/" />
-	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Stories/Icons/Português.png" />
-	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Stories/Icons/Português.png" />
+	<link rel="icon" type="image/png" href="/Images/Stories/Icons/Português.png" />
+	<link rel="image_src" type="image/png" href="/Images/Stories/Icons/Português.png" />
 
 	<!-- Website meta tags -->
 	<meta name="title" content="Histórias" />
@@ -20,7 +20,7 @@ Feito com muito amor por Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	<meta property="og:title" content="Histórias" />
 	<meta property="og:site_name" content="Histórias" />
 	<meta property="og:url" content="https://thestake2.netlify.app/Stories/pt/" />
-	<meta property="og:image" type="image/png" content="https://thestake2.netlify.app/Images/Stories/Icons/Português.png" />
+	<meta property="og:image" type="image/png" content="/Images/Stories/Icons/Português.png" />
 	<meta property="og:description" content="Um site para mostrar todas as minhas histórias, que eu escrevi desde 2016.
 Feito com muito amor por Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	<meta property="og:locale" content="pt_BR" />
@@ -35,10 +35,10 @@ Feito com muito amor por Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	<meta name="twitter:site" value="@Stake2_" />
 	<meta name="twitter:creator" content="@Stake2_" />
 	<meta name="twitter:url" content="https://thestake2.netlify.app/Stories/pt/" />
-	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Stories/Icons/Português.png" />
+	<meta name="twitter:image" type="image/png" content="/Images/Stories/Icons/Português.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -81,13 +81,13 @@ Feito com muito amor por Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	</style>
 
 	<!-- JavaScript files -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
-	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>	
 
 	<script>
 		Check_Language()
@@ -99,14 +99,11 @@ Feito com muito amor por Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 
 <!-- Open hamburger menu button -->
 
-
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
-		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
-		
-	<h2 class="text_size">
-		<i class="fas fa-bars"></i>
-	</h2>
-
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
 		</h3>
 	</button>
 
@@ -115,43 +112,36 @@ Feito com muito amor por Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 <div id="hamburger_menu" class="w3-container w3-animate-left background_light_purple_darker border_4px border_color_light_purple border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
-	
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
-		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
-		
-		<h4 class="text_size" style="font-weight: bold;">
-		X
-		</h4>
-	
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
 		</h3>
 	</button>
 
 	<h2 class="text_size text_light_salmon" style="font-weight: bold;">Menu de abas: </h2>
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
-	<!-- "Histórias" button -->
-	<span id="button_1" class="tab_button">
-		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Histórias: <i class="fas fa-book"></i>
-			
+	<!-- "Histórias" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Histórias: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span>
 
-	<!-- "Sites" button -->
-	<span id="button_2" class="tab_button">
-		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Sites: <i class="fas fa-globe"></i>
-			
+	<!-- "Sites" button -->
+	<span id="button_2" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Sites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
@@ -166,10 +156,10 @@ Feito com muito amor por Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	</h2>
 
 	<!-- Website image -->
-	<img class="border_4px border_color_light_purple border_radius_8_cent box_shadow_light_purple border_4px border_color_light_purple border_radius_8_cent" src="https://thestake2.netlify.app/Images/Stories/Icons/Português.png" style="max-width: 30vw; height: auto;" /><br />
+	<img class="border_4px border_color_light_purple border_radius_8_cent box_shadow_light_purple border_4px border_color_light_purple border_radius_8_cent" src="/Images/Stories/Icons/Português.png" style="max-width: 30vw; height: auto;" /><br />
 
 	<!-- Website image button -->
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/Stories/Icons/Português.png')" style="z-index: 2;">
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('/Images/Stories/Icons/Português.png')" style="z-index: 2;">
 		<h4 class="text_size text_dark_purple">
 			Abrir imagem em uma nova guia: <i class="fas fa-images"></i>
 		</h4>
@@ -197,14 +187,11 @@ Feito com muito amor por <span class="text_orange">Izaque Sanvezzo (Stake2, Funk
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Sites" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Sites: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Sites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
@@ -344,14 +331,11 @@ Feito com muito amor por <span class="text_orange">Izaque Sanvezzo (Stake2, Funk
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Histórias" button -->
-	<span id="button_1" class="tab_button">
-		
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Histórias: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Histórias: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	

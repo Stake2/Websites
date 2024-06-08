@@ -37,7 +37,7 @@ In the Internet, I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
 	<meta name="twitter:image" type="image/png" content="/Images/Stake2/Icons/Stake2.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -80,13 +80,13 @@ In the Internet, I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
 	</style>
 
 	<!-- JavaScript files -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
-	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>	
 
 	<script>
 		Check_Language()
@@ -98,14 +98,11 @@ In the Internet, I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
 
 <!-- Open hamburger menu button -->
 
-
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
-		
-	<h2 class="text_size">
-		<i class="fas fa-bars"></i>
-	</h2>
-
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
 		</h3>
 	</button>
 
@@ -114,82 +111,69 @@ In the Internet, I am my two Digital Identities, Stake2, and Funkysnipa Cat." />
 <div id="hamburger_menu" class="w3-container w3-animate-left background_orange border_4px border_color_light_orange border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
-	
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
-		
-		<h4 class="text_size" style="font-weight: bold;">
-		X
-		</h4>
-	
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
 		</h3>
 	</button>
 
 	<h2 class="text_size text_black" style="font-weight: bold;">Tab menu: </h2>
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
-	<!-- "Izaque" button -->
-	<span id="button_1" class="tab_button">
-		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('izaque');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Izaque: <i class="fas fa-user-circle"></i>
-			
+	<!-- "Izaque" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('izaque');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Izaque: <i class="fas fa-user-circle"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Stake2" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('stake2');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Stake2: <i class="fas fa-user-circle"></i>
-			
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('stake2');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Stake2: <i class="fas fa-user-circle"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Funkysnipa Cat" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('funkysnipa_cat');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Funkysnipa Cat: <i class="fas fa-user-circle"></i>
-			
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('funkysnipa_cat');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Funkysnipa Cat: <i class="fas fa-user-circle"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Social Networks" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('social_networks');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Social Networks: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('social_networks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Social Networks: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
 
-	<!-- "Websites" button -->
-	<span id="button_5" class="tab_button">
-		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<!-- "Websites" button -->
+	<span id="button_5" class="tab_button">		
+
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
@@ -235,14 +219,11 @@ In the Internet, I am my two Digital Identities, <b class="text_black">Stake2</b
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Stake2" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('stake2');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Stake2: <i class="fas fa-user-circle"></i>
-			
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('stake2');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Stake2: <i class="fas fa-user-circle"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
@@ -275,25 +256,19 @@ I also love "My Little Pony: Friendship Is Magic", I watch it since 2011, I disc
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Izaque" button -->
-	<span id="button_1" class="tab_button">
-		
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('izaque');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Izaque: <i class="fas fa-user-circle"></i>
-			
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('izaque');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Izaque: <i class="fas fa-user-circle"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Funkysnipa Cat" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('funkysnipa_cat');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Funkysnipa Cat: <i class="fas fa-user-circle"></i>
-			
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('funkysnipa_cat');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Funkysnipa Cat: <i class="fas fa-user-circle"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
@@ -331,25 +306,19 @@ Then I changed it to "<b class="text_black">Stake2</b>", the "Stake" has impact,
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Stake2" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('stake2');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Stake2: <i class="fas fa-user-circle"></i>
-			
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('stake2');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Stake2: <i class="fas fa-user-circle"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Social Networks" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('social_networks');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Social Networks: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('social_networks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Social Networks: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
@@ -396,25 +365,19 @@ But for me, I can not find a social network that surpasses or replaces Google+, 
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Funkysnipa Cat" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('funkysnipa_cat');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Funkysnipa Cat: <i class="fas fa-user-circle"></i>
-			
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('funkysnipa_cat');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Funkysnipa Cat: <i class="fas fa-user-circle"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Websites" button -->
-	<span id="button_5" class="tab_button">
-		
+	<span id="button_5" class="tab_button">		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
@@ -425,26 +388,26 @@ But for me, I can not find a social network that surpasses or replaces Google+, 
 		</h2>
 		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.wattpad.com/user/stake2/');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.wattpad.com/user/stake2/');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Wattpad
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://github.com/Stake2');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://github.com/Stake2');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Github <i class="fab fa-github"></i>
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.deviantart.com/stake2');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.deviantart.com/stake2');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Deviant Art
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.youtube.com/@Stake2_?sub_confirmation=1');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.youtube.com/@Stake2_?sub_confirmation=1');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		YouTube <i class="fab fa-youtube"></i>
 		</h3>
 	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
@@ -453,50 +416,50 @@ But for me, I can not find a social network that surpasses or replaces Google+, 
 		</h2>
 		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://derpibooru.org/profiles/Stake2');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://derpibooru.org/profiles/Stake2');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Derpibooru
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://stake2.fandom.com/pt-br/wiki/Usu%C3%A1rio:Stake2');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://stake2.fandom.com/pt-br/wiki/Usu%C3%A1rio:Stake2');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Fandom
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://stake2.fandom.com/pt-br/wiki/');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://stake2.fandom.com/pt-br/wiki/');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Fandom Stake2
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://discord.com/app');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://discord.com/app');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Discord <i class="fab fa-discord"></i>
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.instagram.com/Stake2_/');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.instagram.com/Stake2_/');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Instagram <i class="fab fa-instagram"></i>
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.facebook.com/me/');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://www.facebook.com/me/');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Facebook <i class="fab fa-facebook"></i>
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://api.whatsapp.com/send/?phone=55');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://api.whatsapp.com/send/?phone=55');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		WhatsApp
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://twitter.com/Stake2_');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://twitter.com/Stake2_');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Twitter <i class="fab fa-twitter"></i>
 		</h3>
 	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
@@ -505,26 +468,26 @@ But for me, I can not find a social network that surpasses or replaces Google+, 
 		</h2>
 		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://music.youtube.com/channel/UCwCC0_ax9am34MtX8EFrRGA');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://music.youtube.com/channel/UCwCC0_ax9am34MtX8EFrRGA');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		YouTube Music <i class="fab fa-youtube"></i>
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://soundcloud.com/stake2');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://soundcloud.com/stake2');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		SoundCloud <i class="fab fa-soundcloud"></i>
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://bandcamp.com/stake2');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://bandcamp.com/stake2');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Bandcamp <i class="fab fa-bandcamp"></i>
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://open.spotify.com/user/12166339356');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://open.spotify.com/user/12166339356');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Spotify <i class="fab fa-spotify"></i>
 		</h3>
 	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
@@ -533,14 +496,14 @@ But for me, I can not find a social network that surpasses or replaces Google+, 
 		</h2>
 		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://steamcommunity.com/id/Stake2');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://steamcommunity.com/id/Stake2');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Steam <i class="fab fa-steam"></i>
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://osu.ppy.sh/users/stake2');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://osu.ppy.sh/users/stake2');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Osu!
 		</h3>
 	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
@@ -549,14 +512,14 @@ But for me, I can not find a social network that surpasses or replaces Google+, 
 		</h2>
 		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://myanimelist.net/profile/Stake2');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://myanimelist.net/profile/Stake2');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		MyAnimeList
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://kitsu.io/users/443665');">
-		<h3 class="text_size text_dark_orange" style="font-weight: bold;">
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white margin_top_bottom_2_cent" onclick="window.open('https://kitsu.io/users/443665');">		
+<h3 class="text_size text_dark_orange" style="font-weight: bold;">
 		Kitsu Io
 		</h3>
 	</button>	</div></span>
@@ -577,14 +540,11 @@ But for me, I can not find a social network that surpasses or replaces Google+, 
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Social Networks" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('social_networks');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_orange">
-		
-				Social Networks: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_whitew3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white"  onclick="Open_Tab('social_networks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_orange">
+			Social Networks: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	

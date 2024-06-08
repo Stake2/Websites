@@ -34,7 +34,7 @@
 	<meta name="twitter:image" type="image/png" content="/Images/New World/Cover.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -77,14 +77,14 @@
 	</style>
 
 	<!-- JavaScript files -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
 	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="/JavaScript/Story.js"></script>
-	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="/JavaScript/Story.js"></script>	
 
 	<script>
 		Check_Language()
@@ -96,14 +96,11 @@
 
 <!-- Open hamburger menu button -->
 
-
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
-		<h3 class="text_size text_dark_cyan" style="font-weight: bold;">
-		
-	<h2 class="text_size">
-		<i class="fas fa-bars"></i>
-	</h2>
-
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_cyan" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
 		</h3>
 	</button>
 
@@ -112,56 +109,47 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_cyan border_4px border_color_light_blue border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
-	
 
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
-		<h3 class="text_size text_dark_cyan" style="font-weight: bold;">
-		
-		<h4 class="text_size" style="font-weight: bold;">
-		X
-		</h4>
-	
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_cyan" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
 		</h3>
 	</button>
 
 	<h2 class="text_size text_light_blue" style="font-weight: bold;">Tab menu: </h2>
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
-	<!-- "Read story" button -->
-	<span id="button_1" class="tab_button">
-		
 
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_cyan">
-		
-				Read story: <i class="fas fa-book-open"></i>
-			
+	<!-- "Read story" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_cyan">
+			Read story: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_cyan">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_cyan">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span>
 
-	<!-- "Websites" button -->
-	<span id="button_3" class="tab_button">
-		
 
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_cyan">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<!-- "Websites" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_cyan">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
@@ -201,11 +189,14 @@
 		That I am going to feel happy about myself and my body.<br />
 		I also think about it when I am sad about my life, like having the need to eat, drink, sleep, breathe.<br />
 		I think about a world where those things do not exist.<br />
-		---<br />
+		-----<br />
 		Story author: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span><br />
 		Chapters: <i class="fas fa-book"></i> <span class="text_light_blue">6</span><br />
 		Story creation date: <i class="fa-solid fa-calendar-days"></i> <span class="text_light_blue">16/11/2016</span><br />
-		Status: <i class="fa-solid fa-pen"></i> <span class="text_light_blue">Writing</span>
+		Status: <i class="fa-solid fa-pen"></i> <span class="text_light_blue">Writing</span><br />
+-----
+<br />
+
 	</h3>
 	<br />
 </div>
@@ -224,14 +215,11 @@
 
 	<hr class="border_1px border_color_light_blue margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_cyan">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_cyan">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_blue margin_sides_5_cent" />	
@@ -295,25 +283,19 @@
 
 	<hr class="border_1px border_color_light_blue margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Read story" button -->
-	<span id="button_1" class="tab_button">
-		
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_cyan">
-		
-				Read story: <i class="fas fa-book-open"></i>
-			
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_cyan">
+			Read story: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Websites" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_cyan">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_cyan">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_blue margin_sides_5_cent" />	
@@ -453,14 +435,11 @@
 
 	<hr class="border_1px border_color_light_blue margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_cyan">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_whitew3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_cyan">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_blue margin_sides_5_cent" />	
@@ -668,7 +647,7 @@
 		<p><br /><b>You are reading: <span class="text_light_blue">New World</span><br />Chapter: <span class="text_light_blue" id="chapter_1_title">1 - The creation of New World</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
@@ -681,13 +660,7 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_cyan image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/New World/Chapters/01/English." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_1_text" class="text_size unselectable " style="text-align: left;">
 		New World was started on 05/06/2016, by a being, human, named Izaque Sanvezzo, or The Creator, or Creator Izaque, he had fourteen at that time.<br />
 <br />
@@ -972,7 +945,9 @@ He placed the Genesis device on the table of the room, it was a hologram now.<br
 Izaque transformed the table into a holographic table with the physical properties of the old table, the touch, smell, and look.<br />
 He created the New World Logo, which was the "New World" phrase written in light blue, and a holographic neon light blue cube with transparent filling.
 <br /><br />
-		Words: 4,964<br /><br />
+		Words:
+<br />
+4.966 words<br /><br />
 		</h4>
 		
 
@@ -1016,7 +991,7 @@ He created the New World Logo, which was the "New World" phrase written in light
 		<p><br /><b>You are reading: <span class="text_light_blue">New World</span><br />Chapter: <span class="text_light_blue" id="chapter_2_title">2 - The continuation</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
@@ -1036,13 +1011,7 @@ He created the New World Logo, which was the "New World" phrase written in light
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_cyan image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/New World/Chapters/02/English." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_2_text" class="text_size unselectable " style="text-align: left;">
 		Some days had passed, it was 11/07/2016, a Sunday, mid-day.<br />
 He and his friends were still there, in the room where New World was created, they already told their parents and friends that they created New World.<br />
@@ -1439,7 +1408,9 @@ And also to read the story of the network, tutorials, tips, and curiosities abou
 Izaque also created the "SpaceLiving Helper" form for people to volunteer as helpers.<br />
 They would answer questions in the help and questions chat, and helped people who talked about their problems and vented in the vent chat.
 <br /><br />
-		Words: 7,205<br /><br />
+		Words:
+<br />
+7.207 words<br /><br />
 		</h4>
 		
 
@@ -1490,7 +1461,7 @@ They would answer questions in the help and questions chat, and helped people wh
 		<p><br /><b>You are reading: <span class="text_light_blue">New World</span><br />Chapter: <span class="text_light_blue" id="chapter_3_title">3 - New World expansion</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
@@ -1510,13 +1481,7 @@ They would answer questions in the help and questions chat, and helped people wh
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_cyan image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/New World/Chapters/03/English." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_3_text" class="text_size unselectable " style="text-align: left;">
 		Izaque and his three friends were receiving a lot of questions through the Question System, they were living on 01/09/2016.<br />
 They were about how to help spread New World to other universes, which was written in the fifth law of the New World.<br />
@@ -1836,7 +1801,9 @@ They could sing, say, or vocalize things, sounds, and frequencies that normal hu
 Izaque could sing the Dubstep basses using his mouth, with the electricity string or thread going from the left of his mouth to the right.<br />
 The video styles that Creator Izaque did were listed as "Visual Representation Of Audio" in the rules of the Video Library.
 <br /><br />
-		Words: 6,784<br /><br />
+		Words:
+<br />
+6.786 words<br /><br />
 		</h4>
 		
 
@@ -1887,7 +1854,7 @@ The video styles that Creator Izaque did were listed as "Visual Representation O
 		<p><br /><b>You are reading: <span class="text_light_blue">New World</span><br />Chapter: <span class="text_light_blue" id="chapter_4_title">4 - Media universes visitation</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
@@ -1907,13 +1874,7 @@ The video styles that Creator Izaque did were listed as "Visual Representation O
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_cyan image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/New World/Chapters/04/English." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_4_text" class="text_size unselectable " style="text-align: left;">
 		The date was 16/03/2017, Creator Izaque modified the Multiverse Teleport System (MTS) only for him to experiment a little with it.<br />
 He created a way to teleport to the outside of the Human Multiverse Bubble (HMB), he could see it from outside really big.<br />
@@ -2268,7 +2229,7 @@ Later, he did a crossover of the two stories, by mixing them and placing them in
 Copying the SpaceLiving Network instance to the universe of "The Life of Littletato".<br />
 <br />
 The LonelyShips had a super fast and powerful computer on each one of them, it was white, a PlayStation 4 gaming console, a bed, and a wardrobe.<br />
-The computers had a modified version of Windows 10 installed on them.<br />
+<br /><img class="image_size border_4px border_color_light_blue border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover.png" style="max-width: 50%;" /><br /><br />
 It was called Windows 10 (SpaceLiving Edition).<br />
 <a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover.png" target="_blank" class="text_light_blue text_hover_light_blue">https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover.png</a><br />
 The bed had a blue blanket, the bed was made of some resistant plastic that was light gray, and the wardrobe was gray too.<br />
@@ -2306,11 +2267,13 @@ The AI was called "LonelyShip Artificial Intelligence", or LSAI for short.<br />
 The LonelyShip also had four small signboards on its walls, two displaying "SpaceLiving", and another two displaying "LonelyShip" on the right of the "SpaceLiving" one.<br />
 The "SpaceLiving" and "LonelyShip" signboards were equal on each side of the LonelyShip, one of each on each side of the inside walls of the spaceship.<br />
 The signboards on the left side were on the left of the left window, and the right ones were on the right of the right window.<br />
-Also, the LonelyShip had two big signboards on the front side of it, one with "SpaceLiving" written on it, and another one with "LonelyShip".<br />
+<br /><img class="image_size border_4px border_color_light_blue border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover Front Signboards.png" style="max-width: 50%;" /><br /><br />
 The "SpaceLiving" signboard is above the "LonelyShip" one.<br />
 <a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover%20Front%20Signboards.png" target="_blank" class="text_light_blue text_hover_light_blue">https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover%20Front%20Signboards.png</a>
 <br /><br />
-		Words: 8,616<br /><br />
+		Words:
+<br />
+8.649 words<br /><br />
 		</h4>
 		
 
@@ -2361,7 +2324,7 @@ The "SpaceLiving" signboard is above the "LonelyShip" one.<br />
 		<p><br /><b>You are reading: <span class="text_light_blue">New World</span><br />Chapter: <span class="text_light_blue" id="chapter_5_title">5 - SpaceLiving Network and Random Events</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
@@ -2381,13 +2344,7 @@ The "SpaceLiving" signboard is above the "LonelyShip" one.<br />
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_cyan image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/New World/Chapters/05/English." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_5_text" class="text_size unselectable " style="text-align: left;">
 		Some months had passed, it was 21/01/2020, the SpaceLiving Creator Izaque continued working on the SpaceLiving Network.<br />
 He changed a lot of things on the network, and defined that day as the day of the anniversary of the network.<br />
@@ -2607,7 +2564,9 @@ Made a new drawing, song, video, 3D model, system, hologram, New World change, <
 He liked to write his story "New World", to register everything about New World, what happened, and how he created it.<br />
 Izaque wrote everything there, every system and hologram that he created, and how he lived, the things that happened in the New World and the human universes.
 <br /><br />
-		Words: 4,146<br /><br />
+		Words:
+<br />
+4.148 words<br /><br />
 		</h4>
 		
 
@@ -2658,7 +2617,7 @@ Izaque wrote everything there, every system and hologram that he created, and ho
 		<p><br /><b>You are reading: <span class="text_light_blue">New World</span><br />Chapter: <span class="text_light_blue" id="chapter_6_title">6 - The programmed absence</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_blue" />		
 
@@ -2671,13 +2630,7 @@ Izaque wrote everything there, every system and hologram that he created, and ho
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_cyan image_size border_4px border_color_light_blue border_radius_8_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/New World/Chapters/06/English." />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_6_text" class="text_size unselectable " style="text-align: left;">
 		Then, some months passed, it was five of May 2022, a Thursday, Creator Izaque was living in his big house in Maringá, in the state of Paraná in Brazil.<br />
 It is a New World House, it is modified to the needs of a New Worlder, he pressed the button to delete Old World rooms after buying the house on 17/03/2017.<br />
@@ -2840,7 +2793,9 @@ He walked out of the community, the two guards gave him his machete and knife, a
 Izaque thanked the guards, the gate was closed, Izaque started to walk to the city close to Hilltop, to start his car workshop work.<br />
 He continued living the Game Space game, traveling to the city, meeting and helping some survivors along the way.
 <br /><br />
-		Words: 3,522<br /><br />
+		Words:
+<br />
+3.524 words<br /><br />
 		</h4>
 		
 

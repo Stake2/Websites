@@ -173,7 +173,7 @@ var hamburger_menu_button = document.getElementById("hamburger_menu_button")
 var last_scroll = window.scrollY
 
 // Define the "Check_Scroll_Position" function
-function Check_Scroll_Position(id) {
+function Check_Scroll_Position(ids) {
 	// Define the window Y position
 	var window_Y = window.scrollY
 
@@ -185,8 +185,9 @@ function Check_Scroll_Position(id) {
 			"pt": "O usuário rolou a página para cima, mostrando o botão do menu hambúrguer\n\n:Elemento:"
 		}
 
-		w3.show("#" + id)
-		w3.addClass("#" + id, "w3-animate-zoom")
+		// Define the show or hide and add or remove methods
+		show_or_hide = w3.show
+		add_or_remove = w3.addClass
 	}
 
 	// Scrolling down
@@ -197,9 +198,16 @@ function Check_Scroll_Position(id) {
 			"pt": "O usuário rolou a página para baixo, escondendo o botão do menu hambúrguer"
 		}
 
-		w3.hide("#" + id)
-		w3.removeClass("#" + id, "w3-animate-zoom")
+		// Define the show or hide and add or remove methods
+		show_or_hide = w3.hide
+		add_or_remove = w3.removeClass
 	}
+
+	// Iterate through the list of ids
+	Array.from(ids).forEach(function(id) {
+		show_or_hide("#" + id)
+		add_or_remove("#" + id, "w3-animate-zoom")
+	})
 
 	// Update the "last_scroll" variable
 	last_scroll = window.scrollY
@@ -213,35 +221,23 @@ function Check_Page_Scrolling(event, ids = null) {
 		"pt": "Verificar_Rolagem_Da_Página"
 	}
 
-	// Define the ids list
+	// If the list of ids is null, define a default list of ids
 	if (ids == null) {
-		ids = [
-			"hamburger_menu_button"
-		]
+		ids = list
 	}
 
-	// Define the default text variable
-	var text = null
-
-	// If there is only one ID on the list of ids
-	if (ids.length == 1) {
-		// Check the scroll position and hide/show the element as needed
-		Check_Scroll_Position(ids[0])
-	}
-
-	// If there are more IDs
-	else {
-		// Iterate through the list of ids
-		Array.from(ids).forEach(function(id) {
-			// Check the scroll position and hide/show the element as needed
-			Check_Scroll_Position(id)
-		})
-	}
+	// Check the scroll position and hide/show the elements as needed
+	Check_Scroll_Position(ids)
 }
 
+// Define the scroll list
+var list = [
+	"hamburger_menu_button"
+]
+
 // Add the event listener
-scroll_function = function() {
-	Check_Page_Scrolling()
+scroll_function = function(event) {
+	Check_Page_Scrolling(event, list)
 }
 
 window.addEventListener("scroll", scroll_function)

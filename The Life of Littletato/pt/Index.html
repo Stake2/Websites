@@ -35,7 +35,7 @@
 	<meta name="twitter:image" type="image/png" content="/Images/The Life of Littletato/Português.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -78,14 +78,14 @@
 	</style>
 
 	<!-- JavaScript files -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
 	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="/JavaScript/Story.js"></script>
-	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="/JavaScript/Story.js"></script>	
 
 	<script>
 		Check_Language()
@@ -97,14 +97,11 @@
 
 <!-- Open hamburger menu button -->
 
-
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
-		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
-		
-	<h2 class="text_size">
-		<i class="fas fa-bars"></i>
-	</h2>
-
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
 		</h3>
 	</button>
 
@@ -113,69 +110,58 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_light_purple_darker border_4px border_color_light_purple border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
-	
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
-		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
-		
-		<h4 class="text_size" style="font-weight: bold;">
-		X
-		</h4>
-	
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
 		</h3>
 	</button>
 
 	<h2 class="text_size text_light_salmon" style="font-weight: bold;">Menu de abas: </h2>
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
-	<!-- "Ler história" button -->
-	<span id="button_1" class="tab_button">
-		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Ler história: <i class="fas fa-book-open"></i>
-			
+	<!-- "Ler história" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Ler história: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Leitores" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Leitores: <i class="fas fa-book-reader"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Leitores: <i class="fas fa-book-reader"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Outras histórias" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Outras histórias: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Outras histórias: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span>
 
-	<!-- "Sites" button -->
-	<span id="button_4" class="tab_button">
-		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Sites: <i class="fas fa-globe"></i>
-			
+	<!-- "Sites" button -->
+	<span id="button_4" class="tab_button">		
+
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Sites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
@@ -207,12 +193,16 @@
 		Ela vivia viajando entre cidades depois que atingiu os dezenove anos.<br />
 		Ela parou em uma cidade para dar uma olhada e ver como era, era São Francisco, e lá ela conheceu outra garota.<br />
 		Elas começaram a conversar, se conhecer melhor, e a vida de Pequenata começou a mudar.<br />
-		---<br />
+		-----<br />
 		Autor da história: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span><br />
 		Capítulos: <i class="fas fa-book"></i> <span class="text_light_salmon">33</span><br />
 		Leitores: <i class="fas fa-book-reader"></i> <span class="text_light_salmon">2</span><br />
 		Data de criação da história: <i class="fa-solid fa-calendar-days"></i> <span class="text_light_salmon">05/08/2017</span><br />
-		Status: <i class="fa-solid fa-pen"></i> <span class="text_light_salmon">Escrevendo</span>
+		Status: <i class="fa-solid fa-pen"></i> <span class="text_light_salmon">Escrevendo</span><br />
+-----
+<br />
+		Wattpad: <br /><a class="text_light_salmon" href="https://wattpad.com/story/216049317-a-vida-de-pequenata" target="_blank">https://wattpad.com/story/216049317-a-vida-de-pequenata</a><br />
+		Spirit Fanfics: <br /><a class="text_light_salmon" href="https://www.spiritfanfiction.com/historia/18369397" target="_blank">https://www.spiritfanfiction.com/historia/18369397</a>
 	</h3>
 	<br />
 </div>
@@ -231,14 +221,11 @@
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Leitores" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Leitores: <i class="fas fa-book-reader"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Leitores: <i class="fas fa-book-reader"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
@@ -265,10 +252,10 @@
 			</h3>
 		</button>
 
-			<!-- Chapter button for "4 - O Anime Relaxante" chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Anime Relaxante');" style="border-radius: 50px;">
+			<!-- Chapter button for "4 - O Ano Novo e o Anime Relaxante" chapter -->
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Ano Novo e o Anime Relaxante');" style="border-radius: 50px;">
 			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
-				4 - O Anime Relaxante
+				4 - O Ano Novo e o Anime Relaxante
 			</h3>
 		</button>
 
@@ -491,25 +478,19 @@
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Ler história" button -->
-	<span id="button_1" class="tab_button">
-		
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Ler história: <i class="fas fa-book-open"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Ler história: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Outras histórias" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Outras histórias: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Outras histórias: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
@@ -534,25 +515,19 @@
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Leitores" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Leitores: <i class="fas fa-book-reader"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('readers');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Leitores: <i class="fas fa-book-reader"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Sites" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Sites: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Sites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
@@ -692,14 +667,11 @@
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Outras histórias" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_purple">
-		
-				Outras histórias: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_purple">
+			Outras histórias: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
@@ -907,7 +879,7 @@
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_1_title">1 - O Começo, Parte Um</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -920,24 +892,18 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/01/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_1_text" class="text_size unselectable " style="text-align: left;">
 		Olá, eu sou Izaque Sanvezzo, Stake2, e Funkysnipa Cat.<br />
 <br />
-Esta é "A Vida de Pequenata", uma história minha, criei em 5 de Agosto de 2017 (05/08/2017).<br />
+Esta é "A Vida de Pequenata", uma história minha, criei ela em 5 de Agosto de 2017 (05/08/2017).<br />
 Criei ela no site de histórias chamado "Wattpad", foi uma das minhas primeiras histórias.<br />
 Ela veio depois da minha primeira história, "Ilha Deserta", criada em 23 de Outubro de 2016 (23/10/2016).<br />
 Eu criei uma conta no Wattpad e queria testar o site, e como seria escrever nele, criando uma história chamada "Littletato" (Pequenata).<br />
 Que era uma mistura de "Little" e "Potato" (Pequena e Batata), então, eu comecei a escrever ela.<br />
 Escrevia um capítulo inteiro em só uma linha, com erros gramaticais e de digitação, com poucas coisas interessantes.<br />
 Ainda tenho arquivos dos capítulos antigos para ler e ver como minhas habilidades de escrita e contação de histórias melhorou.<br />
-Então, em 2021, eu comecei a revisar todos os capítulos de Pequenata, para melhorar eles.<br />
+Então, em 2021, eu comecei a revisar todos os capítulos para melhorá-los.<br />
 E escrever eles no estilo da minha história "SpaceLiving", com assuntos e transições separados por parágrafos.<br />
 Minha história "SpaceLiving" foi criada em 19 de Janeiro de 2019 (19/01/2019).<br />
 Eu fiquei inspirado a começar a escrever histórias por causa de uma história Brasileira no formato de green text (texto verde), estilo de escrita originado no site 4chan.<br />
@@ -958,7 +924,7 @@ Então, obrigado por dar uma chance para esta história, e eu espero que você g
 <br />
 Esta história é inspirada em:<br />
 Animes de slice of life, casuais, que mostram o dia a dia de uma pessoa.<br />
-O anime "Yuru Camp", mostra a vida de garotas que gostam de acampar como passamento e seu dia a dia.<br />
+O anime "Yuru Camp", que mostra a vida de garotas que gostam de acampar como passamento e seu dia a dia.<br />
 Ele é um anime bem relaxante sobre acampamento, e tem uma trilha sonora bem relaxante também, que eu sempre escuto enquanto escrevo Pequenata.<br />
 Eu diria que a trilha sonora de Pequenata é a trilha sonora de Yuru Camp, e também músicas do gênero folk.<br />
 A Pequenata também gostaria de acampar assim como as garotas do anime.<br />
@@ -969,6 +935,11 @@ Por exemplo, em várias mídias, animes, desenhos, séries, filmes, e vídeos qu
 Com esta história, eu tenho o desejo de mostrar o dia a dia da Pequenata, como é a vida dela, e como ela é incrível.<br />
 Eu amo muito essa história, e fico feliz de escrever ela e de ter criado ela.<br />
 <br />
+Datas do capítulo:<br />
+Este capítulo foi originalmente escrito em 5 de Agosto de 2017, às 23:44.<br />
+Ele foi revisado pela última vez em 20 de Fevereiro de 2024, às 01:27.<br />
+E foi traduzido para o Inglês em 24 de Fevereiro de 2024, às 19:35.<br />
+<br />
 Pequenata era uma garota que vivia sozinha, ela estava sempre viajando através das cidades, procurando uma boa cidade para morar.<br />
 Ela amava viajar, experimentar novas coisas, lugares, e a natureza, sentir novos cheiros, e ouvir novos sons.<br />
 Pequenata tinha dezenove anos em 2019, e nasceu em 4 de Fevereiro de 2000.<br />
@@ -977,6 +948,8 @@ Ela nasceu e morou boa parte de sua vida em Los Angeles, no estado da Califórni
 Pequenata é bissexual, ela se descobriu quando era pequena, e percebeu que também gostava de garotas.<br />
 Seus pais eram Brasileiros, vieram do Brasil para os Estados Unidos em busca de oportunidades de emprego, antes de terem filhos.<br />
 Eles viviam na cidade de Maringá, no estado do Paraná, e juntaram dinheiro para viajar.<br />
+Pequenata fala Português Brasileiro e Inglês fluentemente, mas está mais acostumada com o Inglês.<br />
+Seus pais lhe ensinaram Português Brasileiro em casa desde criança.<br />
 Enquanto viajava, a garota parou em uma cidade chamada "São Francisco", na Califórnia, nos Estados Unidos, e começou a analisar ela, o clima, trânsito, e as pessoas.<br />
 Ela encontrou outra garota enquanto andava em São Francisco, era tarde, depois do meio-dia, e um pouco frio.<br />
 O nome dela era Júlia e ela tinha dezoito anos, ela nasceu em 25 de Junho de 2001.<br />
@@ -1113,9 +1086,22 @@ Pequenata abraçou Júlia forte por trás e beijou seu pescoço, Júlia se arrep
 "Eu te amo, Nata", disse Júlia, sorrindo, e beijou a mão de Pequenata.<br />
 "Eu também te amo, Ju", disse Pequenata, que cheirou o cabelo de Júlia e fechou seus olhos.<br />
 Elas dormiram suavemente na noite, esperando pelo amanhã, por um novo dia onde elas passarão juntas.
-		<br /><br />
-		Capítulo escrito em: 05/08/2017<br />
-		Palavras: 3,134<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+23:44 05/08/2017<br /><br />
+		
+Capítulo revisado em:
+<br />
+01:27 20/02/2024<br /><br />
+		
+Capítulo traduzido para o Inglês em:
+<br />
+19:35 24/02/2024<br /><br />
+		Palavras:
+<br />
+3.235 palavras<br /><br />
 		</h4>
 		
 
@@ -1223,7 +1209,7 @@ Elas dormiram suavemente na noite, esperando pelo amanhã, por um novo dia onde 
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_2_title">2 - O Começo, Parte Dois</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -1243,16 +1229,15 @@ Elas dormiram suavemente na noite, esperando pelo amanhã, por um novo dia onde 
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/02/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_2_text" class="text_size unselectable " style="text-align: left;">
-		Eram seis horas da tarde, uma quinta-feira, e Pequenata estava voltando para casa a pé.<br />
-A garota havia terminado seu dia de trabalho e estava carregando algumas sacolas de compras que havia feito no supermercado do bairro.<br />
+		Datas do capítulo:<br />
+Este capítulo foi originalmente escrito em 6 de Agosto de 2017, às 00:17.<br />
+Ele foi revisado pela última vez em 14 de Março de 2024, às 04:12.<br />
+E foi traduzido para o Inglês em 21 de Março de 2024, às 00:48.<br />
+<br />
+Eram seis horas da tarde, uma quinta-feira, e Pequenata estava voltando para casa a pé.<br />
+A garota havia terminado seu dia de trabalho e estava carregando algumas sacolas de compras que havia feito no supermercado do bairro chamado "Safeway".<br />
 Nas sacolas, haviam legumes, verduras, frutas, leite, ovos, e dois pacotes de bolachas recheadas de chocolate.<br />
 Pequenata encontrou um amigo que ela e Júlia haviam feito durante os meses que estiveram morando juntas em São Francisco.<br />
 Eles se conheceram quando Pequenata estava fazendo um piquenique com Júlia num parque em um domingo.<br />
@@ -1286,12 +1271,12 @@ Júlia também conversava de vez em quando com Iam no WhatsApp.<br />
 Então Pequenata deixou as sacolas de compras em cima da mesa da cozinha.<br />
 Ela e Júlia guardaram as compras nos armários da cozinha e na geladeira.<br />
 Então as duas garotas começaram a preparar o jantar.<br />
-Pequenata fez um arroz temperado com sal, alho, cebola, e cenoura picada.<br />
+<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/02/Images/Dinner.png" style="max-width: 50%;" /><br /><br />
 Ela também cozinhou um feijão bem temperado com sal, alho, cebola, pimenta do reino, e folha de louro.<br />
 O cheiro do arroz e feijão estava maravilhoso.<br />
 Júlia fez dois ovos mexidos fritos com sal, salsinha, orégano, e queijo mussarela picado.<br />
 A garota também fez batatas e cenouras cozidas com sal, cebola, e salsinha, e um suco de laranja com cubos de gelo.<br />
-<br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/02/Images/Dinner.png" style="max-width: 50%;" /><br /><br />
+<a href="https://thestake2.netlify.app/Images/The%20Life%20of%20Littletato/Chapters/02/Images/Dinner.png" target="_blank" class="text_light_salmon text_hover_light_salmon">https://thestake2.netlify.app/Images/The%20Life%20of%20Littletato/Chapters/02/Images/Dinner.png</a><br />
 Então elas prepararam a mesa para comer, colocando todas as panelas com as comidas, os pratos, talheres, e copos.<br />
 Pequenata e Júlia começaram a comer o delicioso jantar que haviam preparado juntas, enquanto conversavam.<br />
 "A comida tá muito gostosa hoje amor, o ovo mexido que você fez tá delicioso!<br />
@@ -1523,9 +1508,22 @@ Pequenata deu um beijo nos lábios de Júlia, sorrindo.<br />
 "Boa noite meu amor, durma bem, eu te amo moh", disse Pequenata.<br />
 Júlia retribuiu o beijo e sorriu de volta, "Boa noite amor, durma bem também, eu também te amo moh", respondeu ela.<br />
 Então as garotas dormiram juntas na noite fria, esperando por mais um dia.
-		<br /><br />
-		Capítulo escrito em: 06/08/2017<br />
-		Palavras: 4,207<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+00:17 06/08/2017<br /><br />
+		
+Capítulo revisado em:
+<br />
+04:12 14/03/2024<br /><br />
+		
+Capítulo traduzido para o Inglês em:
+<br />
+00:48 21/03/2024<br /><br />
+		Palavras:
+<br />
+4.308 palavras<br /><br />
 		</h4>
 		
 
@@ -1620,7 +1618,7 @@ Então as garotas dormiram juntas na noite fria, esperando por mais um dia.
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_3_title">3 - O Piquenique e a Visita</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -1632,7 +1630,7 @@ Então as garotas dormiram juntas na noite fria, esperando por mais um dia.
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Anime Relaxante');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Ano Novo e o Anime Relaxante');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1640,15 +1638,14 @@ Então as garotas dormiram juntas na noite fria, esperando por mais um dia.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/03/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_3_text" class="text_size unselectable " style="text-align: left;">
-		Eram sete horas e trinta minutos da manhã, um sábado, e Pequenata não precisaria trabalhar hoje.<br />
+		Datas do capítulo:<br />
+Este capítulo foi originalmente escrito em 28 de Agosto de 2017, às 05:00.<br />
+Ele foi revisado pela última vez em 8 de Abril de 2024, às 00:16.<br />
+E foi traduzido para o Inglês em 20 de Abril de 2024, às 19:51.<br />
+<br />
+Eram sete horas e trinta minutos da manhã, um sábado, e Pequenata não precisaria trabalhar hoje.<br />
 Pequenata acordou e olhou para o sol batendo na fresta da janela.<br />
 Ela acordou Júlia com um beijo em seus lábios, "Bom dia meu amor", disse ela.<br />
 "Bom dia moh", respondeu Júlia, retribuindo o beijo, a abraçando.<br />
@@ -1691,7 +1688,7 @@ Então as garotas dividiram a lista em duas, para ficar mais fácil de preparar 
 Pequenata iria comprar salgadinhos, e iria fazer um torta de legumes deliciosa.<br />
 Júlia iria comprar alguns doces, e iria fazer um bolo de chocolate.<br />
 Após listarem tudo o que iriam precisar, ambas saíram de casa com suas bicicletas, trancando a porta.<br />
-Elas foram em um supermercado juntas, e compraram todas as coisas da lista de compras.<br />
+Elas foram no supermercado "Safeway" juntas, e compraram todas as coisas da lista de compras.<br />
 <br />
 Após isso, ambas voltaram para casa e guardaram as compras.<br />
 Pequenata havia comprado uma cesta de piquenique com bolsa térmica.<br />
@@ -1897,9 +1894,22 @@ Depois disso, elas foram para o quarto e deitaram-se na cama, se cobrindo.<br />
 As garotas disseram "te amo" uma para a outra, desejando uma boa noite, e se dando um beijo.<br />
 Elas estavam cansadas depois de um longo dia, com o piquenique, e a visita da irmã de Júlia, a Vitória.<br />
 E também estavam felizes por esse dia tão especial, então elas dormiram na noite estrelada.
-		<br /><br />
-		Capítulo escrito em: 28/08/2017<br />
-		Palavras: 3,683<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+05:00 28/08/2017<br /><br />
+		
+Capítulo revisado em:
+<br />
+00:16 08/04/2024<br /><br />
+		
+Capítulo traduzido para o Inglês em:
+<br />
+19:51 20/04/2024<br /><br />
+		Palavras:
+<br />
+3.753 palavras<br /><br />
 		</h4>
 		
 
@@ -1911,7 +1921,7 @@ E também estavam felizes por esse dia tão especial, então elas dormiram na no
 		</button>
 
 		<!-- Chapter button for next chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Anime Relaxante');" style="border-radius: 50px; float: right;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Ano Novo e o Anime Relaxante');" style="border-radius: 50px; float: right;">
 			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-right"></i>
 			</h3>
@@ -1976,15 +1986,15 @@ E também estavam felizes por esse dia tão especial, então elas dormiram na no
 	<br /><br />
 </div>
 
-<!-- Chapter tab for "4 - O Anime Relaxante" chapter -->
-<a id="chapter_4_anchor" name="4 - O Anime Relaxante"></a>
+<!-- Chapter tab for "4 - O Ano Novo e o Anime Relaxante" chapter -->
+<a id="chapter_4_anchor" name="4 - O Ano Novo e o Anime Relaxante"></a>
 <div id="chapter_4" class="tab header_size background_light_purple_darker text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2px; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
-		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_4_title">4 - O Anime Relaxante</span></b><br /><br /><p>
+		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_4_title">4 - O Ano Novo e o Anime Relaxante</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -2004,134 +2014,287 @@ E também estavam felizes por esse dia tão especial, então elas dormiram na no
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/04/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_4_text" class="text_size unselectable " style="text-align: left;">
-		[Notas:<br />
-Mudar o ano para 2020<br />
-Modificar datas escrita e revisão para mais detalhadas]<br />
+		Datas do capítulo:<br />
+Este capítulo foi originalmente escrito em 15 de Setembro de 2017, às 19:23.<br />
+Ele foi revisado pela última vez em 3 de Maio de 2024, às 20:42.<br />
+E foi traduzido para o Inglês em ?, às ?.<br />
 <br />
-Vitória disse que haviam bons empregos na cidade que ela vivia.<br />
-Pequenata disse que ela já tinha um bom emprego em São Francisco, trabalhando em uma empresa de tecnologia.<br />
-"Ah, isso é bom Pequenata", disse Vitória.<br />
-"Obrigada", respondeu Pequenata.<br />
-"Então, o que você tem feito, maninha?" perguntou Vitória.<br />
-"Nada de mais, eu só comprei essa casa com minha namorada e estamos vivendo aqui.<br />
-Essa cidade é boa", respondeu Júlia.<br />
+Era uma terça-feira, dia 21 de Janeiro de 2020, às seis e meia da manhã.<br />
+Pequenata estava deitada em sua cama, olhando para o sol brilhando através da janela do quarto, Júlia ainda estava dormindo.<br />
+Ela estava pensando sobre os momentos que ela passou no ano novo, na casa de seus pais.<br />
+A casa de seus pais ficava em sua cidade natal, Los Angeles, no estado da Califórnia, nos Estados Unidos.<br />
+Ana, a mãe de Pequenata, tinha quarenta anos em 2020, e nasceu em 22 de Julho de 1980.<br />
+Ela tinha cabelos loiros, olhos verdes, e pele branca, e era hétero.<br />
+O pai de Pequenata, John, tinha quarenta e três anos em 2020, e nasceu em 15 de Março de 1977.<br />
+Ele tinha cabelos castanhos, olhos castanhos escuros, e pele branca, e era hétero.<br />
+Ambos os pais de Pequenata eram aposentados, e viviam em sua casa em Los Angeles.<br />
+Carol, a irmã mais nova de Pequenata, também estava lá no ano novo, visitando seus pais.<br />
+Ela morava em Los Angeles, então a casa de seus pais era perto.<br />
+A garota tinha dezenove anos em 2020, e nasceu em 17 de Maio de 2001.<br />
+Pequenata também tinha um irmão e uma irmã, mas eles estavam desaparecidos, ela sentia saudade deles.<br />
+Eles desapareceram quando eram pequenos, e os pais de Pequenata não sabiam o paradeiro deles.<br />
+O caso do desaparecimento foi arquivado pela polícia local por falta de provas e pistas do paradeiro dos irmãos.<br />
+Pequenata gostava bastante de brincar com eles e Carol quando eram crianças.<br />
+Mas com o tempo, ela se esqueceu de seus nomes, passando a lembrar somente de seus rostos.<br />
+Pequenata tinha dois meses de férias ao ano, um em janeiro, e outro em dezembro.<br />
+A empresa "Interworks Technologies", em que Pequenata trabalhava, adotava um sistema de férias parecido com o do Brasil.<br />
+Ela também tinha várias folgas remuneradas em dias que eram feriados nos Estados Unidos.<br />
 <br />
-Júlia andou até a cozinha e começou a fazer o café da tarde.<br />
-Então Pequenata e Vitória foram até a cozinha, o trio começou a comer enquanto conversavam.<br />
-"Então, como é seu emprego, Pequenata?" perguntou Vitória.<br />
+Pequenata então se levantou da cama e fez suas necessidades matinais, eram seis e quarenta da manhã.<br />
+Então ela acordou Júlia com um abraço e um beijo, tendo esses retribuídos por Júlia.<br />
+Júlia também fez suas necessidades matinais, e ambas foram até a cozinha.<br />
+Elas começaram a fazer seu café da manhã, com sanduíches de queijo ricota, hambúrgueres de lentilha, e mostarda.<br />
+E também cappuccino com leite para beber.<br />
+Então as garotas sentaram-se à mesa e começaram a tomar seu café da manhã.<br />
+"Ei amor, quando eu me mudei pra São Francisco, eu pensei que seria difícil pra mim me acostumar com a cidade, é tão grande.<br />
+E também com as pessoas sabe, já que eu tenho um pouco de ansiedade e fobia social...<br />
+Mas desde que nós começamos a morar juntas, eu ganhei muita confiança em mim mesma sabe, e perdi o medo da cidade.<br />
+Tudo isso foi por causa de você amor, você me ajudou muito, então... Obrigada amor", disse Júlia, sorrindo para Pequenata.<br />
+"Oh meu amor, que bom, fico feliz que te ajudei nisso moh, você também me ajudou bastante a perder o medo da cidade grande, hihi.<br />
+E também a perder o medo de fazer amigos, hehe, obrigada moh", respondeu Pequenata, que deu um beijo em Júlia.<br />
+"De nada moh, que bom que te ajudei", disse Júlia, retribuindo o beijo.<br />
+"Eu te amei muito no momento em que te vi pela primeira vez amor, naquela praça...<br />
+E aí eu te chamei pra tomar um café comigo, eu lembro como se fosse hoje, hehe", disse Pequenata, lembrando-se do momento feliz.<br />
+"Também te amei muito naquele momento amor, eu fiquei tão feliz de você ter me chamado...<br />
+Você me olhou, aí eu te olhei de volta, e eu te achei tão linda, mas fiquei com vergonha de ir falar com você.<br />
+Então você veio falar comigo, e eu fiquei tão feliz... Eu também lembro como se fosse hoje", disse Júlia, com os olhos cheios de água.<br />
+"Oh amor... Que bom que ficou feliz, coisa fofa, eu te amo muito", disse Pequenata, beijando Júlia.<br />
+"Também te amo muito minha batatinha linda", respondeu Júlia, retribuindo o beijo, e sorrindo de volta.<br />
+Então, depois desse lindo momento, relembrando o começo de seu namoro, as garotas continuaram a comer.<br />
+Elas terminaram, Pequenata limpou e organizou a mesa, e Júlia lavou a louça do café da manhã.<br />
 <br />
-"Bom, eu trabalho em uma empresa de tecnologia, eu faço aplicativos, programas, e conserto celulares as vezes.<br />
-É muito bom, programar tem sido uma grande paixão para mim.<br />
-Eu estou muito feliz, hehe", respondeu Pequenata enquanto sorria, olhando para Vitória.<br />
+Hoje Pequenata não precisava trabalhar, pois estava de férias o mês todo.<br />
+Então Pequenata e Júlia andaram até a sala dos computadores, ligando eles.<br />
+Ambas sentaram-se em suas cadeiras de computador, eram sete e vinte da manhã.<br />
+As garotas estavam com suas garrafas de água ao lado, para beberem água quando sentirem sede.<br />
+Pequenata abriu o Mozilla Firefox, seu navegador favorito, e abriu o "Foobar2000", seu tocador de música favorito.<br />
+A garota tinha várias músicas e trilhas sonoras de animes baixadas em seu disco rígido (SSD).<br />
+Ela abriu o site "Wattpad", para escrever uma história que ela havia criado há alguns meses, chamada "O Castelo dos Magos Destemidos".<br />
+("Wattpad" é um site de histórias onde os usuários podem ler e escrever histórias, receber notas, comentários, e visualizações.)<br />
+Pequenata adorava escrever histórias, desde pequena, ela sempre escrevia histórias em seu caderno de escola.<br />
+Júlia abriu o programa "Paint Tool SAI", para continuar o desenho de uma garota de anime.<br />
+"Ei amor, quer ouvir um pouco da trilha sonora de Yuru Camp enquanto você faz suas coisas?" perguntou Pequenata, olhando para Júlia.<br />
+"Quero sim amor, por favor", respondeu Júlia, olhando de volta.<br />
+Então Pequenata colocou uma música do anime "Yuru Camp" para tocar nos alto-falantes de seu computador.<br />
+A música era bem calma e relaxante, com violão e violino.<br />
+<div class="video-container" style="margin-top: 1%; margin-bottom: -6%;"><iframe type="text/html" width="560" height="315" frameborder="0" class="border_radius_5_cent border_4px border_color_light_salmon" src="https://www.youtube.com/embed/cs4qzCzJTKk?autoplay=0&fs=1&iv_load_policy=1&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&" title="YouTube video player"></iframe></div><br /><br /><br /><br />
+O anime era sobre garotas que gostavam de acampar como passatempo.<br />
+Pequenata amava aquele anime, era tão calmo e relaxante, ela gostava da atmosfera do anime.<br />
+E ficava feliz escutando a trilha sonora do anime, assim como ela ficou quando assistiu o anime pela primeira vez.<br />
+Yuru Camp a lembrou de suas memórias de infância, quando ela andava de bicicleta de manhã, e quando ia para a fazenda de seu avô.<br />
+A música que estava tocando era boa para Pequenata escrever sua história, e para Júlia desenhar.<br />
+"Eu amo Yuru Camp amor, é tão bom e relaxante, hihi", disse Júlia, desenhando.<br />
+"É, eu também amo esse anime amor.<br />
+Seria legal a gente acampar algum dia né? Hihi", perguntou Pequenata, sorrindo, e escrevendo sua história.<br />
+"Seria mesmo moh, eu iria adorar", respondeu Júlia, sorrindo.<br />
+Júlia estava quase terminando o seu desenho de uma garota de anime de cabelos grisalhos e olhos verdes.<br />
+E Pequenata estava quase terminando o terceiro capítulo de sua história.<br />
+Ela havia recebido vários votos e comentários positivos em sua história nos dois primeiros capítulos.<br />
 <br />
-"Ah, isso é bom, eu tô feliz por ti Pequenata, ou, eu deveria dizer... Cunhada?" perguntou Vitória.<br />
-"Sim, você é minha cunhada, hehe", disse Pequenata enquanto sorria um pouco.<br />
+Eram oito horas da manhã, Júlia terminou seu desenho, e Pequenata seu capítulo de história.<br />
+Júlia postou seu desenho no site "Deviant Art", onde pode-se postar desenhos e receber favoritos e comentários.<br />
+Pequenata postou o terceiro capítulo de sua história no Wattpad, já recebendo algumas visualizações de seus leitores.<br />
+Então Pequenata pausou a música atual da trilha sonora de Yuru Camp que estava tocando.<br />
+Pequenata tinha um servidor em sua casa, que era como um computador portátil.<br />
+Ela havia comprado ele no mês passado, quando recebeu seu salário.<br />
+Nele, havia um disco rígido que armazenava todas as músicas, animes, desenhos, séries, e filmes que Pequenata havia baixado.<br />
+Esses arquivos poderiam ser acessados e transmitidos por qualquer dispositivo na casa, incluindo a televisão.<br />
+E Pequenata também usava o servidor para sincronizar a pasta de músicas do disco rígido com seu celular.<br />
+Assim Pequenata sempre poderia ter músicas novas e organizadas para ouvir em seu celular sem precisar de Internet.<br />
+Pequenata também tinha os animes "Sword Art Online" e "Yuru Camp" baixados no disco rígido, com todas as temporadas.<br />
+A garota já havia assistido toda a primeira temporada dos dois animes.<br />
+Pequenata e Júlia desligaram seus computadores e andaram até seu quarto.<br />
+Elas pegaram suas mochilas com suas garrafas de água, celulares, e fones de ouvido.<br />
+As garotas abriram a porta e saíram com suas bicicletas, começando a pedalar por São Francisco.<br />
+Ambas pedalaram até o parque do bairro em que elas moravam.<br />
+O mesmo parque em que elas e Iam fizeram o piquenique em um sábado, em novembro de 2019.<br />
+(O piquenique aconteceu no capítulo anterior, que é o três, intitulado "O Piquenique e a Visita".)<br />
+Então as garotas pedalaram pelo parque, andando bem rápido, e se divertindo juntas.<br />
+Elas haviam levado seus celulares e fones de ouvido.<br />
+Estavam ouvindo a trilha sonora do anime Yuru Camp, que estava baixada em seus celulares.<br />
+Após alguns minutos andando de bicicleta, as garotas sentaram-se em um banco do parque para descansar.<br />
+Elas estavam bebendo água para se hidratarem, perto de suas bicicletas que estavam presas em uma cerca.<br />
+As garotas estavam olhando as pessoas que estavam passeando no parque, e conversando.<br />
+E viram duas crianças e um cachorrinho brincando com um frisbee, elas ficaram felizes ao ver eles brincando.<br />
 <br />
-Vitória sorriu de volta e olhou para Júlia, perguntando: "Então, você trabalha, Júlia?"<br />
-"Não, só Pequenata trabalha", respondeu Júlia, olhando para Pequenata.<br />
-"Entendo", disse Vitória.<br />
-"Em que você trabalha, Vitória?" perguntou Pequenata.<br />
-"Eu sou uma designer, eu faço o design das logos e banners para as empresas", respondeu Vitória.<br />
-"Ah, isso parece muito legal", respondeu Pequenata.<br />
-"Obrigada", respondeu Vitória enquanto sorria.<br />
-"Você tem algum hobby, Pequenata?" perguntou Vitória.<br />
+Após alguns minutos descansando, já era hora de ir embora, pois o casal estava com fome.<br />
+Já eram nove horas da manhã, então Pequenata e Júlia montaram em suas bicicletas.<br />
+Elas começaram a pedalar de volta para casa, e então chegaram.<br />
+As garotas entraram dentro de casa e guardaram suas bicicletas, trancando a porta da frente.<br />
+Então elas foram tomar um banho juntas, pois estavam suadas depois de andarem bastante de bicicleta.<br />
+Após o banho, elas foram até o quarto e se trocaram.<br />
+As garotas foram até a cozinha e começaram a preparar um lanche para elas comerem.<br />
+Pequenata preparou os pães para fazer os sanduíches, passando maionese, colocando queijo ricota, e molho Barbecue.<br />
+Júlia estava fritando os hambúrgueres de lentilha que estavam congelados.<br />
+Após alguns minutos, eles estavam fritos, Júlia os colocou nos sanduíches e os fechou.<br />
+Pequenata pegou dois copos de vidro bem bonitos e os colocou à mesa.<br />
+Então ela pegou uma garrafa de dois litros de Coca-Cola que estava no congelador.<br />
+Ela havia comprado o refrigerante e alguns salgadinhos no domingo, no supermercado "Safeway", onde ela vai frequentemente.<br />
+Júlia e Pequenata então pegaram seus pratos e copos, andando até a sala de estar.<br />
+Elas os deixaram em sua mesa de centro, Pequenata pegou o controle da televisão, a ligando.<br />
+Então Pequenata abriu o aplicativo de televisão que ela criou para acessar seu servidor de mídia.<br />
+"O que a gente vai assistir hoje amor?" perguntou Júlia.<br />
+"O que acha da gente assistir Yuru Camp de novo moh?" perguntou Pequenata.<br />
+"Acho que é uma boa ideia amor, eu amo esse anime, ele é tão calmo e relaxante, hihi", respondeu Júlia, sorrindo.<br />
+"Eu também amo Yuru Camp, hihi", disse Pequenata, sorrindo de volta.<br />
+Então Pequenata acessou a pasta de mídias do servidor, depois a pasta de animes, e depois a pasta do Yuru Camp.<br />
+A garota colocou o primeiro episódio da primeira temporada do anime legendado para tocar.<br />
+O casal começou a assistir o anime novamente, enquanto comia seu sanduíche e bebia seu refrigerante.<br />
+O anime tinha dublagem original em Japonês, e legendas em Português.<br />
 <br />
-"Sim, eu programo, eu também gosto de jogar jogos no meu computador.<br />
-Algumas vezes eu e Júlia saímos para uma caminhada no parque, ou uma volta de bicicleta, e você, Vitória?" perguntou Pequenata.<br />
+Ele começa mostrando um grupo de garotas acampando em volta de uma fogueira.<br />
+Elas estão assando marshmallows e bebendo chá quente, no frio, e com roupas de frio quentinhas.<br />
+A protagonista do anime se chama Rin Shima, ela tem cabelos azuis escuros, e ama acampar como passatempo.<br />
+Então a abertura do anime toca, Pequenata e Júlia amam a abertura e a música dela, ela é tão animada.<br />
+Após a abertura, o anime mostra Rin Shima pedalando de bicicleta através de uma rodovia vazia.<br />
+Ela deseja ver o Monte Fuji de perto, e acampar perto dele também, pois ele é lindo e dá uma bela vista.<br />
+É um sábado, dia 4 de Novembro de 2018, mostrado no celular da Rin.<br />
+Ela estava pedalando até um local de acampamento onde ela iria acampar.<br />
+No caminho, ela vê uma garota de cabelos rosas dormindo em um banco, era a Nadeshiko Kagamihara.<br />
+Rin pensou que aquela garota iria pegar um resfriado por dormir ali.<br />
+Pequenata e Júlia estavam assistindo o episódio e sentiram uma forte nostalgia, ficando felizes.<br />
+Elas estavam felizes de relembrar a primeira vez em que assistiram o anime.<br />
+O casal ainda tinha aquele mesmo amor pelo anime que tinham antes.<br />
+Pequenata estava acariciando os cabelos de Júlia enquanto assistiam.<br />
+Então Rin chegou no local onde iria acampar, pagando pela taxa de acampamento.<br />
+Após isso, ela pedalou até o local do acampamento, estacionando sua bicicleta.<br />
+A garota de cabelos azuis respirou profundamente, sentindo a brisa fresca.<br />
+Ela tinha o local de acampamento todo para ela.<br />
+Poucas pessoas acampavam na época de inverno, pois era muito frio.<br />
+Então Rin se alongou e montou sua barraca, colocando um saco de dormir dentro.<br />
+Ela também montou sua mesa, cadeira, e fogão portátil à gás.<br />
+A garota então sentou-se em sua cadeira, começando a ler seu livro chamado "O Mistério da Antiga Civilização X".<br />
+Estavam cinco graus Celsius no inverno, e o vento era muito frio.<br />
+Rin estava com preguiça de fazer uma fogueira pois dava muito trabalho e ela ficaria com cheiro de fumaça.<br />
+Então Rin relutantemente se levanta e começa a preparar as coisas para fazer uma fogueira.<br />
+Ela vai até a floresta que tem perto do acampamento e começa a procurar por pinhas para começar o fogo.<br />
+O narrador do anime ensina ao telespectador como encontrar as melhores pinhas e lenha para fogueiras.<br />
+E também a como preparar a lenha para fazer a fogueira.<br />
+Pequenata estava adorando aprender coisas de acampamento com o anime.<br />
+Parecia ser tão divertido, a garota quer tentar acampar algum dia.<br />
+O anime mostrou a ela como é divertido e relaxante acampar.<br />
 <br />
-"Eu gosto de ir para a academia, jogar jogos também, e ouvir música, rock, metal, eletrônica, eu também faço churrasco as vezes", disse Vitória enquanto dava algumas risadas.<br />
-"Isso parece ser muito legal", respondeu Pequenata enquanto sorria de leve.<br />
+Então Pequenata e Júlia terminaram de almoçar, elas pausaram o episódio do anime, que estava em nove minutos.<br />
+Eram dez horas da manhã, as garotas estavam gostando de assistir o anime novamente juntas.<br />
+O casal levou os pratos e copos até a pia da cozinha, Pequenata lavou a louça, e Júlia guardou.<br />
+Então Júlia pegou os salgadinhos no armário, para ela e Pequenata comerem enquanto assistem o anime.<br />
+As garotas foram até a sala de estar e se sentaram, retomando o anime.<br />
+No anime, Rin precisava ir no banheiro, então ela saiu do local de acampamento.<br />
+Enquanto andava, Rin viu Nadeshiko dormindo, mas agora no chão, ela deve ter caído enquanto dormia.<br />
+Rin olhou para a cena com indiferença, e seguiu seu caminho.<br />
+Após isso, ela voltou para o acampamento, acendendo a pinha com um fósforo, e montando a fogueira.<br />
+O narrador do anime ensina ao telespectador como acender a fogueira e colocar a lenha.<br />
+Colocando os galhos mais finos primeiro, aumentando gradativamente a grossura dos mesmo, mas deixando espaço para o ar fluir.<br />
+Então Rin sopra ar na fogueira usando um papelão, para prover oxigênio para o fogo.<br />
+A garota então tira suas luvas e aproveita o fogo quentinho da fogueira.<br />
+Enquanto pensa sobre seu rosto ressecado e o cheiro de fumaça, ignorando ambos por causa do calor do fogo.<br />
+"Não consigo acreditar que aquela garota dorme em um lugar como aquele.<br />
+Eu morreria de frio", pensa Rin, sobre Nadeshiko, a garota que estava dormindo no banco.<br />
+Ena Saitou, a amiga de escola de Rin, envia uma mensagem para ela pelo aplicativo de mensagens.<br />
+"Aonde você foi hoje?" pergunta Saitou.<br />
+Então Rin envia à ela uma foto de onde estava, com o Monte Fuji visto do Lago Motosu.<br />
+"O Monte Fuji tá de chapéu", diz Rin, pelo fato de haver nuvens escondendo o pico do Monte Fuji.<br />
+"Acontece, espero que o tempo melhore", responde Saitou.<br />
+Então Saitou envia uma foto de seu cachorro Chikuwa com um cobertor de cachorro, com a legenda "Não pegue um resfriado".<br />
+Algum tempo se passa, o anime mostra a casa de Nadeshiko.<br />
+A mãe de Nadeshiko fala com sua irmã, Sakura Kagamihara, preocupada com o sumiço de Nadeshiko.<br />
 <br />
-Depois de conversarem um pouco, Vitória iria ir embora, ela precisava ir de volta para a cidade que ela vive.<br />
-O trio andou até a porta da frente, Vitória abraçou Júlia e disse a ela para mandar uma mensagem para ela no Vegesapp.<br />
-Vitória apertou a mão de Pequenata.<br />
-O casal disse tchau para Vitória enquanto sorriam.<br />
-Vitória entrou dentro de seu carro e o ligou, ela deu tchau para Júlia e Pequenata, indo embora.<br />
-Júlia virou-se para Pequenata e sorriu, a abraçando.<br />
-"Então, você gostou da minha irmã, amor?" perguntou Júlia.<br />
-"Sim, ela é muito interessante amor", respondeu Pequenata, beijando os lábios de Júlia.<br />
-"Hehe, eu estou feliz por isso, eu te amo muito amor", disse Júlia.<br />
-"Eu te amo também, minha batatinha", respondeu Pequenata.<br />
+Já é noite, Rin sai de seu acampamento com sua lanterna.<br />
+Ela vai até o banheiro novamente, por ter tomado sopa demais.<br />
+A garota sai do banheiro e percebe que Nadeshiko não está mais lá, "Sumiu", ela pensa.<br />
+"Já deve ter ido pra casa né", pensa Rin, que se vira para a direção do acampamento.<br />
+Rin toma um susto ao ver Nadeshiko acordada à sua frente, chorando, e fica com medo.<br />
+Então Rin derruba sua lanterna e começa a correr de volta para seu acampamento.<br />
+Nadeshiko começa a correr atrás dela, chorando, e tropeça em uma corrente no começo do acampamento.<br />
+Rin então se senta em seu acampamento, com Nadeshiko à sua frente, chorando.<br />
+"Então você se mudou pra Yamanashi hoje, foi isso?" pergunta Rin.<br />
+"Foi!" responde Nadeshiko, chorando.<br />
+"E veio de bicicleta ver o Monte Fuji, mas se cansou, dormiu demais, e quando acordou tava escuro", diz Rin.<br />
+"Arram", diz Nadeshiko.<br />
+"Olha, por ali é uma descida, dá pra chegar na base da montanha bem rápido", explica Rin.<br />
+"Ai impossível, nem à pau dá muito medo!" responde Nadeshiko, com medo.<br />
+"Por que você não liga pra casa e pede pra te buscarem?" pergunta Rin.<br />
+"Ah é mesmo!<br />
+Ai meu celular, eu peguei meu celular, cadê ele cara, ele tava aqui.<br />
+Ah pera, celular!" diz Nadeshiko, mostrando um deck de cinquenta e duas cartas.<br />
+A barriga da garota ronca logo depois, e ela cai de joelhos, suspirando.<br />
+Então Rin oferece um lámen para Nadeshiko, já que ela estava com fome.<br />
+Nadeshiko aceita, então Rin deixa a água para o lámen esquentando em seu fogão à gás.<br />
 <br />
-O casal foi para dentro de casa, eram onze da noite.<br />
-Elas trancaram a porta da frente da casa, Júlia andou para a cozinha com Pequenata.<br />
-Júlia começou a procurar por algo para comer, ela decidiu preparar arroz e feijão para o jantar.<br />
-Pequenata ajudou ela a preparar o jantar, elas terminaram e se sentaram na mesa para comer.<br />
-"Ei amor, quando eu me mudei para São Francisco, eu pensei que seria difícil para mim se acostumar com a cidade, é tão grande.<br />
-Mas desde que nós começamos a viver juntas, eu ganhei muita confiança, e eu não tenho mais medo da cidade.<br />
-Por causa de você, então... obrigada amor", disse Júlia, olhando para Pequenata.<br />
+"Pode usar meu celular se quiser, qual o número da sua casa?" pergunta Rin.<br />
+"É que eu acabei de me mudar então eu não sei..." responde Nadeshiko, triste e preocupada.<br />
+"E o número do seu celular?" pergunta Rin, "Eu também não faço ideia..." responde Nadeshiko.<br />
+A água começa a ferver, e Rin prepara os lámens, colocando água quente.<br />
+Nadeshiko espirra, ela pegou um resfriado por dormir no chão.<br />
+Pequenata e Júlia se identificam com as garotas do anime.<br />
+Júlia se acha parecida com Nadeshiko, toda fofinha e tímida.<br />
+E Pequenata se acha parecida com Rin, mais séria, e mais pensativa, introspectiva, e relaxada.<br />
+O lámen está pronto, e Nadeshiko cantarola "Lámen de curry" de uma forma fofinha e divertida, feliz com a comida.<br />
+Nadeshiko come o lámen de curry com o maior apetite, como se fosse a coisa mais deliciosa no mundo, muito feliz.<br />
+Algum tempo se passa, e Rin pergunta de onde Nadeshiko é.<br />
+"Eu vim lá de baixo, um lugar chamado Nanbucho", responde ela.<br />
+"Não acredito que você veio até aqui de bicicleta", diz Rin.<br />
+"É que a minha irmã disse que uma visão do Monte Fuji do Lago Motosu custa 1000 ienes (28 reais)" explica Nadeshiko.<br />
+"Subi toda colina pra ver, mas tinha tanta nuvem que eu não vi nada!" continua ela, chateada.<br />
+"É aquilo que você não consegue ver?" pergunta Rin, Nadeshiko fica confusa.<br />
+"Olha pra trás", diz Rin, Nadeshiko o faz, e vê uma linda visão do Monte Fuji.<br />
 <br />
-"Hehe, sem problema, amor, eu estou feliz que pude ajudar você a aumentar sua confiança docinho, eu estava com medo no começo também.<br />
-Mas ver você, vivendo aqui sem problemas, ouvindo você dizer o que você acha da cidade e por quê você a ama.<br />
-Isso me fez amar São Francisco aqui, e me fez te amar também, me fez querer viver contigo aqui.<br />
-Eu estava amando você tanto naquele momento quando eu comecei a trabalhar em São Francisco.<br />
-E eu ainda te amo muito, amor", disse Pequenata, que deu um beijo nos lábios de Júlia.<br />
-Júlia sorriu e beijou Pequenata de volta, continuando a comer.<br />
-Elas terminaram de comer e fizeram suas necessidades matinais, elas andaram até o quarto e se deitaram na cama.<br />
-Se cobrindo com o cobertor, se abraçando forte, e dormindo juntas, tendo bons sonhos.<br />
-Ela colocou uma música de um anime chamado "<a href="https://www.youtube.com/watch?v=xZIqgCHrhRM" target="_blank">Yuru Camp</a>", era uma música bem calma com violinos, banjos, e flautas.<br />
-Algumas horas se passaram, Pequenata acordou e olhou para as horas, eram seis da manhã.<br />
-Ela se levantou e andou para o banheiro para fazer suas necessidades matinais.<br />
-Depois disso, Pequenata andou até a cozinha e pegou seu celular.<br />
-Ela colocou uma música de um anime chamado "Yuru Camp", era uma música bem calma com violinos, banjos, e flautas.<br />
-<a href="https://www.youtube.com/watch?v=xZIqgCHrhRM" target="_blank" class="text_light_salmon text_hover_light_salmon">https://www.youtube.com/watch?v=xZIqgCHrhRM</a><br />
-O anime era sobre garotas acampando, Pequenata amava aquele anime, era tão calmante e relaxante.<br />
-Ela estava feliz escutando as músicas do anime e também estava feliz quando ela assistiu o anime pela primeira vez.<br />
-Yuru Camp lembrou ela de suas memórias de infância e quando ela andava de bicicleta, nas manhãs que ela tinha.<br />
-Era uma música muito boa, ela começou a preparar o café da manhã enquanto a escutava.<br />
-Pequenata fez um sanduíche para ela e Júlia, ela deixou os dois pratos na mesa e fez um suco para elas beberem.<br />
-Ela andou até o quarto e acordou Júlia com um beijo em seus lábios.<br />
-Então Júlia levantou-se e andou até o banheiro para fazer suas necessidades matinais.<br />
-Depois disso, Júlia andou até a cozinha e se sentou na mesa, Pequenata estava lá também, ela se sentou ao lado de Júlia.<br />
-Júlia perguntou que música estava tocando, Pequenata disse que era a música de um anime chamado Yuru Camp.<br />
+O pico do monte está limpo, sem nuvens, a Lua está brilhando bastante, iluminando todo o rio, e o céu está limpo e estrelado.<br />
+Nadeshiko fica muito feliz e surpresa com a belíssima visão do Monte Fuji de noite.<br />
+"Acabei de lembrar que eu sei o número da minha irmã", diz Nadeshiko.<br />
+"Pela minha irmã caçula idiota, minhas sinceras desculpas", diz Sakura Kagamihara, a irmã de Nadeshiko.<br />
+"É meu agradecimento", diz ela, oferecendo um saco de kiwis para Rin.<br />
+"Ah, não, num foi nada, sério, tá de boa", diz Rin.<br />
+O anime mostra Nadeshiko em forma de caricatura, com um galo na cabeça, de forma cômica.<br />
+"O celular serve pra você levar junto pra onde você for!<br />
+Entra no carro sua porquinha!" diz Sakura, puxando Nadeshiko para dentro de seu carro, chutando ela devagar.<br />
+"Ai ai ai! Para! Para eu vou botar o lámen de curry pra fora!" diz Nadeshiko.<br />
+Então Sakura entra dentro do carro, "Boa noite, não vai pegar um resfriado", diz ela para Rin, e ela diz de volta.<br />
+"Meu lámen virou um saco de kiwi" pensa Rin, olhando para a sacola.<br />
+"Que garota estranha.<br />
+Hora de ouvir um pouco de rádio..." pensa ela.<br />
+Nadeshiko volta para falar com Rin, lhe dando um papel com seu número de celular.<br />
+"Obrigada pelo lámen de curry!<br />
+Na próxima vez, vamo acampar de verdade!" diz Nadeshiko, sorrindo, feliz por ter conhecido Rin.<br />
+"É... Ela é estranha...<br />
+Mas... Acho que eu vou adicionar sim", pensa Rin.<br />
+O episódio termina com sua música de encerramento, mostrando o caminho de Nadeshiko.<br />
+Ela vai de bicicleta até a estação Utsubuna, pegando um trem para a escola.<br />
+A escola de Rin é mostrada, com Rin conversando com Saitou no lugar dos sapatos dos alunos.<br />
+Nadeshiko passa por perto e Rin sente a presença dela, mas não a vê.<br />
+Os telespectadores descobrem que Nadeshiko estuda na mesma escola que Rin, e ambas vão se encontrar novamente.<br />
+Uma seção "Cantinho do Acampamento" é mostrada após o encerramento do episódio.<br />
+Mostrando as personagens Chiaki Ogaki e Aoi Inuyama em seu Clube de Atividades ao Ar Livre.<br />
+Elas conversam sobre acampamento de inverno, aquecedores, e outras coisas.<br />
 <br />
-Júlia disse que ela já assistiu aquele anime, ela disse que era muito bom e relaxante.<br />
-Pequenata disse que ela amava o anime, e queria re-assisti-lo alguma hora com Júlia.<br />
-Elas beberam o suco e comeram o sanduíche, Júlia achou que estava muito bom.<br />
-Depois disso, Júlia e Pequenata andaram para a sala de estar.<br />
-Júlia ligou a TV e selecionou o aplicativo Vegeflix.<br />
-Ela pesquisou na biblioteca da Vegeflix por um anime específico.<br />
-Ela não conseguiu achar, então ela abriu um site na Internet onde ela assistia anime as vezes.<br />
-Júlia pesquisou por "Yuru Camp" lá e achou, ela olhou para Pequenata e perguntou se ela queria assisti-lo.<br />
-Pequenata respondeu positivamente, Júlia selecionou o anime, Pequenata andou até a cozinha e pausou a música que estava tocando em seu celular.<br />
-Então ela voltou para a sala de estar e se sentou ao lado de Júlia, abraçando ela forte.<br />
-Júlia colocou o primeiro episódio de Yuru Camp para tocar na TV.<br />
+Então o episódio acaba, Pequenata e Júlia ficaram felizes de assistir o episódio novamente, elas amam o anime.<br />
+Eram dez horas e quatorze minutos, as garotas jogaram o pacote de salgadinho no lixo, e lavaram suas mãos.<br />
+Elas desligaram a televisão e ligaram seus computadores.<br />
+O casal continuou com seu dia, fazendo coisas divertidas juntas, e cozinhando.<br />
 <br />
-O anime mostrou uma garota com cabelo azul, seu nome era Rin, ela estava movendo sua bicicleta para fora de sua casa e indo para um lugar para acampar.<br />
-No caminho, ela viu uma garota de cabelos rosas dormindo em um banco, ela pensou que aquela garota iria pegar um resfriado por dormir ali.<br />
-Pequenata viu isso e bateu a nostalgia nela, ela pensou sobre a primeira vez que ela assistiu Yuru Camp.<br />
-Ela estava muito feliz e sorrindo muito, ela ainda tinha aquele mesmo amor pelo anime que ela tinha antes.<br />
-Júlia estava sorrindo também, assistindo Yuru Camp com Pequenata, era muito divertido.<br />
-Pequenata estava acariciando os cabelos de Júlia, sorrindo, assistindo Rin acampar.<br />
-Acampar parecia ser tão divertido para Pequenata, ela queria tentar isso algum dia.<br />
-Yuru Camp mostrou à ela quão incrível, relaxante e divertido acampar é.<br />
-Júlia queria tentar campar também, ela perguntou para Pequenata se ela queria ir acampar com ela, Pequenata disse sim.<br />
-Júlia estava muito feliz, ela olhou para Rin, acampando, parecia ser tão relaxante e divertido, Rin parecia tão feliz.<br />
+(Foi tão divertido escrever e revisar esse capítulo, eu terminei de revisar ele em 3 de Junho de 2024, às 20:40<br />
+Revisei enquanto ouvia músicas da trilha sonora de Yuru Camp:<br />
+<a href="https://www.youtube.com/watch?v=cs4qzCzJTKk" target="_blank">Yuru Camp OST #04 - Solo Camp Recommendation</a><br />
+Eu amo o anime, é tão divertido, calmo, e relaxante ksks, eu amo assistir ele, e também re-assisti-lo dublado<br />
+É por isso que eu coloquei ele no capítulo ksks<br />
+Assista Yuru Camp, é um anime muito bom, ksks, ele já tem filme e terceira temporada<br />
+Você pode comentar uma sugestão de o que você queria que aparecesse ou acontecesse na história ksks<br />
+Obrigado por assistir- quer dizer... Ler, hihi :3<br />
+Tchau ^^)
+<br /><br />
+		
+Capítulo escrito em:
 <br />
-Então, depois de assistir o episódio por algum tempo, ele terminou.<br />
-Júlia e Pequenata beberam um pouco de água, então elas usaram o banheiro e andaram para o quarto.<br />
-O casal deitou-se na cama e se cobriu com o cobertor.<br />
-<a href="https://www.youtube.com/watch?v=xZIqgCHrhRM" target="_blank">Yuru Camp △ - OST - ソロキャン△のすすめ - Solo Camp 10 Hours</a><br />
+19:23 15/09/2017<br /><br />
+		
+Capítulo revisado em:
 <br />
-(Eu escrevi esse capítulo em 15/09/2017 e revisei ele em 28/08/2020.<br />
-Foi tão divertido escrever e revisar ele, eu revisei enquanto escutava esse mix no Vegetube aqui:<br />
-<a href="https://www.youtube.com/watch?v=xZIqgCHrhRM" target="_blank" class="text_light_salmon text_hover_light_salmon">https://www.youtube.com/watch?v=xZIqgCHrhRM</a><br />
-Eu amo o anime Yuru Camp, é tão divertido e relaxante, calmante, eu amo assisti-lo.<br />
-É por isso que eu coloquei ele no capítulo, por que eu o amo, e eu revisei esse capítulo enquanto ouvia a trilha sonora dele.<br />
-Obrigado por assistir- quero dizer, por ler, hehe. ^^<br />
-Assista Yuru Camp, é um anime muito bom, ele vai ter uma segunda temporada, eu vou assistir ela. :3<br />
-Deixe uma sugestão nos comentários (Botão de comentário) de o que você queria que aparecesse ou acontecesse na A Vida de Pequenata, tchau. ^^)
-		<br /><br />
-		Capítulo escrito em: 15/09/2017<br />
-		Palavras: 1,775<br /><br />
+20:40 03/06/2024<br /><br />
+		Palavras:
+<br />
+4.303 palavras<br /><br />
 		</h4>
 		
 
@@ -2149,13 +2312,13 @@ Deixe uma sugestão nos comentários (Botão de comentário) de o que você quer
 			</h3>
 		</button>
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Modal('comment', '4 - O Anime Relaxante')" style="float: right; margin-right: 1%;">
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Modal('comment', '4 - O Ano Novo e o Anime Relaxante')" style="float: right; margin-right: 1%;">
 		<h3 class="text_size text_dark_purple"  style="font-weight: bold;">
 		Comentar: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Modal('read', '4 - O Anime Relaxante')" style="float: right; margin-right: 1%;">
+	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Modal('read', '4 - O Ano Novo e o Anime Relaxante')" style="float: right; margin-right: 1%;">
 		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
 		Eu li: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
@@ -2169,7 +2332,7 @@ Deixe uma sugestão nos comentários (Botão de comentário) de o que você quer
 
 	<!-- Chapter title bottom -->
 	<h3 class="text_size">
-		<p><br /><b>Você acabou de ler: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_4_title">4 - O Anime Relaxante</span></b><br /><br /><p>
+		<p><br /><b>Você acabou de ler: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_4_title">4 - O Ano Novo e o Anime Relaxante</span></b><br /><br /><p>
 	</h3>
 	<br /><br />
 </div>
@@ -2182,12 +2345,12 @@ Deixe uma sugestão nos comentários (Botão de comentário) de o que você quer
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_5_title">5 - O Sonho do Viajante Espacial</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Anime Relaxante');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Ano Novo e o Anime Relaxante');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
@@ -2202,13 +2365,7 @@ Deixe uma sugestão nos comentários (Botão de comentário) de o que você quer
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/05/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_5_text" class="text_size unselectable " style="text-align: left;">
 		Pequenata estava desenhando algo em seu computador usando um programa chamado Paint Tool SAI.<br />
 Era um programa onde você podia desenhar digitalmente, usando lápis, pincéis, e fazer line art.<br />
@@ -2303,14 +2460,19 @@ Então Júlia pegou o animal e começou a seguir Pequenata.<br />
 Pequenata pegou alguns materiais que estavam perto da espaçonave acidentada e andou para sua espaçonave.<br />
 Júlia e ela entraram na espaçonave, Pequenata ligou a espaçonave, decolando e dirigindo até o depósito.<br />
 Então o sonho se tornou outro sonho, Pequenata e Júlia estavam dormindo felizes, juntas, apaixonadas uma pela outra.
-		<br /><br />
-		Capítulo escrito em: 02/11/2017<br />
-		Palavras: 1,838<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+02:34 02/11/2017<br /><br />
+		Palavras:
+<br />
+1.847 palavras<br /><br />
 		</h4>
 		
 
 		<!-- Chapter button for previous chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Anime Relaxante');" style="border-radius: 50px; float: left;">
+		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('4', 'O Ano Novo e o Anime Relaxante');" style="border-radius: 50px; float: left;">
 			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
 				<i class="fas fa-arrow-circle-left"></i>
 			</h3>
@@ -2356,7 +2518,7 @@ Então o sonho se tornou outro sonho, Pequenata e Júlia estavam dormindo felize
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_6_title">6 - O Sábado e o Parque</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -2376,13 +2538,7 @@ Então o sonho se tornou outro sonho, Pequenata e Júlia estavam dormindo felize
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/06/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_6_text" class="text_size unselectable " style="text-align: left;">
 		Pequenata então acordou, olhou para o relógio e viu que eram seis da manhã, depois olhou para o calendário e percebeu que era sábado, depois abraçou Júlia com força e dormiu novamente enquanto acariciava os cabelos de Júlia.<br />
 <br />
@@ -2464,9 +2620,14 @@ Pequenata se cobriu e Júlia com o cobertor.<br />
 "Boa noite, querida", disse Pequenata com uma voz suave.<br />
 "Boa... noite minha querida", disse Júlia, adormecendo lentamente de novo, sorrindo e cantarolando de felicidade.<br />
 As duas dormiram juntas na noite silenciosa.
-		<br /><br />
-		Capítulo escrito em: 21/11/2017<br />
-		Palavras: 1,105<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+02:54 21/11/2017<br /><br />
+		Palavras:
+<br />
+1.114 palavras<br /><br />
 		</h4>
 		
 
@@ -2517,7 +2678,7 @@ As duas dormiram juntas na noite silenciosa.
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_7_title">7 - Sessão de Domingo de Videogame</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -2537,13 +2698,7 @@ As duas dormiram juntas na noite silenciosa.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_7" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/07/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_7_text" class="text_size unselectable " style="text-align: left;">
 		Era um domingo, Pequenata só queria dormir o dia todo, por que é isso que as pessoas fazem no domingo, ela estava acordada.<br />
 <br />
@@ -2594,9 +2749,14 @@ Eu me diverti muito hoje querida, obrigada", responde Pequenata, que começa a a
 "Eu também me diverti, bebê, obrigada por isso, hehe, eu amo quando você me faz carinho", diz Júlia enquanto sorri.<br />
 "E eu amo te carinhar, Júlia", responde ela.<br />
 Elas fecham os olhos e dormem na noite silenciosa, está chovendo suavemente.
-		<br /><br />
-		Capítulo escrito em: 02/01/2018<br />
-		Palavras: 759<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+22:12 02/01/2018<br /><br />
+		Palavras:
+<br />
+768 palavras<br /><br />
 		</h4>
 		
 
@@ -2647,7 +2807,7 @@ Elas fecham os olhos e dormem na noite silenciosa, está chovendo suavemente.
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_8_title">8 - A Programação de Pequenata, o Emocionante Filme</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -2667,13 +2827,7 @@ Elas fecham os olhos e dormem na noite silenciosa, está chovendo suavemente.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_8" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/08/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_8_text" class="text_size unselectable " style="text-align: left;">
 		Era uma segunda-feira, Pequenata acordou e bocejou, ela precisava se arrumar para o trabalho.<br />
 Ela olhou para o relógio e eram seis da manhã, Júlia ainda estava dormindo.<br />
@@ -2766,9 +2920,14 @@ Pequenata beija Júlia em seus lábios e sorri enquanto acaricia o cabelo dela.<
 "Obrigada querida, eu amo quando você me carinha assim, faz eu me sentir tão especial", responde Júlia.<br />
 "Hihi, eu te amo minha batatinha doce", diz Pequenata.<br />
 Elas se abraçam forte e se cobrem com o cobertor, dormindo logo após.
-		<br /><br />
-		Capítulo escrito em: 04/02/2018<br />
-		Palavras: 1,285<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+03:33 04/02/2018<br /><br />
+		Palavras:
+<br />
+1.294 palavras<br /><br />
 		</h4>
 		
 
@@ -2819,7 +2978,7 @@ Elas se abraçam forte e se cobrem com o cobertor, dormindo logo após.
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_9_title">9 - O Sonho e a Livestream</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -2839,13 +2998,7 @@ Elas se abraçam forte e se cobrem com o cobertor, dormindo logo após.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_9" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/09/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_9_text" class="text_size unselectable " style="text-align: left;">
 		Era uma terça-feira, Pequenata estava sonhando em um campo, um grande e alto campo de trigo com um nascer do sol, ela olhou para perto do sol e sorriu.<br />
 Um forte vento bateu nela e ela tentou não cair, ela se sentiu bem ali, e calma, sentindo o vento e a natureza, ela amou ver a natureza em todas as suas formas.<br />
@@ -2955,9 +3108,14 @@ Pequenata dá um pequeno beijo no pescoço de Júlia, ela dá algumas risadinhas
 "Boa noite queria, eu te amo", diz Pequenata para Júlia.<br />
 "Boa noite amor, eu te amo também, minha batatinha", responde ela.<br />
 Então elas dormem, esperando pelo próximo dia.
-		<br /><br />
-		Capítulo escrito em: 27/05/2018<br />
-		Palavras: 1,856<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+04:04 27/05/2018<br /><br />
+		Palavras:
+<br />
+1.865 palavras<br /><br />
 		</h4>
 		
 
@@ -3008,7 +3166,7 @@ Então elas dormem, esperando pelo próximo dia.
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_10_title">10 - O Sonho Alegórico</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -3028,13 +3186,7 @@ Então elas dormem, esperando pelo próximo dia.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_10" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/10/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_10_text" class="text_size unselectable " style="text-align: left;">
 		Era uma quarta-feira, Pequenata estava dormindo e sonhando.<br />
 Ela estava sonhando um sonho onde ela estava deitada sobre uma nuvem olhando para o sol, Júlia estava ao lado dela.<br />
@@ -3140,9 +3292,14 @@ Uma geladeira que cria qualquer coisa que você pensar? não consigo acreditar n
 Ela abaixou o volume da televisão e fechou seus olhos para dormir.<br />
 Júlia estava pensando em Pequenata, ela estava dormindo enquanto sorria.<br />
 Ela teve bons sonhos enquanto dormia à tarde.
-		<br /><br />
-		Capítulo escrito em: 08/07/2018<br />
-		Palavras: 1,607<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+19:30 08/07/2018<br /><br />
+		Palavras:
+<br />
+1.616 palavras<br /><br />
 		</h4>
 		
 
@@ -3193,7 +3350,7 @@ Ela teve bons sonhos enquanto dormia à tarde.
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_11_title">11 - O Sonho da Viagem e o Piquenique</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -3213,13 +3370,7 @@ Ela teve bons sonhos enquanto dormia à tarde.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_11" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/11/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_11_text" class="text_size unselectable " style="text-align: left;">
 		Era uma Terça-Feira, Pequenata estava sonhando com pizzas, muitas pizzas voando no céu enquanto ela estava sentada na superfície de um deserto.<br />
 O sol não estava muito quente, estava um pouco fresco lá, a brisa estava um pouco fria, ela gostou do clima.<br />
@@ -3325,9 +3476,14 @@ Então ela trancou a porta da frente e deixou a chave da bicicleta no porta-chav
 Ela andou até a cozinha, bebeu uma garrafa inteira de água e comeu uma maçã, ela estava um pouco cansada.<br />
 Júlia andou até a sala de estar e se deitou no sofá, ligando a televisão.<br />
 Ela fechou seus olhos e dormiu na tarde quente, esperando Pequenata chegar do trabalho.
-		<br /><br />
-		Capítulo escrito em: 22/07/2018<br />
-		Palavras: 1,849<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+18:21 22/07/2018<br /><br />
+		Palavras:
+<br />
+1.858 palavras<br /><br />
 		</h4>
 		
 
@@ -3378,7 +3534,7 @@ Ela fechou seus olhos e dormiu na tarde quente, esperando Pequenata chegar do tr
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_12_title">12 - Os Sonhos dos Cookies, Cyberpunk, e o Castelo De Vidro</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -3398,13 +3554,7 @@ Ela fechou seus olhos e dormiu na tarde quente, esperando Pequenata chegar do tr
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_12" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/12/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_12_text" class="text_size unselectable " style="text-align: left;">
 		Era uma sexta-feira, Pequenata estava sonhando com cookies, ela comeu muitos deles.<br />
 Ela se perguntou por que ela sempre tinha sonhos sobre comida, talvez seja porque ela amava comer coisas.<br />
@@ -3537,9 +3687,14 @@ Ele disse que o Gerador de Comida era só um Gerador de Coisas mas configurado p
 "Sem problemas Pequenata, hehe", disse Twilight Sparkle.<br />
 Então Pequenata começou a andar até a cozinha, ela abriu a geladeira e pegou um pacote de leite.<br />
 Depois disso, Pequenata fechou a geladeira e olhou para a pia da cozinha, tinha um cubo preto lá, talvez isso era o Gerador de Comida que a Twilight estava falando.)
-		<br /><br />
-		Capítulo escrito em: 23/08/2018<br />
-		Palavras: 2,581<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+20:51 23/08/2018<br /><br />
+		Palavras:
+<br />
+2.590 palavras<br /><br />
 		</h4>
 		
 
@@ -3590,7 +3745,7 @@ Depois disso, Pequenata fechou a geladeira e olhou para a pia da cozinha, tinha 
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_13_title">13 - O Sonho do Cupcake e o Filme de Superherói</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -3610,13 +3765,7 @@ Depois disso, Pequenata fechou a geladeira e olhou para a pia da cozinha, tinha 
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_13" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/13/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_13_text" class="text_size unselectable " style="text-align: left;">
 		Era uma Sexta-Feira, antes da meia noite, Pequenata estava sonhando, ela estava muito calma dentro de seu sonho atual, ela se sentiu feliz e relaxada.<br />
 Ela estava vendo um lindo castelo de vidro, ele era transparente e você poderia ver as coisas dentro dele, era realmente muito bonito.<br />
@@ -3738,9 +3887,14 @@ E também um mix de Dubstep do UKF.<br />
 <br />
 Muito obrigado por ler.<br />
 Marque o capítulo como lido e deixei um comentário, por favor! Obrigado. ^^)
-		<br /><br />
-		Capítulo escrito em: 24/09/2018<br />
-		Palavras: 2,374<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+01:33 24/09/2018<br /><br />
+		Palavras:
+<br />
+2.383 palavras<br /><br />
 		</h4>
 		
 
@@ -3791,7 +3945,7 @@ Marque o capítulo como lido e deixei um comentário, por favor! Obrigado. ^^)
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_14_title">14 - Um Feliz Ano Novo em 2019</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -3811,13 +3965,7 @@ Marque o capítulo como lido e deixei um comentário, por favor! Obrigado. ^^)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_14" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/14/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_14_text" class="text_size unselectable " style="text-align: left;">
 		Era um Domingo, no ano de 2018, Pequenata estava trabalhando em seu trabalho na Véspera de Ano Novo, ela poderia sair do trabalho mais cedo este dia por causa da Véspera de Ano novo.<br />
 Pequenata então pegou suas coisas e disse feliz ano novo para sua colega de trabalho Mia.<br />
@@ -3934,9 +4082,14 @@ Muito obrigado por ler! E obrigado por ler Pequenata por todo 2018.<br />
 E por ter lido a história durante 2020 também.<br />
 Eu espero revisar muito mais capítulos em 2021, os capítulos feitos em 2019.<br />
 Obrigado por ler meu querido leitor &colon;3 😊.)
-		<br /><br />
-		Capítulo escrito em: 01/01/2019<br />
-		Palavras: 2,315<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+04:55 01/01/2019<br /><br />
+		Palavras:
+<br />
+2.324 palavras<br /><br />
 		</h4>
 		
 
@@ -3987,7 +4140,7 @@ Obrigado por ler meu querido leitor &colon;3 😊.)
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_15_title">15 - Memórias, a Procura de Um Emprego, e o Jogo</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -4007,13 +4160,7 @@ Obrigado por ler meu querido leitor &colon;3 😊.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_15" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/15/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_15_text" class="text_size unselectable " style="text-align: left;">
 		Era uma Segunda-Feira, estava um pouco frio, Pequenata acordou, ela precisava trabalhar hoje.<br />
 Pequenata pensou sobre a noite anterior, era um Domingo, dia 31 de Dezembro de 2018, ela estava feliz, assistindo aquele filme de super herói com Júlia enquanto comia Doritos e bebia Coca-cola.<br />
@@ -4133,9 +4280,14 @@ E traduzi ele enquanto escutava a trilha sonora do anime Heya Camp, que é relax
 Eu amo muito escrever Pequenata, eu amo essa história. &colon;3<br />
 Obrigado por ler essa história e este capítulo, hoje eu assisti um episódio do anime Yuru Camp.<br />
 Eu recomendo que você o assista, é muito bom e relaxante, eu amo assistir ele o mesmo tanto que eu amo escrever Pequenata.)
-		<br /><br />
-		Capítulo escrito em: 13/01/2019<br />
-		Palavras: 2,505<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+21:22 13/01/2019<br /><br />
+		Palavras:
+<br />
+2.514 palavras<br /><br />
 		</h4>
 		
 
@@ -4186,7 +4338,7 @@ Eu recomendo que você o assista, é muito bom e relaxante, eu amo assistir ele 
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_16_title">16 - O Sonho da Cidade, Mensagem de Emprego, e o Jogo de Battle Royale</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -4206,13 +4358,7 @@ Eu recomendo que você o assista, é muito bom e relaxante, eu amo assistir ele 
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_16" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/16/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_16_text" class="text_size unselectable " style="text-align: left;">
 		Era uma Terça-feira, Pequenata estava sonhando sobre viajar o mundo de bicicleta, ela tinha dinheiro e suprimentos em bolsas que estavam amarradas à bicicleta dela.<br />
 Esse era um jeito muito bom de viver a vida, viajando e coisa e tal, vendo muitos novos lugares e novos rostos.<br />
@@ -4335,9 +4481,14 @@ Eu acho que Pequenata e Rin são um pouco parecidas, e o site da Pequenata tamb�
 De um lugar onde você pode passar o tempo e relaxar, uma casa quente de madeira no inverno, é assim que me sinto sobre esse site, Yuru Camp, e A Vida de Pequenata.<br />
 Eu sinto que esse é um lugar quieto, calmo, e quente para passar algum tempo e relaxar, relaxando enquanto se lê uma história sobre uma batata. kkkkkk<br />
 Obrigado por ler este capítulo, meu querido leitor, deixe um comentário no botão de Comentar, e registre sua leitura no botão Eu Li. :3)
-		<br /><br />
-		Capítulo escrito em: 29/01/2019<br />
-		Palavras: 2,645<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+23:06 29/01/2019<br /><br />
+		Palavras:
+<br />
+2.654 palavras<br /><br />
 		</h4>
 		
 
@@ -4388,7 +4539,7 @@ Obrigado por ler este capítulo, meu querido leitor, deixe um comentário no bot
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_17_title">17 - A Entrevista de Emprego e as Histórias</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -4408,13 +4559,7 @@ Obrigado por ler este capítulo, meu querido leitor, deixe um comentário no bot
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_17" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/17/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_17_text" class="text_size unselectable " style="text-align: left;">
 		Era uma Quarta-Feira, Júlia acordou primeiro, ela estava sonhando sobre a chuva, ouvindo os sons das gotas de chuva e os trovões.<br />
 Ela saiu da cama, ela havia de ir para sua entrevista de emprego na franquia de supermercado Safeway que existia em São Francisco.<br />
@@ -4531,9 +4676,14 @@ Eu quero continuar escrevendo mais Pequenata e também escrever a versão "spin-
 Eu acho que um spin-off é algo que não é mostrado na história original e é mostrado em uma história secundária.<br />
 De qualquer forma, obrigado por ler o capítulo 17 de A Vida de Pequenata, me mande uma mensagem em minhas redes sociais dizendo o que você achou, por favor.<br />
 Obrigado, tchau. :3)
-		<br /><br />
-		Capítulo escrito em: 02/02/2019<br />
-		Palavras: 2,297<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+23:14 02/02/2019<br /><br />
+		Palavras:
+<br />
+2.306 palavras<br /><br />
 		</h4>
 		
 
@@ -4584,7 +4734,7 @@ Obrigado, tchau. :3)
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_18_title">18 - A Aceitação no Emprego, a Conversa, e a Pizza</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -4604,13 +4754,7 @@ Obrigado, tchau. :3)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_18" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/18/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_18_text" class="text_size unselectable " style="text-align: left;">
 		Era uma Quinta-Feira, Pequenata estava acordada, ela se levantou e se preparou para seu trabalho.<br />
 Ela preparou o café da manhã e acordou Júlia, então ela comeu com ela.<br />
@@ -4727,10 +4871,15 @@ Eu também gostei de escrever sobre a conversa de Júlia e Iam.<br />
 Eu amei escrever sobre Júlia e Pequenata comendo uma pizza, eu também estava comendo uma pizza quando eu escrevi aquilo.<br />
 E eu gostei de escrever que Pequenata gosta de escrever histórias igual eu :3.<br />
 Eu revisei este capítulo enquanto escutava a incrível e relaxante trilha sonora do anime "Yuru Camp".<br />
-"<a href="https://www.youtube.com/watch?v=xZIqgCHrhRM" target="_blank">Trilha sonora de Yuru Camp</a>".)
-		<br /><br />
-		Capítulo escrito em: 07/02/2019<br />
-		Palavras: 2,375<br /><br />
+"<a href="https://www.youtube.com/watch?v=cs4qzCzJTKk" target="_blank">Trilha sonora de Yuru Camp</a>".)
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+23:48 07/02/2019<br /><br />
+		Palavras:
+<br />
+2.385 palavras<br /><br />
 		</h4>
 		
 
@@ -4781,7 +4930,7 @@ Eu revisei este capítulo enquanto escutava a incrível e relaxante trilha sonor
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_19_title">19 - O Primeiro Dia de Trabalho de Júlia</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -4801,13 +4950,7 @@ Eu revisei este capítulo enquanto escutava a incrível e relaxante trilha sonor
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_19" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/19/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_19_text" class="text_size unselectable " style="text-align: left;">
 		Era uma Sexta-Feira, Júlia tinha que trabalhar hoje, mas somente às dez da manhã, Júlia acordou primeiro, fez suas necessidades matinais, e andou até a cozinha.<br />
 A garota preparou o café da manhã, ela estava feliz porque iria trabalhar em um novo emprego hoje, ela pensou que seria difícil aprender, mas ela estava ansiosa para aprender.<br />
@@ -4916,13 +5059,18 @@ Eu terminei de revisar o capítulo 19 no dia 19 :).<br />
 E terminei de traduzir no dia 12/03/2021.<br />
 <br />
 Foi muito bom revisar esse capítulo, eu tava muito feliz sobre ele, procurando por como o salário é pago nos Estados Unidos, e escrevendo sobre as referências de anime na última parte.<br />
-Eu revisei e traduzi esse capítulo enquanto escutava a "<a href="https://www.youtube.com/watch?v=xZIqgCHrhRM" target="_blank">Trilha sonora de Yuru Camp</a>".<br />
+Eu revisei e traduzi esse capítulo enquanto escutava a "<a href="https://www.youtube.com/watch?v=cs4qzCzJTKk" target="_blank">Trilha sonora de Yuru Camp</a>".<br />
 <a href="https://www.youtube.com/watch?v=xZIqgCHrhRM" target="_blank" class="text_light_salmon text_hover_light_salmon">https://www.youtube.com/watch?v=xZIqgCHrhRM</a><br />
 Eu também ouvi um mix de aberturas de anime enquanto estava revisando, elas são muito boas, eu gosto da abertura de Bunny Girl Senpai.<br />
 Obrigado por ler ^^.)
-		<br /><br />
-		Capítulo escrito em: 26/02/2019<br />
-		Palavras: 2,557<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+12:20 26/02/2019<br /><br />
+		Palavras:
+<br />
+2.567 palavras<br /><br />
 		</h4>
 		
 
@@ -4973,7 +5121,7 @@ Obrigado por ler ^^.)
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_20_title">20 - O Café, o Carro, e Dirigir Com Música</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -4993,13 +5141,7 @@ Obrigado por ler ^^.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_20" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/20/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_20_text" class="text_size unselectable " style="text-align: left;">
 		Era um Sábado, Pequenata estava sentada no sofá, ela bocejou um pouco, olhando para seu celular, eram seis da manhã, ela não tinha nada para fazer hoje.<br />
 Júlia estava sentada ao seu lado, ambas estavam mexendo em seus celulares.<br />
@@ -5155,9 +5297,14 @@ Eu pesquisei muitas fotos da Lamborghini Aventador para ver e sentir aquela part
 Foi tão divertido, Pequenata fazendo barulho com o carro, e a criança falando sobre ele, Pequenata chegando em sua vizinhança com seu carro, no estilo.<br />
 A preparação para o churrasco de amanhã também foi legal de escrever.<br />
 Muito obrigado por ler esse capítulo :3.)
-		<br /><br />
-		Capítulo escrito em: 31/03/2019<br />
-		Palavras: 3,126<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+20:08 31/03/2019<br /><br />
+		Palavras:
+<br />
+3.135 palavras<br /><br />
 		</h4>
 		
 
@@ -5208,7 +5355,7 @@ Muito obrigado por ler esse capítulo :3.)
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_21_title">21 - O Churrasco, o Parque, e o Passeio</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -5228,13 +5375,7 @@ Muito obrigado por ler esse capítulo :3.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_21" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/21/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_21_text" class="text_size unselectable " style="text-align: left;">
 		Era um Domingo, Pequenata acordou às seis e meia da manhã, ela saiu da cama e fez suas necessidades matinais.<br />
 Ela andou até a cozinha e removeu a carne artificial e linguiças do congelador.<br />
@@ -5407,9 +5548,14 @@ Os quatro conversando enquanto caminhavam até o parque, eu comecei a ver mais d
 Eu gostei de escrever sobre Iam e Vitória jogando juntos e sua conversa.<br />
 Sobre elas fazendo o café da tarde, isso me lembra de quando eu vou para a casa de meus parentes, tipo minhas tias e minha avó, e elas servem café da tarde para nós.<br />
 De qualquer forma, muito obrigado por ler esse capítulo, volte logo, hehe ^^.)
-		<br /><br />
-		Capítulo escrito em: 14/04/2019<br />
-		Palavras: 3,345<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+17:31 14/04/2019<br /><br />
+		Palavras:
+<br />
+3.354 palavras<br /><br />
 		</h4>
 		
 
@@ -5460,7 +5606,7 @@ De qualquer forma, muito obrigado por ler esse capítulo, volte logo, hehe ^^.)
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_22_title">22 - A Infância e a Viagem Para o Texas</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -5480,13 +5626,7 @@ De qualquer forma, muito obrigado por ler esse capítulo, volte logo, hehe ^^.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_22" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/22/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_22_text" class="text_size unselectable " style="text-align: left;">
 		Era uma Quinta-Feira, Pequenata estava sozinha em seu quarto, ela tinha doze anos de idade e estava jogando um pouco de Vegecraft em seu computador.<br />
 Ela vivia na casa de seus pais, seu pai se chamava John, sua mãe se chamava Ana, eles eram pais muito carinhosos.<br />
@@ -5630,9 +5770,14 @@ Eu pesquisei na Internet por marcas famosas de chocolates, bolachas, e chips dos
 Eu abri o Google Maps para procurar pela rota de São Francisco até Texas, é uma viagem de um dia de carro, e leva cinco horas e vinte e cinco minutos de avião.<br />
 E eu também gostei de escutar a trilha sonora de Yuru Camp enquanto revisava e traduzia esse capítulo.<br />
 Obrigado por ler! Hehe ^^.)
-		<br /><br />
-		Capítulo escrito em: 05/05/2019<br />
-		Palavras: 2,691<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+22:00 05/05/2019<br /><br />
+		Palavras:
+<br />
+2.700 palavras<br /><br />
 		</h4>
 		
 
@@ -5683,7 +5828,7 @@ Obrigado por ler! Hehe ^^.)
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_23_title">23 - Viagem ao Texas, Parte Dois</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -5703,13 +5848,7 @@ Obrigado por ler! Hehe ^^.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_23" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/23/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_23_text" class="text_size unselectable " style="text-align: left;">
 		As aventuras da viagem de Pequenata para o Texas continua, obrigado por sintonizar novamente em nosso canal.<br />
 Pequenata estava ainda dirigindo para o Texas, Júlia e ela estavam escutando a trilha sonora de Yuru Camp no rádio do carro.<br />
@@ -5902,9 +6041,14 @@ Foi bom escrever sobre Pequenata e Júlia comprando roupas e eletrônicos.<br />
 E sobre elas comendo no restaurante, eu pesquisei na Internet por como um garçom fala nos restaurantes.<br />
 Eu também pesquisei por menus de restaurantes Americanos para ver o que eles serviam, foi bom escrever que Pequenata e Júlia comeram todas aquelas carnes artificiais deliciosas.<br />
 Foi bom escrever sobre Pequenata e Júlia conhecendo Layla e adicionando ela em seus Vegebooks.)
-		<br /><br />
-		Capítulo escrito em: 26/05/2019<br />
-		Palavras: 3,362<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+23:06 26/05/2019<br /><br />
+		Palavras:
+<br />
+3.371 palavras<br /><br />
 		</h4>
 		
 
@@ -5955,7 +6099,7 @@ Foi bom escrever sobre Pequenata e Júlia conhecendo Layla e adicionando ela em 
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_24_title">24 - O Sonho Estranho e a História de Sasha</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -5975,13 +6119,7 @@ Foi bom escrever sobre Pequenata e Júlia conhecendo Layla e adicionando ela em 
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_24" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/24/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_24_text" class="text_size unselectable " style="text-align: left;">
 		Era o dia vinte e quatro de Junho de 2019, uma Sexta-Feira, Pequenata vivia em São Francisco, ela estava deitada na cama.<br />
 Júlia estava deitada ao lado dela, Pequenata estava pensando em adotar um cachorro.<br />
@@ -6155,9 +6293,14 @@ Ela esteve lendo Pequenata muito rápido, hehe, tipo, três capítulos por dia.<
 E eu adoro receber a notificação de leitura dela em uma rede social.<br />
 Fico muito feliz quando ela lê Pequenata e comenta sobre o capítulo, hihi. :3<br />
 Seu nome começa com L, obrigado. :3)
-		<br /><br />
-		Capítulo escrito em: 24/06/2019<br />
-		Palavras: 3,183<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+21:59 24/06/2019<br /><br />
+		Palavras:
+<br />
+3.192 palavras<br /><br />
 		</h4>
 		
 
@@ -6208,7 +6351,7 @@ Seu nome começa com L, obrigado. :3)
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_25_title">25 - O Novo Cachorro</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -6228,13 +6371,7 @@ Seu nome começa com L, obrigado. :3)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_25" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/25/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_25_text" class="text_size unselectable " style="text-align: left;">
 		Pequenata estava trabalhando, era dia dois de Julho do ano 2019, uma Terça-Feira, ela estava no trabalho consertando alguns erros em um aplicativo.<br />
 Então, era hora de ir para a casa, ela saiu do prédio e entrou dentro de seu carro, dirigindo de volta para a casa.<br />
@@ -6397,9 +6534,14 @@ Desse jeito eu posso me lembrar facilmente do que aconteceu no capítulo em vez 
 Eu escrevi esta peça ouvindo o perfil da SubCarbon Records no Soundcloud, e... Eu só queria falar isso para vocês. :3<br />
 Também, é assim que eu imagino a Pequenata (ignore os cães), uma garota realmente tímida. xD)<br />
 <br /><img class="image_size border_4px border_color_light_salmon border_radius_6_cent box_shadow_black" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/25/Images/Not Littletato.jpg" style="max-width: 50%;" /><br />
-		<br /><br />
-		Capítulo escrito em: 02/07/2019<br />
-		Palavras: 3,064<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+14:29 02/07/2019<br /><br />
+		Palavras:
+<br />
+3.073 palavras<br /><br />
 		</h4>
 		
 
@@ -6450,7 +6592,7 @@ Também, é assim que eu imagino a Pequenata (ignore os cães), uma garota realm
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_26_title">26 - Um Teletransporte Estranho (PequeLiving)</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -6470,13 +6612,7 @@ Também, é assim que eu imagino a Pequenata (ignore os cães), uma garota realm
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_26" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/26/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_26_text" class="text_size unselectable " style="text-align: left;">
 		Esse é um crossover entre <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a> e <a class="text_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a>.<br />
 <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank">"A Vida de Pequenata"</a> e <a class="text_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a> são duas histórias minhas.<br />
@@ -6668,9 +6804,14 @@ Por favor clique no link abaixo para lê-lo:<br />
 	</a>
 </div>
 
-		<br /><br />
-		Capítulo escrito em: 03/07/2019<br />
-		Palavras: 3,797<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+23:38 03/07/2019<br /><br />
+		Palavras:
+<br />
+3.806 palavras<br /><br />
 		</h4>
 		
 
@@ -6721,7 +6862,7 @@ Por favor clique no link abaixo para lê-lo:<br />
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_27_title">27 - O Retorno e a Descoberta</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -6741,13 +6882,7 @@ Por favor clique no link abaixo para lê-lo:<br />
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_27" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/27/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_27_text" class="text_size unselectable " style="text-align: left;">
 		Essa é a sequência do capítulo dez de <a class="text_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/pt/" target="_blank">"SpaceLiving"</a>.<br />
 E dito capítulo é uma sequência do capítulo vinte e seis de A Vida de Pequenata, o anterior nesse site.<br />
@@ -6942,9 +7077,14 @@ De qualquer forma, agora no Brasil é meio dia, eu tenho que almoçar < Quando r
 Agora no Brasil são dez horas da manhã, o almoço não está pronto < Quando traduzi.<br />
 Obrigado por ler esse capítulo, obrigado, hehe.<br />
 Adeus, ou eu deveria dizer, até mais :D.)
-		<br /><br />
-		Capítulo escrito em: 24/08/2019<br />
-		Palavras: 3,264<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+16:57 24/08/2019<br /><br />
+		Palavras:
+<br />
+3.273 palavras<br /><br />
 		</h4>
 		
 
@@ -6995,7 +7135,7 @@ Adeus, ou eu deveria dizer, até mais :D.)
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_28_title">28 - A Linda Vida de Pequenata ❤️</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -7015,13 +7155,7 @@ Adeus, ou eu deveria dizer, até mais :D.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_28" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/28/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_28_text" class="text_size unselectable " style="text-align: left;">
 		(Este capítulo menciona personagens do desenho <a href="https://pt.wikipedia.org/wiki/My_Little_Pony:_A_Amizade_%C3%89_M%C3%A1gica" target="_blank">"My Little Pony: A Amizade É Mágica"</a>.<br />
 Se você não conhece os personagens ou não conhece o desenho, recomendo que leia sobre o desenho e os personagens para entender mais o capítulo.<br />
@@ -7140,9 +7274,14 @@ Eu já criei vinte e nove capítulos de Pequenata, por que eu não conseguiria c
 Me diga se você acha que "A Vida de Pequenata" deveria acabar aqui nesse capítulo.<br />
 Obrigado por ler, eu sou Izaque, vivendo em 2021 enquanto escrevo isso, boa noite, bons sonhos, te amo, paz! ❤️.<br />
 A linda Vida de Pequenata, Episódio 28, com muito amor, Izaque ❤️.)
-		<br /><br />
-		Capítulo escrito em: 05/10/2019<br />
-		Palavras: 2,127<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+03:22 05/10/2019<br /><br />
+		Palavras:
+<br />
+2.136 palavras<br /><br />
 		</h4>
 		
 
@@ -7193,7 +7332,7 @@ A linda Vida de Pequenata, Episódio 28, com muito amor, Izaque ❤️.)
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_29_title">29 - A Mansão de Pequenata e Amigos</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -7213,13 +7352,7 @@ A linda Vida de Pequenata, Episódio 28, com muito amor, Izaque ❤️.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_29" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/29/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_29_text" class="text_size unselectable " style="text-align: left;">
 		Era um Domingo no ano de 2020, Pequenata acordou às seis da manhã, ela fez suas necessidades matinais.<br />
 Então Júlia acordou, ela também fez suas necessidades matinais.<br />
@@ -7460,9 +7593,14 @@ Agora é meio dia de 15/06/2021, uma Terça-feira. < Revisando.<br />
 Agora são três horas da tarde de 30/06/2021, uma Quarta-feira. < Traduzindo.<br />
 Eu acho que eu já passei quatro horas no total nesse capítulo, escrevendo ele, e eu amei.<br />
 Muito obrigado por ler, hehe ^^.)
-		<br /><br />
-		Capítulo escrito em: 14/02/2020<br />
-		Palavras: 4,527<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+20:54 14/02/2020<br /><br />
+		Palavras:
+<br />
+4.536 palavras<br /><br />
 		</h4>
 		
 
@@ -7513,7 +7651,7 @@ Muito obrigado por ler, hehe ^^.)
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_30_title">30 - O Dia de Folga do Trabalho em 2021</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -7533,13 +7671,7 @@ Muito obrigado por ler, hehe ^^.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_30" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/30/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_30_text" class="text_size unselectable " style="text-align: left;">
 		Era uma Segunda-feira, o primeiro dia de Janeiro de 2021, era Dia de Ano Novo, Pequenata teve um bom ano, e ela estava pronta para começar outro.<br />
 Pequenata estava em seu quarto em sua mansão, ela acordou às oito da manhã, escovou seus dentes, penteou seus cabelos, e também lavou seu rosto no banheiro dentro de seu quarto.<br />
@@ -7688,9 +7820,14 @@ Eu amei escrever sobre Pequenata, Júlia, e Iam almoçando juntos.<br />
 É triste que quando você tem uma geladeira TPF e todo mundo pode comer a qualquer hora, as pessoas nem sempre comem juntas.<br />
 Mas eu tô feliz que eles comeram juntos nesse capítulo.<br />
 E também, "Lisa, a humana" kkkkkkk.)
-		<br /><br />
-		Capítulo escrito em: 11:09 09/07/2021<br />
-		Palavras: 2,796<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+11:09 09/07/2021<br /><br />
+		Palavras:
+<br />
+2.805 palavras<br /><br />
 		</h4>
 		
 
@@ -7741,7 +7878,7 @@ E também, "Lisa, a humana" kkkkkkk.)
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_31_title">31 - A Realização e a Vídeo Chamada</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -7761,13 +7898,7 @@ E também, "Lisa, a humana" kkkkkkk.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_31" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/31/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_31_text" class="text_size unselectable " style="text-align: left;">
 		Era uma Segunda-feira em Julho de 2021, Pequenata acordou, saiu da cama, e fez suas necessidades matinais no banheiro do quarto.<br />
 Pequenata andou até a cozinha, eram seis da manhã, Pequenata pegou dois cheeseburgers e dois copos de leite achocolatado.<br />
@@ -7916,9 +8047,14 @@ Depois disso, Pequenata enviou o contato de Izaque para Iam pelo Whatsapp, ela l
 Elas começaram a jogar um jogo juntas, eram seis e quarenta da tarde.<br />
 O casal passou seu dia jogando, comendo, e bebendo água quando eles precisavam, Iam passou seu dia em seu quarto.<br />
 Ele jogou vários jogos, e também checou algumas notícias no YouTube e Twitter.
-		<br /><br />
-		Capítulo escrito em: 17:09 28/07/2021<br />
-		Palavras: 3,003<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+17:09 28/07/2021<br /><br />
+		Palavras:
+<br />
+3.012 palavras<br /><br />
 		</h4>
 		
 
@@ -7969,7 +8105,7 @@ Ele jogou vários jogos, e também checou algumas notícias no YouTube e Twitter
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_32_title">32 - O Jogo da Fábrica de Doces</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -7989,13 +8125,7 @@ Ele jogou vários jogos, e também checou algumas notícias no YouTube e Twitter
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_32" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/32/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_32_text" class="text_size unselectable " style="text-align: left;">
 		Era um Sábado, de manhã, em Agosto de 2021, Pequenata acordou, eram seis da manhã.<br />
 Júlia acordou também, ambas fizeram suas necessidades matinais juntas no banheiro, elas também tomaram um banho juntas.<br />
@@ -8136,9 +8266,14 @@ Elas poderiam comer os doces e eles seriam bons para elas, eles teriam nutriente
 Pequenata ajudou Júlia a gerenciar a Fábrica de Doces e a Terra Doce, elas fizeram algumas decisões juntas.<br />
 Júlia e Pequenata decidiram fazer linhas de trem para trazer minérios, jóias, creme líquido branco, e chocolate líquido para o armazém para fazer doces.<br />
 O casal estava feliz de comer muitos doces juntos, elas estavam comendo os doces na sala de estar da casa de Júlia, assistindo uma série na TV.
-		<br /><br />
-		Capítulo escrito em: 18:00 14/08/2021<br />
-		Palavras: 3,200<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+18:00 14/08/2021<br /><br />
+		Palavras:
+<br />
+3.209 palavras<br /><br />
 		</h4>
 		
 
@@ -8189,7 +8324,7 @@ O casal estava feliz de comer muitos doces juntos, elas estavam comendo os doces
 		<p><br /><b>Você está lendo: <span class="text_light_salmon">A Vida de Pequenata</span><br />Capítulo: <span class="text_light_salmon" id="chapter_33_title">33 - A Segunda-Feira Ocupada</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_light_purple" />		
 
@@ -8202,13 +8337,7 @@ O casal estava feliz de comer muitos doces juntos, elas estavam comendo os doces
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_purple image_size border_4px border_color_light_purple border_radius_6_cent" id="chapter_cover_33" src="https://thestake2.netlify.app/Images/The Life of Littletato/Chapters/33/Português.png" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_33_text" class="text_size unselectable " style="text-align: left;">
 		Era uma Segunda-Feira, em Setembro de 2021, Pequenata tinha que trabalhar hoje, ela levantou cinco e meia da manhã.<br />
 Júlia levantou também, elas fizeram suas necessidades matinais no banheiro do quarto e também tomaram um banho.<br />
@@ -8310,9 +8439,14 @@ Depois disso, o quinteto andou até a sala de estar para jogar um pouco juntos n
 Lisa visitou a LonelyShip de Izaque, para passar um tempo com ele, e jogar jogos e assistir coisas com ele.<br />
 Pequenata e os outros estavam jogando o jogo Overcooked, Júlia não estava jogando porque ela iria jogar após o quarteto jogar cinco níveis.<br />
 Ela estava jogando o jogo da Fábrica de Doces em seu celular novamente, mas dessa vez, ela não foi teletransportada para dentro do jogo.
-		<br /><br />
-		Capítulo escrito em: 14:38 12/09/2021<br />
-		Palavras: 1,873<br /><br />
+<br /><br />
+		
+Capítulo escrito em:
+<br />
+14:38 12/09/2021<br /><br />
+		Palavras:
+<br />
+1.882 palavras<br /><br />
 		</h4>
 		
 

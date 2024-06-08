@@ -34,7 +34,7 @@
 	<meta name="twitter:image" type="image/gif" content="/Images/SpaceLiving/Cover.gif" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -77,14 +77,14 @@
 	</style>
 
 	<!-- JavaScript files -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
 	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="/JavaScript/Story.js"></script>
-	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="/JavaScript/Story.js"></script>	
 
 	<script>
 		Check_Language()
@@ -96,14 +96,11 @@
 
 <!-- Open hamburger menu button -->
 
-
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
-		<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-		
-	<h2 class="text_size">
-		<i class="fas fa-bars"></i>
-	</h2>
-
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_blue" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
 		</h3>
 	</button>
 
@@ -112,56 +109,47 @@
 <div id="hamburger_menu" class="w3-container w3-animate-left background_blue border_4px border_color_cyan border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
-	
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
-		<h3 class="text_size text_dark_blue" style="font-weight: bold;">
-		
-		<h4 class="text_size" style="font-weight: bold;">
-		X
-		</h4>
-	
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_blue" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
 		</h3>
 	</button>
 
 	<h2 class="text_size text_green_water" style="font-weight: bold;">Tab menu: </h2>
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
-	<!-- "Read story" button -->
-	<span id="button_1" class="tab_button">
-		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Read story: <i class="fas fa-book-open"></i>
-			
+	<!-- "Read story" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Read story: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span>
 
-	<!-- "Websites" button -->
-	<span id="button_3" class="tab_button">
-		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<!-- "Websites" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
@@ -194,11 +182,14 @@
 		The company that owns the <span class="text_green_water">SpaceLiving</span> Network is called Think Outside The Box.<br />
 		Lisa is one of the residents of the <span class="text_green_water">SpaceLiving</span> Network.<br />
 		She was teleported to one of the spaceships, called LonelyShips, to live there, she haves a fridge that produces food and a super-powerful computer.<br />
-		---<br />
+		-----<br />
 		Story authors: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span> and <span class="text_yellow">Júlia</span><br />
 		Chapters: <i class="fas fa-book"></i> <span class="text_green_water">18</span><br />
 		Story creation date: <i class="fa-solid fa-calendar-days"></i> <span class="text_green_water">19/01/2019</span><br />
-		Status: <i class="fa-solid fa-pen"></i> <span class="text_green_water">Writing</span>
+		Status: <i class="fa-solid fa-pen"></i> <span class="text_green_water">Writing</span><br />
+-----
+<br />
+		Wattpad: <br /><a class="text_green_water" href="https://wattpad.com/story/274102929-spaceliving" target="_blank">https://wattpad.com/story/274102929-spaceliving</a>
 	</h3>
 	<br />
 </div>
@@ -217,14 +208,11 @@
 
 	<hr class="border_1px border_color_cyan margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_cyan margin_sides_5_cent" />	
@@ -372,25 +360,19 @@
 
 	<hr class="border_1px border_color_cyan margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Read story" button -->
-	<span id="button_1" class="tab_button">
-		
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Read story: <i class="fas fa-book-open"></i>
-			
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Read story: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Websites" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_cyan margin_sides_5_cent" />	
@@ -530,14 +512,11 @@
 
 	<hr class="border_1px border_color_cyan margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Other stories" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_blue">
-		
-				Other stories: <i class="fas fa-book"></i>
-			
+	<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_whitew3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_blue">
+			Other stories: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_cyan margin_sides_5_cent" />	
@@ -745,7 +724,7 @@
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_1_title">1 - The Tale of the Spaceships</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -758,13 +737,7 @@
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_1" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/01/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_1_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Hello, I am Izaque, Stake2, and Funkysnipa Cat.<br />
 This is SpaceLiving, a story of mine, I created it on "19/01/2019" (DD/MM/YYYY) with a friend of mine, Júlia.<br />
@@ -776,7 +749,7 @@ I also create systems and technologies for the New World theory and write about 
 New World is a theory about a better world than this one, with no hunger, thirst, discrimination, pain, or death.<br />
 The universe of SpaceLiving is the same as the New World one.<br />
 SpaceLiving also takes inspiration from the "Shelter" video made by Porter Robinson, Madeon, A-1 Pictures, and Crunchyroll.<br />
-Link of the video: <a href="https://www.youtube.com/watch?v=fzQ6gRAEoy0" target="_blank" class="text_green_water text_hover_green_water">https://www.youtube.com/watch?v=fzQ6gRAEoy0</a><br />
+<a href="https://www.youtube.com/watch?v=fzQ6gRAEoy0" target="_blank">"Porter Robinson & Madeon - Shelter (Official Video) (Short Film with A-1 Pictures & Crunchyroll)"</a><br />
 <br />
 Taken from the video:<br />
 "Shelter tells the story of Rin, a 17-year-old girl who lives her life inside of a futuristic simulation completely by herself in infinite, beautiful loneliness.<br />
@@ -836,7 +809,7 @@ It could teleport the residents between other spaceships and also to Earth.<br /
 The LonelyShips had a super fast and powerful computer on each one of them, it was white, a PlayStation 4 gaming console, a bed, and a wardrobe.<br />
 The computers had a modified version of Windows 10 installed on them.<br />
 It was called Windows 10 (SpaceLiving Edition).<br />
-<a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover.png" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover.png</a><br />
+<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover.png" style="max-width: 50%;" /><br /><br />
 The bed had a blue blanket, the bed was made of some resistant plastic that was light gray, and the wardrobe was gray too.<br />
 The spaceships also had a Laser Turret outside of them, it could shoot a laser beam to hit approaching asteroids.<br />
 The Laser Turret had two modes, the Expanded Range mode, and the Shielded mode.<br />
@@ -874,7 +847,7 @@ The "SpaceLiving" and "LonelyShip" signboards were equal on each side of the Lon
 The signboards on the left side were on the left of the left window, and the right ones were on the right of the right window.<br />
 Also, the LonelyShip had two big signboards on the front side of it, one with "SpaceLiving" written on it, and another one with "LonelyShip".<br />
 The "SpaceLiving" signboard is above the "LonelyShip" one.<br />
-<a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover%20Front%20Signboards.png" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover%20Front%20Signboards.png</a><br />
+<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover Front Signboards.png" style="max-width: 50%;" /><br /><br />
 <br />
 That spaceship, the LonelyShip, was part of a network of spaceships, the network was called "SpaceLiving Network".<br />
 A lot of other people lived inside those spaceships, the spaceships were not close enough for you to see one outside your window.<br />
@@ -1007,9 +980,14 @@ I'm Izaque, the writer and author of this story.<br />
 Thank you for reading, again, hehe, I like to talk to you, my reader, directly.<br />
 I wrote this chapter on 09/11/2019 (DD/MM/YYYY), and I finished revising it for the third or fourth time on 24/04/2021.<br />
 I revised the chapter again at 22:29 on 06/06/2023.
-		<br /><br />
-		Chapter written in: 09/11/2019<br />
-		Words: 4,977<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+09/11/2019<br /><br />
+		Words:
+<br />
+4.968 words<br /><br />
 		</h4>
 		
 
@@ -1066,7 +1044,7 @@ I revised the chapter again at 22:29 on 06/06/2023.
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_2_title">2 - The Story of Fred</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -1086,13 +1064,7 @@ I revised the chapter again at 22:29 on 06/06/2023.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_2" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/02/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_2_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		(The Fred in this chapter is the SpaceLiving version of Fred of my story called <a class="text_dark_brown" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/en/" target="_blank">"The Story of the Bulkan Siblings"</a>.<br />
 But he lives in a universe where the "SpaceLiving SpaceShip Network" exists and is younger.<br />
@@ -1237,9 +1209,14 @@ They have self-sustainable SpaceShips where the energy, food, water, and electri
 Tell me what you think about the story and this little bit here using the "Chapter Comment" button.<br />
 Thank you for reading, if you are my friend in Discord, Wattpad, Messenger, Twitter, or Hangouts, please send me a message saying that I'm cute, oops, no.<br />
 A message saying that you read this part, thank yoooou ^^ :3)
-		<br /><br />
-		Chapter written in: 17/11/2019<br />
-		Words: 2,783<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+17/11/2019<br /><br />
+		Words:
+<br />
+2.791 words<br /><br />
 		</h4>
 		
 
@@ -1314,7 +1291,7 @@ A message saying that you read this part, thank yoooou ^^ :3)
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_3_title">3 - The Stories and the Reunion</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -1334,13 +1311,7 @@ A message saying that you read this part, thank yoooou ^^ :3)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_3" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/03/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_3_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Lisa was in her LonelyShip, writing her story called "The Oddities of Nature", she finished the current chapter which was chapter number nine, she saved the text file.<br />
 After that, she reviewed and published that chapter of her story on Wattpad, after some minutes, the chapter had five views and two comments.<br />
@@ -1505,9 +1476,14 @@ The song is called <a href="https://www.youtube.com/watch?v=J2P1_v9aFV8" target=
 I love that song so much, it is awesome! So calm and good to listen to while writing SpaceLiving, hehe xD.<br />
 I love to sing it and feel it while writing SpaceLiving or anything.<br />
 That song makes me feel so happy, I suggest that you listen to it, hehe :3.)
-		<br /><br />
-		Chapter written in: 19/11/2019<br />
-		Words: 3,167<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+19/11/2019<br /><br />
+		Words:
+<br />
+3.175 words<br /><br />
 		</h4>
 		
 
@@ -1558,7 +1534,7 @@ That song makes me feel so happy, I suggest that you listen to it, hehe :3.)
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_4_title">4 - Ted and Monika</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -1578,13 +1554,7 @@ That song makes me feel so happy, I suggest that you listen to it, hehe :3.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_4" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/04/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_4_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		There was a boy that also lived in a LonelyShip, his name was Ted and had brown hair, he had nineteen years old and loved to spend time on his spaceship, eating things and watching Netflix.<br />
 (Netflix is a website and mobile app where you can watch series, movies, cartoons, and anime online, using a paid plan.)<br />
@@ -1731,9 +1701,14 @@ I liked to write about Ted, write about his parents, and his fame for being a Lo
 And I liked writing that Ted has a sister who is a certain someone... I don't know, hehe.<br />
 Someone that is also the child of parents named John and Ana...<br />
 Thank you for reading this chapter of SpaceLiving, hehe ^^.)
-		<br /><br />
-		Chapter written in: 24/11/2019<br />
-		Words: 2,617<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+24/11/2019<br /><br />
+		Words:
+<br />
+2.625 words<br /><br />
 		</h4>
 		
 
@@ -1784,7 +1759,7 @@ Thank you for reading this chapter of SpaceLiving, hehe ^^.)
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_5_title">5 - Ted and Monika, Part Two</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -1804,13 +1779,7 @@ Thank you for reading this chapter of SpaceLiving, hehe ^^.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_5" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/05/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_5_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		In the last chapter, Ted traveled to Earth to visit his parents, it has been some months since he visited Earth.<br />
 He visited his virtual friend Monika in person for the first time, he was so happy.<br />
@@ -1942,9 +1911,14 @@ They slept on a warm night, but not too hot, the LovelyShip's temperature system
 I don't remember when I wrote this chapter, but I know it was in 2019.<br />
 I finished re-revising it on 28/04/2021, it was so good, hehe.<br />
 Thank you for reading this chapter ^^.)
-		<br /><br />
-		Chapter written in: 31/07/2019<br />
-		Words: 2,392<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+31/07/2019<br /><br />
+		Words:
+<br />
+2.400 words<br /><br />
 		</h4>
 		
 
@@ -1995,7 +1969,7 @@ Thank you for reading this chapter ^^.)
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_6_title">6 - The Spaceships Update and the Reunion of Siblings</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -2015,13 +1989,7 @@ Thank you for reading this chapter ^^.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_6" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/06/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_6_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		SpaceLiving, Chapter Six, The SpaceShip update and the reunion of brothers.<br />
 *A message appears on the screen where you are reading this story...*<br />
@@ -2150,7 +2118,7 @@ And it has been some time since I saw my parents too, some months ago, I was the
 "Just asking," replied Lisa, "So... I think I'm your sister," said Lisa.<br />
 "What? How?" asked Ted.<br />
 "My dad's name is John, and my mom's name is Ana, they said that my brother's name was Ted," said Lisa.<br />
-"Oh, is that true? Hmm... Can I see a picture of you? I remember that my sister had gray hair..." asked Ted.<br />
+<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Lisa.jpg"" style="max-width: 50%;" /><br /><br />
 "Okay, here it is," said Lisa, who sent Ted a photo of her.<br />
 <a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/Lisa.jpg" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/Images/Images/SpaceLiving/Lisa.jpg</a><br />
 "I can't believe it... Is that you? Lisa? Hmm... Can I visit your LonelyShip?" asked Ted.<br />
@@ -2223,9 +2191,14 @@ I still want to write a story with you, hehe," said Izaque.<br />
 He added the episode of Eromanga-sensei to his watched list using his Python script called Watch.py.<br />
 Then, Izaque turned off his computer, he laid in his bed to sleep.<br />
 The LSAI turned the lights of the LonelyShip off, Izaque started to sleep.
-		<br /><br />
-		Chapter written in: 20/08/2019<br />
-		Words: 3,579<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+20/08/2019<br /><br />
+		Words:
+<br />
+3.594 words<br /><br />
 		</h4>
 		
 
@@ -2276,7 +2249,7 @@ The LSAI turned the lights of the LonelyShip off, Izaque started to sleep.
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_7_title">7 - The Initiation Teleport</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -2296,13 +2269,7 @@ The LSAI turned the lights of the LonelyShip off, Izaque started to sleep.
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_7" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/07/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_7_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		It was a beautiful day in the SpaceLiving world, even if there was no sun close to the LonelyShips.<br />
 Lisa, Izaque, Fred, Ted, and Monika were all inside their LonelyShips, living happily, using their computers, eating, and drinking.<br />
@@ -2454,9 +2421,14 @@ She walked closer to Izaque and sat at his left, Izaque noticed that her hair wa
 "My name is Izaque," replied Izaque.<br />
 "I think Lisa told me that her mother's name was Ana and that she had blond hair," thought Izaque to himself.<br />
 Then the dream of Izaque changed, he continued dreaming and sleeping comfortably on his bed.
-		<br /><br />
-		Chapter written in: 25/09/2019<br />
-		Words: 3,070<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+25/09/2019<br /><br />
+		Words:
+<br />
+3.078 words<br /><br />
 		</h4>
 		
 
@@ -2507,7 +2479,7 @@ Then the dream of Izaque changed, he continued dreaming and sleeping comfortably
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_8_title">8 - The First SpaceLiving Anniversary</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -2527,13 +2499,7 @@ Then the dream of Izaque changed, he continued dreaming and sleeping comfortably
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_8" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/08/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_8_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Another day on the SpaceLiving Network, a rumor about a group LonelyShip was circulating, four friends who were so close and knew each other so well.<br />
 They were teleported to the LonelyShip together, this rumor was spreading quickly, and the residents of the SpaceLiving Network were talking a lot about it.<br />
@@ -2719,9 +2685,14 @@ They were saying and thinking things about me behind my back.<br />
 That hurt me a lot you know... It made me very sad, knowing that there are only fake people on the server and the live stream of Cellbit.<br />
 I don't hate Cellbit, but I hate every one of the people that are inside that server, and I hate the moments that I spent there...<br />
 Thanks for reading ^^, sorry for my big and long vent or outburst...)
-		<br /><br />
-		Chapter written in: 07/10/2019<br />
-		Words: 3,291<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+07/10/2019<br /><br />
+		Words:
+<br />
+3.299 words<br /><br />
 		</h4>
 		
 
@@ -2772,7 +2743,7 @@ Thanks for reading ^^, sorry for my big and long vent or outburst...)
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_9_title">9 - The Bulkan and My Little Pony Dream</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -2792,13 +2763,7 @@ Thanks for reading ^^, sorry for my big and long vent or outburst...)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_9" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/09/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_9_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		It was a beautiful day in the SpaceLiving Network.<br />
 Lisa, Izaque, Fred, Mark, Ted, Monika, Nathan, James, Lily, and Sophia were all inside their LonelyShips, living happily.<br />
@@ -2955,10 +2920,16 @@ I also liked to talk about the New World Izaque, and the Normal Earth Izaque (me
 Hehe, I liked to talk about the daily routine of the SpaceLiving Izaque, getting up, grabbing some chocolate milk and bread with cheese and ham.<br />
 Listening to songs and stuff, checking out his social media, replying to comments on Wattpad.<br />
 And I revised this chapter while listening to the soundtrack of the "Tom & Jerry" movie from 2021:<br />
-<a href="https://www.youtube.com/playlist?list=PLDisKgcnAC4TkSDGxuPm1DeohG8FMEMNa" target="_blank" class="text_green_water text_hover_green_water">https://www.youtube.com/playlist?list=PLDisKgcnAC4TkSDGxuPm1DeohG8FMEMNa</a>)
-		<br /><br />
-		Chapter written in: 16/10/2019<br />
-		Words: 3,500<br /><br />
+<a href="https://www.youtube.com/playlist?list=PLDisKgcnAC4TkSDGxuPm1DeohG8FMEMNa" target="_blank" class="text_green_water text_hover_green_water">https://www.youtube.com/playlist?list=PLDisKgcnAC4TkSDGxuPm1DeohG8FMEMNa</a>)<br />
+<div class="video-container" style="margin-top: 1%; margin-bottom: -6%;"><iframe type="text/html" width="560" height="315" frameborder="0" class="border_radius_5_cent border_4px border_color_cyan" src="https://www.youtube.com/embed/videoseries?autoplay=0&fs=1&iv_load_policy=1&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&list=PLDisKgcnAC4TkSDGxuPm1DeohG8FMEMNa" title="YouTube video player"></iframe></div><br /><br /><br />)
+<br /><br />
+		
+Chapter written in:
+<br />
+16/10/2019<br /><br />
+		Words:
+<br />
+3.565 words<br /><br />
 		</h4>
 		
 
@@ -3009,7 +2980,7 @@ And I revised this chapter while listening to the soundtrack of the "Tom & Jerry
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_10_title">10 - The Continuation (SpaceTato)</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -3029,19 +3000,18 @@ And I revised this chapter while listening to the soundtrack of the "Tom & Jerry
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_10" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/10/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_10_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		This is a crossover chapter between <a class="text_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/en/" target="_blank">"SpaceLiving"</a> and <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/en/" target="_blank">"The Life of Littletato"</a>.<br />
 <a class="text_dark_blue" href="https://thestake2.netlify.app/SpaceLiving/en/" target="_blank">"SpaceLiving"</a> and <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/en/" target="_blank">"The Life of Littletato"</a> are two stories of mine.<br />
 You need to read the chapter <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/en/?chapter=26#" target="_blank">twenty-six</a> of <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/en/" target="_blank">"The Life of Littletato"</a> to understand the story.<br />
 This chapter is the sequel to that chapter, the chapter twenty-six of <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/en/" target="_blank">"The Life of Littletato"</a>.<br />
-<a href="https://thestake2.netlify.app/The%20Life%20of%20Littletato/en/?chapter=26#" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/The%20Life%20of%20Littletato/en/?chapter=26#</a><br />
+<div style="padding-top: 1%;">
+<a class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white animation_shake_side" href="https://thestake2.netlify.app/The Life of Littletato/en/?chapter=26#" target="_blank" style="max-width: 50%; font-weight: bold;">
+	The Life of Littletato - Chapter: 26 - A Weird Teleport (LittleLiving)
+	</a>
+</div>
+<br />
 <br />
 Then they broke from the hug, Lisa and Littletato looked at each other.<br />
 "I'm happy to see you again, sister," said Littletato.<br />
@@ -3165,7 +3135,8 @@ The foursome got out of the LST, looking at John and Ana.<br />
 "And my children that disappeared..." said Ana, sad, looking at Lisa and Ted, she hugged them too, tight.<br />
 Lisa and Ted explained what happened to them, how they disappeared, what was the SpaceLiving Network, and the LonelyShips.<br />
 Listen to this while reading this part:<br />
-"Tom & Jerry (2021) [Soundtrack] - Married in the Park"<br />
+"Tom & Jerry - Married In The Park"<br />
+<div class="video-container" style="margin-top: 1%; margin-bottom: -6%;"><iframe type="text/html" width="560" height="315" frameborder="0" class="border_radius_5_cent border_4px border_color_cyan" src="https://www.youtube.com/embed/cAlTw8szj6Q?autoplay=0&fs=1&iv_load_policy=1&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&" title="YouTube video player"></iframe></div><br /><br /><br /><br />
 <a href="https://www.youtube.com/watch?v=cAlTw8szj6Q" target="_blank" class="text_green_water text_hover_green_water">https://www.youtube.com/watch?v=cAlTw8szj6Q</a><br />
 They all sat at the table to eat breakfast together.<br />
 "The family is reunited again..." said Littletato, looking at everyone.<br />
@@ -3175,7 +3146,8 @@ Littletato was very happy, seeing her family united again, seeing Lisa and Ted a
 She liked to have that family, she was smiling, seeing everyone.<br />
 <br />
 (And it's in mood that I end this chapter, listening to this song here, I recommend you listen too, to be in the same mood as I am:<br />
-"Tom & Jerry (2021) [Soundtrack] - The Wedding's Off"<br />
+"Tom & Jerry - The Wedding's Off"<br />
+<div class="video-container" style="margin-top: 1%; margin-bottom: -6%;"><iframe type="text/html" width="560" height="315" frameborder="0" class="border_radius_5_cent border_4px border_color_cyan" src="https://www.youtube.com/embed/SCxnA10GOMA?autoplay=0&fs=1&iv_load_policy=1&showinfo=1&rel=0&cc_load_policy=1&start=0&end=0&" title="YouTube video player"></iframe></div><br /><br /><br /><br />
 <a href="https://www.youtube.com/watch?v=SCxnA10GOMA" target="_blank" class="text_green_water text_hover_green_water">https://www.youtube.com/watch?v=SCxnA10GOMA</a><br />
 It's been a great journey to revise all of the chapters of "SpaceLiving", from one to ten.<br />
 And to revise the chapters of <a class="text_dark_purple" href="https://thestake2.netlify.app/The Life of Littletato/en/" target="_blank">"The Life of Littletato"</a>, from one to twenty-six.<br />
@@ -3188,9 +3160,14 @@ I love to write stories, create art, create things, give life to things that I l
 I love to revise my stories and to write them, I'm glad that I have this talent or ability.<br />
 I am Izaque, Stake2, and Funkysnipa Cat, thank you for your attention.<br />
 See you later, cheers :3.)
-		<br /><br />
-		Chapter written in: 26/10/2019<br />
-		Words: 2,649<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+26/10/2019<br /><br />
+		Words:
+<br />
+2.788 words<br /><br />
 		</h4>
 		
 
@@ -3241,7 +3218,7 @@ See you later, cheers :3.)
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_11_title">11 - Arrival of the New LonelyShipper</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -3261,17 +3238,11 @@ See you later, cheers :3.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_11" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/11/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_11_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Monika was talking to her sister on Discord, she was called Sayori.<br />
 She remembered when she transferred her house to Sayori when she started dating Ted.<br />
-"Hey Sayori, how are you?" asked Monika in her message to Sayori.<br />
+<a href="https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic" target="_blank">"My Little Pony: Friendship Is Magic" on Wikipedia</a>)<br />
 "Hey Monika, I'm fine, how about you?" asked Sayori.<br />
 "I'm good too, just living here in the LovelyShip with my boyfriend Ted.<br />
 It is a double spaceship that is a copy of a single spaceship, so couples can live together," replied Monika.<br />
@@ -3362,7 +3333,7 @@ And to participate on the first anniversary of the network, by the way, when was
 "Yes, so, I'm gonna leave to play a game right now, see you later, Izaque ^^," said Luiza.<br />
 "See you later, Luiza ^^," said Izaque.<br />
 <br />
-Lisa was on her computer, it was eight AM, she received a message from Littletato, her sister.<br />
+<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover.png" style="max-width: 50%;" /><br /><br />
 "Hey, sis, I'm thinking about buying a house, what do you think?" asked Littletato.<br />
 "What do you mean, sis?" asked Lisa.<br />
 "Like, buying a big house for me to live with my friends, and also you," replied Littletato.<br />
@@ -3376,9 +3347,14 @@ And Julia is working too, saving up some money on her bank account," said Little
 "Oh, okay, hehe, laters, sis ^^," said Lisa.<br />
 <br />
 (I don't know when this chapter was written, but I know that I revised it on 16/06/2021.)
-		<br /><br />
-		Chapter written in: 22/11/2019<br />
-		Words: 1,872<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+22/11/2019<br /><br />
+		Words:
+<br />
+1.906 words<br /><br />
 		</h4>
 		
 
@@ -3429,7 +3405,7 @@ And Julia is working too, saving up some money on her bank account," said Little
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_12_title">12 - The Weird Dreams of Izaque</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -3449,17 +3425,11 @@ And Julia is working too, saving up some money on her bank account," said Little
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_12" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/12/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_12_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		(This chapter mentions characters of the <a href="https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic" target="_blank">"My Little Pony: Friendship Is Magic"</a> cartoon.<br />
 If you do not know the characters or do not know the cartoon, I recommend that you read about the cartoon and the characters to understand the chapter more.<br />
-<a href="https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic" target="_blank" class="text_green_water text_hover_green_water">https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic</a>)<br />
+<a href="https://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_Is_Magic" target="_blank">"My Little Pony: Friendship Is Magic" on Wikipedia</a>)<br />
 <br />
 Izaque was on his LonelyShip, he was using his computer, listening to a song called "The Brig - Mind Changer".<br />
 He was thinking about Luiza, his friend that also lives inside a LonelyShip, he wanted to talk to her again.<br />
@@ -3550,7 +3520,7 @@ He wonders who is Earth Izaque, New World Izaque, who are the friends of Izaque,
 SpaceLiving Izaque turns on his computer and opens Mozilla Firefox.<br />
 Then he opens the Piskel app website, which is the website that he uses to make pixel art and drawings, even if he does not draw very often.<br />
 He draws a pixel art of a default LonelyShip, after some hours of drawing, he finishes it.<br />
-<a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover.png" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip%20Story%20Cover.png</a><br />
+<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/LonelyShip Story Cover.png" style="max-width: 50%;" /><br /><br />
 <br />
 Izaque becomes very proud of that drawing, he even shares it with some friends of his on Discord, Lisa likes it a lot.<br />
 The boy thinks about that story he dreamt of, The Life of Littletato, he knows that he never wrote it, he only wrote Kezzakam and SpaceLiving.<br />
@@ -3569,9 +3539,14 @@ On Earth, Littletato thinks about buying a house to live in with her friends, sh
 She talks with Julia about that, discussing some things about the house, what it should have, and how many rooms should it have.<br />
 Julia says that she wants a house with seven rooms at least, so they can bring more friends and maybe their families to spend some time there.<br />
 Littletato says that it is a good idea, she says that she is going to start searching for a house on the Internet tomorrow morning.
-		<br /><br />
-		Chapter written in: 25/11/2019<br />
-		Words: 2,051<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+25/11/2019<br /><br />
+		Words:
+<br />
+2.044 words<br /><br />
 		</h4>
 		
 
@@ -3622,7 +3597,7 @@ Littletato says that it is a good idea, she says that she is going to start sear
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_13_title">13 - Lisa's Routine and Littletato's Mansion</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -3642,13 +3617,7 @@ Littletato says that it is a good idea, she says that she is going to start sear
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_13" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/13/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_13_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		It was a beautiful night at the SpaceLiving Network, it was ten PM on everyone's clocks, on the year 2020.<br />
 Lisa was on her LonelyShip, she was watching some anime, watching the "Dr. Stone" anime because Izaque recommended it to her.<br />
@@ -3863,9 +3832,14 @@ It was a little easy because I just copied some text from the chapter of The Lif
 I adapted it a little, removing some stuff that Lisa couldn't see as if it was being told from her perspective.<br />
 I wrote this while listening to calm rain on YouTube, it is a little cold in here where I live, raining sometimes.<br />
 But in this chapter, it was warm with the sun, like it was in the summer.)
-		<br /><br />
-		Chapter written in: 19/06/2021<br />
-		Words: 3,866<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+19/06/2021<br /><br />
+		Words:
+<br />
+3.874 words<br /><br />
 		</h4>
 		
 
@@ -3916,7 +3890,7 @@ But in this chapter, it was warm with the sun, like it was in the summer.)
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_14_title">14 - Special Christmas Chapter 🎄 🎁</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -3936,13 +3910,7 @@ But in this chapter, it was warm with the sun, like it was in the summer.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_14" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/14/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_14_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		Everyone was inside their LonelyShips, they were doing their things, living on the SpaceLiving Network in 2020.<br />
 A notification appeared on the computer of every spaceship resident, saying that 25 of December was close, which was Christmas day.<br />
@@ -4040,9 +4008,14 @@ Izaque also looked at Henigax's multi-tool which was for sale, it was better tha
 But Izaque was short on money (units), he said bye to Henigax, then explained everything to Lisa.<br />
 Lisa and he walked back to the spaceship, they entered inside it and Izaque drove off to the gold deposit.<br />
 Then the dream of Izaque changed to something else, he continued sleeping deeply and peacefully.
-		<br /><br />
-		Chapter written in: 17/02/2020<br />
-		Words: 2,027<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+17/02/2020<br /><br />
+		Words:
+<br />
+2.035 words<br /><br />
 		</h4>
 		
 
@@ -4093,7 +4066,7 @@ Then the dream of Izaque changed to something else, he continued sleeping deeply
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_15_title">15 - The Second SpaceLiving Anniversary</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -4113,13 +4086,7 @@ Then the dream of Izaque changed to something else, he continued sleeping deeply
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_15" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/15/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_15_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		It was a beautiful day on the SpaceLiving Network, it was a Monday, and everyone was doing their things, spending time on their LonelyShips.<br />
 It was day twenty-one of January 2021 (21/01/2021), it was six AM in the Brazilian time zone, which was the default time zone for all clocks.<br />
@@ -4279,9 +4246,14 @@ It was good to write the "vision changes" on the anniversary part.<br />
 Like, Izaque looking at Lisa, and then the story talking about Lisa.<br />
 As if Izaque was the character-narrator of the story.<br />
 Thanks for reading this chapter, hehe, laters :3.)
-		<br /><br />
-		Chapter written in: 22/06/2020<br />
-		Words: 2,744<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+22/06/2020<br /><br />
+		Words:
+<br />
+2.752 words<br /><br />
 		</h4>
 		
 
@@ -4332,7 +4304,7 @@ Thanks for reading this chapter, hehe, laters :3.)
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_16_title">16 - The Visual Onomatopoeia Video and the Memories</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -4352,13 +4324,7 @@ Thanks for reading this chapter, hehe, laters :3.)
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_16" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/16/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_16_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		It was a beautiful Sunday in the SpaceLiving universe, everyone was doing their things on their spaceships.<br />
 They were living in 2021, in July, Lisa was inside her LonelyShip, drawing a little on the program called Paint Tool SAI.<br />
@@ -4401,7 +4367,7 @@ Izaque had already eaten, he continued editing his Visual Onomatopoeia video, it
 The song was a joke song made by Sharks on the first of April of 2020, it is a joke with the Riddim music genre.<br />
 At the beginning of the editing, he made a screenshot of a part of the waveform of the song thrown on the Audacity audio editing program.<br />
 Izaque made a screenshot of the blue and red waveform, editing it and removing the background.<br />
-<a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/Audacity%20Blue%20Bass%20Waveform.png" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/Images/Images/SpaceLiving/Audacity%20Blue%20Bass%20Waveform.png</a><br />
+<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Audacity Blue Bass Waveform.png" style="max-width: 50%;" /><br /><br />
 After that, he inserted the two pictures of the waveform on the project of the Visual Onomatopoeia on the Sony Vegas video editing program.<br />
 He named the two waveform files "Blue Bass" and "Red Bass", the blue one was for emotional basses and synths on the song.<br />
 And the red one was for dark, hard, or badass basses and synths.<br />
@@ -4409,7 +4375,7 @@ Izaque made animations and movements on the bass pictures in synchronization wit
 He deformed and modified the size of the bass pictures in sync with the digital bass sounds on the song.<br />
 The boy had made an Among Us Visual Onomatopoeia using the Among Us characters some days ago.<br />
 The song that he expressed visually was the "Among Us Drip Theme Song Original (Among Us Trap Remix / Amogus Meme Music)" made by Leonz.<br />
-<a href="https://www.youtube.com/watch?v=grd-K33tOSM" target="_blank" class="text_green_water text_hover_green_water">https://www.youtube.com/watch?v=grd-K33tOSM</a><br />
+<a href="https://www.youtube.com/watch?v=fzQ6gRAEoy0" target="_blank">"Among Us Drip Theme Song Original (Among Us Trap Remix / Amogus Meme Music) by Leonz"</a><br />
 He used the black character for the kick drum, the gray for the hi-hat, and the white one for the snare drum.<br />
 Izaque also used the red character to symbolize the acute violin and the brown character to symbolize the grave violin (possibly a cello).<br />
 The boy had the idea to use the three drum characters on the Visual Onomatopoeia video of the FROG PARTY song.<br />
@@ -4418,7 +4384,7 @@ Izaque still needed to do the hi-hats, he was focusing more on the basses, makin
 He also inserted a transparent rain animation on the background of the video in the beginning, because the sounds had a rain sound.<br />
 Izaque placed the song cover on the parts of the song where a woman said "FROG PARTY".<br />
 The boy edited the song cover to add more characters to it, there were frogs on the original song cover.<br />
-<a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/Orignal%20Sharks%20-%20FROG%20PARTY%20Song%20Cover.jpg" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/Images/Images/SpaceLiving/Orignal%20Sharks%20-%20FROG%20PARTY%20Song%20Cover.jpg</a><br />
+<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Orignal Sharks - FROG PARTY Song Cover.jpg" style="max-width: 50%;" /><br /><br />
 He added his Stake2 logo, the full body of his Funkysnipa Cat character, Fluttershy from "My Little Pony: Friendship Is Magic", the red and brown Among Uses, and the blue and red bass pictures.<br />
 (Stake2 is a name that Izaque uses on the Internet since 2008, in all of the accounts that he created along the time.)<br />
 (Funkysnipa Cat is an account of the Google+ social network that Izaque created in 2013.<br />
@@ -4426,14 +4392,14 @@ He created it because it was part of a movement to honor the YouTuber called Fun
 Other people created accounts with other Funky Cat themes, replacing the "Black" of the name of the YouTuber.<br />
 They also edited the original profile picture of Funky Black Cat, adding things that matched the Funky Cat theme that they choose.<br />
 Like Funky Ninja Cat, Funky Racer Cat, Funky Duck Cat, Funky Cosmos Cat, Funky Monkey Cat.)<br />
-<a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/Funky%20Black%20Cat%20Original%20Profile%20Picture.png" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/Images/Images/SpaceLiving/Funky%20Black%20Cat%20Original%20Profile%20Picture.png</a><br />
+<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Funky Black Cat Original Profile Picture.png" style="max-width: 50%;" /><br /><br />
 (Izaque discovered a lot of new things on Google+, he discovered My Little Pony, Five Nights at Freddy's, Undertale, started liking Dubstep more.<br />
 He also met a lot of great people, he still talks to some of them till today, for example, Lulu, a friend that he knows since 2015, it has been six years already.<br />
 Google+ had passed away on the second day of April of 2019, Google decided to close it because it had privacy violations and security problems that Google had hidden some months ago and people discovered them.<br />
 Then Google continued working on Google+, but only for companies.)<br />
 <br />
 The boy also added the pixel art drawing of the LonelyShip spaceship of his story called SpaceLiving to the edited version of the song cover of the Frog Party song.<br />
-<a href="https://thestake2.netlify.app/Images/Images/SpaceLiving/Funky%20Black%20Cat%20Original%20Profile%20Picture.png" target="_blank" class="text_green_water text_hover_green_water">https://thestake2.netlify.app/Images/Images/SpaceLiving/Funky%20Black%20Cat%20Original%20Profile%20Picture.png</a><br />
+<br /><img class="image_size border_4px border_color_cyan border_radius_8_cent box_shadow_black" src="https://thestake2.netlify.app/Images/Images/SpaceLiving/Edited Sharks - FROG PARTY Song Cover.jpg" style="max-width: 50%;" /><br /><br />
 Izaque placed the original song cover on the parts where the woman said "Frog", and the edited song cover on the parts where the woman said "Party".<br />
 By placing the edited song cover with more people on the "Party" parts, Izaque thought that it gave a "Party" feeling to it, with more people.<br />
 He also placed an on and off switch animation on the parts that a voice said "Switch", switching the switch on.<br />
@@ -4513,9 +4479,14 @@ He walked to the bathroom and placed his hands on a laser square, his hands coul
 That laser did not remove his skin or hurt him, it was only for cleaning, it removed bacteria and dirt, he used that after caressing his dogs.<br />
 After that, he walked to his computer, sitting on the chair, the movie that he put to download had finished download.<br />
 He spent his day on the computer, stopping sometimes to eat, drink water, and exercise.
-		<br /><br />
-		Chapter written in: 26/07/2021<br />
-		Words: 3,565<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+26/07/2021<br /><br />
+		Words:
+<br />
+3.546 words<br /><br />
 		</h4>
 		
 
@@ -4566,7 +4537,7 @@ He spent his day on the computer, stopping sometimes to eat, drink water, and ex
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_17_title">17 - The Visit and the Gaming Morning</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter buttons, image, and text -->
+	<!-- Chapter buttons and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -4586,13 +4557,7 @@ He spent his day on the computer, stopping sometimes to eat, drink water, and ex
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_17" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/17/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_17_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		It was a good day in the SpaceLiving world, the residents of the spaceships were living in 2021, in August, it was a Friday.<br />
 Izaque was in his spaceship, his LonelyShip, it was morning, eight and thirty AM, he was writing a story of him called "The Secret of the Crystals".<br />
@@ -4695,9 +4660,14 @@ Lisa was happy to program and to draw a little, she was happy to have that abili
 Littletato and Iam were working, Vitória was working too, on the bedroom.<br />
 Izaque was happy to get out of his spaceship a little, he liked to spend some time on Earth, to see his sister Aline, and visit his friend Jeandre.<br />
 The day will continue, Izaque and Lisa will continue to do things, as they always do.
-		<br /><br />
-		Chapter written in: 05/09/2021<br />
-		Words: 2,237<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+05/09/2021<br /><br />
+		Words:
+<br />
+2.245 words<br /><br />
 		</h4>
 		
 
@@ -4748,7 +4718,7 @@ The day will continue, Izaque and Lisa will continue to do things, as they alway
 		<p><br /><b>You are reading: <span class="text_green_water">SpaceLiving</span><br />Chapter: <span class="text_green_water" id="chapter_18_title">18 - The New Year in the SpaceLiving</span></b><br /><br /><p>
 	</h2>
 
-	<!-- Chapter button, image, and text -->
+	<!-- Chapter button and text -->
 	<div class="margin_sides_5_cent">
 		<hr class="border_1px border_color_cyan" />		
 
@@ -4761,13 +4731,7 @@ The day will continue, Izaque and Lisa will continue to do things, as they alway
 
 		<br /><br /><br />
 
-		<br /><!-- Chapter cover image -->
-		<center>
-			<img class="box_shadow_dark_blue image_size border_4px border_color_cyan border_radius_8_cent" id="chapter_cover_18" src="https://thestake2.netlify.app/Images/SpaceLiving/Chapters/18/English.jpg" />
-		</center>
-		<br />
-
-		<!-- Chapter text -->
+		<br /><br />		<!-- Chapter text -->
 		<h4 id="chapter_18_text" class="text_size unselectable  text_green_water" style="text-align: left;">
 		It was another day in the SpaceLiving world, the residents were living in January of 2022.<br />
 They had a good Christmas, New Year's Eve, and New Year, whether celebrating on the Party SpaceShip, in their LonelyShips, or with their families on Earth.<br />
@@ -4869,9 +4833,14 @@ After eating a little, playing, talking, listening to music, and watching some t
 Iam's house had seven bedrooms, Littletato and Júlia slept together, Ted and Monika too, Vitória, Iam, Carol, and Lisa slept alone in their bedrooms.<br />
 The group of friends slept on a cold night with blankets, on the night of a Friday in January of 2022.<br />
 They wanted to wake up tomorrow, Saturday, and party more, spend more time together, maybe do some barbecue, travel around, go to a racing track with their cars.
-		<br /><br />
-		Chapter written in: 07/01/2022<br />
-		Words: 2,339<br /><br />
+<br /><br />
+		
+Chapter written in:
+<br />
+07/01/2022<br /><br />
+		Words:
+<br />
+2.347 words<br /><br />
 		</h4>
 		
 
