@@ -37,7 +37,7 @@ Made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	<meta name="twitter:image" type="image/png" content="/Images/2024/Icons/Foto.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/04/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 19/06/2024." />
 	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -80,13 +80,13 @@ Made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 	</style>
 
 	<!-- JavaScript files -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-	<script type="text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+	<script type="text/javascript" src="/JavaScript/jQuery.js"></script>
+	<script type="text/javascript" src="/JavaScript/W3.js"></script>
+	<script type="text/javascript" src="/JavaScript/Font Awesome.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/JavaScript/Language.js"></script>
 	<script type="text/javascript" src="/JavaScript/Functions.js"></script>
 	<script type="text/javascript" src="/JavaScript/Language_Redirector.js"></script>
-	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>
-	<script type="text/javascript" src="https://kit.fontawesome.com/6f0935b8d2.js" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="/JavaScript/Tabs.js"></script>	
 
 	<script>
 		Check_Language()
@@ -98,14 +98,11 @@ Made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 
 <!-- Open hamburger menu button -->
 
-
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">
-		<h3 class="text_size text_dark_green" style="font-weight: bold;">
-		
-	<h2 class="text_size">
-		<i class="fas fa-bars"></i>
-	</h2>
-
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size text_dark_green" style="font-weight: bold;">
+			<h2 class="text_size">
+				<i class="fas fa-bars"></i>
+			</h2>
 		</h3>
 	</button>
 
@@ -114,121 +111,102 @@ Made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 <div id="hamburger_menu" class="w3-container w3-animate-left background_green border_4px border_color_light_green border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
-	
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">
-		<h3 class="text_size text_dark_green" style="font-weight: bold;">
-		
-		<h4 class="text_size" style="font-weight: bold;">
-		X
-		</h4>
-	
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size text_dark_green" style="font-weight: bold;">
+			<h4 class="text_size" style="font-weight: bold;">
+				X
+			</h4>		
 		</h3>
 	</button>
 
 	<h2 class="text_size text_light_green" style="font-weight: bold;">Tab menu: </h2>
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
-	<!-- "Welcome" button -->
-	<span id="button_1" class="tab_button">
-		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('welcome');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Welcome: <i class="fa-solid fa-plane-arrival"></i>
-			
+	<!-- "Welcome" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('welcome');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Welcome: <i class="fa-solid fa-plane-arrival"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Pictures" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Pictures: <i class="fas fa-images"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Pictures: <i class="fas fa-images"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Memories" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('memories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Memories: <i class="fas fa-images"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('memories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Memories: <i class="fas fa-images"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Game sessions played in 2024" button -->
-	<span id="button_5" class="tab_button">
-		
+	<span id="button_5" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('game_sessions_played');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Game sessions played in 2024: <i class="fa-solid fa-gamepad"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('game_sessions_played');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Game sessions played in 2024: <i class="fa-solid fa-gamepad"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Completed tasks" button -->
-	<span id="button_6" class="tab_button">
-		
+	<span id="button_6" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Completed tasks: <i class="fa-solid fa-list-check"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
 		</h2>
 	</button>
 	</span>
+
 
 	<!-- "Years" button -->
-	<span id="button_7" class="tab_button">
-		
+	<span id="button_7" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('years');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Years: <i class="fa-solid fa-calendar-days"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('years');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Years: <i class="fa-solid fa-calendar-days"></i>			
 		</h2>
 	</button>
 	</span>
 
-	<!-- "Websites" button -->
-	<span id="button_8" class="tab_button">
-		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<!-- "Websites" button -->
+	<span id="button_8" class="tab_button">		
+
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span>
@@ -275,14 +253,11 @@ Made by Izaque Sanvezzo (Stake2, Funkysnipa Cat)." />
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Pictures" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Pictures: <i class="fas fa-images"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Pictures: <i class="fas fa-images"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -307,25 +282,19 @@ In 2024 I want Peace, I don't want challenge, I don't want fear, I don't want ba
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Welcome" button -->
-	<span id="button_1" class="tab_button">
-		
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('welcome');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Welcome: <i class="fa-solid fa-plane-arrival"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('welcome');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Welcome: <i class="fa-solid fa-plane-arrival"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Memories" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('memories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Memories: <i class="fas fa-images"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('memories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Memories: <i class="fas fa-images"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -399,30 +368,24 @@ Happy New Year<br />
 <div id="memories" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_light_green">
-		<p><br /><b id="memories_title">Memories: <i class="fas fa-images"></i> <span class="text_dark_green">6</span></b><br /><br /><p>
+		<p><br /><b id="memories_title">Memories: <i class="fas fa-images"></i> <span class="text_dark_green">8</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Pictures" button -->
-	<span id="button_2" class="tab_button">
-		
+	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Pictures: <i class="fas fa-images"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Pictures: <i class="fas fa-images"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -629,9 +592,13 @@ Happy New Year<br />
 		<h4 class="text_size text_dark_green">
 			<i class="fas fa-arrow-circle-left"></i> Previous image
 		</h4>
+	</button></a><a href="#memories_image_7" style="float: right; text-decoration: none; margin-top: 30px; margin-right: 30px;"><button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white">
+		<h4 class="text_size text_dark_green">
+			Next image <i class="fas fa-arrow-circle-right"></i>
+		</h4>
 	</button></a><br />
-<p></p>
 <br />
+<p></p>
 <p></p>
 <b>Number:<br />
 </b>
@@ -647,10 +614,88 @@ Happy New Year<br />
 		<h4 class="text_size text_dark_green">
 			<i class="fas fa-arrow-circle-left"></i> Previous image
 		</h4>
+	</button></a><a href="#memories_image_7" style="float: right; text-decoration: none; margin-top: 30px; margin-right: 30px;"><button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white">
+		<h4 class="text_size text_dark_green">
+			Next image <i class="fas fa-arrow-circle-right"></i>
+		</h4>
+	</button></a><br />
+<br />
+<p></p>
+<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/2024/Memories/6.png')" style="margin-bottom: 10px; margin-bottom: 10px;">
+		<h4 class="text_size text_dark_green">
+			Open image in a new tab: <i class="fas fa-images"></i>
+		</h4>
+	</button><p></p>
+</center><br />
+<br />
+<center class="background_dark_green box_shadow_dark_green border_4px border_radius_5_cent">
+<a href="#memories_image_6" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white">
+		<h4 class="text_size text_dark_green">
+			<i class="fas fa-arrow-circle-left"></i> Previous image
+		</h4>
+	</button></a><a href="#memories_image_8" style="float: right; text-decoration: none; margin-top: 30px; margin-right: 30px;"><button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white">
+		<h4 class="text_size text_dark_green">
+			Next image <i class="fas fa-arrow-circle-right"></i>
+		</h4>
+	</button></a><br />
+<br />
+<p></p>
+<p></p>
+<b>Number:<br />
+</b>
+7<br />
+<p></p>
+<b>Date:<br />
+</b>
+15:57 16/06/2024<br />
+<p></p>
+<a name="memories_image_7">
+<img class="image_size border_4px border_color_light_green border_radius_1_cent" src="https://thestake2.netlify.app/Images/2024/Memories/7.png"style="max-width: 80%;" alt="7" title="7" /><br />
+<a href="#memories_image_6" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white">
+		<h4 class="text_size text_dark_green">
+			<i class="fas fa-arrow-circle-left"></i> Previous image
+		</h4>
+	</button></a><a href="#memories_image_8" style="float: right; text-decoration: none; margin-top: 30px; margin-right: 30px;"><button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white">
+		<h4 class="text_size text_dark_green">
+			Next image <i class="fas fa-arrow-circle-right"></i>
+		</h4>
+	</button></a><br />
+<br />
+<p></p>
+<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/2024/Memories/7.png')" style="margin-bottom: 10px; margin-bottom: 10px;">
+		<h4 class="text_size text_dark_green">
+			Open image in a new tab: <i class="fas fa-images"></i>
+		</h4>
+	</button><p></p>
+</center><br />
+<br />
+<center class="background_dark_green box_shadow_dark_green border_4px border_radius_5_cent">
+<a href="#memories_image_7" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white">
+		<h4 class="text_size text_dark_green">
+			<i class="fas fa-arrow-circle-left"></i> Previous image
+		</h4>
 	</button></a><br />
 <p></p>
 <br />
-<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/2024/Memories/6.png')" style="margin-bottom: 10px; margin-bottom: 10px;">
+<p></p>
+<b>Number:<br />
+</b>
+8<br />
+<p></p>
+<b>Date:<br />
+</b>
+16:55 18/06/2024<br />
+<p></p>
+<a name="memories_image_8">
+<img class="image_size border_4px border_color_light_green border_radius_1_cent" src="https://thestake2.netlify.app/Images/2024/Memories/8.png"style="max-width: 80%;" alt="8" title="8" /><br />
+<a href="#memories_image_7" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white">
+		<h4 class="text_size text_dark_green">
+			<i class="fas fa-arrow-circle-left"></i> Previous image
+		</h4>
+	</button></a><br />
+<p></p>
+<br />
+<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/Images/2024/Memories/8.png')" style="margin-bottom: 10px; margin-bottom: 10px;">
 		<h4 class="text_size text_dark_green">
 			Open image in a new tab: <i class="fas fa-images"></i>
 		</h4>
@@ -668,30 +713,24 @@ Happy New Year<br />
 <div id="watched_things" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_light_green">
-		<p><br /><b id="watched_things_title">Watched things in 2024: <i class="fas fa-eye"></i> <span class="text_dark_green">37</span></b><br /><br /><p>
+		<p><br /><b id="watched_things_title">Watched things in 2024: <i class="fas fa-eye"></i> <span class="text_dark_green">41</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Memories" button -->
-	<span id="button_3" class="tab_button">
-		
+	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('memories');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Memories: <i class="fas fa-images"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('memories');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Memories: <i class="fas fa-images"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Game sessions played in 2024" button -->
-	<span id="button_5" class="tab_button">
-		
+	<span id="button_5" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('game_sessions_played');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Game sessions played in 2024: <i class="fa-solid fa-gamepad"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('game_sessions_played');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Game sessions played in 2024: <i class="fa-solid fa-gamepad"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -710,24 +749,28 @@ Happy New Year<br />
 </center>
 <br />
 <!-- Media type headers -->
-		<a href="#Watched things in2024: Animes"><b>Animes: <span class="text_dark_green">3</span></b></a><br />
-		<a href="#Watched things in2024: Series"><b>Series: <span class="text_dark_green">3</span></b></a><br />
+		<a href="#Watched things in2024: Animes"><b>Animes: <span class="text_dark_green">5</span></b></a><br />
+		<a href="#Watched things in2024: Series"><b>Series: <span class="text_dark_green">5</span></b></a><br />
 		<a href="#Watched things in2024: Videos"><b>Videos: <span class="text_dark_green">31</span></b></a><br />
 		
 		<br />
 
 		<!-- "Animes" media type header -->
-		<a name="Watched things in2024: Animes"><b>Animes: <span class="text_dark_green">3</span></b></a><br />
+		<a name="Watched things in2024: Animes"><b>Animes: <span class="text_dark_green">5</span></b></a><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">1 - <span class="text_light_green underline_on_hover" alt="Number of watched times: 2x" title="Number of watched times: 2x">2x <i class="fas fa-eye"></i></span> <span class="text_light_green underline_on_hover" alt="First watched media in the year" title="First watched media in the year">1# <i class="far fa-calendar-alt"></i></span> <span class="text_light_green underline_on_hover" alt="First watched media per media type in the year" title="First watched media per media type in the year">1# <i class="fa-solid fa-film"></i> <i class="far fa-calendar-alt"></i></span> -  <span class="text_dark_green text_hover_light_green"><a class="text_dark_green" onclick="Open_Tab('watched_thing_2024_1')" target="_blank" alt="Entry description" title="Entry description" style="text-decoration: underline; cursor: pointer;">Anima Yell! EP11 "Exciting Shoulder Straddle" <span class="text_light_green"><i class="fas fa-comments"></i></span></a></span> (06:02 06/01/2024)</span><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">4 - <span class="text_light_green underline_on_hover" alt="Number of watched times: 2x" title="Number of watched times: 2x">2x <i class="fas fa-eye"></i></span> -  <span class="text_dark_green text_hover_light_green"><a class="text_dark_green" onclick="Open_Tab('watched_thing_2024_4')" target="_blank" alt="Entry description" title="Entry description" style="text-decoration: underline; cursor: pointer;">Anima Yell! EP12 "One for All, All for One" <span class="text_light_green"><i class="fas fa-comments"></i></span></a></span> (06:44 15/01/2024)</span><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">34 - <span class="text_light_green underline_on_hover" alt="Number of watched times: 3x" title="Number of watched times: 3x">3x <i class="fas fa-eye"></i></span> -  <span class="text_dark_green text_hover_light_green"><a class="text_dark_green" onclick="Open_Tab('watched_thing_2024_34')" target="_blank" alt="Entry description" title="Entry description" style="text-decoration: underline; cursor: pointer;">Yuru Camp△ EP01 "Mount Fuji and Curry Noodles" <span class="text_light_green"><i class="fas fa-comments"></i></span></a></span> (10:51 06/04/2024)</span><br />
+<span class="text_hover_light_green" style="margin-left: 3%;">38 - <span class="text_light_green underline_on_hover" alt="Number of watched times: 3x" title="Number of watched times: 3x">3x <i class="fas fa-eye"></i></span> -  <span class="text_dark_green text_hover_light_green"><a class="text_dark_green" onclick="Open_Tab('watched_thing_2024_38')" target="_blank" alt="Entry description" title="Entry description" style="text-decoration: underline; cursor: pointer;">Yuru Camp△ EP02 "Welcome to the Outdoor Activities Club" <span class="text_light_green"><i class="fas fa-comments"></i></span></a></span> (05:53 29/04/2024)</span><br />
+<span class="text_hover_light_green" style="margin-left: 3%;">41 - <span class="text_light_green underline_on_hover" alt="Number of watched times: 3x" title="Number of watched times: 3x">3x <i class="fas fa-eye"></i></span> -  <span class="text_dark_green text_hover_light_green"><a class="text_dark_green" onclick="Open_Tab('watched_thing_2024_41')" target="_blank" alt="Entry description" title="Entry description" style="text-decoration: underline; cursor: pointer;">Yuru Camp△ EP03 "Mount Fuji and Relaxed Hot Pot Camp" <span class="text_light_green"><i class="fas fa-comments"></i></span></a></span> (22:03 16/06/2024)</span><br />
 		<br />
 
 		<!-- "Series" media type header -->
-		<a name="Watched things in2024: Series"><b>Series: <span class="text_dark_green">3</span></b></a><br />
+		<a name="Watched things in2024: Series"><b>Series: <span class="text_dark_green">5</span></b></a><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">2 - <span class="text_light_green underline_on_hover" alt="Number of watched times: 2x" title="Number of watched times: 2x">2x <i class="fas fa-eye"></i></span> <span class="text_light_green underline_on_hover" alt="First watched media per media type in the year" title="First watched media per media type in the year">1# <i class="fa-solid fa-film"></i> <i class="far fa-calendar-alt"></i></span> -  <span class="text_dark_green text_hover_light_green">The Walking Dead S02EP13(19) "Beside the Dying Fire"</span> (06:41 13/01/2024)</span><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">31 - <span class="text_light_green underline_on_hover" alt="Number of watched times: 2x" title="Number of watched times: 2x">2x <i class="fas fa-eye"></i></span> -  <span class="text_dark_green text_hover_light_green">The Walking Dead S03EP01(20) "Seed"</span> (05:17 01/04/2024)</span><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">35 - <span class="text_light_green underline_on_hover" alt="Number of watched times: 2x" title="Number of watched times: 2x">2x <i class="fas fa-eye"></i></span> -  <span class="text_dark_green text_hover_light_green">The Walking Dead S03EP02(21) "Sick"</span> (07:54 07/04/2024)</span><br />
+<span class="text_hover_light_green" style="margin-left: 3%;">39 - <span class="text_light_green underline_on_hover" alt="Number of watched times: 2x" title="Number of watched times: 2x">2x <i class="fas fa-eye"></i></span> -  <span class="text_dark_green text_hover_light_green">The Walking Dead S03EP03(22) "Walk with Me"</span> (04:13 12/05/2024)</span><br />
+<span class="text_hover_light_green" style="margin-left: 3%;">40 - <span class="text_light_green underline_on_hover" alt="Number of watched times: 2x" title="Number of watched times: 2x">2x <i class="fas fa-eye"></i></span> -  <span class="text_dark_green text_hover_light_green">The Walking Dead S03EP04(23) "Killer Within"</span> (08:15 20/05/2024)</span><br />
 		<br />
 
 		<!-- "Videos" media type header -->
@@ -776,30 +819,24 @@ Happy New Year<br />
 <div id="game_sessions_played" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_light_green">
-		<p><br /><b id="game_sessions_played_title">Game sessions played in 2024: <i class="fa-solid fa-gamepad"></i> <span class="text_dark_green">11</span></b><br /><br /><p>
+		<p><br /><b id="game_sessions_played_title">Game sessions played in 2024: <i class="fa-solid fa-gamepad"></i> <span class="text_dark_green">12</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Completed tasks" button -->
-	<span id="button_6" class="tab_button">
-		
+	<span id="button_6" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Completed tasks: <i class="fa-solid fa-list-check"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -818,12 +855,12 @@ Happy New Year<br />
 </center>
 <br />
 <!-- Game type headers -->
-		<a href="#Game sessions played in2024: Survival"><b>Survival: <span class="text_dark_green">11</span></b></a><br />
+		<a href="#Game sessions played in2024: Survival"><b>Survival: <span class="text_dark_green">12</span></b></a><br />
 		
 		<br />
 
 		<!-- "Survival" game type header -->
-		<a name="Game sessions played in2024: Survival"><b>Survival: <span class="text_dark_green">11</span></b></a><br />
+		<a name="Game sessions played in2024: Survival"><b>Survival: <span class="text_dark_green">12</span></b></a><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">1 - <span class="text_light_green underline_on_hover" alt="First game session in year" title="First game session in year">1# <i class="far fa-calendar-alt"></i></span> <span class="text_light_green underline_on_hover" alt="First game session of the 'Survival' category in year" title="First game session of the 'Survival' category in year">1# <i class="fa-solid fa-gamepad"></i> <i class="far fa-calendar-alt"></i></span> -  <span class="text_dark_green text_hover_light_green">"Don't Starve", Session duration: 3 hours, 32 minutes, and 46 seconds</span> (08:50 07/01/2024)</span><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">2 - <span class="text_dark_green text_hover_light_green">"Don't Starve", Session duration: 3 hours, 11 minutes, and 54 seconds</span> (10:03 18/01/2024)</span><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">3 - <span class="text_dark_green text_hover_light_green">"Don't Starve", Session duration: 2 hours, 44 minutes, and 47 seconds</span> (06:32 30/01/2024)</span><br />
@@ -835,6 +872,7 @@ Happy New Year<br />
 <span class="text_hover_light_green" style="margin-left: 3%;">9 - <span class="text_dark_green text_hover_light_green">"Don't Starve", Session duration: 3 hours, 26 minutes, and 1 second</span> (06:57 25/03/2024)</span><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">10 - <span class="text_dark_green text_hover_light_green">"Don't Starve", Session duration: 5 hours, 24 minutes, and 37 seconds</span> (10:41 08/04/2024)</span><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">11 - <span class="text_dark_green text_hover_light_green">"Project Zomboid", Session duration: 4 hours, 12 minutes, and 8 seconds</span> (07:51 15/04/2024)</span><br />
+<span class="text_hover_light_green" style="margin-left: 3%;">12 - <span class="text_dark_green text_hover_light_green">"Don't Starve", Session duration: 2 hours, 29 minutes, and 17 seconds</span> (08:03 18/05/2024)</span><br />
 		<br />
 
 <br /><br /></span>
@@ -850,30 +888,24 @@ Happy New Year<br />
 <div id="completed_tasks" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_light_green">
-		<p><br /><b id="completed_tasks_title">Completed tasks: <i class="fa-solid fa-list-check"></i> <span class="text_dark_green">6</span></b><br /><br /><p>
+		<p><br /><b id="completed_tasks_title">Completed tasks: <i class="fa-solid fa-list-check"></i> <span class="text_dark_green">10</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Game sessions played in 2024" button -->
-	<span id="button_5" class="tab_button">
-		
+	<span id="button_5" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('game_sessions_played');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Game sessions played in 2024: <i class="fa-solid fa-gamepad"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('game_sessions_played');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Game sessions played in 2024: <i class="fa-solid fa-gamepad"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Years" button -->
-	<span id="button_7" class="tab_button">
-		
+	<span id="button_7" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('years');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Years: <i class="fa-solid fa-calendar-days"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('years');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Years: <i class="fa-solid fa-calendar-days"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -892,10 +924,17 @@ Happy New Year<br />
 </center>
 <br />
 <!-- Task type headers -->
+		<a href="#Tasks [2024]: Stories"><b>Stories: <span class="text_dark_green">2</span></b></a><br />
 		<a href="#Tasks [2024]: Videos"><b>Videos: <span class="text_dark_green">2</span></b></a><br />
-		<a href="#Tasks [2024]: Python"><b>Python: <span class="text_dark_green">3</span></b></a><br />
-		<a href="#Tasks [2024]: PHP"><b>PHP: <span class="text_dark_green">1</span></b></a><br />
+		<a href="#Tasks [2024]: Python"><b>Python: <span class="text_dark_green">4</span></b></a><br />
+		<a href="#Tasks [2024]: PHP"><b>PHP: <span class="text_dark_green">2</span></b></a><br />
 		
+		<br />
+
+		<!-- "Stories" task type header -->
+		<a name="Tasks [2024]: Stories"><b>Stories: <span class="text_dark_green">2</span></b></a><br />
+<span class="text_hover_light_green" style="margin-left: 3%;">9 - <span class="text_light_green underline_on_hover" alt="First task per task type in the year" title="First task per task type in the year">1# <i class="fa-solid fa-list-check"></i> <i class="far fa-calendar-alt"></i></span> -  <a class="text_dark_green" onclick="Open_Tab('task_description_9_2024')" target="_blank" alt="Task description" title="Task description" style="text-decoration: underline; cursor: pointer;"><span class="text_dark_green">I finished revising the chapter four of my story "The Life of Littletato"</span></a> (23:42 03/06/2024)</span><br />
+<span class="text_hover_light_green" style="margin-left: 3%;">10 - <a class="text_dark_green" onclick="Open_Tab('task_description_10_2024')" target="_blank" alt="Task description" title="Task description" style="text-decoration: underline; cursor: pointer;"><span class="text_dark_green">I finished translating the chapter four of my story "The Life of Littletato" from Portuguese to English</span></a> (21:04 19/06/2024)</span><br />
 		<br />
 
 		<!-- "Videos" task type header -->
@@ -905,15 +944,17 @@ Happy New Year<br />
 		<br />
 
 		<!-- "Python" task type header -->
-		<a name="Tasks [2024]: Python"><b>Python: <span class="text_dark_green">3</span></b></a><br />
+		<a name="Tasks [2024]: Python"><b>Python: <span class="text_dark_green">4</span></b></a><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">4 - <span class="text_light_green underline_on_hover" alt="First task per task type in the year" title="First task per task type in the year">1# <i class="fa-solid fa-list-check"></i> <i class="far fa-calendar-alt"></i></span> -  <a class="text_dark_green" onclick="Open_Tab('task_description_4_2024')" target="_blank" alt="Task description" title="Task description" style="text-decoration: underline; cursor: pointer;"><span class="text_dark_green">I programmed in Python a little, coding my modules GamePlayer, PHP, Python, and Years</span></a> (13:23 07/03/2024)</span><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">5 - <a class="text_dark_green" onclick="Open_Tab('task_description_5_2024')" target="_blank" alt="Task description" title="Task description" style="text-decoration: underline; cursor: pointer;"><span class="text_dark_green">I programmed in Python a little, coding my modules Stories, Diary_Slim, and Project_Zomboid</span></a> (09:56 13/04/2024)</span><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">6 - <a class="text_dark_green" onclick="Open_Tab('task_description_6_2024')" target="_blank" alt="Task description" title="Task description" style="text-decoration: underline; cursor: pointer;"><span class="text_dark_green">I programmed in Python a little, coding my modules Project_Zomboid and Stories</span></a> (03:51 26/04/2024)</span><br />
+<span class="text_hover_light_green" style="margin-left: 3%;">8 - <a class="text_dark_green" onclick="Open_Tab('task_description_8_2024')" target="_blank" alt="Task description" title="Task description" style="text-decoration: underline; cursor: pointer;"><span class="text_dark_green">I programmed in Python a little, coding my modules Stories, PHP, and Tasks</span></a> (08:18 05/05/2024)</span><br />
 		<br />
 
 		<!-- "PHP" task type header -->
-		<a name="Tasks [2024]: PHP"><b>PHP: <span class="text_dark_green">1</span></b></a><br />
+		<a name="Tasks [2024]: PHP"><b>PHP: <span class="text_dark_green">2</span></b></a><br />
 <span class="text_hover_light_green" style="margin-left: 3%;">2 - <span class="text_light_green underline_on_hover" alt="First task per task type in the year" title="First task per task type in the year">1# <i class="fa-solid fa-list-check"></i> <i class="far fa-calendar-alt"></i></span> -  <a class="text_dark_green" onclick="Open_Tab('task_description_2_2024')" target="_blank" alt="Task description" title="Task description" style="text-decoration: underline; cursor: pointer;"><span class="text_dark_green">I programmed my websites in HTML, CSS, JavaScript, and PHP a little</span></a> (10:00 20/01/2024)</span><br />
+<span class="text_hover_light_green" style="margin-left: 3%;">7 - <a class="text_dark_green" onclick="Open_Tab('task_description_7_2024')" target="_blank" alt="Task description" title="Task description" style="text-decoration: underline; cursor: pointer;"><span class="text_dark_green">I programmed my websites in HTML, CSS, JavaScript, and PHP a little</span></a> (00:08 27/04/2024)</span><br />
 <br /><br /></span>
 	</h2>
 </div>
@@ -932,25 +973,19 @@ Happy New Year<br />
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Completed tasks" button -->
-	<span id="button_6" class="tab_button">
-		
+	<span id="button_6" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Completed tasks: <i class="fa-solid fa-list-check"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
 		</h2>
 	</button>
 	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Websites" button -->
-	<span id="button_8" class="tab_button">
-		
+	<span id="button_8" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Websites: <i class="fas fa-globe"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Websites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -1022,14 +1057,11 @@ Happy New Year<br />
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Years" button -->
-	<span id="button_7" class="tab_button">
-		
+	<span id="button_7" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('years');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Years: <i class="fa-solid fa-calendar-days"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('years');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Years: <i class="fa-solid fa-calendar-days"></i>			
 		</h2>
 	</button>
 	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -1241,14 +1273,11 @@ Happy New Year<br />
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -1715,14 +1744,11 @@ Um momento lindo desse pra acabar o episódio 😍 ❤️</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -2180,14 +2206,11 @@ E amei mais ainda re-assistir ele em 2023 e 2024, fiquei muito feliz :3 ❤️</
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -2608,6 +2631,1062 @@ Assinado: Clube de Atividades ao Ar Livre</span>
 
 <center>
 
+<!-- "38 - Yuru Camp△ EP02 "Welcome to the Outdoor Activities Club" (05:53 29/04/2024)" tab -->
+<a id="watched_thing_2024_38_anchor" name="38 - Yuru Camp△ EP02 "Welcome to the Outdoor Activities Club" (05:53 29/04/2024)"></a>
+<div id="watched_thing_2024_38" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_light_green">
+		<p><br /><b id="watched_thing_2024_38_title">38 - Yuru Camp△ EP02 "Welcome to the Outdoor Activities Club" (05:53 29/04/2024): <i class="fas fa-eye"></i></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
+			<!-- "Watched things in 2024" button -->
+	<span id="button_4" class="tab_button">		
+
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
+		</h2>
+	</button>
+	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<span class="text_light_green">Number: 38<br />
+Media type number: 4<br />
+<br />
+Media:<br />
+ゆるキャン△<br />
+Yuru Camp△<br />
+<br />
+Title:<br />
+EP02 "Welcome to the Outdoor Activities Club"<br />
+<br />
+Type:<br />
+Animes<br />
+<br />
+Times:<br />
+2024-04-29T05:53:57Z<br />
+02:53 29/04/2024<br />
+<br />
+File name:<br />
+38. Animes (02:53 29/04/2024)<br />
+<br />
+States:<br />
+Watched dubbed<br />
+Re-watched two times (2x)<br />
+Commented<br />
+<br />
+Comment:<br />
+<br />
+Título:<br />
+Yuru Camp△ EP02 "Bem-vindas ao Clube de Atividades ao Ar Livre" (Re-assistido 1x)<br />
+<br />
+Tempo:<br />
+21:06 14/05/2022<br />
+<br />
+00:17:<br />
+Comer muito lámen enjoa mesmo kkkkk<br />
+<br />
+00:22:<br />
+Nadeshiko é animada pra tudo kkkkk, até pra comida<br />
+<br />
+00:38:<br />
+De novo elas podiam se encontrar na escola e não se encontraram kkkkk<br />
+<br />
+03:07:<br />
+É só um corredor minúsculo e não tem ninguém kkkkk, não sei como botaram um clube aí ;-;<br />
+<br />
+05:00:<br />
+"Sua loka" kkkkk<br />
+<br />
+06:17:<br />
+Fogueira e café da tarde é legal :3<br />
+<br />
+06:47:<br />
+Ler revistas de barracas uwu<br />
+<br />
+06:57:<br />
+Estão mandando bem no recrutamento da nova recruta kkkk, e nossa, três setes nos segundos<br />
+<br />
+08:37:<br />
+Rin observando elas enquanto a Satou faz o cabelo dela ksks<br />
+<br />
+08:53:<br />
+Cabelo de ursinho kkkkk<br />
+<br />
+09:04:<br />
+O narrador kkkkkkkk<br />
+<br />
+09:48:<br />
+Tadinha da Rin ksks, não quer ir socializar ;-;<br />
+<br />
+10:43:<br />
+Detectaram a Rin ksks<br />
+<br />
+11:05:<br />
+Nadeshiko fofinha ksksk, atrapalhada também<br />
+<br />
+13:09:<br />
+"Boa" kkkk, adoro essas falas<br />
+<br />
+13:17:<br />
+Vixi, que pena, lámen de novo ;-;<br />
+<br />
+13:52:<br />
+"Morre diaba" kkkkkkkkkkk, dublagem inspirada pela dublagem de Rick and Morty e Desencanto só pode kkkkkk<br />
+<br />
+13:55:<br />
+A Saitou mandou o "Omae Wa Mô Shinde iru" kkkkkkkk, a não<br />
+<br />
+13:58:<br />
+Adoro essas conversas entre a Satou e a Rin kkkkk<br />
+<br />
+14:40:<br />
+Sem fogueira então, muito caro as coisas kkkkk<br />
+R$ 156 por todas as coisas (4000 ienes)<br />
+<br />
+15:40:<br />
+"Será que é um banheiro mesmo?"<br />
+Placa: "Banheiros são pra cá."<br />
+"Fui tapeada" kkkkkkkk, Pica-Pau<br />
+<br />
+15:50:<br />
+"Banheiros femininos ficam do outro lado."<br />
+<br />
+16:01:<br />
+Pior que parece mesmo kkkkkk<br />
+<br />
+16:15:<br />
+"Ursos?" kkkkk<br />
+<br />
+16:19:<br />
+O primeiro não conseguiu pegar ela ksksks, mas o outro conseguiu, na barriga ;-;<br />
+<br />
+16:28:<br />
+"Cachorrinhos fofinhos ai ti gacinha."<br />
+Derreti com esse "ai ti gacinha", mds kkkk :3<br />
+<br />
+16:50:<br />
+Monte Fuji de ponta cabeça, essa é boa kkkkkk<br />
+<br />
+17:09:<br />
+"Quase virei almoço de cachorro" kkkkk (peguei a legenda do original já que não dublam o que não é falado)<br />
+<br />
+17:19:<br />
+"Quero levantar não dona."<br />
+"Ficar aí no bem bom né" kskks, essas gírias<br />
+<br />
+17:30:<br />
+"Passia?" kkkkkk<br />
+<br />
+17:40:<br />
+Que lindo kkkkk, esse frio ;-;<br />
+<br />
+17:47:<br />
+Eles voltando pra cama e ele chorando kkkkkk<br />
+<br />
+18:09:<br />
+"O meu virou um cachorro quente assim que desviei o olhar" kkkkk<br />
+<br />
+19:06:<br />
+Vixi, pegou friagem, e ela se lembrando da Nadeshiko uwu<br />
+<br />
+19:24:<br />
+Ela gosta de acampar sozinha ksks, eu também<br />
+<br />
+19:44:<br />
+"Sai do meu pé chulé" kkkkkkkkk<br />
+<br />
+19:53:<br />
+E ela tava ali mesmo kkkkkkkk<br />
+<br />
+19:57:<br />
+Assombração kkkkkk<br />
+<br />
+20:14:<br />
+Faze uma sopa pa nois<br />
+<br />
+20:25:<br />
+Adoro quando botam mais episódio na ending<br />
+<br />
+22:29:<br />
+"Por essa a gente não esperava" essa é uma frase Brasileira, provavelmente kkkkk<br />
+<br />
+23:09:<br />
+Comendo demais essa Nadeshiko kkkkk<br />
+<br />
+Próximo episódio:<br />
+EP03 "Monte Fuji e ensopado relaxado"<br />
+<br />
+Comment:<br />
+<br />
+Título:<br />
+Yuru Camp△ EP02 "Bem-vindas ao Clube de Atividades ao Ar Livre" (Re-assistido 2x)<br />
+<br />
+Tempo:<br />
+02:53 29/04/2024<br />
+<br />
+00:21:<br />
+A Rin fica tão linda de cabelo solto :3 <3<br />
+<br />
+00:44:<br />
+E a Nadeshiko passa do lado da Rin, e ela não nota kkkk<br />
+<br />
+01:02:<br />
+É tão bom poder ir pausando e lendo os nomes dos clubes na versão legendada por Fansub dual-áudio que eu fiz ksks<br />
+<br />
+Clube de Voleibol<br />
+Clube de Tênis<br />
+Clube de Caminhada<br />
+Clube de Atividades ao Ar Livre<br />
+<br />
+02:47:<br />
+Tão fofinha a Nadeshiko em Japonês e em Português :3<br />
+"Excursões em montanha" tá meio errado aí, o certo seria "relacionados ao ar livre"<br />
+<br />
+02:50:<br />
+"Parece que o de trilhas é mais pesado né"<br />
+O jeito que ela fala "é mais pesado né" é meio diferente ksks, na versão dublada em Português<br />
+<br />
+03:22:<br />
+É só um corredor a sala kkkkk<br />
+<br />
+03:31:<br />
+"Livros aventureiros", deveria ser "Livros sobre o ar livre"<br />
+Mas a gente tenta relevar né ksks<br />
+<br />
+03:40:<br />
+A Nadeshiko bisbilhotando a sala kkkkk<br />
+<br />
+04:05:<br />
+A Chiaki simplesmente fechando a porta na cara da Nadeshiko, mds kkkkkk<br />
+<br />
+04:18:<br />
+Espiando ela pela fresta da porta, mas a Nadeshiko já viu ela kkkkk<br />
+<br />
+04:26:<br />
+A Aoi chegando e vendo aquela cena na porta do clube kkkkkkk<br />
+<br />
+05:18:<br />
+A Chiaki toda animada pra conseguir uma sala maior pro clube kkkkkk, só pra fazer exercícios de relaxamento ksks<br />
+<br />
+05:40:<br />
+Chiaki Oogaki, um nome que rima, muito bonito ksks<br />
+<br />
+05:50:<br />
+Elas se batendo na sala apertada, mds kkkkk<br />
+<br />
+06:39:<br />
+Não sobrou nenhuma folha sequer ;-;<br />
+<br />
+06:44:<br />
+Só essa pra efeito dramático kkkkk, uma única folha pra dizer que não tem folhas ksks<br />
+<br />
+06:59:<br />
+A cara da Aoi kkkkk, esse smirk dela ksks, tão fofa e engraçadinha :3<br />
+<br />
+07:14:<br />
+Muito interessante aprender sobre essas barracas ksks<br />
+Umas tem armação interna e não precisa de suporte externo<br />
+Já as não autônomas precisam de suporte externo, como cordas e varetas<br />
+<br />
+07:52:<br />
+980 ienes são 28 reais (2024)<br />
+<br />
+08:01:<br />
+Na ordem que ela falou:<br />
+1127 reais<br />
+1300 reais<br />
+1560 reais<br />
+1907 reais<br />
+2370 reais<br />
+<br />
+Bem caro mesmo kkkkk<br />
+"Eu tô ficando tonta" kkkkk<br />
+<br />
+08:40:<br />
+Original em Japonês: "É ela."<br />
+Dublado em Português: "Aquela esquisitinha."<br />
+<br />
+Quem achou a Nadeshiko esquisita foi o tradutor da dublagem, não o anime original '-'<br />
+Não sei pra que ficar esculachando a Nadeshiko assim '-'<br />
+<br />
+08:55:<br />
+Que fofa a Rin com cabelo de ursinho kkkk :3<br />
+<br />
+09:20:<br />
+Quebrou o bastão ;-;<br />
+<br />
+09:50:<br />
+A Rin é antissocial kkkkk, prefere ficar na dela<br />
+Não julgo, também sou meio assim<br />
+<br />
+10:25:<br />
+A barraca foi montada :3<br />
+<br />
+10:57:<br />
+A Saitou dedurando que a Rin tava na biblioteca kkkkk, e a Nadeshiko descobrindo ela ksks<br />
+<br />
+11:14:<br />
+E ela deu de cara no vidro ;-;<br />
+<br />
+11:53:<br />
+2000 ienes são 57 reais (2024)<br />
+57 reais pra acampar por alguns dias, parece bem barato ksks<br />
+<br />
+12:08:<br />
+Tão grande e com muito espaço pra acampar ksks, longe dos outros acampantes, muito bom :3<br />
+E o Monte Fuji fica lindo visto do acampamento, tão grande :3 <3<br />
+<br />
+13:12:<br />
+Tudo montadinho :3<br />
+Só não sei o que era aquele negócio verde que ela inflou com a boca kkkkk<br />
+<br />
+13:30:<br />
+Vamo de lámen mesmo então ksks, é o que tem<br />
+<br />
+13:54:<br />
+A Saitou pedindo pra Rin comprar um almoço pra ela kkkkk, toda folgada ksks<br />
+<br />
+13:56:<br />
+"Morre diaba" kkkkkkk, essa dublagem tá só os memes eim ksks<br />
+Parece a dublagem de Rick and Morty ksks<br />
+<br />
+13:57:<br />
+Legenda: "Você é quem vai morrer se eu te pegar, parça."<br />
+Dublagem em Português: "Você que já tá morta meu bem."<br />
+<br />
+Os dois tão de parabéns kkkkkkkkk<br />
+<br />
+14:00:<br />
+A Rin com a cara no teclado kkkkk<br />
+A legenda passou perto do som original kkkkk:<br />
+"Ah! O que você kurashuwakushyuakiwashubapiiiiii?!"<br />
+Kkkkkk<br />
+<br />
+14:08:<br />
+Legenda: "Agora eu morri, vagabunda."<br />
+"Eu morri de fome, palhaça."<br />
+<br />
+Carai, maluco legendador é brabo kkkkkk, com esses xingamentos ksks<br />
+<br />
+14:15:<br />
+Tão fofas, elas ficam fofas até brigando de brincadeira kkkkk :3<br />
+<br />
+15:48:<br />
+Dublado em Português: "Fui tapeada!"<br />
+Originalmente falada pelo Pica Pau kkkkk<br />
+Essa dublagem tá uns memes hoje eim ksks<br />
+<br />
+16:18:<br />
+Ursos fofinhos ksks<br />
+<br />
+16:25:<br />
+O primeiro não conseguiu pegar ela kkkkk, que bom 7w7<br />
+<br />
+16:28:<br />
+Mas o segundo conseguiu, e deu uma cabeçada na barriga da Rin kkkkk, tadinha ;-;<br />
+Nocaute, touch down! kkkk<br />
+<br />
+16:30:<br />
+"Cachorrinhos fofinhos, ai ti gacinha :3"<br />
+Que coisa fofa essa Rin dublada kkkkkk<br />
+Derreti com esse "ai ti gacinha", mds kkkk :3<br />
+E a original também ksks, "Yoshi Yoshi, kono kawaii inu domo ne"<br />
+<br />
+16:41:<br />
+A Rin rugindo pro que iria ser um leão kkkkk, fofinha :3<br />
+<br />
+17:01:<br />
+Que foto linda do Monte Fuji de ponta cabeça :3<br />
+<br />
+17:11:<br />
+A Saitou vendo as fotos da Rin ksks, e a Rin quase virando almoço de cachorro kkkkk<br />
+<br />
+17:21:<br />
+Dublaram até o cachorro kkkkkkkk<br />
+<br />
+17:29:<br />
+"Cê prefere ficaí no bem bom né?"<br />
+Que fofura a Saitou dublada :3 <3<br />
+<br />
+17:32:<br />
+"Passear?" kkkkkk, fofura :3<br />
+E o Chikuwa levantando ksks<br />
+<br />
+17:35:<br />
+Original em Japonês: "Cheio de energia agora.<br />
+Com bastante energia hein?"<br />
+<br />
+Dublado em Português: "Quanta energia...<br />
+Seu egoísta!"<br />
+<br />
+Aí achei mancada com o Chikuwa, tadinho, não merecia isso ;-;<br />
+A Saitou falando toda fofinha com ele ksks<br />
+<br />
+17:45:<br />
+Muito bom pra caminhar kkkkk, um vento forte que mds kkkkkkk, tadinhos ;-;<br />
+<br />
+18:10:<br />
+A Saitou respondeu a foto dos cachorros que a Rin mandou ksks:<br />
+"O meu virou um cachorro quente assim que eu desviei o olhar"<br />
+Kkkkkk<br />
+<br />
+Pra quem só assiste dublado sem legenda:<br />
+"Que fofinho o cachorrinho! :3"<br />
+<br />
+19:01:<br />
+O Monte Fuji rosa :3<br />
+<br />
+19:29:<br />
+A Rin de cara feia não querendo entrar no clube ;-;<br />
+Não querendo abdicar do acampamento solitário dela ;-;<br />
+<br />
+19:52:<br />
+A Rin ouvindo a voz fantasma da Nadeshiko na cabeça dela kkkkkk<br />
+<br />
+19:54:<br />
+"Sai do meu pé chulé" kkkkkkkkkkk, essa dublagem ksks<br />
+E era a Nadeshiko em pessoa mesmo ksks, não era uma voz na cabeça da Rin ksks<br />
+<br />
+20:11:<br />
+"Ah, você já jantou?"<br />
+Tão fofa a dublagem da Nadeshiko :3<br />
+<br />
+20:20:<br />
+"Vô faze uma sopa pá nois, faze uma sopa... Faze uma sopa pá nois..."<br />
+Kkkkkk, só pensei nisso ksks<br />
+<br />
+20:30:<br />
+Esse encerramento é muito bom ksks :3<br />
+E a chuvinha boa e o acampamento com a Nadeshiko<br />
+<br />
+21:30:<br />
+Elas vendo o nascer do sol lindo :3<br />
+E esse encerramento faz parte do episódio, que mostra a Rin e a Nadeshiko acampando juntas<br />
+Mas vai ficar como encerramento por toda a temporada<br />
+<br />
+22:13:<br />
+Parece aquele doce Brasileiro de misturar, que vem com uma pazinha, uma massa tipo de bolo<br />
+E um molho de chocolate pra você colocar e misturar ksks<br />
+Na verdade era uma manteiga de amendoim pra comer, era a Nucita, doce de infância ksks<br />
+https://nucita.com.br/wp-content/uploads/2018/02/trad1-home.png<br />
+<br />
+22:50:<br />
+Muito bom :3</span>
+	</h2>
+</div>
+
+</center>
+
+<center>
+
+<!-- "41 - Yuru Camp△ EP03 "Mount Fuji and Relaxed Hot Pot Camp" (22:03 16/06/2024)" tab -->
+<a id="watched_thing_2024_41_anchor" name="41 - Yuru Camp△ EP03 "Mount Fuji and Relaxed Hot Pot Camp" (22:03 16/06/2024)"></a>
+<div id="watched_thing_2024_41" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_light_green">
+		<p><br /><b id="watched_thing_2024_41_title">41 - Yuru Camp△ EP03 "Mount Fuji and Relaxed Hot Pot Camp" (22:03 16/06/2024): <i class="fas fa-eye"></i></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
+			<!-- "Watched things in 2024" button -->
+	<span id="button_4" class="tab_button">		
+
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
+		</h2>
+	</button>
+	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<span class="text_light_green">Number: 41<br />
+Media type number: 5<br />
+<br />
+Media:<br />
+ゆるキャン△<br />
+Yuru Camp△<br />
+<br />
+Title:<br />
+EP03 "Mount Fuji and Relaxed Hot Pot Camp"<br />
+<br />
+Type:<br />
+Animes<br />
+<br />
+Times:<br />
+2024-06-16T22:03:16Z<br />
+19:03 16/06/2024<br />
+<br />
+File name:<br />
+41. Animes (19:03 16/06/2024)<br />
+<br />
+States:<br />
+Watched dubbed<br />
+Re-watched two times (2x)<br />
+Commented<br />
+<br />
+Comment:<br />
+<br />
+Título:<br />
+Yuru Camp△ EP03 "Monte Fuji e Ensopado Relaxado" (Re-assistido 1x)<br />
+<br />
+Tempo:<br />
+01:56 19/05/2022<br />
+<br />
+00:04:<br />
+Nadeshiko procurando no correio :3<br />
+<br />
+00:45:<br />
+Barraca que passa frio ;-;<br />
+<br />
+01:07:<br />
+E assim ela foi acampar com a Rin, Rin-mou (:3)<br />
+<br />
+02:30:<br />
+Vai lá, esquecendo a comida kkkkk<br />
+<br />
+05:26:<br />
+Broto de feijão?<br />
+Também tô preocupado com a sopinha kkkkkkkk<br />
+<br />
+05:40:<br />
+"Tia do Kiwi" kkkkkkk<br />
+<br />
+06:30:<br />
+Tô precisando desses aquecedores portáteis nesse frio de 5 graus que tem feito aqui kkkkkkk<br />
+<br />
+07:05:<br />
+Fofinha Nadeshiko :3<br />
+"Aí sim eu vi vantagem" ksksk<br />
+<br />
+07:31:<br />
+"Muito obrigada senhora" kkkkkkkk<br />
+<br />
+08:18:<br />
+Distraída, caiu, tadinha ksks<br />
+<br />
+09:01:<br />
+Que filtro amarelo lindo do pôr-do-sol :3<br />
+<br />
+09:29:<br />
+Botaram a câmera dentro da sopa kkkkk<br />
+"Ôh sopa você tá pronta?" kkkkkkk, tão fofinha :3<br />
+<br />
+09:45:<br />
+"Tia da degustação do mercado" kkkkkkkkkk<br />
+<br />
+09:58:<br />
+"Minha filha" kkkkkkk<br />
+E eu sempre voltando no original pra ver, bom, a frase original kkkkk<br />
+<br />
+10:04:<br />
+"Bora enche o buxo" kkkkkkkk, adorei<br />
+<br />
+10:32:<br />
+Kkkkkkk, vovozinha<br />
+<br />
+10:39:<br />
+"Que loucura."<br />
+Muito pimentão as vezes não é bom kkkkkkk, vão ficar vermelhas ;-;<br />
+<br />
+10:51:<br />
+2 pingos de suor<br />
+<br />
+11:02:<br />
+5 pingos, muita pimenta ;-;<br />
+<br />
+11:08:<br />
+Kkkkkkkk, mds<br />
+<br />
+11:23:<br />
+"Saco sem fundo" kkkkk<br />
+<br />
+11:37:<br />
+Boa de garfo também kkkkk<br />
+<br />
+11:57:<br />
+Wallpaper<br />
+<br />
+12:41:<br />
+Sopinha no acampamento :3, e com as outras meninas<br />
+<br />
+12:55:<br />
+Materiais = comida kkkkkk<br />
+<br />
+Vi a dublagem original e a Rin só falava que ela não consegue comer tanto assim, sobre o arroz<br />
+E depois ela fala que a Nadeshiko realmente faz parecer bom a comida<br />
+E a Dublagem Brasileira descendo o p4u na Nadeshiko por comer demais kkkkkkkkk<br />
+Será que é por isso ser uma coisa mal vista no Brasil? Comer demais<br />
+<br />
+13:09:<br />
+"Boca nervosa" kkkkkk<br />
+<br />
+13:20:<br />
+A música mudando pra música de celular, que lindo :3, edição e metalinguagem<br />
+<br />
+13:35:<br />
+Neblina no Fuji<br />
+<br />
+14:30:<br />
+O Narrador da Rádio ksksks<br />
+<br />
+15:09:<br />
+"Cachorrinhos fofinhos ai ti gacinha" :3<br />
+<br />
+15:42:<br />
+"Descansando os meus olhinhos" kkkkk :3, fofinha<br />
+<br />
+16:16:<br />
+"Arram méeeh" kkkkkk UwU<br />
+<br />
+17:34:<br />
+Que lindo :3<br />
+<br />
+18:31:<br />
+Aquecedorzim portátil, faz tanta falta...<br />
+<br />
+19:55:<br />
+"Daqui uns 6 meses" kkkkkk<br />
+<br />
+20:33:<br />
+"Bela adormecida" essa Rin dublada tá muito debochada kkkkk, eu acho<br />
+<br />
+22:57:<br />
+"Xonô no Monte Fuji eim" kkkkkk<br />
+<br />
+23:07:<br />
+"Paixonite aguda" kkkkkk<br />
+<br />
+23:15:<br />
+Miss Fuji kkkkkkk, Fujiko kkkk<br />
+<br />
+Comment:<br />
+<br />
+Título:<br />
+Yuru Camp△ EP03 "Monte Fuji e Ensopado Relaxado" (Re-assistido 2x)<br />
+<br />
+Tempo:<br />
+19:03 16/06/2024<br />
+<br />
+00:00:<br />
+A Nadeshiko procurando a barraca na despensa ksks, mais que despensa pequena eim ksks, é só um quartinho<br />
+<br />
+00:29:<br />
+E caiu tudo em cima dela ksks, tadinha ;-;<br />
+A bolinha caindo por último é o clássico que acontece quando várias coisas caem em cima de alguém ksks<br />
+<br />
+00:47:<br />
+Barraca meio magra essa daí né ksks, se passar um ventin treme de frio kkkkk<br />
+<br />
+01:11:<br />
+A Saitou dedurando onde a Rin tá acampando ksks<br />
+<br />
+01:25:<br />
+A Nadeshiko pedindo carona pra irmã dela ksks, levando uma bacia cheia de ingredientes ksks, fofinha :3<br />
+<br />
+01:36:<br />
+Nadeshiko (dublada):<br />
+"A melhor irmã do mundo é a minha!" ksks :3<br />
+<br />
+01:52:<br />
+Vários cenários dignos de papel de parede eim ksks<br />
+<br />
+02:09:<br />
+Que linda a vista do Monte Fuji :3<br />
+<br />
+02:31:<br />
+A Nadeshiko vai lá fazer o check-in :3<br />
+<br />
+02:41:<br />
+A Sakura já até suspira porque sabe que a Nadeshiko esqueceu o dinheiro kkkkk, ela já conhece a irmã que tem kkkkk<br />
+<br />
+02:58:<br />
+A Nadeshiko toda perdidinha procurando o lugar do acampamento kkkkk, e já tá ficando de tarde<br />
+<br />
+03:25:<br />
+Como ela reconhece a Rin só pela cabana e cadeira né? ksks<br />
+<br />
+03:34:<br />
+"Faze uma sopa pá nois" ksks<br />
+E o Monte Fuji rosa :3<br />
+<br />
+03:38:<br />
+Amo essa abertura <3<br />
+<br />
+04:49:<br />
+Os créditos da Fansub Anirrent e Fênixsub aqui ksks, os links do site, muito bom ksks<br />
+<br />
+05:09:<br />
+Tão linda a Rin :3<br />
+<br />
+Rin (dublada):<br />
+"Sopinha" ksks<br />
+<br />
+05:13:<br />
+Nadeshiko:<br />
+"Sopinha de guioza" :3<br />
+<br />
+05:22:<br />
+Ela cantando os ingredientes ksks, tão fofinha essa Nadeshiko :3<br />
+<br />
+05:34:<br />
+Agora eu tô preocupado com essa sopa kkkkk<br />
+<br />
+05:53:<br />
+(dublado)<br />
+Rin: "A Tia do Kiwi" kkkkk<br />
+<br />
+06:01:<br />
+A Nadeshiko não tem barraca :(<br />
+<br />
+06:16:<br />
+Os campistas que dormem no próprio trailer ainda são campistas ksks<br />
+<br />
+06:30:<br />
+"Umas nove ela" ksks<br />
+Nadeshiko pegou um resfriado, tadinha ;-;, tá frio né<br />
+Aqui tá um calor ksks, quando eu re-assisti esse episódio pela primeira vez tava uns 5 graus e de noite ainda ksks<br />
+Foi top re-assistir o episódio aquele dia ksks, e hoje também :3<br />
+Comendo bolinho de limão gostoso e bebendo uma coquinha de lata :3 <3<br />
+<br />
+Re-assistido 1x:<br />
+01:56 19/05/2022<br />
+<br />
+Mais de dois anos ksks, faiz tempo ksks (Galo Cego)<br />
+<br />
+06:41:<br />
+Aquecedores portáteis, muito úteis no frio :3<br />
+<br />
+06:55:<br />
+Nadeshiko:<br />
+"Mas eu tô só retribuindo por aquele dia" (dublado)<br />
+<br />
+Nadeshiko fofinha ksks :3<br />
+<br />
+07:10:<br />
+Nadeshiko:<br />
+"Não pode espiar enquanto não tiver pronto viu?" (dublado)<br />
+<br />
+Que fofinha :3 <3<br />
+<br />
+07:14:<br />
+(dublado)<br />
+Rin: "Aí sim eu vi vantagem" ksks<br />
+<br />
+07:16:<br />
+"Nos olhos" kkkkk<br />
+<br />
+07:25:<br />
+O narrador ensinando a onde colocar os aquecedores portáteis ksks<br />
+<br />
+07:34:<br />
+Nadeshiko (dublada):<br />
+"Muito obrigada senhora" kkkkkk, que fofinha :3<br />
+<br />
+07:48:<br />
+A Nadeshiko ficou quentinha e já quer dormir kkkkk, vai esquecer a sopa ligada desse jeito ksks<br />
+<br />
+07:55:<br />
+Legendas:<br />
+Licores Kawamoto<br />
+Filial de Minobu<br />
+<br />
+Essas legendas gravadas no vídeo do episódio ficam lindas ksks <3<br />
+<br />
+08:00:<br />
+A Chiaki entregando currículo :3<br />
+<br />
+08:09:<br />
+Aquelas clássicas perguntas de emprego ksks<br />
+<br />
+08:22:<br />
+Ela toda séria e ele de boa ksks<br />
+<br />
+08:29:<br />
+Ela indo falar com ele, se distrai e cai de bunda dentro da caixa kkkkk, tadinha ;-;<br />
+<br />
+08:50:<br />
+Chiaki:<br />
+"Eu tô morta com farofa" (dublado) ksks<br />
+<br />
+08:56:<br />
+Japonês:<br />
+Chiaki: "Saiyou!"<br />
+Aoi: "Kochi mo ya"<br />
+<br />
+Que fofinhas ksks :3<br />
+<br />
+09:03:<br />
+Agora elas vão ter dinheiro pra comprar as coisas do clube :3<br />
+<br />
+Legendas (vídeo):<br />
+Boas-vindas à Loja de Bebidas da Sorte<br />
+<br />
+Essa legenda gravada no vídeo ficou boa ksks<br />
+<br />
+09:14:<br />
+Agora que elas tem a Nadeshiko como nova integrante, elas vão acampar no inverno :3<br />
+<br />
+09:25:<br />
+As montanhas do acampamento de noite :3<br />
+E o lampião ou lanterna da Rin pendurada no bastão ksks, ficou legal :3<br />
+<br />
+09:32:<br />
+Nadeshiko (dublada):<br />
+"Vamo vê vamo vê, ôh sopaa você tá prontaa?"<br />
+<br />
+Que fofura essa Nadeshiko dublada ksks :3 <3<br />
+Colocaram uma câmera dentro da sopa kkkkk, dentro da panela ksks, vai derreter a câmera ksks<br />
+<br />
+Japonês:<br />
+"Sate, sate, soro soro iikana?"<br />
+<br />
+Muito fofo também ksks :3<br />
+<br />
+09:38:<br />
+Rin (dublada):<br />
+"Parece ardido"<br />
+<br />
+Parece mesmo ksks, bem apimentado, esse molho vermelho<br />
+<br />
+09:47:<br />
+Nadeshiko (dublada):<br />
+"Você aceitaria uma sopinha levemente apimentada senhora?<br />
+Tá uma delícia você não vai se arrepender"<br />
+<br />
+A Nadeshiko virou a tia da degustação do mercado kkkkkk<br />
+<br />
+09:59:<br />
+(dublado)<br />
+Nadeshiko:<br />
+"Pode pegar, e pode repetir viu minha filha?"<br />
+<br />
+Agora virou uma vovózinha kkkkkk<br />
+<br />
+10:05:<br />
+Nadeshiko (dublada):<br />
+"Beleza bora enchê o bucho!"<br />
+<br />
+Pra que isso dublagem Brasileira? kkkkk<br />
+O original em Japonês era "Muito bem, vamos comer!"<br />
+Ficam tirando a Nadeshiko de comilona, tadinha ;-;<br />
+Ela é mas não tanto assim ksks<br />
+<br />
+10:33:<br />
+Nadeshiko (dublada):<br />
+"É pra não pegar friagem é minha filha?"<br />
+<br />
+Curtiu o papel de vovózinha kkkkk<br />
+Bizarro como os Japoneses entendem essa mudança de sotaque e forma de falar tão sutilmente ksks<br />
+De tia da degustação do supermercado pra avó do interior kkkk, as duas tem pouca diferença, mas eles notam<br />
+<br />
+10:45:<br />
+O pimentão vermelho dá um sabor gostoso... Deixa o coração quentinho :3<br />
+<br />
+10:57:<br />
+A gota de suor já caindo na testa da Nadeshiko kkkkk<br />
+<br />
+11:02:<br />
+Deixa o coração quentinho...<br />
+<br />
+11:05:<br />
+Bem quentinho...<br />
+<br />
+11:08:<br />
+Muito quentinho... 🫠<br />
+*derretendo de calor* kkkkkk<br />
+<br />
+Nesse a dublagem Brasileira ficou bem melhor ksks<br />
+"Ai que calor" é melhor do que "Está quente" ksks<br />
+<br />
+11:18:<br />
+A Nadeshiko fez a caixa inteira de guioza O_O<br />
+Os cinquenta bolinhos, mds kkkkk<br />
+<br />
+11:26:<br />
+E ela quer arroz pra acompanhar ainda kkkkkk, quanta fome ksks<br />
+<br />
+11:29:<br />
+Rin (dublada):<br />
+"Meu Deus é um saco sem fundo"<br />
+<br />
+Tirando a Nadeshiko de comilona, tadinha dela, ela não merece isso :( ;-;<br />
+<br />
+11:38:<br />
+Rin (dublada):<br />
+"É... Ela é boa de prato"<br />
+<br />
+E boa de garfo também ksks, ela realmente faz parecer que tá gostoso :3<br />
+<br />
+11:55:<br />
+Cena digna de papel de parede ksks, já tirei print<br />
+<br />
+12:03:<br />
+A Rin pedindo desculpa, que fofa :3<br />
+<br />
+12:13:<br />
+Rin (dublada):<br />
+"Mas aí eu... Fiz uma cara mó feia pra você"<br />
+<br />
+Tadinha da Rin ;-;<br />
+<br />
+12:44:<br />
+Nadeshiko (dublada):<br />
+"Comer sopinha no acampamento" :3<br />
+<br />
+Que fofinha ksks :3<br />
+<br />
+12:56:<br />
+Materiais = comida kkkkk<br />
+Comida pra Nadeshiko comer mais ksks, ela comeu tudo a sopa ksks<br />
+<br />
+13:10:<br />
+E ainda vai comer salgadinho kkkkk<br />
+<br />
+Rin (dublada):<br />
+"Êê boca nervosa" ksks, tadinha da Nadeshiko ;-;<br />
+<br />
+13:15:<br />
+Agora a música do encerramento sem ser o encerramento ksks, e sim nos 13 minutos<br />
+Com essa linda vista do Monte Fuji bem grande :3<br />
+<br />
+13:23:<br />
+Muito legal a transição da música do áudio do anime pro áudio do celular da Rin ksks, a rádio de música do fim de semana<br />
+Bem interessante ksks, essa metalinguagem do anime e a transição<br />
+E também mudaram a letra da música original do encerramento pra pôr no episódio<br />
+<br />
+13:28:<br />
+Tão fofinhas e lindas elas de cobertor :3 <3<br />
+E a Rin fica linda com esse cobertor branco e preto dela ksks :3<br />
+A luz amarelada da lanterna<br />
+Essas são as cenas que foram usadas de inspiração pra fazer o vídeo do encerramento ksks<br />
+Só que agora não tem chuvinha<br />
+<br />
+13:53:<br />
+E já com soninho :3<br />
+Será que elas vão dormir aí fora? ksks<br />
+<br />
+14:22:<br />
+Muito interessante ksks, o acampamento de Fumoto é um lugar real no Japão<br />
+E usaram ele de inspiração pra fazer os cenários do anime, ficaram muito lindos<br />
+<br />
+14:35:<br />
+O narrador da rádio de música falando ksks, muito legal e interessante ksks<br />
+Dá um pouco mais de lore pra música do encerramento ksks<br />
+<br />
+15:00:<br />
+A Rin fofinha mimindo na barraca dela :3<br />
+A atmosfera noturna do anime bem calma e interessante, misteriosa kk<br />
+<br />
+15:09:<br />
+"Cachorrinhos fofinhos ai ti gacinha" :3<br />
+<br />
+15:19:<br />
+A Nadeshiko e a irmã dela mimindo no carro ksks<br />
+Como elas deixaram o aquecedor do carro ligado?<br />
+Sem o motor estar ligado ksks, vai acabar a bateria ksks<br />
+<br />
+15:46:<br />
+"Eu tô descansando... Os meus olhinhos..." kkkkk<br />
+Que fofura essa Nadeshiko :3<br />
+<br />
+16:08:<br />
+Ela quer tudo kkkkkk, quer comer de tudo ksks, bêbada de sono, tadinha ksks<br />
+<br />
+16:17:<br />
+"Arram méeeh" kkkkkk UwU :3<br />
+Ela balançando pros lados kkkkk<br />
+<br />
+16:45:<br />
+Ela levando o cobertôzin pra barraca da Rin :3<br />
+Fofinha ksks<br />
+<br />
+16:59:<br />
+Nadeshiko (dublada):<br />
+"Ai tá tudo molhado" kkkkk :3<br />
+<br />
+17:27:<br />
+Que fofura ela no cobertor, sorrindo, e vendo o sol nascer ksks<br />
+<br />
+17:40:<br />
+(dublado)<br />
+"Que radiante" :3<br />
+<br />
+17:55:<br />
+A Nadeshiko indo mimir do lado da Rin ksks, que fofinha :3<br />
+<br />
+18:25:<br />
+A Rin vendo as fotos que ela tirou recentemente, dos acampamentos :3<br />
+<br />
+18:36:<br />
+Aquecedorzim portátil no frio é bom né ksks, todo vermelho ksks<br />
+<br />
+18:53:<br />
+Saitou (dublada):<br />
+"Que sorrisinho é esse aí eim dona Rin"<br />
+<br />
+Kkkkkk, a Rin se atrapalhando, quase derrubando o celular, com vergonha kkkk<br />
+E bem na foto que a Rin tirou da Nadeshiko dormindo fofinha kkkkk<br />
+A música parando bem na hora kkkkk, que cena meus amigos ksks<br />
+<br />
+19:09:<br />
+A Saitou que armou tudo pra Nadeshiko ir acampar lá ksks<br />
+<br />
+19:25:<br />
+Vantagens de acampar no inverno:<br />
+Não tem insetos, não tem suor, não tem muita gente, é tranquilo<br />
+As fogueiras e termas são gostosas, dá pra ver melhor e mais longe<br />
+E as sopas são uma delícia<br />
+<br />
+20:03:<br />
+A Saitou vai esperar um pouquinho pra ir acampar kk<br />
+Daqui uns seis meses kkkkk, quando o inverno acabar<br />
+<br />
+20:09:<br />
+Ela já querendo saber o próximo local de acampamento da Rin, pra contar pra Nadeshiko kkkkkk<br />
+<br />
+20:36:<br />
+Rin (dublada):<br />
+"Acorda Bela Adormecida" ksks<br />
+<br />
+Nadeshiko:<br />
+"Eu tô só descansando... Meus olhos Rin..."<br />
+<br />
+Que fofinha ksks :3<br />
+<br />
+20:54:<br />
+Original em Japonês:<br />
+"Acorde, Nadeshiko"<br />
+<br />
+Bem calminha e normal ksks, relaxada<br />
+<br />
+Dublado em Português:<br />
+"Levanta! Nadeshiko!"<br />
+<br />
+Muito brava e irritada, rude, mandaram mal nessa parte.<br />
+<br />
+21:11:<br />
+O encerramento bem fofinho com o acampamento delas na chuvinha boa :3<br />
+<br />
+22:32:<br />
+Cantinho do Acampamento :3<br />
+E as fotos que a Nadeshiko tirou no Monte Fuji ksks, e no acampamento com a Rin<br />
+<br />
+22:58:<br />
+"Xonô no Monte Fuji eim" kkkkkk<br />
+<br />
+23:11:<br />
+"Ela tá Paixonite aguda" kkkkkk<br />
+<br />
+23:17:<br />
+"Miss Fuji" kkkkkkk, "Fujiko" kkkk<br />
+"Pode chamar" ksks :3</span>
+	</h2>
+</div>
+
+</center>
+
+<center>
+
 <!-- "3 - FAGames:   NEW OBJECTIVES - DayZ (08:19 14/01/2024)" tab -->
 <a id="watched_thing_2024_3_anchor" name="3 - FAGames:   NEW OBJECTIVES - DayZ (08:19 14/01/2024)"></a>
 <div id="watched_thing_2024_3" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
@@ -2618,14 +3697,11 @@ Assinado: Clube de Atividades ao Ar Livre</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -2744,14 +3820,11 @@ FA vai ter que recuar por causa da fome ksks, que pena, desistir da treta :(</sp
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -2923,14 +3996,11 @@ E realmente acabou essa história do "Em Uma Música"...</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -2988,14 +4058,11 @@ Acho que falta mulheres fazendo vídeo de COD no YouTube ksks</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3052,14 +4119,11 @@ Esse vídeo foi muito bom e muito engraçado kkkkk, gostei muito ksks</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3116,14 +4180,11 @@ Esse vídeo ficou muito bom, mds kkkk, amei ❤</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3181,14 +4242,11 @@ Ele disse o que todos nós queríamos falar pra Rayana ksks, ela é muito linda 
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3246,14 +4304,11 @@ Acho que falta mulheres como ela representando as mulheres no COD, no YouTube ks
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3311,14 +4366,11 @@ Muito bom esse vídeo ksks, adorei ksks</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3375,14 +4427,11 @@ Muito boa essa partida, 27 kills, mds kkkkk, Rayana foi god demais nessa partida
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3439,14 +4488,11 @@ Muito bom, nossa kkkkk, primeiro squad feminino pegando nuke kkkkk, elas jogam d
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3503,14 +4549,11 @@ Muito boa essa partida, mds kkkk, adorei, muita tensão no barco no final kkkkkk
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3568,14 +4611,11 @@ Esse final foi muito bom ksks, vídeo incrível como sempre Ray ❤</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3633,14 +4673,11 @@ Que partida insana ksks, adorei ksks</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3698,14 +4735,11 @@ Como sempre, um vídeo incrível Ray ❤</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3766,14 +4800,11 @@ Ah, na verdade confundi com o Fabinho da Scailaiti de ORR kkkkk (Scar de ouro)</
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3831,14 +4862,11 @@ Um derrubava o outro finalizava kkkkkk, Ray joga muito ❤</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3896,14 +4924,11 @@ A Ray joga demais ❤</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -3964,14 +4989,11 @@ Quatro bala boa nesse final ksks</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -4028,14 +5050,11 @@ Que play massa que fizeram aí de sniper ksks, muita sofrência no final ksks, g
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -4093,14 +5112,11 @@ E que pena que eles perderam no final 😔, do nada brota um cara sendo revivido
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -4158,14 +5174,11 @@ Ray representando o Brasil no evento e nas partidas ❤</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -4229,14 +5242,11 @@ Será que a Rayana me nota? ksks</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -4293,14 +5303,11 @@ Muito bom, que time gente, jogam demais kkkkk, adorei as plays e as calls boas k
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -4357,14 +5364,11 @@ Muito bom esse final, mds kkkkk, o Pablinho e o MH saindo no soco kkkk, a zona f
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -4422,14 +5426,11 @@ Por que você tem que dar tag no inimigo derrubado antes do seu amigo finalizar?
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -4487,14 +5488,11 @@ Ray joga demais, mds kkkkk, e os outros dois também, Sena e Thiago ksks</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -4591,14 +5589,11 @@ Que triste que não vai ter PVP no DayZ Vanilla do OrigemZ, fiquei triste :(<br 
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -4720,14 +5715,11 @@ Bora pra safe que o hoje o dia foi cheio ksks</span>
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -4839,14 +5831,11 @@ Os cara sem arma nenhuma no corpo, mds ksks<br />
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Watched things in 2024" button -->
-	<span id="button_4" class="tab_button">
-		
+	<span id="button_4" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Watched things in 2024: <i class="fas fa-eye"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('watched_things');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Watched things in 2024: <i class="fas fa-eye"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -4924,6 +5913,113 @@ A Ray com 23 baixas e o Aryas com 5 kkkkk, a Ray realmente carregou ele ksks</sp
 
 <center>
 
+<!-- "9 - I finished revising the chapter four of my story "The Life of Littletato" (23:42 03/06/2024)" tab -->
+<a id="task_description_9_2024_anchor" name="9 - I finished revising the chapter four of my story "The Life of Littletato" (23:42 03/06/2024)"></a>
+<div id="task_description_9_2024" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_light_green">
+		<p><br /><b id="task_description_9_2024_title">9 - I finished revising the chapter four of my story "The Life of Littletato" (23:42 03/06/2024): <i class="fa-solid fa-list-check"></i></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
+			<!-- "Completed tasks" button -->
+	<span id="button_6" class="tab_button">		
+
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
+		</h2>
+	</button>
+	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<span class="text_light_green">Number: 9<br />
+Task type number: 1<br />
+<br />
+Title:<br />
+I finished revising the chapter four of my story "The Life of Littletato"<br />
+<br />
+Type:<br />
+Stories<br />
+<br />
+Times:<br />
+2024-06-03T23:42:03Z<br />
+20:42 03/06/2024<br />
+<br />
+File name:<br />
+9. Stories (20:42 03/06/2024)<br />
+<br />
+States:<br />
+First story chapter revised in year<br />
+<br />
+Task description:<br />
+I finished revising the chapter four of my story "The Life of Littletato".<br />
+<br />
+The chapter with the title:<br />
+The New Year and the Relaxing Anime<br />
+<br />
+I started at 19:22, and stopped at 20:40.<br />
+I revised for 1 hour, 17 minutes, and 55 seconds (01:17:55).<br />
+<br />
+Totaling 4 hours, 2 minutes, and 32 seconds (04:02:32).</span>
+	</h2>
+</div>
+
+</center>
+
+<center>
+
+<!-- "10 - I finished translating the chapter four of my story "The Life of Littletato" from Portuguese to English (21:04 19/06/2024)" tab -->
+<a id="task_description_10_2024_anchor" name="10 - I finished translating the chapter four of my story "The Life of Littletato" from Portuguese to English (21:04 19/06/2024)"></a>
+<div id="task_description_10_2024" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_light_green">
+		<p><br /><b id="task_description_10_2024_title">10 - I finished translating the chapter four of my story "The Life of Littletato" from Portuguese to English (21:04 19/06/2024): <i class="fa-solid fa-list-check"></i></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
+			<!-- "Completed tasks" button -->
+	<span id="button_6" class="tab_button">		
+
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
+		</h2>
+	</button>
+	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<span class="text_light_green">Number: 10<br />
+Task type number: 2<br />
+<br />
+Title:<br />
+I finished translating the chapter four of my story "The Life of Littletato" from Portuguese to English<br />
+<br />
+Type:<br />
+Stories<br />
+<br />
+Times:<br />
+2024-06-19T21:04:49Z<br />
+18:04 19/06/2024<br />
+<br />
+File name:<br />
+10. Stories (18:04 19/06/2024)<br />
+<br />
+Task description:<br />
+I finished translating the chapter four of my story "The Life of Littletato" from Portuguese to English.<br />
+<br />
+The chapter with the title:<br />
+The New Year and the Relaxing Anime<br />
+<br />
+I started at 17:22, and stopped at 18:04.<br />
+I translated for 42 minutes and 14 seconds (42:14).<br />
+<br />
+Totaling 4 hours, 27 minutes, and 42 seconds (04:27:42).</span>
+	</h2>
+</div>
+
+</center>
+
+<center>
+
 <!-- "1 - I edited a video a little on "Sony Vegas" (05:40 16/01/2024)" tab -->
 <a id="task_description_1_2024_anchor" name="1 - I edited a video a little on "Sony Vegas" (05:40 16/01/2024)"></a>
 <div id="task_description_1_2024" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
@@ -4934,14 +6030,11 @@ A Ray com 23 baixas e o Aryas com 5 kkkkk, a Ray realmente carregou ele ksks</sp
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Completed tasks" button -->
-	<span id="button_6" class="tab_button">
-		
+	<span id="button_6" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Completed tasks: <i class="fa-solid fa-list-check"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -5011,14 +6104,11 @@ Link of the video on YouTube:<br />
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Completed tasks" button -->
-	<span id="button_6" class="tab_button">
-		
+	<span id="button_6" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Completed tasks: <i class="fa-solid fa-list-check"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -5144,14 +6234,11 @@ Sub-videos:<br />
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Completed tasks" button -->
-	<span id="button_6" class="tab_button">
-		
+	<span id="button_6" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Completed tasks: <i class="fa-solid fa-list-check"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -5222,14 +6309,11 @@ I also made it create files of social network posts for the "New Year" folder, w
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Completed tasks" button -->
-	<span id="button_6" class="tab_button">
-		
+	<span id="button_6" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Completed tasks: <i class="fa-solid fa-list-check"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -5319,14 +6403,11 @@ With new dictionaries and JSON files to be created and written, respectively.</s
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Completed tasks" button -->
-	<span id="button_6" class="tab_button">
-		
+	<span id="button_6" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Completed tasks: <i class="fa-solid fa-list-check"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -5421,6 +6502,127 @@ After that, the sub-class "Show_Story_Information" is imported as a module and i
 
 <center>
 
+<!-- "8 - I programmed in Python a little, coding my modules Stories, PHP, and Tasks (08:18 05/05/2024)" tab -->
+<a id="task_description_8_2024_anchor" name="8 - I programmed in Python a little, coding my modules Stories, PHP, and Tasks (08:18 05/05/2024)"></a>
+<div id="task_description_8_2024" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_light_green">
+		<p><br /><b id="task_description_8_2024_title">8 - I programmed in Python a little, coding my modules Stories, PHP, and Tasks (08:18 05/05/2024): <i class="fa-solid fa-list-check"></i></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
+			<!-- "Completed tasks" button -->
+	<span id="button_6" class="tab_button">		
+
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
+		</h2>
+	</button>
+	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<span class="text_light_green">Number: 8<br />
+Task type number: 4<br />
+<br />
+Title:<br />
+I programmed in Python a little, coding my modules Stories, PHP, and Tasks<br />
+<br />
+Type:<br />
+Python<br />
+<br />
+Times:<br />
+2024-05-05T08:18:41Z<br />
+05:18 05/05/2024<br />
+<br />
+File name:<br />
+8. Python (05:18 05/05/2024)<br />
+<br />
+Task description:<br />
+I programmed in Python a little, coding my modules Stories, PHP, and Tasks.<br />
+<br />
+In the "Stories" module, I greatly improved the sub-class "Post".<br />
+I created a root dictionary containing all the data the sub-class will utilize.<br />
+I improved the definition of the chapter to be posted, improving its chapter dictionary.<br />
+I renamed the "Create_Cover" method to "Create_The_Covers".<br />
+I greatly improved it, and separated its function of creating covers into a new method called "Create_Cover".<br />
+The root method only has the job of asking if the user wants to skip the cover creation process.<br />
+The new "Create_Cover" method lists the chapters for which their covers will be created.<br />
+This allows the sub-class to be executed as a module, by the "Update_Chapter_Covers" sub-class.<br />
+The method does what its old method did, but with checks of the execution mode as a module.<br />
+I fixed the "Update_Websites" method, which was using the "Code" module instead of the "PHP" module.<br />
+Before the transfer of the sub-class to the "PHP" module.<br />
+I have also greatly improved the sub-class documentation and comments, making them more descriptive and easier to understand.<br />
+<br />
+In the root class, I greatly improved the definition of the story links dictionary.<br />
+This now contains the keys "Website", "Wattpad", and "Spirit Fanfics".<br />
+The class defines the story's website links, and the story IDs, links, and custom links on Wattpad and Spirit Fanfics.<br />
+Now the "Website" dictionary is written to its new JSON file of the same name.<br />
+The same goes for the "Spirit Fanfics" links dictionary and its new JSON file.<br />
+I created the new root method "Define_Story_Websites_Dictionary".<br />
+To define the dictionaries of story websites, with their link templates and additional links.<br />
+It also creates the "Story websites" dictionary, writing on the JSON file of the same name.<br />
+And I also created the "Define_Story_Websites" method.<br />
+To define the story website dictionary inside each story dictionary.<br />
+<br />
+In its "Create_New_Story" sub-class, I added more requests for information about the story.<br />
+For example, ask the user if the story has a parent story, if so, ask for the title of the parent story.<br />
+The sub-class also asks if the user posted the story on the story "Wattpad" and "Spirit Fanfics" story websites.<br />
+If so, the sub-class asks for the IDs of the story on both websites and in all supported languages.<br />
+Thus creating the story website dictionaries.<br />
+I also moved the story dictionary key definition code to the new "Define_Story_Dictionary" method, to make it more organized.<br />
+<br />
+In its "Post" sub-class, I modified how the chapter is posted on the story websites and on the social networks.<br />
+Before, the chapter was posted only on Wattpad, but now it is also posted on Spirit Fanfics, with the help of the "Story websites" dictionary.<br />
+I renamed the "Post_On_Wattpad" method to "Post_On_Story_Websites".<br />
+The method above now asks for the chapter link on each story website.<br />
+Previously, it was the "Post_On_Social_Networks" method who did that, and asked only for the Wattpad link.<br />
+On the "Post_On_Social_Networks" method, the chapter is now posted on the social networks Discord, WhatsApp, Instagram, Facebook, Twitter, and the two story websites.<br />
+I greatly improved how chapter posting cards are created, and how the social networks are open.<br />
+I created a new method called "Make_Post_Cards" to help create posting cards, without repeating its code through the sub-class.<br />
+Now the creation and copying of posting cards are dynamic, being different for each social network.<br />
+Having the first and second part of the card, removing or adding hashtags, and creating secondary cards, depending on the social network.<br />
+I also added to the post task record dictionary a new key called "Custom task item".<br />
+This custom item contains the type of action done in the chapter, such as posting, writing, revising, and translating.<br />
+This item goes to the "Register" sub-class of the "Tasks" module.<br />
+Thus changing the task state text "First task type task in year".<br />
+The normal text is "First story chapter {} in year".<br />
+The "Register" sub-class replaces the text "{}" in the text above with the custom task item.<br />
+For example: "First story chapter [posted/written/revised/translated] in year".<br />
+<br />
+In its "Write" sub-class, I greatly improved it, making it more efficient and organized.<br />
+I created a root dictionary with the chapters, chapter, steps, writing modes, and writing session dictionaries.<br />
+The writing steps are the methods that are executed when writing a chapter.<br />
+They are these: "Define writing modes", "Select a writing mode (write, revise, translate)", "Define chapter", and "Start writing".<br />
+I created a new dictionary called "Writing modes", a more organized form of the old writing modes.<br />
+Now each writing mode has its own dictionary, with its name and texts in verb tenses.<br />
+These are the verb tenses: "Infinitive", "Infinitive action", "Action", "Item", "Done", and "Chapter".<br />
+The chapter definition become much more organized, defining the chapter folders and files in a single method, the "Define_Chapter" method.<br />
+Instead of these functions being separated into different methods.<br />
+A source language is also defined for the chapter, now the chapters are written and revised in the user's language, and translated into English.<br />
+The " (a new chapter)" text is added to the chapter title when the writing mode is "write".<br />
+Previously, the "Obsidian" program was used to write story chapters, with its own methods.<br />
+Now, the story website itself made in PHP is used to write the chapters.<br />
+For this, the new "Open_Story_Website" method was created.<br />
+To open the story website in the correct chapter, and in its source language, with the URL parameter "write".<br />
+Now, how the writing session and writing time is registered has been changed, to be similar to the "GamePlayer" module.<br />
+This way, the total writing time of a chapter can be registered correctly.<br />
+The new "Update_Writing_Time" method is responsible for updating the writing time, whether its time units or text.<br />
+And also reset the writing times dictionary to its default mode, when the user has finished writing the entire chapter.<br />
+The "Register_Task" method has been drastically modified, improving its writing session text, and using a new text format.<br />
+Now, the nomenclature for writing closure is different.<br />
+When the user stops that writing session, they do not finish writing the chapter but stop writing it.<br />
+And the sub-class asks if the user finished writing the entire chapter.<br />
+If the user finished writing the chapter in completely.<br />
+Then the sub-class will execute the "Finish_Writing" method.<br />
+That is going to rename the chapter files if needed, and will register the writing task, be it the "Tasks", or just in the Diary Slim.<br />
+And it will also reset the writing dictionary of the current writing mode.</span>
+	</h2>
+</div>
+
+</center>
+
+<center>
+
 <!-- "2 - I programmed my websites in HTML, CSS, JavaScript, and PHP a little (10:00 20/01/2024)" tab -->
 <a id="task_description_2_2024_anchor" name="2 - I programmed my websites in HTML, CSS, JavaScript, and PHP a little (10:00 20/01/2024)"></a>
 <div id="task_description_2_2024" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
@@ -5431,14 +6633,11 @@ After that, the sub-class "Show_Story_Information" is imported as a module and i
 
 	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
 			<!-- "Completed tasks" button -->
-	<span id="button_6" class="tab_button">
-		
+	<span id="button_6" class="tab_button">		
 
-	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">
-		<h2 class="text_size text_dark_green">
-		
-				Completed tasks: <i class="fa-solid fa-list-check"></i>
-			
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
 		</h2>
 	</button>
 	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
@@ -5501,6 +6700,88 @@ And the same for the other two tabs and their websites.<br />
 New websites:<br />
 Play History, with its tabs "Game sessions played", "Games being played", and "Past registries"<br />
 Tasks, with its tabs "Completed tasks" and "Past registries"</span>
+	</h2>
+</div>
+
+</center>
+
+<center>
+
+<!-- "7 - I programmed my websites in HTML, CSS, JavaScript, and PHP a little (00:08 27/04/2024)" tab -->
+<a id="task_description_7_2024_anchor" name="7 - I programmed my websites in HTML, CSS, JavaScript, and PHP a little (00:08 27/04/2024)"></a>
+<div id="task_description_7_2024" class="w3-container tab header_size background_green text_dark_green border_4px border_color_light_green box_shadow_light_green border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_light_green">
+		<p><br /><b id="task_description_7_2024_title">7 - I programmed my websites in HTML, CSS, JavaScript, and PHP a little (00:08 27/04/2024): <i class="fa-solid fa-list-check"></i></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_green margin_sides_5_cent" />
+			<!-- "Completed tasks" button -->
+	<span id="button_6" class="tab_button">		
+
+	<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_whitew3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size text_dark_green">
+			Completed tasks: <i class="fa-solid fa-list-check"></i>			
+		</h2>
+	</button>
+	</span><hr class="border_1px border_color_light_green margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<span class="text_light_green">Number: 7<br />
+Task type number: 2<br />
+<br />
+Title:<br />
+I programmed my websites in HTML, CSS, JavaScript, and PHP a little<br />
+<br />
+Type:<br />
+PHP<br />
+<br />
+Times:<br />
+2024-04-27T00:08:43Z<br />
+21:08 26/04/2024<br />
+<br />
+File name:<br />
+7. PHP (21:08 26/04/2024)<br />
+<br />
+Task description:<br />
+I programmed my websites in HTML, CSS, JavaScript, and PHP a little.<br />
+<br />
+PHP:<br />
+I have made several improvements to various PHP files, functions, and classes.<br />
+And I also made several changes regarding Python programs that generate data that is read by PHP websites.<br />
+For example, the programs "Watch_History", "GamePlayer", "Tasks", and "Stories".<br />
+<br />
+HTML, CSS, and JavaScript:<br />
+I created the new websites "Stories" and "Years" to list their respective items.<br />
+I improved some JavaScript scripts.<br />
+And I also moved all images from all websites to the root "Images" folder.<br />
+Containing all images from each website, without separating by image type, such as normal and website icon image.<br />
+<br />
+Updated websites:<br />
+Stake2, to update the websites tab<br />
+<br />
+To update the data history:<br />
+Watch History<br />
+Play History<br />
+Tasks<br />
+<br />
+To create it as a new website:<br />
+Stories<br />
+Years<br />
+<br />
+To update all website content:<br />
+Desert Island<br />
+New World<br />
+SpaceLiving<br />
+The Life of Littletato<br />
+The Secret of the Crystals<br />
+The Story of the Bulkan Siblings<br />
+2018<br />
+2019<br />
+2020<br />
+2021<br />
+2022<br />
+2023<br />
+2024</span>
 	</h2>
 </div>
 
