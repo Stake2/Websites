@@ -227,7 +227,7 @@ function Check_Page_Scrolling(event, ids = null) {
 	}
 
 	// Check the scroll position and hide/show the elements as needed
-	Check_Scroll_Position(ids)
+	//Check_Scroll_Position(ids)
 }
 
 // Define the scroll list
