@@ -10,7 +10,7 @@
 
 	<!-- Website meta tags -->
 	<meta name="title" content="Ascensão à Equestria" />
-	<meta name="description" content="Site sobre a minha história, Ascensão à Equestria, feito por Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
+	<meta name="description" content="Site sobre a minha história, Ascensão à Equestria, feito por Izaque (Stake2, Funkysnipa Cat)" />
 	<meta name="meta_language" content="Português" />
 	<meta name="theme-color" content="#9425a79425a7" />
 
@@ -20,14 +20,14 @@
 	<meta property="og:site_name" content="Ascensão à Equestria" />
 	<meta property="og:url" content="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/" />
 	<meta property="og:image" type="image/png" content="/Images/Rise to Equestria/png.png" />
-	<meta property="og:description" content="Site sobre a minha história, Ascensão à Equestria, feito por Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
+	<meta property="og:description" content="Site sobre a minha história, Ascensão à Equestria, feito por Izaque (Stake2, Funkysnipa Cat)" />
 	<meta property="og:locale" content="pt_BR" />
 	<meta property="og:locale:alternative" content="pt_PT" />
 
 	<!-- Twitter meta tags -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="Ascensão à Equestria" />
-	<meta name="twitter:description" content="Site sobre a minha história, Ascensão à Equestria, feito por Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
+	<meta name="twitter:description" content="Site sobre a minha história, Ascensão à Equestria, feito por Izaque (Stake2, Funkysnipa Cat)" />
 	<meta name="twitter:website" value="@Stake2_" />
 	<meta name="twitter:site" value="@Stake2_" />
 	<meta name="twitter:creator" content="@Stake2_" />
@@ -35,8 +35,8 @@
 	<meta name="twitter:image" type="image/png" content="/Images/Rise to Equestria/png.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 09/06/2024." />
-	<meta name="author" content="Izaque Sanvezzo (Stake2, Funkysnipa Cat)" />
+	<meta name="revised" content="Stake2's Enterprise TM, 27/12/2024." />
+	<meta name="author" content="Izaque (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes" />
@@ -55,7 +55,7 @@
 		--spread-btn: 0.5px;
 	}
 
-	.w3-btn, .w3-container, .modal, .modal-content, .w3-input {
+	.modal, .modal-content {
 		box-shadow: 0 -8px 20px var(--spread-btn) var(--shadow-color),
 		0 8px 20px var(--spread-btn) var(--shadow-color),
 		0 6px 20px var(--spread-btn) var(--shadow-color),
@@ -97,10 +97,10 @@
 
 <!-- Open hamburger menu button -->
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
-<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+	<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_blackw3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+<h3 class="text_size" style="font-weight: bold;">
 			<h2 class="text_size">
-				<i class="fas fa-bars"></i>
+				Clique para ler a história <i class="fas fa-book-reader"></i>
 			</h2>
 		</h3>
 	</button>
@@ -111,8 +111,8 @@
 
 	<!-- Close hamburger menu button -->
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
-<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+	<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_blackw3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black"  onclick="Hide_Hamburger_Menu();" style="float: right; padding: 2px 14px 3px 14px !important;">		
+<h3 class="text_size" style="font-weight: bold;">
 			<h4 class="text_size" style="font-weight: bold;">
 				X
 			</h4>		
@@ -126,50 +126,50 @@
 	<!-- "Ler história" button -->
 	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
-<h2 class="text_size text_dark_purple">
+	<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size">
 			Ler história: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
-	</span>
+	</span><br />
 
 
 	<!-- "Outras histórias" button -->
 	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
-<h2 class="text_size text_dark_purple">
+	<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size">
 			Outras histórias: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
-	</span>
+	</span><br />
 
 
-	<!-- "Sites" button -->
+	<!-- "Outros sites" button -->
 	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
-<h2 class="text_size text_dark_purple">
-			Sites: <i class="fas fa-globe"></i>			
+	<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Outros sites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
-	</span>
+	</span><br />
 </div>
 </div>
 
 <!-- Website header -->
-<div id="header" class="w3-animate-zoom header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_light_purple header_size" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
+<div id="header" class="w3-animate-zoom background_purple text_white border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_light_purple" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
 	<!-- Website title -->
 	<h2 class="text_size text_light_purple">
 		<p><br /><b>Ascensão à Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-check"></i></b><br /><br /><p>
 	</h2>
 
 	<!-- Website image -->
-	<img class="border_4px border_color_light_purple border_radius_8_cent box_shadow_light_purple border_4px border_color_light_purple border_radius_8_cent" src="/Images/Rise to Equestria/png.png" style="max-width: 50vw; height: auto;" /><br />
-
+	<img class="border_4px border_color_light_purple border_radius_8_cent box_shadow_light_purple border_4px border_color_light_purple border_radius_8_cent" src="/Images/Rise to Equestria/png.png" style="height: auto;" width="70%" /><br />
+<br />
 	<!-- Website image button -->
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('/Images/Rise to Equestria/png.png')" style="z-index: 2;">
-		<h4 class="text_size text_dark_purple">
+	<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" onclick="window.open('/Images/Rise to Equestria/png.png')" style="z-index: 2;">
+		<h4 class="text_size">
 			Abrir imagem em uma nova guia: <i class="fas fa-images"></i>
 		</h4>
 	</button>
@@ -180,13 +180,10 @@
 		<!-- Story website info, author(s), chapters, readers, creation date, status -->
 		Sinopse: <i class="fas fa-scroll"></i> Essa é a história de um garoto chamado Izaque, que viaja para Equestria sem querer, e vive sua vida lá.<br />
 		-----<br />
-		Autor da história: <i class="fa-solid fa-pen"></i> <span class="text_orange">Izaque Sanvezzo (Stake2, Funkysnipa Cat)</span><br />
+		Autor da história: <i class="fa-solid fa-pen"></i> <span class="text_orange"><b>Izaque (Stake2, Funkysnipa Cat)</b></span><br />
 		Capítulos: <i class="fas fa-book"></i> <span class="text_light_purple">1</span><br />
 		Data de criação da história: <i class="fa-solid fa-calendar-days"></i> <span class="text_light_purple">29/03/2020</span><br />
-		Status: <i class="fa-solid fa-check"></i> <span class="text_light_purple">Finalizada</span><br />
------
-<br />
-
+		Status: <i class="fa-solid fa-check"></i> <span class="text_light_purple">Finalizada</span>
 	</h3>
 	<br />
 </div>
@@ -197,27 +194,27 @@
 
 <!-- "Ler história" tab -->
 <a id="read_story_anchor" name="Ler história"></a>
-<div id="read_story" class="w3-container tab header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+<div id="read_story" class="w3-container tab background_purple text_white border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_light_purple">
-		<p><br /><b id="read_story_title">Capítulos em Português: 🇧🇷 <span class="text_dark_purple">1</span></b><br /><br /><p>
+		<p><br /><b id="read_story_title">Capítulos em Português: 🇧🇷 <span class="text_white">1</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Outras histórias" button -->
 	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
-<h2 class="text_size text_dark_purple">
+	<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size">
 			Outras histórias: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
-	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
+	</span><br /></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
 		<span class="text_light_purple">
 			<!-- Chapter button for "1 - Capítulo Único" chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('1', 'Capítulo Único');" style="border-radius: 50px;">
-			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+		<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" onclick="Open_Chapter('1', 'Capítulo Único');" style="border-radius: 50px;">
+			<h3 class="text_size" style="font-weight: bold;">
 				1 - Capítulo Único
 			</h3>
 		</button></span>
@@ -230,40 +227,40 @@
 
 <!-- "Outras histórias" tab -->
 <a id="other_stories_anchor" name="Outras histórias"></a>
-<div id="other_stories" class="w3-container tab header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+<div id="other_stories" class="w3-container tab background_purple text_white border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_light_purple">
-		<p><br /><b id="other_stories_title">Outras histórias: <i class="fas fa-book"></i> <span class="text_dark_purple">8</span></b><br /><br /><p>
+		<p><br /><b id="other_stories_title">Outras histórias: <i class="fas fa-book"></i> <span class="text_white">8</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Ler história" button -->
 	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
-<h2 class="text_size text_dark_purple">
+	<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black"  onclick="Open_Tab('read_story');" style="border-radius: 50px;">		
+<h2 class="text_size">
 			Ler história: <i class="fas fa-book-open"></i>			
 		</h2>
 	</button>
-	</span></span><span class="margin_sides_5_cent" style="float: right;"><!-- "Sites" button -->
+	</span><br /></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Outros sites" button -->
 	<span id="button_3" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
-<h2 class="text_size text_dark_purple">
-			Sites: <i class="fas fa-globe"></i>			
+	<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Outros sites: <i class="fas fa-globe"></i>			
 		</h2>
 	</button>
-	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
+	</span><br /></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
 		<span class="text_light_purple">
 		<!-- "Ilha Deserta" story card -->
 		<a class="w3-btn background_yellow_sand border_4px border_color_dark_green_water box_shadow_dark_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Desert Island/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_dark_green_water">
+			<h2 class="text_size text_dark_green_water
+">
 				<b>Ilha Deserta</b>
 			</h2>
-
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_green_water border_radius_5_cent border_4px border_color_dark_green_water border_radius_5_cent" src="/Images/Desert Island/Português.jpg" style="max-width: 50vw; height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_green_water border_radius_5_cent border_4px border_color_dark_green_water border_radius_5_cent" src="/Images/Desert Island/Português.jpg" style="height: auto; width: 70%;" width="70%" /><br />
 
 			<br />
 		</a>
@@ -271,65 +268,41 @@
 		<br />
 
 		<!-- "New World" story card -->
-		<a class="w3-btn background_light_blue border_4px border_color_dark_cyan box_shadow_light_blue animation_shake_side background_hover_white" href="https://thestake2.netlify.app/New World/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_dark_cyan">
+		<a class="w3-btn background_light_blue border_4px border_color_darker_blue box_shadow_light_blue animation_shake_side background_hover_white" href="https://thestake2.netlify.app/New World/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_darker_blue
+">
 				<b>New World</b>
 			</h2>
-
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_cyan border_radius_5_cent border_4px border_color_dark_cyan border_radius_5_cent" src="/Images/New World/Cover.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_darker_blue border_radius_5_cent border_4px border_color_darker_blue border_radius_5_cent" src="/Images/New World/Cover.png" style="height: auto; width: 70%;" width="70%" /><br />
 
-			<br />
-		</a>
-
-		<br />
-
-		<!-- "Ascensão à Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white"  target="_blank" style="width: 100%;">
-			<h2 class="text_size text_dark_purple">
-				<b>Ascensão à Equestria</b>
-			</h2>
-
-			
 			<br />
 		</a>
 
 		<br />
 
 		<!-- "SpaceLiving" story card -->
-		<a class="w3-btn background_cyan border_4px border_color_dark_blue box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/SpaceLiving/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_dark_blue">
+		<a class="w3-btn background_cyan border_4px border_color_darker_blue box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/SpaceLiving/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_darker_blue
+">
 				<b>SpaceLiving</b>
 			</h2>
-
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="/Images/SpaceLiving/Cover.gif" style="max-width: 50vw; height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_darker_blue border_radius_5_cent border_4px border_color_darker_blue border_radius_5_cent" src="/Images/SpaceLiving/Cover.gif" style="height: auto; width: 70%;" width="70%" /><br />
 
-			<br />
-		</a>
-
-		<br />
-
-		<!-- "A Vida de Izaque em Equestria" story card -->
-		<a class="w3-btn background_light_purple border_4px border_color_dark_purple box_shadow_light_purple animation_shake_side background_hover_white" href="https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_dark_purple">
-				<b>A Vida de Izaque em Equestria</b>
-			</h2>
-
-			
 			<br />
 		</a>
 
 		<br />
 
 		<!-- "A Vida de Pequenata" story card -->
-		<a class="w3-btn background_light_salmon border_4px border_color_dark_purple box_shadow_light_salmon animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_dark_purple">
+		<a class="w3-btn background_light_salmon border_4px border_color_darker_purple box_shadow_light_salmon animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Life of Littletato/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_darker_purple
+">
 				<b>A Vida de Pequenata</b>
 			</h2>
-
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_purple border_radius_6_cent border_4px border_color_dark_purple border_radius_6_cent" src="/Images/The Life of Littletato/Português.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_darker_purple border_radius_6_cent border_4px border_color_darker_purple border_radius_6_cent" src="/Images/The Life of Littletato/Português.png" style="height: auto; width: 70%;" width="70%" /><br />
 
 			<br />
 		</a>
@@ -337,13 +310,13 @@
 		<br />
 
 		<!-- "O Segredo dos Cristais" story card -->
-		<a class="w3-btn background_light_cyan border_4px border_color_dark_blue box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Secret of the Crystals/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_dark_blue">
+		<a class="w3-btn background_light_cyan border_4px border_color_darker_blue box_shadow_green_water animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Secret of the Crystals/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_darker_blue
+">
 				<b>O Segredo dos Cristais</b>
 			</h2>
-
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_blue border_radius_5_cent border_4px border_color_dark_blue border_radius_5_cent" src="/Images/The Secret of the Crystals/Português.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_darker_blue border_radius_5_cent border_4px border_color_darker_blue border_radius_5_cent" src="/Images/The Secret of the Crystals/Português.png" style="height: auto; width: 70%;" width="70%" /><br />
 
 			<br />
 		</a>
@@ -351,13 +324,13 @@
 		<br />
 
 		<!-- "A História dos Irmãos Bulkan" story card -->
-		<a class="w3-btn background_light_brown border_4px border_color_dark_brown box_shadow_dark_brown animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_dark_brown">
+		<a class="w3-btn background_light_brown border_4px border_color_darker_brown box_shadow_light_brown animation_shake_side background_hover_white" href="https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/" target="_blank" style="width: 100%;">
+			<h2 class="text_size text_darker_brown
+">
 				<b>A História dos Irmãos Bulkan</b>
 			</h2>
-
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_brown border_radius_5_cent border_4px border_color_dark_brown border_radius_5_cent" src="/Images/The Story of the Bulkan Siblings/Português.png" style="max-width: 50vw; height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_darker_brown border_radius_5_cent border_4px border_color_darker_brown border_radius_5_cent" src="/Images/The Story of the Bulkan Siblings/Português.png" style="height: auto; width: 70%;" width="70%" /><br />
 
 			<br />
 		</a>
@@ -366,12 +339,12 @@
 
 		<!-- "Diário" story card -->
 		<a class="w3-btn background_grey border_4px border_color_black box_shadow_grey animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Diary/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_black">
+			<h2 class="text_size text_black
+">
 				<b>Diário</b>
 			</h2>
-
 			<!-- Story card image -->
-			<img class="border_4px border_color_black border_radius_5_cent border_4px border_color_black border_radius_5_cent" src="/Images/Diary/Português.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_black border_radius_5_cent border_4px border_color_black border_radius_5_cent" src="/Images/Diary/Português.png" style="height: auto; width: 70%;" width="60%" /><br />
 
 			<br />
 		</a>
@@ -380,12 +353,12 @@
 
 		<!-- "Diário Slim" story card -->
 		<a class="w3-btn background_light_orange border_4px border_color_dark_orange box_shadow_light_orange animation_shake_side background_hover_white" href="https://thestake2.netlify.app/Diary Slim/pt/" target="_blank" style="width: 100%;">
-			<h2 class="text_size text_dark_orange">
+			<h2 class="text_size text_dark_orange
+">
 				<b>Diário Slim</b>
 			</h2>
-
 			<!-- Story card image -->
-			<img class="border_4px border_color_dark_orange border_radius_5_cent border_4px border_color_dark_orange border_radius_5_cent" src="/Images/Diary Slim/Português.png" style="max-width: 30vw; height: auto; width: 100%;" /><br />
+			<img class="border_4px border_color_dark_orange border_radius_5_cent border_4px border_color_dark_orange border_radius_5_cent" src="/Images/Diary Slim/Português.png" style="height: auto; width: 70%;" width="60%" /><br />
 
 			<br />
 		</a></span>
@@ -396,212 +369,205 @@
 
 <center>
 
-<!-- "Sites" tab -->
-<a id="websites_tab_anchor" name="Sites"></a>
-<div id="websites_tab" class="w3-container tab header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+<!-- "Outros sites" tab -->
+<a id="websites_tab_anchor" name="Outros sites"></a>
+<div id="websites_tab" class="w3-container tab background_purple text_white border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_light_purple">
-		<p><br /><b id="websites_tab_title">Sites: <i class="fas fa-globe"></i> <span class="text_dark_purple">27</span></b><br /><br /><p>
+		<p><br /><b id="websites_tab_title">Outros sites: <i class="fas fa-globe"></i> <span class="text_white">28</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_purple margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Outras histórias" button -->
 	<span id="button_2" class="tab_button">		
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_whitew3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
-<h2 class="text_size text_dark_purple">
+	<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black"  onclick="Open_Tab('other_stories');" style="border-radius: 50px;">		
+<h2 class="text_size">
 			Outras histórias: <i class="fas fa-book"></i>			
 		</h2>
 	</button>
-	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
+	</span><br /></span><br /><br /><br /><br /><hr class="border_1px border_color_light_purple margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
 		<span class="text_light_purple">
 		<!-- "Stake2" link button -->
-		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stake2/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black" onclick="window.open('https://thestake2.netlify.app/Stake2/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Izaque, Stake2, Funkysnipa Cat <i class="fas fa-user-circle"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "Prints of Computer Blocks" link button -->
-		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Prints of Computer Blocks/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black" onclick="window.open('https://thestake2.netlify.app/Prints of Computer Blocks/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Prints of Computer Blocks <i class="fas fa-images"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "Diary" link button -->
-		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Diary/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_black text_white border_4px border_color_grey background_hover_black" onclick="window.open('https://thestake2.netlify.app/Diary/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Diário <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "Diary Slim" link button -->
-		<button class="w3-btn background_light_orange text_dark_orange border_4px border_color_dark_orange box_shadow_light_orange background_hover_white" onclick="window.open('https://thestake2.netlify.app/Diary Slim/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black" onclick="window.open('https://thestake2.netlify.app/Diary Slim/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Diário Slim <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "My Little Pony" link button -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" onclick="window.open('https://thestake2.netlify.app/My Little Pony/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				My Little Pony <i class="fas fa-heart"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "Friendship Is Magic" link button -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				My Little Pony: A Amizade É Mágica <i class="fas fa-heart"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "Watch History" link button -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Watch History/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_darker_blue text_white border_4px border_color_light_blue background_hover_black" onclick="window.open('https://thestake2.netlify.app/Watch History/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Watch History <i class="fas fa-eye"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "Play History" link button -->
-		<button class="w3-btn background_light_saturated_green text_dark_saturated_green border_4px border_color_dark_saturated_green box_shadow_light_saturated_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/Play History/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_darker_green text_white border_4px border_color_light_green background_hover_black" onclick="window.open('https://thestake2.netlify.app/Play History/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Play History <i class="fa-solid fa-gamepad"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "Tasks" link button -->
-		<button class="w3-btn background_light_grey text_dark_grey border_4px border_color_dark_grey box_shadow_light_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/Tasks/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_even_darker_grey text_white border_4px border_color_light_grey background_hover_black" onclick="window.open('https://thestake2.netlify.app/Tasks/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Tarefas <i class="fas fa-tasks"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "Music" link button -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/Music/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_blue text_white border_4px border_color_light_blue background_hover_black" onclick="window.open('https://thestake2.netlify.app/Music/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Música <i class="fa-solid fa-music"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "Stories" link button -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/Stories/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_darker_purple text_white border_4px border_color_light_purple background_hover_black" onclick="window.open('https://thestake2.netlify.app/Stories/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Histórias <i class="fas fa-book"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "Desert Island" link button -->
-		<button class="w3-btn background_green_water text_dark_green_water border_4px border_color_dark_green_water box_shadow_green_water background_hover_white" onclick="window.open('https://thestake2.netlify.app/Desert Island/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_green_water text_white border_4px border_color_light_green_water background_hover_black" onclick="window.open('https://thestake2.netlify.app/Desert Island/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Ilha Deserta <i class="fas fa-book"></i> <i class="fa-solid fa-rotate"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "New World" link button -->
-		<button class="w3-btn background_light_blue text_dark_cyan border_4px border_color_dark_cyan box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/New World/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_darker_blue text_white border_4px border_color_light_blue background_hover_black" onclick="window.open('https://thestake2.netlify.app/New World/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				New World <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
 		</button>
-
-		<!-- "Rise to Equestria" link button -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="" style="border-radius: 50px;" title="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/">
-			<h2 class="text_size" title="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/">
-				Ascensão à Equestria <i class="fas fa-book" title="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/"></i> <i class="fa-solid fa-check" title="https://thestake2.netlify.app/My Little Pony/Rise to Equestria/pt/"></i> (Você está aqui)
-			</h2>
-		</button>
-
+<br />
 		<!-- "SpaceLiving" link button -->
-		<button class="w3-btn background_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/SpaceLiving/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_darker_blue text_white border_4px border_color_cyan background_hover_black" onclick="window.open('https://thestake2.netlify.app/SpaceLiving/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				SpaceLiving <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
 		</button>
-
-		<!-- "The Life of Izaque in Equestria" link button -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/My Little Pony/The Life of Izaque in Equestria/pt/')" style="border-radius: 50px;">
-			<h2 class="text_size">
-				A Vida de Izaque em Equestria <i class="fas fa-book"></i> <i class="fa-solid fa-pause"></i>
-			</h2>
-		</button>
-
+<br />
 		<!-- "The Life of Littletato" link button -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_darker_purple text_white border_4px border_color_light_purple background_hover_black" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				A Vida de Pequenata <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "The Secret of the Crystals" link button -->
-		<button class="w3-btn background_light_cyan text_dark_blue border_4px border_color_dark_blue box_shadow_light_cyan background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Secret of the Crystals/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_darker_blue text_white border_4px border_color_light_cyan background_hover_black" onclick="window.open('https://thestake2.netlify.app/The Secret of the Crystals/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				O Segredo dos Cristais <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "The Story of the Bulkan Siblings" link button -->
-		<button class="w3-btn background_light_brown text_dark_brown border_4px border_color_dark_brown box_shadow_light_brown background_hover_white" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_darker_brown text_white border_4px border_color_light_brown background_hover_black" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				A História dos Irmãos Bulkan <i class="fas fa-book"></i> <i class="fa-solid fa-cloud-arrow-up"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "Years" link button -->
-		<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/Years/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_darker_green text_white border_4px border_color_light_green background_hover_black" onclick="window.open('https://thestake2.netlify.app/Years/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Anos <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "2018" link button -->
-		<button class="w3-btn background_dark_blue text_even_darker_blue border_4px border_color_even_darker_blue box_shadow_dark_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/2018/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_even_darker_blue text_white border_4px border_color_dark_blue background_hover_black" onclick="window.open('https://thestake2.netlify.app/2018/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Meu 2018 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "2019" link button -->
-		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/2019/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_black text_white border_4px border_color_grey background_hover_black" onclick="window.open('https://thestake2.netlify.app/2019/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Meu 2019 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "2020" link button -->
-		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/2020/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_black text_white border_4px border_color_grey background_hover_black" onclick="window.open('https://thestake2.netlify.app/2020/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Meu 2020 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "2021" link button -->
-		<button class="w3-btn background_grey text_black border_4px border_color_black box_shadow_grey background_hover_white" onclick="window.open('https://thestake2.netlify.app/2021/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_black text_white border_4px border_color_grey background_hover_black" onclick="window.open('https://thestake2.netlify.app/2021/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Meu 2021 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "2022" link button -->
-		<button class="w3-btn background_yellow_sand text_dark_yellow border_4px border_color_dark_yellow box_shadow_yellow_sand background_hover_white" onclick="window.open('https://thestake2.netlify.app/2022/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_darker_yellow_2 text_black border_4px border_color_yellow_sand background_hover_white" onclick="window.open('https://thestake2.netlify.app/2022/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Meu 2022 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "2023" link button -->
-		<button class="w3-btn background_light_blue text_dark_blue border_4px border_color_dark_blue box_shadow_light_blue background_hover_white" onclick="window.open('https://thestake2.netlify.app/2023/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_darker_blue text_white border_4px border_color_light_blue background_hover_black" onclick="window.open('https://thestake2.netlify.app/2023/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Meu 2023 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
-
+<br />
 		<!-- "2024" link button -->
-		<button class="w3-btn background_light_green text_dark_green border_4px border_color_dark_green box_shadow_light_green background_hover_white" onclick="window.open('https://thestake2.netlify.app/2024/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_darker_green text_white border_4px border_color_light_green background_hover_black" onclick="window.open('https://thestake2.netlify.app/2024/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Meu 2024 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+<br />
+		<!-- "2025" link button -->
+		<button class="w3-btn background_dark_cyan text_white border_4px border_color_light_cyan background_hover_black" onclick="window.open('https://thestake2.netlify.app/2025/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2025 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
 </span>
@@ -612,7 +578,7 @@
 
 <!-- Chapter tab for "1 - Capítulo Único" chapter -->
 <a id="chapter_1_anchor" name="1 - Capítulo Único"></a>
-<div id="chapter_1" class="tab header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2px; margin-bottom: 2%; display: none;">
+<div id="chapter_1" class="tab background_purple text_white border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2px; margin-bottom: 2%; display: none;">
 	<!-- Chapter title top -->
 	<h2 class="text_size">
 		<p><br /><b>Você está lendo: <span class="text_light_purple">Ascensão à Equestria</span><br />Capítulo: <span class="text_light_purple" id="chapter_1_title">1 - Capítulo Único</span></b><br /><br /><p>
@@ -623,8 +589,8 @@
 		<hr class="border_1px border_color_light_purple" />		
 
 		<!-- Chapter button for " - " chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('', '');" style="border-radius: 50px;">
-			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+		<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" onclick="Open_Chapter('', '');" style="border-radius: 50px;">
+			<h3 class="text_size" style="font-weight: bold;">
 				 - 
 			</h3>
 		</button>
@@ -632,7 +598,7 @@
 		<br /><br /><br />
 
 		<br /><br />		<!-- Chapter text -->
-		<h4 id="chapter_1_text" class="text_size unselectable " style="text-align: left;">
+		<h4 id="chapter_1_text" class="text_size unselectable  text_white" style="text-align: left;">
 		Olá a todos, eu sou Stake2, Funkysnipa Cat, e Izaque, eu queria mostrar essa história que eu escrevi.<br />
 Ela foi feita em 2016, e na época eu não sabia escrever direito, então decidi reescrever ela no dia 30/03/2020 com meu novo estilo de escrita, e ela se tornou o que é agora.<br />
 É uma história de um capítulo só, e está terminada já, espero que gostem.<br />
@@ -854,20 +820,20 @@ Palavras: 2,117.
 		
 
 		<!-- Chapter button for " - " chapter -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Chapter('', '');" style="border-radius: 50px;">
-			<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+		<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" onclick="Open_Chapter('', '');" style="border-radius: 50px;">
+			<h3 class="text_size" style="font-weight: bold;">
 				 - 
 			</h3>
 		</button>
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Modal('comment', '1 - Capítulo Único')" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_dark_purple"  style="font-weight: bold;">
+	<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" onclick="Open_Modal('comment', '1 - Capítulo Único')" style="float: right; margin-right: 1%;">
+		<h3 class="text_size"  style="font-weight: bold;">
 		Comentar: <i class="fas fa-comments"></i>
 		</h3>
 	</button>
 
-	<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Open_Modal('read', '1 - Capítulo Único')" style="float: right; margin-right: 1%;">
-		<h3 class="text_size text_dark_purple" style="font-weight: bold;">
+	<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" onclick="Open_Modal('read', '1 - Capítulo Único')" style="float: right; margin-right: 1%;">
+		<h3 class="text_size" style="font-weight: bold;">
 		Eu li: <i class="fa-solid fa-check"></i> <i class="fas fa-book-reader"></i>
 		</h3>
 	</button>
@@ -888,9 +854,9 @@ Palavras: 2,117.
 <!-- Chapter comment modal for all chapters -->
 <a id="chapter_comment_anchor" name="chapter_comment"></a>
 <div id="chapter_comment" class="modal" style="display: none; border-radius: 50px;">
-	<div class="modal-content header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom text_light_purple margin_6_cent_auto" style="width: 50%; border-radius: 50px; padding-bottom: 7%;">
+	<div class="modal-content background_purple text_white border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom text_light_purple margin_6_cent_auto" style="width: 100%; border-radius: 50px; padding-bottom: 8%;">
 		<!-- Hide modal button -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Hide_Modal('comment');" style="float: right; padding: 2px 14px 3px 15px !important;">
+		<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" onclick="Hide_Modal('comment');" style="float: right; padding: 2px 14px 3px 15px !important;">
 			<h4 class="text_size" style="font-weight: bold;">
 				X
 			</h4>
@@ -913,20 +879,20 @@ Palavras: 2,117.
 			<h2 class="text_size margin_top_bottom_2_cent text_light_purple" style="font-weight: bold;">
 				Meu nome:<br />
 			</h2>
-			<input type="text" name="name" class="w3-input text_size background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" style="width: 100%; font-weight: bold; border-radius: 50px;">
+			<input type="text" name="name" class="w3-input text_size background_dark_purple text_white border_4px border_color_light_purple background_hover_black" style="width: 100%; font-weight: bold; border-radius: 50px;">
 
 			<!-- Hidden chapter title input -->
-			<input id="chapter_comment_value" type="hidden" name="chapter" value="" class="w3-input background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" style="width: 100%; display: none; font-weight: bold; border-radius: 50px; text-align: center;">
+			<input id="chapter_comment_value" type="hidden" name="chapter" value="" class="w3-input background_dark_purple text_white border_4px border_color_light_purple background_hover_black" style="width: 100%; display: none; font-weight: bold; border-radius: 50px; text-align: center;">
 
 			<!-- Comment input -->
-			<h2 class="text_size text_light_purple margin_sides_10_cent margin_top_bottom_3_cent" style="font-weight: bold;">
+			<h2 class="text_size text_light_purple margin_top_bottom_3_cent" style="font-weight: bold;">
 				Comentário: 
 			</h2>
-			<input class="w3-input text_size background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" type="text" name="comment" style="width: 100%; font-weight: bold; border-radius: 50px;" />
+			<input class="w3-input text_size background_dark_purple text_white border_4px border_color_light_purple background_hover_black" type="text" name="comment" style="width: 100%; font-weight: bold; border-radius: 50px;" />
 			<br />
 
 			<!-- Submit form button -->
-			<button type="submit" class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" style="float: right; border-radius: 50px;">
+			<button type="submit" class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" style="float: right; border-radius: 50px;">
 				<h2 class="text_size">
 					<b>Enviar: <i class="fas fa-paper-plane"></i></b>
 				</h2>
@@ -940,9 +906,9 @@ Palavras: 2,117.
 <!-- Chapter read modal for all chapters -->
 <a id="chapter_read_anchor" name="chapter_read"></a>
 <div id="chapter_read" class="modal" style="display: none; border-radius: 50px;">
-	<div class="modal-content header_size background_purple text_dark_purple border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom text_light_purple" style="width: 50%; border-radius: 50px; padding-bottom: 7%;">
+	<div class="modal-content background_purple text_white border_4px border_color_light_purple box_shadow_light_purple border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom text_light_purple" style="width: 100%; border-radius: 50px; padding-bottom: 8%;">
 		<!-- Hide modal button -->
-		<button class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" onclick="Hide_Modal('read');" style="float: right; padding: 2px 14px 3px 15px !important;">
+		<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" onclick="Hide_Modal('read');" style="float: right; padding: 2px 14px 3px 15px !important;">
 			<h4 class="text_size" style="font-weight: bold;">
 				X
 			</h4>
@@ -965,15 +931,15 @@ Palavras: 2,117.
 			<h2 class="text_size margin_top_bottom_2_cent text_light_purple" style="font-weight: bold;">
 				Meu nome:<br />
 			</h2>
-			<input type="text" name="name" class="w3-input text_size background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" style="width: 100%; font-weight: bold; border-radius: 50px;">
+			<input type="text" name="name" class="w3-input text_size background_dark_purple text_white border_4px border_color_light_purple background_hover_black" style="width: 100%; font-weight: bold; border-radius: 50px;">
 
 			<!-- Hidden chapter title input -->
-			<input id="chapter_read_value" type="hidden" name="chapter" value="" class="w3-input background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" style="width: 100%; display: none; font-weight: bold; border-radius: 50px; text-align: center;">
+			<input id="chapter_read_value" type="hidden" name="chapter" value="" class="w3-input background_dark_purple text_white border_4px border_color_light_purple background_hover_black" style="width: 100%; display: none; font-weight: bold; border-radius: 50px; text-align: center;">
 
 			<br />
 
 			<!-- Submit form button -->
-			<button type="submit" class="w3-btn background_light_purple text_dark_purple border_4px border_color_dark_purple box_shadow_light_purple background_hover_white" style="float: right; border-radius: 50px;">
+			<button type="submit" class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" style="float: right; border-radius: 50px;">
 				<h2 class="text_size">
 					<b>Enviar: <i class="fas fa-paper-plane"></i></b>
 				</h2>
