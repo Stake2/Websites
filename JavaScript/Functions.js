@@ -230,6 +230,9 @@ function Check_Page_Scrolling(event, ids = null) {
 	//Check_Scroll_Position(ids)
 }
 
+// Define the function on the "window" object
+window.Check_Page_Scrolling = Check_Page_Scrolling
+
 // Define the scroll list
 var list = [
 	"hamburger_menu_button"
@@ -237,7 +240,7 @@ var list = [
 
 // Add the event listener
 scroll_function = function(event) {
-	Check_Page_Scrolling(event, list)
+	window.Check_Page_Scrolling(event, list)
 }
 
 window.addEventListener("scroll", scroll_function)
