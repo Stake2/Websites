@@ -175,33 +175,43 @@ parameters = Object.fromEntries(
 	new URLSearchParams(window.location.search)
 )
 
-// Check if the "tab" key is prenset in the URL and open the tab if so
+// Get the keys of the parameter dictionary
+parameter_keys = Object.keys(parameters)
+
+// Define the list of tab keys to search for
 var tab_keys = [
 	"tab",
 	"aba"
 ]
 
+// Iterate through the list of tab keys
 tab_keys.forEach(
+	// Pass the key to a function
 	function(key) {
-		if (Object.keys(parameters).includes(key) == true) {
+		// If the list of parameter keys include the current key
+		if (parameter_keys.includes(key) == true) {
+			// Get the parameter value
 			var value = parameters[key]
 
+			// If the string-number version of  the value is not "NaN"
 			if (String(Number(value)) != "NaN") {
+				// Transform the value into a number
 				value = Number(value)
 			}
 
+			// When the window loads
 			window.addEventListener("load", function() {
-				// Get the tab by tab number
+				// Get the tab by the tab number
 				if (typeof value == "number") {
 					tab = Array.from(document.getElementsByClassName("tab"))[value - 1]
 				}
 
-				// Get the tab by the tab id
+				// Get the tab by the tab ID
 				if (typeof value == "string") {
 					tab = document.getElementById(value)
 				}
 
-				// Open the tab
+				// Open the tab when it exists
 				$("#" + tab.id).ready(function() {
 					Open_Tab(tab.id)
 				})

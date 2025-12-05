@@ -139,13 +139,13 @@ function Add_Leading_Zeroes(number) {
 
 	var text = {
 		"en": "Did not added leading zeros to this number: {0}",
-		"pt": "Não adicionou zeros à esquerda à este número: {0}"
+		"pt": "Não adicionou zeros à esquerda à esse número: {0}"
 	}
 
 	if (number <= 9) {
 		text = {
 			"en": "Added leading zeros to this number: {0}",
-			"pt": "Adicionou zeros à esquerda à este número: {0}"
+			"pt": "Adicionou zeros à esquerda à esse número: {0}"
 		}
 
 		number = "0" + String(number)
@@ -174,6 +174,12 @@ var last_scroll = window.scrollY
 
 // Define the "Check_Scroll_Position" function
 function Check_Scroll_Position(ids) {
+	// Define the method title
+	var method_title = {
+		"en": arguments.callee.name,
+		"pt": "Verificar_Posição_De_Rolagem"
+	}
+
 	// Define the window Y position
 	var window_Y = window.scrollY
 
@@ -181,8 +187,8 @@ function Check_Scroll_Position(ids) {
 	if (window_Y < last_scroll) {
 		// Define the text and show the button
 		text = {
-			"en": "The user scrolled the page up, showing the hamburger menu button\n\n:Element:",
-			"pt": "O usuário rolou a página para cima, mostrando o botão do menu hambúrguer\n\n:Elemento:"
+			"en": "The user scrolled the page up, showing the hamburger menu button",
+			"pt": "O usuário rolou a página para cima, mostrando o botão do menu hambúrguer"
 		}
 
 		// Define the show or hide and add or remove methods
@@ -211,6 +217,9 @@ function Check_Scroll_Position(ids) {
 
 	// Update the "last_scroll" variable
 	last_scroll = window.scrollY
+
+	// Show the verbose text
+	//Functions.Class_Method(method_title, text)
 }
 
 // Define the "Check_Page_Scrolling" function

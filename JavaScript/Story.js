@@ -32,11 +32,11 @@ class Story_Class {
 		},
 		"hiding_this_modal_{0}": {
 			"en": 'Hiding this modal "{0}"',
-			"pt": 'Escondendo este modal "{0}"'
+			"pt": 'Escondendo esse modal "{0}"'
 		},
 		"reading_this_chapter_file_to_get_the_chapter_text_{0}": {
 			"en": 'Reading this chapter file to get the chapter text:\n{0}',
-			"pt": 'Lendo este arquivo de capítulo para pegar o texto do capítulo\n{0}'
+			"pt": 'Lendo esse arquivo de capítulo para pegar o texto do capítulo\n{0}'
 		},
 		"scrolled_to_the_write_chapter_element_to_write": {
 			"en": 'Scrolled to the "Write chapter" element to write',
