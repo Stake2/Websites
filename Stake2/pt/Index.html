@@ -5,8 +5,8 @@
 
 	<!-- Website links -->
 	<link rel="canonical" href="https://thestake2.netlify.app/Stake2/pt/" />
-	<link rel="icon" type="image/png" href="/Images/Stake2/Icons/Stake2.png" />
-	<link rel="image_src" type="image/png" href="/Images/Stake2/Icons/Stake2.png" />
+	<link rel="icon" type="image/png" href="https://thestake2.netlify.app/Images/Stake2/Icons/Stake2.png" />
+	<link rel="image_src" type="image/png" href="https://thestake2.netlify.app/Images/Stake2/Icons/Stake2.png" />
 
 	<!-- Website meta tags -->
 	<meta name="title" content="Izaque, Stake2, Funkysnipa Cat" />
@@ -20,7 +20,7 @@ Na Internet, eu sou minhas duas Identidades Digitais, Stake2, e Funkysnipa Cat."
 	<meta property="og:title" content="Izaque, Stake2, Funkysnipa Cat" />
 	<meta property="og:site_name" content="Izaque, Stake2, Funkysnipa Cat" />
 	<meta property="og:url" content="https://thestake2.netlify.app/Stake2/pt/" />
-	<meta property="og:image" type="image/png" content="/Images/Stake2/Icons/Stake2.png" />
+	<meta property="og:image" type="image/png" content="https://thestake2.netlify.app/Images/Stake2/Icons/Stake2.png" />
 	<meta property="og:description" content="Um site para mostrar quem eu sou na Internet, criado por mim, Izaque.
 Na Internet, eu sou minhas duas Identidades Digitais, Stake2, e Funkysnipa Cat." />
 	<meta property="og:locale" content="pt_BR" />
@@ -35,10 +35,10 @@ Na Internet, eu sou minhas duas Identidades Digitais, Stake2, e Funkysnipa Cat."
 	<meta name="twitter:site" value="@Stake2_" />
 	<meta name="twitter:creator" content="@Stake2_" />
 	<meta name="twitter:url" content="https://thestake2.netlify.app/Stake2/pt/" />
-	<meta name="twitter:image" type="image/png" content="/Images/Stake2/Icons/Stake2.png" />
+	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/Stake2/Icons/Stake2.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 27/12/2024." />
+	<meta name="revised" content="Stake2's Enterprise TM, 16/12/2025." />
 	<meta name="author" content="Izaque (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -94,22 +94,25 @@ Na Internet, eu sou minhas duas Identidades Digitais, Stake2, e Funkysnipa Cat."
 	</script>
 </head>
 
-<body class="background_dark_red" onLoad="Remove_Zoom();">
+<body class="background_darker_red" onLoad="Remove_Zoom();">
 <center>
 
-<!-- Open hamburger menu button -->
+<!-- Open hamburger menu button --><div id="hamburger_menu_button">
 
-	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_blackw3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black w3-animate-zoom" id="hamburger_menu_button" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_blackw3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black w3-animate-zoom" onclick="Show_Hamburger_Menu();" style="position: fixed; left: 0%;">		
 <h3 class="text_size" style="font-weight: bold;">
 			<h2 class="text_size">
 				Clique para abrir o menu de botões <i class="fas fa-bars"></i>
 			</h2>
 		</h3>
 	</button>
+<br /><br /><br /><br />
+</div>
 
 
 <!--- Hamburger menu -->
-<div id="hamburger_menu" class="w3-container w3-animate-left background_orange border_4px border_color_light_orange border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
+<div id="hamburger_menu" class="w3-container w3-animate-left background_orange border_4px border_color_dark_orange border_radius_15_cent" style="padding: 1%; position: fixed; display: none;">
 
 	<!-- Close hamburger menu button -->
 
@@ -132,8 +135,8 @@ Na Internet, eu sou minhas duas Identidades Digitais, Stake2, e Funkysnipa Cat."
 <h2 class="text_size">
 			Izaque: <i class="fas fa-user-circle"></i>			
 		</h2>
-	</button>
-	</span><br />
+	</button><br />
+	</span>
 
 
 	<!-- "Stake2" button -->
@@ -143,8 +146,8 @@ Na Internet, eu sou minhas duas Identidades Digitais, Stake2, e Funkysnipa Cat."
 <h2 class="text_size">
 			Stake2: <i class="fas fa-user-circle"></i>			
 		</h2>
-	</button>
-	</span><br />
+	</button><br />
+	</span>
 
 
 	<!-- "Funkysnipa Cat" button -->
@@ -154,19 +157,19 @@ Na Internet, eu sou minhas duas Identidades Digitais, Stake2, e Funkysnipa Cat."
 <h2 class="text_size">
 			Funkysnipa Cat: <i class="fas fa-user-circle"></i>			
 		</h2>
-	</button>
-	</span><br />
+	</button><br />
+	</span>
 
 
-	<!-- "Redes Sociais" button -->
+	<!-- "Redes sociais" button -->
 	<span id="button_4" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('social_networks');" style="border-radius: 50px;">		
 <h2 class="text_size">
-			Redes Sociais: <i class="fas fa-globe"></i>			
+			Redes sociais: <i class="fas fa-globe"></i>			
 		</h2>
-	</button>
-	</span><br />
+	</button><br />
+	</span>
 
 
 	<!-- "Outros sites" button -->
@@ -176,27 +179,20 @@ Na Internet, eu sou minhas duas Identidades Digitais, Stake2, e Funkysnipa Cat."
 <h2 class="text_size">
 			Outros sites: <i class="fas fa-globe"></i>			
 		</h2>
-	</button>
-	</span><br />
+	</button><br />
+	</span>
 </div>
 </div>
 
 <!-- Website header -->
-<div id="header" class="w3-animate-zoom background_orange text_white border_4px border_color_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_light_orange" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
+<div id="header" class="w3-animate-zoom background_orange text_black border_4px border_color_dark_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom box_shadow_dark_orange" style="height: auto; border-radius: 50px; border-style: solid; border-width: 4px!important;">
 	<!-- Website title -->
 	<h2 class="text_size text_black">
 		<p><br /><b>Izaque, Stake2, Funkysnipa Cat <i class="fas fa-user-circle"></i></b><br /><br /><p>
 	</h2>
 
 	<!-- Website image -->
-	<img class="border_radius_100_cent border_radius_100_cent" src="/Images/Stake2/Icons/Stake2.png" style="height: auto;" width="40%" /><br />
-<br />
-	<!-- Website image button -->
-	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black" onclick="window.open('/Images/Stake2/Icons/Stake2.png')" style="z-index: 2;">
-		<h4 class="text_size">
-			Abrir imagem em uma nova guia: <i class="fas fa-images"></i>
-		</h4>
-	</button>
+	<img class="border_radius_100_cent border_radius_100_cent" src="https://thestake2.netlify.app/Images/Stake2/Icons/Stake2.png" style="height: auto;" width="40%" /><br />
 	<br />
 
 	<!-- Website description -->
@@ -212,13 +208,13 @@ Na Internet, eu sou minhas duas Identidades Digitais, <b class="text_black">Stak
 
 <!-- "Izaque" tab -->
 <a id="izaque_anchor" name="Izaque"></a>
-<div id="izaque" class="w3-container tab background_orange text_white border_4px border_color_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+<div id="izaque" class="w3-container tab background_orange text_black border_4px border_color_dark_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_black">
 		<p><br /><b id="izaque_title">Pessoa: Izaque <i class="fas fa-user-circle"></i></b><br /><br /><p>
 	</h2>
 
-	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+	<hr class="border_1px border_color_dark_orange margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: right;"><!-- "Stake2" button -->
 	<span id="button_2" class="tab_button">		
 
@@ -226,21 +222,37 @@ Na Internet, eu sou minhas duas Identidades Digitais, <b class="text_black">Stak
 <h2 class="text_size">
 			Stake2: <i class="fas fa-user-circle"></i>			
 		</h2>
-	</button>
-	</span><br /></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
+	</button><br />
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_dark_orange margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
-		<span class="text_black">Olá, sou <b class="text_black">Izaque</b>, <b class="text_black">Stake2</b>, e <b class="text_black">Funkysnipa Cat</b><br />
-Amo escrever, ler, programar em Python, fazer sites em HTML e PHP, desenhar, e editar vídeos<br />
-Amo assistir animes, desenhos, séries, filmes, vídeos, jogar jogos, ouvir música, principalmente Dubstep<br />
-Tenho muito orgulho das coisas que faço, das minhas habilidades, e talentos<br />
-Amo escrever histórias, escrevo desde 2016, me ajuda a ser criativo e ter uma boa imaginação<br />
-Também programo desde 2016, e isso ajuda muito no meu pensamento lógico e me faz pensar melhor<br />
-Gosto de criar programas para me ajudar no que faço e ser mais organizado<br />
-Sou nativo do Brasil, e o Inglês que sei desde criança me faz ter mais conhecimento e facilidade para aprender, me ajuda a buscar conhecimento que não vem da minha língua materna (Português Brasileiro)<br />
+		<span class="text_black">Olá, eu sou <b class="text_black">Izaque</b>, <b class="text_black">Stake2</b>, e <b class="text_black">Funkysnipa Cat</b><br />
+Eu amo escrever, ler, programar em Python, fazer sites em HTML e PHP, desenhar, e editar vídeos<br />
+Amo assistir animes, desenhos, séries, filmes, vídeos, jogar jogos, e ouvir música, principalmente Dubstep<br />
+Tenho muito orgulho das coisas que faço, das minhas habilidades, e dos meus talentos<br />
+Eu amo escrever histórias, escrevo desde 2016, o que me ajudou a desenvolver muito a minha criatividade e imaginação<br />
+Eu também programo desde 2016, e isso ajuda muito no meu pensamento lógico e me faz pensar melhor e mais rápido<br />
+Gosto de criar programas pra me ajudar no que eu faço e ser mais organizado<br />
+Sou nativo do Brasil, e o Inglês que sei desde criança me fez ter mais conhecimento e facilidade para aprender, me ajudou a buscar conhecimento fora da minha língua materna, o Português Brasileiro<br />
 Também me ajudou a descobrir e aprender várias coisas na Internet<br />
 Sou organizado e um pouco perfeccionista<br />
 Gosto de conversar sobre os meus gostos e saber sobre os gostos de outras pessoas<br />
-Também amo "My Little Pony: A Amizade É Mágica", assisto desde 2011, descobri esse desenho na rede social "Google+"</span>
+Também amo My Little Pony: A Amizade É Mágica, eu assisto esse desenho lindo desde 2011, eu descobri ele na finada rede social "Google+" que foi encerrada pela Google em 2019<br />
+Esse desenho me ajudou muito na minha infância e adolescência, me fez companhia em momentos em que eu tava triste, mal, e solitário<br />
+Me ensinou várias lições de amizade e sobre a vida em geral, em situações em que eu tava confuso, e descobri a solução no desenho, ou vi uma perspectiva diferente<br />
+Me fez conhecer vários pessoas legais e fazer várias amizades bacanas, mesmo que elas não tenham sobrevivido ao tempo<br />
+<br />
+Versão menor e menos pessoal:<br />
+Olá, eu sou <b class="text_black">Stake2</b> e <b class="text_black">Funkysnipa Cat</b><br />
+Eu amo escrever, ler, programar em Python, fazer sites em HTML e PHP, desenhar, e editar vídeos<br />
+Amo assistir animes, desenhos, séries, filmes, vídeos, jogar jogos, e ouvir música, principalmente Dubstep<br />
+Tenho muito orgulho das coisas que faço, das minhas habilidades, e dos meus talentos<br />
+Eu amo escrever histórias, escrevo desde 2016, o que me ajudou a desenvolver muito a minha criatividade e imaginação<br />
+Eu também programo desde 2016, e isso ajuda muito no meu pensamento lógico e me faz pensar melhor<br />
+Gosto de criar programas pra me ajudar no que eu faço e ser mais organizado<br />
+Sou nativo do Brasil, e o Inglês que aprendi desde criança me ajudou a buscar conhecimento fora do Português Brasileiro<br />
+Isso me ajudou a descobrir e aprender várias coisas na Internet<br />
+Sou organizado e um pouco perfeccionista<br />
+Eu amo My Little Pony: A Amizade É Mágica, eu assisto esse desenho lindo desde 2011, eu descobri ele na finada rede social "Google+" encerrada em 2019</span>
 	</h2>
 </div>
 
@@ -250,13 +262,13 @@ Também amo "My Little Pony: A Amizade É Mágica", assisto desde 2011, descobri
 
 <!-- "Stake2" tab -->
 <a id="stake2_anchor" name="Stake2"></a>
-<div id="stake2" class="w3-container tab background_orange text_white border_4px border_color_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+<div id="stake2" class="w3-container tab background_orange text_black border_4px border_color_dark_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_black">
-		<p><br /><b id="stake2_title">Identidade Digital: Stake2 <i class="fas fa-user-circle"></i></b><br /><br /><p>
+		<p><br /><b id="stake2_title">Identidade digital: Stake2 <i class="fas fa-user-circle"></i></b><br /><br /><p>
 	</h2>
 
-	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+	<hr class="border_1px border_color_dark_orange margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Izaque" button -->
 	<span id="button_1" class="tab_button">		
 
@@ -264,16 +276,16 @@ Também amo "My Little Pony: A Amizade É Mágica", assisto desde 2011, descobri
 <h2 class="text_size">
 			Izaque: <i class="fas fa-user-circle"></i>			
 		</h2>
-	</button>
-	</span><br /></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Funkysnipa Cat" button -->
+	</button><br />
+	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Funkysnipa Cat" button -->
 	<span id="button_3" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('funkysnipa_cat');" style="border-radius: 50px;">		
 <h2 class="text_size">
 			Funkysnipa Cat: <i class="fas fa-user-circle"></i>			
 		</h2>
-	</button>
-	</span><br /></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
+	</button><br />
+	</span></span><br /><br /><br /><br /><br class="mobile_inline_block" /><hr class="border_1px border_color_dark_orange margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
 		<span class="text_black"><center><img class="image_size border_radius_100_cent" src="https://thestake2.netlify.app/Images/Stake2/Stake2.png" style="width: 40%; height: auto; border-radius: 100%;" /></center><hr class="border_1px border_color_light_orange" />
 "<b class="text_black">Stake2</b>" é uma Identidade Digital e Nome Digital que criei para mim mesmo em 2008, quando queria ser YouTuber e fazer vlogs e vídeos para o YouTube.<br />
@@ -300,13 +312,13 @@ Então troquei pra "<b class="text_black">Stake2</b>", o "Stake" tem impacto, e 
 
 <!-- "Funkysnipa Cat" tab -->
 <a id="funkysnipa_cat_anchor" name="Funkysnipa Cat"></a>
-<div id="funkysnipa_cat" class="w3-container tab background_orange text_white border_4px border_color_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+<div id="funkysnipa_cat" class="w3-container tab background_orange text_black border_4px border_color_dark_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_black">
-		<p><br /><b id="funkysnipa_cat_title">Identidade Digital: Funkysnipa Cat <i class="fas fa-user-circle"></i></b><br /><br /><p>
+		<p><br /><b id="funkysnipa_cat_title">Identidade digital: Funkysnipa Cat <i class="fas fa-user-circle"></i></b><br /><br /><p>
 	</h2>
 
-	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+	<hr class="border_1px border_color_dark_orange margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Stake2" button -->
 	<span id="button_2" class="tab_button">		
 
@@ -314,16 +326,16 @@ Então troquei pra "<b class="text_black">Stake2</b>", o "Stake" tem impacto, e 
 <h2 class="text_size">
 			Stake2: <i class="fas fa-user-circle"></i>			
 		</h2>
-	</button>
-	</span><br /></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Redes Sociais" button -->
+	</button><br />
+	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Redes sociais" button -->
 	<span id="button_4" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('social_networks');" style="border-radius: 50px;">		
 <h2 class="text_size">
-			Redes Sociais: <i class="fas fa-globe"></i>			
+			Redes sociais: <i class="fas fa-globe"></i>			
 		</h2>
-	</button>
-	</span><br /></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
+	</button><br />
+	</span></span><br /><br /><br /><br /><br class="mobile_inline_block" /><hr class="border_1px border_color_dark_orange margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
 		<span class="text_black"><center><img class="box_shadow_light_orange image_size border_radius_5_cent" src="https://thestake2.netlify.app/Images/Stake2/Funkysnipa Cat.png" style="width: 40%; height: auto;" /></center><hr class="border_1px border_color_light_orange" />
 "<b class="text_black">Funkysnipa Cat</b>" é uma identidade e conta que criei na rede social Google+ em meados de 2013.<br />
@@ -357,15 +369,15 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 
 <center>
 
-<!-- "Redes Sociais" tab -->
-<a id="social_networks_anchor" name="Redes Sociais"></a>
-<div id="social_networks" class="w3-container tab background_orange text_white border_4px border_color_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+<!-- "Redes sociais" tab -->
+<a id="social_networks_anchor" name="Redes sociais"></a>
+<div id="social_networks" class="w3-container tab background_orange text_black border_4px border_color_dark_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_black">
-		<p><br /><b id="social_networks_title">Redes Sociais: <i class="fas fa-globe"></i></b><br /><br /><p>
+		<p><br /><b id="social_networks_title">Redes sociais: <i class="fas fa-globe"></i></b><br /><br /><p>
 	</h2>
 
-	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+	<hr class="border_1px border_color_dark_orange margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Funkysnipa Cat" button -->
 	<span id="button_3" class="tab_button">		
 
@@ -373,18 +385,18 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 <h2 class="text_size">
 			Funkysnipa Cat: <i class="fas fa-user-circle"></i>			
 		</h2>
-	</button>
-	</span><br /></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Outros sites" button -->
+	</button><br />
+	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Outros sites" button -->
 	<span id="button_5" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
 <h2 class="text_size">
 			Outros sites: <i class="fas fa-globe"></i>			
 		</h2>
-	</button>
-	</span><br /></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
+	</button><br />
+	</span></span><br /><br /><br /><br /><br class="mobile_inline_block" /><hr class="border_1px border_color_dark_orange margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
-		<span class="text_black">	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
+		<span class="text_black">	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_dark_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
 		<h2 class="text_size text_light_orange margin_top_bottom_2_cent" style="font-weight: bold;">
 			Arte: 
 		</h2>
@@ -398,7 +410,7 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black margin_top_bottom_2_cent" onclick="window.open('https://github.com/Stake2');">		
 <h3 class="text_size" style="font-weight: bold;">
-		Github <i class="fab fa-github"></i>
+		GitHub
 		</h3>
 	</button>		
 
@@ -412,9 +424,9 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 <h3 class="text_size" style="font-weight: bold;">
 		YouTube <i class="fab fa-youtube"></i>
 		</h3>
-	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
+	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_dark_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
 		<h2 class="text_size text_light_orange margin_top_bottom_2_cent" style="font-weight: bold;">
-			Redes Sociais: 
+			Redes sociais: 
 		</h2>
 		
 
@@ -464,7 +476,7 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 <h3 class="text_size" style="font-weight: bold;">
 		Twitter <i class="fab fa-twitter"></i>
 		</h3>
-	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
+	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_dark_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
 		<h2 class="text_size text_light_orange margin_top_bottom_2_cent" style="font-weight: bold;">
 			Música: 
 		</h2>
@@ -492,7 +504,7 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 <h3 class="text_size" style="font-weight: bold;">
 		Spotify <i class="fab fa-spotify"></i>
 		</h3>
-	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
+	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_dark_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
 		<h2 class="text_size text_light_orange margin_top_bottom_2_cent" style="font-weight: bold;">
 			Jogos: 
 		</h2>
@@ -508,7 +520,7 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 <h3 class="text_size" style="font-weight: bold;">
 		Osu!
 		</h3>
-	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_light_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
+	</button>	</div>	<div class="background_dark_orange border_4px border_color_light_orange box_shadow_dark_orange margin_top_bottom_2_cent border_radius_50px" style="margin-left:10%; margin-right:10%;">
 		<h2 class="text_size text_light_orange margin_top_bottom_2_cent" style="font-weight: bold;">
 			Anime: 
 		</h2>
@@ -520,9 +532,9 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 		</h3>
 	</button>		
 
-	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black margin_top_bottom_2_cent" onclick="window.open('https://kitsu.io/users/443665');">		
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black margin_top_bottom_2_cent" onclick="window.open('https://kitsu.app/users/443665');">		
 <h3 class="text_size" style="font-weight: bold;">
-		Kitsu Io
+		Kitsu
 		</h3>
 	</button>	</div></span>
 	</h2>
@@ -534,22 +546,22 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 
 <!-- "Outros sites" tab -->
 <a id="websites_tab_anchor" name="Outros sites"></a>
-<div id="websites_tab" class="w3-container tab background_orange text_white border_4px border_color_light_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+<div id="websites_tab" class="w3-container tab background_orange text_black border_4px border_color_dark_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_black">
-		<p><br /><b id="websites_tab_title">Outros sites: <i class="fas fa-globe"></i> <span class="text_white">28</span></b><br /><br /><p>
+		<p><br /><b id="websites_tab_title">Outros sites: <i class="fas fa-globe"></i> <span class="text_black">29</span></b><br /><br /><p>
 	</h2>
 
-	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
-			<span class="margin_sides_5_cent" style="float: left;"><!-- "Redes Sociais" button -->
+	<hr class="border_1px border_color_dark_orange margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "Redes sociais" button -->
 	<span id="button_4" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('social_networks');" style="border-radius: 50px;">		
 <h2 class="text_size">
-			Redes Sociais: <i class="fas fa-globe"></i>			
+			Redes sociais: <i class="fas fa-globe"></i>			
 		</h2>
-	</button>
-	</span><br /></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
+	</button><br />
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_dark_orange margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="">
 		<span class="text_black">
 		<!-- "Stake2" link button -->
@@ -588,7 +600,7 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 		</button>
 <br />
 		<!-- "Friendship Is Magic" link button -->
-		<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" onclick="window.open('https://thestake2.netlify.app/My Little Pony/Friendship Is Magic/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_purple text_white border_4px border_color_light_purple background_hover_black" onclick="window.open('https://thestake2.netlify.app/Friendship Is Magic/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				My Little Pony: A Amizade É Mágica <i class="fas fa-heart"></i>
 			</h2>
@@ -629,6 +641,20 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 			</h2>
 		</button>
 <br />
+		<!-- "The Story of the Bulkan Siblings" link button -->
+		<button class="w3-btn background_darker_brown text_white border_4px border_color_light_brown background_hover_black" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				A História dos Irmãos Bulkan <i class="fas fa-book"></i> <i class="fa-solid fa-cloud-arrow-up"></i>
+			</h2>
+		</button>
+<br />
+		<!-- "The Life of Littletato" link button -->
+		<button class="w3-btn background_darker_purple text_white border_4px border_color_light_purple background_hover_black" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				A Vida de Pequenata <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
+			</h2>
+		</button>
+<br />
 		<!-- "Desert Island" link button -->
 		<button class="w3-btn background_dark_green_water text_white border_4px border_color_light_green_water background_hover_black" onclick="window.open('https://thestake2.netlify.app/Desert Island/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
@@ -643,20 +669,6 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 			</h2>
 		</button>
 <br />
-		<!-- "SpaceLiving" link button -->
-		<button class="w3-btn background_darker_blue text_white border_4px border_color_cyan background_hover_black" onclick="window.open('https://thestake2.netlify.app/SpaceLiving/pt/')" style="border-radius: 50px;">
-			<h2 class="text_size">
-				SpaceLiving <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
-			</h2>
-		</button>
-<br />
-		<!-- "The Life of Littletato" link button -->
-		<button class="w3-btn background_darker_purple text_white border_4px border_color_light_purple background_hover_black" onclick="window.open('https://thestake2.netlify.app/The Life of Littletato/pt/')" style="border-radius: 50px;">
-			<h2 class="text_size">
-				A Vida de Pequenata <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
-			</h2>
-		</button>
-<br />
 		<!-- "The Secret of the Crystals" link button -->
 		<button class="w3-btn background_darker_blue text_white border_4px border_color_light_cyan background_hover_black" onclick="window.open('https://thestake2.netlify.app/The Secret of the Crystals/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
@@ -664,15 +676,15 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 			</h2>
 		</button>
 <br />
-		<!-- "The Story of the Bulkan Siblings" link button -->
-		<button class="w3-btn background_darker_brown text_white border_4px border_color_light_brown background_hover_black" onclick="window.open('https://thestake2.netlify.app/The Story of the Bulkan Siblings/pt/')" style="border-radius: 50px;">
+		<!-- "SpaceLiving" link button -->
+		<button class="w3-btn background_darker_blue text_white border_4px border_color_cyan background_hover_black" onclick="window.open('https://thestake2.netlify.app/SpaceLiving/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
-				A História dos Irmãos Bulkan <i class="fas fa-book"></i> <i class="fa-solid fa-cloud-arrow-up"></i>
+				SpaceLiving <i class="fas fa-book"></i> <i class="fa-solid fa-pen"></i>
 			</h2>
 		</button>
 <br />
 		<!-- "Years" link button -->
-		<button class="w3-btn background_darker_green text_white border_4px border_color_light_green background_hover_black" onclick="window.open('https://thestake2.netlify.app/Years/pt/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_cyan text_white border_4px border_color_light_cyan background_hover_black" onclick="window.open('https://thestake2.netlify.app/Years/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Anos <i class="fa-solid fa-calendar-days"></i>
 			</h2>
@@ -731,6 +743,13 @@ Mas pra mim, eu não consigo achar outra rede social que supere ou substitua o G
 		<button class="w3-btn background_dark_cyan text_white border_4px border_color_light_cyan background_hover_black" onclick="window.open('https://thestake2.netlify.app/2025/pt/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Meu 2025 <i class="fa-solid fa-calendar-days"></i>
+			</h2>
+		</button>
+<br />
+		<!-- "2026" link button -->
+		<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black" onclick="window.open('https://thestake2.netlify.app/2026/pt/')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Meu 2026 <i class="fa-solid fa-calendar-days"></i>
 			</h2>
 		</button>
 </span>

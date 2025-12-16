@@ -29,6 +29,7 @@ body {
 	--light-salmon-color: #f1858d;
 	--red-color: #f44336;
 	--dark-red-color: #820900;
+	--darker-red-color: #280300;
 	--light-red-color: #ff1200;
 	--orange-color: #ffa500;
 	--dark-orange-color: #843a04;
@@ -178,6 +179,11 @@ body {
 	0 8px 20px var(--spread-btn) #82090060,
 	0 6px 20px var(--spread-btn) #82090060,
 	0 -6px 20px var(--spread-btn) #82090060!important;
+
+	--box-shadow-darker-red: 0 -8px 20px var(--spread-btn) #28030060,
+	0 8px 20px var(--spread-btn) #28030060,
+	0 6px 20px var(--spread-btn) #28030060,
+	0 -6px 20px var(--spread-btn) #28030060!important;
 
 	--box-shadow-light-red: 0 -8px 20px var(--spread-btn) #ff120060,
 	0 8px 20px var(--spread-btn) #ff120060,
@@ -465,6 +471,10 @@ One (1) pixel border colors
 	border: 1px solid var(--dark-red-color);
 }
 
+.border_1px_solid_darker_red {
+	border: 1px solid var(--darker-red-color);
+}
+
 .border_1px_solid_light_red {
 	border: 1px solid var(--light-red-color);
 }
@@ -701,6 +711,10 @@ Three (3) pixel border colors
 
 .border_3px_solid_dark_red {
 	border: 3px solid var(--dark-red-color);
+}
+
+.border_3px_solid_darker_red {
+	border: 3px solid var(--darker-red-color);
 }
 
 .border_3px_solid_light_red {
@@ -941,6 +955,10 @@ Four (4) pixel border colors
 	border: 4px solid var(--dark-red-color);
 }
 
+.border_4px_solid_darker_red {
+	border: 4px solid var(--darker-red-color);
+}
+
 .border_4px_solid_light_red {
 	border: 4px solid var(--light-red-color);
 }
@@ -1177,6 +1195,10 @@ Border colors
 
 .border_color_dark_red {
 	border-color: var(--dark-red-color);
+}
+
+.border_color_darker_red {
+	border-color: var(--darker-red-color);
 }
 
 .border_color_light_red {
@@ -1417,6 +1439,10 @@ Background colors
 	background-color: var(--dark-red-color);
 }
 
+.background_darker_red {
+	background-color: var(--darker-red-color);
+}
+
 .background_light_red {
 	background-color: var(--light-red-color);
 }
@@ -1653,6 +1679,10 @@ Background hover colors
 
 .background_hover_dark_red:hover {
 	background-color: var(--dark-red-color);
+}
+
+.background_hover_darker_red:hover {
+	background-color: var(--darker-red-color);
 }
 
 .background_hover_light_red:hover {
@@ -1893,6 +1923,10 @@ Text colors
 	color: var(--dark-red-color);
 }
 
+.text_darker_red {
+	color: var(--darker-red-color);
+}
+
 .text_light_red {
 	color: var(--light-red-color);
 }
@@ -2131,6 +2165,10 @@ Text hover colors
 	color: var(--dark-red-color);
 }
 
+.text_hover_darker_red:hover {
+	color: var(--darker-red-color);
+}
+
 .text_hover_light_red:hover {
 	color: var(--light-red-color);
 }
@@ -2367,6 +2405,10 @@ Box shadows
 
 .box_shadow_dark_red {
 	box-shadow: var(--box-shadow-dark-red) !important;
+}
+
+.box_shadow_darker_red {
+	box-shadow: var(--box-shadow-darker-red) !important;
 }
 
 .box_shadow_light_red {
