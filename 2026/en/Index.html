@@ -37,7 +37,7 @@ Made by Izaque (Stake2, Funkysnipa Cat)." />
 	<meta name="twitter:image" type="image/png" content="https://thestake2.netlify.app/Images/2026/Icons/Foto.png" />
 
 	<!-- Author related meta tags -->
-	<meta name="revised" content="Stake2's Enterprise TM, 25/12/2025." />
+	<meta name="revised" content="Stake2's Enterprise TM, 02/01/2026." />
 	<meta name="author" content="Izaque (Stake2, Funkysnipa Cat)" />
 
 	<!-- Viewport and charset -->
@@ -127,8 +127,19 @@ Made by Izaque (Stake2, Funkysnipa Cat)." />
 
 	<br /><div style="overflow-y: auto; overflow-x: hidden; max-height: 80vh;">
 
-	<!-- "Pictures" button -->
+	<!-- "This Year I" button -->
 	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('this_year_i');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			This Year I: <i class="fa-solid fa-calendar-days"></i>			
+		</h2>
+	</button><br />
+	</span>
+
+
+	<!-- "Pictures" button -->
+	<span id="button_2" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">		
 <h2 class="text_size">
@@ -138,8 +149,41 @@ Made by Izaque (Stake2, Funkysnipa Cat)." />
 	</span>
 
 
+	<!-- "Watched media in 2026" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('watched_media');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Watched media in 2026: <i class="fas fa-eye"></i>			
+		</h2>
+	</button><br />
+	</span>
+
+
+	<!-- "Gaming sessions played in 2026" button -->
+	<span id="button_4" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('gaming_sessions_played');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Gaming sessions played in 2026: <i class="fa-solid fa-gamepad"></i>			
+		</h2>
+	</button><br />
+	</span>
+
+
+	<!-- "Completed tasks in 2026" button -->
+	<span id="button_5" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Completed tasks in 2026: <i class="fa-solid fa-list-check"></i>			
+		</h2>
+	</button><br />
+	</span>
+
+
 	<!-- "Other year websites" button -->
-	<span id="button_2" class="tab_button">		
+	<span id="button_6" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('years');" style="border-radius: 50px;">		
 <h2 class="text_size">
@@ -150,7 +194,7 @@ Made by Izaque (Stake2, Funkysnipa Cat)." />
 
 
 	<!-- "Other websites" button -->
-	<span id="button_3" class="tab_button">		
+	<span id="button_7" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
 <h2 class="text_size">
@@ -186,24 +230,68 @@ Made by Izaque (Stake2, Funkysnipa Cat)." />
 
 <center>
 
+<!-- "This Year I" tab -->
+<a id="this_year_i_anchor" name="This Year I"></a>
+<div id="this_year_i" class="w3-container tab background_orange text_black border_4px border_color_light_orange box_shadow_dark_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_black">
+		<p><br /><b id="this_year_i_title">This Year I: <i class="fa-solid fa-calendar-days"></i></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: right;"><!-- "Pictures" button -->
+	<span id="button_2" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Pictures: <i class="fas fa-images"></i>			
+		</h2>
+	</button><br />
+	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<span class="text_black">["This Year I" text]</span>
+	</h2>
+
+			<hr class="border_1px border_color_light_orange margin_sides_5_cent" />		<span class="margin_sides_5_cent" style="float: right;"><!-- "Pictures" button -->
+	<span id="button_2" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Pictures: <i class="fas fa-images"></i>			
+		</h2>
+	</button><br />
+	</span></span><br /><br /><br /><br />	</div>
+
+</center>
+
+<center>
+
 <!-- "Pictures" tab -->
 <a id="pictures_anchor" name="Pictures"></a>
 <div id="pictures" class="w3-container tab background_orange text_black border_4px border_color_light_orange box_shadow_dark_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
 	<!-- Tab title -->
 	<h2 class="text_size text_black">
-		<p><br /><b id="pictures_title">Pictures: <i class="fas fa-images"></i> <span class="text_black">2</span></b><br /><br /><p>
+		<p><br /><b id="pictures_title">Pictures: <i class="fas fa-images"></i> <span class="text_black">4</span></b><br /><br /><p>
 	</h2>
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
-			<span class="margin_sides_5_cent" style="float: right;"><!-- "Other year websites" button -->
-	<span id="button_2" class="tab_button">		
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "This Year I" button -->
+	<span id="button_1" class="tab_button">		
 
-	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('years');" style="border-radius: 50px;">		
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('this_year_i');" style="border-radius: 50px;">		
 <h2 class="text_size">
-			Other year websites: <i class="fa-solid fa-calendar-days"></i>			
+			This Year I: <i class="fa-solid fa-calendar-days"></i>			
 		</h2>
 	</button><br />
-	</span></span><br /><br /><br /><br /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
+	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Watched media in 2026" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('watched_media');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Watched media in 2026: <i class="fas fa-eye"></i>			
+		</h2>
+	</button><br />
+	</span></span><br /><br /><br /><br /><br class="mobile_inline_block" /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
 	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
 		<span class="text_black"><center class="background_dark_orange box_shadow_dark_orange border_radius_5_cent border_4px border_color_light_orange">
 <a href="#pictures_image_2" style="float: right; text-decoration: none; margin-top: 30px; margin-right: 30px;"><button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black">
@@ -242,10 +330,14 @@ Website</span><br />
 		<h4 class="text_size text_white">
 			<i class="fas fa-arrow-circle-left"></i> Previous image
 		</h4>
+	</button></a><a href="#pictures_image_3" style="float: right; text-decoration: none; margin-top: 30px; margin-right: 30px;"><button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black">
+		<h4 class="text_size text_white">
+			Next image <i class="fas fa-arrow-circle-right"></i>
+		</h4>
 	</button></a><br />
-<p></p>
 <br />
 <p></p>
+<br class="mobile_inline_block" /><br class="mobile_inline_block" /><br class="mobile_inline_block" /><p></p>
 <br class="mobile_inline_block" /><br class="mobile_inline_block" /><span class="text_white"><b>Title:
 <br />
 </b>
@@ -264,21 +356,359 @@ Happy New Year</span><br />
 		<h4 class="text_size text_white">
 			<i class="fas fa-arrow-circle-left"></i> Previous image
 		</h4>
+	</button></a><a href="#pictures_image_3" style="float: right; text-decoration: none; margin-top: 30px; margin-right: 30px;"><button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black">
+		<h4 class="text_size text_white">
+			Next image <i class="fas fa-arrow-circle-right"></i>
+		</h4>
+	</button></a><br />
+<br />
+<p></p>
+<br class="mobile_inline_block" /><br class="mobile_inline_block" /><br class="mobile_inline_block" /><br class="mobile_inline_block" /><br class="mobile_inline_block" /><br class="mobile_inline_block" /></center><br />
+<br />
+<center class="background_dark_orange box_shadow_dark_orange border_radius_5_cent border_4px border_color_light_orange">
+<a href="#pictures_image_2" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black">
+		<h4 class="text_size text_white">
+			<i class="fas fa-arrow-circle-left"></i> Previous image
+		</h4>
+	</button></a><a href="#pictures_image_4" style="float: right; text-decoration: none; margin-top: 30px; margin-right: 30px;"><button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black">
+		<h4 class="text_size text_white">
+			Next image <i class="fas fa-arrow-circle-right"></i>
+		</h4>
+	</button></a><br />
+<br />
+<p></p>
+<br class="mobile_inline_block" /><br class="mobile_inline_block" /><br class="mobile_inline_block" /><p></p>
+<br class="mobile_inline_block" /><br class="mobile_inline_block" /><span class="text_white"><b>Title:
+<br />
+</b>
+Happy New Year (19:47 02/01/2026)</span><br />
+<p></p>
+<a name="pictures_image_3">
+<div class="height_90_view_height width_auto" style="display: block;">
+<img class=" border_4px border_color_light_orange border_radius_1_cent max_width_100_percent max_height_100_percent height_auto" src="https://thestake2.netlify.app/Images/2026/Pictures/1,1 - Feliz Ano Novo (19;47 02-01-2026).jpeg" alt="1,1 - Feliz Ano Novo (19;47 02-01-2026).jpeg" title="1,1 - Feliz Ano Novo (19;47 02-01-2026).jpeg" />
+</div><br />
+<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black" onclick="window.open('https://thestake2.netlify.app/Images/2026/Pictures/1,1 - Feliz Ano Novo (19;47 02-01-2026).jpeg')" style="margin-bottom: 10px; margin-bottom: 10px;">
+		<h4 class="text_size text_white">
+			Open image in a new tab: <i class="fas fa-images"></i>
+		</h4>
+	</button><p></p>
+<a href="#pictures_image_2" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black">
+		<h4 class="text_size text_white">
+			<i class="fas fa-arrow-circle-left"></i> Previous image
+		</h4>
+	</button></a><a href="#pictures_image_4" style="float: right; text-decoration: none; margin-top: 30px; margin-right: 30px;"><button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black">
+		<h4 class="text_size text_white">
+			Next image <i class="fas fa-arrow-circle-right"></i>
+		</h4>
+	</button></a><br />
+<br />
+<p></p>
+<br class="mobile_inline_block" /><br class="mobile_inline_block" /><br class="mobile_inline_block" /><br class="mobile_inline_block" /><br class="mobile_inline_block" /><br class="mobile_inline_block" /></center><br />
+<br />
+<center class="background_dark_orange box_shadow_dark_orange border_radius_5_cent border_4px border_color_light_orange">
+<a href="#pictures_image_3" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black">
+		<h4 class="text_size text_white">
+			<i class="fas fa-arrow-circle-left"></i> Previous image
+		</h4>
+	</button></a><br />
+<p></p>
+<br />
+<p></p>
+<br class="mobile_inline_block" /><br class="mobile_inline_block" /><span class="text_white"><b>Title:
+<br />
+</b>
+Começo de ano (19:48 02/01/2026)</span><br />
+<p></p>
+<a name="pictures_image_4">
+<div class="height_90_view_height width_auto" style="display: block;">
+<img class=" border_4px border_color_light_orange border_radius_1_cent max_width_100_percent max_height_100_percent height_auto" src="https://thestake2.netlify.app/Images/2026/Pictures/1,2 - Começo de ano (19;48 02-01-2026).jpeg" alt="1,2 - Começo de ano (19;48 02-01-2026).jpeg" title="1,2 - Começo de ano (19;48 02-01-2026).jpeg" />
+</div><br />
+<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black" onclick="window.open('https://thestake2.netlify.app/Images/2026/Pictures/1,2 - Começo de ano (19;48 02-01-2026).jpeg')" style="margin-bottom: 10px; margin-bottom: 10px;">
+		<h4 class="text_size text_white">
+			Open image in a new tab: <i class="fas fa-images"></i>
+		</h4>
+	</button><p></p>
+<a href="#pictures_image_3" style="float: left; text-decoration: none; margin-top: 30px; margin-left: 30px;"><button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black">
+		<h4 class="text_size text_white">
+			<i class="fas fa-arrow-circle-left"></i> Previous image
+		</h4>
 	</button></a><br />
 <p></p>
 <br class="mobile_inline_block" /><br class="mobile_inline_block" /><br />
 <br class="mobile_inline_block" /><br class="mobile_inline_block" /></center></span>
 	</h2>
 
-			<hr class="border_1px border_color_light_orange margin_sides_5_cent" />		<span class="margin_sides_5_cent" style="float: right;"><!-- "Other year websites" button -->
+			<hr class="border_1px border_color_light_orange margin_sides_5_cent" />		<span class="margin_sides_5_cent" style="float: left;"><!-- "This Year I" button -->
+	<span id="button_1" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('this_year_i');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			This Year I: <i class="fa-solid fa-calendar-days"></i>			
+		</h2>
+	</button><br />
+	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Watched media in 2026" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('watched_media');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Watched media in 2026: <i class="fas fa-eye"></i>			
+		</h2>
+	</button><br />
+	</span></span><br /><br /><br /><br /><br class="mobile_inline_block" />	</div>
+
+</center>
+
+<center>
+
+<!-- "Watched media in 2026" tab -->
+<a id="watched_media_anchor" name="Watched media in 2026"></a>
+<div id="watched_media" class="w3-container tab background_orange text_black border_4px border_color_light_orange box_shadow_dark_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_black">
+		<p><br /><b id="watched_media_title">Watched media in 2026: <i class="fas fa-eye"></i> <span class="text_black">0</span></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "Pictures" button -->
 	<span id="button_2" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Pictures: <i class="fas fa-images"></i>			
+		</h2>
+	</button><br />
+	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Gaming sessions played in 2026" button -->
+	<span id="button_4" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('gaming_sessions_played');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Gaming sessions played in 2026: <i class="fa-solid fa-gamepad"></i>			
+		</h2>
+	</button><br />
+	</span></span><br /><br /><br /><br /><br class="mobile_inline_block" /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<span class="text_black"><center>
+<br class="mobile_inline_block" />
+
+		<!-- "Watch History" link button -->
+		<button class="w3-btn background_darker_blue text_white border_4px border_color_light_blue background_hover_black" onclick="window.open('https://thestake2.netlify.app/Watch History/en/?tab=watched_media')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Watch History <i class="fas fa-eye"></i>
+			</h2>
+		</button>
+<p></p>
+<br class="mobile_inline_block" />
+<div class="height_70_view_height width_auto" style="display: block;">
+<img class=" border_4px border_color_darker_blue border_radius_8_cent box_shadow_darker_blue  border_4px border_color_darker_blue border_radius_8_cent max_width_100_percent max_height_100_percent height_auto" src="https://thestake2.netlify.app/Images/Watch History/Icons/Foto.png" style="height: auto;" />
+</div><br />
+
+</center>
+<br />
+<b>Watched media in 2026: <i class="fas fa-eye"></i> <span class="text_black">0</span><br /><br /></b><!-- Media type headers -->
+		<a><b>Animes: <span class="text_black">0</span></b></a><br />
+		<a><b>Cartoons: <span class="text_black">0</span></b></a><br />
+		<a><b>Series: <span class="text_black">0</span></b></a><br />
+		<a><b>Movies: <span class="text_black">0</span></b></a><br />
+		<a><b>Videos: <span class="text_black">0</span></b></a><br />
+		
+		<br />
+
+<br /><br /></span>
+	</h2>
+
+			<hr class="border_1px border_color_light_orange margin_sides_5_cent" />		<span class="margin_sides_5_cent" style="float: left;"><!-- "Pictures" button -->
+	<span id="button_2" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Pictures: <i class="fas fa-images"></i>			
+		</h2>
+	</button><br />
+	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Gaming sessions played in 2026" button -->
+	<span id="button_4" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('gaming_sessions_played');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Gaming sessions played in 2026: <i class="fa-solid fa-gamepad"></i>			
+		</h2>
+	</button><br />
+	</span></span><br /><br /><br /><br /><br class="mobile_inline_block" />	</div>
+
+</center>
+
+<center>
+
+<!-- "Gaming sessions played in 2026" tab -->
+<a id="gaming_sessions_played_anchor" name="Gaming sessions played in 2026"></a>
+<div id="gaming_sessions_played" class="w3-container tab background_orange text_black border_4px border_color_light_orange box_shadow_dark_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_black">
+		<p><br /><b id="gaming_sessions_played_title">Gaming sessions played in 2026: <i class="fa-solid fa-gamepad"></i> <span class="text_black">0</span></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "Watched media in 2026" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('watched_media');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Watched media in 2026: <i class="fas fa-eye"></i>			
+		</h2>
+	</button><br />
+	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Completed tasks in 2026" button -->
+	<span id="button_5" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Completed tasks in 2026: <i class="fa-solid fa-list-check"></i>			
+		</h2>
+	</button><br />
+	</span></span><br /><br /><br /><br /><br class="mobile_inline_block" /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<span class="text_black"><center>
+<br class="mobile_inline_block" />
+
+		<!-- "Play History" link button -->
+		<button class="w3-btn background_darker_green text_white border_4px border_color_light_green background_hover_black" onclick="window.open('https://thestake2.netlify.app/Play History/en/?tab=gaming_sessions_played')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Play History <i class="fa-solid fa-gamepad"></i>
+			</h2>
+		</button>
+<p></p>
+<br class="mobile_inline_block" />
+<div class="height_70_view_height width_auto" style="display: block;">
+<img class=" border_4px border_color_darker_green border_radius_8_cent box_shadow_darker_green  border_4px border_color_darker_green border_radius_8_cent max_width_100_percent max_height_100_percent height_auto" src="https://thestake2.netlify.app/Images/Play History/Icons/Foto.png" style="height: auto;" />
+</div><br />
+
+</center>
+<br />
+<b>Gaming sessions played in 2026: <i class="fa-solid fa-gamepad"></i> <span class="text_black">0</span><br /><br /></b><!-- Game type headers -->
+		<a><b>Action: <span class="text_black">0</span></b></a><br />
+		<a><b>Action and Platform: <span class="text_black">0</span></b></a><br />
+		<a><b>Battle royale: <span class="text_black">0</span></b></a><br />
+		<a><b>Casual: <span class="text_black">0</span></b></a><br />
+		<a><b>Flash: <span class="text_black">0</span></b></a><br />
+		<a><b>FPS: <span class="text_black">0</span></b></a><br />
+		<a><b>Horror: <span class="text_black">0</span></b></a><br />
+		<a><b>Idle Clicker: <span class="text_black">0</span></b></a><br />
+		<a><b>Management: <span class="text_black">0</span></b></a><br />
+		<a><b>Multiplayer: <span class="text_black">0</span></b></a><br />
+		<a><b>Nintendo 64: <span class="text_black">0</span></b></a><br />
+		<a><b>Open world: <span class="text_black">0</span></b></a><br />
+		<a><b>Platform: <span class="text_black">0</span></b></a><br />
+		<a><b>Puzzle: <span class="text_black">0</span></b></a><br />
+		<a><b>Racing: <span class="text_black">0</span></b></a><br />
+		<a><b>Rhythm: <span class="text_black">0</span></b></a><br />
+		<a><b>RPG: <span class="text_black">0</span></b></a><br />
+		<a><b>Shoot 'em up: <span class="text_black">0</span></b></a><br />
+		<a><b>Simulation: <span class="text_black">0</span></b></a><br />
+		<a><b>Story: <span class="text_black">0</span></b></a><br />
+		<a><b>Strategy: <span class="text_black">0</span></b></a><br />
+		<a><b>Super Nintendo: <span class="text_black">0</span></b></a><br />
+		<a><b>Survival: <span class="text_black">0</span></b></a><br />
+		<a><b>Tower Defense: <span class="text_black">0</span></b></a><br />
+		<a><b>Visual Novel: <span class="text_black">0</span></b></a><br />
+		
+		<br />
+
+<br /><br /></span>
+	</h2>
+
+			<hr class="border_1px border_color_light_orange margin_sides_5_cent" />		<span class="margin_sides_5_cent" style="float: left;"><!-- "Watched media in 2026" button -->
+	<span id="button_3" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('watched_media');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Watched media in 2026: <i class="fas fa-eye"></i>			
+		</h2>
+	</button><br />
+	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Completed tasks in 2026" button -->
+	<span id="button_5" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Completed tasks in 2026: <i class="fa-solid fa-list-check"></i>			
+		</h2>
+	</button><br />
+	</span></span><br /><br /><br /><br /><br class="mobile_inline_block" />	</div>
+
+</center>
+
+<center>
+
+<!-- "Completed tasks in 2026" tab -->
+<a id="completed_tasks_anchor" name="Completed tasks in 2026"></a>
+<div id="completed_tasks" class="w3-container tab background_orange text_black border_4px border_color_light_orange box_shadow_dark_orange border_radius_15_cent padding_bottom_1_cent margin_bottom_2_cent height_auto w3-animate-zoom" style="height: auto; border-style: solid; border-radius: 50px; padding-bottom: 2%; margin-bottom: 2%; display: none;">
+	<!-- Tab title -->
+	<h2 class="text_size text_black">
+		<p><br /><b id="completed_tasks_title">Completed tasks in 2026: <i class="fa-solid fa-list-check"></i> <span class="text_black">0</span></b><br /><br /><p>
+	</h2>
+
+	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "Gaming sessions played in 2026" button -->
+	<span id="button_4" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('gaming_sessions_played');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Gaming sessions played in 2026: <i class="fa-solid fa-gamepad"></i>			
+		</h2>
+	</button><br />
+	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Other year websites" button -->
+	<span id="button_6" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('years');" style="border-radius: 50px;">		
 <h2 class="text_size">
 			Other year websites: <i class="fa-solid fa-calendar-days"></i>			
 		</h2>
 	</button><br />
-	</span></span><br /><br /><br /><br />	</div>
+	</span></span><br /><br /><br /><br /><br class="mobile_inline_block" /><hr class="border_1px border_color_light_orange margin_sides_5_cent" />	
+	<h2 class="text_size margin_sides_5_cent" style="text-align: left;">
+		<span class="text_black"><center>
+<br class="mobile_inline_block" />
+
+		<!-- "Tasks" link button -->
+		<button class="w3-btn background_even_darker_grey text_white border_4px border_color_light_grey background_hover_black" onclick="window.open('https://thestake2.netlify.app/Tasks/en/?tab=completed_tasks')" style="border-radius: 50px;">
+			<h2 class="text_size">
+				Tasks <i class="fas fa-tasks"></i>
+			</h2>
+		</button>
+<p></p>
+<br class="mobile_inline_block" />
+<div class="height_70_view_height width_auto" style="display: block;">
+<img class=" border_4px border_color_even_darker_grey border_radius_8_cent box_shadow_even_darker_grey  border_4px border_color_even_darker_grey border_radius_8_cent max_width_100_percent max_height_100_percent height_auto" src="https://thestake2.netlify.app/Images/Tasks/Icons/English.png" style="height: auto;" />
+</div><br />
+
+</center>
+<br />
+<b>Completed tasks: <i class="fa-solid fa-list-check"></i> <span class="text_black">0</span><br /><br /></b><!-- Task type headers -->
+		<a><b>Drawings: <span class="text_black">0</span></b></a><br />
+		<a><b>PHP: <span class="text_black">0</span></b></a><br />
+		<a><b>Python: <span class="text_black">0</span></b></a><br />
+		<a><b>Stories: <span class="text_black">0</span></b></a><br />
+		<a><b>Videos: <span class="text_black">0</span></b></a><br />
+		
+		<br />
+
+<br /><br /></span>
+	</h2>
+
+			<hr class="border_1px border_color_light_orange margin_sides_5_cent" />		<span class="margin_sides_5_cent" style="float: left;"><!-- "Gaming sessions played in 2026" button -->
+	<span id="button_4" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('gaming_sessions_played');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Gaming sessions played in 2026: <i class="fa-solid fa-gamepad"></i>			
+		</h2>
+	</button><br />
+	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Other year websites" button -->
+	<span id="button_6" class="tab_button">		
+
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('years');" style="border-radius: 50px;">		
+<h2 class="text_size">
+			Other year websites: <i class="fa-solid fa-calendar-days"></i>			
+		</h2>
+	</button><br />
+	</span></span><br /><br /><br /><br /><br class="mobile_inline_block" />	</div>
 
 </center>
 
@@ -293,16 +723,16 @@ Happy New Year</span><br />
 	</h2>
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
-			<span class="margin_sides_5_cent" style="float: left;"><!-- "Pictures" button -->
-	<span id="button_1" class="tab_button">		
+			<span class="margin_sides_5_cent" style="float: left;"><!-- "Completed tasks in 2026" button -->
+	<span id="button_5" class="tab_button">		
 
-	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">		
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
 <h2 class="text_size">
-			Pictures: <i class="fas fa-images"></i>			
+			Completed tasks in 2026: <i class="fa-solid fa-list-check"></i>			
 		</h2>
 	</button><br />
 	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Other websites" button -->
-	<span id="button_3" class="tab_button">		
+	<span id="button_7" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
 <h2 class="text_size">
@@ -377,16 +807,16 @@ Happy New Year</span><br />
 </span>
 	</h2>
 
-			<hr class="border_1px border_color_light_orange margin_sides_5_cent" />		<span class="margin_sides_5_cent" style="float: left;"><!-- "Pictures" button -->
-	<span id="button_1" class="tab_button">		
+			<hr class="border_1px border_color_light_orange margin_sides_5_cent" />		<span class="margin_sides_5_cent" style="float: left;"><!-- "Completed tasks in 2026" button -->
+	<span id="button_5" class="tab_button">		
 
-	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('pictures');" style="border-radius: 50px;">		
+	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('completed_tasks');" style="border-radius: 50px;">		
 <h2 class="text_size">
-			Pictures: <i class="fas fa-images"></i>			
+			Completed tasks in 2026: <i class="fa-solid fa-list-check"></i>			
 		</h2>
 	</button><br />
 	</span></span><br class="mobile_inline_block" /><p class="mobile_inline_block"></p><span class="margin_sides_5_cent" style="float: right;"><!-- "Other websites" button -->
-	<span id="button_3" class="tab_button">		
+	<span id="button_7" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('websites_tab');" style="border-radius: 50px;">		
 <h2 class="text_size">
@@ -409,7 +839,7 @@ Happy New Year</span><br />
 
 	<hr class="border_1px border_color_light_orange margin_sides_5_cent" />
 			<span class="margin_sides_5_cent" style="float: left;"><!-- "Other year websites" button -->
-	<span id="button_2" class="tab_button">		
+	<span id="button_6" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('years');" style="border-radius: 50px;">		
 <h2 class="text_size">
@@ -539,7 +969,7 @@ Happy New Year</span><br />
 		</button>
 <br />
 		<!-- "Years" link button -->
-		<button class="w3-btn background_dark_cyan text_white border_4px border_color_light_cyan background_hover_black" onclick="window.open('https://thestake2.netlify.app/Years/en/')" style="border-radius: 50px;">
+		<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black" onclick="window.open('https://thestake2.netlify.app/Years/en/')" style="border-radius: 50px;">
 			<h2 class="text_size">
 				Years <i class="fa-solid fa-calendar-days"></i>
 			</h2>
@@ -611,7 +1041,7 @@ Happy New Year</span><br />
 	</h2>
 
 			<hr class="border_1px border_color_light_orange margin_sides_5_cent" />		<span class="margin_sides_5_cent" style="float: left;"><!-- "Other year websites" button -->
-	<span id="button_2" class="tab_button">		
+	<span id="button_6" class="tab_button">		
 
 	<button class="w3-btn background_dark_orange text_white border_4px border_color_light_orange background_hover_black"  onclick="Open_Tab('years');" style="border-radius: 50px;">		
 <h2 class="text_size">
