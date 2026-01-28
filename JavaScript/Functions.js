@@ -32,14 +32,25 @@ function Remove_Zoom() {
 	// Get all elements with the "w3-animate-zoom" class
 	array = Array.from(document.getElementsByClassName("w3-animate-zoom"))
 
+	// Iterate through them
 	array.forEach(
+		// Pass the element to a function
 		function(element) {
-			if (element.tagName == "BUTTON") {
-				element.classList.toggle("w3-animate-zoom")
+			// If the element is a button
+			// Or it is a div
+			// And its ID is "hamburger_menu_button"
+			if (
+				element.tagName == "BUTTON" ||
+				element.tagName == "DIV" &&
+				element.id == "hamburger_menu_button"
+			) {
+				// Remove the "w3-animate-zoom" class
+				element.classList.remove("w3-animate-zoom")
 			}
 		}
 	)
 
+	// Show the method text and action
 	Functions.Class_Method(method_title, text)
 }
 
@@ -212,7 +223,7 @@ function Check_Scroll_Position(ids) {
 	// Iterate through the list of ids
 	Array.from(ids).forEach(function(id) {
 		show_or_hide("#" + id)
-		add_or_remove("#" + id, "w3-animate-zoom")
+		// add_or_remove("#" + id, "w3-animate-zoom")
 	})
 
 	// Update the "last_scroll" variable
@@ -232,7 +243,9 @@ function Check_Page_Scrolling(event, ids = null) {
 
 	// If the list of ids is null, define a default list of ids
 	if (ids == null) {
-		ids = list
+		ids = [
+			"hamburger_menu_button"
+		]
 	}
 
 	// Check the scroll position and hide/show the elements as needed
